@@ -36,7 +36,7 @@ switch (_state) do
 			license_civ_air = false;
 			license_civ_truck = false;
 			license_civ_boat = false;
-			hint "You have lost all your motor vehicle licenses for vehicular manslaughter.";
+			hint "Sie haben all Ihre Kfz-Lizenzen für Totschlag im Fahrzeugverkehr verloren.";
 		};
 	};
 	
@@ -45,7 +45,7 @@ switch (_state) do
 	{
 		if(license_civ_gun) then {
 			license_civ_gun = false;
-			hint "You have lost your firearms license for manslaughter.";
+			hint "Sie haben Ihren Waffenschein verloren wegen Totschlags.";
 		};
 	};
 };
