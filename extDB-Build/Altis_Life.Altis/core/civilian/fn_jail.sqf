@@ -40,6 +40,7 @@ if(life_inv_cokep > 0) then {[false,"cocainep",life_inv_cokep] call life_fnc_han
 if(life_inv_turtle > 0) then {[false,"turtle",life_inv_turtle] call life_fnc_handleInv;};
 if(life_inv_cannabis > 0) then {[false,"cannabis",life_inv_cannabis] call life_fnc_handleInv;};
 if(life_inv_marijuana > 0) then {[false,"marijuana",life_inv_marijuana] call life_fnc_handleInv;};
+if(life_inv_goldbarp > 0) then {[false,"goldbarp",life_inv_goldbarp] call life_fnc_handleInv;};
 life_is_arrested = true;
 
 removeAllWeapons player;

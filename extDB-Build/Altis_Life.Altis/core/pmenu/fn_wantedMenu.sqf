@@ -16,7 +16,7 @@ _list = _display displayCtrl 2401;
 lbClear _list;
 _units = [];
 
-ctrlSetText[2404,"Establishing connection..."];
+ctrlSetText[2404,"Verbinde..."];
 
 if(__GETC__(life_coplevel) < 3 && __GETC__(life_adminlevel) == 0) then
 {
