@@ -85,8 +85,8 @@ class Mission
 	randomSeed=2004553;
 	class Intel
 	{
-		briefingName="Altis Life RPG";
-		overviewText="Altis Life RPG 3.1.3.5";
+		briefingName="Secret_Society Altis Life";
+		overviewText="Altis Life RPG 3.1.3.5ExtendEdition";
 		startWeather=0.099999994;
 		startWind=0.29999998;
 		startWindDir=20;
