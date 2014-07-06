@@ -2,7 +2,8 @@ waitUntil {!isNull player && player == player};
 if(player diarySubjectExists "rules")exitwith{};
 
 player createDiarySubject ["changelog","Change Log"];
-player createDiarySubject ["serverrules","General Rules"];
+player createDiarySubject ["serverinfo","Serverinformationen"];
+player createDiarySubject ["serverregeln","Serverregeln"];
 player createDiarySubject ["policerules","Police Procedures/Rules"];
 player createDiarySubject ["safezones","Safe Zones (No Killing)"];
 //player createDiarySubject ["civrules","Civilian Rules"];
@@ -21,183 +22,198 @@ player createDiarySubject ["controls","Controls"];
 		]
 	];
 */
-	player createDiaryRecord["changelog",
+
+	player createDiaryRecord["serverinfo",
 		[
-			"Official Change Log",
+			"Teamspeak",
 				"
-					The official change log can be found on the BIS forums (search Altis Life RPG)
+				Jeder ist auf unserem Teamspeak Server Herzlich willkommen
+				TS3 IP: 148.251.84.132
 				"
 		]
 	];
 	
-	player createDiaryRecord["changelog",
+	player createDiaryRecord["serverinfo",
 		[
-			"Custom Change Log",
+			"Homepage",
 				"
-					This section is meant for people doing their own edits to the mission, DO NOT REMOVE THE ABOVE.
-				"
-		]
-	];
-
-		player createDiaryRecord ["serverrules",
-		[
-			"Exploits", 
-				"
-				These are considered exploits, and you will not be kicked, but banned.<br/><br/>
-
-				1. Getting out of jail via any method other than paying bail or escaping via helicopter.<br/>
-				2. Killing yourself to get out of roleplay. Getting out of being tazed, restrained, arrested, jail, etc. If the log shows you got arrested, then you died, you will be banned. Do not pay bail and kill yourself for an easy ride home. Walk you lazy turd.<br/>
-				3. Duping items and/or money. If someone sends you an unobtainable amount of money right at the start of the game, report to an admin IMMEDIATELY and transfer said money to an admin. Do this ASAP or an admin could ban you if they see that much on you without question.<br/>
-				4. Using clearly hacked items. If a hacker comes in and spawns unobtainable items, you could be banned for using said items. Report the items to the admins immediately and stay away from them.<br/>
-				5. Abusing bugs or game mechanics for gain. Is there a replicating gun somewhere? Report it and leave it alone. If an admin catches you abusing the glitch, ban.<br/><br/>
+				Wir besitzen zur Zeit noch keine DE Domain (ist in Arbeit)
+				Jedoch besitzen wir eine Homepage wo JEDER Willkommen ist.
+				Homepage: http://arma3-altis-life.enjin.com/home
 				"
 		]
 	];
 	
-	player createDiaryRecord["safezones",
+	player createDiaryRecord["serverinfo",
 		[
-			"Safe Zones",
+			"Spenden",
 				"
-					If bombing (bombing can be intentionally exploding a vehicle), robbing, or killing occurs around these or in these areas it is punishable by ban.<br/><br/>
+				Alle Spenden werden ausschlieslich für die instandhaltung und verwaltung für den Rootserver genutzt.
+				Im Forum könnt Ihr nachlesen, wer, wieviel und wohin das Geld geht.
+				Spenden kann man auf unserer Homepage.
+				Im Forum sind Alternativ Möglichkeiten aufgelistet.
+				"
+		]
+	];
+
+		player createDiaryRecord ["serverregeln",
+		[
+			"Banngründe", 
+				"
+				Das ist eure einzige Warnung. <br/><br/>
+				Hier sind einige Gründe aufgelistet weshalb wir bannen. <br/><br/>
+				• Hacking <br/>
+				• Cheating <br/>
+				• Exploiting <br/>
+				• RDM (Random Death Matching) <br/>
+				• Bugusing <br/>
+				• Andere Fahrzeuge rammen um eine Explosion zu erzeugen. <br/>
+				• Sounds und Musik in der Direct oder Side Communication abspielen führt nach einmaliger Verwarnung zum Ban. <br/><br/>
+				Solltet ihr gebannt werden, habt ihr die Möglichkeit im TS ein Gespräch anzufragen. Je nach härte des Vorfalls wird auch entbannt. <br/><br/>
+				"
+		]
+	];
+	
+	player createDiaryRecord["serverregeln",
+		[
+			"Exploits",
+				"
+				Aus dem Gefängnis fliehen außer man zahlt seine Kaution (bail money), man sitzt die Strafe ab oder wird von einem Heli aus dem Gefängnis befreit. <br/><br/>
+				Sich selber umbringen oder das Spiel verlassen um einer Gefängnisstrafe oder dem Role Play zu entgehen (Kidnapping, etc.) <br/><br/>
+				Items und/oder Geld verdoppelt durch ausnutzen der Spielmechanik oder Hacks. Wenn einem eine hohe Menge Geld überwiesen wird ( 1000000+), muss dies sofort einem Polizisten gemeldet werden und übergeben werden. Tut ihr das nicht, riskiert ihr, dass ihr anstatt des Versenders gebannt werdet. <br/><br/>
+				Gehackte Items benutzen, auch wenn ihr diese von euch nicht gehackt wurden. <br/><br/>
+				Bugs und Spielmechaniken zum eigenen (fiesen) Vorteil ausnutzen (jegliche Arten) <br/><br/>
+				"
+		]
+	];
 					
-					Any vehicle spawn (shop or garage)<br/>
-					Any weapon shop<br/>
-					All Police HQs<br/>
-					Rebel Outposts<br/>
-					Donator Shops<br/><br/>
-				"
-		]
-	];
-					
 	
-	player createDiaryRecord ["serverrules",
+	player createDiaryRecord ["serverregeln",
 		[
-			"Bannable Offenses", 
+			"Alle Fahrzeugarten", 
 				"
-				Consider this your one and only warning.<br/><br/>
-				
-				1. Hacking<br/>
-				2. Cheating<br/>
-				3. Exploiting (See 'Exploits')<br/>
-				4. Being kicked 3 or more times.<br/><br/>
+				§1 	Wer andere Zivilisten absichtlich überfährt wird bestraft. Im Falle eines Unfalls wird dies von der Polizei untersucht und im Unschuldsfall wird keine Strafe verhängt. ( Desync muss sofort der Polizei mitgeteilt werden ) <br/>
+				§2 	Es besteht rechtsfahr Gebot. <br/>
+				§3 	Absichtliches positionieren vor Autos um überfahren oder verletzt zu werden wird mit einem Bußgeld belegt. <br/>
+				§4 	Sich in fremde Fahrzeuge zu setzen um andere Spieler zu provozieren wird mit einem Bußgeld belegt. <br/>
+				§5 	Fahrzeuge stehlen mit der Absicht sie zu zerstören. ( Kann zum Landesverweis führen) <br/>
+				§6 	Die Geschwindigkeiten betragen in Städten auf Hauptstrassen max. 50 Km/h.In unmittelbarer Marktnähe (100m Umkreis) max 30 Km/h <br/>
+				§7 	Auf Nebenstrassen in Städten sind max. 30 Km/h erlaubt. <br/>
+				§8 	Ausserhalb geschlossener Ortschaften 120kmh. Bei Unfällen jeglicher Art werdet ihr in vollem Maße zur Rechenschaft gezogen. <br/>
+				§9 	Um Fahrzeuge im Game zu führen braucht ihr einen Führerschein. Das Fahren ohne den speziellen Führerschein wird mit Bußgeld bestraft. <br/>
+				§10 Dauerhaftes unnötiges Hupen im Spiel das als störend empfunden wird ist zu unterlassen. <br/>
+				§11 Falsche Anschuldigungen im Spiel zu machen wird mit Bußgeld bestraft. <br/><br/>
 				"
 		]
 	];
 	
-	player createDiaryRecord ["serverrules",
+	player createDiaryRecord ["serverregeln",
 		[
-			"Cop Interaction", 
+			"Luftfahrzeuge", 
 				"
-				Items on this list may result in your removal from the server and/or ban, based on the admins discretion.<br/><br/>
-				
-				1. Civilians can be arrested for looking in cops' backpacks/vehicles. Constantly doing this will result in your removal from the server.<br/>
-				2. Civilians can be arrested for following cops in game in order to give away their position.<br/>
-				3. Civilians or Rebels who take up arms to kill cops in town or elsewhere for no RP reason will be considered RDMing. See RDMing section.<br/>
-				4. Following and or harassing cops for long periods of time will be considered griefing and/or spamming, and will result in your removal from the server.<br/>
-				5. Actively blocking cops from doing their duties can lead to your arrest. Constantly doing this will result in your removal from the server.<br/><br/>
+				§1 Andere Luftfahrzeuge absichtlich rammen wird mit Haftstrafe geahndet ( kann zur Landesverweis führen) <br/>
+				§2 Das Fliegen von Hubschraubern ist nur mit einer Fluglizenz erlaubt. Ohne eine Fluglizenz zu fliegen gibt eine Geldbuße. <br/>
+				§3 Das landen in jeden Städten ist nur Zivillandeplätzen gestattet. <br/>
+				§4 Luftfahrzeug Regel 3 gelten nicht, wenn man eine besondere Landeerlaubnis erwirkt hat. <br/>
+				§5 Das schweben über einer Stadt unter 150m ist verboten und wird mit Geldbuße bestraft. Tiefes schweben über der Stadt um einen anderen Spieler auf zu nehmen zählt als Landeversuch. <br/><br/>
 				"
 		]
 	];
 	
-	player createDiaryRecord ["serverrules",
+	player createDiaryRecord ["serverregeln",
 		[
-			"Boats", 
+			"Wasserfahrzeuge", 
 				"
-				Items on this list may result in your removal from the server and/or ban, based on the admins discretion.<br/><br/>
-				
-				1. Repeatedly pushing boats without permission.<br/>
-				2. Pushing a boat with the intention of hurting or killing someone. This is not RP, it is just a flaw in the mechanics.<br/>
-				3. Purposefully running over swimmers/divers.<br/><br/>
+				§1 Boote ohne Erlaubnis durch die Gegend schieben ist ein Verstoß und wird geahndet. <br/>
+				§2 Schwimmende Leute überfahren ist verboten und wird bestraft. Es wird wie VDM (Vehicle Death Match) angesehen. <br/><br/>
 				"
 		]
 	];
 	
-	player createDiaryRecord ["serverrules",
+	player createDiaryRecord ["serverregeln",
 		[
-			"Aviation", 
+			"Interaktion mit der Polizei", 
 				"
-				Items on this list may result in your removal from the server and/or ban, based on the admins discretion.<br/><br/>
-				
-				1. Purposefully ramming a helicopter into anything. Other helicopters, vehicles, buildings.<br/>
-				2. Flying below 150m over the city constantly. Once is illegal, more than that you risk crashing into the city, thus against server rules.<br/>
-				3. Stealing helicopters without proper warning and significant time for the driver to lock the vehicle. If they land and run away without locking, fine, if they just get out and you get in before they get a chance to lock it, no no.<br/><br/>
+				§1 In Rucksäcke von Polizisten zu schauen hat die sofortige Festnahme zur Folge. Geschieht dies öfter vom gleichen Spieler, wird dieser wegen „trolling“ bestraft. <br/>
+				§2 Das dauerhafte durchgeben und verfolgen von Polizisten um andere Spieler zu warnen wird mir Arrest belegt. <br/>
+				§3 In Städten Waffen aufnehmen und Polizisten erschießen ohne jeglichen Role Play Grund hat einen temporären Ban zur Folge. (Sektion RDMing) <br/>
+				§4 Absichtliches Blocken von Polizisten, um sie an der Ausübung ihrer Pflicht zu hindern, wird mit Arrest bestraft. <br/>
+				§5 Der Diebstahl von Polizeiuniformen um sich als Polizei aus zu geben ist verboten und führt unweigerlich zum Kick bzw. Ban <br/>
+				§6 Falschaussagen gegenüber der Polizei werden mit Bußgeld bestraft. <br/><br/>
 				"
 		]
 	];
 	
-	player createDiaryRecord ["serverrules",
+	player createDiaryRecord ["serverregeln",
 		[
-			"Vehicles", 
+			"Waffennutzung", 
 				"
-				Items on this list may result in your removal from the server and/or ban, based on the admins discretion.<br/><br/>
-				
-				1. Purposefully running people over (VRDM). There are accidents, and then there is going out of your way to run someone over.<br/>
-				2. Purposefully throwing yourself in front of vehicles in order to die/get hurt.<br/>
-				3. Ramming into other vehicles in order to cause an explosion.<br/>
-				4. Constantly trying to enter vehicles that do not belong to you in order to grief the vehicle owner, and not trying to RP.<br/>
-				5. Stealing a vehicle just to crash it or otherwise destroy it.<br/>
-				6. Purchasing multiple vehicles for the purpose of doing any of the above.<br/>
-				7. The only reason for shooting at a vehicle would be to disable it and/or fire warning shots in a role-play scenario.You are not to deliberately destroy enemies vehicles.<br/><br/>
+				§1 In Safezones ist die Waffe zu schultern ! (Shift + H) <br/>
+				§2 In Safezones darf nicht geschossen werden. <br/>
+				§3 In Städten mit einer gezogenen Waffe herumlaufen ist eine Straftat und wird mit einem Ticket geahndet. Bei Wiederholung droht Gefängnis. <br/><br/>
 				"
 		]
 	];
 	
-	player createDiaryRecord ["serverrules",
+	player createDiaryRecord ["serverregeln",
 		[
-			"Communication Rules", 
+			"RDM Random Death Meatch", 
 				"
-				Items on this list may result in your removal from the server and/or ban, based on the admins discretion.<br/><br/>
-				
-				1. Side Chat may not be used to play music or otherwise micspam.<br/>
-				2. Spamming any chat channel will result in your removal.<br/>
-				4. Teamspeak channels are split up into areas for a reason. Cops must be in the cop channels at all times.<br/>
-				5. Civilians cannot be in any cop channels on teamspeak in order to gather information on their location or movements. Civs caught doing this will be removed the channel. Repeat offenders can be kicked or banned from both the game and teamspeak.<br/><br/>
+				§1 Spieler töten ohne jeden Role Play Grund ist verboten. Es muss eine eindeutige Kommunikation statt finden. Ist dies nicht der Fall ist es RDM und führt zum Kick/Ban. <br/>
+				§2 Spieler ohne Grund aus einem Hinterhalt zu erschiessen führt ebenfalls zum Ban. <br/>
+				§3 Wenn man nicht Teil eines Krieges ist, verlasst das Gebiet. Solltet ihr trotz dieser Info bei einem Feuergefecht getötet werden habt ihr keine Anspruch auf Schadenersatz. <br/>
+				§4 Selbstjustiz wird bestraft!! <br/>
+				§5 Andere Spieler töten weil sie einem keine Geldbeträge gegeben haben wird mit Gefängnis bestraft. <br/><br/>
+				§6 Wird man in einer Role Play Aktion getötet, darf man als: <br/>
+				• Polizist den Tatort für 15 Minuten nicht betreten <br/>
+				• Zivilist den Tatort für 15 Minuten nicht betreten <br/><br/>
 				"
 		]
 	];
 	
-	player createDiaryRecord ["serverrules",
+	player createDiaryRecord ["serverregeln",
 		[
-			"Random Deathmatching (RDM)", 
+			"Kommunikation", 
 				"
-				Items on this list may result in your removal from the server and/or ban, based on the admins discretion.<br/><br/>
+				Folgendes kann je nach Ansicht des Admins zu einem Kick bzw. bis zum permanenten Ausschluss aus dem Spiel fuehren.<br/><br/>
 				
-				1. Killing anyone without a roleplay cause.<br/>
-				2. Declaring a rebellion is not a cause to kill anyone, even cops.<br/>
-				3. Cops and civilians/rebels can only commence in a shootout if there are reasons relating to a crime.<br/>
-				4. If you are killed in the crossfire of a fight, it is not RDM.<br/>
-				5. Killing someone in an attempt to protect yourself or others is not RDMing.<br/>
-				6. Shooting a player without giving reasonable time to follow demands is considered RDM.<br/><br/>
-				
-				These are all judged by admins on a case by case basis.<br/><br/>
+				§1 	Abspielen von Musik in einem Channel.<br/>
+				§2 	Rassistische Aeusserungen im Chat oder Voice<br/>
+				§3 	Extreme Beleidigung anderer Mitspieler, Admins oder Regierungsmitglieder<br/>
+				§4 	Uebertrieben vulgaere Sprache<br/>
+				§5 	Spam in Chat Channels.<br/>
+				§6 	Teamspeakteilnahme nur um Gegner auszulauschen oder Positionsdaten und andere Infos zu kriegen.<br/>
+				§7 	Teamspeak ist freiwillig! Erleichtert aber enorm die Organisation und Verstaendigung innerhalb einzelner Gruppierungen.<br/>
+				§8 	Im Teamspeak gibt es nicht umsonst verschiedene Raeume. Bei Teilnahme bitte dementsprechend aufhalten. Polizisten bei Polizei, Mafiosi wo anders :)<br/>
+				§9 	Besonders als Polizist sollte man davon ausgehen, dass sich nicht jeder im Teamspeak befindet. Direct Ingame Voice/Chat wird immer von allen im Umkreis 50m gehoert!<br/><br/>
 				"
 		]
 	];
-	player createDiaryRecord ["serverrules",
+	player createDiaryRecord ["serverregeln",
 		[
-			"New Life Rule", 
+			"Neues Leben - Regeln", 
 				"
-				The New Life Rule applies to police and civilians.<br/><br/>
+				Gueltig fuer Einwohner und Regierung.<br/><br/>
 				
-				Items on this list may result in your removal from the server and/or ban, based on the admins discretion.<br/><br/>
+				Folgendes kann je nach Ansicht des Admins zu einem Kick bzw. bis zum permanenten Ausschluss aus dem Spiel fuehren.<br/><br/>
 
-				1. If you are killed you must wait 15 minutes before returning to the scene of your death.<br/>
-				2. If you die during roleplay your past crimes are forgotten, but you also cannot seek revenge.<br/>
-				3. If you are RDM'd, it is not a new life.<br/>
-				4. If you manually respawn, it is not a new life.<br/>
-				5. If you purposefully kill yourself to avoid roleplay, it is not a new life.<br/><br/>
+				1. 	Wenn du stirbst musst du mind. 15 Minuten warten bevor du an den Ort, wo du gestorben bist, zurueckkehrst.<br/>
+				2. 	Wer als Verbrecher stirbt verliert alle seine Straftaten. Du darfst aber auch keine Rache suchen.<br/>
+				3. 	Wenn du durch einen Amoklauf (RDM) gestorben bist ist das kein neues Leben!)<br/>
+				4. 	Wer selbst respawnt, verliert seine Straftaten nicht.<br/>
+				5. 	Wer sich absichtlich umbringt, verliert seine Straftaten nicht.<br/>
+				6. 	Mit Serverneustart beginnt ein neues Leben<br/><br/>
 				"
 		]
 	];
 
-	player createDiaryRecord ["serverrules",
+	player createDiaryRecord ["serverregeln",
 		[
-			"Don't Be A Dick!", 
+			"DSei kein Idiot!", 
 				"
-				If an admin has to tell you that you are being a dick, you are doing dickish things.<br/>
-				Causing others grief, disrupting roleplay, the list goes on.<br/>
-				Just don't be a dick okay?<br/>
-				This rule may be invoked at an admin's discretion.<br/><br/>
+				Wenn dir ein Admin sagt, du bist ein Idiot, dann machst du vermutlich idiotische Sachen.<br/>
+				Denkt einfach, wie ihr im echten Leben handeln wuerdet und handelt dementsprechend. Das nennt man RPG (Role Play Gaming)<br/>
+				Sei kein Idiot, okay?<br/><br/>
 				"
 		]
 	];
