@@ -50,10 +50,10 @@ switch(playerSide) do {
 	};
 	
 	case civilian: {
-		__CONST__(life_adac,parseNumber(_this select 11));
+		__CONST__(life_adaclevel,parseNumber(_this select 11));
 		
 		//Trenne Konten und Gear von ADAC und Zivilisten
-		if(__GETC__(life_adac) == 1) then {
+		if(__GETC__(life_adaclevel) == 1) then {
 		life_cash = parseNumber (_this select 9);
 		life_atmcash = parseNumber (_this select 10);
 		civ_gear = _this select 12;
