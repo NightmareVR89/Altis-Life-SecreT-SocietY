@@ -32,6 +32,8 @@ switch(_type) do
 	case "482": {_type = ["Versuchter Drogenverkauf",5000]};
 	case "483": {_type = ["Drogenhandel",9500]};
 	case "459": {_type = ["Einbruch",6500]};
+	case "weapon": {_type = ["Besitz illegaler Waffen",4000]};
+	case "policeitems": {_type = ["Besitz von Polizeigegenständen",5000]};
 	default {_type = [];};
 };
 
