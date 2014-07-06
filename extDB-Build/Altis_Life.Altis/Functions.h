@@ -262,6 +262,12 @@ class Life_Client_Core
 		class demoChargeTimer {};
 	};
 	
+	class ADAC
+	{
+		file = "core\adac";
+		class adacLoadGear {};
+	};
+	
 	class Vehicle
 	{
 		file = "core\vehicle";

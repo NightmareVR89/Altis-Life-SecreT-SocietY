@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File:
 */
@@ -16,9 +17,14 @@ _packet set[count _packet,_array];
 switch (playerSide) do {
 	case west: {_packet set[count _packet,cop_gear];};
 	case civilian: {
-		[] call life_fnc_civFetchGear;
+			[] call life_fnc_civFetchGear;
 		_packet set[count _packet,civ_gear];
 		_packet set[count _packet,life_is_arrested];
+			if(__GETC__(life_adac) == 1) then {
+				_packet set[8,true];
+			} else {
+				_packet set[8,false];
+			};
 	};
 };
 
