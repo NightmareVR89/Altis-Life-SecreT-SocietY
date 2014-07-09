@@ -1,7 +1,7 @@
 /*
 	File: fn_payLoad.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	This is the payload that is sent to the client and forces them
 	to initialize key functions.
@@ -20,28 +20,68 @@ __CONST__(DO_NUKE,"LOL");
 __CONST__(JxMxE_spunkveh,"Blah");
 __CONST__(JxMxE_spunkveh2,"Blah");
 __CONST__(JxMxE_spunkair,"Blah");
-
+__CONST__(JJJJ_MMMM___EEEEEEE_LLYYSSTTIICCC_SHIT_RE,"No");
+__CONST__(JJJJ_MMMM___EEEEEEE_LLYYSSTTIICCC_SHIT_RE_OLD,"No");
+__CONST__(JJJJ_MMMM___EEEEEEE_SPAWN_VEH,"No");
+__CONST__(JJJJ_MMMM___EEEEEEE_SPAWN_WEAPON,"No");
 if(!(__GETC__(SPY_cfg_enableSys))) exitWith {}; //Don't waste anymore time since it was disabled.
-if(__GETC__(life_adminlevel) != 0) exitWith {}; //Don't run this for admins?
+//if(__GETC__(life_adminlevel) != 0) exitWith {}; //Don't run this for admins?
 
 //Make sure all functions were offloaded to the client..
 waitUntil {!isNil "SPY_fnc_menuCheck" && !isNil "SPY_fnc_variablecheck" && !isNil "SPY_fnc_cmdMenuCheck"};
 
 //Browse through the CfgPatches and check if any patches not white-listed by the server admin exist. Default configuration allows no extra addons.
+
 if(__GETC__(SPY_cfg_runPatchCheck)) then {
 	_binConfigPatches = configFile >> "CfgPatches";
 	for "_i" from 0 to count (_binConfigPatches)-1 do {
 		_patchEntry = _binConfigPatches select _i;
 		if(isClass _patchEntry) then {
 			if(!((configName _patchEntry) in (call SPY_cfg_patchList))) exitWith {
-				[[player getVariable["realname",name player],getPlayerUID player,(configName _patchEntry)],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
-				[[player getVariable["realname",name player],format["Unknown Addon Patch: %1",(configName _patchEntry)]],"SPY_fnc_notifyAdmins",true,false] spawn life_fnc_MP;
+				[[profileName,getPlayerUID player,(configName _patchEntry)],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
+				[[profileName,format["Unknown Addon Patch: %1",(configName _patchEntry)]],"SPY_fnc_notifyAdmins",true,false] spawn life_fnc_MP;
 				sleep 0.5;
-				["SpyGlass",false,true] call BIS_fnc_endMission;
+				["SpyGlass",false,false] call BIS_fnc_endMission;
 			};
 		};
 	};
 };
+
+//Check for copy-pasters of Dev-Con styled execution.
+private["_children","_allowedChildren"];
+_children = [configFile >> "RscDisplayMPInterrupt" >> "controls",0] call BIS_fnc_returnChildren;
+_allowedChildren = [
+"Title","MissionTitle","DifficultyTitle","PlayersName","ButtonCancel","ButtonSAVE","ButtonSkip","ButtonRespawn","ButtonOptions",
+"ButtonVideo","ButtonAudio","ButtonControls","ButtonGame","ButtonTutorialHints","ButtonAbort","DebugConsole","Feedback","MessageBox"
+];
+
+{
+	if(!((configName _x) in _allowedChildren)) exitWith {
+		[[profileName,getPlayerUID player,"Modified_MPInterrupt"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
+		[[profileName,"Devcon like executor detected"],"SPY_fnc_notifyAdmins",true,false] spawn life_fnc_MP;
+		sleep 0.5;
+		["SpyGlass",false,false] call BIS_fnc_endMission;
+	};
+} foreach _children;
+
+//Validate that RscDisplayInventory is not modified common cheat-engine sqf executor method.
+private["_onLoad","_onUnload"];
+_onLoad = getText(configFile >> "RscDisplayInventory" >> "onLoad");
+_onUnload = getText(configFile >> "RscDisplayInventory" >> "onUnload");
+
+if(_onLoad != "[""onLoad"",_this,""RscDisplayInventory"",'IGUI'] call compile preprocessfilelinenumbers ""A3\ui_f\scripts\initDisplay.sqf""") exitWith {
+	[[profileName,getPlayerUID player,"Modified_RscDisplayInventory_onLoad"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
+	[[profileName,"Modified RscDisplayInventory_onLoad (CheatEngine injection)"],"SPY_fnc_notifyAdmins",true,false] spawn life_fnc_MP;
+	sleep 0.5;
+	["SpyGlass",false,false] call BIS_fnc_endMission;
+};
+if(_onUnload != "[""onUnload"",_this,""RscDisplayInventory"",'IGUI'] call compile preprocessfilelinenumbers ""A3\ui_f\scripts\initDisplay.sqf""") exitWith {
+	[[profileName,getPlayerUID player,"Modified_RscDisplayInventory_onUnload"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
+	[[profileName,"Modified RscDisplayInventory_onUnload (CheatEngine injection)"],"SPY_fnc_notifyAdmins",true,false] spawn life_fnc_MP;
+	sleep 0.5;
+	["SpyGlass",false,false] call BIS_fnc_endMission;
+};
+
 
 //Launch our workers
 [] call SPY_fnc_menuCheck;
@@ -52,8 +92,8 @@ if(__GETC__(SPY_cfg_runPatchCheck)) then {
 [] spawn {
 	while {true} do {
 		if((unitRecoilCoefficient player) < 1) then {
-			[[player getVariable["realname",name player],getPlayerUID player,"No_recoil_hack"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
-			[[player getVariable["realname",name player],"No recoil hack"],"SPY_fnc_notifyAdmins",true,false] spawn life_fnc_MP;
+			[[profileName,getPlayerUID player,"No_recoil_hack"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
+			[[profileName,"No recoil hack"],"SPY_fnc_notifyAdmins",true,false] spawn life_fnc_MP;
 			sleep 0.5;
 			["SpyGlass",false,false] call BIS_fnc_endMission;
 		};
