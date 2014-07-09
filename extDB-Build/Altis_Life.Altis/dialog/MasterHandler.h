@@ -20,6 +20,7 @@
 #include "spawnSelection.hpp"
 #include "chop_shop.h"
 #include "pInteraction.h"
+#include "pInteraction_adac.h"
 #include "deathScreen.h"
 #include "vehicleShop.h"
 #include "settings.h"

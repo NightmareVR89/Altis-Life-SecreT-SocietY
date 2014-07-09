@@ -520,6 +520,24 @@
 			<Original>Send to jail</Original>
 		</Key>
 	</Package>
+	<Package name="Player_Interaction_ADAC">
+		<Key ID="STR_adacpInAct_checkMembership">
+			<Original>Check Membership</Original>
+			<German>Ueberpruefe Mitgliedschaft</German>
+		</Key>
+		<Key ID="STR_adacpInAct_sellMembership">
+			<Original>Sell Membership</Original>
+			<German>Verkaufe Mitgliedschaft</German>
+		</Key>
+		<Key ID="STR_adacpInAct_takeMembership">
+			<Original>Take Membership</Original>
+			<German>Entziehe Mitgliedschaft</German>
+		</Key>
+		<Key ID="STR_adacpInAct_TicketBtn">
+			<Original>Make out a bill</Original>
+			</German>Stelle Rechnung aus</German>
+		</Key>
+	</Package>
 	<Package name="Vehicle_Interaction">
 		<Key ID="STR_vInAct_Title">
 			<Original>Vehicle Interaction Menu</Original>

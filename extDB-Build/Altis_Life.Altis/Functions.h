@@ -266,6 +266,9 @@ class Life_Client_Core
 	{
 		file = "core\adac";
 		class adacLoadGear {};
+		class adacInteractionMenu {};
+		class adacLicenseCheck {};
+		class adacLicensesRead {};
 	};
 	
 	class Vehicle
