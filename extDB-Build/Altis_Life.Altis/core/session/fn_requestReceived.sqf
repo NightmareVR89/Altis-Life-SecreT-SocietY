@@ -56,21 +56,21 @@ switch(playerSide) do {
 		life_cash = parseNumber (_this select 9);
 		life_atmcash = parseNumber (_this select 10);
 		civ_gear = _this select 12;
-		[] spawn life_fnc_adacLoadGear;
+		//[] spawn life_fnc_adacLoadGear;
 		} else {
 		life_cash = parseNumber (_this select 2);
 		life_atmcash = parseNumber (_this select 3);
 		civ_gear = _this select 8;
-		[] spawn life_fnc_civLoadGear;
+		//[] spawn life_fnc_civLoadGear;
 		};
 		//Konten- und Geartrennung ende
-		
+		[] spawn life_fnc_civLoadGear;
 		life_is_arrested = _this select 7;
 		//life_is_arrested = call compile format["%1", _this select 7];
 		civ_gear = _this select 8;
 		__CONST__(life_coplevel,0);
 		__CONST__(life_medicLevel,0);
-		life_houses = _this select 9;
+		life_houses = _this select 13;
 		{
 			_house = nearestBuilding (call compile format["%1", _x select 0]);
 			life_vehicles set[count life_vehicles,_house];
