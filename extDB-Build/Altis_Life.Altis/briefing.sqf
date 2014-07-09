@@ -289,7 +289,7 @@ player createDiarySubject ["bgeld","Bußgeldkatalog"];
 			"Allgemein", 
 				"
 				§1 Jeder kann eine Gang gründen oder beitreten. <br/>
-				§2 Eine Gang ist KEINE Gruppierung wie z.B. McReb und dürfen keinen "Krieg" führen. <br/><br/>
+				§2 Eine Gang ist KEINE Gruppierung wie z.B. McReb und dürfen keinen ''Krieg'' führen. <br/><br/>
 				"
 		]
 	];
@@ -348,7 +348,7 @@ player createDiarySubject ["bgeld","Bußgeldkatalog"];
 				§1 Im Rebellengebiet herrscht ROLEPLAY. <br/>
 				§2 Es gibt keine Safezones im Rebellengebiet <br/>
 				§3 Es sollte nicht eine Person mehrfach hintereinander ausgeraubt werden. <br/>
-				§4 Im Rebellengebiet hat die Polizei keine "Macht". Das heißt, die Polizei ist nicht verpflichtet dort Streife zu fahren oder jemanden dort zu helfen. <br/><br/>
+				§4 Im Rebellengebiet hat die Polizei keine ''Macht''. Das heißt, die Polizei ist nicht verpflichtet dort Streife zu fahren oder jemanden dort zu helfen. <br/><br/>
 				"
 		]
 	];
@@ -412,7 +412,7 @@ player createDiarySubject ["bgeld","Bußgeldkatalog"];
 	
 	player createDiaryRecord ["policerules",
 		[
-			Grenzbereichregeln",
+			"Grenzbereichregeln",
 				"
 				Du musst dich an alle Polizeiregeln halten, auch wenn du hier stationiert bist.<br/><br/>
 
