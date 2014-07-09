@@ -569,5 +569,9 @@
 		<Key ID="STR_vInAct_DeviceMine">
 			<Original>Mine from device</Original>
 		</Key>
+		<Key ID="STR_vInAct_adacTow">
+			<Original>Tow Vehicle</Original>
+			<German>Fahrzeug Abschleppen</German>
+		</Key>
 	</Package>
 </Project>

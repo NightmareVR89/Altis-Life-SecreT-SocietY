@@ -44,7 +44,7 @@ _Btn3 buttonSetAction "[[5],""life_fnc_removeLicenses"",life_pInact_curTarget,fa
 
 //Stelle Rechnung aus
 _Btn4 ctrlSetText localize "STR_adacpInAct_TicketBtn";
-_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_ADACticketAction;";
+_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_adacStelltNeRechnungAus;";
 
 //
 */

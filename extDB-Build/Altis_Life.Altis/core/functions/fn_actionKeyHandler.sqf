@@ -50,6 +50,10 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 	if((_curTarget getVariable["restrained",false]) && !dialog && playerSide == west) then {
 		[_curTarget] call life_fnc_copInteractionMenu;
 	};
+	//Gib dem ADAC sein Menü :)
+	if(__GETC__(life_adaclevel) == 1 && player distance _curTarget < 5 && !dialog && playerSide == civilian) then {
+		[_curTarget] call life_fnc_adacInteractionMenu;
+	};
 } else {
 	//OK, it wasn't a player so what is it?
 	private["_isVehicle","_miscItems","_money"];

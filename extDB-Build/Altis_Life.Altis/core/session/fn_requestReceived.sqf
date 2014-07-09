@@ -39,8 +39,6 @@ switch(playerSide) do {
 		life_cash = parseNumber (_this select 2);
 		life_atmcash = parseNumber (_this select 3);
 		//
-		life_cash = parseNumber (_this select 2);
-		life_atmcash = parseNumber (_this select 3);
 		__CONST__(life_coplevel,parseNumber(_this select 7));
 		cop_gear = _this select 8;
 		[] spawn life_fnc_loadGear;
