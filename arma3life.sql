@@ -9,6 +9,7 @@ SET time_zone = "+00:00";
 
 --
 -- Database: `arma3life`
+-- Default Schema
 --
 CREATE DATABASE IF NOT EXISTS `arma3life` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `arma3life`;
@@ -16,6 +17,7 @@ USE `arma3life`;
 DELIMITER $$
 --
 -- Procedures
+-- Edit arma3 and root to match a user in MySQL
 --
 CREATE DEFINER=`arma3`@`localhost` PROCEDURE `resetLifeVehicles`()
 BEGIN
@@ -98,23 +100,15 @@ CREATE TABLE IF NOT EXISTS `vehicles` (
 -- Tabelle für das Hausscript `houses`
 --
 
-DROP TABLE IF EXISTS `houses`;
-
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-
-CREATE TABLE `houses` (
-`id` int(11) NOT NULL AUTO_INCREMENT,
-`pid` varchar(32) NOT NULL,
-`pos` varchar(64) DEFAULT NULL,
-`inventory` longtext,
-`containers` longtext,
-`owned` tinyint(4) DEFAULT '0',
-PRIMARY KEY (`id`,`pid`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
-
-/*!40101 SET character_set_client = @saved_cs_client */;
-
+CREATE TABLE IF NOT EXISTS `houses` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `pid` varchar(32) NOT NULL,
+  `pos` varchar(64) DEFAULT NULL,
+  `inventory` longtext,
+  `containers` longtext,
+  `owned` tinyint(4) DEFAULT '0',
+  PRIMARY KEY (`id`,`pid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
