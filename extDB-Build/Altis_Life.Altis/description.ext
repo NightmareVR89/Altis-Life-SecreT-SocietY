@@ -66,8 +66,8 @@ class CfgDebriefing
 	class NotWhitelisted
 	{
 		title = "Mission Failed";
-		subtitle = "You are not white-listed to use this slot";
-		description = "You are not allowed to use this slot because you do not have the appropriate permissions, try another slot.";
+		subtitle = "Du bist nicht white-listed um diesen Slot zu benutzen";
+		description = "Du kannst diesen Slot nicht benutzen, probier einen anderen Slot.";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
@@ -76,8 +76,8 @@ class CfgDebriefing
 	class Blacklisted
 	{
 		title = "Mission Failed";
-		subtitle = "You are blacklisted from cops";
-		description = "You are not allowed to be a cop due to previous actions and the admins have removed you from being a cop.";
+		subtitle = "Du bist blacklisted von der Polizei";
+		description = "Sie sind nicht berechtigt als Polizist zu Spielen, aufgrund früherer Aktionen haben die Admins Sie aus dem Polizeidienst entfernt.";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
@@ -86,8 +86,8 @@ class CfgDebriefing
 	class SpyGlass
 	{
 		title = "The SpyGlass sees you";
-		subTitle = "You were detected by the SpyGlass";
-		description = "You were detected for cheating and have been reported to the server. Enjoy your day.";
+		subTitle = "Sie wurden erkannt von SpyGlass";
+		description = "Es wurde festgestellt das Sie Cheaten und es wurde an den Server Admin weitergeleite. Genießen Sie Ihren Tag!";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
