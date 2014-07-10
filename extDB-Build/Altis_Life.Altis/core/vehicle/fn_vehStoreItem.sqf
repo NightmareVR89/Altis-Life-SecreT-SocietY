@@ -1,4 +1,4 @@
-#define ctrlSelData(ctrl) (lbData[##ctrl,(lbCurSel ##ctrl)])
+﻿#define ctrlSelData(ctrl) (lbData[##ctrl,(lbCurSel ##ctrl)])
 /*
 	File: fn_vehStoreItem.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -12,9 +12,9 @@ disableSerialization;
 
 _ctrl = ctrlSelData(3503);
 _num = ctrlText 3506;
-if(!([_num] call fnc_isnumber)) exitWith {hint "Invalid Number format";};
+if(!([_num] call fnc_isnumber)) exitWith {hint "Falsches Nummernformat";};
 _num = parseNumber(_num);
-if(_num < 1) exitWith {hint "You can't enter anything below 1!";};
+if(_num < 1) exitWith {hint "Du kannst keine Zahl unter 1 eingeben!";};
 
 if(life_trunk_vehicle isKindOf "House_F") then {
 	_mWeight = 0;
@@ -27,12 +27,12 @@ _itemWeight = ([_ctrl] call life_fnc_itemWeight) * _num;
 _veh_data = life_trunk_vehicle getVariable ["Trunk",[[],0]];
 _inv = _veh_data select 0;
 
-if(_ctrl == "goldbar" && {!(life_trunk_vehicle isKindOf "LandVehicle" OR life_trunk_vehicle isKindOf "House_F")}) exitWith {hint "You cannot store that in anything but a land vehicle!"};
+if(_ctrl == "goldbar" && {!(life_trunk_vehicle isKindOf "LandVehicle" OR life_trunk_vehicle isKindOf "House_F")}) exitWith {hint "Du kannst hier nichts als Landfahrzeuge lagern!"};
 
 if(_ctrl == "money") then
 {
 	_index = [_ctrl,_inv] call fnc_index;
-	if(life_cash < _num) exitWith {hint "You don't have that much cash on you to store in the vehicle!"};
+	if(life_cash < _num) exitWith {hint "Du hast nicht so viel Bargeld dabei, wie du im Fahrzeug lagern willst!"};
 	if(_index == -1) then
 	{
 		_inv set[count _inv,[_ctrl,_num]];
@@ -49,9 +49,9 @@ if(_ctrl == "money") then
 }
 	else
 {
-	if(((_totalWeight select 1) + _itemWeight) > (_totalWeight select 0)) exitWith {hint "The vehicle is either full or cannot hold that much."};
+	if(((_totalWeight select 1) + _itemWeight) > (_totalWeight select 0)) exitWith {hint "Das Fahrzeug ist entweder voll, oder es kann nicht so viel lagern."};
 
-	if(!([false,_ctrl,_num] call life_fnc_handleInv)) exitWith {hint "Couldn't remove the items from your inventory to put in the vehicle.";};
+	if(!([false,_ctrl,_num] call life_fnc_handleInv)) exitWith {hint "Konnte den Gegenstand nicht aus deinem Inventar entfernen um ihn im Fahrzeug zu lagern.";};
 	_index = [_ctrl,_inv] call fnc_index;
 	if(_index == -1) then
 	{

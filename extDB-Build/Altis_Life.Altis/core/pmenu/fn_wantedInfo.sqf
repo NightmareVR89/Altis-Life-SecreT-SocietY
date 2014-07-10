@@ -1,4 +1,4 @@
-/*
+﻿/*
 	File: fn_wantedInfo.sqf
 	Author: Bryan "Tonic" Boardwine
 	
@@ -13,9 +13,9 @@ _list = _display displayCtrl 2402;
 _data = lbData[2401,(lbCurSel 2401)];
 _mylist = [];
 _data = call compile format["%1", _data];
-if(isNil "_data") exitWith {_list lbAdd "Failed to fetch crimes";};
-if(typeName _data != "ARRAY") exitWith {_list lbAdd "Failed to fetch crimes";};
-if(count _data == 0) exitWith {_list lbAdd "Failed to fetch crimes";};
+if(isNil "_data") exitWith {_list lbAdd "Fehler beim Abrufen der Verbrecherliste";};
+if(typeName _data != "ARRAY") exitWith {_list lbAdd "Fehler beim Abrufen der Verbrecherliste";};
+if(count _data == 0) exitWith {_list lbAdd "Fehler beim Abrufen der Verbrecherliste";};
 lbClear _list;
 
 _crimes = _data select 2;

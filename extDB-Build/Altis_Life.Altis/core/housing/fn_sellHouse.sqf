@@ -1,4 +1,4 @@
-#include <macro.h>
+ï»¿#include <macro.h>
 /*
 	Author: Bryan "Tonic" Boardwine
 	
@@ -17,9 +17,9 @@ _houseCfg = [(typeOf _house)] call life_fnc_houseConfig;
 if(count _houseCfg == 0) exitWith {};
 
 _action = [
-	format["Are you sure you want to sell your house? It will sell for: <t color='#8cff9b'>$%1</t>",
+	format["Bist du sicher, dass du dein Haus verkaufen willst? Es wird dann für <t color='#8cff9b'>$%1</t> verkauft",
 	[(_houseCfg select 0)] call life_fnc_numberText,
-	(_houseCfg select 1)],"Sell House","Sell","Cancel"
+	(_houseCfg select 1)],"Verkaufe Haus","Verkaufen","Abbrechen"
 ] call BIS_fnc_guiMessage;
 
 if(_action) then {

@@ -1,19 +1,19 @@
-/*
+ï»¿/*
 	File: fn_chopShopMenu.sqf
 	Author: Bryan "Tonic" Boardwine
 	
 	Description:
 	Opens & initializes the chop shop menu.
 */
-if(life_action_inUse) exitWith {hint "An action is already being processed..."};
+if(life_action_inUse) exitWith {hint "Es wird gerade eine Aktion ausgeführt..."};
 disableSerialization;
 private["_nearVehicles","_control"];
 _nearVehicles = nearestObjects [getMarkerPos (_this select 3),["Car","Truck"],25];
 
 life_chopShop = (_this select 3);
 //Error check
-if(count _nearVehicles == 0) exitWith {titleText["There are no vehicles near to sell.","PLAIN"];};
-if(!(createDialog "Chop_Shop")) exitWith {hint "There was a problem opening the chop shop menu."};
+if(count _nearVehicles == 0) exitWith {titleText["Es sind keine Fahrzeuge in der Nähe, die verkauft werden können.","PLAIN"];};
+if(!(createDialog "Chop_Shop")) exitWith {hint "Es gab ein Problem beim Öffnen des Chop Shop Menüs."};
 
 _control = ((findDisplay 39400) displayCtrl 39402);
 {

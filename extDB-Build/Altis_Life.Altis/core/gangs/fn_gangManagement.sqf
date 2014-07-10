@@ -1,4 +1,4 @@
-/*
+ï»¿/*
 	File: fn_gangManagement.sqf
 	Author: Bryan "Tonic" Boardwine
 	
@@ -71,12 +71,12 @@ for "_i" from 0 to (count _units)-1 do
 	{
 		case ((_units select _i) == leader(group player)) :
 		{
-			_members lbAdd format["%1 [Leader]",name (_units select _i)];
+			_members lbAdd format["%1 [Leiter]",name (_units select _i)];
 		};
 		
 		case ((getPlayerUID (_units select _i)) == _ownerID) :
 		{
-			_members lbAdd format["%1 [Founder]", name (_units select _i)];
+			_members lbAdd format["%1 [Gründer]", name (_units select _i)];
 		};
 		
 		default 

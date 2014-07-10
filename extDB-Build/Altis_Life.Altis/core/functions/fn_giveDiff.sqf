@@ -1,4 +1,4 @@
-/*
+ï»¿/*
 	File: fn_giveDiff.sqf
 	Author: Bryan "Tonic" Boardwine
 	
@@ -19,13 +19,13 @@ if(_bool) then
 {
 	if(([true,_item,(parseNumber _val)] call life_fnc_handleInv)) then
 	{
-		hint format["You tried to give %1 %2 %3 but they couldn't hold that so it was returned.",_from getVariable["realname",name _from],_val,_type];
+		hint format["Du hast versucht %1 %2 %3 zu geben, aber es wurde zurückgegeben, weil %1 es nicht tragen konnte.",_from getVariable["realname",name _from],_val,_type];
 	};
 }
 	else
 {
 	if(([true,_item,(parseNumber _val)] call life_fnc_handleInv)) then
 	{
-		hint format["%1 returned %2 %3 because they couldn't hold that amoumt.",_from getVariable["realname",name _from],_val,_type];
+		hint format["%1 gab dir %2 %3 wieder, weil %1 nicht so viel tragen kann.",_from getVariable["realname",name _from],_val,_type];
 	};
 };

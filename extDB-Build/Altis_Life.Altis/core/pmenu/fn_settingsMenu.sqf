@@ -1,4 +1,4 @@
-/*
+ï»¿/*
 	File: fn_settingsMenu
 	Author: Bryan "Tonic" Boardwine
 	
@@ -7,7 +7,7 @@
 */
 if(isNull (findDisplay 2900)) then
 {
-	if(!createDialog "SettingsMenu") exitWith {hint "Something went wrong, the menu won't open?"};
+	if(!createDialog "SettingsMenu") exitWith {hint "Irgendwas stimmt nicht, das Menü will sich nicht öffnen"};
 };
 
 disableSerialization;
@@ -39,28 +39,28 @@ if(isNil "life_tagson") then {
 
 if(life_revealObjects) then {
 	_objs ctrlSetTextColor [0,1,0,1];
-	_objs ctrlSetText "ON";
+	_objs ctrlSetText "AN";
 	_objs buttonSetAction "[LIFE_ID_RevealObjects,""onEachFrame""] call BIS_fnc_removeStackedEventHandler; life_revealObjects = false; [] call life_fnc_settingsMenu;";
 } else {
 	_objs ctrlSetTextColor [1,0,0,1];
-	_objs ctrlSetText "OFF";
+	_objs ctrlSetText "AUS";
 	_objs buttonSetAction "LIFE_ID_RevealObjects = [""LIFE_RevealObjects"",""onEachFrame"",""life_fnc_revealObjects""] call BIS_fnc_addStackedEventHandler; life_revealObjects = true; [] call life_fnc_settingsMenu;";
 };
 
 if(life_tagson) then {
 	_tags ctrlSetTextColor [0,1,0,1];
-	_tags ctrlSetText "ON";
+	_tags ctrlSetText "AN";
 	_tags buttonSetAction "[LIFE_ID_PlayerTags,""onEachFrame""] call BIS_fnc_removeStackedEventHandler; life_tagson = false; [] call life_fnc_settingsMenu;";
 } else {
 	_tags ctrlSetTextColor [1,0,0,1];
-	_tags ctrlSetText "OFF";
+	_tags ctrlSetText "AUS";
 	_tags buttonSetAction "LIFE_ID_PlayerTags = [""LIFE_PlayerTags"",""onEachFrame"",""life_fnc_playerTags""] call BIS_fnc_addStackedEventHandler; life_tagson = true; [] call life_fnc_settingsMenu;";
 };
 
 if(life_sidechat) then {
 	_side ctrlSetTextColor [0,1,0,1];
-	_side ctrlSetText "ON";
+	_side ctrlSetText "AN";
 } else {
 	_side ctrlSetTextColor [1,0,0,1];
-	_side ctrlSetText "OFF";
+	_side ctrlSetText "AUS";
 };

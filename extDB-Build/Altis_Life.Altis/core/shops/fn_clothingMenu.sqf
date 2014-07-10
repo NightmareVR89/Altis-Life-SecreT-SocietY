@@ -1,4 +1,4 @@
-/*
+ï»¿/*
 	File: fn_clothingMenu.sqf
 	Author: Bryan "Tonic" Boardwine
 	
@@ -11,9 +11,9 @@ createDialog "Life_Clothing";
 disableSerialization;
 
 //Cop / Civ Pre Check
-if((_this select 3) in ["bruce","dive","reb","kart"] && playerSide != civilian) exitWith {hint "You need to be a civilian to use this store!"; closeDialog 0;};
-if((_this select 3) == "reb" && !license_civ_rebel) exitWith {hint "You don't have rebel training yet!"; closeDialog 0;};
-if((_this select 3) in ["cop"] && playerSide != west) exitWith {hint "You need to be a cop to use this store!"; closeDialog 0;};
+if((_this select 3) in ["bruce","dive","reb","kart"] && playerSide != civilian) exitWith {hint "Du musst Zivilist sein, um hier einzukaufen!"; closeDialog 0;};
+if((_this select 3) == "reb" && !license_civ_rebel) exitWith {hint "Du bist noch nicht als Rebell ausgebildet worden!"; closeDialog 0;};
+if((_this select 3) in ["cop"] && playerSide != west) exitWith {hint "Du musst Polizist sein um hier einkaufen zu können!"; closeDialog 0;};
 
 life_clothing_store = _this select 3;
 
@@ -21,7 +21,7 @@ life_clothing_store = _this select 3;
 _var = [life_clothing_store,0] call life_fnc_licenseType;
 if(_var select 0 != "") then
 {
-	if(!(missionNamespace getVariable (_var select 0))) exitWith {hint format["You need a %1 to buy from this shop!",[_var select 0] call life_fnc_varToStr]; closeDialog 0;};
+	if(!(missionNamespace getVariable (_var select 0))) exitWith {hint format["Du brauchst eine %1 um hier einkaufen zu können!",[_var select 0] call life_fnc_varToStr]; closeDialog 0;};
 };
 
 //initialize camera view
@@ -40,11 +40,11 @@ _filter = (findDisplay 3100) displayCtrl 3105;
 lbClear _filter;
 lbClear _list;
 
-_filter lbAdd "Clothing";
-_filter lbAdd "Hats";
-_filter lbAdd "Glasses";
-_filter lbAdd "Vests";
-_filter lbAdd "Backpacks";
+_filter lbAdd "Kleidung";
+_filter lbAdd "HÃ¼te";
+_filter lbAdd "Brillen";
+_filter lbAdd "Vesten";
+_filter lbAdd "RucksÃ¤cke";
 
 _filter lbSetCurSel 0;
 

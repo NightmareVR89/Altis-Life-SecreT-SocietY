@@ -1,4 +1,4 @@
-/*
+﻿/*
 	Author: Bryan "Tonic" Boardwine
 	
 	Description:
@@ -8,11 +8,11 @@ private["_boxType","_house","_positions","_containers","_pos","_houseCfg"];
 _boxType = _this select 0;
 
 _house = nearestBuilding (getPosATL player);
-if(!(_house in life_vehicles)) exitWith {hint "You need to be inside your house to place this."};
+if(!(_house in life_vehicles)) exitWith {hint "Du musst in deinem Haus sein um das aufzustellen."};
 _containers = _house getVariable["containers",[]];
 _houseCfg = [(typeOf _house)] call life_fnc_houseConfig;
 if(count _houseCfg == 0) exitWith {}; //What the fuck happened?
-if(count _containers >= (_houseCfg select 1)) exitWith {hint "You cannot place any more storage containers in your house."};
+if(count _containers >= (_houseCfg select 1)) exitWith {hint "Du kannst keine weiteren Lagerboxen in deinem Haus aufstellen."};
 
 _slots = _house getVariable ["slots",[]];
 _positions = [_house] call life_fnc_getBuildingPositions;
@@ -25,7 +25,7 @@ _pos = [0,0,0];
 		_pos = _x;
 	};
 } foreach _positions;
-if(_pos isEqualTo [0,0,0]) exitWith {hint "No more free storage spaces in your house."};
+if(_pos isEqualTo [0,0,0]) exitWith {hint "Es ist kein Lagerraum mehr frei in deinem Haus."};
 if(!([false,_boxType,1] call life_fnc_handleInv)) exitWith {};
 switch (_boxType) do {
 	case "storagesmall": {

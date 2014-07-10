@@ -1,4 +1,4 @@
-#include <macro.h>
+ï»¿#include <macro.h>
 /*
 	File: fn_vehicleShopLBChange.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -21,7 +21,7 @@ _trunkSpace = [_className] call life_fnc_vehicleWeightCfg;
 
 ctrlShow [2330,true];
 (getControl(2300,2303)) ctrlSetStructuredText parseText format[
-"Rental Price: <t color='#8cff9b'>$%1</t><br/>Ownership Price: <t color='#8cff9b'>$%2</t><br/>Max Speed: %3 km/h<br/>Horse Power: %4<br/>Passenger Seats: %5<br/>Trunk Capacity: %6<br/>Fuel Capacity: %7<br/>Armor Rating: %8",
+"Mietpreis: <t color='#8cff9b'>$%1</t><br/>Kaufpreis: <t color='#8cff9b'>$%2</t><br/>Maximalgeschwindigkeit: %3 km/h<br/>PS: %4<br/>Sitzplätze: %5<br/>Kofferraumvolumen: %6<br/>Tankvolumen: %7<br/>Panzerung: %8",
 [_basePrice] call life_fnc_numberText,
 [round(_basePrice * 1.5)] call life_fnc_numberText,
 _vehicleInfo select 8,

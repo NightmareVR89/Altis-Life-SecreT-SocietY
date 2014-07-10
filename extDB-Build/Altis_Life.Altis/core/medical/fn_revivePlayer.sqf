@@ -1,4 +1,4 @@
-/*
+ï»¿/*
 	File: fn_revivePlayer.sqf
 	Author: Bryan "Tonic" Boardwine
 	
@@ -11,12 +11,12 @@ if(isNull _target) exitWith {}; //DAFUQ?@!%$!R?EFFD?TGSF?HBS?DHBFNFD?YHDGN?D?FJH
 
 _revivable = _target getVariable["Revive",FALSE];
 if(_revivable) exitWith {};
-if(_target getVariable ["Reviving",ObjNull] == player) exitWith {hint "Someone else is already reviving this person";};
+if(_target getVariable ["Reviving",ObjNull] == player) exitWith {hint "Jemand anderes belebt diese Person gerade wieder";};
 if(player distance _target > 5) exitWith {}; //Not close enough.
 
 //Fetch their name so we can shout it.
 _targetName = _target getVariable["name","Unknown"];
-_title = format["Reviving %1",_targetName];
+_title = format["Belebe %1 wieder",_targetName];
 life_action_inUse = true; //Lockout the controls.
 
 _target setVariable["Reviving",player,TRUE];
@@ -53,19 +53,19 @@ while {true} do
 //Kill the UI display and check for various states
 5 cutText ["","PLAIN"];
 player playActionNow "stop";
-if(_target getVariable ["Reviving",ObjNull] != player) exitWith {hint "Someone else is already reviving this person"};
+if(_target getVariable ["Reviving",ObjNull] != player) exitWith {hint "Jemand anderes belebt diese Person gerade wieder"};
 _target setVariable["Reviving",NIL,TRUE];
 if(!alive player OR life_istazed) exitWith {life_action_inUse = false;};
-if(_target getVariable["Revive",FALSE]) exitWith {hint "This person either respawned or was already revived."};
+if(_target getVariable["Revive",FALSE]) exitWith {hint "Diese Person wurde schon wiederbelebt oder ist respawnt."};
 if((player getVariable["restrained",false])) exitWith {life_action_inUse = false;};
-if(!isNil "_badDistance") exitWith {titleText["You got to far away from the target.","PLAIN"]; life_action_inUse = false;};
-if(life_interrupted) exitWith {life_interrupted = false; titleText["Action cancelled","PLAIN"]; life_action_inUse = false;};
+if(!isNil "_badDistance") exitWith {titleText["Du bist zu weit weg.","PLAIN"]; life_action_inUse = false;};
+if(life_interrupted) exitWith {life_interrupted = false; titleText["Aktion abgebrochen","PLAIN"]; life_action_inUse = false;};
 
 life_atmcash = life_atmcash + (call life_revive_fee);
 life_action_inUse = false;
 _target setVariable["Revive",TRUE,TRUE];
 [[player getVariable["realname",name player]],"life_fnc_revived",_target,FALSE] spawn life_fnc_MP;
-titleText[format["You have revived %1 and received $%2 for your services.",_targetName,[(call life_revive_fee)] call life_fnc_numberText],"PLAIN"];
+titleText[format["Du hast %1 erfolgreich wiederbelebt und dafür $%2 bekommen.",_targetName,[(call life_revive_fee)] call life_fnc_numberText],"PLAIN"];
 
 sleep 0.6;
 player reveal _target;

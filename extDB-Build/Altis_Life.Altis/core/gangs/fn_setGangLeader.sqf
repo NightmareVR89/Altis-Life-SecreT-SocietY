@@ -16,7 +16,7 @@ _data = call compile format["%1", _data];
 
 _index = [life_my_gang,life_gang_list] call fnc_index;
 if(_index == -1) exitWith {};
-if(leader(group player) != player) exitWith {hint "You don't have the ability to do that."};
+if(leader(group player) != player) exitWith {hint "Du kannst das nicht."};
 
 _gang = life_gang_list select _index;
 _name = _gang select 0;

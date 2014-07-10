@@ -1,4 +1,4 @@
-/*
+﻿/*
 	File: fn_useItem.sqf
 	Author: Bryan "Tonic" Boardwine
 	
@@ -59,7 +59,7 @@ switch (true) do
 	
 	case (_item == "spikeStrip"):
 	{
-		if(!isNull life_spikestrip) exitWith {hint "Sie haben bereits ein Spike-Streifen in aktiven Einsatz"};
+		if(!isNull life_spikestrip) exitWith {hint "Sie haben bereits ein Nagelbrett ausgelegt"};
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
 			[] spawn life_fnc_spikeStrip;
@@ -68,7 +68,7 @@ switch (true) do
 	
 	case (_item == "fuelF"):
 	{
-		if(vehicle player != player) exitWith {hint "Sie können das Fahrzeug nicht tanken, während Sie drin sind!"};
+		if(vehicle player != player) exitWith {hint "Sie können das Fahrzeug nicht betanken, während Sie drin sind!"};
 		[] spawn life_fnc_jerryRefuel;
 	};
 	
@@ -89,7 +89,7 @@ switch (true) do
 	
 	default
 	{
-		hint "This item isn't usable.";
+		hint "Das ist kein benutzbarer Gegenstand.";
 	};
 };
 	

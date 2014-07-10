@@ -1,4 +1,4 @@
-/*
+ï»¿/*
 	File: fn_createGang.sqf
 	Author: Bryan "Tonic" Boardwine
 	
@@ -9,10 +9,10 @@ private["_value","_len","_group"];
 _value = ctrlText 2522;
 _len = [_value] call KRON_StrLen;
 
-if(_len > 25) exitWith {hint "The maximum character limit for a gang name is 25."};
-if(life_cash < 10000) exitWith {hint "You don't have $10,000 to create a gang!"};
-if(isNil {life_gang_list}) exitWith {hint "Server not authorized for feature."};
-if(([_value,life_gang_list] call fnc_index) != -1) exitWith {hint "That gang name is already taken!"};
+if(_len > 25) exitWith {hint "Es können maximal 25 Leute in einer Gang sein."};
+if(life_cash < 10000) exitWith {hint "Du hast keine $10,000 um eine Gang zu gründen!"};
+if(isNil {life_gang_list}) exitWith {hint "Der Server erlaubt keine Gangs."};
+if(([_value,life_gang_list] call fnc_index) != -1) exitWith {hint "Diesen Gangnamen gibt es bereits!"};
 
 _group = createGroup civilian;
 
