@@ -108,16 +108,16 @@
 			<Original>Zuschließen</Original>
 		</Key>
 		<Key ID="STR_Gang_Unlock">
-			<Original>Aufschließen/Original>
+			<Original>Aufschließen</Original>
 		</Key>
 		<Key ID="STR_Gang_Kick">
 			<Original>Kick</Original>
 		</Key>
 		<Key ID="STR_Gang_SetLeader">
-			<Original>Zum Anfuehrer bestimmen </Original>
+			<Original>Zum Anfuehrer bestimmen</Original>
 		</Key>
 		<Key ID="STR_Gang_PriceTxt">
-			<Original>Eine Gang erstellen kostet $10,000</Original>
+			<Original>Eine Gang erstellen Kostet $10,000</Original>
 		</Key>
 		<Key ID="STR_Gang_Create">
 			<Original>Erstellen</Original>
