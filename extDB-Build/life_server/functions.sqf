@@ -120,7 +120,7 @@ compileFinal "
 	if(player == _unit && !(_vehicle in life_vehicles)) then
 	{
 		_name = getText(configFile >> ""CfgVehicles"" >> (typeOf _vehicle) >> ""displayName"");
-		hint format[""%1 has gave you keys for a %2"",_giver,_name];
+		hint format[""%1 hat dir einen Schluessel gegeben für %2"",_giver,_name];
 		life_vehicles set[count life_vehicles, _vehicle];
 	};
 ";
@@ -253,6 +253,7 @@ publicVariable "fnc_cell_emsrequest";
 	2 = message to admin
 	3 = message from admin
 	4 = admin message to all
+	5 = medic anfrage
 */
 clientMessage =
 compileFinal "
@@ -322,10 +323,10 @@ compileFinal "
 		
 		case 5: {
 			private[""_message""];
-			_message = format[""!!!EMS REQUEST: %1"",_msg];
-			hint parseText format [""<t color='#FFCC00'><t size='2'><t align='center'>EMS Request<br/><br/><t color='#33CC33'><t align='left'><t size='1'>To: <t color='#ffffff'>You<br/><t color='#33CC33'>From: <t color='#ffffff'>%1<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%2"",_from,_msg];
+			_message = format[""!!!MEDIC ANFRAGE: %1"",_msg];
+			hint parseText format [""<t color='#FFCC00'><t size='2'><t align='center'>Medic Anfrage<br/><br/><t color='#33CC33'><t align='left'><t size='1'>To: <t color='#ffffff'>You<br/><t color='#33CC33'>From: <t color='#ffffff'>%1<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%2"",_from,_msg];
 			
-			[""TextMessage"",[format[""EMS Request from %1"",_from]]] call bis_fnc_showNotification;
+			[""TextMessage"",[format[""Medic anfrage von %1"",_from]]] call bis_fnc_showNotification;
 		};
 	};
 ";
