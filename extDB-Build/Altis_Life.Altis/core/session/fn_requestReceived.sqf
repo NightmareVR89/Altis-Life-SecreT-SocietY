@@ -51,7 +51,7 @@ switch(playerSide) do {
 	case civilian: {
 	
 		//Trenne Konten und Gear von ADAC und Zivilisten
-		if((str(player) in ["civ_71","civ_72","civ_73","civ_74","civ_75","civ_66","civ_67","civ_68","civ_69","civ_70"])) then {
+		if((player in ["civ_71","civ_72","civ_73","civ_74","civ_75","civ_66","civ_67","civ_68","civ_69","civ_70"])) then {
 		life_cash = parseNumber (_this select 9);
 		life_atmcash = parseNumber (_this select 10);
 		civ_gear = _this select 12;
