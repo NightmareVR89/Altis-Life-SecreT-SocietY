@@ -6,7 +6,7 @@
 	Picks up money
 */
 if((time - life_action_delay) < 1.5) exitWith {
-	hint "You can't rapidly use action keys!";
+	hint "Du kannst nicht schnell den Actionknopf druecken!";
 	if(!isNil {(_this select 0) getVariable "inUse"}) then {
 		_this select 0 setVariable["inUse",false,true];
 	};
@@ -32,7 +32,7 @@ if(!isNil {_val}) then
 	};
 	
 	player playmove "AinvPknlMstpSlayWrflDnon";
-	titleText[format["You have picked up $%1",[_val] call life_fnc_numberText],"PLAIN"];
+	titleText[format["Du hast $%1 aufgehoben",[_val] call life_fnc_numberText],"PLAIN"];
 	life_cash = life_cash + _val;
 	life_action_delay = time;
 };

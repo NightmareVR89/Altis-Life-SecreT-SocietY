@@ -6,7 +6,7 @@
 	Master handling for picking up an item.
 */
 private["_obj","_itemInfo","_itemName","_illegal","_diff"];
-if((time - life_action_delay) < 2) exitWith {hint "You can't rapidly use action keys!"};
+if((time - life_action_delay) < 2) exitWith {hint "Du kannst nicht schnell den Actionknopf druecken!"};
 _obj = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _obj OR isPlayer _obj) exitWith {};
 if((_obj getVariable["PickedUp",false])) exitWith {deleteVehicle _obj;}; //Object was already picked up.
@@ -16,7 +16,7 @@ _itemName = [([_itemInfo select 0,0] call life_fnc_varHandle)] call life_fnc_var
 _illegal = [_itemInfo select 0,life_illegal_items] call fnc_index;
 if(playerSide == west && _illegal != -1) exitWith
 {
-	titleText[format["%1 has been placed in evidence, you have received $%2 as a reward.",_itemName,[(life_illegal_items select _illegal) select 1] call life_fnc_numberText],"PLAIN"];
+	titleText[format["%1 wurde als Beweismittel gesichert, du erhaelst $%2 als Belohnung.",_itemName,[(life_illegal_items select _illegal) select 1] call life_fnc_numberText],"PLAIN"];
 	life_atmcash = life_atmcash + ((life_illegal_items select _illegal) select 1);
 	deleteVehicle _obj;
 	//waitUntil {isNull _obj};
@@ -24,7 +24,7 @@ if(playerSide == west && _illegal != -1) exitWith
 };
 life_action_delay = time;
 _diff = [_itemInfo select 0,_itemInfo select 1,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
-if(_diff <= 0) exitWith {hint "Can't pick up that item, you are full."};
+if(_diff <= 0) exitWith {hint "Du kannst das nicht aufheben, dein Inventar ist voll."};
 _obj setVariable["PickedUp",TRUE,TRUE];
 if(_diff != _itemInfo select 1) then
 {
@@ -34,7 +34,7 @@ if(_diff != _itemInfo select 1) then
 		sleep 0.5;
 		_obj setVariable["item",[_itemInfo select 0,((_itemInfo select 1) - _diff)],true];
 		_obj setVariable["PickedUp",false,true];
-		titleText[format["You picked up %1 %2",_diff,_itemName],"PLAIN"];
+		titleText[format["Du hast %1 %2 aufgehoben",_diff,_itemName],"PLAIN"];
 	};
 }
 	else
@@ -45,6 +45,6 @@ if(_diff != _itemInfo select 1) then
 		//waitUntil{isNull _obj};
 		player playmove "AinvPknlMstpSlayWrflDnon";
 		sleep 0.5;
-		titleText[format["You picked up %1 %2",_diff,_itemName],"PLAIN"];
+		titleText[format["Du hast %1 %2 aufgehoben",_diff,_itemName],"PLAIN"];
 	};
 };

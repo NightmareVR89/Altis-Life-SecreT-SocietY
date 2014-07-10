@@ -8,7 +8,7 @@
 */
 private["_index","_price","_val"];
 if(life_inv_turtle == 0) exitWith {
-	titleText["You don't have any turtles to sell.","PLAIN"];
+	titleText["Du hast keine Schildkroeten, die du verkaufen koenntest.","PLAIN"];
 };
 
 _index = ["turtle",__GETC__(sell_array)] call fnc_index;
@@ -17,6 +17,6 @@ _val = life_inv_turtle;
 _price = _price * _val;
 
 if([false,"turtle",life_inv_turtle] call life_fnc_handleInv) then {
-	titleText[format["You sold %1 turtle(s) for $%2",_val,[_price] call life_fnc_numberText],"PLAIN"];
+	titleText[format["Du hast %1 Schildkroete(n) fuer $%2 verkauft",_val,[_price] call life_fnc_numberText],"PLAIN"];
 	life_cash = life_cash + _price;
 };

@@ -6,7 +6,7 @@
 	Adds the tags above other players heads when close and have visible range.
 */
 private["_visible","_position","_nearUnits","_headgear"];
-_headgear = ["H_Shemag_olive","H_Shemag_khk"];
+_headgear = ["H_Shemag_olive","H_Shemag_khk","H_ShemagOpen_tan","H_ShemagOpen_khk"];
 
 _nearUnits = nearestObjects[(visiblePosition player),["Man"],35];
 {
@@ -22,7 +22,7 @@ _nearUnits = nearestObjects[(visiblePosition player),["Man"],35];
 				_position = visiblePosition _x;
 				_position set[2,(getPosATL _x select 2) + 2.2];
 				if((headgear _x) in _headgear) then {
-					drawIcon3D ["",[1,1,1,1],_position,0,0,0,"Masked Player",0,0.04];
+					drawIcon3D ["",[1,1,1,1],_position,0,0,0,"Maskierter Spieler",0,0.04];
 				} else {
 					drawIcon3D ["",[1,1,1,1],_position,0,0,0,_x getVariable["realname",name _x],0,0.04];
 				};

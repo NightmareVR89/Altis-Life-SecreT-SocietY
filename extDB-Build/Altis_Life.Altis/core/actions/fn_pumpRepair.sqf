@@ -17,7 +17,7 @@ if(life_cash < 500) then
 
 switch (_method) do
 {
-	case 0: {hint "You do not have $500 in cash or in your bank accoumt."};
-	case 1: {vehicle player setDamage 0; life_cash = life_cash - 500; hint "You have repaired your vehicle for $500";};
-	case 2: {vehicle player setDamage 0; life_atmcash = life_atmcash - 500; hint "You have repaired your vehicle for $500";};
+	case 0: {hint "Du hast keine $500 in Bar oder auf deinem Konto."};
+	case 1: {vehicle player setDamage 0; life_cash = life_cash - 500; hint "Du hast dein Fahrzeug fuer $500 repariert";};
+	case 2: {vehicle player setDamage 0; life_atmcash = life_atmcash - 500; hint "Du hast dein Fahrzeug fuer $500 repariert";};
 };

@@ -8,7 +8,7 @@
 */
 private["_index","_price","_val"];
 if(life_inv_goldbar == 0) exitWith {
-	titleText["You don't have any gold bar(s) to sell.","PLAIN"];
+	titleText["Du hast keine Goldbarren zum Verkaufen.","PLAIN"];
 };
 
 _index = ["goldbar",__GETC__(sell_array)] call fnc_index;
@@ -17,6 +17,6 @@ _val = life_inv_goldbar;
 _price = _price * _val;
 
 if([false,"goldbar",life_inv_goldbar] call life_fnc_handleInv) then {
-	titleText[format["You sold %1 gold bar(s) for $%2",_val,[_price] call life_fnc_numberText],"PLAIN"];
+	titleText[format["Du hast %1 Goldbarren fuer $%2 verkauft",_val,[_price] call life_fnc_numberText],"PLAIN"];
 	life_cash = life_cash + _price;
 };

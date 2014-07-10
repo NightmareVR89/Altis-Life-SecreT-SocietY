@@ -12,11 +12,11 @@ if(count (_nearby) > 1) then
 {
 	_vehicle = _nearby select 1;
 	_name = getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName");
-	titleText[format["Servicing %1 don't move...",_name],"PLAIN"];
+	titleText[format["Warte %1 nicht bewegen...",_name],"PLAIN"];
 	titleFadeOut 12;
 	sleep 10;
-	if((vehicle player) distance _vehicle > 10) exitWith {titleText["You failed to refuel/repair that vehicle because you are farther then 10m from it","PLAIN"];};
-	titleText[format["You have refueled/repaired %1",_name],"PLAIN"];
+	if((vehicle player) distance _vehicle > 10) exitWith {titleText["Du hast es nicht geschafft das Fahrzeug zu betanken/reparieren weil du mehr als 10m davon entfernt bist","PLAIN"];};
+	titleText[format["Du hast den %1 repariert/betankt",_name],"PLAIN"];
 	if(!local _vehicle) then
 	{
 		[{_vehicle setFuel 1;},"BIS_fnc_spawn",_vehicle,false] spawn life_fnc_MP;
