@@ -43,7 +43,7 @@ while {true} do
 				systemChat "VEH NULL";
 				if(count _dbInfo > 0) then
 				{
-					systemChat "Fixing...";
+					systemChat "Behebe...";
 					_uid = _dbInfo select 0;
 					_plate = _dbInfo select 1;
 
