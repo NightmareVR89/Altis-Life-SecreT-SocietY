@@ -41,7 +41,7 @@ _unit spawn
 	
 	_maxTime = time + (life_respawn_timer * 60);
 	_RespawnBtn ctrlEnable false;
-	waitUntil {_Timer ctrlSetText format["Respawn möglich in: %1",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; 
+	waitUntil {_Timer ctrlSetText format["Respawn mÃ¶glich in: %1",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; 
 	round(_maxTime - time) <= 0 OR isNull _this};
 	_RespawnBtn ctrlEnable true;
 	_Timer ctrlSetText "Du kannst nun respawnen";
@@ -79,7 +79,7 @@ if(side _killer == west && playerSide != west) then {
 	life_copRecieve = _killer;
 	//Did I rob the federal reserve?
 	if(!life_use_atm && {life_cash > 0}) then {
-		[format["$%1 aus der Staatsbank wurden zurückgebracht, da der Bankräuber getötet wurde.",[life_cash] call life_fnc_numberText],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		[format["$%1 aus der Staatsbank wurden zurÃ¼ckgebracht, da der BankrÃ¤uber getÃ¶tet wurde.",[life_cash] call life_fnc_numberText],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 		life_cash = 0;
 	};
 };

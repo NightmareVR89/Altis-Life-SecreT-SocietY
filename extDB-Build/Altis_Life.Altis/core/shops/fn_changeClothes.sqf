@@ -11,7 +11,7 @@ _control = (_this select 0) select 0;
 _selection = (_this select 0) select 1;
 _price = (findDisplay 3100) displayCtrl 3102;
 _total = (findDisplay 3100) displayCtrl 3106;
-if(_selection == -1) exitWith {hint "Nichts ausgew‰hlt";};
+if(_selection == -1) exitWith {hint "Nichts ausgew√§hlt";};
 if(isNull _control) exitWith {hint "No Display"};
 
 life_clothing_purchase set[life_clothing_filter,(_control lbValue _selection)];

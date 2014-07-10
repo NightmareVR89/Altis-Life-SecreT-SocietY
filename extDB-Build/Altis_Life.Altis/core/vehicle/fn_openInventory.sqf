@@ -30,10 +30,10 @@ if(_vehicle isKindOf "House_F") then {
 	_veh_data = [_vehicle] call life_fnc_vehicleWeight;
 };
 
-if(_vehicle isKindOf "House_F" && {count (_vehicle getVariable ["containers",[]]) == 0}) exitWith {hint "Du musst Lagerkisten aufstellen um in deinem Haus etwas lagern zu können!"; closeDialog 0; _vehicle setVariable["trunk_in_use",false,true];};
-if(_veh_data select 0 == -1 && {!(_vehicle isKindOf "House_F")}) exitWith {closeDialog 0; _vehicle setVariable["trunk_in_use",false,true]; hint "Dieses Fahrzeug kann keine virtuellen Gegenstände lagern.";};
+if(_vehicle isKindOf "House_F" && {count (_vehicle getVariable ["containers",[]]) == 0}) exitWith {hint "Du musst Lagerkisten aufstellen um in deinem Haus etwas lagern zu kÃ¶nnen!"; closeDialog 0; _vehicle setVariable["trunk_in_use",false,true];};
+if(_veh_data select 0 == -1 && {!(_vehicle isKindOf "House_F")}) exitWith {closeDialog 0; _vehicle setVariable["trunk_in_use",false,true]; hint "Dieses Fahrzeug kann keine virtuellen GegenstÃ¤nde lagern.";};
 
-ctrlSetText[3504,format["Weight: %1/%2",_veh_data select 1,_veh_data select 0]];
+ctrlSetText[3504,format["Gewicht: %1/%2",_veh_data select 1,_veh_data select 0]];
 [_vehicle] call life_fnc_vehInventory;
 life_trunk_vehicle = _vehicle;
 

@@ -13,7 +13,7 @@ for "_i" from 1 to _doors do {
 	_worldSpace = _b modelToWorld _selPos;
 		if(player distance _worldSpace < 5) exitWith {_door = _i;};
 };
-if(_door == 0) exitWith {hint "Du bist nicht in der Nähe einer Tür!"}; //Not near a door to be broken into.
+if(_door == 0) exitWith {hint "Du bist nicht in der NÃ¤he einer TÃ¼r!"}; //Not near a door to be broken into.
 
 if(_b animationPhase format["door_%1_rot",_door] == 0) then {
 	_b animate[format["door_%1_rot",_door],1];

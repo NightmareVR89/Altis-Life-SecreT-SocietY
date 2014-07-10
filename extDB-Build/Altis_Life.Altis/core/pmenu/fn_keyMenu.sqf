@@ -51,6 +51,6 @@ for "_i" from 0 to (count life_vehicles)-1 do
 
 if(((lbSize _vehicles)-1) == -1) then
 {
-	_vehicles lbAdd "Dir gehört kein Fahrzeug";
+	_vehicles lbAdd "Dir gehÃ¶rt kein Fahrzeug";
 	_vehicles lbSetData [(lbSize _vehicles)-1,str(ObjNull)];
 };

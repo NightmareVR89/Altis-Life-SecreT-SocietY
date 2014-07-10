@@ -9,10 +9,10 @@
 */
 private["_ctrl","_num","_index","_data","_old","_value","_weight","_diff"];
 disableSerialization;
-if(isNull life_trunk_vehicle OR !alive life_trunk_vehicle) exitWith {hint "Das Fahrzeug existiert entweder nicht, oder es wurde zerstört."};
+if(isNull life_trunk_vehicle OR !alive life_trunk_vehicle) exitWith {hint "Das Fahrzeug existiert entweder nicht, oder es wurde zerstÃ¶rt."};
 if(!alive player) exitwith {closeDialog 0;};
 
-if((lbCurSel 3502) == -1) exitWith {hint "Du musst einen Gegenstand auswählen!";};
+if((lbCurSel 3502) == -1) exitWith {hint "Du musst einen Gegenstand auswÃ¤hlen!";};
 _ctrl = ctrlSelData(3502);
 _num = ctrlText 3505;
 if(!([_num] call fnc_isnumber)) exitWith {hint "Falsches Nummernformat";};

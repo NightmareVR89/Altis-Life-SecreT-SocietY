@@ -403,7 +403,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_4";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Public Slot - Cop 4";
+					description="WhiteListed - Cop 4";
 				};
 				class Item14
 				{
@@ -416,7 +416,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_2";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Public Slot - Cop 2";
+					description="WhiteListed - Cop 2";
 				};
 				class Item15
 				{
@@ -429,7 +429,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_3";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Public Slot - Cop 3";
+					description="WhiteListed - Cop 3";
 				};
 				class Item16
 				{
@@ -469,7 +469,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_1";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Public Slot - Cop 1";
+					description="WhiteListed - Cop 1";
 				};
 			};
 		};
@@ -1920,7 +1920,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_70";
-					description="Civ 70";
+					description="WhiteListed - ADAC 1";
 				};
 			};
 		};
@@ -1942,7 +1942,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_69";
-					description="Civ 69";
+					description="WhiteListed - ADAC 2";
 				};
 			};
 		};
@@ -1964,7 +1964,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_68";
-					description="Civ 68";
+					description="WhiteListed - ADAC 3";
 				};
 			};
 		};
@@ -1986,7 +1986,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_67";
-					description="Civ 67";
+					description="WhiteListed - ADAC 4";
 				};
 			};
 		};
@@ -2008,7 +2008,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_66";
-					description="Civ 66";
+					description="WhiteListed - ADAC 5";
 				};
 			};
 		};
@@ -2030,7 +2030,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_75";
-					description="Civ 75";
+					description="WhiteListed - ADAC 6";
 				};
 			};
 		};
@@ -2052,7 +2052,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_74";
-					description="Civ 74";
+					description="WhiteListed - ADAC 7";
 				};
 			};
 		};
@@ -2074,7 +2074,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_73";
-					description="Civ 73";
+					description="WhiteListed - ADAC 8";
 				};
 			};
 		};
@@ -2096,7 +2096,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_72";
-					description="Civ 72";
+					description="WhiteListed - ADAC 9";
 				};
 			};
 		};
@@ -2118,7 +2118,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_71";
-					description="Civ 71";
+					description="WhiteListed - ADAC 10";
 				};
 			};
 		};

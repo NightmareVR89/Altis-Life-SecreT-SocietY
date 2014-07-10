@@ -11,11 +11,11 @@ _total = [_this,1,"",["",0]] call BIS_fnc_param;
 
 if(_val == _total) then
 {
-	titleText[format["Du hast ein Kopfgeld von $%1 für die Festnahme eines gesuchten Kriminellen bekommen.",[_val] call life_fnc_numberText],"PLAIN"];
+	titleText[format["Du hast ein Kopfgeld von $%1 fÃ¼r die Festnahme eines gesuchten Kriminellen bekommen.",[_val] call life_fnc_numberText],"PLAIN"];
 }
 	else
 {
-	titleText[format["Du hast ein Kopfgeld von $%1 für das Töten eines gesuchten Kriminellen bekommen. Hättest du ihn festgenommen, hättest du $%2 bekommen",[_val] call life_fnc_numberText,[_total] call life_fnc_numberText],"PLAIN"];
+	titleText[format["Du hast ein Kopfgeld von $%1 fÃ¼r das TÃ¶ten eines gesuchten Kriminellen bekommen. HÃ¤ttest du ihn festgenommen, hÃ¤ttest du $%2 bekommen",[_val] call life_fnc_numberText,[_total] call life_fnc_numberText],"PLAIN"];
 };
 
 life_atmcash = life_atmcash + _val;

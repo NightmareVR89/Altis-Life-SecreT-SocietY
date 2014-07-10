@@ -13,7 +13,7 @@ if(!(_vault getVariable["chargeplaced",false])) exitWith {hint "Da ist keine Spr
 life_action_inUse = true;
 //Setup the progress bar
 disableSerialization;
-_title = "Entsch‰rfe Sprengladung...";
+_title = "Entsch√§rfe Sprengladung...";
 5 cutRsc ["life_progress","PLAIN"];
 _ui = uiNamespace getVariable "life_progress";
 _progressBar = _ui displayCtrl 38201;
@@ -50,4 +50,4 @@ if(life_interrupted) exitWith {life_interrupted = false; titleText["Aktion abgeb
 
 life_action_inUse = false;
 _vault setVariable["chargeplaced",false,true];
-[[2,"Die Sprengladung wurde entsch‰rft."],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+[[2,"Die Sprengladung wurde entsch√§rft."],"life_fnc_broadcast",west,false] spawn life_fnc_MP;

@@ -7,17 +7,17 @@
 private["_house","_door","_title","_titleText","_progressBar","_cpRate","_cP"];
 _house = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _house OR !(_house isKindOf "House_F")) exitWith {};
-if(isNil {(_house getVariable "house_owner")}) exitWith {hint "Dieses Haus gehört niemandem."};
+if(isNil {(_house getVariable "house_owner")}) exitWith {hint "Dieses Haus gehÃ¶rt niemandem."};
 
 _door = [_house] call life_fnc_nearestDoor;
-if(_door == 0) exitWith {hint "Du bist nicht in der Nähe einer Tür!"};
-if((_house getVariable[format["bis_disabled_Door_%1",_door],0]) == 0) exitWith {hint "Diese Tür ist schon offen!"};
+if(_door == 0) exitWith {hint "Du bist nicht in der NÃ¤he einer TÃ¼r!"};
+if((_house getVariable[format["bis_disabled_Door_%1",_door],0]) == 0) exitWith {hint "Diese TÃ¼r ist schon offen!"};
 
 life_action_inUse = true;
 
 //Setup the progress bar
 disableSerialization;
-_title = "Breche das Türschloss auf";
+_title = "Breche das TÃ¼rschloss auf";
 5 cutRsc ["life_progress","PLAIN"];
 _ui = uiNamespace getVariable "life_progress";
 _progressBar = _ui displayCtrl 38201;

@@ -21,7 +21,7 @@ _trunkSpace = [_className] call life_fnc_vehicleWeightCfg;
 
 ctrlShow [2330,true];
 (getControl(2300,2303)) ctrlSetStructuredText parseText format[
-"Mietpreis: <t color='#8cff9b'>$%1</t><br/>Kaufpreis: <t color='#8cff9b'>$%2</t><br/>Maximalgeschwindigkeit: %3 km/h<br/>PS: %4<br/>Sitzpl‰tze: %5<br/>Kofferraumvolumen: %6<br/>Tankvolumen: %7<br/>Panzerung: %8",
+"Mietpreis: <t color='#8cff9b'>$%1</t><br/>Kaufpreis: <t color='#8cff9b'>$%2</t><br/>Maximalgeschwindigkeit: %3 km/h<br/>PS: %4<br/>Sitzpl√§tze: %5<br/>Kofferraumvolumen: %6<br/>Tankvolumen: %7<br/>Panzerung: %8",
 [_basePrice] call life_fnc_numberText,
 [round(_basePrice * 1.5)] call life_fnc_numberText,
 _vehicleInfo select 8,

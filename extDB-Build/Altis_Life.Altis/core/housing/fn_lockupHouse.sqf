@@ -11,7 +11,7 @@ if(isNull _house OR !(_house isKindOf "House_F")) exitWith {};
 _numberOfDoors = getNumber(configFile >> "CfgVehicles" >> (typeOf _house) >> "numberOfDoors");
 if(_numberOfDoors == -1 OR _numberOfDoors == 0) exitWith {}; //MEH
 
-titleText ["Schlieﬂe Haus ab, bitte warten...","PLAIN"];
+titleText ["Schlie√üe Haus ab, bitte warten...","PLAIN"];
 sleep 3;
 
 for "_i" from 1 to _numberOfDoors do {

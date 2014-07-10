@@ -13,7 +13,7 @@ if(isNull _curTarget) exitWith {}; //Bad type
 _distance = ((boundingBox _curTarget select 1) select 0) + 2;
 if(player distance _curTarget > _distance) exitWith {}; //Too far
 _isVehicle = if((_curTarget isKindOf "LandVehicle") OR (_curTarget isKindOf "Ship") OR (_curTarget isKindOf "Air")) then {true} else {false};
-if(_isVehicle && _curTarget in life_vehicles) exitWith {hint "Du hast schon einen Schlüssel für dieses Fahrzeug."};
+if(_isVehicle && _curTarget in life_vehicles) exitWith {hint "Du hast schon einen SchlÃ¼ssel fÃ¼r dieses Fahrzeug."};
 
 //More error checks
 if(!_isVehicle && !isPlayer _curTarget) exitWith {};
@@ -73,7 +73,7 @@ if(!_isVehicle) then {
 } else {
 	_dice = random(100);
 	if(_dice < 30) then {
-		titleText["Du hast nun Schlüssel für dieses Fahrzeug.","PLAIN"];
+		titleText["Du hast nun SchlÃ¼ssel fÃ¼r dieses Fahrzeug.","PLAIN"];
 		life_vehicles set[count life_vehicles,_curTarget];
 		[[getPlayerUID player,player getVariable["realname",name player],"487"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 	} else {

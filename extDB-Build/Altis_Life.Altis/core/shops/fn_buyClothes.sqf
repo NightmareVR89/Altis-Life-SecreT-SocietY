@@ -6,7 +6,7 @@
 	Buys the current set of clothes and closes out of the shop interface.
 */
 private["_price"];
-if((lbCurSel 3101) == -1) exitWith {titleText["Du hast keine Kleidung zum kaufen ausgew‰hlt.","PLAIN"];};
+if((lbCurSel 3101) == -1) exitWith {titleText["Du hast keine Kleidung zum kaufen ausgew√§hlt.","PLAIN"];};
 
 _price = 0;
 {

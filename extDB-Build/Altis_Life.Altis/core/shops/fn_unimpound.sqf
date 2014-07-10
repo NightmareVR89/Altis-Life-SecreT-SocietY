@@ -46,7 +46,7 @@ if(_veh distance impound_obj < 50) then
 	if(_price > life_cash) then
 	{
 		_price = _price + 200;
-		if(_price > life_atmcash) exitWith {hint "Du hast nicht genug Geld auf der Bank oder in Bar dabei um dein Auto auszulˆsen."};
+		if(_price > life_atmcash) exitWith {hint "Du hast nicht genug Geld auf der Bank oder in Bar dabei um dein Auto auszul√∂sen."};
 		life_atmcash = life_atmcash - _price;
 		life_cash = life_cash + _price;
 	};
@@ -64,7 +64,7 @@ if(_veh distance impound_obj < 50) then
 		_v removeallEventHandlers "handleDamage";
 	};
 
-	hint format["Du hast deinen %1 f¸r $%3 ausgelˆst",_name,[_price] call life_fnc_numberText];
+	hint format["Du hast deinen %1 f√ºr $%3 ausgel√∂st",_name,[_price] call life_fnc_numberText];
 	detach _veh;
 	if(_veh isKindOf "Air") then 
 	{

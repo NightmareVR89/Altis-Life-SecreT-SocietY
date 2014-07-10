@@ -19,7 +19,7 @@ if(_bool) then
 {
 	if(([true,_item,(parseNumber _val)] call life_fnc_handleInv)) then
 	{
-		hint format["Du hast versucht %1 %2 %3 zu geben, aber es wurde zurückgegeben, weil %1 es nicht tragen konnte.",_from getVariable["realname",name _from],_val,_type];
+		hint format["Du hast versucht %1 %2 %3 zu geben, aber es wurde zurÃ¼ckgegeben, weil %1 es nicht tragen konnte.",_from getVariable["realname",name _from],_val,_type];
 	};
 }
 	else

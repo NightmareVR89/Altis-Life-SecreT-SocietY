@@ -6,11 +6,11 @@
 	Gives a ticket to the targeted player.
 */
 private["_val"];
-if(isNil {life_ticket_unit}) exitWith {hint "Person die ein Buﬂgeld bekommen soll ist nicht definiert"};
-if(isNull life_ticket_unit) exitWith {hint "Person die ein Buﬂgeld bekommen soll existiert nicht."};
+if(isNil {life_ticket_unit}) exitWith {hint "Person die ein Bu√ügeld bekommen soll ist nicht definiert"};
+if(isNull life_ticket_unit) exitWith {hint "Person die ein Bu√ügeld bekommen soll existiert nicht."};
 _val = ctrlText 2652;
 if(!([_val] call fnc_isnumber)) exitWith {hint "Du hast kein richtiges Nummernformat eingegeben."};
-if((parseNumber _val) > 100000) exitWith {hint "Buﬂgelder kˆnnen nicht hˆher als $100,000 sein!"};
-[[0,format["%1 hat an %3 ein Buﬂgeld in Hˆhe von $%2 ausgestellt",player getVariable["realname",name player],[(parseNumber _val)] call life_fnc_numberText,life_ticket_unit getVariable["realname",name life_ticket_unit]]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+if((parseNumber _val) > 100000) exitWith {hint "Bu√ügelder k√∂nnen nicht h√∂her als $100,000 sein!"};
+[[0,format["%1 hat an %3 ein Bu√ügeld in H√∂he von $%2 ausgestellt",player getVariable["realname",name player],[(parseNumber _val)] call life_fnc_numberText,life_ticket_unit getVariable["realname",name life_ticket_unit]]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 [[player,(parseNumber _val)],"life_fnc_ticketPrompt",life_ticket_unit,false] spawn life_fnc_MP;
 closeDialog 0;

@@ -10,7 +10,7 @@ _vehicle = cursorTarget;
 life_interrupted = false;
 if(isNull _vehicle) exitWith {hint "Du musst das Fahrzeug anschauen, das du auftanken willst!"};
 if(!(_vehicle isKindOF "LandVehicle") && !(_vehicle isKindOf "Air") && !(_vehicle isKindOf "Ship")) exitWith {};
-if(player distance _vehicle > 7.5) exitWith {hint "Du musst n‰her am Fahrzeug stehen!"};
+if(player distance _vehicle > 7.5) exitWith {hint "Du musst n√§her am Fahrzeug stehen!"};
 
 if(!([false,"fuelF",1] call life_fnc_handleInv)) exitWith {};
 life_action_inUse = true;

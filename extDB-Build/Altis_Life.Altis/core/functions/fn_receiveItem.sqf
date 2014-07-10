@@ -18,7 +18,7 @@ if(_diff != (parseNumber _val)) then
 {
 	if(([true,_item,_diff] call life_fnc_handleInv)) then
 	{
-		hint format["%1 hat dir %2 gegeben, du kannst aber nur %3 tragen also wurden %4 zurückgegeben.",_from getVariable["realname",name _from],_val,_diff,((parseNumber _val) - _diff)];
+		hint format["%1 hat dir %2 gegeben, du kannst aber nur %3 tragen also wurden %4 zurÃ¼ckgegeben.",_from getVariable["realname",name _from],_val,_diff,((parseNumber _val) - _diff)];
 		[[_from,_item,str((parseNumber _val) - _diff),_unit],"life_fnc_giveDiff",_from,false] spawn life_fnc_MP;
 	}
 		else

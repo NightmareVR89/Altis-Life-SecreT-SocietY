@@ -13,7 +13,7 @@ disableSerialization;
 //Cop / Civ Pre Check
 if((_this select 3) in ["bruce","dive","reb","kart"] && playerSide != civilian) exitWith {hint "Du musst Zivilist sein, um hier einzukaufen!"; closeDialog 0;};
 if((_this select 3) == "reb" && !license_civ_rebel) exitWith {hint "Du bist noch nicht als Rebell ausgebildet worden!"; closeDialog 0;};
-if((_this select 3) in ["cop"] && playerSide != west) exitWith {hint "Du musst Polizist sein um hier einkaufen zu können!"; closeDialog 0;};
+if((_this select 3) in ["cop"] && playerSide != west) exitWith {hint "Du musst Polizist sein um hier einkaufen zu kÃ¶nnen!"; closeDialog 0;};
 
 life_clothing_store = _this select 3;
 
@@ -21,7 +21,7 @@ life_clothing_store = _this select 3;
 _var = [life_clothing_store,0] call life_fnc_licenseType;
 if(_var select 0 != "") then
 {
-	if(!(missionNamespace getVariable (_var select 0))) exitWith {hint format["Du brauchst eine %1 um hier einkaufen zu können!",[_var select 0] call life_fnc_varToStr]; closeDialog 0;};
+	if(!(missionNamespace getVariable (_var select 0))) exitWith {hint format["Du brauchst eine %1 um hier einkaufen zu kÃ¶nnen!",[_var select 0] call life_fnc_varToStr]; closeDialog 0;};
 };
 
 //initialize camera view

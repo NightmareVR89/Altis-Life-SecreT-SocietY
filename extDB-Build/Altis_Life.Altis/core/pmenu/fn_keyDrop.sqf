@@ -11,10 +11,10 @@ disableSerialization;
 _dialog = findDisplay 2700;
 _list = _dialog displayCtrl 2701;
 _sel = lbCurSel _list;
-if(_sel == -1) exitWith {hint "Nichts ausgewählt";};
+if(_sel == -1) exitWith {hint "Nichts ausgewÃ¤hlt";};
 _index = (parseNumber(_list lbData _sel));
 _vehicle = life_vehicles select _index;
-if(_vehicle isKindOf "House_F") exitWith {hint "Du kannst die Schlüssel zu deinem Haus nicht fallen lassen!"};
+if(_vehicle isKindOf "House_F") exitWith {hint "Du kannst die SchlÃ¼ssel zu deinem Haus nicht fallen lassen!"};
 _owners = _vehicle getVariable "vehicle_info_owners";
 
 _index2 = [(getPlayerUID player),_owners] call fnc_index;

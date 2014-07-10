@@ -9,8 +9,8 @@ private["_value","_len","_group"];
 _value = ctrlText 2522;
 _len = [_value] call KRON_StrLen;
 
-if(_len > 25) exitWith {hint "Es können maximal 25 Leute in einer Gang sein."};
-if(life_cash < 10000) exitWith {hint "Du hast keine $10,000 um eine Gang zu gründen!"};
+if(_len > 25) exitWith {hint "Es kÃ¶nnen maximal 25 Leute in einer Gang sein."};
+if(life_cash < 10000) exitWith {hint "Du hast keine $10,000 um eine Gang zu grÃ¼nden!"};
 if(isNil {life_gang_list}) exitWith {hint "Der Server erlaubt keine Gangs."};
 if(([_value,life_gang_list] call fnc_index) != -1) exitWith {hint "Diesen Gangnamen gibt es bereits!"};
 

@@ -7,7 +7,7 @@
 */
 if(isNull (findDisplay 2900)) then
 {
-	if(!createDialog "SettingsMenu") exitWith {hint "Irgendwas stimmt nicht, das Menü will sich nicht öffnen"};
+	if(!createDialog "SettingsMenu") exitWith {hint "Irgendwas stimmt nicht, das MenÃ¼ will sich nicht Ã¶ffnen"};
 };
 
 disableSerialization;
