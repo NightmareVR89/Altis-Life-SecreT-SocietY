@@ -51,6 +51,7 @@ switch (_side) do
 				["ADAC_1","ADAC Agios Dionysios","\a3\ui_f\data\map\MapControl\fuelstation_ca.paa"],
 				["ADAC_2","ADAC Pyrgos","\a3\ui_f\data\map\MapControl\fuelstation_ca.paa"]
 			];
+		};
 	};
 	
 	case independent: {
