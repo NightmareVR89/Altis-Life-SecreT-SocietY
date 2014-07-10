@@ -24,7 +24,7 @@ switch(_shop) do
 	{
 		switch (true) do 
 		{
-			case (playerSide != independent): {"You are not an EMS Medic"};
+			case (playerSide != independent): {"Du bist kein Sanitaeter"};
 			default {
 				["Hospital EMS Shop",
 					[
@@ -44,7 +44,7 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != west): {"You are not a cop!"};
+			case (playerSide != west): {"Du bist kein Polizist!"};
 			case (__GETC__(life_coplevel) == 2): 
 			{
 				["Corrections Officer Shop",
@@ -198,8 +198,8 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != civilian): {"You are not a cop!"};
-			case (!license_civ_rebel): {"You don't have a Rebel training license!"};
+			case (playerSide != civilian): {"Du bist kein Zivilist!"};
+			case (!license_civ_rebel): {"Du hast keine Rebellenausbildung!"};
 			default
 			{
 				["Mohammed's Jihadi Shop",
@@ -234,8 +234,8 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != civilian): {"You are not a cop!"};
-			case (!license_civ_gun): {"You don't have a Firearms license!"};
+			case (playerSide != civilian): {"Du bist kein Zivilist!"};
+			case (!license_civ_gun): {"Du hast keinen Waffenschein!"};
 			default
 			{
 				["Billy Joe's Firearms",
@@ -259,7 +259,7 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (__GETC__(life_donator) == 0): {"You are not a donator!"};
+			case (__GETC__(life_donator) == 0): {"Du hast nichts fuer unseren Server gespendet!"};
 			case (__GETC__(life_donator) == 1):
 			{
 				["STS Donator Shop Tier 1",
