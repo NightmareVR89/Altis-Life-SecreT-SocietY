@@ -127,7 +127,7 @@ class Life_cell_phone {
 			onButtonClick = "[] call fnc_cell_adminmsg";
 			
 			x = 0.32;
-			y = 0.4;
+			y = 0.45;
 			w = 0.2;
 			h = (1 / 25);
 		};
