@@ -9,7 +9,7 @@ life_action_inUse = true;
 
 //Setup the progress bar
 disableSerialization;
-_title = "Repairing vault...";
+_title = "Repariere Safe...";
 5 cutRsc ["life_progress","PLAIN"];
 _ui = uiNamespace getVariable "life_progress";
 _progressBar = _ui displayCtrl 38201;
@@ -42,9 +42,9 @@ while {true} do
 5 cutText ["","PLAIN"];
 player playActionNow "stop";
 if(!alive player) exitWith {life_action_inUse = false;};
-if(life_interrupted) exitWith {life_interrupted = false; titleText["Action cancelled","PLAIN"]; life_action_inUse = false;};
+if(life_interrupted) exitWith {life_interrupted = false; titleText["Aktion abgebrochen","PLAIN"]; life_action_inUse = false;};
 
 life_action_inUse = false;
 
 _vault setVariable["safe_open",false,true];
-hint "The vault is now fixed and re-secured.";
+hint "Der Safe ist nun repariert und wieder sicher.";

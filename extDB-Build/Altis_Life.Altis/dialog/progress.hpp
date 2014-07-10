@@ -30,7 +30,7 @@ class life_progress
 		class ProgressText : Life_RscText
 		{
 			idc = 38202;
-			text = "Servicing Chopper (50%)...";
+			text = "Warte Helikopter (50%)...";
 			x = 0.386 * safezoneW + safezoneX;
 			y = 0.0635 * safezoneH + safezoneY;
 			w = 0.65; h = (1 / 25);

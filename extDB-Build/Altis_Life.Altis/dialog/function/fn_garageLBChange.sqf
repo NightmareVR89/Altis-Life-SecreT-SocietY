@@ -24,14 +24,14 @@ _retrievePrice = if(_retrievePrice == -1) then {1000} else {(__GETC__(life_garag
 _sellPrice = if(_sellPrice == -1) then {1000} else {(__GETC__(life_garage_sell) select _sellPrice) select 1;};
 
 (getControl(2800,2803)) ctrlSetStructuredText parseText format["
-	Retrieval Price: <t color='#8cff9b'>$%1</t><br/>
-	Sell Price: <t color='#8cff9b'>$%2</t><br/>
-	Color: %8<br/>
-	Max Speed: %3 km/h<br/>
-	Horse Power: %4<br/>
-	Passenger Seats: %5<br/>
-	Trunk Capacity: %6<br/>
-	Fuel Capacity: %7
+	Abholpreis: <t color='#8cff9b'>$%1</t><br/>
+	Verkaufspreis: <t color='#8cff9b'>$%2</t><br/>
+	Farbe: %8<br/>
+	Maximalgeschwindigkeit: %3 km/h<br/>
+	PS: %4<br/>
+	Sitzplaetze: %5<br/>
+	Kofferraumvolumen: %6<br/>
+	Tankvolumen: %7
 	",
 [_retrievePrice] call life_fnc_numberText,
 [_sellPrice] call life_fnc_numberText,

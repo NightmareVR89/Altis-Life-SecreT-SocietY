@@ -51,7 +51,7 @@ class SettingsMenu
 		class RevealNearestHeader : PlayerTagsHeader
 		{
 			idc = -1;
-			text = "Reveal Nearest Objects";
+			text = "Zeige naechstes Objekt";
 			
 			y = 0.53;
 		};
@@ -165,8 +165,8 @@ class SettingsMenu
 		
 		class PlayerTagsONOFF : Life_RscActiveText
 		{
-			text = "ON";
-			tooltip = "Controls whether or not players will have name tags above their head.";
+			text = "AN";
+			tooltip = "Kontrolliert ob Spieler ihren Namen ueber ihrem Kopf angezeigt bekommen.";
 			idc = 2970;
 			sizeEx = 0.04;
 			x = 0.65;
@@ -184,7 +184,7 @@ class SettingsMenu
 		
 		class RevealONOFF : PlayerTagsONOFF
 		{
-			tooltip = "Automatically reveals nearest objects within 15m, turn this setting off if you are experiencing performance issues.";
+			tooltip = "Zeigt automatisch das naehste Objekt innerhalb von 15m. Schalte es bei Performanceproblemen aus.";
 			idc = 2972;
 			y = 0.53;
 		};
