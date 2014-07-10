@@ -1,4 +1,4 @@
-/*
+ï»¿/*
 	File: fn_bountyReceive.sqf
 	Author: Bryan "Tonic" Boardwine
 	
@@ -11,11 +11,11 @@ _total = [_this,1,"",["",0]] call BIS_fnc_param;
 
 if(_val == _total) then
 {
-	titleText[format["You have collected a bounty of $%1 for arresting a criminal.",[_val] call life_fnc_numberText],"PLAIN"];
+	titleText[format["Du hast ein Kopfgeld von $%1 für die Festnahme eines gesuchten Kriminellen bekommen.",[_val] call life_fnc_numberText],"PLAIN"];
 }
 	else
 {
-	titleText[format["You have collected a bounty of $%1 for killing a wanted criminal, if you had arrested him you would of received $%2",[_val] call life_fnc_numberText,[_total] call life_fnc_numberText],"PLAIN"];
+	titleText[format["Du hast ein Kopfgeld von $%1 für das Töten eines gesuchten Kriminellen bekommen. Hättest du ihn festgenommen, hättest du $%2 bekommen",[_val] call life_fnc_numberText,[_total] call life_fnc_numberText],"PLAIN"];
 };
 
 life_atmcash = life_atmcash + _val;

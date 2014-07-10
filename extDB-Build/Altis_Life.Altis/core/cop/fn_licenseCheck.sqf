@@ -18,6 +18,6 @@ _licenses = "";
 	};
 } foreach life_licenses;
 
-if(_licenses == "") then {_licenses = "No Licenses<br/>";};
+if(_licenses == "") then {_licenses = "Keine Lizenzen<br/>";};
 
 [[player getVariable["realname",name player],_licenses],"life_fnc_licensesRead",_cop,FALSE] spawn life_fnc_MP;

@@ -1,4 +1,4 @@
-#include <macro.h>
+ï»¿#include <macro.h>
 /*
 	File: fn_garageLBChange.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -29,7 +29,7 @@ _sellPrice = if(_sellPrice == -1) then {1000} else {(__GETC__(life_garage_sell) 
 	Farbe: %8<br/>
 	Maximalgeschwindigkeit: %3 km/h<br/>
 	PS: %4<br/>
-	Sitzplaetze: %5<br/>
+	Sitzplätze: %5<br/>
 	Kofferraumvolumen: %6<br/>
 	Tankvolumen: %7
 	",

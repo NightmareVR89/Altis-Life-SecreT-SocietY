@@ -1,4 +1,4 @@
-#include <macro.h>
+ï»¿#include <macro.h>
 /*
 	File: fn_sellTurtle.sqf
 	
@@ -17,6 +17,6 @@ _val = life_inv_goldbar;
 _price = _price * _val;
 
 if([false,"goldbar",life_inv_goldbar] call life_fnc_handleInv) then {
-	titleText[format["Du hast %1 Goldbarren fuer $%2 verkauft",_val,[_price] call life_fnc_numberText],"PLAIN"];
+	titleText[format["Du hast %1 Goldbarren für $%2 verkauft",_val,[_price] call life_fnc_numberText],"PLAIN"];
 	life_cash = life_cash + _price;
 };

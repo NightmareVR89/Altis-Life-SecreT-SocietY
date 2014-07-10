@@ -1,4 +1,4 @@
-#include <macro.h>
+ï»¿#include <macro.h>
 /*
 	File: fn_weaponShopCfg.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -24,7 +24,7 @@ switch(_shop) do
 	{
 		switch (true) do 
 		{
-			case (playerSide != independent): {"Du bist kein Sanitaeter"};
+			case (playerSide != independent): {"Du bist kein Sanitäter"};
 			default {
 				["Hospital EMS Shop",
 					[

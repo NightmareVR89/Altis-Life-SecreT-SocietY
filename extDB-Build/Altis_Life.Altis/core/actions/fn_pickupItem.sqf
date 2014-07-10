@@ -1,4 +1,4 @@
-/*
+ï»¿/*
 	File: fn_pickupItem.sqf
 	Author: Bryan "Tonic" Boardwine
 	
@@ -16,7 +16,7 @@ _itemName = [([_itemInfo select 0,0] call life_fnc_varHandle)] call life_fnc_var
 _illegal = [_itemInfo select 0,life_illegal_items] call fnc_index;
 if(playerSide == west && _illegal != -1) exitWith
 {
-	titleText[format["%1 wurde als Beweismittel gesichert, du erhaelst $%2 als Belohnung.",_itemName,[(life_illegal_items select _illegal) select 1] call life_fnc_numberText],"PLAIN"];
+	titleText[format["%1 wurde als Beweismittel gesichert, du erhälst $%2 als Belohnung.",_itemName,[(life_illegal_items select _illegal) select 1] call life_fnc_numberText],"PLAIN"];
 	life_atmcash = life_atmcash + ((life_illegal_items select _illegal) select 1);
 	deleteVehicle _obj;
 	//waitUntil {isNull _obj};

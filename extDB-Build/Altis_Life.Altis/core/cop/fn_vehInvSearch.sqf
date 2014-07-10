@@ -12,7 +12,7 @@ if(isNull _vehicle) exitWith {};
 if(!((_vehicle isKindOf "Air") OR (_vehicle isKindOf "Ship") OR (_vehicle isKindOf "LandVehicle"))) exitWith {};
 
 _vehicleInfo = _vehicle getVariable ["Trunk",[]];
-if(count _vehicleInfo == 0) exitWith {hint "This vehicle is empty"};
+if(count _vehicleInfo == 0) exitWith {hint "Dieses Fahrzeug ist leer"};
 
 _value = 0;
 {
@@ -32,11 +32,11 @@ _value = 0;
 
 if(_value > 0) then
 {
-	[[0,format["A vehicle was searched and has $%1 worth of drugs / contraband.",[_value] call life_fnc_numberText]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+	[[0,format["Ein Fahrzeug wurde durchsucht und Drogen / Schmuggelware im Wert von $%1 wurden sichergestellt.",[_value] call life_fnc_numberText]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 	life_atmcash = life_atmcash + _value;
 	_vehicle setVariable["Trunk",[],true];
 }
 	else
 {
-	hint "Nothing illegal in this vehicle.";
+	hint "Nichts illegales in diesem Fahrzeug gefunden.";
 };

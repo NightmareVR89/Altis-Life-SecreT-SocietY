@@ -1,4 +1,4 @@
-/*
+ï»¿/*
 	File: fn_processAction.sqf
 	Author: Bryan "Tonic" Boardwine
 	
@@ -14,17 +14,17 @@ if(isNull _vendor OR _type == "" OR (player distance _vendor > 10)) exitWith {};
 //unprocessed item,processed item, cost if no license,Text to display (I.e Processing  (percent) ..."
 _itemInfo = switch (_type) do
 {
-	case "oil": {["oilu","oilp",1200,"Processing Oil"];};
-	case "diamond": {["diamond","diamondc",1350,"Processing Diamond"]};
-	case "heroin": {["heroinu","heroinp",2100,"Processing Heroin"]};
-	case "copper": {["copperore","copper_r",750,"Processing Copper"]};
-	case "iron": {["ironore","iron_r",1120,"Processing Iron"]};
-	case "sand": {["sand","glass",650,"Processing Sand"]};
-	case "salt": {["salt","salt_r",450,"Processing Salt"]};
-	case "cocaine": {["cocaine","cocainep",1500,"Processing Cocaine"]};
-	case "marijuana": {["cannabis","marijuana",500,"Processing Marijuana"]};
-	case "heroin": {["heroinu","heroinp",1720,"Processing Heroin"]};
-	case "cement": {["rock","cement",350,"Mixing Cement"]};
+	case "oil": {["oilu","oilp",1200,"Verarbeite Öl"];};
+	case "diamond": {["diamond","diamondc",1350,"Schleife Diamanten"]};
+	case "heroin": {["heroinu","heroinp",2100,"Pansche Heroin"]};
+	case "copper": {["copperore","copper_r",750,"Verarbeite Kupfer"]};
+	case "iron": {["ironore","iron_r",1120,"Verarbeite Eisen"]};
+	case "sand": {["sand","glass",650,"Schmelze Sand"]};
+	case "salt": {["salt","salt_r",450,"Reinige Salz"]};
+	case "cocaine": {["cocaine","cocainep",1500,"Pansche Kokain"]};
+	case "marijuana": {["cannabis","marijuana",500,"Verarbeite Marijuana"]};
+	case "heroin": {["heroinu","heroinp",1720,"Pansche Heroin"]};
+	case "cement": {["rock","cement",350,"Mixe Zement"]};
 	default {[]};
 };
 

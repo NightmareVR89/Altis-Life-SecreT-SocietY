@@ -1,4 +1,4 @@
-/*
+ï»¿/*
 	File: fn_varToStr.sqf
 	Author: Bryan "Tonic" Boardwine
 	
@@ -13,8 +13,8 @@ if(_var == "") exitWith {""};
 switch (_var) do
 {
 	//Virtual Inventory Items
-	case "life_inv_oilu": {"Unverarbeitetes Oel"};
-	case "life_inv_oilp": {"Verarbeitetes Oel"};
+	case "life_inv_oilu": {"Unverarbeitetes Öl"};
+	case "life_inv_oilp": {"Verarbeitetes Öl"};
 	case "life_inv_heroinu": {"Unreines Heroin"};
 	case "life_inv_heroinp": {"Reines Heroin"};
 	case "life_inv_cannabis": {"Cannabis"};
@@ -27,11 +27,11 @@ switch (_var) do
 	case "life_inv_tuna": {"Tuna Meat"};
 	case "life_inv_mullet": {"Mullet Meat"};
 	case "life_inv_catshark": {"Cat Shark Meat"};
-	case "life_inv_turtle": {"Turtle Meat"};
+	case "life_inv_turtle": {"Schildkrötenfleisch"};
 	case "life_inv_fishingpoles": {"Angel"};
 	case "life_inv_water": {"Wasserflasche"};
 	case "life_inv_coffee": {"Kaffee"};
-	case "life_inv_turtlesoup": {"Schildkroetensuppe"};
+	case "life_inv_turtlesoup": {"Schildkrötensuppe"};
 	case "life_inv_donuts": {"Donuts"};
 	case "life_inv_fuelE": {"Leerer Benzinkanister"};
 	case "life_inv_fuelF": {"Voller Benzinkanister"};
@@ -58,24 +58,24 @@ switch (_var) do
 	case "life_inv_goldbar": {"Goldbarren"};
 	case "life_inv_blastingcharge": {"Sprengladung"};
 	case "life_inv_boltcutter": {"Bolzenschneider"};
-	case "life_inv_defusekit": {"Bombenentschaerfungskit"};
+	case "life_inv_defusekit": {"Bombenentschärfungskit"};
 	case "life_inv_storagesmall": {"Kleine Lagerbox"};
 	case "life_inv_storagebig": {"Grosse Lagerbox"};
 	
 	//License Block
-	case "license_civ_driver": {"Fuehrerschein"};
+	case "license_civ_driver": {"Führerschein"};
 	case "license_civ_air": {"Flugschein"};
 	case "license_civ_heroin": {"Heroin Ausbildung"};
 	case "license_civ_gang": {"Gang Lizenz"};
-	case "license_civ_oil": {"Oel Verarbeitung"};
+	case "license_civ_oil": {"Öl Verarbeitung"};
 	case "license_civ_dive": {"Tauchschein"};
-	case "license_civ_boat": {"Bootsfuehrerschein"};
+	case "license_civ_boat": {"Bootsführerschein"};
 	case "license_civ_gun": {"Waffenschein"};
 	case "license_cop_air": {"Flugschein"};
-	case "license_cop_swat": {"SEK Ausbildung"};
-	case "license_cop_cg": {"Kuestenwachen Ausbildung"};
+	case "license_cop_swat": {"SEK-Ausbildung"};
+	case "license_cop_cg": {"Küstenwachenausbildung"};
 	case "license_civ_rebel": {"Rebellenausbildung"};
-	case "license_civ_truck": {"LKW Fuehrerschein"};
+	case "license_civ_truck": {"LKW Führerschein"};
 	case "license_civ_diamond": {"Diamantenverarbeitung"};
 	case "license_civ_copper": {"Kupferverarbeitung"};
 	case "license_civ_iron": {"Eisenverarbeitung"};

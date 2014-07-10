@@ -1,4 +1,4 @@
-/*	
+ï»¿/*	
 	File: fn_safeOpen.sqf
 	Author: Bryan "Tonic" Boardwine
 	
@@ -11,7 +11,7 @@ if(isNull life_safeObj) exitWith {};
 if(playerSide != civilian) exitWith {};
 if((life_safeObj getVariable["safe",-1]) < 1) exitWith {hint "Der Safe ist leer!";};
 if((life_safeObj getVariable["inUse",false])) exitWith {hint "Jemand greift gerade schon auf den Safe zu.."};
-if({side _x == west} count playableUnits < 5) exitWith {hint "Es muessen mindestens 5 oder mehr Polizisten online sein, damit du weitermachen kannst."};
+if({side _x == west} count playableUnits < 5) exitWith {hint "Es müssen mindestens 5 oder mehr Polizisten online sein, damit du weitermachen kannst."};
 if(!createDialog "Federal_Safe") exitWith {"Konnte keinen Dialog erstellen. Bitte melde das im Forum."};
 disableSerialization;
 ctrlSetText[3501,"Safe Inventar"];

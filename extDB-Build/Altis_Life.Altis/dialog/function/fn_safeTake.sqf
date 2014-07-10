@@ -1,4 +1,4 @@
-#define ctrlSelData(ctrl) (lbData[##ctrl,(lbCurSel ##ctrl)])
+ï»¿#define ctrlSelData(ctrl) (lbData[##ctrl,(lbCurSel ##ctrl)])
 /*
 	File: fn_safeTake.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -9,7 +9,7 @@
 private["_ctrl","_num","_safeInfo"];
 disableSerialization;
 
-if((lbCurSel 3502) == -1) exitWith {hint "Du musst etwas auswaehlen!";};
+if((lbCurSel 3502) == -1) exitWith {hint "Du musst etwas auswählen!";};
 _ctrl = ctrlSelData(3502);
 _num = ctrlText 3505;
 _safeInfo = life_safeObj getVariable["safe",0];
