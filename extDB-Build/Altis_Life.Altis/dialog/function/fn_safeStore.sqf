@@ -19,7 +19,7 @@ if(_ctrl != "goldbar") exitWith {hint "Du kannst nichts anderes als Goldbarren i
 if(_num > life_inv_goldbar) exitWith {hint format["Du hast keine %1 Goldbarren",_num];};
 
 //Store it.
-if(!([false,_ctrl,_num] call life_fnc_handleInv)) exitWith {hint "Konnte die Gegenst‰nde nicht von deinem Inventar aus im Safe lagern.";};
+if(!([false,_ctrl,_num] call life_fnc_handleInv)) exitWith {hint "Konnte die Gegenst√§nde nicht von deinem Inventar aus im Safe lagern.";};
 _safeInfo = life_safeObj getVariable["safe",0];
 life_safeObj setVariable["safe",_safeInfo + _num,true];
 

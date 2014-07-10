@@ -15,6 +15,6 @@ _price = _price * _val;
 
 if(([false,"oilp",_val] call life_fnc_handleInv)) then
 {
-	titleText[format["Du hast %1 Fässer Öl für $%2 verkauft",_val,[_price] call life_fnc_numberText],"PLAIN"];
+	titleText[format["Du hast %1 FÃ¤sser Ã–l fÃ¼r $%2 verkauft",_val,[_price] call life_fnc_numberText],"PLAIN"];
 	life_cash = life_cash + _price;
 };

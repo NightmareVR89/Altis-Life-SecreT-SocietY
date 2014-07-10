@@ -10,7 +10,7 @@ private["_unit"];
 _unit = _this select 1;
 if(life_bail_paid) exitWith {};
 if(isNil {life_bail_amount}) then {life_bail_amount = 3500;};
-if(!isNil "life_canpay_bail") exitWith {hint "Du musst mindestens 3 Minuten im Gef‰ngnis sein, um Kaution zu bezahlen."};
+if(!isNil "life_canpay_bail") exitWith {hint "Du musst mindestens 3 Minuten im Gef√§ngnis sein, um Kaution zu bezahlen."};
 if(life_atmcash < life_bail_amount) exitWith {hint format["Du hast keine $%1 auf der Bank um die Kaution zu bezahlen.",life_bail_amount];};
 
 life_atmcash = life_atmcash - life_bail_amount;

@@ -9,7 +9,7 @@
 private["_ctrl","_num","_safeInfo"];
 disableSerialization;
 
-if((lbCurSel 3502) == -1) exitWith {hint "Du musst etwas ausw‰hlen!";};
+if((lbCurSel 3502) == -1) exitWith {hint "Du musst etwas ausw√§hlen!";};
 _ctrl = ctrlSelData(3502);
 _num = ctrlText 3505;
 _safeInfo = life_safeObj getVariable["safe",0];

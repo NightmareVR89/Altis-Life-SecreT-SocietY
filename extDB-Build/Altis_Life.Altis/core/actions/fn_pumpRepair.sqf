@@ -18,6 +18,6 @@ if(life_cash < 500) then
 switch (_method) do
 {
 	case 0: {hint "Du hast keine $500 in Bar oder auf deinem Konto."};
-	case 1: {vehicle player setDamage 0; life_cash = life_cash - 500; hint "Du hast dein Fahrzeug für $500 repariert";};
-	case 2: {vehicle player setDamage 0; life_atmcash = life_atmcash - 500; hint "Du hast dein Fahrzeug für $500 repariert";};
+	case 1: {vehicle player setDamage 0; life_cash = life_cash - 500; hint "Du hast dein Fahrzeug fÃ¼r $500 repariert";};
+	case 2: {vehicle player setDamage 0; life_atmcash = life_atmcash - 500; hint "Du hast dein Fahrzeug fÃ¼r $500 repariert";};
 };

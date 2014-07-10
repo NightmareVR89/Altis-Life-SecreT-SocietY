@@ -7,7 +7,7 @@
 */
 disableSerialization;
 private["_search","_ui","_progress","_cP","_pgText"];
-if(life_action_inUse) exitWith {hint "Du führst gerade eine Aktion aus, warte bis du damit fertig bist!"};
+if(life_action_inUse) exitWith {hint "Du fÃ¼hrst gerade eine Aktion aus, warte bis du damit fertig bist!"};
 _search = nearestObjects[getPos air_sp, ["Air"],5];
 if(count _search == 0) exitWith {hint "Es steht kein Helikopter auf dem Landeplatz!"};
 if(life_cash < 1000) exitWith {hint "Du brauchst $1,000 um deinen Helikopter zu reparieren"};

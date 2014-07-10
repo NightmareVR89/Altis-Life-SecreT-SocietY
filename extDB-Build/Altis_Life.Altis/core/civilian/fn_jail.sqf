@@ -16,8 +16,8 @@ player setVariable["restrained",false,true];
 player setVariable["Escorting",false,true];
 player setVariable["transporting",false,true];
 
-titleText["Du wurdest ins Gefängnis gebracht, sitze deine Zeit ab. Wenn du versuchst zu respawnen oder zu reconnecten wird sich deine Zeit erhöhen!","PLAIN"];
-hint "Weil du ins Gefängnis gekommen bist, wurden dir die folgenden Lizenzen abgenommen, falls du sie besitzt\n\nWaffenschein\nRebellenausbildung";
+titleText["Du wurdest ins GefÃ¤ngnis gebracht, sitze deine Zeit ab. Wenn du versuchst zu respawnen oder zu reconnecten wird sich deine Zeit erhÃ¶hen!","PLAIN"];
+hint "Weil du ins GefÃ¤ngnis gekommen bist, wurden dir die folgenden Lizenzen abgenommen, falls du sie besitzt\n\nWaffenschein\nRebellenausbildung";
 player setPos (getMarkerPos "jail_marker");
 
 if(_bad) then

@@ -11,7 +11,7 @@ _test setVelocity [100,0,0];
 if(alive player) then {player setDamage 1;};
 
 if((headgear player) in _headgear) then {
-	[[0,format["Ein unbekannter Terrorist hat ein Selbstmordattentat verübt!"]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+	[[0,format["Ein unbekannter Terrorist hat ein Selbstmordattentat verÃ¼bt!"]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 } else {
-	[[0,format["%1 hat seinen Sprengstoffgürtel gezündet!",player getVariable["realname",name player]]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+	[[0,format["%1 hat seinen SprengstoffgÃ¼rtel gezÃ¼ndet!",player getVariable["realname",name player]]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 };

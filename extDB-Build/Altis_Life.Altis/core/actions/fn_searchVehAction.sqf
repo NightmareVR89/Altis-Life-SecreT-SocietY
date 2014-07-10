@@ -6,7 +6,7 @@ _vehicle = cursorTarget;
 if((_vehicle isKindOf "Car") || !(_vehicle isKindOf "Air") || !(_vehicle isKindOf "Ship")) then
 {
 	_owners = _vehicle getVariable "vehicle_info_owners";
-	if(isNil {_owners}) exitWith {hint "Über dieses Fahrzeug gibt es keine Informationen, es wurde vielleicht durch Cheats gespawnt. \n\nLösche Fahrzeug."; deleteVehicle _vehicle;};
+	if(isNil {_owners}) exitWith {hint "Ãœber dieses Fahrzeug gibt es keine Informationen, es wurde vielleicht durch Cheats gespawnt. \n\nLÃ¶sche Fahrzeug."; deleteVehicle _vehicle;};
 	life_action_inUse = true;
 	hint "Durchsuche Fahrzeug....";
 	sleep 3;

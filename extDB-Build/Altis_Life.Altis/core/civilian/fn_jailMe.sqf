@@ -32,7 +32,7 @@ while {true} do
 {
 	if((round(_time - time)) > 0) then {
 		_countDown = [(_time - time),"MM:SS.MS"] call BIS_fnc_secondsToString;
-		hintSilent parseText format["Verbleibende Zeit:<br/> <t size='2'><t color='#FF0000'>%1</t></t><br/><br/>Du kannst Kation bezahlen: %3<br/>Kautionshˆhe: $%2",_countDown,[life_bail_amount] call life_fnc_numberText,if(isNil "life_canpay_bail") then {"Yes"} else {"No"}];
+		hintSilent parseText format["Verbleibende Zeit:<br/> <t size='2'><t color='#FF0000'>%1</t></t><br/><br/>Du kannst Kation bezahlen: %3<br/>Kautionsh√∂he: $%2",_countDown,[life_bail_amount] call life_fnc_numberText,if(isNil "life_canpay_bail") then {"Yes"} else {"No"}];
 	};
 	
 	if(player distance (getMarkerPos "jail_marker") > 60) exitWith {
@@ -65,15 +65,15 @@ switch (true) do
 	case (_esc) :
 	{
 		life_is_arrested = false;
-		hint "Du bist aus dem Gef‰ngnis ausgebrochen. Du wirst nun zus‰tzlich zu deinen begangenen Verbrechen f¸r Gef‰ngnisausbruch gesucht.";
-		[[0,format["%1 ist aus dem Gef‰ngnis ausgebrochen!",player getVariable["realname",name player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+		hint "Du bist aus dem Gef√§ngnis ausgebrochen. Du wirst nun zus√§tzlich zu deinen begangenen Verbrechen f√ºr Gef√§ngnisausbruch gesucht.";
+		[[0,format["%1 ist aus dem Gef√§ngnis ausgebrochen!",player getVariable["realname",name player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 		[[getPlayerUID player,player getVariable["realname",name player],"901"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 	};
 	
 	case (alive player && !_esc && !_bail) :
 	{
 		life_is_arrested = false;
-		hint "Du hast deine Zeit im Gef‰ngnis abgesessen und wurdest wieder frei gelassen.";
+		hint "Du hast deine Zeit im Gef√§ngnis abgesessen und wurdest wieder frei gelassen.";
 		[[getPlayerUID player],"life_fnc_wantedRemove",false,false] spawn life_fnc_MP;
 		player setPos (getMarkerPos "jail_release");
 		[] call SOCK_fnc_updateRequest;

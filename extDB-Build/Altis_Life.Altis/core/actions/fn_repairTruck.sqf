@@ -46,7 +46,7 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) the
 		5 cutText ["","PLAIN"];
 		player playActionNow "stop";
 		if(life_interrupted) exitWith {life_interrupted = false; titleText["Aktion abgebrochen","PLAIN"]; life_action_inUse = false;};
-		if(player != vehicle player) exitWith {titleText["Du musst auﬂerhalb des Fahrzeugs sein, um es zu reparieren.","PLAIN"];};
+		if(player != vehicle player) exitWith {titleText["Du musst au√üerhalb des Fahrzeugs sein, um es zu reparieren.","PLAIN"];};
 		player removeItem "ToolKit";
 		_veh setDamage 0;
 		titleText["Du hast das Fahrzeug repariert.","PLAIN"];

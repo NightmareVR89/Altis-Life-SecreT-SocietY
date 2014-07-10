@@ -14,7 +14,7 @@ if(isNull _vendor OR _type == "" OR (player distance _vendor > 10)) exitWith {};
 //unprocessed item,processed item, cost if no license,Text to display (I.e Processing  (percent) ..."
 _itemInfo = switch (_type) do
 {
-	case "oil": {["oilu","oilp",1200,"Verarbeite �l"];};
+	case "oil": {["oilu","oilp",1200,"Verarbeite Öl"];};
 	case "diamond": {["diamond","diamondc",1350,"Schleife Diamanten"]};
 	case "heroin": {["heroinu","heroinp",2100,"Pansche Heroin"]};
 	case "copper": {["copperore","copper_r",750,"Verarbeite Kupfer"]};
@@ -94,7 +94,7 @@ if(_hasLicense) then
 	if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;};
 	if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; [true,_oldItem,_oldVal] call life_fnc_handleInv; life_is_processing = false;};
 	5 cutText ["","PLAIN"];
-	titleText[format["Du hast %1 fuer $%3 zu %2 verarbeitet",_oldVal,_itemName,[_cost] call life_fnc_numberText],"PLAIN"];
+	titleText[format["Du hast %1 für $%3 zu %2 verarbeitet",_oldVal,_itemName,[_cost] call life_fnc_numberText],"PLAIN"];
 	life_cash = life_cash - _cost;
 	life_is_processing = false;
 };	
