@@ -32,7 +32,7 @@ while {true} do
 {
 	if((round(_time - time)) > 0) then {
 		_countDown = [(_time - time),"MM:SS.MS"] call BIS_fnc_secondsToString;
-		hintSilent parseText format["Time Remaining:<br/> <t size='2'><t color='#FF0000'>%1</t></t><br/><br/>Can pay bail: %3<br/>Bail Price: $%2",_countDown,[life_bail_amount] call life_fnc_numberText,if(isNil "life_canpay_bail") then {"Yes"} else {"No"}];
+		hintSilent parseText format["Verbleibende Zeit:<br/> <t size='2'><t color='#FF0000'>%1</t></t><br/><br/>Du kannst Kation bezahlen: %3<br/>Kautionshoehe: $%2",_countDown,[life_bail_amount] call life_fnc_numberText,if(isNil "life_canpay_bail") then {"Yes"} else {"No"}];
 	};
 	
 	if(player distance (getMarkerPos "jail_marker") > 60) exitWith {
@@ -55,7 +55,7 @@ switch (true) do
 	{
 		life_is_arrested = false;
 		life_bail_paid = false;
-		hint "You have paid your bail and are now free.";
+		hint "Du hast die Kaution bezahlt und bist nun frei.";
 		serv_wanted_remove = [player];
 		player setPos (getMarkerPos "jail_release");
 		[[getPlayerUID player],"life_fnc_wantedRemove",false,false] spawn life_fnc_MP;
@@ -65,15 +65,15 @@ switch (true) do
 	case (_esc) :
 	{
 		life_is_arrested = false;
-		hint "You have escaped from jail, you still retain your previous crimes and now have a count of escaping jail.";
-		[[0,format["%1 has escaped from jail!",player getVariable["realname",name player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+		hint "Du bist aus dem Gefaengnis ausgebrochen. Du wirst nun zusaetzlich zu deinen begangenen Verbrechen fuer Gefaengnisausbruch gesucht.";
+		[[0,format["%1 ist aus dem Gefaengnis ausgebrochen!",player getVariable["realname",name player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 		[[getPlayerUID player,player getVariable["realname",name player],"901"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 	};
 	
 	case (alive player && !_esc && !_bail) :
 	{
 		life_is_arrested = false;
-		hint "You have served your time in jail and have been released.";
+		hint "Du hast deine Zeit im Gefaengnis abgesessen und wurdest wieder frei gelassen.";
 		[[getPlayerUID player],"life_fnc_wantedRemove",false,false] spawn life_fnc_MP;
 		player setPos (getMarkerPos "jail_release");
 		[] call SOCK_fnc_updateRequest;

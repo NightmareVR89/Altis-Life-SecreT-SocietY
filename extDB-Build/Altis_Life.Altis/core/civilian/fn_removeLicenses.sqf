@@ -45,7 +45,7 @@ switch (_state) do
 	{
 		if(license_civ_gun) then {
 			license_civ_gun = false;
-			hint "Sie haben Ihren Waffenschein verloren wegen Totschlags.";
+			hint "Sie haben Ihren Waffenschein wegen Totschlags verloren.";
 		};
 	};
 };
