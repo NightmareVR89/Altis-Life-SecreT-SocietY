@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_spawnPointCfg.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -43,6 +44,13 @@ switch (_side) do
 				_return set[count _return,[format["house_%1",_house getVariable "uid"],_houseName,"\a3\ui_f\data\map\MapControl\lighthouse_ca.paa"]];
 			} foreach life_houses;
 		};	
+		
+		if(__GETC__(life_adaclevel) > 0) then {
+			_return = [
+				["ADAC","ADAC Kavala","\a3\ui_f\data\map\MapControl\fuelstation_ca.paa"],
+				["ADAC_1","ADAC Agios Dionysios","\a3\ui_f\data\map\MapControl\fuelstation_ca.paa"],
+				["ADAC_2","ADAC Pyrgos","\a3\ui_f\data\map\MapControl\fuelstation_ca.paa"]
+			];
 	};
 	
 	case independent: {
