@@ -1,4 +1,4 @@
-/*
+﻿/*
 	File: fn_clothing_reb.sqf
 	Author: Bryan "Tonic" Boardwine
 	
@@ -63,7 +63,8 @@ switch (_filter) do
 		[
 			["V_TacVest_khk",nil,12500],
 			["V_BandollierB_cbr",nil,4500],
-			["V_HarnessO_brn",nil,7500]
+			["V_HarnessO_brn",nil,7500],
+			["V_HarnessOGL_brn","Bombengürtel",100000],
 		];
 	};
 	

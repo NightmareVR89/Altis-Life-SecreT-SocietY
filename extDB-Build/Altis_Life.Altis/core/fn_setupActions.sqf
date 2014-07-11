@@ -1,4 +1,4 @@
-/*
+﻿/*
 	File: fn_setupActions.sqf
 	
 	Description:
@@ -9,11 +9,13 @@ switch (playerSide) do
 	case civilian:
 	{
 		//Drop fishing net
-		life_actions = [player addAction["Drop Fishing Net",life_fnc_dropFishingNet,"",0,false,false,"",'
+		life_actions = [player addAction["Fischernetz auswerfen",life_fnc_dropFishingNet,"",0,false,false,"",'
 		(surfaceisWater (getPos vehicle player)) && (vehicle player isKindOf "Ship") && life_carryWeight < life_maxWeight && speed (vehicle player) < 2 && speed (vehicle player) > -1 && !life_net_dropped ']];
 		//Rob person
-		life_actions = life_actions + [player addAction["Rob Person",life_fnc_robAction,"",0,false,false,"",'
+		life_actions = life_actions + [player addAction["Person ausrauben",life_fnc_robAction,"",0,false,false,"",'
 		!isNull cursorTarget && player distance cursorTarget < 3.5 && isPlayer cursorTarget && animationState cursorTarget == "Incapacitated" && !(cursorTarget getVariable["robbed",FALSE]) ']];
+		//Selbstmordattentäter
+		life_actions = life_actions + [player addAction["<t color='#FF0000'>Bombengürtel aktivieren</t>",life_fnc_suicideBomb,"",0,false,false,"",' vest player == "V_HarnessOGL_brn" && alive player && playerSide == civilian && !life_istazed && !(player getVariable "restrained") && !(player getVariable "Escorting") && !(player getVariable "transporting")']];
 	};
 };
 
