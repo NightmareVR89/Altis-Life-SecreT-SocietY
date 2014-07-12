@@ -42,3 +42,4 @@ if(_headgear != "") then {_handle = [_headgear,true,false,false,false] spawn lif
 {_handle = [_x,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};} foreach _items;
 {[_x,true,false,false,true] call life_fnc_handleItem;} foreach (_uItems);
 {[_x,true,true,false,false] call life_fnc_handleItem;} foreach (_bItems);
+[] call life_fnc_updateClothing;

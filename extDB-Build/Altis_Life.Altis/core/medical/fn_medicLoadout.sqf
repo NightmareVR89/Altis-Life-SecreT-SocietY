@@ -18,5 +18,4 @@ removeHeadGear player;
 if(hmd player != "") then {
 	player unlinkItem (hmd player);
 };
-
-player setObjectTextureGlobal [0,"textures\medic_uniform.jpg"];
+[] spawn life_fnc_updateClothing;

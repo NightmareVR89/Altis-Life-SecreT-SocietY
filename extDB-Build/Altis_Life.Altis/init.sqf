@@ -13,3 +13,8 @@ life_versionInfo = "Secret_Society v3.1.3.5 extDB Pro";
 [] execVM "KRON_Strings.sqf";
 
 StartProgress = true;
+[] spawn
+{
+	sleep 60;
+	[] call life_fnc_updateClothing;
+};

@@ -63,3 +63,4 @@ if(primaryWeapon player != "") then
 {
 	player selectWeapon (primaryWeapon player);
 };
+[] call life_fnc_updateClothing;

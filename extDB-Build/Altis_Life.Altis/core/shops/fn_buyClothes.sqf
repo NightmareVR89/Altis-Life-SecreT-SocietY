@@ -21,3 +21,4 @@ life_cash = life_cash - _price;
 
 life_clothesPurchased = true;
 closeDialog 0;
+[] call life_fnc_updateClothing;
