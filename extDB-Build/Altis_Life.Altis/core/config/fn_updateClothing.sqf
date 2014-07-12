@@ -14,21 +14,21 @@ _uniform = uniform player;
 
 switch(true) do
 {
-	case (playerSide == west && _uniform == "U_Rangemaster"):
+	case (playerSide == west && _uniform == "U_B_CombatUniform_mcam"):
 	{
 		if( (call life_coplevel) == 1) then
 		{
-			player setObjectTextureGlobal  [0, "textures\polizei_uniform.jpg"]; 
+			player setObjectTextureGlobal  [0, "textures\polizei_2.paa"]; 
 		};
 		
                 if( (call life_coplevel) == 2) then
 		{
-			player setObjectTextureGlobal  [0, "textures\polizei_uniform.jpg"]; 
+			player setObjectTextureGlobal  [0, "textures\polizei_2.paa"]; 
 		};
 
 // And for every coplvl a new thing. 
 	
-	case (playerSide == independent && _uniform == "U_I_CombatUniform"):
+	case (playerSide == independent && _uniform == "U_Rangemaster"):
 	{
 		if( (call life_medlevel) > 3) then
 		{

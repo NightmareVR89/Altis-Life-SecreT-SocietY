@@ -19,7 +19,7 @@ removeHeadGear player;
 } foreach (assignedItems player);
 
 //Load player with default cop gear.
-player addUniform "U_Rangemaster";
+player addUniform "U_B_CombatUniform_mcam";
 player addVest "V_Rangemaster_belt";
 player addMagazine "16Rnd_9x21_Mag";
 player addMagazine "16Rnd_9x21_Mag";

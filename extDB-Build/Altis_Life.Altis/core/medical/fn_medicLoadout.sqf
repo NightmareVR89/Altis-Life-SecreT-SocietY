@@ -7,7 +7,7 @@
 */
 removeAllContainers player;
 removeAllWeapons player;
-player addUniform "U_I_CombatUniform";
+player addUniform "U_Rangemaster";
 player addItem "FirstAidKit";
 player addItem "FirstAidKit";
 player addItem "FirstAidKit";

@@ -21,7 +21,7 @@ waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be ope
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 [] spawn
 {
-while {(uniform player) == "U_I_CombatUniform"} do
+while {(uniform player) == "U_Rangemaster"} do
     {
 	switch (__GETC__(life_medicLevel)) do 
 		{
