@@ -65,16 +65,16 @@
 			<Original>Handy</Original>
 		</Key>
 		<Key ID="STR_CELL_TextToSend">
-			<Original>Nachricht zu senden:</Original>
+			<Original>Nachricht senden:</Original>
 		</Key>
 		<Key ID="STR_CELL_TextMSGBtn">
 			<Original>Nachricht an:</Original>
 		</Key>
 		<Key ID="STR_CELL_TextPolice">
-			<Original>Schreibe Polizei</Original>
+			<Original>An Polizei</Original>
 		</Key>
 		<Key ID="STR_CELL_TextAdmins">
-			<Original>Schreibe Admins</Original>
+			<Original>An Admins</Original>
 		</Key>
 		<Key ID="STR_CELL_AdminMsg">
 			<Original>Admin Nachricht</Original>
@@ -88,7 +88,7 @@
 	</Package>
 	<Package name="Chop_Shop">
 		<Key ID="STR_ChopShop_Title">
-			<Original>Local Chop Shop</Original>
+			<Original>Autohehler</Original>
 		</Key>
 	</Package>
 	<Package name="Gang_Menu">
@@ -117,7 +117,7 @@
 			<Original>Zum Anführer bestimmen</Original>
 		</Key>
 		<Key ID="STR_Gang_PriceTxt">
-			<Original>Eine Gang erstellen kostet $10,000</Original>
+			<Original>Eine Gang erstellen kostet 10,000$</Original>
 		</Key>
 		<Key ID="STR_Gang_Create">
 			<Original>Erstellen</Original>
@@ -230,10 +230,10 @@
 			<Original>Zu Fuß:</Original>
 		</Key>
 		<Key ID="STR_SM_inCar">
-			<Original>Im Auto:</Original>
+			<Original>Auto:</Original>
 		</Key>
 		<Key ID="STR_SM_inAir">
-			<Original>In der Luft:</Original>
+			<Original>Luft:</Original>
 		</Key>
 		<Key ID="STR_SM_ToolTip1">
 			<Original>Sichtweite wenn zu Fuß</Original>
@@ -271,10 +271,10 @@
 			<Original>Dein Inventar</Original>
 		</Key>
 		<Key ID="STR_VS_BuyItem">
-			<Original>Kaufe Gegenstand</Original>
+			<Original>Kaufe</Original>
 		</Key>
 		<Key ID="STR_VS_SellItem">
-			<Original>Verkaufe Gegenstand</Original>
+			<Original>Verkaufe</Original>
 		</Key>
 	</Package>
 	<Package name="Spawn_Menu">
@@ -293,18 +293,18 @@
 	</Package>
 	<Package name="Ticket_Menu">
 		<Key ID="STR_Ticket_GiveTicket">
-			<Original>Strafzettel austellen</Original>
+			<Original>Strafzettel</Original>
 		</Key>
 		<Key ID="STR_Ticket_PayTicket">
-			<Original>Strafzettel Bezahlen</Original>
+			<Original>Bezahlen</Original>
 		</Key>
 		<Key ID="STR_Ticket_RefuseTicket">
-			<Original>Strafzettel verwerfen</Original>
+			<Original>Verwerfen</Original>
 		</Key>
 	</Package>
 	<Package name="Trunk_Menu">
 		<Key ID="STR_Trunk_TInventory">
-			<Original>Kofferraum Inventar</Original>
+			<Original>Kofferraum</Original>
 		</Key>
 		<Key ID="STR_Trunk_PInventory">
 			<Original>Spieler Inventar</Original>
@@ -318,7 +318,7 @@
 	</Package>
 	<Package name="Wanted_Menu">
 		<Key ID="STR_Wanted_Title">
-			<Original>APD Wanted List</Original>
+			<Original>Wanted List</Original>
 		</Key>
 		<Key ID="STR_Wanted_Pardon">
 			<Original>Begnadigen</Original>
@@ -355,7 +355,7 @@
 			<Original>Du kaufst eine(n) %1 für $%2</Original>
 		</Key>
 		<Key ID="STR_NOTF_Arrested_1">
-			<Original>%1 wurde von %2 festgenommen</Original>
+			<Original>%1 wurdest von %2 festgenommen</Original>
 		</Key>
 		<Key ID="STR_NOTF_Fishing">
 			<Original>Du fängst eine(n) %1</Original>
@@ -385,13 +385,13 @@
 			<Original>Du hast eine(n) %1 für $%2 verkauft</Original>
 		</Key>
 		<Key ID="STR_NOTF_Picked">
-			<Original>Du haben %1 %2 ausgewählt</Original>
+			<Original>Du hast %1 %2 ausgewählt</Original>
 		</Key>
 		<Key ID="STR_NOTF_Collected">
-			<Original>Du haben %1 eingesammelt</Original>
+			<Original>Du hast %1 eingesammelt</Original>
 		</Key>
 		<Key ID="STR_NOTF_DPStart">
-			<Original>Liefern Sie dieses Packet an %1</Original>
+			<Original>Liefern Sie dieses Paket an %1</Original>
 		</Key>
 		<Key ID="STR_NOTF_DPTask">
 			<Original>Liefer dieses Paket zu %1</Original>
@@ -403,10 +403,10 @@
 			<Original>Du hast keine $%1 um geheilt zu werden</Original>
 		</Key>
 		<Key ID="STR_NOTF_HS_Healing">
-			<Original>Bitte still stehen</Original>
+			<Original>Bitte still stehen!</Original>
 		</Key>
 		<Key ID="STR_NOTF_HS_ToFar">
-			<Original>Du musst in 5m Reichweite sein, damit der Doktor dich versogen kann</Original>
+			<Original>Du musst in 5m Reichweite sein, damit der Doktor dich versogen kann.</Original>
 		</Key>
 		<Key ID="STR_NOTF_HS_Healed">
 			<Original>Du bist jetzt wieder gesund.</Original>
@@ -496,22 +496,22 @@
 			<Original>Spielerinteraktionsmenü</Original>
 		</Key>
 		<Key ID="STR_pInAct_PutInCar">
-			<Original>Setze ins Fahrzeug</Original>
+			<Original>Reinsetzen</Original>
 		</Key>
 		<Key ID="STR_pInAct_Unrestrain">
 			<Original>Freilassen</Original>
 		</Key>
 		<Key ID="STR_pInAct_checkLicenses">
-			<Original>Lizenzen überprüfen</Original>
+			<Original>Lizenzen</Original>
 		</Key>
 		<Key ID="STR_pInAct_SearchPlayer">
-			<Original>Durchsuche Spieler</Original>
+			<Original>Durchsuchen</Original>
 		</Key>
 		<Key ID="STR_pInAct_StopEscort">
-			<Original>Abführen Stoppen</Original>
+			<Original>Abstellen</Original>
 		</Key>
 		<Key ID="STR_pInAct_Escort">
-			<Original>Spieler Abführen</Original>
+			<Original>Abführen</Original>
 		</Key>
 		<Key ID="STR_pInAct_TicketBtn">
 			<Original>Strafzettel</Original>
@@ -522,16 +522,16 @@
 	</Package>
 	<Package name="Player_Interaction_ADAC">
 		<Key ID="STR_adacpInAct_checkMembership">
-			<Original>Überprüfe Mitgliedschaft</Original>
+			<Original>Überprüfe</Original>
 		</Key>
 		<Key ID="STR_adacpInAct_sellMembership">
-			<Original>Verkaufe Mitgliedschaft</Original>
+			<Original>Verkaufe</Original>
 		</Key>
 		<Key ID="STR_adacpInAct_takeMembership">
-			<Original>Entziehe Mitgliedschaft</Original>
+			<Original>Entziehe</Original>
 		</Key>
 		<Key ID="STR_adacpInAct_TicketBtn">
-			<Original>Stelle Rechnung aus</Original>
+			<Original>Rechnung</Original>
 		</Key>
 	</Package>
 	<Package name="Vehicle_Interaction">
@@ -545,28 +545,28 @@
 			<Original>Ins Kart einsteigen</Original>
 		</Key>
 		<Key ID="STR_vInAct_PushBoat">
-			<Original>Boot schieben</Original>
+			<Original>Schieben</Original>
 		</Key>
 		<Key ID="STR_vInAct_Repair">
-			<Original>Fahrzeug reparieren</Original>
+			<Original>Reparieren</Original>
 		</Key>
 		<Key ID="STR_vInAct_Registration">
 			<Original>Registration</Original>
 		</Key>
 		<Key ID="STR_vInAct_SearchVehicle">
-			<Original>Durchsuche Fahrzeug</Original>
+			<Original>Durchsuchen</Original>
 		</Key>
 		<Key ID="STR_vInAct_PullOut">
-			<Original>Spieler rausziehen</Original>
+			<Original>Rausziehen</Original>
 		</Key>
 		<Key ID="STR_vInAct_Impound">
-			<Original>Fahrzeug beschlagnahmen</Original>
+			<Original>Beschlagnahmen</Original>
 		</Key>
 		<Key ID="STR_vInAct_DeviceMine">
 			<Original>Von Gerät abbauen</Original>
 		</Key>
 		<Key ID="STR_vInAct_adacTow">
-			<Original>Fahrzeug Abschleppen</Original>
+			<Original>Abschleppen</Original>
 		</Key>
 	</Package>
 </Project>
