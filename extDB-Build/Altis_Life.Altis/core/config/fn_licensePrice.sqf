@@ -14,7 +14,7 @@ switch (_type) do
 	case "driver": {500}; //Drivers License cost
 	case "boat": {1000}; //Boating license cost
 	case "pilot": {25000}; //Pilot/air license cost
-	case "gun": {10000}; //Firearm/gun license cost
+	case "gun": {20000}; //Firearm/gun license cost
 	case "dive": {2000}; //Diving license cost
 	case "oil": {10000}; //Oil processing license cost
 	case "cair": {15000}; //Cop Pilot License cost
@@ -22,9 +22,9 @@ switch (_type) do
 	case "cg": {8000}; //Coast guard license cost
 	case "heroin": {25000}; //Heroin processing license cost
 	case "marijuana": {19500}; //Marijuana processing license cost
-	case "medmarijuana": {1500}; //Medical Marijuana processing license cost
+	case "medmarijuana": {7500}; //Medical Marijuana processing license cost
 	case "gang": {10000}; //Gang license cost
-	case "rebel": {75000}; //Rebel license cost
+	case "rebel": {100000}; //Rebel license cost
 	case "truck": {20000}; //Truck license cost
 	case "diamond": {35000};
 	case "salt": {12000};
@@ -34,5 +34,5 @@ switch (_type) do
 	case "copper": {8000};
 	case "cement": {6500};
 	case "mair": {15000};
-	case "home": {75000};
+	case "home": {250000};
 };
