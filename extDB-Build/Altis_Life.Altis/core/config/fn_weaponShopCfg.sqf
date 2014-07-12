@@ -26,7 +26,7 @@ switch(_shop) do
 		{
 			case (playerSide != independent): {"Du bist kein Sanitäter"};
 			default {
-				["Hospital EMS Shop",
+				["Hospital Medic Shop",
 					[
 						["ItemGPS",nil,100],
 						["Binocular",nil,150],
@@ -47,7 +47,7 @@ switch(_shop) do
 			case (playerSide != west): {"Du bist kein Polizist!"};
 			case (__GETC__(life_coplevel) == 2): 
 			{
-				["Corrections Officer Shop",
+				["Anwaerter Shop",
 					[
 						["SMG_01_F","Taser Rifle",20000],
 						["hgun_P07_snds_F","Stun Pistol",2000],
@@ -262,7 +262,7 @@ switch(_shop) do
 			case (__GETC__(life_donator) == 0): {"Du hast nichts fuer unseren Server gespendet!"};
 			case (__GETC__(life_donator) == 1):
 			{
-				["STS Donator Shop Tier 1",
+				["Spender Shop Stufe 1",
 					[
 						["hgun_Rook40_F",nil,750],
 						["hgun_PDW2000_F",nil,6500],
@@ -279,7 +279,7 @@ switch(_shop) do
 
 			case (__GETC__(life_donator) == 2):
 			{
-				["STS Donator Shop Tier 2",
+				["Spender Shop Stufe 2",
 					[
 						["hgun_Rook40_F",nil,750],
 						["hgun_PDW2000_F",nil,6500],
@@ -297,7 +297,7 @@ switch(_shop) do
 
 			case (__GETC__(life_donator) >= 3):
 			{
-				["STS Donator Shop Tier 3",
+				["Spender Shop Stufe 3",
 					[
 						["hgun_Rook40_F",nil,500],
 						["hgun_PDW2000_F",nil,6500],
