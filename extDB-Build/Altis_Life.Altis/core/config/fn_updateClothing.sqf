@@ -14,7 +14,7 @@ _uniform = uniform player;
 
 switch(true) do
 {
-	case (playerSide == west && _uniform == "U_I_CombatUniform"):
+	case (playerSide == west && _uniform == "U_Rangemaster"):
 	{
 		if( (call life_coplevel) == 1) then
 		{
