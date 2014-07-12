@@ -36,7 +36,7 @@ while {(uniform player) == "U_B_CombatUniform_mcam"} do
 			case 1: {
 			player setObjectTextureGlobal [0,"textures\polizei_2.paa"];
 			};
-			default {
+			case 2: {
 			player setObjectTextureGlobal [0,"textures\polizei_2.paa"];
 			};
 		};
