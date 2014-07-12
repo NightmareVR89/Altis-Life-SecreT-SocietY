@@ -68381,7 +68381,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT sie betreten Polizeigelände. Bitte verlassen sie diesen Bereich Ansonsten müssen sie mit Konsequenzen rechnen """;
+			expActiv="hint ""VORSICHT ! Sie betreten ein Polizeigelände. Bitte verlassen Sie diesen Bereich Ansonsten müssen sie mit Konsequenzen rechnen !""";
 			class Effects
 			{
 			};
@@ -68399,7 +68399,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT Sie betreten gerade eine (SAFEZONE) bei Missachtung der Regel müssen sie mit Konsequenzen Rechnen. Training auf der Schießbahn ist erlaubt""";
+			expActiv="hint ""VORSICHT Sie betreten gerade eine (SAFEZONE) bei Missachtung der Regel müssen Sie mit Konsequenzen Rechnen. Training auf der Schießbahn ist erlaubt""";
 			expDesactiv="hint ""Sie Verlassen die sichere Zone.""";
 			class Effects
 			{
@@ -68418,7 +68418,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT sie betreten Polizeigelände. Bitte verlassen sie diesen Bereich Ansonsten müssen sie mit Konsequenzen rechnen """;
+			expActiv="hint ""VORSICHT! Sie betreten ein Polizeigelände. Bitte verlassen Sie diesen Bereich Ansonsten müssen Sie mit Konsequenzen rechnen ! """;
 			class Effects
 			{
 			};
@@ -68455,7 +68455,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""ADAC Sperrzone Bitte verlassen sie augenblicklich diesen Bereich""";
+			expActiv="hint ""ADAC Sperrzone ! Bitte verlassen Sie augenblicklich diesen Bereich !""";
 			class Effects
 			{
 			};
@@ -68473,7 +68473,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""ADAC Sperrzone Bitte verlassen sie augenblicklich diesen Bereich Ansonsten müssen sie mit Konsequenzen rechnen 5 min Knast""";
+			expActiv="hint ""ADAC Sperrzone ! Bitte verlassen Sie augenblicklich diesen Bereich, ansonsten müssen Sie mit Konsequenzen rechnen, 5 min Knast""";
 			class Effects
 			{
 			};
@@ -68491,7 +68491,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""Sie Betreten das Krankenhaus aufenthalt nur für Sanitäter oder Patienten""";
+			expActiv="hint ""Sie Betreten das Krankenhaus, aufenthalt nur für Sanitäter oder Patienten""";
 			class Effects
 			{
 			};
@@ -68509,7 +68509,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT sie betreten Polizeigelände. Bitte verlassen sie diesen Bereich Ansonsten müssen sie mit Konsequenzen rechnen """;
+			expActiv="hint ""VORSICHT! Sie betreten ein Polizeigelände. Bitte verlassen Sie diesen Bereich Ansonsten müssen Sie mit Konsequenzen rechnen! """;
 			class Effects
 			{
 			};
@@ -68527,7 +68527,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT Sie betreten gerade eine (SAFEZONE) bei Missachtung der Regel müssen sie mit Konsequenzen Rechnen.""";
+			expActiv="hint ""VORSICHT! Sie betreten gerade eine (SAFEZONE) bei Missachtung der Regel müssen Sie mit Konsequenzen Rechnen!""";
 			expDesactiv="hint ""Sie Verlassen die sichere Zone.""";
 			class Effects
 			{
@@ -68546,7 +68546,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT Geschwindigkeitsbegrenzung in Kavala fahren sie bitte 50 """;
+			expActiv="hint ""ACHTUNG! Geschwindigkeitsbegrenzung in Kavala, fahren Sie bitte mit max. 50Km/h""";
 			class Effects
 			{
 			};
@@ -68564,7 +68564,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT Geschwindigkeitsbegrenzung in Kavala fahren sie bitte 50 """;
+			expActiv="hint ""ACHTUNG! Geschwindigkeitsbegrenzung in Kavala, fahren Sie bitte mit max. 50Km/h """;
 			class Effects
 			{
 			};
@@ -68582,7 +68582,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT Geschwindigkeitsbegrenzung in Kavala fahren sie bitte 50 """;
+			expActiv="hint ""ACHTUNG! Geschwindigkeitsbegrenzung in Kavala, fahren Sie bitte mit max. 50Km/h""";
 			class Effects
 			{
 			};
@@ -68600,7 +68600,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT Geschwindigkeitsbegrenzung in Kavala fahren sie bitte 50 """;
+			expActiv="hint ""ACHTUNG! Geschwindigkeitsbegrenzung in Kavala, fahren Sie bitte mit max. 50Km/h""";
 			class Effects
 			{
 			};
@@ -68618,7 +68618,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT Geschwindigkeitsbegrenzung in Kavala fahren sie bitte 50 """;
+			expActiv="hint ""ACHTUNG! Geschwindigkeitsbegrenzung in Kavala, fahren Sie bitte mit max. 50Km/h""";
 			class Effects
 			{
 			};
@@ -68636,7 +68636,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT Geschwindigkeitsbegrenzung in Kavala fahren sie bitte 50 """;
+			expActiv="hint ""ACHTUNG! Geschwindigkeitsbegrenzung in Kavala, fahren Sie bitte mit max. 50Km/h""";
 			class Effects
 			{
 			};
@@ -68654,7 +68654,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT Geschwindigkeitsbegrenzung in Kavala fahren sie bitte 50 """;
+			expActiv="hint ""ACHTUNG! Geschwindigkeitsbegrenzung in Kavala, fahren Sie bitte mit max. 50Km/h""";
 			class Effects
 			{
 			};
@@ -68672,7 +68672,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT Geschwindigkeitsbegrenzung in Kavala fahren sie bitte 50 """;
+			expActiv="hint ""ACHTUNG! Geschwindigkeitsbegrenzung in Kavala, fahren Sie bitte mit max. 50Km/h""";
 			class Effects
 			{
 			};
@@ -68690,7 +68690,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT Geschwindigkeitsbegrenzung in Kavala fahren sie bitte 50 """;
+			expActiv="hint ""ACHTUNG! Geschwindigkeitsbegrenzung in Kavala, fahren Sie bitte mit max. 50Km/h""";
 			class Effects
 			{
 			};
@@ -68708,7 +68708,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT Geschwindigkeitsbegrenzung in Athira fahren sie bitte 50 """;
+			expActiv="hint ""ACHTUNG! Geschwindigkeitsbegrenzung in Athira, fahren Sie bitte mit max. 50Km/h""";
 			class Effects
 			{
 			};
@@ -68726,7 +68726,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT Geschwindigkeitsbegrenzung in Athira fahren sie bitte 50 """;
+			expActiv="hint ""ACHTUNG! Geschwindigkeitsbegrenzung in Athira, fahren Sie bitte mit max. 50Km/h """;
 			class Effects
 			{
 			};
@@ -68744,7 +68744,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT Geschwindigkeitsbegrenzung in Athira fahren sie bitte 50 """;
+			expActiv="hint ""ACHTUNG! Geschwindigkeitsbegrenzung in Athira, fahren Sie bitte mit max. 50Km/h""";
 			class Effects
 			{
 			};
@@ -68762,7 +68762,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT Geschwindigkeitsbegrenzung in Athira fahren sie bitte 50 """;
+			expActiv="hint ""ACHTUNG! Geschwindigkeitsbegrenzung in Athira, fahren Sie bitte mit max. 50Km/h""";
 			class Effects
 			{
 			};
@@ -68780,7 +68780,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT Geschwindigkeitsbegrenzung in Athira fahren sie bitte 50 """;
+			expActiv="hint ""ACHTUNG! Geschwindigkeitsbegrenzung in Athira, fahren Sie bitte mit max. 50Km/h """;
 			class Effects
 			{
 			};
@@ -68798,7 +68798,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT Geschwindigkeitsbegrenzung in Athira fahren sie bitte 50 """;
+			expActiv="hint ""ACHTUNG! Geschwindigkeitsbegrenzung in Athira, fahren Sie bitte mit max. 50Km/h""";
 			class Effects
 			{
 			};
@@ -68816,7 +68816,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT Geschwindigkeitsbegrenzung in Athira fahren sie bitte 50 """;
+			expActiv="hint ""ACHTUNG! Geschwindigkeitsbegrenzung in Athira, fahren Sie bitte mit max. 50Km/h """;
 			class Effects
 			{
 			};
@@ -68834,7 +68834,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT Geschwindigkeitsbegrenzung in Pyrgos fahren sie bitte 50 """;
+			expActiv="hint ""ACHTUNG! Geschwindigkeitsbegrenzung in Pyrgos, fahren Sie bitte mit max. 50Km/h""";
 			class Effects
 			{
 			};
@@ -68852,7 +68852,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT Geschwindigkeitsbegrenzung in Athira fahren sie bitte 50 """;
+			expActiv="hint ""ACHTUNG! Geschwindigkeitsbegrenzung in Athira, fahren Sie bitte mit max. 50Km/h """;
 			class Effects
 			{
 			};
@@ -68870,7 +68870,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT Geschwindigkeitsbegrenzung in Athira fahren sie bitte 50 """;
+			expActiv="hint ""ACHTUNG! Geschwindigkeitsbegrenzung in Athira, fahren Sie bitte mit max. 50Km/h""";
 			class Effects
 			{
 			};
@@ -68888,7 +68888,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT Geschwindigkeitsbegrenzung in Athira fahren sie bitte 50 """;
+			expActiv="hint ""ACHTUNG! Geschwindigkeitsbegrenzung in Athira, fahren Sie bitte mit max. 50Km/h """;
 			class Effects
 			{
 			};
@@ -68906,7 +68906,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT Geschwindigkeitsbegrenzung in Athira fahren sie bitte 50 """;
+			expActiv="hint ""ACHTUNG! Geschwindigkeitsbegrenzung in Athira, fahren Sie bitte max. 50Km/h """;
 			class Effects
 			{
 			};
@@ -68924,7 +68924,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT Sie betreten gerade eine (SAFEZONE) bei Missachtung der Regel müssen sie mit Konsequenzen Rechnen.""";
+			expActiv="hint ""VORSICHT! Sie betreten gerade eine (SAFEZONE) bei Missachtung der Regel müssen Sie mit Konsequenzen Rechnen!""";
 			expDesactiv="hint ""Sie Verlassen die sichere Zone.""";
 			class Effects
 			{
@@ -68943,7 +68943,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT Sie betreten gerade eine (SAFEZONE) bei Missachtung der Regel müssen sie mit Konsequenzen Rechnen.""";
+			expActiv="hint ""VORSICHT! Sie betreten gerade eine (SAFEZONE) bei Missachtung der Regel müssen Sie mit Konsequenzen Rechnen!""";
 			expDesactiv="hint ""Sie Verlassen die sichere Zone.""";
 			class Effects
 			{
@@ -68961,7 +68961,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""VORSICHT sie betreten Polizeigelände. Bitte verlassen sie diesen Bereich Ansonsten müssen sie mit Konsequenzen rechnen """;
+			expActiv="hint ""VORSICHT! Sie betreten ein Polizeigelände, bitte verlassen Sie diesen Bereich, ansonsten müssen Sie mit Konsequenzen rechnen! """;
 			class Effects
 			{
 			};
@@ -68979,7 +68979,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""Sie Betreten das Krankenhaus aufenthalt nur für Sanitäter oder Patienten""";
+			expActiv="hint ""Sie Betreten das Krankenhaus, aufenthalt nur für Sanitäter oder Patienten""";
 			class Effects
 			{
 			};
@@ -68997,7 +68997,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""Sie Betreten das Krankenhaus aufenthalt nur für Sanitäter oder Patienten""";
+			expActiv="hint ""Sie Betreten das Krankenhaus, aufenthalt nur für Sanitäter oder Patienten""";
 			class Effects
 			{
 			};
