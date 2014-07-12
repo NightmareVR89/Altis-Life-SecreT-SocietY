@@ -36,6 +36,9 @@ while {(uniform player) == "U_Rangemaster"} do
 			case 1: {
 			player setObjectTextureGlobal [0,"textures\polizei_uniform.jpg"];
 			};
+			default {
+			player setObjectTextureGlobal [0,"textures\polizei_uniform.jpg"];
+			};
 		};
     if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
     sleep 30;

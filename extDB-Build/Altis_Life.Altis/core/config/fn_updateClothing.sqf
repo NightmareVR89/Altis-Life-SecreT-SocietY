@@ -28,7 +28,7 @@ switch(true) do
 
 // And for every coplvl a new thing. 
 	
-	case (playerSide == independent && _uniform == "U_Rangemaster"):
+	case (playerSide == independent && _uniform == "U_I_CombatUniform"):
 	{
 		if( (call life_medlevel) > 3) then
 		{

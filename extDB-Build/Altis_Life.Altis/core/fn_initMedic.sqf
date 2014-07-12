@@ -21,16 +21,19 @@ waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be ope
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 [] spawn
 {
-while {(uniform player) == "U_I_HeliPilotCoveralls"} do
+while {(uniform player) == "U_I_CombatUniform"} do
     {
 	switch (__GETC__(life_medicLevel)) do 
 		{
 			case 1: {
-			player setObjectTextureGlobal [0,"textures\med_uniform.jpg"];
+			player setObjectTextureGlobal [0,"textures\medic_uniform.jpg"];
 			};
 			
 			case 2: {
-			player setObjectTextureGlobal [0,"textures\med_uniform.jpg"];
+			player setObjectTextureGlobal [0,"textures\medic_uniform.jpg"];
+			};
+						default {
+			player setObjectTextureGlobal [0,"textures\medic_uniform.jpg"];
 			};
 		};
     if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
