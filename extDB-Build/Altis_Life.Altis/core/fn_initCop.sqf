@@ -29,15 +29,15 @@ waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done
 
 [] spawn
 {
-while {(uniform player) == "U_B_CombatUniform_mcam"} do
+while {(uniform player) == "U_I_CombatUniform"} do
     {
 	switch (__GETC__(life_coplevel)) do 
 		{
 			case 1: {
-			player setObjectTextureGlobal [0,"textures\polizei_2.paa"];
+			player setObjectTextureGlobal [0,"textures\polizei_uniform.jpg"];
 			};
 			default {
-			player setObjectTextureGlobal [0,"textures\polizei_2.paa"];
+			player setObjectTextureGlobal [0,"textures\polizei_uniform.jpg"];
 			};
 		};
     if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
