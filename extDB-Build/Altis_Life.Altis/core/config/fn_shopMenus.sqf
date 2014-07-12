@@ -14,7 +14,7 @@ if(!dialog) then
 	if(!(createDialog "shop_menu")) exitWith {};
 };
 disableSerialization;
-ctrlSetText[601,format["Cash: $%1",[life_cash] call life_fnc_numberText]];
+ctrlSetText[601,format["Geld: $%1",[life_cash] call life_fnc_numberText]];
 
 switch (_shop) do
 {
@@ -28,13 +28,13 @@ switch (_shop) do
 	
 	case "cop":
 	{
-		ctrlSetText[2505,"Altis Cop Shop"];
+		ctrlSetText[2505,"Altis Polizei Shop"];
 		ctrlShow[2503,false];
 	};
 	
 	case "gun":
 	{
-		ctrlSetText[2505,"Altis Gun Store"];
+		ctrlSetText[2505,"Altis Waffen Store"];
 		ctrlShow[2503,false];
 		ctrlShow[2513,false];
 		ctrlShow[2514,false];
@@ -50,7 +50,7 @@ switch (_shop) do
 	
 	case "dive":
 	{
-		ctrlSetText[2505,"Altis Diving Shop"];
+		ctrlSetText[2505,"Altis Taucher Shop"];
 		ctrlShow[2503,false];
 		ctrlShow[2510,false];
 		ctrlShow[2511,false];
@@ -59,7 +59,7 @@ switch (_shop) do
 	
 	case "donator":
 	{
-		ctrlSetText[2505,"Donator Shop"];
+		ctrlSetText[2505,"Spender Shop"];
 	};
 	
 	case "sergeant":
@@ -76,7 +76,7 @@ switch (_shop) do
 	
 	case "officer":
 	{
-		ctrlSetText[2505,"Patrol Officer Shop"];
+		ctrlSetText[2505,"Kommissar Shop"];
 		ctrlShow[2503,false];
 	};
 	
