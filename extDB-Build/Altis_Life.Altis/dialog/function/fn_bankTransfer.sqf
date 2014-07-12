@@ -11,7 +11,7 @@ _unit = call compile format["%1",(lbData[2703,(lbCurSel 2703)])];
 if(isNull _unit) exitWith {};
 if((lbCurSel 2703) == -1) exitWith {hint "Du musst jemanden auswählen, dem du etwas überweisen willst"};
 if(isNil "_unit") exitWith {hint "Der ausgewählte Spieler scheint nicht zu existieren..."};
-if(_val > 999999) exitWith {hint "Du kannst nicht mehr als $999,999 überweisen";};
+if(_val > 9999999) exitWith {hint "Du kannst nicht mehr als $9,999,999 überweisen";};
 if(_val < 0) exitwith {};
 if(!([str(_val)] call life_fnc_isnumeric)) exitWith {hint "Das ist kein richtiges Nummernformat."};
 if(_val > life_atmcash) exitWith {hint "So viel Geld hast du nicht auf deinem Bankkonto!"};
