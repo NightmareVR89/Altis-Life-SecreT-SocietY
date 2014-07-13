@@ -323,7 +323,7 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != civilian: {"Du bist kein Zivilist!"};
+			case (playerSide != civilian): {"Du bist kein Zivilist!"};
 			default
 			{
 				["Gangversteck Waffenhändler",
