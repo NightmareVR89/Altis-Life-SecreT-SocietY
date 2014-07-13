@@ -80,11 +80,11 @@ life_delivery_in_progress = false;
 life_action_in_use = false;
 life_thirst = 100;
 life_hunger = 100;
-__CONST__(life_paycheck_period,30); //Five minutes
+__CONST__(life_paycheck_period,10); //Five minutes
 life_cash = 0;
-__CONST__(life_impound_car,350);
-__CONST__(life_impound_boat,250);
-__CONST__(life_impound_air,850);
+__CONST__(life_impound_car,100);
+__CONST__(life_impound_boat,160);
+__CONST__(life_impound_air,300);
 life_istazed = false;
 life_my_gang = ObjNull;
 
