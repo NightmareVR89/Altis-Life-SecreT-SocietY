@@ -37,7 +37,7 @@ switch (_state) do
 			license_civ_truck = false;
 			license_civ_boat = false;
 			license_civ_adac = false;
-			hint "Du hast alle deine Führerscheine und deine AAMC Mitgliedschaft wegen eines Fahrzeugunfalls mit Todesfolge verloren.";
+			hint "Du hast alle deine Führerscheine und deine ADAC Mitgliedschaft wegen eines Fahrzeugunfalls mit Todesfolge verloren.";
 		};
 	};
 	
