@@ -122,7 +122,7 @@ class CfgFunctions
 			class insertGang {};
 			class queryPlayerGang {};
 			class removeGang {};
-			class updateGang {];
+			class updateGang {};
 		};
 	};
 };
