@@ -85,7 +85,7 @@ life_delivery_in_progress = false;
 life_action_in_use = false;
 life_thirst = 100;
 life_hunger = 100;
-__CONST__(life_paycheck_period,10); //Five minutes
+__CONST__(life_paycheck_period,5); //Five minutes
 life_cash = 0;
 __CONST__(life_impound_car,100);
 __CONST__(life_impound_boat,160);
@@ -222,7 +222,7 @@ sell_array =
 	["apple",2],
 	["heroinu",30],
 	["heroinp",10],
-	["salema",8],
+	["salema",10],
 	["ornate",5],
 	["mackerel",15],
 	["tuna",10],
@@ -231,8 +231,8 @@ sell_array =
 	["rabbit",20],
 	["oilp",30],
 	["turtle",100],
-	["water",3],
-	["coffee",3],
+	["water",2],
+	["coffee",2],
 	["turtlesoup",25],
 	["donuts",2],
 	["marijuana",20],
@@ -240,11 +240,11 @@ sell_array =
 	["lockpick",75],
 	["pickaxe",130],
 	["redgull",1000],
-	["peach",3],
+	["peach",2],
 	["cocaine",80],
 	["cocainep",120],
-	["diamond",170],
-	["diamondc",300],
+	["diamond",80],
+	["diamondc",150],
 	["iron_r",50],
 	["copper_r",30],
 	["salt_r",20],
@@ -262,27 +262,27 @@ buy_array =
 	["rabbit",40],
 	["salema",15],
 	["ornate",10],
-	["mackerel",23],
-	["tuna",17],
-	["mullet",13],
+	["mackerel",20],
+	["tuna",20],
+	["mullet",15],
 	["catshark",130],
-	["water",6],
+	["water",5],
 	["turtle",130],
-	["turtlesoup",32],
+	["turtlesoup",30],
 	["donuts",5],
-	["coffee",7],
+	["coffee",10],
 	["tbacon",140],
-	["lockpick",150],
-	["pickaxe",1200],
+	["lockpick",200],
+	["pickaxe",600],
 	["redgull",1500],
 	["fuelF",850],
-	["peach",68],
+	["peach",5],
 	["spikeStrip",250],
-	["blastingcharge",2000],
-	["boltcutter",1850],
+	["blastingcharge",10000],
+	["boltcutter",7000],
 	["defusekit",500],
-	["storagesmall",5000],
-	["storagebig",150000]
+	["storagesmall",15000],
+	["storagebig",1500000]
 ];
 __CONST__(buy_array,buy_array);
 
