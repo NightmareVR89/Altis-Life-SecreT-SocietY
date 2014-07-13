@@ -27,7 +27,7 @@ if(!(str(player) in ["cop_16","cop_17","cop_18","cop_13","cop_6","cop_11","cop_7
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 
-[] spawn life_fnc_updateClothing; //Skinmanager Laden
+[] call life_fnc_updateClothing; //Skinmanager Laden
 
 // Hהההה? wir haben doch nen Skinmanager O.o ->
 /*[] spawn

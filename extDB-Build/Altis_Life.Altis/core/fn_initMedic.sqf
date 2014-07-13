@@ -20,7 +20,7 @@ if((__GETC__(life_medicLevel)) < 1) exitWith {
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 
-[] spawn life_fnc_updateClothing; //Skinmanager Laden
+[] call life_fnc_updateClothing; //Skinmanager Laden
 
 // Hהההה? wir haben doch nen Skinmanager O.o ->
 /*[] spawn
