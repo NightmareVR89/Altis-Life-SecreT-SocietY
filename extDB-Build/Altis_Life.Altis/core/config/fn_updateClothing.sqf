@@ -18,7 +18,8 @@ switch(true) do
 	{
 		if( (call life_coplevel) > 0) then
 		{
-			player setObjectTextureGlobal  [0, "textures\polizei_uniform.jpg"]; 
+			player setObjectTextureGlobal  [0, "textures\polizei_uniform.jpg"];
+			if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
 		};
 		// Bis neue Skins eingefügt werden, erstmal weg damit
        /* if( (call life_coplevel) == 2) then
@@ -30,15 +31,10 @@ switch(true) do
 	
 	case (playerSide == independent && _uniform == "U_Rangemaster"):
 	{
-		if( (call life_medlevel) > 3) then
+		if( (call life_medlevel) > 0) then
 		{
 			player setObjectTextureGlobal  [0, "textures\medic_uniform.jpg"];
+			if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
 		}
-		else
-		{
-			player setObjectTextureGlobal  [0, "textures\medic_uniform.jpg"]; 
-		};
-		
-		if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
 	};
 };
