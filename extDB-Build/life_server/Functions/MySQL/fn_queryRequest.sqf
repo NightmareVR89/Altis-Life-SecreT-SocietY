@@ -81,9 +81,21 @@ switch (_side) do {
 		if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
 		_queryResult set[8,_new];
 		_queryResult set[7,([_queryResult select 7,1] call DB_fnc_bool)];
+		//ADAC Gear
+		_new = [(_queryResult select 12)] call DB_fnc_mresToArray;
+		if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
+		_queryResult set[12,_new];
+		//ADAC Konten
+		_tmp = _queryResult select 9;
+		_queryResult set[9,[_tmp] call DB_fnc_numberSafe];
+		_tmp = _queryResult select 10;
+		_queryResult set[10,[_tmp] call DB_fnc_numberSafe];
 		_houseData = _uid spawn TON_fnc_fetchPlayerHouses;
 		waitUntil {scriptDone _houseData};
 		_queryResult set[count _queryResult,(missionNamespace getVariable[format["houses_%1",_uid],[]])];
+		_gangData = _uid spawn TON_fnc_queryPlayerGang;
+		waitUntil{scriptDone _gangData};
+		_queryResult set[count _queryResult,(missionNamespace getVariable[format["gang_%1",_uid],[]])];
 	};
 };
 

@@ -1,4 +1,5 @@
-﻿/*
+﻿#include <macro.h>
+/*
 	File: fn_weaponShopBuySell.sqf
 	Author: Bryan "Tonic" Boardwine
 	
@@ -27,15 +28,42 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) == 1) then
 {
 	life_cash = life_cash + _price;
 	[_item,false] call life_fnc_handleItem;
-	hint parseText format["Du hast ein(e) %1 für <t color='#8cff9b'>$%2</t> verkauft",_itemInfo select 1,[_price] call life_fnc_numberText];
+	hint parseText format["You sold a %1 for <t color='#8cff9b'>$%2</t>",_itemInfo select 1,[_price] call life_fnc_numberText];
 	[nil,(uiNamespace getVariable["Weapon_Shop_Filter",0])] call life_fnc_weaponShopFilter; //Update the menu.
 }
 	else
 {
-	if(_price > life_cash) exitWith {hint "Du hast nicht genug Bargeld dabei!"};
-	[_item,true] spawn life_fnc_handleItem;
-	hint parseText format["Du hast ein(e) %1 für <t color='#8cff9b'>$%2</t> gekauft",_itemInfo select 1,[_price] call life_fnc_numberText];
-	life_cash = life_cash - _price;
+	private["_hideout"];
+	_hideout = (nearestObjects[getPosATL player,["Land_u_Barracks_V2_F","Land_i_Barracks_V2_F"],25]) select 0;
+	if(!isNil "_hideout" && {!isNil {grpPlayer getVariable "gang_bank"}} && {(grpPlayer getVariable "gang_bank") >= _price}) then {
+		_action = [
+			format["Deine Gang hat genug Geld um das zu bezahlen. Willst du mit dem Gangvermögen, oder mit deinem  eigenen Vermögen zahlen?<br/><br/>Gangvermögen: <t color='#8cff9b'>$%1</t><br/>Dein Bargeld: <t color='#8cff9b'>$%2</t>",
+				[(grpPlayer getVariable "gang_bank")] call life_fnc_numberText,
+				[life_cash] call life_fnc_numberText
+			],
+			"Zahle in Bar oder über Gangvermögen",
+			"Gangvermögen",
+			"Mein Bargeld"
+		] call BIS_fnc_guiMessage;
+		if(_action) then {
+			hint parseText format["Du hast eine %1 für <t color='#8cff9b'>$%2</t> mit dem Gangvermögen gekauft.",_itemInfo select 1,[_price] call life_fnc_numberText];
+			_funds = grpPlayer getVariable "gang_bank";
+			_funds = _funds - _price;
+			grpPlayer setVariable["gang_bank",_funds,true];
+			[_item,true] spawn life_fnc_handleItem;
+			[[1,grpPlayer],"TON_fnc_updateGang",false,false] spawn life_fnc_MP;
+		} else {
+			if(_price > life_cash) exitWith {hint "Du hast nicht so viel Geld!"};
+			hint parseText format["Du hast eine %1 für <t color='#8cff9b'>$%2</t> gekauft",_itemInfo select 1,[_price] call life_fnc_numberText];
+			__SUB__(life_cash,_price);
+			[_item,true] spawn life_fnc_handleItem;
+		};
+	} else {
+		if(_price > life_cash) exitWith {hint "Du hast nicht so viel Geld!"};
+		hint parseText format["Du hast eine %1 für <t color='#8cff9b'>$%2</t> gekauft",_itemInfo select 1,[_price] call life_fnc_numberText];
+		life_cash = life_cash - _price;
+		[_item,true] spawn life_fnc_handleItem;
+	};
 };
 
 //Hotfix in for cop gear

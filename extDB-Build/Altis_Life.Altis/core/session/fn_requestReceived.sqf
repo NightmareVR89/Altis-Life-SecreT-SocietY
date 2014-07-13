@@ -51,10 +51,10 @@ switch(playerSide) do {
 	case civilian: {
 	
 		//Trenne Konten und Gear von ADAC und Zivilisten
-		if((player in ["civ_71","civ_72","civ_73","civ_74","civ_75","civ_66","civ_67","civ_68","civ_69","civ_70"])) then {
+		if((str(player) in ["civ_71","civ_72","civ_73","civ_74","civ_75","civ_66","civ_67","civ_68","civ_69","civ_70"])) then {
+		civ_gear = _this select 12;
 		life_cash = parseNumber (_this select 9);
 		life_atmcash = parseNumber (_this select 10);
-		civ_gear = _this select 12;
 		__CONST__(life_adaclevel,parseNumber(_this select 11));
 		[] spawn life_fnc_adacLoadGear;
 		} else {
@@ -76,6 +76,11 @@ switch(playerSide) do {
 			_house = nearestBuilding (call compile format["%1", _x select 0]);
 			life_vehicles set[count life_vehicles,_house];
 		} foreach life_houses;
+		
+		life_gangData = _this select 14;
+		if(count life_gangData != 0) then {
+			[] spawn life_fnc_initGang;
+		};
 		[] spawn life_fnc_initHouses;
 	};
 	

@@ -24,7 +24,7 @@ switch(_shop) do
 	{
 		switch (true) do 
 		{
-			case (playerSide != independent): {"Du bist kein Sanit�ter"};
+			case (playerSide != independent): {"Du bist kein Sanitäter"};
 			default {
 				["Hospital Medic Shop",
 					[
@@ -313,6 +313,31 @@ switch(_shop) do
 						["30Rnd_9x21_Mag",nil,75],
 						["11Rnd_45ACP_Mag",nil,85],
 						["30Rnd_556x45_Stanag",nil,125]
+					]
+				];
+			};
+		};
+	};
+	
+	case "gang":
+	{
+		switch(true) do
+		{
+			case (playerSide != civilian: {"Du bist kein Zivilist!"};
+			default
+			{
+				["Gangversteck Waffenhändler",
+					[
+						["hgun_Rook40_F",nil,1500],
+						["hgun_Pistol_heavy_02_F",nil,2500],
+						["hgun_ACPC2_F",nil,4500],
+						["hgun_PDW2000_F",nil,9500],
+						["optic_ACO_grn_smg",nil,950],
+						["V_Rangemaster_belt",nil,1900],
+						["16Rnd_9x21_Mag",nil,25],
+						["9Rnd_45ACP_Mag",nil,45],
+						["6Rnd_45ACP_Cylinder",nil,50],
+						["30Rnd_9x21_Mag",nil,75]
 					]
 				];
 			};

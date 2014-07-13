@@ -32,4 +32,4 @@ if(_index == -1) then
 };
 
 hint format["Du hast %1 die Schlüssel zu deinem %2 gegeben",_unit getVariable["realname",name _unit],typeOf _vehicle];
-[[_vehicle,_unit,player getVariable["realname",name player]], "clientGetKey",_unit,false] spawn life_fnc_MP;
+[[_vehicle,_unit,profileName], "clientGetKey",_unit,false] spawn life_fnc_MP;

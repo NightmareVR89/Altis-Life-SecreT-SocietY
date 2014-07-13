@@ -1,31 +1,24 @@
-﻿/*
-	File: fn_createGang.sqf
+﻿#include <macro.h>
+/*
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
-	Functionality meant for creating gangs.
+	Pulls up the menu and creates the gang?
 */
-private["_value","_len","_group"];
-_value = ctrlText 2522;
-_len = [_value] call KRON_StrLen;
+private["_gangName","_length","_badChar","_chrByte","_allowed"];
+disableSerialization;
 
-if(_len > 25) exitWith {hint "Es können maximal 25 Leute in einer Gang sein."};
-if(life_cash < 10000) exitWith {hint "Du hast keine $10,000 um eine Gang zu gründen!"};
-if(isNil {life_gang_list}) exitWith {hint "Der Server erlaubt keine Gangs."};
-if(([_value,life_gang_list] call fnc_index) != -1) exitWith {hint "Diesen Gangnamen gibt es bereits!"};
+_gangName = ctrlText (getControl(2520,2522));
+_length = count (toArray(_gangName));
+_chrByte = toArray (_gangName);
+_allowed = toArray("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_ ");
+if(_length > 32) exitWith {hint "Dein Gangname darf nicht mehr als 25 Zeichen enthalten."};
+_badChar = false;
+{if(!(_x in _allowed)) exitWith {_badChar = true;};} foreach _chrByte;
+if(_badChar) exitWith {hint "Du hast ungültige Zeichen in deinem Gangnamen. Er darf nur Ziffern, Buchstaben und Unterstriche enthalten";};
+if(life_atmcash < (__GETC__(life_gangPrice))) exitWith {hint format["Du hast nicht genug Geld auf deinem Bankkonto.\n\nDir fehlen: $%1",[((__GETC__(life_gangPrice))-life_atmcash)] call life_fnc_numberText];};
 
-_group = createGroup civilian;
-
-//Set Array
-life_gang_list set[count life_gang_list,[_value,_group,false,str(player),getPlayerUID player]];
-publicVariable "life_gang_list";
-[player] joinSilent _group;
-player setRank "COLONEL";
-life_my_gang = _group;
-if(!isNull life_my_gang) then
-{
-	life_cash = life_cash - 10000;
-	closeDialog 0;
-	createDialog "Life_My_Gang_Diag";
-	publicVariable "life_gang_list";
-};
+[[player,getPlayerUID player,_gangName],"TON_fnc_insertGang",false,false] spawn life_fnc_MP;
+hint "Sende Informationen an den Server, bitte warten.....";
+closeDialog 0;
+life_action_gangInUse = true;

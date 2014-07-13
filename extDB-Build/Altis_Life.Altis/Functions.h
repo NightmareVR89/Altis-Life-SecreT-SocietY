@@ -117,6 +117,7 @@ class Life_Client_Core
 		class robAction {};
 		class sellTurtle {};
 		class sellGoldBars {};
+		class captureHideout {};
 	};
 	
 	class Housing
@@ -125,7 +126,6 @@ class Life_Client_Core
 		class buyHouse {};
 		class getBuildingPositions {};
 		class houseMenu {};
-		class isBuildingPosTaken {};
 		class lightHouse {};
 		class lightHouseAction {};
 		class sellHouse {};
@@ -319,16 +319,18 @@ class Life_Client_Core
 	class Gangs
 	{
 		file = "core\gangs";
+		class initGang {};
 		class createGang {};
-		class gangBrowser {};
-		class gangManagement {};
+		class gangCreated {};
 		class gangMenu {};
-		class joinGang {};
-		class kickGang {};
-		class leaveGang {};
-		class setGangLeader {};
-		class lockGang {};
-		class unlockGang {};
+		class gangKick {};
+		class gangLeave {};
+		class gangNewLeader {};
+		class gangUpgrade {};
+		class gangInvitePlayer {};
+		class gangInvite {};
+		class gangDisband {};
+		class gangDisbanded {};
 	};
 	
 	class Shops
@@ -391,5 +393,6 @@ class Life_Client_Core
 		class safeTake {};
 		class safeFix {};
 		class vehicleGarage {};
+		class gangDeposit {};
 	};
 };

@@ -20,7 +20,7 @@ if((_val + _tax) > life_atmcash) exitWith {hint format["Du hast nicht genug Geld
 
 life_atmcash = life_atmcash - (_val + _tax);
 
-[[_val,player getVariable["realname",name player]],"clientWireTransfer",_unit,false] spawn life_fnc_MP;
+[[_val,profileName],"clientWireTransfer",_unit,false] spawn life_fnc_MP;
 [] call life_fnc_atmMenu;
 hint format["Du hast %2 $%1 überwiesen.\n\n Steuern in Höhe von $%3 wurden dafür fällig.",[_val] call life_fnc_numberText,_unit getVariable["realname",name _unit],[_tax] call life_fnc_numberText];
 [] call SOCK_fnc_updateRequest; //Silent Sync

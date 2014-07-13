@@ -53,6 +53,9 @@
 		<Key ID="STR_ATM_Transfer">
 			<Original>Überweisen</Original>
 		</Key>
+		<Key ID="STR_Gang_Deposit">
+			<Original>Auf Gangkonto einzahlen</Original>
+		</Key>
 		<Key ID="STR_ATM_GreaterThan">
 			<Original>Du kannst nicht mehr als $999,999 auf einmal</Original>
 		</Key>
@@ -104,11 +107,8 @@
 		<Key ID="STR_Gang_Leave">
 			<Original>Verlassen</Original>
 		</Key>
-		<Key ID="STR_Gang_Lock">
-			<Original>Zuschließen</Original>
-		</Key>
-		<Key ID="STR_Gang_Unlock">
-			<Original>Aufschließen</Original>
+		<Key ID="STR_Gang_UpgradeSlots">
+			<Original>Plätze erhöhen</Original>
 		</Key>
 		<Key ID="STR_Gang_Kick">
 			<Original>Kick</Original>
@@ -117,19 +117,25 @@
 			<Original>Zum Anführer bestimmen</Original>
 		</Key>
 		<Key ID="STR_Gang_PriceTxt">
-			<Original>Eine Gang erstellen kostet 10,000$</Original>
+			<Original>Eine Gang zu erstellen kostet $%1</Original>
 		</Key>
 		<Key ID="STR_Gang_Create">
 			<Original>Erstellen</Original>
 		</Key>
 		<Key ID="STR_Gang_YGN">
-			<Original>Dein Gang Name</Original>
+			<Original>Dein Gangname</Original>
 		</Key>
 		<Key ID="STR_Gang_MainMenu">
 			<Original>Du bist derzeit in keiner Gang, was möchtest du machen?</Original>
 		</Key>
 		<Key ID="STR_Gang_Browse">
 			<Original>Browse</Original>
+		</Key>
+		<Key ID="STR_Gang_Invite">
+			<Original>Einladen</Original>
+		</Key>
+		<Key ID="STR_Gang_Disband">
+			<Original>Auflösen</Original>
 		</Key>
 	</Package>
 	<Package name="Garage_Menu">
