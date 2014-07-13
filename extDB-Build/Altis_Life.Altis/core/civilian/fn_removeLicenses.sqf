@@ -1,4 +1,4 @@
-/*
+﻿/*
 	File: fn_removeLicenses.sqf
 	Author: Bryan "Tonic" Boardwine
 	
@@ -36,7 +36,8 @@ switch (_state) do
 			license_civ_air = false;
 			license_civ_truck = false;
 			license_civ_boat = false;
-			hint "Sie haben all Ihre Kfz-Lizenzen für Totschlag im Fahrzeugverkehr verloren.";
+			license_civ_adac = false;
+			hint "Du hast alle deine Führerscheine und deine AAMC Mitgliedschaft wegen eines Fahrzeugunfalls mit Todesfolge verloren.";
 		};
 	};
 	
@@ -47,5 +48,17 @@ switch (_state) do
 			license_civ_gun = false;
 			hint "Sie haben Ihren Waffenschein wegen Totschlags verloren.";
 		};
+	};
+	
+	case 4:
+	{
+		license_civ_adac = false;
+		hint "Der ADAC hat dir die Mitgliedschaft entzogen.";
+	};
+	
+	case 5:
+	{
+		license_civ_adac = true;
+		hint "Du hast eine ADAC-Mitgliedschaft bekommen.";
 	};
 };
