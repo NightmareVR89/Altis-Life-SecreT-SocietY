@@ -41,10 +41,7 @@ _Btn2 buttonSetAction "[[4],""life_fnc_removeLicenses"",life_pInact_curTarget,fa
 //Entziehe dem Target die Mitgliedschaft
 _Btn3 ctrlSetText localize "STR_adacpInAct_takeMembership";
 _Btn3 buttonSetAction "[[5],""life_fnc_removeLicenses"",life_pInact_curTarget,false] spawn life_fnc_MP";
-
+*/
 //Stelle Rechnung aus
 _Btn4 ctrlSetText localize "STR_adacpInAct_TicketBtn";
-_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_adacStelltNeRechnungAus;";
-
-//
-*/
+_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_rechnungAction;";

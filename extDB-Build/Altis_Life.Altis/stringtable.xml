@@ -308,6 +308,17 @@
 			<Original>Verwerfen</Original>
 		</Key>
 	</Package>
+	<Package name="Rechnung_Menu">
+		<Key ID="STR_Rechnung_GiveRechnung">
+			<Original>Rechnung</Original>
+		</Key>
+		<Key ID="STR_Rechnung_PayRechnung">
+			<Original>Bezahlen</Original>
+		</Key>
+		<Key ID="STR_Rechnung_RefuseRechnung">
+			<Original>Ablehnen</Original>
+		</Key>
+	</Package>
 	<Package name="Trunk_Menu">
 		<Key ID="STR_Trunk_TInventory">
 			<Original>Kofferraum</Original>

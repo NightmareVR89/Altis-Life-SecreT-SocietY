@@ -15,6 +15,7 @@
 #include "cell_phone.hpp"
 #include "wanted_list.hpp"
 #include "ticket.hpp"
+#include "rechnung.hpp"
 #include "clothing.hpp"
 #include "trunk.hpp"
 #include "spawnSelection.hpp"

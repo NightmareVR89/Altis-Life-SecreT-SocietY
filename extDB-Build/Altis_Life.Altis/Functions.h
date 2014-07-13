@@ -118,6 +118,7 @@ class Life_Client_Core
 		class sellTurtle {};
 		class sellGoldBars {};
 		class captureHideout {};
+		class rechnungAction {};
 	};
 	
 	class Housing
@@ -270,6 +271,9 @@ class Life_Client_Core
 		class adacInteractionMenu {};
 		class adacLicenseCheck {};
 		class adacLicensesRead {};
+		class rechnungGive {};
+		class rechnungPay {};
+		class rechnungPrompt {};
 	};
 	
 	class Vehicle
