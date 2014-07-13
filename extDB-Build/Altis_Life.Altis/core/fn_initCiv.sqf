@@ -34,3 +34,5 @@ if(life_is_arrested) then
 player addRating 9999999;
 
 [] call life_fnc_zoneCreator;
+
+[] spawn life_fnc_updateClothing; //Skinmanager Laden

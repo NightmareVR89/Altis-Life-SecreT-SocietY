@@ -1,4 +1,4 @@
-/*
+﻿/*
 
 	Updates player clothing by replacing vanilla by custom ones
     by Audacious
@@ -16,15 +16,15 @@ switch(true) do
 {
 	case (playerSide == west && _uniform == "U_Rangemaster"):
 	{
-		if( (call life_coplevel) == 1) then
+		if( (call life_coplevel) > 0) then
 		{
 			player setObjectTextureGlobal  [0, "textures\polizei_uniform.jpg"]; 
 		};
-		
-                if( (call life_coplevel) == 2) then
+		// Bis neue Skins eingefügt werden, erstmal weg damit
+       /* if( (call life_coplevel) == 2) then
 		{
 			player setObjectTextureGlobal  [0, "textures\polizei_uniform.jpg"]; 
-		};
+		}; */
 
 // And for every coplvl a new thing. 
 	
