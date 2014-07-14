@@ -5,14 +5,20 @@
 	Description:
 	Starts and monitors the knocked out state.
 */
-private["_target","_who","_obj"];
+private["_target","_who","_obj","_headgear"];
+_headgear = ["H_Shemag_olive","H_Shemag_khk","H_ShemagOpen_tan","H_ShemagOpen_khk"];
 _target = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _who = [_this,1,"",[""]] call BIS_fnc_param;
 if(isNull _target) exitWith {};
 if(_target != player) exitWith {};
 if(_who == "") exitWith {};
 
-titleText[format["%1 hat dich bewusstlos geschlagen.",_who],"PLAIN"];
+if((headgear _who) in _headgear) then 
+{
+	titleText[format["Ein maskierter Spieler hat dich bewusstlos geschlagen."],"PLAIN"];
+} else {
+	titleText[format["%1 hat dich bewusstlos geschlagen.",_who],"PLAIN"];
+};
 player playMoveNow "Incapacitated";
 _obj = "Land_ClutterCutter_small_F" createVehicle (getPosATL player);
 _obj setPosATL (getPosATL player);
