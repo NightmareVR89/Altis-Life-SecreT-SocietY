@@ -177,6 +177,9 @@ switch (_filter) do
 			_ret set[count _ret,["V_TacVest_oli",nil,4500]];
 			_ret set[count _ret,["V_TacVestCamo_khk",nil,4500]];
 			_ret set[count _ret,["V_TacVestIR_blk",nil,4500]];
+			_ret set[count _ret,["V_RebreatherB",nil,5000]];
+			_ret set[count _ret,["V_RebreatherIR",nil,5000]];
+			_ret set[count _ret,["V_RebreatherIA",nil,5000]];
 		};
 		if(__GETC__(life_coplevel) > 4) then
 		{
@@ -202,6 +205,9 @@ switch (_filter) do
 			_ret set[count _ret,["V_PlateCarrier1_rgr",nil,6000]];
 			_ret set[count _ret,["V_PlateCarrier2_rgr",nil,6000]];
 			_ret set[count _ret,["V_PlateCarrierIA1_dgtl",nil,6000]];
+			_ret set[count _ret,["V_RebreatherB",nil,5000]];
+			_ret set[count _ret,["V_RebreatherIR",nil,5000]];
+			_ret set[count _ret,["V_RebreatherIA",nil,5000]];
 		};
 		if(__GETC__(life_coplevel) > 5) then
 		{
@@ -231,6 +237,9 @@ switch (_filter) do
 			_ret set[count _ret,["V_PlateCarrierIA2_dgtl",nil,8000]];
 			_ret set[count _ret,["V_PlateCarrierIAGL_dgtl",nil,8000]];
 			_ret set[count _ret,["V_PlateCarrierSpec_rgr",nil,8000]];
+			_ret set[count _ret,["V_RebreatherB",nil,5000]];
+			_ret set[count _ret,["V_RebreatherIR",nil,5000]];
+			_ret set[count _ret,["V_RebreatherIA",nil,5000]];
 		};
 		if(__GETC__(life_coplevel) > 6) then
 		{
@@ -262,6 +271,9 @@ switch (_filter) do
 			_ret set[count _ret,["V_PlateCarrierSpec_rgr",nil,8000]];
 			_ret set[count _ret,["V_BandollierB_khk",nil,8000]];
 			_ret set[count _ret,["V_PlateCarrier3_rgr","Polizeiweste",10000]];
+			_ret set[count _ret,["V_RebreatherB",nil,5000]];
+			_ret set[count _ret,["V_RebreatherIR",nil,5000]];
+			_ret set[count _ret,["V_RebreatherIA",nil,5000]];
 		};
 		if(__GETC__(life_coplevel) > 7) then
 		{
@@ -293,6 +305,9 @@ switch (_filter) do
 			_ret set[count _ret,["V_PlateCarrierSpec_rgr",nil,8000]];
 			_ret set[count _ret,["V_BandollierB_khk",nil,8000]];
 			_ret set[count _ret,["V_PlateCarrier3_rgr","Polizeiweste",10000]];
+			_ret set[count _ret,["V_RebreatherB",nil,5000]];
+			_ret set[count _ret,["V_RebreatherIR",nil,5000]];
+			_ret set[count _ret,["V_RebreatherIA",nil,5000]];
 		};
 	};
 	
