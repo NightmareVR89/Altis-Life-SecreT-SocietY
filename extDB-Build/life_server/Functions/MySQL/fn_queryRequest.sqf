@@ -96,9 +96,6 @@ switch (_side) do {
 		_gangData = _uid spawn TON_fnc_queryPlayerGang;
 		waitUntil{scriptDone _gangData};
 		_queryResult set[count _queryResult,(missionNamespace getVariable[format["gang_%1",_uid],[]])];
-		_gangData = _uid spawn TON_fnc_queryAdacGang;
-		waitUntil{scriptDone _gangData};
-		_queryResult set[count _queryResult,(missionNamespace getVariable[format["gang_%1",_uid],[]])];
 	};
 	case independent: {
 		_new = [(_queryResult select 8)] call DB_fnc_mresToArray;

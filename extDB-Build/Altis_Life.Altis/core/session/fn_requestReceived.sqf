@@ -56,13 +56,11 @@ switch(playerSide) do {
 				life_atmcash = parseNumber (_this select 10);
 				__CONST__(life_adaclevel,parseNumber(_this select 11));
 				life_gear = _this select 12;
-				life_gangData = _this select 15;
 				[] spawn life_fnc_loadGear;
 			} else {
 				life_cash = parseNumber (_this select 2);
 				life_atmcash = parseNumber (_this select 3);
 				life_gear = _this select 8;
-				life_gangData = _this select 14;
 				__CONST__(life_adaclevel,0);
 				[] spawn life_fnc_loadGear;
 			};
@@ -77,6 +75,7 @@ switch(playerSide) do {
 			life_vehicles set[count life_vehicles,_house];
 		} foreach life_houses;
 		
+		life_gangData = _this select 14;
 		if(count life_gangData != 0) then {
 			[] spawn life_fnc_initGang;
 		};

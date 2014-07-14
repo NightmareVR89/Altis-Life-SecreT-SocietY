@@ -121,7 +121,6 @@ class CfgFunctions
 			file = "\life_server\Functions\Gangs";
 			class insertGang {};
 			class queryPlayerGang {};
-			class queryAdacGang {};
 			class removeGang {};
 			class updateGang {};
 		};
