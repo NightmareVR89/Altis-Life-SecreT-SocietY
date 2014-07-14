@@ -126,7 +126,7 @@ switch (_filter) do
 	case 3:
 	{
 		[
-		["V_Press_F",nil,5000],
+		["V_Press_F",nil,5000]
 		];
 	};
 	
