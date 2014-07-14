@@ -45,13 +45,11 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"Du bist kein Polizist!"};
-			case (__GETC__(life_coplevel) == 2): 
+			case (__GETC__(life_coplevel) == 0): 
 			{
 				["Anwaerter Shop",
 					[
-						["SMG_01_F","Taser Rifle",20000],
 						["hgun_P07_snds_F","Stun Pistol",2000],
-						["SMG_02_F",nil,30000],
 						["Binocular",nil,150],
 						["ItemGPS",nil,100],
 						["ToolKit",nil,250],
@@ -59,18 +57,15 @@ switch(_shop) do
 						["Medikit",nil,1000],
 						["NVGoggles",nil,2000],
 						["16Rnd_9x21_Mag",nil,50],
-						["30Rnd_9x21_Mag",nil,100],
-						["30Rnd_45ACP_Mag_SMG_01","Taser Rifle Magazine",125]
 					]
 				];
 			};
-			case (__GETC__(life_coplevel) == 3): 
+			case (__GETC__(life_coplevel) == 1): 
 			{
 				["Patrol Officer",
 					[
 						["SMG_01_F","Taser Rifle",20000],
 						["hgun_P07_snds_F","Stun Pistol",2000],
-						["arifle_MXC_F",nil,40000],
 						["Binocular",nil,150],
 						["ItemGPS",nil,100],
 						["ToolKit",nil,250],
@@ -79,18 +74,18 @@ switch(_shop) do
 						["optic_ACO_grn",nil,500],
 						["acc_flashlight",nil,500],
 						["NVGoggles",nil,2000],
-						["30Rnd_65x39_caseless_mag_Tracer",nil,200],
 						["16Rnd_9x21_Mag",nil,50],
 						["30Rnd_45ACP_Mag_SMG_01","Taser Rifle Magazine",125]
 					]
 				];
 			};
-			case (__GETC__(life_coplevel) == 4): 
+			case (__GETC__(life_coplevel) == 2): 
 			{
 				["Air Patrol Shop",
 					[
 						["SMG_01_F","Taser Rifle",20000],
 						["hgun_P07_snds_F","Stun Pistol",2000],
+						["SMG_02_F",nil,30000],
 						["arifle_MXC_F",nil,40000],
 						["SmokeShellRed",nil,1000],
 						["Binocular",nil,150],
@@ -99,13 +94,14 @@ switch(_shop) do
 						["FirstAidKit",nil,150],
 						["Medikit",nil,1000],
 						["NVGoggles",nil,2000],
+						["30Rnd_9x21_Mag",nil,100]
 						["30Rnd_65x39_caseless_mag_Tracer",nil,200],
 						["16Rnd_9x21_Mag",nil,50],
 						["30Rnd_45ACP_Mag_SMG_01","Taser Rifle Magazine",125]
 					]
 				];
 			};
-			case (__GETC__(life_coplevel) == 5): 
+			case (__GETC__(life_coplevel) == 3): 
 			{
 				["Coast Guard Shop",
 					[
@@ -124,13 +120,36 @@ switch(_shop) do
 					]
 				];
 			};
-			case (__GETC__(life_coplevel) == 6): 
+			case (__GETC__(life_coplevel) == 4): 
 			{
 				["S.W.A.T Shop",
 					[
 						["SMG_01_F","Taser Rifle",20000],
 						["hgun_P07_snds_F","Stun Pistol",2000],
+						["hgun_ACPC2_snds_F",2000],
+						["hgun_Pistol_heavy_01_F",2000],
+						["hgun_Pistol_heavy_02_F",2000],
+						["hgun_PDW2000_F",2000],
+						["hgun_Pistol_Signal_F",2000],
+						["SMG_02_F",2000],
+						["srifle_EBR_F",nil,40000],
+						["srifle_GM6_F,40000],
+						["srifle_LRR_F,40000],
+						["srifle_DMR_01_F,40000],
 						["arifle_MXC_F",nil,40000],
+						["arifle_MXC_Black_F",nil,40000],
+						["arifle_MX_F",nil,40000],
+						["arifle_MX_Black_F",nil,40000],
+						["arifle_MX_SW_F",nil,40000],
+						["arifle_MX_SW_Black_F",nil,40000],
+						["arifle_MXM_F",nil,40000],
+						["arifle_MXM_Black_F",nil,40000],
+						["arifle_Katiba_F",nil,40000],
+						["arifle_TRG21_F",nil,40000],
+						["arifle_TRG20_F",nil,40000],
+						["LMG_Mk200_F,40000],
+						["LMG_Zafir_F,40000],
+						["launch_RPG32_F,40000],
 						["muzzle_snds_H",nil,1000],
 						["acc_pointer_IR",nil,1000],
 						["optic_Holosight",nil,1000],
@@ -142,13 +161,35 @@ switch(_shop) do
 						["FirstAidKit",nil,150],
 						["Medikit",nil,1000],
 						["NVGoggles",nil,2000],
-						["30Rnd_65x39_caseless_mag_Tracer",nil,200],
+						["RPG32_F",nil,2000],
+						["RPG32_HE_F",nil,2000],
+						["6Rnd_GreenSignal_F",nil,200],
+						["6Rnd_RedSignal_F",nil,200],
+						["5Rnd_127x108_Mag",nil,200],
+						["5Rnd_127x108_APDS_Mag",nil,200],
+						["6Rnd_45ACP_Cylinder",nil,200],
+						["7Rnd_408_Mag",nil,200],
+						["9Rnd_45ACP_Mag",nil,200],
+						["10Rnd_762x51_Mag",nil,200],
+						["11Rnd_45ACP_Mag",nil,200],
 						["16Rnd_9x21_Mag",nil,50],
+						["200Rnd_65x39_cased_Box",nil,200],
+						["200Rnd_65x39_cased_Box_Tracer",nil,200],
+						["150Rnd_762x51_Box",nil,200],
+						["150Rnd_762x51_Box_Tracer",nil,200],
+						["100Rnd_65x39_caseless_mag",nil,200],
+						["100Rnd_65x39_caseless_mag_Tracer",nil,200],
+						["30Rnd_65x39_caseless_mag",nil,200],
+						["30Rnd_65x39_caseless_mag_Tracer",nil,200],
+						["30Rnd_65x39_caseless_green",nil,200],
+						["30Rnd_556x45_Stanag",nil,200],
+						["30Rnd_9x21_Mag",nil,200],
+						["20Rnd_762x51_Mag",nil,200],
 						["30Rnd_45ACP_Mag_SMG_01","Taser Rifle Magazine",125]
 					]
 				];
 			};
-			case (__GETC__(life_coplevel) == 7): 
+			case (__GETC__(life_coplevel) == 5): 
 			{
 				["Anti-Terror Task Force Shop",
 					[
