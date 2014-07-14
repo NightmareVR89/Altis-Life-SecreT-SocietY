@@ -22,9 +22,3 @@ format["Willkommen %1, lies unbedingt folgende Hinweise!",profileName] hintC
 	"Mit Spieler interagieren",
 	"Mit Fahrzeugen interagieren"
 ];
-"" hintC parseText "<t><t size='1.5'>Willkommen auf dem Secret Society Server!</t><br/><t color='#EE0000'>Wichtiger Hinweis:</t><br/><t>Lese die Regeln und Setze UNBEDINGT die Aktion10-Taste in der ARMA 3 -Konfiguration auf z.B. Strg.</t></br><t>Du findest die Einstellung in </t><t color='#00FF00'>Konfigurieren - Steuerung - Indiv. Steuerung - Aktionstaste 10</t></t>";
-
-
-sleep 6;
-
-hintSilent "Hinweis: Drücke M, um die Server Regel durchzulesen";
