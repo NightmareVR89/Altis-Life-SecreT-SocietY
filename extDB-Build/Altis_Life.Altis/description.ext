@@ -1,6 +1,6 @@
 author = "Tonic";
-onLoadName = "Secret_Society v3.1.4 extDB Pro";
-onLoadMission = "Mit erweiterten Funktionen";
+onLoadName = "Secret_Society v3.1.4";
+onLoadMission = "ExtDB mit erweiterten Funktionen";
 joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 5;
