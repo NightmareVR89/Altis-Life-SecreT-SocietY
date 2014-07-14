@@ -4,17 +4,27 @@
 	Description:
 	Called upon first spawn selection and welcomes our player.
 */
-format["Welcome %1, Please read the following as it is important!",profileName] hintC
+format["Willkommen %1, lies unbedingt folgende Hinweise!",profileName] hintC
 [
-	"Welcome to the server! A few things have changed with Altis Life RPG that you need to be aware of!",
-	"An interaction key has been introduced which replaces the large majority of scroll wheel actions, this was for performance issues. By default this key is [Left Windows], you can change this key by pressing ESC and going to Configure->Controls->Custom
-	and bind 'Use Action 10' to a single key like H. This key is used for the following actions",
-	"Picking up items and money.",
-	"Fishing",
-	"Interacting with players (as a cop)",
-	"Interacting with vehicles (repairing and cop actions)",
+	"Manche Aktionen kannst du nur mit einem Druck auf die Action-Taste aktivieren.",
+	"Mit der Zeit werden möglichst viele Aktionen mit Maus-Scrollen und Klick dadurch ersetzt!",
 	"",
-	"If you are having issues with interacting / picking up items just wait. A quick way to know when you can interact with that item if the server allows it is by pressing your tilde key (~) and using the circle to highlight the object, when it says for example 'Pile of Money' then
-	that means you can pick it up!."
+	"",
+	"!!! Setze daher UNBEDINGT die 'Action 10'-Taste in der Konfiguration !!!",
+	"Konfigurieren > Steuerung > Indiv. Steuerung > Aktionstaste 10",
+	"Am besten Strg links",
+	"",
+	"",
+	"",
+	"Beispiele für Aktionen mit Action-Taste:",
+	"Fischen",
+	"Sachen aufheben",
+	"Mit Spieler interagieren",
+	"Mit Fahrzeugen interagieren"
 ];
-	
+"" hintC parseText "<t><t size='1.5'>Willkommen auf dem Secret Society Server!</t><br/><t color='#EE0000'>Wichtiger Hinweis:</t><br/><t>Lese die Regeln und Setze UNBEDINGT die Aktion10-Taste in der ARMA 3 -Konfiguration auf z.B. Strg.</t></br><t>Du findest die Einstellung in </t><t color='#00FF00'>Konfigurieren - Steuerung - Indiv. Steuerung - Aktionstaste 10</t></t>";
+
+
+sleep 6;
+
+hintSilent "Hinweis: Drücke M, um die Server Regel durchzulesen";
