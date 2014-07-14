@@ -20,10 +20,7 @@ if((__GETC__(life_medicLevel)) < 1) exitWith {
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 
-[] call life_fnc_updateClothing; //Skinmanager Laden
-
-// Hהההה? wir haben doch nen Skinmanager O.o ->
-/*[] spawn
+[] spawn
 {
 while {(uniform player) == "U_Rangemaster"} do
     {
@@ -36,11 +33,11 @@ while {(uniform player) == "U_Rangemaster"} do
 			case 2: {
 			player setObjectTextureGlobal [0,"textures\medic_uniform.jpg"];
 			};
-						default {
+			default {
 			player setObjectTextureGlobal [0,"textures\medic_uniform.jpg"];
 			};
 		};
     if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
     sleep 30;
     };
-}; */
+};
