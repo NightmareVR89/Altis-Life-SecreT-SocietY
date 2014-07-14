@@ -74584,7 +74584,7 @@ class Mission
 		class Item51
 		{
 			position[]={3269.3066,2.1795411,12967.844};
-			name="Police HQ_1";
+			name="police_hq_1";
 			text="Polizei Station";
 			type="mil_box";
 			colorName="Color4_FD_F";
