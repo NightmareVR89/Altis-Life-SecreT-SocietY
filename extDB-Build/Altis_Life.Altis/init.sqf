@@ -8,7 +8,7 @@ StartProgress = false;
 if(!isDedicated) then { X_Client = true;};
 enableSaving[false,false];
 
-life_versionInfo = "Secret_Society v3.1.3.5 extDB Pro";
+life_versionInfo = "Secret_Society v3.1.4";
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
 
