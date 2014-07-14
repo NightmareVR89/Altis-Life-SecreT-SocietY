@@ -3,7 +3,7 @@
 */
 private["_val"];
 _val = parseNumber(ctrlText 2702);
-if(_val > 9999999) exitWith {hint "Du kannst nicht mehr als $9,999,999 abheben";};
+if(_val > 999999) exitWith {hint "Du kannst nicht mehr als $999,999 abheben";};
 if(_val < 0) exitwith {};
 if(!([str(_val)] call life_fnc_isnumeric)) exitWith {hint "Das ist kein richtiges Nummernformat..."};
 if(_val > life_atmcash) exitWith {hint "So viel Geld hast du nicht auf deinem Bankkonto!"};
