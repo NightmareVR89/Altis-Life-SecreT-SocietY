@@ -606,20 +606,6 @@ player createDiarySubject ["bgeld","Bußgeldkatalog"];
 				"
 		]
 	];
-	player createDiaryRecord ["bgeld",
-		[
-			"Zu Fuß",
-				"
-				§1	Hausfriedensbruch							10.000$ <br/>
-				§2	Verkehr behindern							20.000$ <br/>
-				§3	Laufen auf der Straßen						5.000$ <br/>
-				§4	Fahrzeuge behindern							10.000$ <br/>
-				§5	Absichtlich vor Autos werfen / rennen		20.000$ <br/><br/>
-				Versuchte Straftaten kosten die Hälfte ! <br/>
-				Es muss nicht immer das volle Bußgeld ausgestellt werden. <br/><br/>
-				"
-		]
-	];
 	player createDiaryRecord ["controls",
 		[
 			"Tastenbelegungen",
