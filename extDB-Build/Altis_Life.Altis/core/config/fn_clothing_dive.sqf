@@ -18,7 +18,9 @@ switch (_filter) do
 	case 0:
 	{
 		[
-			["U_B_Wetsuit",nil,2000]
+			["U_B_Wetsuit",nil,2000],
+			["U_O_Wetsuit",nil,2000],
+			["U_I_Wetsuit",nil,2000]
 		];
 	};
 	
@@ -41,7 +43,9 @@ switch (_filter) do
 	case 3:
 	{
 		[
-			["V_RebreatherB",nil,5000]
+			["V_RebreatherB",nil,5000],
+			["V_RebreatherIR",nil,5000],
+			["V_RebreatherIA",nil,5000]
 		];
 	};
 	
