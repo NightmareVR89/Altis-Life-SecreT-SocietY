@@ -18,4 +18,5 @@ removeHeadGear player;
 if(hmd player != "") then {
 	player unlinkItem (hmd player);
 };
+[] class life_fnc_saveGear;
 [] spawn life_fnc_updateClothing;

@@ -41,7 +41,7 @@ switch(playerSide) do {
 		life_atmcash = parseNumber (_this select 3);
 		//
 		__CONST__(life_coplevel,parseNumber(_this select 7));
-		cop_gear = _this select 8;
+		life_gear = _this select 8;
 		[] spawn life_fnc_loadGear;
 		life_blacklisted = _this select 9;
 		__CONST__(life_medicLevel,0);
@@ -52,23 +52,23 @@ switch(playerSide) do {
 	
 		//Trenne Konten und Gear von ADAC und Zivilisten
 		if((str(player) in ["civ_71","civ_72","civ_73","civ_74","civ_75","civ_66","civ_67","civ_68","civ_69","civ_70"])) then {
-		civ_gear = _this select 12;
+		life_gear = _this select 12;
 		life_cash = parseNumber (_this select 9);
 		life_atmcash = parseNumber (_this select 10);
 		__CONST__(life_adaclevel,parseNumber(_this select 11));
-		[] spawn life_fnc_adacLoadGear;
+		[] spawn life_fnc_loadGear;
 		} else {
 		life_cash = parseNumber (_this select 2);
 		life_atmcash = parseNumber (_this select 3);
-		civ_gear = _this select 8;
+		life_gear = _this select 8;
 		__CONST__(life_adaclevel,0);
-		[] spawn life_fnc_civLoadGear;
+		[] spawn life_fnc_loadGear;
 		};
 		//
 		
 		life_is_arrested = _this select 7;
 		//life_is_arrested = call compile format["%1", _this select 7];
-		civ_gear = _this select 8;
+		life_gear = _this select 8;
 		__CONST__(life_coplevel,0);
 		__CONST__(life_medicLevel,0);
 		life_houses = _this select 13;

@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_respawned.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -5,7 +6,7 @@
 	Description:
 	Sets the player up if he/she used the respawn option.
 */
-
+private["_handle"];
 //Reset our weight and other stuff
 life_use_atm = TRUE;
 life_hunger = 100;
@@ -25,12 +26,22 @@ player setVariable["Reviving",nil,TRUE];
 //Load gear for a 'new life'
 switch(playerSide) do
 {
-	case west: {[] spawn life_fnc_loadGear;};
+	case west: {
+		_handle = [] spawn life_fnc_coploadout;
+		waitUntil {scriptDone _handle};
+	};
 	case civilian: {
-		[] call life_fnc_civFetchGear;
+		if(__GETC__(life_adaclevel) == 1) then {
+			_handle = [] spawn life_fnc_civLoadout;
+			waitUntil {scriptDone _handle};
+		} else {
+			_handle = [] spawn life_fnc_adacLoadout;
+			waitUntil {scriptDone _handle};
+		};
 	};
 	case independent: {
-		[] call life_fnc_medicLoadout;
+		_handle = [] spawn life_fnc_medicLoadout;
+		waitUntil {scriptDone _handle};
 	};
 };
 

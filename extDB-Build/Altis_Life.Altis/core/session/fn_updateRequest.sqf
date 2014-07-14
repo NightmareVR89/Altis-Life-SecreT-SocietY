@@ -12,19 +12,18 @@ _flag = switch(playerSide) do {case west: {"cop"}; case civilian: {"civ"}; case 
 		_array set[count _array,[_x select 0,(missionNamespace getVariable (_x select 0))]];
 	};
 } foreach life_licenses;
-
 _packet set[count _packet,_array];
+
+[] call life_fnc_saveGear;
+_packet set[count _packet, life_gear];
 switch (playerSide) do {
-	case west: {_packet set[count _packet,cop_gear];};
 	case civilian: {
-			[] call life_fnc_civFetchGear;
-		_packet set[count _packet,civ_gear];
 		_packet set[count _packet,life_is_arrested];
-			if(__GETC__(life_adaclevel) == 1) then {
-				_packet set[8,true];
-			} else {
-				_packet set[8,false];
-			};
+		if(__GETC__(life_adaclevel) == 1) then {
+			_packet set[8,true];
+		} else {
+			_packet set[8,false];
+		};
 	};
 };
 

@@ -149,7 +149,6 @@ class Life_Client_Core
 		class eatFood {};
 		class varHandle {};
 		class varToStr {};
-		class copDefault {};
 		class impoundPrice {};
 		class itemWeight {};
 		class taxRate {};
@@ -200,7 +199,6 @@ class Life_Client_Core
 		class handleInv {};
 		class hudSetup {};
 		class hudUpdate {};
-		class fetchGear{};
 		class tazeSound {};
 		class animSync {};
 		class simDisable {};
@@ -232,6 +230,9 @@ class Life_Client_Core
 		class inventoryClosed {};
 		class inventoryOpened {};
 		class isUIDActive {};
+		class loadGear {};
+		class saveGear {};
+		class stripDownPlayer {};
 	};
 	
 	class Network
@@ -253,8 +254,7 @@ class Life_Client_Core
 		class jailMe {};
 		class jail {};
 		class tazed {};
-		class civFetchGear {};
-		class civLoadGear {};
+		class civLoadout {};
 		class knockedOut {};
 		class knockoutAction {};
 		class robReceive {};
@@ -267,7 +267,7 @@ class Life_Client_Core
 	class ADAC
 	{
 		file = "core\adac";
-		class adacLoadGear {};
+		class adacLoadout {};
 		class adacInteractionMenu {};
 		class adacLicenseCheck {};
 		class adacLicensesRead {};
@@ -297,8 +297,7 @@ class Life_Client_Core
 		file = "core\cop";
 		class copMarkers {};
 		class copLights {};
-		class loadGear {};
-		class saveGear {};
+		class copLoadout {};
 		class vehInvSearch {};
 		class copSearch {};
 		class bountyReceive {};

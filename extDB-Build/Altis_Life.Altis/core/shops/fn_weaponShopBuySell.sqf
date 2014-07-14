@@ -66,8 +66,4 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) == 1) then
 	};
 };
 
-//Hotfix in for cop gear
-if(playerSide == west) then
-{
-	[] call life_fnc_saveGear;
-};
+[] call life_fnc_saveGear;

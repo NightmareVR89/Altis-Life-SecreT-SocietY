@@ -1,5 +1,5 @@
 /*
-    File: fn_civFetchGear.sqf
+    File: fn_saveGear.sqf
     Author: Bryan "Tonic" Boardwine
     Full Gear/Y-Menu Save by Vampire
     
@@ -138,11 +138,48 @@ if(count (handGunItems player) > 0) then
         };
     };
 } forEach [
-    ["life_inv_apple",life_inv_apple],["life_inv_rabbit",life_inv_rabbit],["life_inv_salema",life_inv_salema],["life_inv_ornate",life_inv_ornate],
-    ["life_inv_mackerel",life_inv_mackerel],["life_inv_tuna",life_inv_tuna],["life_inv_mullet",life_inv_mullet],["life_inv_catshark",life_inv_catshark],
-    ["life_inv_fishingpoles",life_inv_fishingpoles],["life_inv_water",life_inv_water],["life_inv_donuts",life_inv_donuts],["life_inv_turtlesoup",life_inv_turtlesoup],
-    ["life_inv_coffee",life_inv_coffee],["life_inv_fuelF",life_inv_fuelF],["life_inv_fuelE",life_inv_fuelE],["life_inv_pickaxe",life_inv_pickaxe],
-    ["life_inv_tbacon",life_inv_tbacon],["life_inv_lockpick",life_inv_lockpick],["life_inv_redgull",life_inv_redgull],["life_inv_peach",life_inv_peach]
+    ["life_inv_oilu", life_inv_oilu],
+    ["life_inv_oilp", life_inv_oilp],
+    ["life_inv_apple", life_inv_apple],
+    ["life_inv_rabbit", life_inv_rabbit],
+    ["life_inv_salema", life_inv_salema],
+    ["life_inv_ornate", life_inv_ornate],
+    ["life_inv_mackerel", life_inv_mackerel],
+    ["life_inv_tuna", life_inv_tuna],
+    ["life_inv_mullet", life_inv_mullet],
+    ["life_inv_catshark", life_inv_catshark],
+    ["life_inv_turtle", life_inv_turtle],
+    ["life_inv_fishingpoles", life_inv_fishingpoles],
+    ["life_inv_water", life_inv_water],
+    ["life_inv_donuts", life_inv_donuts],
+    ["life_inv_turtlesoup", life_inv_turtlesoup],
+    ["life_inv_coffee", life_inv_coffee],
+    ["life_inv_fuelF", life_inv_fuelF],
+    ["life_inv_fuelE", life_inv_fuelE],
+    ["life_inv_pickaxe", life_inv_pickaxe],
+    ["life_inv_copperore", life_inv_copperore],
+    ["life_inv_ironore", life_inv_ironore],
+    ["life_inv_ironr", life_inv_ironr],
+    ["life_inv_copperr", life_inv_copperr],
+    ["life_inv_sand", life_inv_sand],
+    ["life_inv_salt", life_inv_salt],
+    ["life_inv_saltr", life_inv_saltr],
+    ["life_inv_glass", life_inv_glass],
+    ["life_inv_tbacon", life_inv_tbacon],
+    ["life_inv_lockpick", life_inv_lockpick],
+    ["life_inv_redgull", life_inv_redgull],
+    ["life_inv_peach", life_inv_peach],
+    ["life_inv_diamond", life_inv_diamond],
+    ["life_inv_diamondr", life_inv_diamondr],
+    ["life_inv_spikeStrip", life_inv_spikeStrip],
+    ["life_inv_rock", life_inv_rock],
+    ["life_inv_cement", life_inv_cement],
+    ["life_inv_goldbar", life_inv_goldbar],
+    ["life_inv_blastingcharge", life_inv_blastingcharge],
+    ["life_inv_boltcutter", life_inv_boltcutter],
+    ["life_inv_defusekit", life_inv_defusekit],
+    ["life_inv_storagesmall", life_inv_storagesmall],
+    ["life_inv_storagebig", life_inv_storagebig]
 ];
 
 _ret set[count _ret,_uItems];
@@ -155,4 +192,4 @@ _ret set[count _ret,_pItems];
 _ret set[count _ret,_hItems];
 _ret set[count _ret,_yItems];
 
-civ_gear = _ret;
+life_gear = _ret;
