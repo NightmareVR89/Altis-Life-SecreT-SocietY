@@ -56,7 +56,7 @@ switch(_shop) do
 						["FirstAidKit",nil,150],
 						["Medikit",nil,1000],
 						["NVGoggles",nil,2000],
-						["16Rnd_9x21_Mag",nil,50],
+						["16Rnd_9x21_Mag",nil,50]
 					]
 				];
 			};
@@ -94,7 +94,7 @@ switch(_shop) do
 						["FirstAidKit",nil,150],
 						["Medikit",nil,1000],
 						["NVGoggles",nil,2000],
-						["30Rnd_9x21_Mag",nil,100]
+						["30Rnd_9x21_Mag",nil,100],
 						["30Rnd_65x39_caseless_mag_Tracer",nil,200],
 						["16Rnd_9x21_Mag",nil,50],
 						["30Rnd_45ACP_Mag_SMG_01","Taser Rifle Magazine",125]
