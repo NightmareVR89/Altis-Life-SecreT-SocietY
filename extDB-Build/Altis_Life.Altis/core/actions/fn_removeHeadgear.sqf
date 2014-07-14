@@ -10,7 +10,7 @@ _headgear = ["H_Shemag_olive","H_Shemag_khk","H_ShemagOpen_tan","H_ShemagOpen_kh
 _unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _mask = headgear _unit;
 if(isNull _unit) exitWith {};
-if !((_mask) in _headgear) exitWith { hint format["%1 Trägt keine Maske",_unit getVariable["realname",name _unit]]; };
+if !((_mask) in _headgear) exitWith { hint format["%1 Trägt keine verbotene Maske",_unit getVariable["realname",name _unit]]; };
 
 switch((_mask) in _headgear) do 
 {

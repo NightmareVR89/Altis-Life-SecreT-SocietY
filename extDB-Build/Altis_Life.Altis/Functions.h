@@ -119,6 +119,7 @@ class Life_Client_Core
 		class sellGoldBars {};
 		class captureHideout {};
 		class rechnungAction {};
+		class removeHeadgear {};
 	};
 	
 	class Housing
