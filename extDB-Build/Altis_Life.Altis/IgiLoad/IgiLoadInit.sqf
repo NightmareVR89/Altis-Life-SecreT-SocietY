@@ -52,4 +52,4 @@ while {true} do
 	} forEach (vehicles);
 };
 
-} else exitWith {};
+} else {exitWith {};};
