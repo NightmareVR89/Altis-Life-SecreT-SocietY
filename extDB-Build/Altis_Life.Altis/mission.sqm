@@ -4389,7 +4389,7 @@ class Mission
 			vehicle="Land_CargoBox_V1_F";
 			skill=0.60000002;
 			text="fed_bank";
-			init="this allowDamage false; this enableSimulation false; this addAction[""Open Vault"",life_fnc_safeOpen,"""",0,false,false,"""",' playerSide == civilian && {_target getVariable[""safe_open"",false]} '];  this addAction[""Fix Vault"",life_fnc_safeFix,"""",0,false,false,"""",' playerSide == west && {_target getVariable [""safe_open"",false]} ' ];";
+			init="this allowDamage false; this enableSimulation false; this addAction[""Safe öffnen"",life_fnc_safeOpen,"""",0,false,false,"""",' playerSide == civilian && {_target getVariable[""safe_open"",false]} '];  this addAction[""Safe reparieren"",life_fnc_safeFix,"""",0,false,false,"""",' playerSide == west && {_target getVariable [""safe_open"",false]} ' ];";
 		};
 		class Item72
 		{
@@ -4736,7 +4736,7 @@ class Mission
 			vehicle="Land_Laptop_unfolded_F";
 			skill=0.60000002;
 			text="hq_lt_1";
-			init="this enableSimulation false; this allowDamage false; this addAction[""Federal Reserve - Front Entrance"",life_fnc_fedCamDisplay,""front""];  this addAction[""Federal Reserve - Side Entrance"",life_fnc_fedCamDisplay,""side""];  this addAction[""Federal Reserve - Back Entrance"",life_fnc_fedCamDisplay,""back""];  this addAction[""Federal Reserve - Vault View"",life_fnc_fedCamDisplay,""vault""]; this addAction[""Turn Off Display"",life_fnc_fedCamDisplay,""off""];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Staatsbank - Haupteingang"",life_fnc_fedCamDisplay,""front""];  this addAction[""Staatsbank - Seiteneingang"",life_fnc_fedCamDisplay,""side""];  this addAction[""Staatsbank - Hintereingang"",life_fnc_fedCamDisplay,""back""];  this addAction[""Staatsbank - Tresorraum"",life_fnc_fedCamDisplay,""vault""]; this addAction[""Display ausschalten"",life_fnc_fedCamDisplay,""off""];";
 		};
 		class Item106
 		{
