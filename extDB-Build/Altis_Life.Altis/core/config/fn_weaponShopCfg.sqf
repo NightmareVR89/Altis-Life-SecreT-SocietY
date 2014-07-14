@@ -45,7 +45,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"Du bist kein Polizist!"};
-			case (__GETC__(life_coplevel) == 0): 
+			case (__GETC__(life_coplevel) == 1): 
 			{
 				["Anwaerter Shop",
 					[
@@ -60,7 +60,7 @@ switch(_shop) do
 					]
 				];
 			};
-			case (__GETC__(life_coplevel) == 1): 
+			case (__GETC__(life_coplevel) == 2): 
 			{
 				["Patrol Officer",
 					[
@@ -79,7 +79,7 @@ switch(_shop) do
 					]
 				];
 			};
-			case (__GETC__(life_coplevel) == 2): 
+			case (__GETC__(life_coplevel) == 3): 
 			{
 				["Air Patrol Shop",
 					[
@@ -101,7 +101,7 @@ switch(_shop) do
 					]
 				];
 			};
-			case (__GETC__(life_coplevel) == 3): 
+			case (__GETC__(life_coplevel) == 4): 
 			{
 				["Coast Guard Shop",
 					[
@@ -120,7 +120,7 @@ switch(_shop) do
 					]
 				];
 			};
-			case (__GETC__(life_coplevel) == 4): 
+			case (__GETC__(life_coplevel) == 5): 
 			{
 				["S.W.A.T Shop",
 					[
@@ -189,7 +189,7 @@ switch(_shop) do
 					]
 				];
 			};
-			case (__GETC__(life_coplevel) == 5): 
+			case (__GETC__(life_coplevel) == 6): 
 			{
 				["Anti-Terror Task Force Shop",
 					[
