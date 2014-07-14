@@ -105,6 +105,18 @@ switch (_code) do
 			};
 		};
 	};
+	
+	//H für spitzHacke ;)
+	case 35:
+	{
+		if((!life_action_inUse) && (vehicle player == player)) then
+		{
+			if(life_inv_pickaxe > 0) then
+			{
+			[] spawn life_fnc_pickAxeUse;
+			};
+		};
+	};
 
 	//T Key (Trunk)
 	case 20:
