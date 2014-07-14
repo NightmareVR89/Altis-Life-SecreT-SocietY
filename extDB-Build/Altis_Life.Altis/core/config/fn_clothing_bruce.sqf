@@ -42,12 +42,6 @@ switch (_filter) do
 		["U_BG_Guerilla3_2","Dunkel",1800],
 		["U_C_HunterBody_grn","Hunter",1800],
 		["U_C_Journalist","Presse",1800],
-		["U_C_PriestBody","Altis Priester",1800],
-		["U_C_FishermanOveralls","Fischer Overroll",1800],
-		["U_C_WorkerOveralls","Arbeiter Overrol",1800],
-		["U_C_Farmer","Altis Fahrmer",1800],
-		["U_C_Scavenger_2","Sammler",1800],
-		["U_C_Scavenger_1","Sammler Hell",1800],
 		["U_NikosAgedBody","Büromann",1800]
 		];
 	};
@@ -136,8 +130,6 @@ switch (_filter) do
 		[
 			["B_OutdoorPack_blk",nil,500],
 			["B_OutdoorPack_tan",nil,500],
-			["B_OutdoorPack_blu",nil,500],
-			["B_HuntingBackpack",nil,500],
 			["B_AssaultPack_cbr",nil,2000],
 			["B_AssaultPack_blk",nil,2000],
 			["B_AssaultPack_sgg",nil,2000],
