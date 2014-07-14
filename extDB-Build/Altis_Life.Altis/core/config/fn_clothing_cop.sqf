@@ -135,34 +135,164 @@ switch (_filter) do
 	//Vest
 	case 3:
 	{
-		_ret set[count _ret,["V_Rangemaster_belt",nil,800]];
 		if(__GETC__(life_coplevel) > 1) then
 		{
-			_ret set[count _ret,["V_PlateCarrier2_rgr",nil,1500]];
+			_ret set[count _ret,["V_Rangemaster_belt",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_rgr",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_oli",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_khk",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_cbr",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_blk",nil,1000]];
 		};
 		if(__GETC__(life_coplevel) > 2) then
 		{
-			_ret set[count _ret,["V_PlateCarrier2_rgr",nil,1500]];
+			_ret set[count _ret,["V_Rangemaster_belt",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_rgr",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_oli",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_khk",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_cbr",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_blk",nil,1000]];
+			_ret set[count _ret,["V_Chestrig_blk",nil,2500]];
+			_ret set[count _ret,["V_Chestrig_khk",nil,2500]];
+			_ret set[count _ret,["V_Chestrig_oli",nil,2500]];
+			_ret set[count _ret,["V_Chestrig_rgr",nil,2500]];
 		};
 		if(__GETC__(life_coplevel) > 3) then
 		{
-			_ret set[count _ret,["V_PlateCarrier2_rgr",nil,1500]];
+			_ret set[count _ret,["V_Rangemaster_belt",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_rgr",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_oli",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_khk",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_cbr",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_blk",nil,1000]];
+			_ret set[count _ret,["V_Chestrig_blk",nil,2500]];
+			_ret set[count _ret,["V_Chestrig_khk",nil,2500]];
+			_ret set[count _ret,["V_Chestrig_oli",nil,2500]];
+			_ret set[count _ret,["V_Chestrig_rgr",nil,2500]];
+			_ret set[count _ret,["V_TacVest_blk",nil,4500]];
+			_ret set[count _ret,["V_TacVest_blk_POLICE",nil,4500]];
+			_ret set[count _ret,["V_TacVest_brn",nil,4500]];
+			_ret set[count _ret,["V_TacVest_camo",nil,4500]];
+			_ret set[count _ret,["V_TacVest_khk",nil,4500]];
+			_ret set[count _ret,["V_TacVest_oli",nil,4500]];
+			_ret set[count _ret,["V_TacVestCamo_khk",nil,4500]];
+			_ret set[count _ret,["V_TacVestIR_blk",nil,4500]];
 		};
 		if(__GETC__(life_coplevel) > 4) then
 		{
-			_ret set[count _ret,["V_PlateCarrier2_rgr",nil,1500]];
+			_ret set[count _ret,["V_Rangemaster_belt",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_rgr",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_oli",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_khk",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_cbr",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_blk",nil,1000]];
+			_ret set[count _ret,["V_Chestrig_blk",nil,2500]];
+			_ret set[count _ret,["V_Chestrig_khk",nil,2500]];
+			_ret set[count _ret,["V_Chestrig_oli",nil,2500]];
+			_ret set[count _ret,["V_Chestrig_rgr",nil,2500]];
+			_ret set[count _ret,["V_TacVest_blk",nil,4500]];
+			_ret set[count _ret,["V_TacVest_blk_POLICE",nil,4500]];
+			_ret set[count _ret,["V_TacVest_brn",nil,4500]];
+			_ret set[count _ret,["V_TacVest_camo",nil,4500]];
+			_ret set[count _ret,["V_TacVest_khk",nil,4500]];
+			_ret set[count _ret,["V_TacVest_oli",nil,4500]];
+			_ret set[count _ret,["V_TacVestCamo_khk",nil,4500]];
+			_ret set[count _ret,["V_TacVestIR_blk",nil,4500]];
+			_ret set[count _ret,["V_PlateCarrier1_blk",nil,6000]];
+			_ret set[count _ret,["V_PlateCarrier1_rgr",nil,6000]];
+			_ret set[count _ret,["V_PlateCarrier2_rgr",nil,6000]];
+			_ret set[count _ret,["V_PlateCarrierIA1_dgtl",nil,6000]];
 		};
 		if(__GETC__(life_coplevel) > 5) then
 		{
-			_ret set[count _ret,["V_PlateCarrier2_rgr",nil,1500]];
+			_ret set[count _ret,["V_Rangemaster_belt",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_rgr",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_oli",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_khk",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_cbr",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_blk",nil,1000]];
+			_ret set[count _ret,["V_Chestrig_blk",nil,2500]];
+			_ret set[count _ret,["V_Chestrig_khk",nil,2500]];
+			_ret set[count _ret,["V_Chestrig_oli",nil,2500]];
+			_ret set[count _ret,["V_Chestrig_rgr",nil,2500]];
+			_ret set[count _ret,["V_TacVest_blk",nil,4500]];
+			_ret set[count _ret,["V_TacVest_blk_POLICE",nil,4500]];
+			_ret set[count _ret,["V_TacVest_brn",nil,4500]];
+			_ret set[count _ret,["V_TacVest_camo",nil,4500]];
+			_ret set[count _ret,["V_TacVest_khk",nil,4500]];
+			_ret set[count _ret,["V_TacVest_oli",nil,4500]];
+			_ret set[count _ret,["V_TacVestCamo_khk",nil,4500]];
+			_ret set[count _ret,["V_TacVestIR_blk",nil,4500]];
+			_ret set[count _ret,["V_PlateCarrier1_blk",nil,6000]];
+			_ret set[count _ret,["V_PlateCarrier1_rgr",nil,6000]];
+			_ret set[count _ret,["V_PlateCarrier2_rgr",nil,6000]];
+			_ret set[count _ret,["V_PlateCarrierIA1_dgtl",nil,6000]];
+			_ret set[count _ret,["V_PlateCarrierGL_rgr",nil,8000]];
+			_ret set[count _ret,["V_PlateCarrierIA2_dgtl",nil,8000]];
+			_ret set[count _ret,["V_PlateCarrierIAGL_dgtl",nil,8000]];
+			_ret set[count _ret,["V_PlateCarrierSpec_rgr",nil,8000]];
 		};
 		if(__GETC__(life_coplevel) > 6) then
 		{
-			_ret set[count _ret,["V_PlateCarrier2_rgr",nil,1500]];
+			_ret set[count _ret,["V_Rangemaster_belt",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_rgr",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_oli",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_khk",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_cbr",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_blk",nil,1000]];
+			_ret set[count _ret,["V_Chestrig_blk",nil,2500]];
+			_ret set[count _ret,["V_Chestrig_khk",nil,2500]];
+			_ret set[count _ret,["V_Chestrig_oli",nil,2500]];
+			_ret set[count _ret,["V_Chestrig_rgr",nil,2500]];
+			_ret set[count _ret,["V_TacVest_blk",nil,4500]];
+			_ret set[count _ret,["V_TacVest_blk_POLICE",nil,4500]];
+			_ret set[count _ret,["V_TacVest_brn",nil,4500]];
+			_ret set[count _ret,["V_TacVest_camo",nil,4500]];
+			_ret set[count _ret,["V_TacVest_khk",nil,4500]];
+			_ret set[count _ret,["V_TacVest_oli",nil,4500]];
+			_ret set[count _ret,["V_TacVestCamo_khk",nil,4500]];
+			_ret set[count _ret,["V_TacVestIR_blk",nil,4500]];
+			_ret set[count _ret,["V_PlateCarrier1_blk",nil,6000]];
+			_ret set[count _ret,["V_PlateCarrier1_rgr",nil,6000]];
+			_ret set[count _ret,["V_PlateCarrier2_rgr",nil,6000]];
+			_ret set[count _ret,["V_PlateCarrierIA1_dgtl",nil,6000]];
+			_ret set[count _ret,["V_PlateCarrierGL_rgr",nil,8000]];
+			_ret set[count _ret,["V_PlateCarrierIA2_dgtl",nil,8000]];
+			_ret set[count _ret,["V_PlateCarrierIAGL_dgtl",nil,8000]];
+			_ret set[count _ret,["V_PlateCarrierSpec_rgr",nil,8000]];
+			_ret set[count _ret,["V_BandollierB_khk",nil,8000]];
+			_ret set[count _ret,["V_PlateCarrier3_rgr","Polizeiweste",10000]];
 		};
 		if(__GETC__(life_coplevel) > 7) then
 		{
-			_ret set[count _ret,["V_PlateCarrier2_rgr",nil,1500]];
+			_ret set[count _ret,["V_Rangemaster_belt",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_rgr",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_oli",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_khk",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_cbr",nil,1000]];
+			_ret set[count _ret,["V_BandollierB_blk",nil,1000]];
+			_ret set[count _ret,["V_Chestrig_blk",nil,2500]];
+			_ret set[count _ret,["V_Chestrig_khk",nil,2500]];
+			_ret set[count _ret,["V_Chestrig_oli",nil,2500]];
+			_ret set[count _ret,["V_Chestrig_rgr",nil,2500]];
+			_ret set[count _ret,["V_TacVest_blk",nil,4500]];
+			_ret set[count _ret,["V_TacVest_blk_POLICE",nil,4500]];
+			_ret set[count _ret,["V_TacVest_brn",nil,4500]];
+			_ret set[count _ret,["V_TacVest_camo",nil,4500]];
+			_ret set[count _ret,["V_TacVest_khk",nil,4500]];
+			_ret set[count _ret,["V_TacVest_oli",nil,4500]];
+			_ret set[count _ret,["V_TacVestCamo_khk",nil,4500]];
+			_ret set[count _ret,["V_TacVestIR_blk",nil,4500]];
+			_ret set[count _ret,["V_PlateCarrier1_blk",nil,6000]];
+			_ret set[count _ret,["V_PlateCarrier1_rgr",nil,6000]];
+			_ret set[count _ret,["V_PlateCarrier2_rgr",nil,6000]];
+			_ret set[count _ret,["V_PlateCarrierIA1_dgtl",nil,6000]];
+			_ret set[count _ret,["V_PlateCarrierGL_rgr",nil,8000]];
+			_ret set[count _ret,["V_PlateCarrierIA2_dgtl",nil,8000]];
+			_ret set[count _ret,["V_PlateCarrierIAGL_dgtl",nil,8000]];
+			_ret set[count _ret,["V_PlateCarrierSpec_rgr",nil,8000]];
+			_ret set[count _ret,["V_BandollierB_khk",nil,8000]];
+			_ret set[count _ret,["V_PlateCarrier3_rgr","Polizeiweste",10000]];
 		};
 	};
 	
