@@ -261,6 +261,7 @@ class Life_Client_Core
 		class robReceive {};
 		class robPerson {};
 		class removeLicenses {};
+		class removeWeapons {};
 		class zoneCreator {};
 		class demoChargeTimer {};
 	};
