@@ -71,9 +71,6 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) > 1) then          //Anwärter
 		{
 			_ret set[count _ret,["H_Booniehat_mcamo",nil,120]];
-			_ret set[count _ret,["H_Booniehat_mcamo",nil,120]];
-			_ret set[count _ret,["H_Booniehat_mcamo",nil,120]];
-			_ret set[count _ret,["H_Booniehat_mcamo",nil,120]];
 		};
 		
 		if(__GETC__(life_coplevel) > 2) then         //Kommissar
@@ -143,19 +140,130 @@ switch (_filter) do
 		{
 			_ret set[count _ret,["V_PlateCarrier2_rgr",nil,1500]];
 		};
+		if(__GETC__(life_coplevel) > 2) then
+		{
+			_ret set[count _ret,["V_PlateCarrier2_rgr",nil,1500]];
+		};
+		if(__GETC__(life_coplevel) > 3) then
+		{
+			_ret set[count _ret,["V_PlateCarrier2_rgr",nil,1500]];
+		};
+		if(__GETC__(life_coplevel) > 4) then
+		{
+			_ret set[count _ret,["V_PlateCarrier2_rgr",nil,1500]];
+		};
+		if(__GETC__(life_coplevel) > 5) then
+		{
+			_ret set[count _ret,["V_PlateCarrier2_rgr",nil,1500]];
+		};
+		if(__GETC__(life_coplevel) > 6) then
+		{
+			_ret set[count _ret,["V_PlateCarrier2_rgr",nil,1500]];
+		};
+		if(__GETC__(life_coplevel) > 7) then
+		{
+			_ret set[count _ret,["V_PlateCarrier2_rgr",nil,1500]];
+		};
 	};
 	
 	//Backpacks
 	case 4:
-	{
-		_ret =
-		[
-			["B_Kitbag_cbr",nil,800],
-			["B_FieldPack_cbr",nil,500],
-			["B_AssaultPack_cbr",nil,700],
-			["B_Bergen_sgg",nil,2500],
-			["B_Carryall_cbr",nil,3500]
-		];
+	{	
+		if(__GETC__(life_coplevel) > 1) then
+		{
+			_ret set[count _ret,["B_OutdoorPack_blk",nil,500]];
+			_ret set[count _ret,["B_OutdoorPack_tan",nil,500]];
+		};
+		if(__GETC__(life_coplevel) > 2) then
+		{
+			_ret set[count _ret,["B_OutdoorPack_blk",nil,500]];
+			_ret set[count _ret,["B_OutdoorPack_tan",nil,500]];
+			_ret set[count _ret,["B_AssaultPack_cbr",nil,1800]];
+			_ret set[count _ret,["B_AssaultPack_blk",nil,1800]];
+			_ret set[count _ret,["B_AssaultPack_sgg",nil,1800]];
+			_ret set[count _ret,["B_AssaultPack_rgr",nil,1800]];
+			_ret set[count _ret,["B_AssaultPack_khk",nil,1800];
+		};
+		if(__GETC__(life_coplevel) > 3) then
+		{
+			_ret set[count _ret,["B_OutdoorPack_blk",nil,500]];
+			_ret set[count _ret,["B_OutdoorPack_tan",nil,500]];
+			_ret set[count _ret,["B_AssaultPack_cbr",nil,1800]];
+			_ret set[count _ret,["B_AssaultPack_blk",nil,1800]];
+			_ret set[count _ret,["B_AssaultPack_sgg",nil,1800]];
+			_ret set[count _ret,["B_AssaultPack_rgr",nil,1800]];
+			_ret set[count _ret,["B_AssaultPack_khk",nil,1800];
+			_ret set[count _ret,["B_Kitbag_sgg",nil,2000]];
+			_ret set[count _ret,["B_Kitbag_cbr",nil,2000]];
+		};
+		if(__GETC__(life_coplevel) > 4) then
+		{
+			_ret set[count _ret,["B_OutdoorPack_blk",nil,500]];
+			_ret set[count _ret,["B_OutdoorPack_tan",nil,500]];
+			_ret set[count _ret,["B_AssaultPack_cbr",nil,1800]];
+			_ret set[count _ret,["B_AssaultPack_blk",nil,1800]];
+			_ret set[count _ret,["B_AssaultPack_sgg",nil,1800]];
+			_ret set[count _ret,["B_AssaultPack_rgr",nil,1800]];
+			_ret set[count _ret,["B_AssaultPack_khk",nil,1800];
+			_ret set[count _ret,["B_Kitbag_sgg",nil,2000]];
+			_ret set[count _ret,["B_Kitbag_cbr",nil,2000]];
+			_ret set[count _ret,["B_FieldPack_cbr",nil,3500]];
+			_ret set[count _ret,["B_FieldPack_blk",nil,3500]];
+		};
+		if(__GETC__(life_coplevel) > 5) then
+		{
+			_ret set[count _ret,["B_OutdoorPack_blk",nil,500]];
+			_ret set[count _ret,["B_OutdoorPack_tan",nil,500]];
+			_ret set[count _ret,["B_AssaultPack_cbr",nil,1800]];
+			_ret set[count _ret,["B_AssaultPack_blk",nil,1800]];
+			_ret set[count _ret,["B_AssaultPack_sgg",nil,1800]];
+			_ret set[count _ret,["B_AssaultPack_rgr",nil,1800]];
+			_ret set[count _ret,["B_AssaultPack_khk",nil,1800];
+			_ret set[count _ret,["B_Kitbag_sgg",nil,2000]];
+			_ret set[count _ret,["B_Kitbag_cbr",nil,2000]];
+			_ret set[count _ret,["B_FieldPack_cbr",nil,3500]];
+			_ret set[count _ret,["B_FieldPack_blk",nil,3500]];
+			_ret set[count _ret,["B_TacticalPack_oli",nil,4000]];
+		};
+		if(__GETC__(life_coplevel) > 6) then
+		{
+			_ret set[count _ret,["B_OutdoorPack_blk",nil,500]];
+			_ret set[count _ret,["B_OutdoorPack_tan",nil,500]];
+			_ret set[count _ret,["B_AssaultPack_cbr",nil,1800]];
+			_ret set[count _ret,["B_AssaultPack_blk",nil,1800]];
+			_ret set[count _ret,["B_AssaultPack_sgg",nil,1800]];
+			_ret set[count _ret,["B_AssaultPack_rgr",nil,1800]];
+			_ret set[count _ret,["B_AssaultPack_khk",nil,1800];
+			_ret set[count _ret,["B_Kitbag_sgg",nil,2000]];
+			_ret set[count _ret,["B_Kitbag_cbr",nil,2000]];
+			_ret set[count _ret,["B_FieldPack_cbr",nil,3500]];
+			_ret set[count _ret,["B_FieldPack_blk",nil,3500]];
+			_ret set[count _ret,["B_TacticalPack_oli",nil,4000]];
+			_ret set[count _ret,["B_Bergen_sgg",nil,5000]];
+			_ret set[count _ret,["B_Bergen_blk",nil,5000]];
+			_ret set[count _ret,["B_Bergen_rgr",nil,5000]];
+		};
+		if(__GETC__(life_coplevel) > 7) then
+		{
+			_ret set[count _ret,["B_OutdoorPack_blk",nil,500]];
+			_ret set[count _ret,["B_OutdoorPack_tan",nil,500]];
+			_ret set[count _ret,["B_AssaultPack_cbr",nil,1800]];
+			_ret set[count _ret,["B_AssaultPack_blk",nil,1800]];
+			_ret set[count _ret,["B_AssaultPack_sgg",nil,1800]];
+			_ret set[count _ret,["B_AssaultPack_rgr",nil,1800]];
+			_ret set[count _ret,["B_AssaultPack_khk",nil,1800];
+			_ret set[count _ret,["B_Kitbag_sgg",nil,2000]];
+			_ret set[count _ret,["B_Kitbag_cbr",nil,2000]];
+			_ret set[count _ret,["B_FieldPack_cbr",nil,3500]];
+			_ret set[count _ret,["B_FieldPack_blk",nil,3500]];
+			_ret set[count _ret,["B_TacticalPack_oli",nil,4000]];
+			_ret set[count _ret,["B_Bergen_sgg",nil,5000]];
+			_ret set[count _ret,["B_Bergen_blk",nil,5000]];
+			_ret set[count _ret,["B_Bergen_rgr",nil,5000]];
+			_ret set[count _ret,["B_Carryall_cbr",nil,9000]];
+			_ret set[count _ret,["B_Carryall_oli",nil,9000]];
+			_ret set[count _ret,["B_Carryall_khk",nil,9000]];
+		};
 	};
 };
 
