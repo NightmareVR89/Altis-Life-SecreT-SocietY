@@ -8,15 +8,15 @@ waitUntil { time > 0 };
 IL_EV_Count = 0;
 IL_Veh_Array = [];
 
-cutText ["IgiLoad läd. Bitte warten...","PLAIN",2];
+if(__GETC__(life_adaclevel) == 1) then {
+//cutText ["IgiLoad läd. Bitte warten...","PLAIN",2];
 sleep (random 30);
 
-cutText [Format ["IgiLoad init Player: %1", Player],"PLAIN",2];
+//cutText [Format ["IgiLoad init Player: %1", Player],"PLAIN",2];
 
-if(__GETC__(life_adaclevel) == 1) then {
 _null = [Player] execVM "IgiLoad\IgiLoad.sqf";
 waitUntil {scriptDone _null};
-};
+
 
 sleep (random (IL_Check_Veh_Max - IL_Check_Veh_Min));
 
@@ -51,3 +51,5 @@ while {true} do
 		};
 	} forEach (vehicles);
 };
+
+} else exitWith {};
