@@ -99,7 +99,7 @@ switch (playerSide) do
 {
 	case west: 
 	{
-		life_atmcash = 1000; //Starting Bank Money
+		life_atmcash = 2500; //Starting Bank Money
 		life_paycheck = 100; //Paycheck Amount
 	};
 	case civilian: 
@@ -219,46 +219,46 @@ life_illegal_items = [["heroinu",50],["heroinp",80],["cocaine",35],["cocainep",7
 */
 sell_array = 
 [
-	["apple",2],
-	["heroinu",30],
-	["heroinp",10],
+	["apple",3],
+	["heroinu",10],
+	["heroinp",35],
 	["salema",10],
 	["ornate",5],
 	["mackerel",15],
-	["tuna",10],
+	["tuna",6],
 	["mullet",6],
-	["catshark",100],
+	["catshark",90],
 	["rabbit",20],
 	["oilp",30],
-	["turtle",100],
-	["water",2],
-	["coffee",2],
-	["turtlesoup",25],
-	["donuts",2],
-	["marijuana",20],
+	["turtle",90],
+	["water",4],
+	["coffee",1],
+	["turtlesoup",20],
+	["donuts",1],
+	["marijuana",25],
 	["tbacon",100],
 	["lockpick",75],
 	["pickaxe",130],
-	["redgull",1000],
-	["peach",2],
-	["cocaine",80],
-	["cocainep",120],
-	["diamond",80],
-	["diamondc",150],
-	["iron_r",50],
+	["redgull",500],
+	["peach",4],
+	["cocaine",30],
+	["cocainep",70],
+	["diamond",30],
+	["diamondc",60],
+	["iron_r",60],
 	["copper_r",30],
 	["salt_r",20],
-	["glass",20],
+	["glass",10],
 	["fuelF",10],
-	["spikeStrip",120],
-	["cement",16],
-	["goldbar",300]
+	["spikeStrip",50],
+	["cement",45],
+	["goldbar",12000]
 ];
 __CONST__(sell_array,sell_array);
 
 buy_array = 
 [
-	["apple",4],
+	["apple",10],
 	["rabbit",40],
 	["salema",15],
 	["ornate",10],
@@ -266,22 +266,22 @@ buy_array =
 	["tuna",20],
 	["mullet",15],
 	["catshark",130],
-	["water",5],
+	["water",10],
 	["turtle",130],
 	["turtlesoup",30],
 	["donuts",5],
 	["coffee",10],
-	["tbacon",140],
+	["tbacon",250],
 	["lockpick",200],
 	["pickaxe",600],
 	["redgull",1500],
 	["fuelF",850],
-	["peach",5],
-	["spikeStrip",250],
+	["peach",10],
+	["spikeStrip",100],
 	["blastingcharge",10000],
 	["boltcutter",7000],
 	["defusekit",500],
-	["storagesmall",15000],
+	["storagesmall",40000],
 	["storagebig",1500000]
 ];
 __CONST__(buy_array,buy_array);
@@ -298,7 +298,7 @@ life_weapon_shop_array =
 	["NVGoggles",1200],
 	["16Rnd_9x21_Mag",15],
 	["20Rnd_556x45_UW_mag",35],
-	["ItemMap",18],
+	["ItemMap",50],
 	["ItemCompass",30],
 	["Chemlight_blue",10],
 	["Chemlight_yellow",10],
