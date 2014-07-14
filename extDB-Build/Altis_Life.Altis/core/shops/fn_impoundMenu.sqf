@@ -30,7 +30,7 @@ for "_i" from 0 to (count life_vehicles)-1 do
 		{
 			case (_veh isKindOf "Car") : {_price = _price + 100;};
 			case (_veh isKindOf "Air") : {_price = _price + 650;};
-			case (_veh isKindOf "Ship") : {_price = _price + 50;};
+			case (_veh isKindOf "Ship") : {_price = _price + 200;};
 		};
 	
 		if(_price > life_cash) then
