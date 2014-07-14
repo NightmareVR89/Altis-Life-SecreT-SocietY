@@ -45,6 +45,7 @@ if(([true,_type,_amount] call life_fnc_handleInv)) then
 			__SUB__(life_cash,_price);
 		};
 	} else {
+		if((_price * _amount) > life_cash) exitWith {[false,_type,_amount] call life_fnc_handleInv; hint "Du hast nicht so viel Bargeld dabei!";};
 		hint format["Du hast %1 %2 für $%3 gekauft",_amount,_name,[(_price * _amount)] call life_fnc_numberText];
 		__SUB__(life_cash,(_price * _amount));
 	};
