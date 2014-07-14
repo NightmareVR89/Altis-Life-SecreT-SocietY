@@ -9,7 +9,7 @@ private["_value"];
 _value = parseNumber(ctrlText 2702);
 
 //Series of stupid checks
-if(_value > 9999999) exitWith {hint localize "STR_ATM_GreaterThan";};
+if(_value > 999999) exitWith {hint localize "STR_ATM_GreaterThan";};
 if(_value < 0) exitWith {};
 if(!([str(_value)] call life_fnc_isnumeric)) exitWith {hint localize "STR_AIM_notnumeric"};
 if(_value > life_atmcash) exitWith {hint "Du hast nicht so viel Geld auf deinem Konto"};
