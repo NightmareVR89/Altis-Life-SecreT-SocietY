@@ -21,3 +21,4 @@ player addItem "ItemWatch";
 player assignItem "ItemWatch";
 
 [] call life_fnc_saveGear;
+[] spawn life_fnc_updateClothing;

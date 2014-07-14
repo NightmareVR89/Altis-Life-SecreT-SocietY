@@ -37,3 +37,4 @@ player addItem "NVGoggles";
 player assignItem "NVGoggles";
 
 [] call life_fnc_saveGear;
+[] spawn life_fnc_updateClothing;
