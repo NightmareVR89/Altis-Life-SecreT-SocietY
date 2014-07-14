@@ -62,7 +62,7 @@ switch(_shop) do
 			};
 			case (__GETC__(life_coplevel) == 2): 
 			{
-				["Patrol Officer",
+				["Kommissar",
 					[
 						["SMG_01_F","Taser Rifle",20000],
 						["hgun_P07_snds_F","Stun Pistol",2000],
@@ -81,7 +81,7 @@ switch(_shop) do
 			};
 			case (__GETC__(life_coplevel) == 3): 
 			{
-				["Air Patrol Shop",
+				["HauptKommissar",
 					[
 						["SMG_01_F","Taser Rifle",20000],
 						["hgun_P07_snds_F","Stun Pistol",2000],
@@ -103,7 +103,7 @@ switch(_shop) do
 			};
 			case (__GETC__(life_coplevel) == 4): 
 			{
-				["Coast Guard Shop",
+				["Einsatzleiter",
 					[
 						["SMG_01_F","Taser Rifle",20000],
 						["hgun_P07_snds_F","Stun Pistol",2000],
@@ -122,7 +122,54 @@ switch(_shop) do
 			};
 			case (__GETC__(life_coplevel) == 5): 
 			{
-				["S.W.A.T Shop",
+				["Polizei Chef",
+					[
+						["SMG_01_F","Taser Rifle",20000],
+						["hgun_P07_snds_F","Stun Pistol",2000],
+						["arifle_SDAR_F","Underwater Weapon",10000],
+						["Binocular",nil,150],
+						["ItemGPS",nil,100],
+						["ToolKit",nil,250],
+						["FirstAidKit",nil,150],
+						["Medikit",nil,1000],
+						["NVGoggles",nil,2000],
+						["16Rnd_9x21_Mag",nil,50],
+						["20Rnd_556x45_UW_mag",nil,50],
+						["30Rnd_45ACP_Mag_SMG_01","Taser Rifle Magazine",125]
+					]
+				];
+			};
+			case (__GETC__(life_coplevel) == 6): 
+			{
+				["SEK",
+					[
+						["SMG_01_F","Taser Rifle",20000],
+						["hgun_P07_snds_F","Stun Pistol",2000],
+						["arifle_MX_F",nil,40000],
+						["arifle_MXM_F",nil,50000],
+						["srifle_EBR_F",nil,70000],
+						["acc_pointer_IR",nil,1000],
+						["optic_Holosight",nil,1000],
+						["optic_SOS",nil,5000],
+						["HandGrenade_Stone","Flashbang",1700],
+						["SmokeShellGreen","Teargas",1700],
+						["Binocular",nil,150],
+						["ItemGPS",nil,100],
+						["ToolKit",nil,250],
+						["FirstAidKit",nil,150],
+						["Medikit",nil,1000],
+						["NVGoggles",nil,2000],
+						["30Rnd_65x39_caseless_mag_Tracer",nil,200],
+						["20Rnd_762x51_Mag",nil,1000],
+						["16Rnd_9x21_Mag",nil,50],
+						["30Rnd_45ACP_Mag_SMG_01","Taser Rifle Magazine",125]
+						
+					]
+				];
+			};
+			case (__GETC__(life_coplevel) == 7): 
+			{
+				["Anti Terror",
 					[
 						["SMG_01_F","Taser Rifle",20000],
 						["hgun_P07_snds_F","Stun Pistol",2000],
@@ -151,18 +198,39 @@ switch(_shop) do
 						["LMG_Zafir_F,40000],
 						["launch_RPG32_F,40000],
 						["muzzle_snds_H",nil,1000],
+						["muzzle_snds_L",nil,1000],
+						["muzzle_snds_M",nil,1000],
+						["muzzle_snds_B",nil,1000],
+						["muzzle_snds_H_MG",nil,1000],
 						["acc_pointer_IR",nil,1000],
+						["acc_flashlight",nil,1000],
 						["optic_Holosight",nil,1000],
 						["optic_Hamr",nil,1000],
-						["HandGrenade_Stone","Flashbang",1700],
+						["optic_SOS",nil,5000],
+						["optic_LRPS",nil,5000],
+						["optic_Arco",nil,5000],
+						["optic_DMS",nil,5000],
+						["optic_Aco",nil,5000],
+						["optic_Nightstalker",nil,15000],
+						["optic_NVS",nil,15000],
+						["optic_MRCO",nil,5000],
 						["Binocular",nil,150],
+						["Rangefinder",nil,150],
 						["ItemGPS",nil,100],
+						["ItemMap",nil,100],
 						["ToolKit",nil,250],
 						["FirstAidKit",nil,150],
 						["Medikit",nil,1000],
 						["NVGoggles",nil,2000],
+						["MineDetector",nil,2000],
+						["Chemlight_red",nil,300],
+						["Chemlight_yellow",nil,300],
+						["Chemlight_green",nil,300],
+						["Chemlight_blue",nil,300],
 						["RPG32_F",nil,2000],
 						["RPG32_HE_F",nil,2000],
+						["HandGrenade_Stone","Flashbang",1700],
+						["SmokeShellGreen","Teargas",1700],
 						["6Rnd_GreenSignal_F",nil,200],
 						["6Rnd_RedSignal_F",nil,200],
 						["5Rnd_127x108_Mag",nil,200],
@@ -185,33 +253,6 @@ switch(_shop) do
 						["30Rnd_556x45_Stanag",nil,200],
 						["30Rnd_9x21_Mag",nil,200],
 						["20Rnd_762x51_Mag",nil,200],
-						["30Rnd_45ACP_Mag_SMG_01","Taser Rifle Magazine",125]
-					]
-				];
-			};
-			case (__GETC__(life_coplevel) == 6): 
-			{
-				["Anti-Terror Task Force Shop",
-					[
-						["SMG_01_F","Taser Rifle",20000],
-						["hgun_P07_snds_F","Stun Pistol",2000],
-						["arifle_MX_F",nil,40000],
-						["arifle_MXM_F",nil,50000],
-						["srifle_EBR_F",nil,70000],
-						["acc_pointer_IR",nil,1000],
-						["optic_Holosight",nil,1000],
-						["optic_SOS",nil,5000],
-						["HandGrenade_Stone","Flashbang",1700],
-						["SmokeShellGreen","Teargas",1700],
-						["Binocular",nil,150],
-						["ItemGPS",nil,100],
-						["ToolKit",nil,250],
-						["FirstAidKit",nil,150],
-						["Medikit",nil,1000],
-						["NVGoggles",nil,2000],
-						["30Rnd_65x39_caseless_mag_Tracer",nil,200],
-						["20Rnd_762x51_Mag",nil,1000],
-						["16Rnd_9x21_Mag",nil,50],
 						["30Rnd_45ACP_Mag_SMG_01","Taser Rifle Magazine",125]
 					]
 				];
