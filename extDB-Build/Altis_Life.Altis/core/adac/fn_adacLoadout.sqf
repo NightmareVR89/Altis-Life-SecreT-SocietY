@@ -1,5 +1,5 @@
 private["_handle"];
-_handle = [spawn life_fnc_stripDownPlayer;
+_handle = [] spawn life_fnc_stripDownPlayer;
 waitUntil {scriptDone _handle};
 
 player addUniform "U_Rangemaster";
