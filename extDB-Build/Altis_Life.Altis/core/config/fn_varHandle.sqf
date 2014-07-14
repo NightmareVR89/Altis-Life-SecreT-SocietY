@@ -66,7 +66,7 @@ switch (_mode) do
 			case "storagesmall": {"life_inv_storagesmall"};
 			case "storagebig": {"life_inv_storagebig"};
 			case "handschellen": {"life_inv_handschellen"};
-			case "kabelb": ["life_inv_kabelb"};
+			case "kabelb": {"life_inv_kabelb"};
 		};
 	};
 	
