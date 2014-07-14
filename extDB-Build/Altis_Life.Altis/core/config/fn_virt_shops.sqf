@@ -22,6 +22,6 @@ switch (_shop) do
 	case "iron": {["Altis Industriehändler",["iron_r","copper_r"]]};
 	case "diamond": {["Diamantenhändler",["diamond","diamondc"]]};
 	case "salt": {["Salzhändler",["salt_r"]]};
-	case "cop": {["Polizeibedarf",["donuts","coffee","spikeStrip","water","rabbit","apple","redgull","fuelF","defusekit"]]};
+	case "cop": {["Polizeibedarf",["handschellen","donuts","coffee","spikeStrip","water","rabbit","apple","redgull","fuelF","defusekit"]]};
 	case "cement": {["Zementhändler",["cement"]]};
 };

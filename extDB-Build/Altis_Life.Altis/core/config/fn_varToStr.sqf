@@ -61,6 +61,7 @@ switch (_var) do
 	case "life_inv_defusekit": {"Bombenentschärfungskit"};
 	case "life_inv_storagesmall": {"Kleine Lagerbox"};
 	case "life_inv_storagebig": {"Grosse Lagerbox"};
+	case "life_inv_handschellen": {"Handschellen"};
 	
 	//License Block
 	case "license_civ_driver": {"Führerschein"};
