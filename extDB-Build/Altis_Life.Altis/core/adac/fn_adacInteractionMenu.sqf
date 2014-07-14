@@ -32,11 +32,11 @@ _Btn1 ctrlSetText localize "STR_adacpInAct_checkMembership";
 _Btn1 buttonSetAction "[[player],""life_fnc_adacLicenseCheck"",life_pInact_curTarget,FALSE] spawn life_fnc_MP";
 
 //Gebe Mitgliedschaft an Target
-_Btn2 ctrlSetText localize "STR_adacpInAct_sellMembership";
+_Btn2 ctrlSetText localize "STR_adacpInAct_takeMembership";
 _Btn2 buttonSetAction "[[4],""life_fnc_removeLicenses"",life_pInact_curTarget,false] spawn life_fnc_MP";
 
 //Entziehe dem Target die Mitgliedschaft
-_Btn3 ctrlSetText localize "STR_adacpInAct_takeMembership";
+_Btn3 ctrlSetText localize "STR_adacpInAct_sellMembership";
 _Btn3 buttonSetAction "[[5],""life_fnc_removeLicenses"",life_pInact_curTarget,false] spawn life_fnc_MP";
 
 //Stelle Rechnung aus
