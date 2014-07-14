@@ -53,7 +53,7 @@ switch (_state) do
 	case 4:
 	{
 		license_civ_adac = false;
-		hint "Der ADAC hat dir die Mitgliedschaft entzogen.";
+		hint "Der ADAC hat Dir die Mitgliedschaft entzogen.";
 	};
 	
 	case 5:
