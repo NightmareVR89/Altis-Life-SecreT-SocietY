@@ -9,9 +9,9 @@
 		[] call life_fnc_hudUpdate;
 		if(life_hunger < 2) then {player setDamage 1; hint "You have starved to death.";};
 		switch(life_hunger) do {
-			case 30: {hint "You haven't eaten anything in awhile, You should find something to eat soon!";};
-			case 20: {hint "You are starting to starve, you need to find something to eat otherwise you will die.";};
-			case 10: {hint "You are now starving to death, you will die very soon if you don't eat something";player setFatigue 1;};
+			case 30: {hint "Du hast eine weile nicht gegessen, du solltest dringend was Essen!";};
+			case 20: {hint "Du beginnst zu verhungern, finde etwas zum essen, oder du wirst sterben.";};
+			case 10: {hint "Du wirst nun zu Tode verhungern, wenn du nicht sofort etwas zu essen findest!";player setFatigue 1;};
 			};
 		};
 	};
@@ -26,9 +26,9 @@
 			if(life_thirst < 2) then {player setDamage 1; hint "You have died from dehydration.";};
 			switch(life_thirst) do 
 			{
-				case 30: {hint"You haven't drank anything in awhile, You should find something to drink soon.";};
-				case 20: {hint "You haven't drank anything in along time, you should find something to drink soon or you'll start to die from dehydration"; player setFatigue 1;};
-				case 10: {hint "You are now suffering from severe dehydration find something to drink quickly!"; player setFatigue 1;};
+				case 30: {hint"Du hast eine weile nicht getrunken, du solltest dir was zu trinken finden.";};
+				case 20: {hint "Du hast sehr lange nichts getrunken, du solltest was zum trinken finden oder du stirbst an Dehydration"; player setFatigue 1;};
+				case 10: {hint "Du leidest an Dehydration, und solltest schnellstens was zu trinken finden oder du Stirbst!"; player setFatigue 1;};
 			};
 		};
 	};
@@ -68,7 +68,7 @@
 		if(life_carryWeight > life_maxWeight && !isForcedWalk player) then {
 			player forceWalk true;
 			player setFatigue 1;
-			hint "You are over carrying your max weight! You will not be able to run or move fast till you drop some items!";
+			hint "Du bist überladen! Du wirst nicht schnell laufe können , solange du nicht etwas ablegst!";
 		} else {
 			if(isForcedWalk player) then {
 				player forceWalk false;
