@@ -62,6 +62,7 @@ switch (_var) do
 	case "life_inv_storagesmall": {"Kleine Lagerbox"};
 	case "life_inv_storagebig": {"Grosse Lagerbox"};
 	case "life_inv_handschellen": {"Handschellen"};
+	case "life_inv_kabelb": {"Kabelbinder"};
 	
 	//License Block
 	case "license_civ_driver": {"Führerschein"};

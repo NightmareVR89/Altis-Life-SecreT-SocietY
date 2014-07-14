@@ -170,7 +170,8 @@ life_inv_items =
 	"life_inv_defusekit",
 	"life_inv_storagesmall",
 	"life_inv_storagebig",
-	"life_inv_handschellen"
+	"life_inv_handschellen",
+	"life_inv_kabelb"
 ];
 
 //Setup variable inv vars.
@@ -254,7 +255,8 @@ sell_array =
 	["spikeStrip",50],
 	["cement",45],
 	["goldbar",12000],
-	["handschellen",50]
+	["handschellen",50],
+	["kabelb",50]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -285,7 +287,8 @@ buy_array =
 	["defusekit",500],
 	["storagesmall",40000],
 	["storagebig",1500000],
-	["handschellen",60]
+	["handschellen",60],
+	["kabelb",60]
 ];
 __CONST__(buy_array,buy_array);
 

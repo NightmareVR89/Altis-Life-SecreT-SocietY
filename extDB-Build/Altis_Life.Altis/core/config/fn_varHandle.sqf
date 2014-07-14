@@ -66,6 +66,7 @@ switch (_mode) do
 			case "storagesmall": {"life_inv_storagesmall"};
 			case "storagebig": {"life_inv_storagebig"};
 			case "handschellen": {"life_inv_handschellen"};
+			case "kabelb": ["life_inv_kabelb"};
 		};
 	};
 	
@@ -123,6 +124,7 @@ switch (_mode) do
 			case "life_inv_storagesmall": {"storagesmall"};
 			case "life_inv_storagebig": {"storagebig"};
 			case "life_inv_handschellen": {"handschellen"};
+			case "life_inv_kabelb": {"kabelb"};
 		};
 	};
 };

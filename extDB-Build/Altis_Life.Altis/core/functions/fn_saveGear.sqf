@@ -179,7 +179,9 @@ if(count (handGunItems player) > 0) then
     ["life_inv_boltcutter", life_inv_boltcutter],
     ["life_inv_defusekit", life_inv_defusekit],
     ["life_inv_storagesmall", life_inv_storagesmall],
-    ["life_inv_storagebig", life_inv_storagebig]
+    ["life_inv_storagebig", life_inv_storagebig],
+	["life_inv_handschellen", life_inv_handschellen],
+	["life_inv_kabelb", life_inv_kabelb]
 ];
 
 _ret set[count _ret,_uItems];
