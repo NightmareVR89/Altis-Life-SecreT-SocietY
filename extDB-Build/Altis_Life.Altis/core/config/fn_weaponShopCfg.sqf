@@ -56,7 +56,11 @@ switch(_shop) do
 						["FirstAidKit",nil,150],
 						["Medikit",nil,1000],
 						["NVGoggles",nil,2000],
-						["16Rnd_9x21_Mag",nil,50]
+						["16Rnd_9x21_Mag",nil,50],
+						["Chemlight_red",nil,300],
+						["Chemlight_yellow",nil,300],
+						["Chemlight_green",nil,300],
+						["Chemlight_blue",nil,300]
 					]
 				];
 			};
@@ -100,7 +104,11 @@ switch(_shop) do
 						["30Rnd_65x39_caseless_mag_Tracer",nil,200],
 						["30Rnd_45ACP_Mag_SMG_01","Taser Rifle Magazine",125],
 						["100Rnd_65x39_caseless_mag",nil,200],
-						["100Rnd_65x39_caseless_mag_Tracer",nil,200]
+						["100Rnd_65x39_caseless_mag_Tracer",nil,200],
+						["Chemlight_red",nil,300],
+						["Chemlight_yellow",nil,300],
+						["Chemlight_green",nil,300],
+						["Chemlight_blue",nil,300]
 					]
 				];
 			};
@@ -117,16 +125,20 @@ switch(_shop) do
 						["arifle_MX_Black_F",nil,40000],
 						["arifle_MX_SW_F",nil,40000],
 						["arifle_MX_SW_Black_F",nil,40000],
-						["arifle_MX_GL_F",nil,140000],
+						["arifle_MX_GL_F",nil,140000], // Mit Granatenwerfer für Smoke und Licht
+						["srifle_EBR_F",nil,140000],   //Einfache Sniper
+						["acc_pointer_IR",nil,1000],
+						["acc_flashlight",nil,1000],
+						["optic_Holosight",nil,1000],
+						["optic_Hamr",nil,1000],
+						["optic_ACO_grn",nil,500],
+						["optic_SOS",nil,5000],        //Einfaches Sniper visier
 						["Binocular",nil,150],
 						["ItemGPS",nil,100],
 						["ToolKit",nil,250],
 						["FirstAidKit",nil,150],
 						["Medikit",nil,1000],
-						["optic_ACO_grn",nil,500],
-						["acc_flashlight",nil,500],
 						["NVGoggles",nil,2000],
-						["SmokeShellGreen","Trennengas",1700],
 						["UGL_FlareWhite_F",nil,1000],
 						["UGL_FlareGreen_F",nil,1000],
 						["UGL_FlareRed_F",nil,1000],
@@ -134,13 +146,20 @@ switch(_shop) do
 						["1Rnd_Smoke_Grenade_shell",nil,1000],
 						["1Rnd_SmokeRed_Grenade_shell",nil,1000],
 						["1Rnd_SmokeOrange_Grenade_shell",nil,1000],
+						["SmokeShellGreen","Trennengas",1700],
+						["HandGrenade",nil,1000],
 						["16Rnd_9x21_Mag",nil,50],
+						["20Rnd_762x51_Mag",nil,50],
 						["30Rnd_9x21_Mag",nil,200],
 						["30Rnd_65x39_caseless_mag",nil,200],
 						["30Rnd_65x39_caseless_mag_Tracer",nil,200],
 						["30Rnd_45ACP_Mag_SMG_01","Taser Rifle Magazine",125],
 						["100Rnd_65x39_caseless_mag",nil,200],
-						["100Rnd_65x39_caseless_mag_Tracer",nil,200]
+						["100Rnd_65x39_caseless_mag_Tracer",nil,200],
+						["Chemlight_red",nil,300],
+						["Chemlight_yellow",nil,300],
+						["Chemlight_green",nil,300],
+						["Chemlight_blue",nil,300]
 					]
 				];
 			};
@@ -150,16 +169,52 @@ switch(_shop) do
 					[
 						["SMG_01_F","Taser Rifle",20000],
 						["hgun_P07_snds_F","Stun Pistol",2000],
-						["arifle_SDAR_F","Underwater Weapon",10000],
+						["SMG_02_F",2000],
+						["arifle_MXC_F",nil,40000],
+						["arifle_MXC_Black_F",nil,40000],
+						["arifle_MX_F",nil,40000],
+						["arifle_MX_Black_F",nil,40000],
+						["arifle_MX_SW_F",nil,40000],
+						["arifle_MX_SW_Black_F",nil,40000],
+						["arifle_MX_GL_F",nil,140000], // Mit Granatenwerfer für Smoke und Licht
+						["srifle_EBR_F",nil,140000],   //Einfache Sniper
+						["srifle_GM6_F,40000],         //Mittlere Sniper
+						["acc_pointer_IR",nil,1000],
+						["acc_flashlight",nil,1000],
+						["optic_Holosight",nil,1000],
+						["optic_Hamr",nil,1000],
+						["optic_ACO_grn",nil,500],
+						["optic_SOS",nil,5000],        //Einfaches Sniper visier
 						["Binocular",nil,150],
 						["ItemGPS",nil,100],
 						["ToolKit",nil,250],
 						["FirstAidKit",nil,150],
 						["Medikit",nil,1000],
 						["NVGoggles",nil,2000],
+						["UGL_FlareWhite_F",nil,1000],
+						["UGL_FlareGreen_F",nil,1000],
+						["UGL_FlareRed_F",nil,1000],
+						["UGL_FlareYellow_F",nil,1000],
+						["1Rnd_Smoke_Grenade_shell",nil,1000],
+						["1Rnd_SmokeRed_Grenade_shell",nil,1000],
+						["1Rnd_SmokeOrange_Grenade_shell",nil,1000],
+						["SmokeShellGreen","Trennengas",1700],
+						["HandGrenade_Stone","Flashbang",1700],   // Flashbang
+						["HandGrenade",nil,1000],
+						["5Rnd_127x108_Mag",nil,200],
+						["5Rnd_127x108_APDS_Mag",nil,200],
 						["16Rnd_9x21_Mag",nil,50],
-						["20Rnd_556x45_UW_mag",nil,50],
-						["30Rnd_45ACP_Mag_SMG_01","Taser Rifle Magazine",125]
+						["20Rnd_762x51_Mag",nil,50],
+						["30Rnd_9x21_Mag",nil,200],
+						["30Rnd_65x39_caseless_mag",nil,200],
+						["30Rnd_65x39_caseless_mag_Tracer",nil,200],
+						["30Rnd_45ACP_Mag_SMG_01","Taser Rifle Magazine",125],
+						["100Rnd_65x39_caseless_mag",nil,200],
+						["100Rnd_65x39_caseless_mag_Tracer",nil,200],
+						["Chemlight_red",nil,300],
+						["Chemlight_yellow",nil,300],
+						["Chemlight_green",nil,300],
+						["Chemlight_blue",nil,300]
 					]
 				];
 			};
