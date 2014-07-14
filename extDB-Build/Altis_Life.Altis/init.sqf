@@ -11,6 +11,7 @@ enableSaving[false,false];
 life_versionInfo = "Secret_Society v3.1.4";
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
+_igiload = execVM "IgiLoad\IgiLoadInit.sqf";
 
 StartProgress = true;
 [] spawn
