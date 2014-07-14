@@ -8,7 +8,7 @@ waitUntil { time > 0 };
 IL_EV_Count = 0;
 IL_Veh_Array = [];
 
-if(__GETC__(life_adaclevel) == 1) then {
+if((str(player) in ["civ_71","civ_72","civ_73","civ_74","civ_75","civ_66","civ_67","civ_68","civ_69","civ_70"])) then {
 //cutText ["IgiLoad läd. Bitte warten...","PLAIN",2];
 sleep (random 30);
 
