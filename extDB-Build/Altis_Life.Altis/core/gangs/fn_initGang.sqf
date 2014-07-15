@@ -21,7 +21,7 @@ _exitLoop = false;
 		// Testweise Loopunterbrechnung wenn ADAC
 		if((str(player) in ["civ_71","civ_72","civ_73","civ_74","civ_75","civ_66","civ_67","civ_68","civ_69","civ_70"]) && (life_gangData select 0) == _groupID && {(life_gangData select 1) == _groupOwner} && _groupID == 3) exitWith {_group = _x; _exitLoop = true;};
 		//
-		if((life_gangData select 0) == _groupID && {(life_gangData select 1) == _groupOwner} && _groupID != 1) exitWith {_group = _x; _exitLoop = true;};
+		if((life_gangData select 0) == _groupID && {(life_gangData select 1) == _groupOwner} && _groupID != 3) exitWith {_group = _x; _exitLoop = true;};
 	};
 } foreach allGroups;
 
