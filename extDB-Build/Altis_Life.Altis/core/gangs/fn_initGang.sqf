@@ -1,4 +1,5 @@
-﻿/*
+﻿#include <macro.h>
+/*
 	Author: Bryan "Tonic" Boardwine
 
 	Description:
@@ -6,6 +7,7 @@
 */
 private["_exitLoop","_group","_wait"];
 if(count life_gangData == 0) exitWith {}; //Dafuq?
+if(__GETC__(life_adaclevel) == 1) exitWith {}; //kein ADAC
 
 _wait = round(random(8));
 sleep _wait;

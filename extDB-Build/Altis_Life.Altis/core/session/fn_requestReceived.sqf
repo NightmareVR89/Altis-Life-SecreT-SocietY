@@ -63,11 +63,6 @@ switch(playerSide) do {
 				life_gear = _this select 8;
 				__CONST__(life_adaclevel,0);
 				[] spawn life_fnc_loadGear;
-				
-				life_gangData = _this select 14;
-				if(count life_gangData != 0) then {
-					[] spawn life_fnc_initGang;
-				};
 			};
 		//
 		life_is_arrested = _this select 7;
@@ -79,7 +74,11 @@ switch(playerSide) do {
 			_house = nearestBuilding (call compile format["%1", _x select 0]);
 			life_vehicles set[count life_vehicles,_house];
 		} foreach life_houses;
-
+		
+		life_gangData = _this select 14;
+		if(count life_gangData != 0) then {
+			[] spawn life_fnc_initGang;
+		};
 		[] spawn life_fnc_initHouses;
 	};
 	

@@ -19,7 +19,9 @@ switch(playerSide) do
 	
 	case civilian:
 	{
+		if(__GETC__(life_adaclevel) == 1) then { ctrlshow[2011,false]; };
 		ctrlShow[2012,false];
+
 	};
 };
 
