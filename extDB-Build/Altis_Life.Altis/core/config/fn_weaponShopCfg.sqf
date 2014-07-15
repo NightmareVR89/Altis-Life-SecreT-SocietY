@@ -448,7 +448,7 @@ switch(_shop) do
 						["30Rnd_65x39_caseless_green",nil,200],
 						["30Rnd_556x45_Stanag",nil,200],
 						["30Rnd_9x21_Mag",nil,200],
-						["20Rnd_762x51_Mag",nil,200],
+						["20Rnd_762x51_Mag",nil,200]
 					]
 				];
 			};
