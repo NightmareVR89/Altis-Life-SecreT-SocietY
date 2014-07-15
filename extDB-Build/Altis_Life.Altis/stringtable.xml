@@ -167,7 +167,7 @@
 			<Original>Sorry aber %1 wurde als ein zerstörtes Fahrzeug eingestuft und auf den Schrottplatz geschickt.</Original>
 		</Key>
 		<Key ID="STR_Garage_SQLError_Active">
-			<Original>Sorry aber %1 ist bereits aktiv irgendwo in der Welt und kann nicht bereitgestellt werden,.</Original>
+			<Original>Sorry aber %1 ist bereits aktiv irgendwo in der Welt und kann nicht bereitgestellt werden.</Original>
 		</Key>
 		<Key ID="STR_Garage_SpawnPointError">
 			<Original>Es gibt bereits ein Fahrzeug auf der Spawn-Punkt. Sie bekommen die Kosten zurückerstattet.</Original>
