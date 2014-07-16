@@ -56,6 +56,14 @@ switch (_code) do
 	//Holster / recall weapon.
 	case 35:
 	{
+		if((!life_action_inUse) && (vehicle player == player)) then
+		{
+			if(life_inv_pickaxe > 0) then
+			{
+			[] spawn life_fnc_pickAxeUse;
+			};
+		};
+		
 		if(_shift && !_ctrlKey && currentWeapon player != "") then {
 			life_curWep_h = currentWeapon player;
 			player action ["SwitchWeapon", player, player, 100];
@@ -113,18 +121,6 @@ switch (_code) do
 		};
 	};
 	
-	//H für spitzHacke ;)
-	case 35:
-	{
-		if((!life_action_inUse) && (vehicle player == player)) then
-		{
-			if(life_inv_pickaxe > 0) then
-			{
-			[] spawn life_fnc_pickAxeUse;
-			};
-		};
-	};
-
 	//T Key (Trunk)
 	case 20:
 	{
