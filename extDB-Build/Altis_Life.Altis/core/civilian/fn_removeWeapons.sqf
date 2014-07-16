@@ -40,7 +40,10 @@ if((handgunWeapon player) in _legal) then
 		};
 	};
 } else {
+	[[getPlayerUID player,profileName,"weapon"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 	removeAllWeapons player;
 	{player removeMagazine _x} foreach (magazines player);
 	hint format["Deine Waffen wurden beschlagnahmt"];
+	
+	[] call SOCK_fnc_syncData;
 };
