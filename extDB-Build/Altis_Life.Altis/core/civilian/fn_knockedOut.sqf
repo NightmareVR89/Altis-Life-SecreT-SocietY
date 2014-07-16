@@ -13,12 +13,8 @@ if(isNull _target) exitWith {};
 if(_target != player) exitWith {};
 if(_who == "") exitWith {};
 
-if((headgear _who) in _headgear) then 
-{
-	titleText[format["Ein maskierter Spieler hat dich bewusstlos geschlagen."],"PLAIN"];
-} else {
-	titleText[format["%1 hat dich bewusstlos geschlagen.",_who],"PLAIN"];
-};
+titleText[format["%1 hat dich bewusstlos geschlagen.",_who],"PLAIN"];
+
 player playMoveNow "Incapacitated";
 _obj = "Land_ClutterCutter_small_F" createVehicle (getPosATL player);
 _obj setPosATL (getPosATL player);
