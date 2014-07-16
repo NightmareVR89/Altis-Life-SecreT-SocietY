@@ -6,7 +6,7 @@
 	Search for weapons
 */
 private["_unit"];
-_unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
+_unit = cursorTarget;
 if(isNull _unit) exitWith {};
 hint "Suche nach Waffen...";
 sleep 2;
