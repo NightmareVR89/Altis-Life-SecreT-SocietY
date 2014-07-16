@@ -120,6 +120,7 @@ class Life_Client_Core
 		class captureHideout {};
 		class rechnungAction {};
 		class removeHeadgear {};
+		class removeWeaponAction {};
 	};
 	
 	class Housing
@@ -319,6 +320,7 @@ class Life_Client_Core
 		class repairDoor {};
 		class doorAnimate {};
 		class fedCamDisplay {};
+		class jailDoor {};
 	};
 	
 	class Gangs
