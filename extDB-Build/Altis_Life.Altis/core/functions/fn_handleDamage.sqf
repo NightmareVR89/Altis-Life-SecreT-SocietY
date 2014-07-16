@@ -18,7 +18,7 @@ if(!isNil "TON_Debug") then {
 };
 
 //Handle the tazer first (Top-Priority).
-if(!isNull _source) then {
+if(!isNull _source && alive player) then {
 	if(_source != _unit) then {
 		_curWep = currentWeapon _source;
 		if(_projectile in ["B_9x21_Ball","B_556x45_dual"] && _curWep in ["hgun_P07_snds_F","arifle_SDAR_F"]) then {
