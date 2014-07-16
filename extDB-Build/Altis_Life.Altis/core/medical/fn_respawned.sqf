@@ -32,10 +32,10 @@ switch(playerSide) do
 	};
 	case civilian: {
 		if(__GETC__(life_adaclevel) == 1) then {
-			_handle = [] spawn life_fnc_civLoadout;
+			_handle = [] spawn life_fnc_adacLoadout;
 			waitUntil {scriptDone _handle};
 		} else {
-			_handle = [] spawn life_fnc_adacLoadout;
+			_handle = [] spawn life_fnc_civLoadout;
 			waitUntil {scriptDone _handle};
 		};
 	};
