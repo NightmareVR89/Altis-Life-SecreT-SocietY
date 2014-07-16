@@ -10,4 +10,6 @@ _unit setVariable["Escorting",FALSE,TRUE];
 _unit setVariable["transporting",FALSE,TRUE];
 detach _unit;
 
+[true,"handschellen",1] call life_fnc_handleInv;
+
 [[0,format["%1 wurde von %2 wieder freigelassen",_unit getVariable["realname",name _unit], profileName]],"life_fnc_broadcast",west,FALSE] call life_fnc_MP;

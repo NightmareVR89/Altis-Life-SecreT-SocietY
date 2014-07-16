@@ -256,7 +256,7 @@ switch (_code) do
 		};
 	};
 	
-	case 45: 
+	case 45: //Shift + X für Waffen beschlagnahmen
 	{
 		if(_shift) then {_handled = true;};
 			if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && (cursorTarget getVariable "restrained")) then
@@ -265,7 +265,7 @@ switch (_code) do
 			};
 	};
 	
-	case 46: 
+	case 46: //Shift + C für Maske abnehmen
 	{
 		if(_shift) then {_handled = true;};
 			if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && (cursorTarget getVariable "restrained")) then
