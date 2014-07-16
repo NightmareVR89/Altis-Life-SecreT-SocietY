@@ -25,4 +25,3 @@ player playMoveNow "amovppnemstpsraswrfldnon";
 
 [] call life_fnc_setupActions;
 [[_unit,life_sidechat,playerSide],"TON_fnc_managesc",false,false] spawn life_fnc_MP;
-[] call life_fnc_updateClothing;
