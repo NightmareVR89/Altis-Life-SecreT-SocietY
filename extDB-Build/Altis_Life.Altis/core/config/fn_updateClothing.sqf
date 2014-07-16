@@ -27,6 +27,7 @@ switch(true) do
 		{
 			player setObjectTextureGlobal  [0, "textures\polizei_uniform.jpg"]; 
 		}; */
+	};
 
 // And for every coplvl a new thing. 
 	
