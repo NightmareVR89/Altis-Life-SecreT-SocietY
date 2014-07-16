@@ -585,4 +585,13 @@ switch(_shop) do
 			]
 		];
 	};
+	
+	case "adac":
+	{
+		["ADAC Mitarbeitershop",
+			[
+				["ToolKit",nil,50]
+			]
+		];	
+	};
 };

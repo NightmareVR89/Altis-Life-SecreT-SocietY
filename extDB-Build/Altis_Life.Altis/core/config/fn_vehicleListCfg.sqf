@@ -171,6 +171,14 @@ switch (_shop) do
 			["I_SDV_01_F",100000]
 		];
 	};
+	
+	case "adac":
+	{
+		_return =
+		[
+			["C_Offroad_01_F",12500]
+		];
+	};
 };
 
 _return;
