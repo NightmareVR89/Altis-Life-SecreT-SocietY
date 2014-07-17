@@ -17,7 +17,7 @@ switch(true) do
 {
 	case (playerSide == west && _uniform == "U_B_CombatUniform_mcam"):
 	{
-		if(__GETC__(life_coplevel) > 1) then
+		if(__GETC__(life_coplevel) > 0) then
 		{
 			player setObjectTextureGlobal  [0, "textures\polizei_uniform.paa"];
 			if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
@@ -33,7 +33,7 @@ switch(true) do
 	
 	case (playerSide == independent && _uniform == "U_I_HeliPilotCoveralls"):
 	{
-		if(__GETC__(life_medlevel) > 1) then
+		if(__GETC__(life_medlevel) > 0) then
 		{
 			player setObjectTextureGlobal  [0, "textures\medic_uniform.jpg"];
 			if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
