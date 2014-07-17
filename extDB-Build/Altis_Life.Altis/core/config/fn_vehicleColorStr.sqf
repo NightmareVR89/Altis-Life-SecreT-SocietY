@@ -25,9 +25,10 @@ switch (_vehicle) do
 			case 6: {_color = "Schwarz"};
 			case 7: {_color = "Schwarz"};
 			case 8: {_color = "Taxi"};
+			case 9: {_color = "Polizei"};
+			case 10: {_color = "Notarzt"};
 		};
 	};
-	
 	case "C_Hatchback_01_F":
 	{
 		switch (_index) do
@@ -40,6 +41,7 @@ switch (_vehicle) do
 			case 5: {_color = "Weiß"};
 			case 6: {_color = "Grau"};
 			case 7: {_color = "Schwarz"};
+			case 8: {_color = "Notarzt"};
 		};
 	};
 	
@@ -61,14 +63,21 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Dunkelrot";};
+			case 0: {_color = "Polizei";};
 			case 1: {_color = "Schwarz";};
 			case 2: {_color = "Silber";};
 			case 3: {_color = "Orange";};
-			case 4: {_color = "Polizei";};
+			case 4: {_color = "Medic";};
 		};
 	};
 	
+	case "I_Heli_light_03_unarmed_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Polizei";};
+		};
+	};
 	case "C_Van_01_box_F":
 	{
 		switch (_index) do
@@ -116,21 +125,23 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Sheriff"};
-			case 1: {_color = "Schwarz"};
-			case 2: {_color = "Civ Blau"};
-			case 3: {_color = "Civ Rot"};
-			case 4: {_color = "Digi Grün"};
-			case 5: {_color = "Blaue Linie"};
-			case 6: {_color = "Elliptisch"};
-			case 7: {_color = "Wütend"};
-			case 8: {_color = "Jeans Blau"};
-			case 9: {_color = "Schnelle Rote Linie"};
-			case 10: {_color = "Sonnenuntergang"};
-			case 11: {_color = "Vrana"};
-			case 12: {_color = "Blaue Wellen"};
-			case 13: {_color = "Rebellen Digital"};
-			case 14: {_color = "Sanitäter Weiß"};
+			case 0: {_color = "cop"};
+			case 1: {_color = "Digi Wüste"};
+			case 2: {_color = "Schwarz"};
+			case 3: {_color = "Blau"};
+			case 4: {_color = "Rot"};
+			case 5: {_color = "Weiß"};
+			case 6: {_color = "Digi Grün"};
+			case 7: {_color = "Jäger Camo"};
+			case 8: {_color = "Rebellen Camo"};
+			case 9: {_color = "Digi Wüste"};
+			case 10: {_color = "Schwarz"};
+			case 11: {_color = "Blau"};
+			case 12: {_color = "Rot"};
+			case 13: {_color = "Weiß"};
+			case 14: {_color = "Digi Grün"};
+			case 15: {_color = "Medic"};
+
 		};
 	};
 	
@@ -143,6 +154,8 @@ switch (_vehicle) do
 			case 2: {_color = "Digi Grün"};
 			case 3: {_color = "Wüste Digi"};
 			case 4: {_color = "Sanitäter Weiß"};
+			case 5: {_color = "Polizei"};
+			case 5: {_color = "Medic"};
 		};
 	};
 	
@@ -150,8 +163,7 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Normal"};
-			case 1: {_color = "Schwarz"};
+			case 0: {_color = "Polizei"};
 		};
 	};
 	

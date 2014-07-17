@@ -33,7 +33,6 @@ switch (_vehicle) do
 			[_path + "hatchback_01_ext_sport03_co.paa","civ"],
 			[_path + "hatchback_01_ext_sport04_co.paa","civ"],
 			[_path + "hatchback_01_ext_sport05_co.paa","civ"],
-			[_path + "hatchback_01_ext_sport06_co.paa","civ"],
 			["fahrzeuge\hatchback_polizei.jpg","cop"]
 		];
 	};
@@ -67,7 +66,6 @@ switch (_vehicle) do
 			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base06_co.paa","civ"],
 			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base07_co.paa","civ"],
 			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base08_co.paa","civ"],
-			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa","civ"],
 			["textures\fahrzeuge\med\hatchback\medic_limo.jpg","med"]
 		];
 	};
@@ -159,7 +157,6 @@ switch (_vehicle) do
 		_ret = 
 		[
 			["fahrzeuge\hunter_sek.jpg","cop","fahrzeuge\hunter_sek2.jpg"],
-			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","fed"]
 		];
 	};
 	case "I_Heli_light_03_unarmed_F":
