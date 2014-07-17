@@ -23,10 +23,9 @@ switch (_vehicle) do
 			case 4: {_color = "Dunkelrot";};
 			case 5: {_color = "Blau / Weiß"};
 			case 6: {_color = "Schwarz"};
-			case 7: {_color = "Schwarz"};
-			case 8: {_color = "Taxi"};
-			case 9: {_color = "Polizei"};
-			case 10: {_color = "Notarzt"};
+			case 7: {_color = "Taxi"};
+			case 8: {_color = "Polizei"};
+			case 9: {_color = "Notarzt"};
 		};
 	};
 	case "C_Hatchback_01_F":
@@ -55,7 +54,8 @@ switch (_vehicle) do
 			case 3: {_color = "Schwarz / Weiß"};
 			case 4: {_color = "Hellbraun"};
 			case 5: {_color = "Grün"};
-			case 6: {_color = "Polizei"};
+			case 6: {_color = "Schwarz"};
+			case 7: {_color = "Polizei"};
 		};
 	};
 	
@@ -125,22 +125,21 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "cop"};
-			case 1: {_color = "Digi Wüste"};
-			case 2: {_color = "Schwarz"};
-			case 3: {_color = "Blau"};
-			case 4: {_color = "Rot"};
-			case 5: {_color = "Weiß"};
-			case 6: {_color = "Digi Grün"};
-			case 7: {_color = "Jäger Camo"};
-			case 8: {_color = "Rebellen Camo"};
-			case 9: {_color = "Digi Wüste"};
-			case 10: {_color = "Schwarz"};
-			case 11: {_color = "Blau"};
-			case 12: {_color = "Rot"};
-			case 13: {_color = "Weiß"};
-			case 14: {_color = "Digi Grün"};
-			case 15: {_color = "Medic"};
+			case 0: {_color = "Polizei"};
+			case 1: {_color = "Schwarz"};
+			case 2: {_color = "Civ Blau"};
+			case 3: {_color = "Civ Rot"};
+			case 4: {_color = "Digi Grün"};
+			case 5: {_color = "Blaue Linie"};
+			case 6: {_color = "Elliptisch"};
+			case 7: {_color = "Wütend"};
+			case 8: {_color = "Jeans Blau"};
+			case 9: {_color = "Schnelle Rote Linie"};
+			case 10: {_color = "Sonnenuntergang"};
+			case 11: {_color = "Vrana"};
+			case 12: {_color = "Blaue Wellen"};
+			case 13: {_color = "Rebellen Digital"};
+			case 14: {_color = "Medic"};
 
 		};
 	};
@@ -153,9 +152,8 @@ switch (_vehicle) do
 			case 1: {_color = "Weiß / Blau"};
 			case 2: {_color = "Digi Grün"};
 			case 3: {_color = "Wüste Digi"};
-			case 4: {_color = "Sanitäter Weiß"};
-			case 5: {_color = "Polizei"};
-			case 5: {_color = "Medic"};
+			case 4: {_color = "Polizei"};
+			case 5: {_color = "Sanitäter"};
 		};
 	};
 	
@@ -207,14 +205,7 @@ switch (_vehicle) do
 		{
 			case 0: {_color = "Ion"};
 			case 1: {_color = "Dahoman"};
-		};
-	};
-	
-	case "B_APC_Wheeled_01_cannon_F":
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "Schwarz"};
+			case 2: {_color = "Sanitäter"};
 		};
 	};
 };
