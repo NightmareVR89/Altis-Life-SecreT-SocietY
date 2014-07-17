@@ -84,6 +84,11 @@ switch (_shop) do
 	{
 		ctrlSetText[2505,"Admin Shop"];
 	};
+	
+	case "adac":
+	{
+		ctrlSetText[2505,"ADAC Mitarbeiterladen"];
+	};
 };
 
 ["guns"] call life_fnc_shops_changeMenu;
