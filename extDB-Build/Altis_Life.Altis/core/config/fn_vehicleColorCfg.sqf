@@ -34,8 +34,7 @@ switch (_vehicle) do
 			[_path + "hatchback_01_ext_sport04_co.paa","civ"],
 			[_path + "hatchback_01_ext_sport05_co.paa","civ"],
 			[_path + "hatchback_01_ext_sport06_co.paa","civ"],
-			["#(ai,64,64,1)Fresnel(1.3,7)","cop"],
-			["vehskins\hatchback_polizei.jpg","cop"]
+			["fahrzeuge\hatchback_polizei.jpg","cop"]
 		];
 	};
 		
@@ -53,8 +52,8 @@ switch (_vehicle) do
 			["#(ai,64,64,1)Fresnel(1.3,7)","cop"],
 			["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"],
 			["fahrzeuge\offroad_polizei.jpg","cop"],
-			["textures\vehicles\med\offroad_notarzt.paa","med"],
-			["textures\vehicles\med\offroad_notarzt.paa","med"]
+			["textures\fahrzeuge\med\offroad_notarzt.paa","med"]
+
 		];
 	};
 	
@@ -78,11 +77,11 @@ switch (_vehicle) do
 	{
 		_ret =
 		[
-			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_co.paa","civ"],
+			["fahrzeuge\suv_polizei.jpg","cop"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa","cop"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa","civ"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa","civ"],
-			["#(ai,64,64,1)Fresnel(1.3,7)","cop"]
+			["textures\fahrzeuge\med\suv_medik.paa","med"]
 		];
 	};
 	
@@ -124,7 +123,7 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa","cop"],
+			["fahrzeuge\hummingbird_polizei.jpg","cop"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa","fed"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa","civ"],
@@ -138,7 +137,7 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_vrana_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wave_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa","reb"],
-			["#(argb,8,8,3)color(1,1,1,0.8)","med"]
+			["textures\fahrzeuge\med\Notarzt_Hummingbird.paa","med"]
 		];
 	};
 	
@@ -150,10 +149,11 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_civilian_co.paa","civ"],
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_indp_co.paa","donate"],
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa","reb"],
-			["#(argb,8,8,3)color(1,1,1,0.8)","med"]
+			["textures\fahrzeuge\cop\orca_polizei.paa","cop"]
 		];
 	};
 	
+// Hunter
 	case "B_MRAP_01_F":
 	{
 		_ret = 
