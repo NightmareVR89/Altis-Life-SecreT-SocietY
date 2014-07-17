@@ -10,7 +10,7 @@ _handle = [] spawn life_fnc_stripDownPlayer;
 waitUntil {scriptDone _handle};
 
 //Load player with default cop gear.
-player addUniform "U_Rangemaster";
+player addUniform "U_B_CombatUniform_mcam";
 player addVest "V_Rangemaster_belt";
 player addBackpack "B_Bergen_blk";
 

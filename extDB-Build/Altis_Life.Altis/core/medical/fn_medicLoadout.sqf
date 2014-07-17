@@ -27,4 +27,4 @@ if(hmd player != "") then {
 	player unlinkItem (hmd player);
 };
 [] call life_fnc_saveGear;
-[] call life_fnc_updateClothing;
+[] spawn life_fnc_updateClothing;

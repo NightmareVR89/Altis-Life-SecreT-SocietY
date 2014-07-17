@@ -6,7 +6,7 @@
 
 */
 
-private["_uniform","_backpack"];
+private["_uniform"];
 
 ///Uniform
 ////////////////
@@ -26,7 +26,7 @@ switch(true) do
 	
 	case (playerSide == independent && _uniform == "U_I_HeliPilotCoveralls"):
 	{
-		if(__GETC__(life_medlevel) > 0) then
+		if(__GETC__(life_medicLevel) > 0) then
 		{
 			player setObjectTextureGlobal  [0, "textures\medic_uniform.jpg"];
 			if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};

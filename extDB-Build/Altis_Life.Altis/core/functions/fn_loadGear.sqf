@@ -82,4 +82,4 @@ if(_backpack != "") then {_handle = [_backpack,true,false,false,false] spawn lif
 	[true,_item,1] call life_fnc_handleInv;
 } foreach (_yItems);
 
-[] call life_fnc_updateClothing;
+[] spawn life_fnc_updateClothing;
