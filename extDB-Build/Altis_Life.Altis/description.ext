@@ -97,14 +97,14 @@ class CfgSounds
 	class frosch
 	{
 		name="frosch";
-		sound[] = {"sounds\catchfrog.ogg", 1.0, 1};
+		sound[] = {"\sounds\catchfrog.ogg", 1.0, 1};
 		titles[] = {0, " "};
 	};
 	class PhotoSound
 	{
 		name="PhotoSound";
-		sound[] = {"camera_shot.ogg", 1.0, 1};
-		titles [] = {0, " "};
+		sound[] = {"\camera_shot.ogg", 1.0, 1};
+		titles[] = {0, " "};
 	};
 };
 
