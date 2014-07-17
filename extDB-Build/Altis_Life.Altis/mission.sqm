@@ -78067,17 +78067,16 @@ class Mission
 		};
 		class Item175
 		{
-			position[]={3731.8411,18.229996,13014.144};
+			position[]={3730.8054,18.870001,12973.504};
 			name="medic_spawn_1";
 			type="Empty";
-			angle=-209.90953;
 		};
 		class Item176
 		{
-			position[]={14219.102,34.426979,18862.225};
+			position[]={15596.775,18.531496,17184.191};
 			name="medic_spawn_2";
 			type="Empty";
-			angle=-382.16568;
+			angle=-39.342587;
 		};
 		class Item177
 		{
@@ -78213,10 +78212,10 @@ class Mission
 		};
 		class Item194
 		{
-			position[]={17530.834,13.006682,13238.955};
+			position[]={17493.104,12.868838,13265.117};
 			name="medic_spawn_3";
 			type="Empty";
-			angle=-186.88094;
+			angle=12.349455;
 		};
 		class Item195
 		{
