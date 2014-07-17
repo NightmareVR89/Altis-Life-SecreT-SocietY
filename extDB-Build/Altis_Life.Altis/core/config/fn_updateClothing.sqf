@@ -28,7 +28,7 @@ switch(true) do
 	{
 		if(__GETC__(life_medicLevel) > 0) then
 		{
-			player setObjectTextureGlobal  [0, "textures\medic_uniform.jpg"];
+			player setObjectTextureGlobal [0,"textures\Rettungs_Dienst.paa"];
 			if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
 		};
 	};
