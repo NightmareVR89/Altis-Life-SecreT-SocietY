@@ -41,6 +41,14 @@ switch (_shop) do
 		];
 	};
 	
+	case "med_air_fix": {
+		_return = [
+			["B_Heli_Light_01_F",10000],
+			["O_Heli_Light_02_unarmed_F",12000],
+			["I_Heli_Transport_02_F",15000]
+		];
+	};
+	
 	case "civ_car":
 	{
 		_return = 

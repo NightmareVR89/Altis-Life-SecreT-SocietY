@@ -78,7 +78,7 @@ class CfgSounds
 	};
 		class bankalarm
 	{
-		name = "bankalarm"; // beim knaken der Banktür
+		name = "bankalarm"; // beim knacken der Banktür
 		sound[] = {"\sounds\bankalarm.ogg", 1.0, 1};
 		titles[] = {};
 	};
@@ -93,18 +93,6 @@ class CfgSounds
 		name="Car_Unlock";
 		sound[] = {"\sounds\car_unlock.ogg", 1.0, 1};
 		titles[] = {0, " "};
-	};
-		class flashbang
-	{
-		name = "flashbang";
-		sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
-		titles[] = {};
-	};
-		class flashbang
-	{
-		name = "flashbang";
-		sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
-		titles[] = {};
 	};
 };
 
