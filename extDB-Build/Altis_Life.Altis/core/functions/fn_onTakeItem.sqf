@@ -18,7 +18,10 @@ switch(playerSide) do
 	case civilian: {
 		[] call life_fnc_updateClothing;
 		//Currently stoping the civilians from taking the indep clothing from medics.
-		if(_item in ["U_I_CombatUniform"]) then {
+		if(_item in ["U_O_OfficerUniform_ocamo"]) then {
+			[_item,false,false,false,false] call life_fnc_handleItem;
+		};
+		if(_item in ["U_B_CombatUniform_mcam"]) then {
 			[_item,false,false,false,false] call life_fnc_handleItem;
 		};
 	};
