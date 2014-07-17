@@ -402,7 +402,7 @@
 			<Original>Du hast eine(n) %1 für $%2 verkauft</Original>
 		</Key>
 		<Key ID="STR_NOTF_Picked">
-			<Original>Du hast %1 %2 ausgewählt</Original>
+			<Original>Du hast %1 %2 gesammelt</Original>
 		</Key>
 		<Key ID="STR_NOTF_Collected">
 			<Original>Du hast %1 eingesammelt</Original>
