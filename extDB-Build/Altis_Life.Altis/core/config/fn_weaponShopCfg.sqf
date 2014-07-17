@@ -321,6 +321,8 @@ switch(_shop) do
 						["Medikit",nil,1000],
 						["NVGoggles",nil,2000],
 						["MineDetector",nil,2000],
+						["B_UAV_01_F",nil,40000],
+						["B_UavTerminal",nil,155000],
 						["Chemlight_red",nil,300],
 						["Chemlight_yellow",nil,300],
 						["Chemlight_green",nil,300],
