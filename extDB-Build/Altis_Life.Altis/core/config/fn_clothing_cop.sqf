@@ -19,7 +19,7 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
-		_ret set[count _ret,["U_Rangemaster","Cop Uniform",25]];
+		_ret set[count _ret,["U_B_CombatUniform_mcam","Cop Uniform",25]];
 		if(__GETC__(life_coplevel) > 1) then
 		{
 		_ret set[count _ret,["U_Rangemaster",nil,350]];

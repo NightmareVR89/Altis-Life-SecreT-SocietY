@@ -15,11 +15,11 @@ _uniform = uniform player;
 
 switch(true) do
 {
-	case (playerSide == west && _uniform == "U_Rangemaster"):
+	case (playerSide == west && _uniform == "U_B_CombatUniform_mcam"):
 	{
 		if(__GETC__(life_coplevel) > 0) then
 		{
-			player setObjectTextureGlobal  [0, "textures\polizei_uniform.jpg"];
+			player setObjectTextureGlobal  [0, "textures\polizei_uniform.paa"];
 			if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
 		};
 		// Bis neue Skins eingefügt werden, erstmal weg damit
