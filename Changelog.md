@@ -4,6 +4,7 @@ Wir haben die alte Altis Life Version komplett verworfen und sind direkt mit Alt
 Insgesamt gibt es zum jetzigen Zeitpunkt folgende Features:
 
 - Eine neue schnellere und stabilere Methode der Datenbankanbindung, genannt extDB (https://github.com/Torndeco/extdb).
+- Cheatern wird nun mit Tonic's Anticheat unter dem Codenamen "SpyGlass" der Gar aus gemacht.
 - Permanente Gang's mit Gangvermögen - Gründe deine ewig währende Gang, erobere und halte deine Verstecke um ohne Lizenzen den maximalen Profit zu machen.
 - 3 Ganggebiete mit jeweils einer Möglichkeit der Verarbeitung von Heroin, Kokain oder Mariuhana ohne Lizenz.
 - Häuser kaufbar über die Aktionstaste.
