@@ -24,7 +24,7 @@ switch(true) do
 		};
 	};
 	
-	case (playerSide == independent && _uniform == "U_I_OfficerUniform"):
+	case (playerSide == independent && _uniform == "U_O_OfficerUniform_ocamo"):
 	{
 		if(__GETC__(life_medicLevel) > 0) then
 		{
