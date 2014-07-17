@@ -40,4 +40,12 @@ switch(true) do
 			if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
 		};
 	};
+		case (playerSide == independent && _uniform == "U_Rangemaster"):
+	{
+		if(__GETC__(life_medicLevel) > 1) then
+		{
+			player setObjectTextureGlobal  [0, "textures\recrute_uniform_rettungsdienst.paa"];
+			if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
+		};
+	};
 };
