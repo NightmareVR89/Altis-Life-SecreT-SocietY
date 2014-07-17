@@ -100,6 +100,12 @@ class CfgSounds
 		sound[] = {"sounds\catchfrog.ogg", 1.0, 1};
 		titles[] = {0, " "};
 	};
+	class PhotoSound
+	{
+		name="PhotoSound";
+		sound[] = {"camera_shot.ogg", 1.0, 1};
+		titles [] = {0, " "};
+	};
 };
 
 class CfgDebriefing

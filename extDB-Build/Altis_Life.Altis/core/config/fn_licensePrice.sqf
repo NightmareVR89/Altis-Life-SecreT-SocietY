@@ -36,4 +36,6 @@ switch (_type) do
 	case "mair": {15000};
 	case "home": {30000};
 	case "adac": {5000};
+	case "froschbein": {1000}; //ÄNDERN BITTE!
+	case "froschlsd": {2000}; //ÄNDERN BITTE!
 };
