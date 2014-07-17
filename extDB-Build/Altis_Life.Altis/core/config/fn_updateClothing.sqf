@@ -22,14 +22,7 @@ switch(true) do
 			player setObjectTextureGlobal  [0, "textures\polizei_uniform.paa"];
 			if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
 		};
-		// Bis neue Skins eingefügt werden, erstmal weg damit
-       /* if( (call life_coplevel) == 2) then
-		{
-			player setObjectTextureGlobal  [0, "textures\polizei_uniform.jpg"]; 
-		}; */
 	};
-
-// And for every coplvl a new thing. 
 	
 	case (playerSide == independent && _uniform == "U_I_HeliPilotCoveralls"):
 	{
@@ -37,6 +30,6 @@ switch(true) do
 		{
 			player setObjectTextureGlobal  [0, "textures\medic_uniform.jpg"];
 			if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
-		}
+		};
 	};
 };
