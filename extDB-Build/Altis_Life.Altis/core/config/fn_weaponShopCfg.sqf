@@ -424,9 +424,7 @@ switch(_shop) do
 						["Rangefinder",nil,150],
 						["ItemGPS",nil,100],
 						["ItemMap",nil,100],
-						["ToolKit",nil,250],
 						["FirstAidKit",nil,150],
-						["Medikit",nil,1000],
 						["NVGoggles",nil,2000],
 						["RPG32_F",nil,2000],
 						["SmokeShellGreen","Tränengas",1700],
@@ -577,7 +575,6 @@ switch(_shop) do
 			[
 				["Binocular",nil,150],
 				["ItemGPS",nil,100],
-				["ToolKit",nil,250],
 				["FirstAidKit",nil,150],
 				["NVGoggles",nil,2000],
 				["Chemlight_red",nil,300],
@@ -592,6 +589,7 @@ switch(_shop) do
 	{
 		["ADAC Mitarbeitershop",
 			[
+				["FirstAidKit",nil,150],
 				["ToolKit",nil,50]
 			]
 		];	
