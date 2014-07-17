@@ -159,7 +159,7 @@ switch (_vehicle) do
 		_ret = 
 		[
 			["fahrzeuge\hunter_sek.jpg","cop","fahrzeuge\hunter_sek2.jpg"],
-			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","fed]
+			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","fed"]
 		];
 	};
 	case "I_Heli_light_03_unarmed_F":
