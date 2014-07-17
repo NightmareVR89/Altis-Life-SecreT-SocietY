@@ -121,6 +121,7 @@ class Life_Client_Core
 		class rechnungAction {};
 		class removeHeadgear {};
 		class removeWeaponAction {};
+		class froschFang {};
 	};
 	
 	class Housing

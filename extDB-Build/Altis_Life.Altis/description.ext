@@ -94,6 +94,12 @@ class CfgSounds
 		sound[] = {"\sounds\car_unlock.ogg", 1.0, 1};
 		titles[] = {0, " "};
 	};
+	class frosch
+	{
+		name="frosch";
+		sound[] = {"sounds\catchfrog.ogg", 1.0, 1};
+		titles[] = {0, " "};
+	};
 };
 
 class CfgDebriefing

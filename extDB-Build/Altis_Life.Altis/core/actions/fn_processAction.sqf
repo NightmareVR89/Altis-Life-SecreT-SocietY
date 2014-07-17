@@ -14,17 +14,18 @@ if(isNull _vendor OR _type == "" OR (player distance _vendor > 10)) exitWith {};
 //unprocessed item,processed item, cost if no license,Text to display (I.e Processing  (percent) ..."
 _itemInfo = switch (_type) do
 {
-	case "oil": {["oilu","oilp",1200,"Verarbeite Öl"];};
-	case "diamond": {["diamond","diamondc",1350,"Schleife Diamanten"]};
-	case "heroin": {["heroinu","heroinp",2100,"Pansche Heroin"]};
-	case "copper": {["copperore","copper_r",750,"Verarbeite Kupfer"]};
-	case "iron": {["ironore","iron_r",1120,"Verarbeite Eisen"]};
-	case "sand": {["sand","glass",650,"Schmelze Sand"]};
-	case "salt": {["salt","salt_r",450,"Reinige Salz"]};
-	case "cocaine": {["cocaine","cocainep",1500,"Pansche Kokain"]};
-	case "marijuana": {["cannabis","marijuana",500,"Verarbeite Marijuana"]};
-	case "heroin": {["heroinu","heroinp",1720,"Pansche Heroin"]};
-	case "cement": {["rock","cement",350,"Mixe Zement"]};
+	case "oil": {["oilu","oilp",200,"Verarbeite Öl"];};
+	case "diamond": {["diamond","diamondc",400,"Schleife Diamanten"]};
+	case "copper": {["copperore","copper_r",430,"Verarbeite Kupfer"]};
+	case "iron": {["ironore","iron_r",660,"Verarbeite Eisen"]};
+	case "sand": {["sand","glass",110,"Schmelze Sand"]};
+	case "salt": {["salt","salt_r",320,"Reinige Salz"]};
+	case "cocaine": {["cocaine","cocainep",550,"Pansche Kokain"]};
+	case "marijuana": {["cannabis","marijuana",290,"Verarbeite Marijuana"]};
+	case "heroin": {["heroinu","heroinp",470,"Pansche Heroin"]};
+	case "cement": {["rock","cement",370,"Mixe Zement"]};
+	case "froschlsd": {["frosch","froschlsd",520,"Zerquetsche Frösche"]};
+	case "froschbein": {["frosch","froschbein",330,"Koche Froschschenkel"]};
 	default {[]};
 };
 

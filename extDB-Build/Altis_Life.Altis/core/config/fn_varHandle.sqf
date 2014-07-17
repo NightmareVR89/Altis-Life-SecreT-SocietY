@@ -67,6 +67,9 @@ switch (_mode) do
 			case "storagebig": {"life_inv_storagebig"};
 			case "handschellen": {"life_inv_handschellen"};
 			case "kabelb": {"life_inv_kabelb"};
+			case "froschlsd": {"life_inv_froschlsd"};
+			case "froschbein": {"life_inv_froschbein"};
+			case "frosch": {"life_inv_frosch"};
 		};
 	};
 	
@@ -125,6 +128,9 @@ switch (_mode) do
 			case "life_inv_storagebig": {"storagebig"};
 			case "life_inv_handschellen": {"handschellen"};
 			case "life_inv_kabelb": {"kabelb"};
+			case "life_inv_froschlsd": {"froschlsd"};
+			case "life_inv_froschbein": {"froschbein"};
+			case "life_inv_frosch": {"frosch"};
 		};
 	};
 };

@@ -493,6 +493,9 @@
 		<Key ID="STR_Item_Peaches">
 			<Original>Pfirsiche</Original>
 		</Key>
+		<Key ID="STR_Item_Froesche">
+			<Original>Frösche</Original>
+		</Key>
 	</Package>
 	<Package name="Federal_Reserve">
 		<Key ID="STR_NOTF_FRRobbery_fail">

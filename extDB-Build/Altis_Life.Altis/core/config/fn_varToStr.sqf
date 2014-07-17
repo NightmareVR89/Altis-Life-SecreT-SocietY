@@ -63,6 +63,9 @@ switch (_var) do
 	case "life_inv_storagebig": {"Grosse Lagerbox"};
 	case "life_inv_handschellen": {"Handschellen"};
 	case "life_inv_kabelb": {"Kabelbinder"};
+	case "life_inv_froschlsd": {"Frosch-LSD"};
+	case "life_inv_froschbein": {"Froschschenkel"};
+	case "life_inv_frosch": {"Frösche"};
 	
 	//License Block
 	case "license_civ_driver": {"Führerschein"};
@@ -89,4 +92,6 @@ switch (_var) do
 	case "license_med_air": {"Flugschein"};
 	case "license_civ_home": {"Hausbesitzerlizenz"};
 	case "license_civ_adac": {"ADAC Mitgliedschaft"};
+	case "license_civ_froschlsd": {"Froschquetscher"};
+	case "license_civ_froschbein": {"Gourmet-Koch"};
 };

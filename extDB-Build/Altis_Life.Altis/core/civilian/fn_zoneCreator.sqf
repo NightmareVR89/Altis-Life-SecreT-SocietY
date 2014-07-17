@@ -17,6 +17,7 @@ _peachZones = ["peaches_1","peaches_2","peaches_3","peaches_4"];
 _heroinZones = ["heroin_1"];
 _cocaineZones = ["cocaine_1"];
 _weedZones = ["weed_1"];
+_froschZones = ["frosch_1"];
 
 //Create apple zones
 {
@@ -57,3 +58,11 @@ _weedZones = ["weed_1"];
 	_zone setTriggerActivation["CIV","PRESENT",true];
 	_zone setTriggerStatements["player in thislist","LIFE_Action_Coke = player addAction['Sammle Kokain',life_fnc_gatherCocaine,'',0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Coke;"];
 } foreach _cocaineZones;
+
+//blah Frösche und so
+{
+	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
+	_zone setTriggerArea[50,50,0,false];
+	_zone setTriggerActivation["CIV","PRESENT",true];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_Frosch = player addAction['Fange Frösche',life_fnc_froschFang,'',0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Frosch;"];
+} foreach _froschZones;

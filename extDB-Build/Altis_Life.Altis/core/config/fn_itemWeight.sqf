@@ -56,5 +56,7 @@ switch (_item) do
 	case "defusekit": {5};
 	case "storagesmall": {10};
 	case "storagebig": {20};
-	default {1};
+	case "frosch": {6};
+	case "froschlsd": {4};
+	case "froschbein": {2};
 };
