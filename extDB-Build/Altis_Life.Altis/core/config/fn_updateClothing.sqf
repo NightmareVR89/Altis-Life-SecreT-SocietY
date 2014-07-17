@@ -31,7 +31,7 @@ switch(true) do
 
 // And for every coplvl a new thing. 
 	
-	case (playerSide == independent && _uniform == "U_Rangemaster"):
+	case (playerSide == independent && _uniform == "U_I_HeliPilotCoveralls"):
 	{
 		if(__GETC__(life_medlevel) > 0) then
 		{
