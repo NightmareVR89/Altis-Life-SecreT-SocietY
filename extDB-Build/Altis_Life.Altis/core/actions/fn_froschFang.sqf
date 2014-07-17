@@ -1,5 +1,6 @@
-private["_sum"];
-_sum = ["frosch",3,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
+private["_rand","_sum"];
+_rand = random(5);
+_sum = ["frosch",_rand,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 
 if(_sum > 0) then
 {
