@@ -17,6 +17,8 @@ removeHeadGear player;
 	player removeItem _x;
 } foreach (assignedItems player);
 
+removeAllItems player;
+
 if(hmd player != "") then {
 	player unlinkItem (hmd player);
 };
