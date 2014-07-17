@@ -61,15 +61,15 @@ while {true} do {
 			//bis 50 km/h über dem limit
 			if ((_vehicle_speed - _speed_limit) < 50) then {
 				//bis 20 km/h über dem limit
-				if ((_vehicle_speed - _speed_limit) < 20) then {				
-					["life_fnc_MP_packet",[0,[getPlayerUID _driver,name _driver,_BOUNTY_ID_1],"life_fnc_wantedAdd",false,false]] spawn life_fnc_MPexec;
+				if ((_vehicle_speed - _speed_limit) < 20) then {			
+					[[getPlayerUID _driver,_driver getVariable["realname",name _driver],_BOUNTY_ID_1],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;				
 					sleep 5.0;
 				} else {
-					["life_fnc_MP_packet",[0,[getPlayerUID _driver,name _driver,_BOUNTY_ID_2],"life_fnc_wantedAdd",false,false]] spawn life_fnc_MPexec;
+					[[getPlayerUID _driver,_driver getVariable["realname",name _driver],_BOUNTY_ID_2],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;	
 					sleep 5.0;
 				};
 			} else {
-				["life_fnc_MP_packet",[0,[getPlayerUID _driver,name _driver,_BOUNTY_ID_3],"life_fnc_wantedAdd",false,false]] spawn life_fnc_MPexec;
+					[[getPlayerUID _driver,_driver getVariable["realname",name _driver],_BOUNTY_ID_3],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;	
 				sleep 5.0;
 			};
 		};
