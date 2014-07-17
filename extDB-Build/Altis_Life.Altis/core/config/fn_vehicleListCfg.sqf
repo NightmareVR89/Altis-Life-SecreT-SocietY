@@ -25,6 +25,8 @@ switch (_shop) do
 	{
 		_return = [
 			["C_Offroad_01_F",1500],
+			["C_Hatchback_01_F",2000],
+			["C_SUV_01_F",2500],
 			["I_Truck_02_medical_F",25000],
 			["O_Truck_03_medical_F",45000],
 			["B_Truck_01_medical_F",60000]
@@ -33,8 +35,9 @@ switch (_shop) do
 	
 	case "med_air_hs": {
 		_return = [
-			["B_Heli_Light_01_F",50000],
-			["O_Heli_Light_02_unarmed_F",120000]
+			["B_Heli_Light_01_F",10000],
+			["O_Heli_Light_02_unarmed_F",12000],
+			["I_Heli_Transport_02_F",15000]
 		];
 	};
 	
