@@ -59,4 +59,7 @@ switch (_item) do
 	case "frosch": {6};
 	case "froschlsd": {4};
 	case "froschbein": {2};
+	case "handschellen": {1};
+	case "kabelb": {1};
+	default {1};
 };
