@@ -137,7 +137,8 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_vrana_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wave_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa","reb"],
-			["textures\fahrzeuge\med\Notarzt_Hummingbird.paa","med"]
+			["textures\fahrzeuge\med\Notarzt_Hummingbird.paa","med"],
+			["fahrzeuge\adac.jpg","adac"]
 		];
 	};
 	
