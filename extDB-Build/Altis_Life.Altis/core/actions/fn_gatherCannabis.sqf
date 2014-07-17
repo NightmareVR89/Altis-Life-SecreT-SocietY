@@ -10,7 +10,9 @@ _sum = ["cannabis",1,life_carryWeight,life_maxWeight] call life_fnc_calWeightDif
 if(_sum > 0) then
 {
 	life_action_inUse = true;
+	player say3D "harvest";
 	TitleText[format[localize "STR_NOTF_Gathering",localize "STR_Item_Cannabis"],"PLAIN"];
+	player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
 	titleFadeOut 5;
 	sleep 5;
 	if(([true,"cannabis",1] call life_fnc_handleInv)) then

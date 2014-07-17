@@ -11,9 +11,11 @@ if(!(_building isKindOf "House_F")) exitWith {hint "Du schaust auf keine Haustü
 if(isNil "life_boltcutter_uses") then {life_boltcutter_uses = 0;};
 if((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _building) then {
 	[[[1,2],"!!!!! JEMAND BRICHT IN DIE STAATSBANK EIN !!!!!!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+	player say3D "bankalarm";
 };
 if((nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _building) then {
 	[[[1,2],"!!!!! JEMAND BRICHT IN DEN TRESORRAUM EIN !!!!!!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+	player say3D "bankalarm";
 };
 
 _doors = 1;

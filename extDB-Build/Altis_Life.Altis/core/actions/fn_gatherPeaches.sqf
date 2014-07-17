@@ -11,6 +11,7 @@ _sum = ["peach",3,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 if(_sum > 0) then
 {
 	life_action_inUse = true;
+	player say3D "take";
 	titleText[format[localize "STR_NOTF_Gathering",localize "STR_Item_Peaches"],"PLAIN"];
 	player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
 	sleep 2;
