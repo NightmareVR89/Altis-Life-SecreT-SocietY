@@ -7,7 +7,7 @@
 	Cop Initialization file.
 */
 private["_end"];
-player addRating 999999;
+player addRating 9999999;
 waitUntil {!(isNull (findDisplay 46))};
 _end = false;
 if(life_blacklisted) exitWith
