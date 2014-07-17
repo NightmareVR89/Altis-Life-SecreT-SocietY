@@ -171,7 +171,10 @@ life_inv_items =
 	"life_inv_storagesmall",
 	"life_inv_storagebig",
 	"life_inv_handschellen",
-	"life_inv_kabelb"
+	"life_inv_kabelb",
+	"life_inv_frosch",
+	"life_inv_froschlsd",
+	"life_inv_froschbein"
 ];
 
 //Setup variable inv vars.
