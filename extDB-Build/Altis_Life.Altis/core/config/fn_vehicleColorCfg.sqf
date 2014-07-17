@@ -49,7 +49,6 @@ switch (_vehicle) do
 			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE04_CO.paa","civ"],
 			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa","civ"],
 			["#(ai,64,64,1)Fresnel(0.3,3)","fed"],
-			["#(ai,64,64,1)Fresnel(1.3,7)","cop"],
 			["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"],
 			["fahrzeuge\offroad_polizei.jpg","cop"],
 			["textures\fahrzeuge\med\offroad_notarzt.paa","med"]
@@ -149,7 +148,8 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_civilian_co.paa","civ"],
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_indp_co.paa","donate"],
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa","reb"],
-			["textures\fahrzeuge\cop\orca_polizei.paa","cop"]
+			["textures\fahrzeuge\cop\orca_polizei.paa","cop"],
+			["textures\fahrzeuge\med\orca_notarzt.paa","med"]
 		];
 	};
 	
@@ -158,11 +158,24 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["\A3\Soft_F\MRAP_01\Data\mrap_01_base_co.paa","cop"],
-			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","fed"]
+			["fahrzeuge\hunter_sek.jpg","cop","fahrzeuge\hunter_sek2.jpg"],
+			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","fed]
 		];
 	};
-	
+	case "I_Heli_light_03_unarmed_F":
+	{
+		_ret = 
+		[
+			["textures\fahrzeuge\cop\Polizei_hellcat.paa","cop"]
+		];
+	};
+	case "B_Heli_Transport_01_F":
+	{
+		_ret = 
+		[
+			["textures\fahrzeuge\cop\gh_polizei_front.paa","cop","textures\fahrzeuge\cop\gh_polizei_hinten.paa"]
+		];
+	};
 	case "I_Truck_02_covered_F":
 	{
 		_ret = 
@@ -171,7 +184,6 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","fed"]
 		];
 	};
-	
 	case "I_Truck_02_transport_F":
 	{
 		_ret = 
