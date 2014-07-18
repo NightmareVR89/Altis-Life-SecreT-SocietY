@@ -3394,7 +3394,7 @@ class Mission
 					special="NONE";
 					id=195;
 					side="EAST";
-					vehicle="O_engineer_U_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -3409,7 +3409,7 @@ class Mission
 					special="NONE";
 					id=196;
 					side="EAST";
-					vehicle="O_engineer_U_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="ADAC_24";
@@ -3423,7 +3423,7 @@ class Mission
 					special="NONE";
 					id=197;
 					side="EAST";
-					vehicle="O_engineer_U_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="ADAC_23";
@@ -3437,7 +3437,7 @@ class Mission
 					special="NONE";
 					id=198;
 					side="EAST";
-					vehicle="O_engineer_U_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="ADAC_22";
@@ -3451,7 +3451,7 @@ class Mission
 					special="NONE";
 					id=199;
 					side="EAST";
-					vehicle="O_engineer_U_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="ADAC_21";
@@ -3465,7 +3465,7 @@ class Mission
 					special="NONE";
 					id=200;
 					side="EAST";
-					vehicle="O_engineer_U_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="ADAC_20";
@@ -3479,7 +3479,7 @@ class Mission
 					special="NONE";
 					id=201;
 					side="EAST";
-					vehicle="O_engineer_U_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="ADAC_19";
@@ -3493,7 +3493,7 @@ class Mission
 					special="NONE";
 					id=202;
 					side="EAST";
-					vehicle="O_engineer_U_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="ADAC_18";
@@ -3507,7 +3507,7 @@ class Mission
 					special="NONE";
 					id=203;
 					side="EAST";
-					vehicle="O_engineer_U_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="ADAC_17";
@@ -3521,7 +3521,7 @@ class Mission
 					special="NONE";
 					id=204;
 					side="EAST";
-					vehicle="O_engineer_U_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="ADAC_9";
@@ -3535,7 +3535,7 @@ class Mission
 					special="NONE";
 					id=205;
 					side="EAST";
-					vehicle="O_engineer_U_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="ADAC_10";
@@ -3549,7 +3549,7 @@ class Mission
 					special="NONE";
 					id=206;
 					side="EAST";
-					vehicle="O_engineer_U_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="ADAC_11";
@@ -3563,7 +3563,7 @@ class Mission
 					special="NONE";
 					id=207;
 					side="EAST";
-					vehicle="O_engineer_U_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="ADAC_12";
@@ -3577,7 +3577,7 @@ class Mission
 					special="NONE";
 					id=208;
 					side="EAST";
-					vehicle="O_engineer_U_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="ADAC_13";
@@ -3591,7 +3591,7 @@ class Mission
 					special="NONE";
 					id=209;
 					side="EAST";
-					vehicle="O_engineer_U_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="ADAC_14";
@@ -3605,7 +3605,7 @@ class Mission
 					special="NONE";
 					id=210;
 					side="EAST";
-					vehicle="O_engineer_U_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="ADAC_15";
@@ -3619,7 +3619,7 @@ class Mission
 					special="NONE";
 					id=211;
 					side="EAST";
-					vehicle="O_engineer_U_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="ADAC_16";
@@ -3633,7 +3633,7 @@ class Mission
 					special="NONE";
 					id=212;
 					side="EAST";
-					vehicle="O_engineer_U_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="ADAC_8";
@@ -3647,7 +3647,7 @@ class Mission
 					special="NONE";
 					id=213;
 					side="EAST";
-					vehicle="O_engineer_U_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="ADAC_7";
@@ -3661,7 +3661,7 @@ class Mission
 					special="NONE";
 					id=214;
 					side="EAST";
-					vehicle="O_engineer_U_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="ADAC_6";
@@ -3675,7 +3675,7 @@ class Mission
 					special="NONE";
 					id=215;
 					side="EAST";
-					vehicle="O_engineer_U_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="ADAC_5";
@@ -3689,7 +3689,7 @@ class Mission
 					special="NONE";
 					id=216;
 					side="EAST";
-					vehicle="O_engineer_U_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="ADAC_4";
@@ -3703,7 +3703,7 @@ class Mission
 					special="NONE";
 					id=217;
 					side="EAST";
-					vehicle="O_engineer_U_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="ADAC_3";
@@ -3717,7 +3717,7 @@ class Mission
 					special="NONE";
 					id=218;
 					side="EAST";
-					vehicle="O_engineer_U_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="ADAC_2";
