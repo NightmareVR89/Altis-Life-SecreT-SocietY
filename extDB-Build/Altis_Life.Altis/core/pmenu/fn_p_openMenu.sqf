@@ -17,12 +17,15 @@ switch(playerSide) do
 		ctrlShow[2011,false];
 	};
 	
+	case independent:
+	{
+		ctrlShow[2012,false];
+	};
 	case civilian:
 	{
-		if(__GETC__(life_adaclevel) == 1) then { ctrlshow[2011,false]; };
+		if(__GETC__(life_adaclevel) == 1) then { ctrlShow[2011,false]; };
 		ctrlShow[2012,false];
-
-	};
+´	};
 };
 
 if(__GETC__(life_adminlevel) < 1) then
