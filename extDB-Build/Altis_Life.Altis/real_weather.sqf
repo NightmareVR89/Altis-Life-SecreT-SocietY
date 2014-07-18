@@ -28,7 +28,7 @@
 	// Random time before new forecast
 	// true: forecast happens bewteen mintime and maxtime
 	// false: forecast happens at mintime
-	_random = false;
+	_random = true;
 
 	// Min time seconds (real time) before a new weather forecast
 	_mintime = 600;
@@ -39,7 +39,7 @@
 	// If Fastime is on
 	// Ratio 1 real time second for x game time seconds
 	// Default: 1 real second = 3.6 second in game
-	_timeratio = 2.0;
+	_timeratio = 3.6;
 
 	// send sync data across the network each xxx seconds
 	// 60 seconds by default is a good value
