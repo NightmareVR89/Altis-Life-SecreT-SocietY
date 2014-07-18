@@ -160,7 +160,8 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["fahrzeuge\hunter_sek.jpg","cop","fahrzeuge\hunter_sek2.jpg"]
+			["fahrzeuge\hunter_sek.jpg","cop","fahrzeuge\hunter_sek2.jpg"],
+			["fahrzeuge\mrap_main.jpg","cop","fahrzeuge\mrap_rear.jpg"]
 		];
 	};
 	case "I_Heli_light_03_unarmed_F":

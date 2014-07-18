@@ -162,7 +162,8 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Polizei"};
+			case 0: {_color = "SEK"};
+			case 1: {_color = "Polizei"};
 		};
 	};
 	
