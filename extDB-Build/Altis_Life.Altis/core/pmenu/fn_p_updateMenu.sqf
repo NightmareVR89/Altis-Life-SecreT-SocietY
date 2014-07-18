@@ -15,7 +15,7 @@ if(__GETC__(life_adminlevel) < 1) then
 	ctrlShow[2021,false];
 };
 
-_side = switch(playerSide) do {case west:{"cop"}; case civilian:{"civ"}; case independent:{"med"};};
+_side = switch(playerSide) do {case west:{"cop"}; case civilian:{"civ"}; case independent:{"med"}; case east:{"adac"};};
 
 _dialog = findDisplay 2001;
 _inv = _dialog displayCtrl 2005;

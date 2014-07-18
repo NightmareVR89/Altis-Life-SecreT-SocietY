@@ -28,6 +28,7 @@ if(life_atmcash > (call life_revive_fee)) then {
 switch(playerSide) do {
 	case west: {[] call life_fnc_updateClothing;};
 	case independent: {[] call life_fnc_updateClothing;};
+	case east: {[] call life_fnc_updateClothing;};
 };
 
 //Bring me back to life.

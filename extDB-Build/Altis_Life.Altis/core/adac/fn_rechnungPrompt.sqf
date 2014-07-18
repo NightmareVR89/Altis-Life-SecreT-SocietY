@@ -29,6 +29,6 @@ _control ctrlSetStructuredText parseText format["<t align='center'><t size='.8px
 	if(isNull (findDisplay 2600) && !life_rechnung_paid) then
 	{
 		[[0,format["%1 lehnt die Bezahlung der Rechnung ab.",profileName]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
-		[[1,format["%1 lehnt die Bezahlung der Rechnung ab.",profileName]],"life_fnc_broadcast",life_rechnung_adac,false] spawn life_fnc_MP;
+		[[1,format["%1 lehnt die Bezahlung der Rechnung ab.",profileName]],"life_fnc_broadcast",east,false] spawn life_fnc_MP;
 	};
 };

@@ -97,13 +97,7 @@ if(playerSide == west) then {
 		_Btn3 ctrlShow false;
 	};
 
-/* Deaktiviert bis eingebaut!	
-	if(life_adaclevel == 1) then {
-		_Btn4 ctrlSetText localize "STR_vInAct_Tow";
-		_Btn4 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_adacSchlepptDasAutoAb;";
-	} else { */
-		_Btn4 ctrlShow false;
-//	};
+	_Btn4 ctrlShow false;
 	_Btn5 ctrlShow false;
 	_Btn6 ctrlShow false;
 };

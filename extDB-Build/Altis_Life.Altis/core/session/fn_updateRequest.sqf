@@ -5,7 +5,7 @@
 private["_packet","_array","_flag"];
 _packet = [getPlayerUID player,(profileName),playerSide,life_cash,life_atmcash];
 _array = [];
-_flag = switch(playerSide) do {case west: {"cop"}; case civilian: {"civ"}; case independent: {"med"};};
+_flag = switch(playerSide) do {case west: {"cop"}; case civilian: {"civ"}; case independent: {"med"}; case east: {"adac"};};
 {
 	if(_x select 1 == _flag) then
 	{
@@ -19,11 +19,6 @@ _packet set[count _packet, life_gear];
 switch (playerSide) do {
 	case civilian: {
 		_packet set[count _packet,life_is_arrested];
-		if(__GETC__(life_adaclevel) == 1) then {
-			_packet set[8,true];
-		} else {
-			_packet set[8,false];
-		};
 	};
 };
 

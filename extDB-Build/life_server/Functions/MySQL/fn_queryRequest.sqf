@@ -1,11 +1,11 @@
 /*
 	File: fn_queryRequest.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Handles the incoming request and sends an asynchronous query 
 	request to the database.
-	
+
 	Return:
 	ARRAY - If array has 0 elements it should be handled as an error in client-side files.
 	STRING - The request had invalid handles or an unknown error and is logged to the RPT.
@@ -24,8 +24,9 @@ _ownerID = owner _ownerID;
 */
 _query = switch(_side) do {
 	case west: {_returnCount = 10; format["SELECT playerid, name, copcash, copbank, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, blacklist FROM players WHERE playerid='%1'",_uid];};
-	case civilian: {_returnCount = 14; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, adaccash, adacbank, adaclevel, adac_gear FROM players WHERE playerid='%1'",_uid];};
+	case civilian: {_returnCount = 9; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear FROM players WHERE playerid='%1'",_uid];};
 	case independent: {_returnCount = 8; format["SELECT playerid, name, medcash, medbank, adminlevel, donatorlvl, med_licenses, mediclevel, med_gear FROM players WHERE playerid='%1'",_uid];};
+	case east: {_returnCount = 9; format["SELECT playerid, name, adaccash, adacbank, adminlevel, donatorlvl, civ_licenses, adaclevel, adac_gear FROM players WHERE playerid='%1'",_uid];};
 };
 
 waitUntil{sleep (random 0.3); !DB_Async_Active};
@@ -75,21 +76,12 @@ switch (_side) do {
 		_queryResult set[8,_new];
 		_queryResult set[9,([_queryResult select 9,1] call DB_fnc_bool)];
 	};
-	
+
 	case civilian: {
 		_new = [(_queryResult select 8)] call DB_fnc_mresToArray;
 		if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
 		_queryResult set[8,_new];
 		_queryResult set[7,([_queryResult select 7,1] call DB_fnc_bool)];
-		//ADAC Gear
-		_new = [(_queryResult select 12)] call DB_fnc_mresToArray;
-		if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
-		_queryResult set[12,_new];
-		//ADAC Konten
-		_tmp = _queryResult select 9;
-		_queryResult set[9,[_tmp] call DB_fnc_numberSafe];
-		_tmp = _queryResult select 10;
-		_queryResult set[10,[_tmp] call DB_fnc_numberSafe];
 		_houseData = _uid spawn TON_fnc_fetchPlayerHouses;
 		waitUntil {scriptDone _houseData};
 		_queryResult set[count _queryResult,(missionNamespace getVariable[format["houses_%1",_uid],[]])];
@@ -98,6 +90,11 @@ switch (_side) do {
 		_queryResult set[count _queryResult,(missionNamespace getVariable[format["gang_%1",_uid],[]])];
 	};
 	case independent: {
+		_new = [(_queryResult select 8)] call DB_fnc_mresToArray;
+		if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
+		_queryResult set[8,_new];
+	};
+	case east: {
 		_new = [(_queryResult select 8)] call DB_fnc_mresToArray;
 		if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
 		_queryResult set[8,_new];

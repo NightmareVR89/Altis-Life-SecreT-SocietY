@@ -26,4 +26,5 @@ switch(playerSide) do
 		};
 	};
 	case independent: {[] call life_fnc_updateClothing;};
+	case east: {[] call life_fnc_updateClothing;};
 };

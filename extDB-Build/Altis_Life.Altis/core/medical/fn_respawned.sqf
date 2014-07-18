@@ -31,17 +31,16 @@ switch(playerSide) do
 		waitUntil {scriptDone _handle};
 	};
 	case civilian: {
-		if(__GETC__(life_adaclevel) == 1) then {
-			_handle = [] spawn life_fnc_adacLoadout;
-			waitUntil {scriptDone _handle};
-		} else {
-			_handle = [] spawn life_fnc_civLoadout;
-			waitUntil {scriptDone _handle};
-		};
+		_handle = [] spawn life_fnc_civLoadout;
+		waitUntil {scriptDone _handle};
 	};
 	case independent: {
 		_handle = [] spawn life_fnc_medicLoadout;
 		waitUntil {scriptDone _handle};
+	};
+	case east: {
+		_handle = [] spawn life_fnc_adacLoadout;
+		waitUntil {scriptDone _handle};	
 	};
 };
 

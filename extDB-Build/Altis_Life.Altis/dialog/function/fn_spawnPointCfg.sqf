@@ -42,14 +42,6 @@ switch (_side) do
 				
 				_return set[count _return,[format["house_%1",_house getVariable "uid"],_houseName,"\a3\ui_f\data\map\MapControl\lighthouse_ca.paa"]];
 			} foreach life_houses;
-		};	
-		
-		if(__GETC__(life_adaclevel) > 0) then {
-			_return = [
-				["ADAC","ADAC Kavala","\a3\ui_f\data\map\MapControl\fuelstation_ca.paa"],
-				["ADAC_1","ADAC Agios Dionysios","\a3\ui_f\data\map\MapControl\fuelstation_ca.paa"],
-				["ADAC_2","ADAC Pyrgos","\a3\ui_f\data\map\MapControl\fuelstation_ca.paa"]
-			];
 		};
 	};
 	
@@ -58,6 +50,14 @@ switch (_side) do
 			["medic_spawn_1","Kavala Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
 			["medic_spawn_2","Athira Regional","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
 			["medic_spawn_3","Pygros Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
+		];
+	};
+	
+	case east: {
+		_return = [
+			["ADAC","ADAC Kavala","\a3\ui_f\data\map\MapControl\fuelstation_ca.paa"],
+			["ADAC_1","ADAC Agios Dionysios","\a3\ui_f\data\map\MapControl\fuelstation_ca.paa"],
+			["ADAC_2","ADAC Pyrgos","\a3\ui_f\data\map\MapControl\fuelstation_ca.paa"]
 		];
 	};
 };

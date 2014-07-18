@@ -21,15 +21,15 @@ if(count _itemArray == 0) exitWith
 		};
 
 		case civilian: {
-			if(__GETC__(life_adaclevel) == 1) then {
-				[] call life_fnc_adacLoadout;
-			} else {
 				[] call life_fnc_civLoadout;
-			};
 		};
 
 		case independent: {
 			[] call life_fnc_medicLoadout;
+		};
+		
+		case east: {
+			[] call life_fnc_adacLoadout;
 		};
 	};
 };

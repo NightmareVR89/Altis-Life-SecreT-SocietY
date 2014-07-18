@@ -64,6 +64,12 @@ switch (playerSide) do
 		_handle = [] spawn life_fnc_initMedic;
 		waitUntil {scriptDone _handle};
 	};
+	
+	case east:
+	{
+		_handle = [] spawn life_fnc_initAdac;
+		waitUntil {scriptDone _handle};
+	};
 };
 
 player setVariable["restrained",false,true];
