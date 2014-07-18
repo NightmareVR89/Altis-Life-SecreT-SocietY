@@ -175,6 +175,7 @@ switch (_vehicle) do
 			case 0: {_color = "SEK"};
 			case 1: {_color = "Polizei"};
 			case 2: {_color = "SEK1"};
+			case 3: {_color = "SEK2"};
 		};
 	};
 	case "B_Truck_01_mover_F":

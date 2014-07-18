@@ -87,8 +87,8 @@ switch (_vehicle) do
 			["textures\fahrzeuge\med\suv_medik.paa","med"],
 			["fahrzeuge\suv_sek.jpg","cop"],
 			["fahrzeuge\suv_adac1.paa","adac"],
-			["fahrzeuge\suv_adac1.paa","adac"],
-			["fahrzeuge\suv_adac1.paa","adac"]
+			["fahrzeuge\suv_adac2.paa","adac"],
+			["fahrzeuge\suv_adac3.paa","adac"]
 		];
 	};
 	
@@ -180,7 +180,8 @@ switch (_vehicle) do
 		[
 			["fahrzeuge\hunter_sek.jpg","cop","fahrzeuge\hunter_sek2.jpg"],
 			["fahrzeuge\mrap_main.jpg","cop","fahrzeuge\mrap_rear.jpg"],
-			["fahrzeuge\hunter_sek_front1.paa","cop","fahrzeuge\hunter_sek_hinten1.paa"]
+			["fahrzeuge\hunter_sek_front1.paa","cop","fahrzeuge\hunter_sek_hinten1.paa"],
+			["fahrzeuge\sek_hunter_01.paa","cop","fahrzeuge\sek_hunter_02.paa"]
 		];
 	};
 	case "I_Heli_light_03_unarmed_F":
