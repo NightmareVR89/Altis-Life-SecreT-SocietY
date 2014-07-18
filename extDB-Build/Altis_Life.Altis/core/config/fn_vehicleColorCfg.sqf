@@ -53,7 +53,8 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"],
 			["fahrzeuge\offroad_polizei.jpg","cop"],
 			["fahrzeuge\off_rc4.paa","cop"],
-			["textures\fahrzeuge\med\offroad_notarzt.paa","med"]
+			["textures\fahrzeuge\med\offroad_notarzt.paa","med"],
+			["fahrzeuge\offroad_adac3.paa","adac"]
 
 		];
 	};
@@ -83,7 +84,10 @@ switch (_vehicle) do
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa","civ"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa","civ"],
 			["textures\fahrzeuge\med\suv_medik.paa","med"],
-			["fahrzeuge\suv_sek.paa","cop"]
+			["fahrzeuge\suv_sek.paa","cop"],
+			["fahrzeuge\suv_adac1.paa","adac"],
+			["fahrzeuge\suv_adac1.paa","adac"],
+			["fahrzeuge\suv_adac1.paa","adac"]
 		];
 	};
 	
@@ -141,7 +145,7 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa","reb"],
 			["textures\fahrzeuge\med\Notarzt_Hummingbird.paa","med"],
 			["fahrzeuge\police_heli.jpg","cop"],
-			["fahrzeuge\adac.jpg","adac"]
+			["fahrzeuge\ADAC_Hummingbird.paa","adac"]
 		];
 	};
 	
@@ -154,7 +158,8 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_indp_co.paa","donate"],
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa","reb"],
 			["textures\fahrzeuge\cop\orca_polizei.paa","cop"],
-			["textures\fahrzeuge\med\orca_notarzt.paa","med"]
+			["textures\fahrzeuge\med\orca_notarzt.paa","med"],
+			["fahrzeuge\orca_adac1.paa","adac"]
 		];
 	};
 	

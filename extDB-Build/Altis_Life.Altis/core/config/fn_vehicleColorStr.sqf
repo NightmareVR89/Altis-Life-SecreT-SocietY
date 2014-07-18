@@ -27,6 +27,7 @@ switch (_vehicle) do
 			case 8: {_color = "Polizei"};
 			case 9: {_color = "Blau"};
 			case 10: {_color = "Notarzt"};
+			case 11: {_color = "ADAC"};
 		};
 	};
 	case "C_Hatchback_01_F":
@@ -70,6 +71,9 @@ switch (_vehicle) do
 			case 3: {_color = "Orange";};
 			case 4: {_color = "Medic";};
 			case 5: {_color = "SEK";};
+			case 6: {_color = "ADAC1";};
+			case 7: {_color = "ADAC2";};
+			case 8: {_color = "ADAC3";};
 		};
 	};
 	
@@ -158,6 +162,7 @@ switch (_vehicle) do
 			case 3: {_color = "Wüste Digi"};
 			case 4: {_color = "Polizei"};
 			case 5: {_color = "Sanitäter"};
+			case 6: {_color = "ADAC"};
 		};
 	};
 	
