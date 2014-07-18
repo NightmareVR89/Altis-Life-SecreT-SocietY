@@ -1,5 +1,5 @@
 enableSaving [false, false];
-
+[] execVM "real_weather.sqf";
 X_Server = false;
 X_Client = false;
 X_JIP = false;
