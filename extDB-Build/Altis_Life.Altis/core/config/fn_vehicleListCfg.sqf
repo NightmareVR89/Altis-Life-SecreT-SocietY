@@ -192,7 +192,8 @@ switch (_shop) do
 			["C_Offroad_01_F",8000],
 			["C_SUV_01_F",8000],
 			["B_Truck_01_fuel_F",3000],
-			["B_Truck_01_Repair_F",3000]
+			["B_Truck_01_Repair_F",3000],
+			["B_Truck_01_mover_F",3000]
 		];
 	};
 };
