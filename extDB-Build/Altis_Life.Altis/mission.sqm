@@ -3186,7 +3186,7 @@ class Mission
 					vehicle="C_man_w_worker_F";
 					leader=1;
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Fahrzeuggarage"",  {   [[getPlayerUID player,playerSide,""Car""""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car""""Air"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Hole Fahrzeuge....""];   life_garage_sp = ""ADAC_Spawn_1"";  }];  this addAction[""Stelle Fahrzeug in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""ADAC Dienstwagen"",life_fnc_vehicleShopMenu,[""adac"",east,""ADAC_Spawn_1"",""adac"",""ADAC Dienstwagen""]]; this addAction[""Fahrzeuggarage"",  {   [[getPlayerUID player,playerSide,""Car""""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car""""Air"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Hole Fahrzeuge....""];   life_garage_sp = ""ADAC_Spawn_1"";  }];  this addAction[""Stelle Fahrzeug in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 			};
 		};
@@ -3243,7 +3243,7 @@ class Mission
 					vehicle="C_man_w_worker_F";
 					leader=1;
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""ADAC-Shop"",life_fnc_weaponShopMenu,""adac""]; this addAction[format[""%1 ($%2)"",[""license_adac_driver""] call life_fnc_varToStr,[([""adacdrive""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""adacdrive"",0,false,false,"""",' !license_adac_driver && playerSide == east ']; this addAction[format[""%1 ($%2)"",[""license_civ_adac""] call life_fnc_varToStr,[([""adac""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""adac"",0,false,false,"""",' !license_civ_adac '];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""ADAC Dienstwagen"",life_fnc_vehicleShopMenu,[""adac"",east,""ADAC_Spawn_2"",""adac"",""ADAC Dienstwagen""]]; this addAction[""ADAC-Shop"",life_fnc_weaponShopMenu,""adac""]; this addAction[format[""%1 ($%2)"",[""license_adac_driver""] call life_fnc_varToStr,[([""adacdrive""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""adacdrive"",0,false,false,"""",' !license_adac_driver && playerSide == east ']; this addAction[format[""%1 ($%2)"",[""license_civ_adac""] call life_fnc_varToStr,[([""adac""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""adac"",0,false,false,"""",' !license_civ_adac '];";
 				};
 			};
 		};
@@ -80424,12 +80424,12 @@ class Mission
 	};
 	class Sensors
 	{
-		items=42;
+		items=45;
 		class Item0
 		{
-			position[]={3264.5259,2.0472631,12941.438};
-			b=70;
-			angle=40;
+			position[]={3278.2617,2.2110159,12958.507};
+			a=20;
+			angle=265.71301;
 			rectangular=1;
 			activationBy="CIV";
 			repeating=1;
@@ -80499,10 +80499,10 @@ class Mission
 		};
 		class Item4
 		{
-			position[]={9475.5273,118.71809,15903.412};
-			a=12;
-			b=12;
-			angle=255.634;
+			position[]={9492.5127,118.63703,15901.749};
+			a=15;
+			b=30;
+			angle=260.96301;
 			rectangular=1;
 			activationBy="CIV";
 			repeating=1;
@@ -80988,9 +80988,10 @@ class Mission
 		};
 		class Item31
 		{
-			position[]={17438.396,14.253167,13160.534};
-			b=70;
-			angle=45.253159;
+			position[]={17428.994,14.466584,13160.409};
+			a=104;
+			b=75;
+			angle=47.349701;
 			rectangular=1;
 			activationBy="CIV";
 			repeating=1;
@@ -81179,6 +81180,59 @@ class Mission
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
 			expActiv="hint ""VORSICHT Geschwindigkeitsbegrenzung in Agios fahren sie bitte 50 """;
+			class Effects
+			{
+			};
+		};
+		class Item42
+		{
+			position[]={22150.389,3.1659327,14472.081};
+			a=155;
+			b=225;
+			angle=175.59747;
+			activationBy="CIV";
+			repeating=1;
+			interruptable=1;
+			type="SWITCH";
+			age="UNKNOWN";
+			expCond="this && (local player) && (vehicle player in thisList)";
+			expActiv="hint ""Sie betreten eine absolute Sperrzone. Verlassen Sie diese sofort. Hier besteht Feuerfreigabe !!!""";
+			class Effects
+			{
+			};
+		};
+		class Item43
+		{
+			position[]={3756.3242,18.837461,13007.482};
+			a=35;
+			b=28;
+			angle=-76.380203;
+			rectangular=1;
+			activationBy="CIV";
+			repeating=1;
+			interruptable=1;
+			type="SWITCH";
+			age="UNKNOWN";
+			expCond="this && (local player) && (vehicle player in thisList)";
+			expActiv="hint ""Sie Betreten das Krankenhaus aufenthalt nur für Sanitäter oder Patienten""";
+			class Effects
+			{
+			};
+		};
+		class Item44
+		{
+			position[]={3182.9434,2,12905.85};
+			a=30;
+			b=35;
+			angle=270.65799;
+			rectangular=1;
+			activationBy="CIV";
+			repeating=1;
+			interruptable=1;
+			type="SWITCH";
+			age="UNKNOWN";
+			expCond="this && (local player) && (vehicle player in thisList)";
+			expActiv="hint ""VORSICHT sie betreten Polizeigelände. Bitte verlassen sie diesen Bereich Ansonsten müssen sie mit Konsequenzen rechnen """;
 			class Effects
 			{
 			};
