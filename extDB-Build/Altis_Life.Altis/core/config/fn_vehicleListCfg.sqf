@@ -15,10 +15,10 @@ switch (_shop) do
 	case "kart_shop":
 	{
 		_return = [
-			["C_Kart_01_Blu_F",300000],
-			["C_Kart_01_Fuel_F",300000],
-			["C_Kart_01_Red_F",300000],
-			["C_Kart_01_Vrana_F",300000]
+			["C_Kart_01_Blu_F",35000],
+			["C_Kart_01_Fuel_F",47000],
+			["C_Kart_01_Red_F",61000],
+			["C_Kart_01_Vrana_F",65000]
 		];
 	};
 	case "med_shop":
@@ -53,12 +53,12 @@ switch (_shop) do
 	{
 		_return = 
 		[
-			["B_Quadbike_01_F",2500],
-			["C_Hatchback_01_F",9500],
-			["C_Offroad_01_F",12500],
-			["C_SUV_01_F",35000],
-			["C_Hatchback_01_sport_F",35000],
-			["C_Van_01_transport_F",40000]
+			["B_Quadbike_01_F",800],
+			["C_Hatchback_01_F",3000],
+			["C_Offroad_01_F",8000],
+			["C_SUV_01_F",9300],
+			["C_Hatchback_01_sport_F",12000],
+			["C_Van_01_transport_F",17000]
 		];
 	};
 	
@@ -66,8 +66,8 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["C_Van_01_box_F",60000],
-			["I_Truck_02_transport_F",75000],
+			["C_Van_01_box_F",34000],
+			["I_Truck_02_transport_F",46500],
 			["I_Truck_02_covered_F",100000],
 			["B_Truck_01_transport_F",275000],
 			["O_Truck_03_transport_F",200000],
@@ -82,10 +82,10 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["B_Quadbike_01_F",2500],
-			["B_G_Offroad_01_F",15000],
+			["B_Quadbike_01_F",1200],
+			["B_G_Offroad_01_F",7500],
 			["O_MRAP_02_F",150000],
-			["B_Heli_Light_01_F",325000]
+			["B_Heli_Light_01_F",85000]
 		];
 		
 		if(license_civ_rebel) then
@@ -120,21 +120,21 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["B_Heli_Light_01_F",253000],
-			["O_Heli_Light_02_unarmed_F",750000]
+			["B_Heli_Light_01_F",60000],
+			["O_Heli_Light_02_unarmed_F",120000]
 		];
 	};
 	
 	case "cop_air":
 	{
 		_return set[count _return,
-		["B_Heli_Light_01_F",75000]];
+		["B_Heli_Light_01_F",40000]];
 		if(__GETC__(life_coplevel) > 2) then
 		{
 			_return set[count _return,
-			["B_Heli_Transport_01_F",200000]];
+			["B_Heli_Transport_01_F",20000]];
 			_return set[count _return,
-			["I_Heli_Transport_02_F",200000]];
+			["I_Heli_Transport_02_F",20000]];
 			_return set[count _return,
 			["B_MRAP_01_hmg_F",750000]];
 			_return set[count _return,
@@ -163,7 +163,7 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["C_Rubberboat",5000],
+			["C_Rubberboat",2500],
 			["C_Boat_Civil_01_F",22000]
 		];
 	};

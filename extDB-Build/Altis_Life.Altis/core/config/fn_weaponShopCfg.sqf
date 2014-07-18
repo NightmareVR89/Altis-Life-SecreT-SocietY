@@ -321,7 +321,7 @@ switch(_shop) do
 						["NVGoggles",nil,2000],
 						["MineDetector",nil,2000],
 						["B_UAV_01_F",nil,4000],
-						["B_UavTerminal",nil,155000],
+						["B_UavTerminal",nil,15000],
 						["Chemlight_red",nil,30],
 						["Chemlight_yellow",nil,30],
 						["Chemlight_green",nil,30],
@@ -464,11 +464,11 @@ switch(_shop) do
 			{
 				["Billy Joe's Firearms",
 					[
-						["hgun_Rook40_F",nil,6500],
-						["hgun_Pistol_heavy_02_F",nil,9850],
-						["hgun_ACPC2_F",nil,11500],
-						["optic_ACO_grn_smg",nil,2500],
-						["V_Rangemaster_belt",nil,4900],
+						["hgun_Rook40_F",nil,1500],
+						["hgun_Pistol_heavy_02_F",nil,3250],
+						["hgun_ACPC2_F",nil,4000],
+						["optic_ACO_grn_smg",nil,800],
+						["V_Rangemaster_belt",nil,1600],
 						["16Rnd_9x21_Mag",nil,25],
 						["9Rnd_45ACP_Mag",nil,45],
 						["6Rnd_45ACP_Cylinder",nil,50],
@@ -561,7 +561,15 @@ switch(_shop) do
 						["16Rnd_9x21_Mag",nil,25],
 						["9Rnd_45ACP_Mag",nil,45],
 						["6Rnd_45ACP_Cylinder",nil,50],
-						["30Rnd_9x21_Mag",nil,75]
+						["30Rnd_9x21_Mag",nil,75],
+						["Binocular",nil,150],
+						["ItemGPS",nil,100],
+						["FirstAidKit",nil,150],
+						["NVGoggles",nil,2000],
+						["Chemlight_red",nil,300],
+						["Chemlight_yellow",nil,300],
+						["Chemlight_green",nil,300],
+						["Chemlight_blue",nil,300]
 					]
 				];
 			};
@@ -588,8 +596,14 @@ switch(_shop) do
 	{
 		["ADAC Mitarbeitershop",
 			[
+				["Binocular",nil,50],
+				["ItemGPS",nil,100],
 				["FirstAidKit",nil,150],
-				["ToolKit",nil,50]
+				["NVGoggles",nil,800],
+				["Chemlight_red",nil,30],
+				["Chemlight_yellow",nil,30],
+				["Chemlight_green",nil,30],
+				["Chemlight_blue",nil,30]
 			]
 		];	
 	};
