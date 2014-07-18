@@ -32,9 +32,8 @@ switch(_shop) do
 						["Binocular",nil,150],
 						["ToolKit",nil,250],
 						["FirstAidKit",nil,150],
-						["Medikit",nil,500],
-						["NVGoggles",nil,1200],
-						["B_FieldPack_ocamo",nil,3000]
+						["Medikit",nil,1],
+						["NVGoggles",nil,1200]
 					]
 				];
 			};

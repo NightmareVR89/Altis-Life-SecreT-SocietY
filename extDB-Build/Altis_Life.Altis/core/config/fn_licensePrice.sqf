@@ -33,10 +33,10 @@ switch (_type) do
 	case "iron": {9500};
 	case "copper": {6000};
 	case "cement": {6500};
-	case "mair": {15000};
+	case "mair": {1};
 	case "home": {30000};
 	case "adac": {5000};
 	case "froschbein": {1000}; //ÄNDERN BITTE!
 	case "froschlsd": {2000}; //ÄNDERN BITTE!
-	case "adacdrive": {1000};
+	case "adacdrive": {1};
 };
