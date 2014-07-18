@@ -3719,7 +3719,7 @@ class Mission
 					special="NONE";
 					id=218;
 					side="GUER";
-					vehicle="I_medic_F";
+					vehicle="O_medic_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -3734,7 +3734,7 @@ class Mission
 					special="NONE";
 					id=219;
 					side="GUER";
-					vehicle="I_medic_F";
+					vehicle="O_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="Arzt_16";
@@ -3748,7 +3748,7 @@ class Mission
 					special="NONE";
 					id=220;
 					side="GUER";
-					vehicle="I_medic_F";
+					vehicle="O_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="Arzt_15";
@@ -3762,7 +3762,7 @@ class Mission
 					special="NONE";
 					id=221;
 					side="GUER";
-					vehicle="I_medic_F";
+					vehicle="O_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="Arzt_14";
@@ -3776,7 +3776,7 @@ class Mission
 					special="NONE";
 					id=222;
 					side="GUER";
-					vehicle="I_medic_F";
+					vehicle="O_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="Arzt_13";
@@ -3790,7 +3790,7 @@ class Mission
 					special="NONE";
 					id=223;
 					side="GUER";
-					vehicle="I_medic_F";
+					vehicle="O_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="Arzt_12";
@@ -3804,7 +3804,7 @@ class Mission
 					special="NONE";
 					id=224;
 					side="GUER";
-					vehicle="I_medic_F";
+					vehicle="O_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="Arzt_11";
@@ -3818,7 +3818,7 @@ class Mission
 					special="NONE";
 					id=225;
 					side="GUER";
-					vehicle="I_medic_F";
+					vehicle="O_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="Arzt_10";
@@ -3832,7 +3832,7 @@ class Mission
 					special="NONE";
 					id=226;
 					side="GUER";
-					vehicle="I_medic_F";
+					vehicle="O_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="Arzt_9";
@@ -3846,7 +3846,7 @@ class Mission
 					special="NONE";
 					id=227;
 					side="GUER";
-					vehicle="I_medic_F";
+					vehicle="O_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="Arzt_8";
@@ -3860,7 +3860,7 @@ class Mission
 					special="NONE";
 					id=228;
 					side="GUER";
-					vehicle="I_medic_F";
+					vehicle="O_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="Arzt_7";
@@ -3874,7 +3874,7 @@ class Mission
 					special="NONE";
 					id=229;
 					side="GUER";
-					vehicle="I_medic_F";
+					vehicle="O_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="Arzt_6";
@@ -3888,7 +3888,7 @@ class Mission
 					special="NONE";
 					id=230;
 					side="GUER";
-					vehicle="I_medic_F";
+					vehicle="O_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="Arzt_5";
@@ -3902,7 +3902,7 @@ class Mission
 					special="NONE";
 					id=231;
 					side="GUER";
-					vehicle="I_medic_F";
+					vehicle="O_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="Arzt_4";
@@ -3916,7 +3916,7 @@ class Mission
 					special="NONE";
 					id=232;
 					side="GUER";
-					vehicle="I_medic_F";
+					vehicle="O_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="Arzt_3";
@@ -3930,7 +3930,7 @@ class Mission
 					special="NONE";
 					id=233;
 					side="GUER";
-					vehicle="I_medic_F";
+					vehicle="O_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="Arzt_2";
