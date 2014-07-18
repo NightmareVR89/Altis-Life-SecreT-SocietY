@@ -81,7 +81,7 @@ switch (_vehicle) do
 		_ret =
 		[
 			["fahrzeuge\suv_polizei.jpg","cop"],
-			["fahrzeuge\black_cop_suv","cop"],
+			["fahrzeuge\black_cop_suv.jpg","cop"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa","civ"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa","civ"],
 			["textures\fahrzeuge\med\suv_medik.paa","med"],
