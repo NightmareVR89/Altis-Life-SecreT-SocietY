@@ -82,7 +82,8 @@ switch (_vehicle) do
 			["fahrzeuge\black_cop_suv","cop"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa","civ"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa","civ"],
-			["textures\fahrzeuge\med\suv_medik.paa","med"]
+			["textures\fahrzeuge\med\suv_medik.paa","med"],
+			["fahrzeuge\suv_sek.paa","cop"]
 		];
 	};
 	
@@ -163,7 +164,8 @@ switch (_vehicle) do
 		_ret = 
 		[
 			["fahrzeuge\hunter_sek.jpg","cop","fahrzeuge\hunter_sek2.jpg"],
-			["fahrzeuge\mrap_main.jpg","cop","fahrzeuge\mrap_rear.jpg"]
+			["fahrzeuge\mrap_main.jpg","cop","fahrzeuge\mrap_rear.jpg"],
+			["fahrzeuge\hunter_sek_front1.paa","cop","fahrzeuge\hunter_sek_hinten1.paa"]
 		];
 	};
 	case "I_Heli_light_03_unarmed_F":

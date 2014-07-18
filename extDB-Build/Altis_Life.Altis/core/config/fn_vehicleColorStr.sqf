@@ -69,6 +69,7 @@ switch (_vehicle) do
 			case 2: {_color = "Silber";};
 			case 3: {_color = "Orange";};
 			case 4: {_color = "Medic";};
+			case 5: {_color = "SEK";};
 		};
 	};
 	
@@ -166,6 +167,7 @@ switch (_vehicle) do
 		{
 			case 0: {_color = "SEK"};
 			case 1: {_color = "Polizei"};
+			case 2: {_color = "SEK1"};
 		};
 	};
 	
