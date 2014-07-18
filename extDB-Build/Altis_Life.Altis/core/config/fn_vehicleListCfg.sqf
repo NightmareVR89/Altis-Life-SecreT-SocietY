@@ -187,7 +187,12 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["C_Offroad_01_F",12500]
+			["B_Heli_Light_01_F",5000],
+			["O_Heli_Light_02_unarmed_F",8000],
+			["C_Offroad_01_F",8000],
+			["C_SUV_01_F",8000],
+			["B_Truck_01_fuel_F",3000],
+			["B_Truck_01_Repair_F",3000]
 		];
 	};
 };

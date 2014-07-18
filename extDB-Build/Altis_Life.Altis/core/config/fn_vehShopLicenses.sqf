@@ -39,6 +39,7 @@ switch (life_veh_shop select 0) do
 			_ret = true;
 		};
 	};
+	case "adac": {_ret = license_adac_driver;};
 };
 
 _ret;

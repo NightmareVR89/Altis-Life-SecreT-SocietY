@@ -26,7 +26,7 @@ _query = switch(_side) do {
 	case west: {_returnCount = 10; format["SELECT playerid, name, copcash, copbank, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, blacklist FROM players WHERE playerid='%1'",_uid];};
 	case civilian: {_returnCount = 9; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear FROM players WHERE playerid='%1'",_uid];};
 	case independent: {_returnCount = 8; format["SELECT playerid, name, medcash, medbank, adminlevel, donatorlvl, med_licenses, mediclevel, med_gear FROM players WHERE playerid='%1'",_uid];};
-	case east: {_returnCount = 9; format["SELECT playerid, name, adaccash, adacbank, adminlevel, donatorlvl, civ_licenses, adaclevel, adac_gear FROM players WHERE playerid='%1'",_uid];};
+	case east: {_returnCount = 9; format["SELECT playerid, name, adaccash, adacbank, adminlevel, donatorlvl, adac_licenses, adaclevel, adac_gear FROM players WHERE playerid='%1'",_uid];};
 };
 
 waitUntil{sleep (random 0.3); !DB_Async_Active};

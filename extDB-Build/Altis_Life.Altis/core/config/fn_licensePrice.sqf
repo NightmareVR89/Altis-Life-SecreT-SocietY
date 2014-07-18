@@ -38,4 +38,5 @@ switch (_type) do
 	case "adac": {5000};
 	case "froschbein": {1000}; //ÄNDERN BITTE!
 	case "froschlsd": {2000}; //ÄNDERN BITTE!
+	case "adacdrive": {1000};
 };

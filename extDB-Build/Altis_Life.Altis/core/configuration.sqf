@@ -212,7 +212,8 @@ life_licenses =
 	["license_civ_home","civ"],
 	["license_civ_adac","civ"],
 	["license_civ_froschlsd","civ"],
-	["license_civ_froschbein","civ"]
+	["license_civ_froschbein","civ"],
+	["license_adac_driver","adac"]
 ];
 
 //Setup License Variables

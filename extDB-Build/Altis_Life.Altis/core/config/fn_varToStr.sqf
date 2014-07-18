@@ -94,4 +94,5 @@ switch (_var) do
 	case "license_civ_adac": {"ADAC Mitgliedschaft"};
 	case "license_civ_froschlsd": {"Froschquetscher"};
 	case "license_civ_froschbein": {"Gourmet-Koch"};
+	case "license_adac_driver": {"ADAC-Mitarbeiterausweis"};
 };
