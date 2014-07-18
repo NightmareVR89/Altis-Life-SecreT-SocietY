@@ -91,11 +91,11 @@ switch (_shop) do
 		if(license_civ_rebel) then
 		{
 			_return set[count _return,
-			["B_G_Offroad_01_armed_F",750000]];
+			["B_G_Offroad_01_armed_F",75000]];
 			_return set[count _return,
-			["O_G_Offroad_01_armed_F",750000]];
+			["O_G_Offroad_01_armed_F",75000]];
 			_return set[count _return,
-			["I_G_Offroad_01_armed_F",750000]];
+			["I_G_Offroad_01_armed_F",75000]];
 			_return set[count _return,
 			["O_MRAP_02_F",750000]];
 			_return set[count _return,
@@ -112,7 +112,7 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) > 2) then
 		{
 			_return set[count _return,
-			["B_MRAP_01_F",30000]];
+			["B_MRAP_01_F",5000]];
 		};
 	};
 	
