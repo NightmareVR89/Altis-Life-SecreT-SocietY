@@ -48,4 +48,10 @@ switch(true) do
 			if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
 		};
 	};
+	
+	case (playerSide == east && _uniform == "U_Rangemaster"):
+	{
+		player setObjectTextureGlobal [0,"textures\recruit_uniform_adac.paa"];
+		if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
+	};
 };
