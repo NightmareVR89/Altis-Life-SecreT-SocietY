@@ -25,7 +25,8 @@ switch (_vehicle) do
 			case 6: {_color = "Schwarz"};
 			case 7: {_color = "Taxi"};
 			case 8: {_color = "Polizei"};
-			case 9: {_color = "Notarzt"};
+			case 9: {_color = "Blau"};
+			case 10: {_color = "Notarzt"};
 		};
 	};
 	case "C_Hatchback_01_F":

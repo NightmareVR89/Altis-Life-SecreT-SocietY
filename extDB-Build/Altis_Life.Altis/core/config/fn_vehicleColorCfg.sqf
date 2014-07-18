@@ -52,6 +52,7 @@ switch (_vehicle) do
 			["#(ai,64,64,1)Fresnel(0.3,3)","fed"],
 			["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"],
 			["fahrzeuge\offroad_polizei.jpg","cop"],
+			["fahrzeuge\off_rc4.paa","cop"],
 			["textures\fahrzeuge\med\offroad_notarzt.paa","med"]
 
 		];
