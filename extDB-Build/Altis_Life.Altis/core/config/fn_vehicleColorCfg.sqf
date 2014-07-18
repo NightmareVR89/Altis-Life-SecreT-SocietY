@@ -165,6 +165,14 @@ switch (_vehicle) do
 		];
 	};
 	
+		case "B_Truck_01_mover_F":
+	{
+		_ret = 
+		[
+			["fahrzeuge\adac_hemett_01.paa","adac","fahrzeuge\adac_hemett_02.paa"]
+		];
+	};
+	
 // Hunter
 	case "B_MRAP_01_F":
 	{

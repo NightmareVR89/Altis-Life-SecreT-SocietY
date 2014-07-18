@@ -177,6 +177,13 @@ switch (_vehicle) do
 			case 2: {_color = "SEK1"};
 		};
 	};
+	case "B_Truck_01_mover_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "ADAC"};
+		};
+	};
 	
 	case "I_Truck_02_covered_F":
 	{
