@@ -28,6 +28,7 @@ switch (_vehicle) do
 			case 9: {_color = "Blau"};
 			case 10: {_color = "Notarzt"};
 			case 11: {_color = "ADAC"};
+			case 12: {_color = "ADAC1"};
 		};
 	};
 	case "C_Hatchback_01_F":
@@ -148,6 +149,7 @@ switch (_vehicle) do
 			case 14: {_color = "Medic"};
 			case 15: {_color = "Weiß"};
 			case 16: {_color = "ADAC"};
+			case 17: {_color = "ADAC1"};
 
 		};
 	};

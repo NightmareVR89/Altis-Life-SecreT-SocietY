@@ -54,7 +54,8 @@ switch (_vehicle) do
 			["fahrzeuge\offroad_polizei.jpg","cop"],
 			["fahrzeuge\off_rc4.paa","cop"],
 			["textures\fahrzeuge\med\offroad_notarzt.paa","med"],
-			["fahrzeuge\offroad_adac3.paa","adac"]
+			["fahrzeuge\offroad_adac3.paa","adac"],
+			["fahrzeuge\adac_offroad.paa","adac"]
 
 		];
 	};
@@ -145,7 +146,8 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa","reb"],
 			["textures\fahrzeuge\med\Notarzt_Hummingbird.paa","med"],
 			["fahrzeuge\police_heli.jpg","cop"],
-			["fahrzeuge\ADAC_Hummingbird.paa","adac"]
+			["fahrzeuge\ADAC_Hummingbird.paa","adac"],
+			["fahrzeuge\adac_Hummi.paa","adac"]
 		];
 	};
 	
