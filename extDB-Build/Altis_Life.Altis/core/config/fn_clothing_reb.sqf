@@ -18,20 +18,20 @@ switch (_filter) do
 	case 0:
 	{
 		[
-			["U_IG_Guerilla1_1",nil,5000],
-			["U_I_G_Story_Protagonist_F",nil,7500],
-			["U_I_G_resistanceLeader_F",nil,11500],
-			["U_IG_leader","Guerilla Leader",15340],
-			["U_O_SpecopsUniform_ocamo",nil,17500],
-			["U_O_PilotCoveralls",nil,15610],
-			["U_O_CombatUniform_ocamo",nil,50000],
-			["U_O_GhillieSuit",nil,50000],
-			["U_B_GhillieSuit",nil,50000],
-			["U_O_PilotCoveralls",nil,50000],
-			["U_O_CombatUniform_oucamo",nil,50000],
-			["U_O_SpecopsUniform_ocamo",nil,50000],
-			["U_I_CombatUniform",nil,50000],
-			["U_I_OfficerUniform",nil,50000]			
+			["U_IG_Guerilla1_1",nil,500],
+			["U_I_G_Story_Protagonist_F",nil,700],
+			["U_I_G_resistanceLeader_F",nil,4500],
+			["U_IG_leader","Guerilla Leader",1340],
+			["U_O_SpecopsUniform_ocamo",nil,1500],
+			["U_O_PilotCoveralls",nil,610],
+			["U_O_CombatUniform_ocamo",nil,830],
+			["U_O_GhillieSuit",nil,5000],
+			["U_B_GhillieSuit",nil,5000],
+			["U_O_PilotCoveralls",nil,4200],
+			["U_O_CombatUniform_oucamo",nil,3200],
+			["U_O_SpecopsUniform_ocamo",nil,6000],
+			["U_I_CombatUniform",nil,5200],
+			["U_I_OfficerUniform",nil,5300]			
 		];
 	};
 	
@@ -68,10 +68,10 @@ switch (_filter) do
 	case 3:
 	{
 		[
-			["V_TacVest_khk",nil,12500],
+			["V_TacVest_khk",nil,1850],
 			["V_BandollierB_cbr",nil,4500],
 			["V_HarnessO_brn",nil,7500],
-			["V_HarnessOGL_brn","Bombengürtel",100000]
+			["V_HarnessOGL_brn","Bombengürtel",28500]
 		];
 	};
 	
