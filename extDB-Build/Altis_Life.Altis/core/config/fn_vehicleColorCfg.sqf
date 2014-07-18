@@ -85,7 +85,7 @@ switch (_vehicle) do
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa","civ"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa","civ"],
 			["textures\fahrzeuge\med\suv_medik.paa","med"],
-			["fahrzeuge\suv_sek.paa","cop"],
+			["fahrzeuge\suv_sek.jpg","cop"],
 			["fahrzeuge\suv_adac1.paa","adac"],
 			["fahrzeuge\suv_adac1.paa","adac"],
 			["fahrzeuge\suv_adac1.paa","adac"]
