@@ -62,15 +62,18 @@ while {true} do {
 			if ((_vehicle_speed - _speed_limit) < 50) then {
 				//bis 20 km/h über dem limit
 				if ((_vehicle_speed - _speed_limit) < 20) then {			
-					[[getPlayerUID _driver,_driver getVariable["realname",name _driver],_BOUNTY_ID_1],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;				
+					["life_fnc_MP_packet",[0,[getPlayerUID _driver,_driver getVariable["realname",name _driver],_BOUNTY_ID_1],"life_fnc_wantedAdd",false,false]] spawn life_fnc_MPexec;
+					titleText[format["Du wurdest geblitzt! Hier sind maximal %1 km/h erlaubt und du bist %2 gefahren. Du wirst nun gesucht und musst $10 zahlen.",_speed_limit,round _vehicle_speed]],"PLAIN"];
 					sleep 5.0;
 				} else {
-					[[getPlayerUID _driver,_driver getVariable["realname",name _driver],_BOUNTY_ID_2],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;	
+					["life_fnc_MP_packet",[0,[getPlayerUID _driver,_driver getVariable["realname",name _driver],_BOUNTY_ID_2],"life_fnc_wantedAdd",false,false]] spawn life_fnc_MPexec;
+					titleText[format["Du wurdest geblitzt! Hier sind maximal %1 km/h erlaubt und du bist %2 gefahren. Du wirst nun gesucht und musst $100 zahlen.",_speed_limit,round _vehicle_speed]],"PLAIN"];
 					sleep 5.0;
 				};
 			} else {
-					[[getPlayerUID _driver,_driver getVariable["realname",name _driver],_BOUNTY_ID_3],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;	
-				sleep 5.0;
+					["life_fnc_MP_packet",[0,[getPlayerUID _driver,_driver getVariable["realname",name _driver],_BOUNTY_ID_3],"life_fnc_wantedAdd",false,false]] spawn life_fnc_MPexec;
+					titleText[format["Du wurdest geblitzt! Hier sind maximal %1 km/h erlaubt und du bist %2 gefahren. Du wirst nun gesucht und musst $1000 zahlen.",_speed_limit,round _vehicle_speed]],"PLAIN"];
+					sleep 5.0;
 			};
 		};
 		
