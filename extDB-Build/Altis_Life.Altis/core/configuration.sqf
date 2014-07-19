@@ -395,7 +395,7 @@ life_garage_sell =
 	["C_Hatchback_01_F",1500],
 	["C_Offroad_01_F", 600],
 	["B_G_Offroad_01_F",3500],
-	["C_SUV_01_F",2500],
+	["C_SUV_01_F",1200],
 	["C_Van_01_transport_F",5000],
 	["C_Hatchback_01_sport_F",4500],
 	["C_Van_01_fuel_F",2850],
