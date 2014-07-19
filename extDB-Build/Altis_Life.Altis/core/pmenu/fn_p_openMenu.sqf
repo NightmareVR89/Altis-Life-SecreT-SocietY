@@ -19,6 +19,7 @@ switch(playerSide) do
 	
 	case independent:
 	{
+		ctrlShow[2011,false];
 		ctrlShow[2012,false];
 	};
 	
@@ -29,6 +30,7 @@ switch(playerSide) do
 
 	case east:
 	{
+		ctrlShow[2011,false];
 		ctrlShow[2012,false];
 	};
 };
@@ -40,9 +42,3 @@ if(__GETC__(life_adminlevel) < 1) then
 };
 
 [] call life_fnc_p_updateMenu;
-
-if(__GETC__(life_adminlevel) < 1) then
-{
-	ctrlShow[2020,false];
-	ctrlShow[2021,false];
-};
