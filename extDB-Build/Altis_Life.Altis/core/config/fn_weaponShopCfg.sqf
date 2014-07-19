@@ -31,9 +31,13 @@ switch(_shop) do
 						["ItemGPS",nil,100],
 						["Binocular",nil,150],
 						["ToolKit",nil,250],
-						["FirstAidKit",nil,150],
+						["FirstAidKit",nil,50],
 						["Medikit",nil,1],
-						["NVGoggles",nil,1200]
+						["NVGoggles",nil,1200],
+						["Chemlight_red",nil,10],
+						["Chemlight_yellow",nil,10],
+						["Chemlight_green",nil,10],
+						["Chemlight_blue",nil,10]
 					]
 				];
 			};
@@ -48,18 +52,18 @@ switch(_shop) do
 			{
 				["Anwaerter Shop",
 					[
-						["hgun_P07_snds_F","Stun Pistol",500],
-						["16Rnd_9x21_Mag",nil,50],
+						["hgun_P07_snds_F","Taser Pistole",500],
+						["16Rnd_9x21_Mag","Taser Magazin",30],
 						["Binocular",nil,150],
 						["ItemGPS",nil,100],
 						["ToolKit",nil,250],
-						["FirstAidKit",nil,150],
-						["Medikit",nil,100],
+						["FirstAidKit",nil,100],
+						["Medikit",nil,50],
 						["NVGoggles",nil,2000],
-						["Chemlight_red",nil,300],
-						["Chemlight_yellow",nil,300],
-						["Chemlight_green",nil,300],
-						["Chemlight_blue",nil,300]
+						["Chemlight_red",nil,30],
+						["Chemlight_yellow",nil,30],
+						["Chemlight_green",nil,30],
+						["Chemlight_blue",nil,30]
 					]
 				];
 			};
@@ -77,8 +81,12 @@ switch(_shop) do
 						["arifle_MXC_Black_F",nil,3200],
 						["arifle_MX_F",nil,2000],
 						["arifle_MX_Black_F",nil,2000],
+						["30Rnd_65x39_caseless_mag",nil,80],
+						["30Rnd_65x39_caseless_mag_Tracer","30Rnd 65x39 Leuchtspur",80],
 						["arifle_MX_SW_F",nil,3500],
 						["arifle_MX_SW_Black_F",nil,3500],
+						["100Rnd_65x39_caseless_mag",nil,60],
+						["100Rnd_65x39_caseless_mag_Tracer","100Rnd 65x39 Leuchtspur",60],
 						["arifle_MX_GL_F",nil,5000], // Mit Granatenwerfer für Smoke und Licht
 						["acc_pointer_IR",nil,800],
 						["acc_flashlight",nil,300],
@@ -94,10 +102,6 @@ switch(_shop) do
 						["1Rnd_SmokeOrange_Grenade_shell",nil,150],
 						["SmokeShellGreen","Tränengas",300],
 						["HandGrenade",nil,200],
-						["30Rnd_65x39_caseless_mag",nil,80],
-						["30Rnd_65x39_caseless_mag_Tracer",nil,80],
-						["100Rnd_65x39_caseless_mag",nil,60],
-						["100Rnd_65x39_caseless_mag_Tracer",nil,60],
 						["Binocular",nil,150],
 						["ItemGPS",nil,100],
 						["ToolKit",nil,250],
@@ -153,7 +157,7 @@ switch(_shop) do
 						["ItemGPS",nil,100],
 						["ToolKit",nil,250],
 						["FirstAidKit",nil,150],
-						["Medikit",nil,500],
+						["Medikit",nil,200],
 						["NVGoggles",nil,1500],
 						["Chemlight_red",nil,30],
 						["Chemlight_yellow",nil,30],
@@ -221,8 +225,8 @@ switch(_shop) do
 			{
 				["Polizei Chef",
 					[
-						["SMG_01_F","Taser Rifle",800],
-						["hgun_P07_snds_F","Stun Pistol",500],
+						["SMG_01_F","Taser SMG",800],
+						["hgun_P07_snds_F","Taser Pistole",500],
 						["arifle_SDAR_F","Unterwasser",1500],
 						["Binocular",nil,150],
 						["ItemGPS",nil,100],
@@ -240,8 +244,8 @@ switch(_shop) do
 			{
 				["SEK",
 					[
-						["SMG_01_F","Taser Rifle",20000],
-						["hgun_P07_snds_F","Stun Pistol",2000],
+						["SMG_01_F","Taser SMG",800],
+						["hgun_P07_snds_F","Taser Pistole",500],
 						["arifle_MX_F",nil,40000],
 						["arifle_MXM_F",nil,50000],
 						["srifle_EBR_F",nil,70000],
@@ -268,8 +272,8 @@ switch(_shop) do
 			{
 				["Anti Terror",   //Hier sind alle Waffen Ohne aufsätze inkl Muni
 					[
-						["SMG_01_F","Taser Rifle",800],
-						["hgun_P07_snds_F","Stun Pistol",500],
+						["SMG_01_F","Taser SMG",800],
+						["hgun_P07_snds_F","Taser Pistole",500],
 						["hgun_ACPC2_snds_F",nil,800],
 						["hgun_Pistol_heavy_01_F",nil,1000],
 						["hgun_Pistol_heavy_02_F",nil,1200],
@@ -360,7 +364,7 @@ switch(_shop) do
 			{
 				["Rookie Cop Shop",
 					[
-						["hgun_P07_snds_F","Stun Pistol",500],
+						["hgun_P07_snds_F","Taser Pistole",500],
 						["Binocular",nil,150],
 						["ItemGPS",nil,100],
 						["ToolKit",nil,250],
