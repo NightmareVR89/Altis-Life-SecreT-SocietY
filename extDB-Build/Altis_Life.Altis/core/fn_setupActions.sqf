@@ -20,7 +20,7 @@ switch (playerSide) do
 	case independent:
 	{
 		//Ziehe Spieler weg
-		life_actions = [player addAction["<t color='#FF0000'>Verwundeten ziehen</t>",life_fnc_dragAction,"",0,false,false,"",'playerSide == independent && (!alive cursorTarget) && !(cursorTarget getVariable["dragging",true])']];
+		life_actions = [player addAction["<t color='#FF0000'>Verwundeten ziehen</t>",life_fnc_dragAction,"",0,false,false,"",'playerSide == independent && (!alive cursorTarget) && (cursorTarget getVariable["dragging",false])']];
 		//Lasse Spieler los
 		life_actions = life_actions + [player addAction["<t color='#FF0000'>Verwundeten loslassen</t>",life_fnc_stopDragging,"",0,false,false,"",'playerSide == independent && (!alive cursorTarget) && (cursorTarget getVariable["dragging",true])']];
 	};
