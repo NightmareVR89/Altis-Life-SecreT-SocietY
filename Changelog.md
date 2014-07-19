@@ -1,16 +1,22 @@
-Serverchangelog
+ï»¿Changelog 19.07.2014
+- Durch die gloreiche FÃ¼hrung des Staates Altis konnten mit den NachbarlÃ¤ndern einige VertrÃ¤ge geschlossen werden. Dadurch wird sich unsere Wirtschaft stabilisieren und die Preise humaner weden.
+- Aus einem unserer NachbarlÃ¤nder haben wir zudem grÃ¶ÃŸere Mengen an Absperrungen, VerkehrshÃ¼tchen und SandsÃ¤cken bekommen. Ich denke die Polizei und der ADAC kÃ¶nnen das gut gebrauchen. 
+
+
+
+Serverchangelog - EinfÃ¼hrung
 
 Wir haben die alte Altis Life Version komplett verworfen und sind direkt mit Altis Life 3.1.4 von Tonic eingestiegen.
 Insgesamt gibt es zum jetzigen Zeitpunkt folgende Features:
 
 - Eine neue schnellere und stabilere Methode der Datenbankanbindung, genannt extDB (https://github.com/Torndeco/extdb).
 - Cheatern wird nun mit Tonic's Anticheat unter dem Codenamen "SpyGlass" der Gar aus gemacht.
-- Permanente Gang's mit Gangvermögen - Gründe deine ewig währende Gang, erobere und halte deine Verstecke um ohne Lizenzen den maximalen Profit zu machen.
-- 3 Ganggebiete mit jeweils einer Möglichkeit der Verarbeitung von Heroin, Kokain oder Mariuhana ohne Lizenz.
-- Häuser kaufbar über die Aktionstaste.
-- Sanitäter sind nun unterwegs und können euch das Leben retten.
-- Die Staatsbank hat nun kein Geld mehr, sondern setzt auf Goldbarren, die Ihr bei einem der gekennzeichneten Heler versetzen könnt. (Aber vorsicht: Die Goldbarren gelten als illegaler Besitz und können nur einigermaßen sicher in Häusern gespeichert werden. Die Polizei kann dein Haus allerdings solange du online bist durchsuchen und die Barren finden!)
-- Der ADAC hat auch auf Altis seine Außenstellen gegründet und hilft bei Autopannen aller Art.
-- Mitarbeiter des ADAC können kleinere Fahrzeuge auf ihren Lastwagen aufladen und sie dann bei der nächsten Werkstatt reparieren. Die fällige Rechnung wird natürlich günstiger, sofern der Geschädigte eine Mitgliedschaft hat. Diese kann auch gerne an der Unfallstelle beantragt werden.
-- Da Polizisten, medizinisches Personal und auch die Mitarbeiter des ADAC's nicht immer nur beruflich unterwegs sind, haben sie zu den vom Staate Altis gegebenen Konten ein eigenes ziviles Konto, auf das sie nur im zivilen Leben zugreifen können.
-- Vorsicht ist beim rücksichtslosen Fahren geboten, der Staat Altis hat viel Geld in Blitzer investiert!
+- Permanente Gang's mit GangvermÃ¶gen - GrÃ¼nde deine ewig wÃ¤hrende Gang, erobere und halte deine Verstecke um ohne Lizenzen den maximalen Profit zu machen.
+- 3 Ganggebiete mit jeweils einer MÃ¶glichkeit der Verarbeitung von Heroin, Kokain oder Mariuhana ohne Lizenz.
+- HÃ¤user kaufbar Ã¼ber die Aktionstaste.
+- SanitÃ¤ter sind nun unterwegs und kÃ¶nnen euch das Leben retten.
+- Die Staatsbank hat nun kein Geld mehr, sondern setzt auf Goldbarren, die Ihr bei einem der gekennzeichneten Hehler versetzen kÃ¶nnt. (Aber vorsicht: Die Goldbarren gelten als illegaler Besitz und kÃ¶nnen nur einigermaÃŸen sicher in HÃ¤usern gespeichert werden. Die Polizei kann dein Haus allerdings solange du online bist durchsuchen und die Barren finden!)
+- Der ADAC hat auch auf Altis seine AuÃŸenstellen gegrÃ¼ndet und hilft bei Autopannen aller Art.
+- Mitarbeiter des ADAC kÃ¶nnen kleinere Fahrzeuge auf ihren Lastwagen aufladen und sie dann bei der nÃ¤chsten Werkstatt reparieren. Die fÃ¤llige Rechnung wird natÃ¼rlich gÃ¼nstiger, sofern der GeschÃ¤digte eine Mitgliedschaft hat. Diese kann auch gerne an der Unfallstelle beantragt werden.
+- Da Polizisten, medizinisches Personal und auch die Mitarbeiter des ADAC's nicht immer nur beruflich unterwegs sind, haben sie zu den vom Staate Altis gegebenen Konten ein eigenes ziviles Konto, auf das sie nur im zivilen Leben zugreifen kÃ¶nnen.
+- Vorsicht ist beim rÃ¼cksichtslosen Fahren geboten, der Staat Altis hat viel Geld in Blitzer investiert!
