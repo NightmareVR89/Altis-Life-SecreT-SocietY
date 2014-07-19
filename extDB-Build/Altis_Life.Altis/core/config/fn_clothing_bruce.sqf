@@ -130,22 +130,22 @@ switch (_filter) do
 		[
 			["B_OutdoorPack_blk",nil,500],
 			["B_OutdoorPack_tan",nil,500],
-			["B_AssaultPack_cbr",nil,2000],
-			["B_AssaultPack_blk",nil,2000],
-			["B_AssaultPack_sgg",nil,2000],
-			["B_AssaultPack_rgr",nil,2000],
-			["B_AssaultPack_khk",nil,2000],
-			["B_Kitbag_sgg",nil,6000],
-			["B_Kitbag_cbr",nil,6000],
-			["B_FieldPack_cbr",nil,8000],
-			["B_FieldPack_blk",nil,8000],
-			["B_TacticalPack_oli",nil,10000],			
-			["B_Bergen_sgg",nil,10000],
-			["B_Bergen_blk",nil,10000],
-			["B_Bergen_rgr",nil,10000],
-			["B_Carryall_cbr",nil,20000],
-			["B_Carryall_oli",nil,20000],
-			["B_Carryall_khk",nil,20000]
+			["B_AssaultPack_cbr",nil,1650],
+			["B_AssaultPack_blk",nil,1650],
+			["B_AssaultPack_sgg",nil,1650],
+			["B_AssaultPack_rgr",nil,1650],
+			["B_AssaultPack_khk",nil,1650],
+			["B_Kitbag_sgg",nil,2900],
+			["B_Kitbag_cbr",nil,2900],
+			["B_FieldPack_cbr",nil,3700],
+			["B_FieldPack_blk",nil,3700],
+			["B_TacticalPack_oli",nil,6000],			
+			["B_Bergen_sgg",nil,4300],
+			["B_Bergen_blk",nil,4300],
+			["B_Bergen_rgr",nil,4300],
+			["B_Carryall_cbr",nil,5000],
+			["B_Carryall_oli",nil,5000],
+			["B_Carryall_khk",nil,5000]
 		];
 	};
 };
