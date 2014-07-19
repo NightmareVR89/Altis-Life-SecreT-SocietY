@@ -33,8 +33,6 @@ _radar = _this select 0;
 _radar_radius = _this select 1;
 _speed_limit = _this select 2;
 
-
-_radar_radiusneu = 10;
 //Bounty IDs 
 _BOUNTY_ID_1 = "1213"; //bis 20 km/h über dem limit
 _BOUNTY_ID_2 = "1214"; //bis 50 km/h über dem limit
@@ -47,7 +45,7 @@ _SPEED_MESSUREMENT_FACTOR = 0.85;
 //HINWEIS: -in der aktuellen Version werden nur positive Geschwindigkeiten gewertet. (e.G. -1 kmh wird nicht geblitzt).
 while {true} do {
     _pos = getPosATL _radar;
-    _targets = _pos nearEntities ["Car",_radar_radiusneu];
+    _targets = _pos nearEntities ["Car",_radar_radius];
 
 	//Geschwindigkeit messen bei allen und Verstoesse melden.
 	{
@@ -64,14 +62,14 @@ while {true} do {
 			if ((_vehicle_speed - _speed_limit) < 50) then {
 				//bis 20 km/h über dem limit
 				if ((_vehicle_speed - _speed_limit) < 20) then {
-					[[0,_driver,_speed_limit,_vehicle_speed],"life_fnc_geblitzt",_driver,false] spawn life_fnc_MP;
+					[["0",_driver,_speed_limit,_vehicle_speed],"life_fnc_geblitzt",_driver,false,false] spawn life_fnc_MP;
 					sleep 5.0;
 				} else {
-					[[1,_driver,_speed_limit,_vehicle_speed],"life_fnc_geblitzt",_driver,false] spawn life_fnc_MP;
+					[["1",_driver,_speed_limit,_vehicle_speed],"life_fnc_geblitzt",_driver,false,false] spawn life_fnc_MP;
 					sleep 5.0;
 				};
 			} else {
-					[[2,_driver,_speed_limit,_vehicle_speed],"life_fnc_geblitzt",_driver,false] spawn life_fnc_MP;
+					[["2",_driver,_speed_limit,_vehicle_speed],"life_fnc_geblitzt",_driver,false,false] spawn life_fnc_MP;
 					sleep 5.0;
 			};
 		};
