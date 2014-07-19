@@ -111,7 +111,7 @@ switch (_shop) do
 			_return set[count _return,
 			["C_Offroad_01_F",500]];
 			_return set[count _return,
-			["C_Hatchback_01_F",1600]];
+			["C_Hatchback_01_sport_F",2600]];
 		};
 		if(__GETC__(life_coplevel) > 1) then
 		{
