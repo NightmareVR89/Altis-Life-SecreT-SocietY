@@ -124,15 +124,15 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["B_Heli_Light_01_F",60000],
-			["O_Heli_Light_02_unarmed_F",120000]
+			["B_Heli_Light_01_F",30000],
+			["O_Heli_Light_02_unarmed_F",60000]
 		];
 	};
 	
 	case "cop_air":
 	{
 		_return set[count _return,
-		["B_Heli_Light_01_F",40000]];
+		["B_Heli_Light_01_F",10000]];
 		if(__GETC__(life_coplevel) > 2) then
 		{
 			_return set[count _return,

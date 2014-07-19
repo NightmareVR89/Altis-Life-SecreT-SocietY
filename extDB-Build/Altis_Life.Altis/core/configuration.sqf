@@ -363,7 +363,7 @@ life_garage_prices =
 	["C_Van_01_fuel_F",730],
 	["I_Heli_Transport_02_F",1500],
 	["C_Van_01_box_F",930],
-	["I_Truck_02_transport_F",1000],
+	["I_Truck_02_transport_F",500],
 	["I_Truck_02_covered_F",1400],
 	["B_Truck_01_transport_F",1600],
 	["B_Truck_01_box_F", 1800],
@@ -375,8 +375,8 @@ life_garage_prices =
 	["B_Boat_Transport_01_F",450],
 	["C_Boat_Civil_01_police_F",2500],
 	["B_Boat_Armed_01_minigun_F",4000],
-	["B_SDV_01_F",25000],
-	["B_MRAP_01_F",7500]
+	["B_SDV_01_F",5000],
+	["B_MRAP_01_F",4500]
 ];
 __CONST__(life_garage_prices,life_garage_prices);
 
