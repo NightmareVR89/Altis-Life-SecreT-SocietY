@@ -272,6 +272,7 @@ class Life_Client_Core
 		class removeWeapons {};
 		class zoneCreator {};
 		class demoChargeTimer {};
+		class geblitzt {};
 	};
 	
 	class ADAC
