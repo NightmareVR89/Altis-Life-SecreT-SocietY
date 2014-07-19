@@ -68,7 +68,7 @@ life_eat_CatShark = 60;
 life_eat_Rabbit = 20;
 life_eat_Apple = 5;
 life_eat_turtlesoup = 62;
-life_eat_donuts = 3;
+life_eat_donuts = 5;
 
 /*
 *****************************
@@ -89,7 +89,7 @@ __CONST__(life_paycheck_period,5); //Five minutes
 life_cash = 0;
 __CONST__(life_impound_car,100);
 __CONST__(life_impound_boat,160);
-__CONST__(life_impound_air,300);
+__CONST__(life_impound_air,250);
 life_istazed = false;
 life_my_gang = ObjNull;
 
