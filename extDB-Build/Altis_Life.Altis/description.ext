@@ -103,7 +103,7 @@ class CfgSounds
 	class PhotoSound
 	{
 		name="PhotoSound";
-		sound[] = {"\camera_shot.ogg", 1.0, 1};
+		sound[] = {"\sounds\camera_shot.ogg", 1.0, 1};
 		titles[] = {0, " "};
 	};
 };
