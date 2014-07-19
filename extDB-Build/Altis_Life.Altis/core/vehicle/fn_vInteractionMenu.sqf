@@ -35,7 +35,20 @@ life_vInact_curTarget = _curTarget;
 _Btn1 ctrlSetText localize "STR_vInAct_Repair";
 _Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairTruck;";
 
-if("ToolKit" in (items player)) then {_Btn1 ctrlEnable true;} else {_Btn1 ctrlEnable false;};
+if("ToolKit" in (items player)) then {
+	if(playerSide in [civilian,independent]) then {
+		if({side _x == east} count playableUnits < 1) then {
+			_Btn1 ctrlEnable true;
+		} else {
+			_Btn1 ctrlEnable false;
+		};
+	};
+	if(playerSide in [west,east]) then {
+		_Btn1 ctrlEnable true;
+	};
+} else {
+	_Btn1 ctrlEnable false;
+};
 
 if(playerSide == west) then {
 	_Btn2 ctrlSetText localize "STR_vInAct_Registration";
