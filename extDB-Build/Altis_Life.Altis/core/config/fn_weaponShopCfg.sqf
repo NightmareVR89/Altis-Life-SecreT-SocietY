@@ -587,6 +587,7 @@ switch(_shop) do
 				["Binocular",nil,150],
 				["ItemGPS",nil,100],
 				["FirstAidKit",nil,150],
+				["ToolKit",nil,200],
 				["NVGoggles",nil,2000],
 				["Chemlight_red",nil,300],
 				["Chemlight_yellow",nil,300],
@@ -598,17 +599,24 @@ switch(_shop) do
 	
 	case "adac":
 	{
-		["ADAC Mitarbeitershop",
-			[
-				["Binocular",nil,50],
-				["ItemGPS",nil,100],
-				["FirstAidKit",nil,150],
-				["NVGoggles",nil,800],
-				["Chemlight_red",nil,30],
-				["Chemlight_yellow",nil,30],
-				["Chemlight_green",nil,30],
-				["Chemlight_blue",nil,30]
-			]
-		];	
+		switch (true) do 
+		{
+			case (playerSide != east): {"Du bist kein Mitarbeiter des ADAC"};
+			default {
+				["ADAC Mitarbeitershop",
+					[
+						["ToolKit",nil,1],
+						["Binocular",nil,50],
+						["ItemGPS",nil,100],
+						["FirstAidKit",nil,150],
+						["NVGoggles",nil,800],
+						["Chemlight_red",nil,30],
+						["Chemlight_yellow",nil,30],
+						["Chemlight_green",nil,30],
+						["Chemlight_blue",nil,30]
+					]
+				];
+			};
+		};
 	};
 };
