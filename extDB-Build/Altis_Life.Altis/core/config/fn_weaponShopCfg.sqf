@@ -743,10 +743,10 @@ switch(_shop) do
 				["FirstAidKit",nil,150],
 				["ToolKit",nil,200],
 				["NVGoggles",nil,2000],
-				["Chemlight_red",nil,300],
-				["Chemlight_yellow",nil,300],
-				["Chemlight_green",nil,300],
-				["Chemlight_blue",nil,300]
+				["Chemlight_red",nil,30],
+				["Chemlight_yellow",nil,30],
+				["Chemlight_green",nil,30],
+				["Chemlight_blue",nil,30]
 			]
 		];
 	};
@@ -764,10 +764,10 @@ switch(_shop) do
 						["ItemGPS",nil,100],
 						["FirstAidKit",nil,150],
 						["NVGoggles",nil,800],
-						["Chemlight_red",nil,30],
-						["Chemlight_yellow",nil,30],
-						["Chemlight_green",nil,30],
-						["Chemlight_blue",nil,30]
+						["Chemlight_red",nil,5],
+						["Chemlight_yellow",nil,5],
+						["Chemlight_green",nil,5],
+						["Chemlight_blue",nil,5]
 					]
 				];
 			};
