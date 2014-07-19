@@ -53,12 +53,12 @@ switch (_shop) do
 	{
 		_return = 
 		[
-			["B_Quadbike_01_F",800],
-			["C_Hatchback_01_F",3000],
-			["C_Offroad_01_F",8000],
-			["C_SUV_01_F",9300],
-			["C_Hatchback_01_sport_F",12000],
-			["C_Van_01_transport_F",17000]
+			["B_Quadbike_01_F",500],
+			["C_Hatchback_01_F",1500],
+			["C_Offroad_01_F",4000],
+			["C_SUV_01_F",6200],
+			["C_Hatchback_01_sport_F",7800],
+			["C_Van_01_transport_F",9200]
 		];
 	};
 	
