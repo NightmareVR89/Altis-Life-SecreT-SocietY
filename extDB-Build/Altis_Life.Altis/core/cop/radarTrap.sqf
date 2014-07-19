@@ -51,7 +51,7 @@ while {true} do {
 	{
 		_vehicle_speed = round(speed _x * _SPEED_MESSUREMENT_FACTOR);
 		_driver = driver _x;
-		if ((_vehicle_speed > _speed_limit) && (side _driver != west) && (side _driver != independent)) then {
+		if ((_vehicle_speed > _speed_limit) && !(side _driver in [west,independent])) then {
 			//Text anzeigen lassen, sobald ein Spieler geblitzt wurde
 		
 			//Radarfallensound abspielen
