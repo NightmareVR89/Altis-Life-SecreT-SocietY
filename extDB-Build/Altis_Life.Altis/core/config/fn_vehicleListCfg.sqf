@@ -207,7 +207,7 @@ switch (_shop) do
 			["C_SUV_01_F",1],
 			["B_Truck_01_fuel_F",1],
 			["B_Truck_01_Repair_F",1],
-			["B_Truck_01_mover_F",1]
+			["B_Truck_01_transport_F",1]
 		];
 	};
 };

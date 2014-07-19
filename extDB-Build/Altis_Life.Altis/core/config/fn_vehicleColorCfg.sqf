@@ -165,7 +165,7 @@ switch (_vehicle) do
 		];
 	};
 	
-		case "B_Truck_01_mover_F":
+		case "B_Truck_01_transport_F":
 	{
 		_ret = 
 		[

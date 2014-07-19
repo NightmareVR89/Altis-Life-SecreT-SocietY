@@ -178,7 +178,7 @@ switch (_vehicle) do
 			case 3: {_color = "SEK2"};
 		};
 	};
-	case "B_Truck_01_mover_F":
+	case "B_Truck_01_transport_F":
 	{
 		switch (_index) do
 		{
