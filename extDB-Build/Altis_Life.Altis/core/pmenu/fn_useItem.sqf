@@ -89,17 +89,26 @@ switch (true) do
 	
 	case (_item == "roadcone"):
 	{
-		[] spawn life_fnc_roadcone;
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_roadcone;
+		};
 	};
 	
 	case (_item == "sandbag"):
 	{
-		[] spawn life_fnc_sandbag;
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_sandbag;
+		};
 	};
 	
 	case (_item == "barrier"):
-	{
-		[] spawn life_fnc_barrier;
+	{	
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_barrier;
+		};
 	};
 	default
 	{
