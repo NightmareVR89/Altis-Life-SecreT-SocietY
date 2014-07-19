@@ -1,5 +1,5 @@
 ﻿Changelog 19.07.2014
-- Durch die gloreiche Führung des Staates Altis konnten mit den Nachbarländern einige Verträge geschlossen werden. Dadurch wird sich unsere Wirtschaft stabilisieren und die Preise humaner weden.
+- Durch die gloreiche Führung des Staates Altis konnten mit den Nachbarländern einige Verträge geschlossen werden. Dadurch wird sich unsere Wirtschaft stabilisieren und die Preise humaner werden.
 - Aus einem unserer Nachbarländer haben wir zudem größere Mengen an Absperrungen, Verkehrshütchen und Sandsäcken bekommen. Ich denke die Polizei und der ADAC können das gut gebrauchen.
 - Es wurden Manipulationen an den Blitzern entdeckt und hoffentlich behoben. Jeder Bürger von Altis bekommt nun pro Geschwindigkeitsübertretung nur noch 1 Ticket.
 - Der staatliche Telefonanbieter Altis Telekom konnte durch das Geld der kaputten Blitzer sein Handynetz ausbauen, sodass nun dem ADAC eine Nachricht gesendet werden kann.
