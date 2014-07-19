@@ -87,6 +87,20 @@ switch (true) do
 		[] spawn life_fnc_pickAxeUse;
 	};
 	
+	case (_item == "roadcone"):
+	{
+		[] spawn life_fnc_roadcone;
+	};
+	
+	case (_item == "sandbag"):
+	{
+		[] spawn life_fnc_sandbag;
+	};
+	
+	case (_item == "barrier"):
+	{
+		[] spawn life_fnc_barrier;
+	};
 	default
 	{
 		hint "Das ist kein benutzbarer Gegenstand.";

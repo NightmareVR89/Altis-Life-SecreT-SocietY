@@ -70,6 +70,9 @@ switch (_mode) do
 			case "froschlsd": {"life_inv_froschlsd"};
 			case "froschbein": {"life_inv_froschbein"};
 			case "frosch": {"life_inv_frosch"};
+			case "roadcone": {"life_inv_roadcone"};
+			case "barrier": {"life_inv_barrier"};
+			case "sandbag": {"life_inv_sandbag"};
 		};
 	};
 	
@@ -131,6 +134,9 @@ switch (_mode) do
 			case "life_inv_froschlsd": {"froschlsd"};
 			case "life_inv_froschbein": {"froschbein"};
 			case "life_inv_frosch": {"frosch"};
+			case "life_inv_sandbag": {"sandbag"};
+			case "life_inv_barrier": {"barrier"};
+			case "life_inv_roadcone": {"roadcone"};
 		};
 	};
 };

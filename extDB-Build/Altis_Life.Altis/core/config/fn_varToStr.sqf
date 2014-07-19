@@ -66,6 +66,9 @@ switch (_var) do
 	case "life_inv_froschlsd": {"Frosch-LSD"};
 	case "life_inv_froschbein": {"Froschschenkel"};
 	case "life_inv_frosch": {"Frösche"};
+	case "life_inv_roadcone": {"Verkehrshütchen"};
+	case "life_inv_barrier": {"Holzbarriere"};
+	case "life_inv_sandbag": {"Sandsackmauer"};
 	
 	//License Block
 	case "license_civ_driver": {"Führerschein"};

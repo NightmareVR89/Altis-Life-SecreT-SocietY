@@ -61,5 +61,8 @@ switch (_item) do
 	case "froschbein": {2};
 	case "handschellen": {1};
 	case "kabelb": {1};
+	case "roadcone": {1};
+	case "barrier": {2};
+	case "sandbag": {2};
 	default {1};
 };

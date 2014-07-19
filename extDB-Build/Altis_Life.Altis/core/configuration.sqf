@@ -179,7 +179,10 @@ life_inv_items =
 	"life_inv_kabelb",
 	"life_inv_frosch",
 	"life_inv_froschlsd",
-	"life_inv_froschbein"
+	"life_inv_froschbein",
+	"life_inv_roadcone",
+	"life_inv_barrier",
+	"life_inv_sandbag"
 ];
 
 //Setup variable inv vars.
@@ -269,7 +272,10 @@ sell_array =
 	["handschellen",50],
 	["kabelb",50],
 	["froschlsd",65],
-	["froschbein",40]
+	["froschbein",40],
+	["roadcone",10],
+	["barrier",20],
+	["sandbag",30]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -302,7 +308,10 @@ buy_array =
 	["storagebig",1500000],
 	["handschellen",60],
 	["kabelb",60],
-	["froschbein",60]
+	["froschbein",60],
+	["roadcone",20],
+	["barrier",30],
+	["sandbag",40]
 ];
 __CONST__(buy_array,buy_array);
 

@@ -123,6 +123,9 @@ class Life_Client_Core
 		class removeHeadgear {};
 		class removeWeaponAction {};
 		class froschFang {};
+		class packupRoadcone {};
+		class packupRoadbarrier {};
+		class packupSandbag {};
 	};
 	
 	class Housing
@@ -378,6 +381,9 @@ class Life_Client_Core
 		class blastingCharge {};
 		class defuseKit {};
 		class storageBox {};
+		class roadcone {};
+		class barrier {};
+		class sandbag {};
 	};
 	
 	class Dialog_Controls
