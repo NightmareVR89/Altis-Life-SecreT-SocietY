@@ -139,6 +139,9 @@ switch (_filter) do
 			_ret set[count _ret,["V_Chestrig_khk",nil,2500]];
 			_ret set[count _ret,["V_Chestrig_oli",nil,2500]];
 			_ret set[count _ret,["V_Chestrig_rgr",nil,2500]];
+			_ret set[count _ret,["V_RebreatherB",nil,5000]];
+			_ret set[count _ret,["V_RebreatherIR",nil,5000]];
+			_ret set[count _ret,["V_RebreatherIA",nil,5000]];
 		};
 		if(__GETC__(life_coplevel) > 3) then
 		{
