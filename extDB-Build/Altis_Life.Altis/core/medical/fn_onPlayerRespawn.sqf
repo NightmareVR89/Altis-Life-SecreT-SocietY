@@ -14,6 +14,8 @@ life_corpse = _corpse;
 private["_containers"];
 _containers = nearestObjects[getPosATL _corpse,["WeaponHolderSimulated"],5]; //Fetch list of containers (Simulated = weapons)
 {deleteVehicle _x;} foreach _containers; //Delete the containers.
+_containers = nearestObjects[getPosATL _corpse,["GroundWeaponHolder"],5];
+{deleteVehicle _x;} foreach _containers;
 
 //Set some vars on our new body.
 _unit setVariable["restrained",FALSE,TRUE];

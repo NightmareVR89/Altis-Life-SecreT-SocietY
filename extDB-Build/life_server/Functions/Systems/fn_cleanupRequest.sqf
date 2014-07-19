@@ -18,6 +18,10 @@ while {true} do {
 		if(count _containers > 0) then {
 			{deleteVehicle _x;} foreach _containers; //Delete the containers.
 		};
+		_containers = nearestObjects[_client,["GroundWeaponHolder"],5];
+		if(count _containers > 0) then {
+			{deleteVehicle _x;} foreach _containers; //Delete the containers.
+		};
 		deleteVehicle _client; //Get rid of the corpse.
 	};
 	
