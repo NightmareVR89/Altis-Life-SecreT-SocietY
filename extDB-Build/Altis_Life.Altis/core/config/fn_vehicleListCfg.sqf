@@ -37,8 +37,7 @@ switch (_shop) do
 	{
 		_return = [
 			["B_Heli_Light_01_F",1],
-			["O_Heli_Light_02_unarmed_F",1],
-			["I_Heli_Transport_02_F",1]
+			["O_Heli_Light_02_unarmed_F",1]
 		];
 	};
 	
@@ -46,8 +45,7 @@ switch (_shop) do
 	{
 		_return = [
 			["B_Heli_Light_01_F",1],
-			["O_Heli_Light_02_unarmed_F",1],
-			["I_Heli_Transport_02_F",1]
+			["O_Heli_Light_02_unarmed_F",1]
 		];
 	};
 	
