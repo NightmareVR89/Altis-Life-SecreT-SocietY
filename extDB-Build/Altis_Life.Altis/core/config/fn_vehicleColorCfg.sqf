@@ -34,8 +34,8 @@ switch (_vehicle) do
 			[_path + "hatchback_01_ext_sport04_co.paa","civ"],
 			[_path + "hatchback_01_ext_sport05_co.paa","civ"],
 			[_path + "hatchback_01_ext_sport06_co.paa","civ"],
-			["#(ai,64,64,1)Fresnel(1.3,7)","cop"],
-			["fahrzeuge\hatchback_polizei.jpg","cop"]
+			["#(ai,64,64,1)Fresnel(1.3,7)","civ"],
+			["fahrzeuge\hatchback_Polizei.paa","cop"]
 		];
 	};
 		
