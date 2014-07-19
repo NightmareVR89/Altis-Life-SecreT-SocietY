@@ -115,7 +115,6 @@ switch (_shop) do
 		_return set[count _return,
 		["C_SUV_01_F",3500]];
 		};
-	};
 		if(__GETC__(life_coplevel) > 3) then
 		{
 			_return set[count _return,
