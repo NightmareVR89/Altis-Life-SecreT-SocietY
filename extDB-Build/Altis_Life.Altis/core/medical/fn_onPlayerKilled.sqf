@@ -39,8 +39,11 @@ _unit spawn
 	disableSerialization;
 	_RespawnBtn = ((findDisplay 7300) displayCtrl 7302);
 	_Timer = ((findDisplay 7300) displayCtrl 7301);
-	
-	_maxTime = time + (life_respawn_timer * 60);
+	if({side _x == independent} count playableUnits < 1) then {
+		_maxTime = time + 30;
+	} else {
+		_maxTime = time + (life_respawn_timer * 60);
+	};
 	_RespawnBtn ctrlEnable false;
 	waitUntil {_Timer ctrlSetText format["Respawn möglich in: %1",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; 
 	round(_maxTime - time) <= 0 OR isNull _this};
