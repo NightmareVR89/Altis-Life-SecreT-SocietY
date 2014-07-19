@@ -105,28 +105,20 @@ switch (_shop) do
 	
 	case "cop_car":
 	{
-		_return set[count _return,
-		["C_Offroad_01_F",500]];
 		
+		if(__GETC__(life_coplevel) > 0) then
+		{
+			_return set[count _return,
+			["C_Offroad_01_F",500]];
+			_return set[count _return,
+			["C_Hatchback_01_F",1600]];
+		};
 		if(__GETC__(life_coplevel) > 1) then
 		{
 			_return set[count _return,
-			["C_Offroad_01_F",500]];
+			["C_SUV_01_F",2400]];
 			_return set[count _return,
-			["C_SUV_01_F",800]];
-			_return set[count _return,
-			["C_Hatchback_01_F",1200]];
-		};
-		if(__GETC__(life_coplevel) > 2) then
-		{
-			_return set[count _return,
-			["B_MRAP_01_F",2500]];
-			_return set[count _return,
-			["C_Offroad_01_F",500]];
-			_return set[count _return,
-			["C_SUV_01_F",800]];
-			_return set[count _return,
-			["C_Hatchback_01_F",1200]];
+			["B_MRAP_01_F",3500]];
 		};
 	};
 	case "civ_air":
