@@ -17,6 +17,13 @@ switch (playerSide) do
 		//Selbstmordattentäter
 		life_actions = life_actions + [player addAction["<t color='#FF0000'>Bombengürtel aktivieren</t>",life_fnc_suicideBomb,"",0,false,false,"",' vest player == "V_HarnessOGL_brn" && alive player && playerSide == civilian && !life_istazed && !(player getVariable "restrained") && !(player getVariable "Escorting") && !(player getVariable "transporting")']];
 	};
+	case independent:
+	{
+		//Ziehe Spieler weg
+		life_actions = [player addAction["<t color='#FF0000'>Verwundeten ziehen</t>",life_fnc_dragAction,"",0,false,false,"",'playerSide == independent && (!alive cursorTarget) && !(cursorTarget getVariable["dragging"])']];
+		//Lasse Spieler los
+		life_actions = life_actions + [player addAction["<t color='#FF0000'>Verwundeten loslassen</t>",life_fnc_stopDragging,"",0,false,false,"",'playerSide == independent && (!alive cursorTarget) && (cursorTarget getVariable["dragging",true])']];
+	};
 };
 
 /*

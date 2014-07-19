@@ -126,6 +126,8 @@ class Life_Client_Core
 		class packupRoadcone {};
 		class packupRoadbarrier {};
 		class packupSandbag {};
+		class dragAction {};
+		class stopDragging {};
 	};
 	
 	class Housing
