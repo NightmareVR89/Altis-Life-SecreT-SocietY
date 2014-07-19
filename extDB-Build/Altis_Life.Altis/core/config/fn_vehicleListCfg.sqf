@@ -145,13 +145,13 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) > 2) then
 		{
 			_return set[count _return,
-			["B_Heli_Transport_01_F",20000]];
+			["B_Heli_Transport_01_F",120000]];
 			_return set[count _return,
-			["I_Heli_Transport_02_F",20000]];
+			["I_Heli_Transport_02_F",120000]];
 			_return set[count _return,
-			["B_MRAP_01_hmg_F",750000]];
+			["I_Heli_light_03_unarmed_F",175000]];
 			_return set[count _return,
-			["I_Heli_light_03_unarmed_F",200000]];
+			["B_MRAP_01_hmg_F",1750000]];
 		};
 	};
 	
@@ -162,13 +162,13 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) > 2) then
 		{
 			_return set[count _return,
-			["B_Heli_Transport_01_F",200000]];
+			["B_Heli_Transport_01_F",120000]];
 			_return set[count _return,
-			["I_Heli_Transport_02_F",200000]];
+			["I_Heli_Transport_02_F",120000]];
 			_return set[count _return,
-			["B_MRAP_01_hmg_F",750000]];
+			["I_Heli_light_03_unarmed_F",175000]];
 			_return set[count _return,
-			["I_Heli_light_03_unarmed_F",750000]];
+			["B_MRAP_01_hmg_F",1750000]];
 		};
 	};
 	
@@ -177,7 +177,10 @@ switch (_shop) do
 		_return =
 		[
 			["C_Rubberboat",2500],
-			["C_Boat_Civil_01_F",22000]
+			["C_Boat_Civil_01_F",22000],
+			["B_SDV_01_F",10000],
+			["O_SDV_01_F",10000],
+			["I_SDV_01_F",10000]
 		];
 	};
 
@@ -190,9 +193,9 @@ switch (_shop) do
 			["O_Boat_Transport_01_F",3000],
 			["C_Boat_Civil_01_police_F",20000],
 			["B_Boat_Armed_01_minigun_F",75000],
-			["B_SDV_01_F",100000],
-			["O_SDV_01_F",100000],
-			["I_SDV_01_F",100000]
+			["B_SDV_01_F",15000],
+			["O_SDV_01_F",15000],
+			["I_SDV_01_F",15000]
 		];
 	};
 	
