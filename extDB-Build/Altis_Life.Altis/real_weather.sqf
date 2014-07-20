@@ -60,7 +60,7 @@
 	_timeforecast = _mintime;
 
 	// we check the skiptime for 10 seconds
-	_skiptime = _timeratio * 0.000278 * 5;
+	_skiptime = _timeratio * 0.000278 * 20;
 
 	setdate _startingdate;
 	switch(toUpper(_startingweather)) do {

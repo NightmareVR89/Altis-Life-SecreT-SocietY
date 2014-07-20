@@ -30,17 +30,11 @@ switch (_filter) do
 		};
 		if(__GETC__(life_coplevel) > 3) then
 		{
-		_ret set[count _ret,["U_B_CombatUniform_mcam",nil,550]];
+		_ret set[count _ret,["U_B_CombatUniform_mcam_tshirt",nil,550]];
 		};
 		if(__GETC__(life_coplevel) > 4) then
 		{
 		_ret set[count _ret,["U_B_SpecopsUniform_sgg",nil,550]];
-		};
-		if(__GETC__(life_coplevel) > 4) then
-		{
-		_ret set[count _ret,["U_I_G_Story_Protagonist_F",nil,550]];
-		_ret set[count _ret,["U_B_CombatUniform_mcam_tshirt",nil,550]];
-		_ret set[count _ret,["U_KerryBody",nil,550]];
 		};
 	};
 	
@@ -110,9 +104,6 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) > 6) then      // SEK
 		{
 			_ret set[count _ret,["G_Lowprofile",nil,30]];
-		};
-		if(__GETC__(life_coplevel) > 7) then     // Anti Terror
-		{
 			_ret set[count _ret,["G_Combat",nil,55]];
 		};
 	};
@@ -207,9 +198,6 @@ switch (_filter) do
 			_ret set[count _ret,["B_Bergen_sgg",nil,5000]];
 			_ret set[count _ret,["B_Bergen_blk",nil,5000]];
 			_ret set[count _ret,["B_Bergen_rgr",nil,5000]];
-		};
-		if(__GETC__(life_coplevel) > 7) then
-		{
 			_ret set[count _ret,["B_Carryall_cbr",nil,9000]];
 			_ret set[count _ret,["B_Carryall_oli",nil,9000]];
 			_ret set[count _ret,["B_Carryall_khk",nil,9000]];

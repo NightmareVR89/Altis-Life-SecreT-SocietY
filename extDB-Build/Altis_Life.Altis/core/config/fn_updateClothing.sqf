@@ -35,11 +35,11 @@ switch(true) do
 	{
 		if(__GETC__(life_coplevel) > 2) then
 		{
-			player setObjectTextureGlobal  [0, "textures\cop_officer.paa"];
+			player setObjectTextureGlobal  [0, "textures\cop_lieutenant.paa"];
 			if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
 		};
 	};
-	case (playerSide == west && _uniform == "U_B_CombatUniform_mcam"):
+	case (playerSide == west && _uniform == "U_B_CombatUniform_mcam_tshirt"):
 	{
 		if(__GETC__(life_coplevel) > 3) then
 		{
