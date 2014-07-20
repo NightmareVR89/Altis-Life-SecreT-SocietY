@@ -56,11 +56,11 @@
 	// Do not edit below
 	/////////////////////////////////////////////////////////////////
 	
-	if(_mintime > _maxtime) exitwith {hint format["Real weather: Max time: %1 can no be higher than Min time: %2", _maxtime, _mintime];};
+	if(_mintime > _maxtime) exitwith {hint format["Echtzeit Wetter: Max Zeit: %1 kann nicht höher sein als min: %2", _maxtime, _mintime];};
 	_timeforecast = _mintime;
 
 	// we check the skiptime for 10 seconds
-	_skiptime = _timeratio * 0.000278 * 10;
+	_skiptime = _timeratio * 0.000278 * 5;
 
 	setdate _startingdate;
 	switch(toUpper(_startingweather)) do {
@@ -79,7 +79,7 @@
 		default {
 			// clear
 			wcweather = [0, 0, 0, [random 3, random 3, true], date];
-			diag_log "Real weather: wrong starting weather";
+			diag_log "Echtzeit Wetter: falsches start Wetter";
 		};
 	};
 
