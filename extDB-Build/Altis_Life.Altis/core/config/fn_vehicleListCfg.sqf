@@ -116,14 +116,16 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) > 1) then
 		{
 			_return set[count _return,
-			["C_SUV_01_F",2400]];
-			_return set[count _return,
-			["B_MRAP_01_F",3500]];
+			["C_SUV_01_F",3400]];
 		};
 		if(__GETC__(life_coplevel) > 2) then
 		{
 			_return set[count _return,
-			["B_MRAP_01_hmg_F",1750000]];
+			["B_MRAP_01_F",5500]];
+		if(__GETC__(life_coplevel) > 3) then
+		{
+			_return set[count _return,
+			["B_MRAP_01_hmg_F",2950000]];
 		};
 	};
 	case "civ_air":

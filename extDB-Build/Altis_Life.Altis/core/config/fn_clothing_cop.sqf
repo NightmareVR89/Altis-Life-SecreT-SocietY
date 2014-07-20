@@ -43,10 +43,11 @@ switch (_filter) do
 	{
 		if(__GETC__(life_coplevel) > 1) then          //Anwärter
 		{
-			_ret set[count _ret,["H_Booniehat_mcamo",nil,120]];
+			_ret set[count _ret,["H_Beret_blk_POLICE",nil,520]];
 		};
 		if(__GETC__(life_coplevel) > 2) then         //Kommissar
 		{
+			_ret set[count _ret,["H_Booniehat_mcamo",nil,120]];
 			_ret set[count _ret,["H_MilCap_mcamo",nil,100]];
 		};
 		if(__GETC__(life_coplevel) > 3) then        //HauptKommissar
@@ -63,7 +64,7 @@ switch (_filter) do
 		};
 		if(__GETC__(life_coplevel) > 6) then      // SEK
 		{
-			_ret set[count _ret,["H_Beret_blk_POLICE",nil,120]];
+			_ret set[count _ret,["H_Watchcap_sgg",nil,120]];
 		};
 		if(__GETC__(life_coplevel) > 7) then     // Anti Terror
 		{
@@ -122,6 +123,9 @@ switch (_filter) do
 			_ret set[count _ret,["V_BandollierB_khk",nil,800]];
 			_ret set[count _ret,["V_BandollierB_cbr",nil,800]];
 			_ret set[count _ret,["V_BandollierB_blk",nil,800]];
+			_ret set[count _ret,["V_RebreatherB",nil,2200]];
+			_ret set[count _ret,["V_RebreatherIR",nil,2200]];
+			_ret set[count _ret,["V_RebreatherIA",nil,2200]];
 		};
 		if(__GETC__(life_coplevel) > 2) then
 		{
@@ -129,9 +133,6 @@ switch (_filter) do
 			_ret set[count _ret,["V_Chestrig_khk",nil,1500]];
 			_ret set[count _ret,["V_Chestrig_oli",nil,1500]];
 			_ret set[count _ret,["V_Chestrig_rgr",nil,1500]];
-			_ret set[count _ret,["V_RebreatherB",nil,2200]];
-			_ret set[count _ret,["V_RebreatherIR",nil,2200]];
-			_ret set[count _ret,["V_RebreatherIA",nil,2200]];
 		};
 		if(__GETC__(life_coplevel) > 3) then
 		{

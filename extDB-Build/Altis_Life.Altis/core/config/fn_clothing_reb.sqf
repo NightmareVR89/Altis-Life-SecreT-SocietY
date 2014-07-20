@@ -80,7 +80,10 @@ switch (_filter) do
 			["V_TacVest_khk",nil,1850],
 			["V_BandollierB_cbr",nil,4500],
 			["V_HarnessO_brn",nil,7500],
-			["V_HarnessOGL_brn","Bombengürtel",28500]
+			["V_HarnessOGL_brn","Bombengürtel",28500],
+			["V_RebreatherB",nil,3200],
+			["V_RebreatherIR",nil,3200],
+			["V_RebreatherIA",nil,3200]
 		];
 	};
 	
