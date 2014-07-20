@@ -22,6 +22,9 @@ switch (_filter) do
 		_ret set[count _ret,["U_B_Protagonist_VR","Trainingsanzug",25]];
 		_ret set[count _ret,["U_O_Protagonist_VR","Trainingsanzug",25]];
 		_ret set[count _ret,["U_I_Protagonist_VR","Trainingsanzug",25]];
+		_ret set[count _ret,["U_I_Wetsuit","Tauchanzug",150]];
+		_ret set[count _ret,["U_B_Wetsuit","Tauchanzug",150]];
+		_ret set[count _ret,["U_O_Wetsuit","Tauchanzug",150]];
 		_ret set[count _ret,["U_B_CombatUniform_mcam","Anwaerter",25]];
 		if(__GETC__(life_coplevel) > 1) then
 		{
@@ -38,6 +41,10 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) > 4) then
 		{
 		_ret set[count _ret,["U_B_SpecopsUniform_sgg","Polizei Chef",1550]];
+		};
+		if(__GETC__(life_coplevel) > 5) then
+		{
+		_ret set[count _ret,["U_KerryBody","Kampfanzug",2550]];
 		};
 	};
 	
