@@ -59,7 +59,7 @@ switch (_vehicle) do
 
 		];
 	};
-		case "C_Offroad_01_repair_f":
+		case "C_Offroad_01_repair_F":
 	{
 		_ret = 
 		[
