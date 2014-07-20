@@ -107,7 +107,6 @@ switch (_shop) do
 	
 	case "cop_car":
 	{
-		
 		if(__GETC__(life_coplevel) > 0) then
 		{
 			_return set[count _return,
