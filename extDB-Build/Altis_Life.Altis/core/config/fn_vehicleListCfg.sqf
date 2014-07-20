@@ -35,8 +35,7 @@ switch (_shop) do
 	
 	case "med_air_hs": 
 	{
-		_return = 
-		[
+		_return = [
 			["B_Heli_Light_01_F",1],
 			["O_Heli_Light_02_unarmed_F",1]
 		];
@@ -44,8 +43,7 @@ switch (_shop) do
 	
 	case "med_air_fix": 
 	{
-		_return = 
-		[
+		_return = [
 			["B_Heli_Light_01_F",1],
 			["O_Heli_Light_02_unarmed_F",1]
 		];
@@ -107,6 +105,7 @@ switch (_shop) do
 	
 	case "cop_car":
 	{
+		
 		if(__GETC__(life_coplevel) > 0) then
 		{
 			_return set[count _return,
@@ -117,16 +116,14 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) > 1) then
 		{
 			_return set[count _return,
-			["C_SUV_01_F",3400]];
+			["C_SUV_01_F",2400]];
+			_return set[count _return,
+			["B_MRAP_01_F",3500]];
 		};
 		if(__GETC__(life_coplevel) > 2) then
 		{
 			_return set[count _return,
-			["B_MRAP_01_F",5500]];
-		if(__GETC__(life_coplevel) > 3) then
-		{
-			_return set[count _return,
-			["B_MRAP_01_hmg_F",2950000]];
+			["B_MRAP_01_hmg_F",1750000]];
 		};
 	};
 	case "civ_air":
@@ -205,7 +202,6 @@ switch (_shop) do
 			["O_Heli_Light_02_unarmed_F",1],
 			["I_Heli_Transport_02_F",1],
 			["C_Offroad_01_F",1],
-			["C_Offroad_01_repair_F",1], // Neuer Rep Offroad
 			["C_SUV_01_F",1],
 			["B_Truck_01_fuel_F",1],
 			["B_Truck_01_Repair_F",1],
