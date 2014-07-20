@@ -19,10 +19,10 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
-		_ret set[count _ret,["U_B_CombatUniform_mcam","Anwaerter",25]];
 		_ret set[count _ret,["U_B_Protagonist_VR","Trainingsanzug",25]];
 		_ret set[count _ret,["U_O_Protagonist_VR","Trainingsanzug",25]];
 		_ret set[count _ret,["U_I_Protagonist_VR","Trainingsanzug",25]];
+		_ret set[count _ret,["U_B_CombatUniform_mcam","Anwaerter",25]];
 		if(__GETC__(life_coplevel) > 1) then
 		{
 		_ret set[count _ret,["U_Rangemaster","Kommissar",350]];
