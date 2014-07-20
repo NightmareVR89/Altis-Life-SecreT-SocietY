@@ -142,11 +142,22 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) > 2) then
 		{
 			_return set[count _return,
-			["B_Heli_Transport_01_F",23000]];
+			["I_Heli_Transport_02_F",22000]];
+		};
+		if(__GETC__(life_coplevel) > 3) then
+		{
 			_return set[count _return,
-			["I_Heli_Transport_02_F",230000]];
+			["B_Heli_Transport_01_F",223000]];
+		};
+		if(__GETC__(life_coplevel) > 4) then
+		{
 			_return set[count _return,
-			["I_Heli_light_03_unarmed_F",32500]];
+			["I_Heli_light_03_unarmed_F",174500]];
+		};
+		if(__GETC__(life_coplevel) > 5) then
+		{
+			_return set[count _return,
+			["B_MRAP_01_hmg_F",1750000]];
 		};
 	};
 	
@@ -157,11 +168,21 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) > 2) then
 		{
 			_return set[count _return,
-			["B_Heli_Transport_01_F",19000]];
-			_return set[count _return,
 			["I_Heli_Transport_02_F",19000]];
+
+		};
+		if(__GETC__(life_coplevel) > 3) then
+		{
 			_return set[count _return,
-			["I_Heli_light_03_unarmed_F",275000]];
+			["B_Heli_Transport_01_F",215000]];
+		};
+		if(__GETC__(life_coplevel) > 4) then
+		{
+			_return set[count _return,
+			["I_Heli_light_03_unarmed_F",162500]];
+		};
+		if(__GETC__(life_coplevel) > 5) then
+		{
 			_return set[count _return,
 			["B_MRAP_01_hmg_F",1450000]];
 		};
@@ -181,17 +202,33 @@ switch (_shop) do
 
 	case "cop_ship":
 	{
-		_return =
-		[
-			["B_Boat_Transport_01_F",500],
-			["I_Boat_Transport_01_F",500],
-			["O_Boat_Transport_01_F",500],
-			["C_Boat_Civil_01_police_F",2400],
-			["B_Boat_Armed_01_minigun_F",175000],
-			["B_SDV_01_F",6500],
-			["O_SDV_01_F",6500],
-			["I_SDV_01_F",6500]
-		];
+		
+		_return set[count _return,
+		["B_Boat_Transport_01_F",500]];
+		_return set[count _return,
+		["I_Boat_Transport_01_F",500]];
+		_return set[count _return,
+		["O_Boat_Transport_01_F",500]];
+		if(__GETC__(life_coplevel) > 1) then
+		{
+			_return set[count _return,
+			["C_Boat_Civil_01_police_F",3500]];
+
+		};
+		if(__GETC__(life_coplevel) > 2) then
+		{
+			_return set[count _return,
+			["B_SDV_01_F",5000]];
+			_return set[count _return,
+			["O_SDV_01_F",5000]];
+			_return set[count _return,
+			["I_SDV_01_F",5000]];
+		};
+		if(__GETC__(life_coplevel) > 3) then
+		{
+			_return set[count _return,
+			["B_Boat_Armed_01_minigun_F",162500]];
+		};
 	};
 	
 	case "adac":
