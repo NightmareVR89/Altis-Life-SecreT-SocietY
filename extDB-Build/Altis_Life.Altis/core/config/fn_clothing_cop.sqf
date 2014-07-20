@@ -26,15 +26,21 @@ switch (_filter) do
 		};
 		if(__GETC__(life_coplevel) > 2) then
 		{
-		_ret set[count _ret,["U_B_CombatUniform_mcam_tshirt",nil,550]];
+		_ret set[count _ret,["U_B_CombatUniform_mcam_vest",nil,550]];
 		};
 		if(__GETC__(life_coplevel) > 3) then
 		{
-		_ret set[count _ret,["U_KerryBody",nil,550]];
+		_ret set[count _ret,["U_B_CombatUniform_mcam",nil,550]];
+		};
+		if(__GETC__(life_coplevel) > 4) then
+		{
+		_ret set[count _ret,["U_B_SpecopsUniform_sgg",nil,550]];
 		};
 		if(__GETC__(life_coplevel) > 4) then
 		{
 		_ret set[count _ret,["U_I_G_Story_Protagonist_F",nil,550]];
+		_ret set[count _ret,["U_B_CombatUniform_mcam_tshirt",nil,550]];
+		_ret set[count _ret,["U_KerryBody",nil,550]];
 		};
 	};
 	

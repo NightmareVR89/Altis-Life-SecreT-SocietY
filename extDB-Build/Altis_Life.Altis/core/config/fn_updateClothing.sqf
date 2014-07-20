@@ -31,6 +31,30 @@ switch(true) do
 			if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
 		};
 	};
+	case (playerSide == west && _uniform == "U_B_CombatUniform_mcam_vest"):
+	{
+		if(__GETC__(life_coplevel) > 2) then
+		{
+			player setObjectTextureGlobal  [0, "textures\cop_officer.paa"];
+			if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
+		};
+	};
+	case (playerSide == west && _uniform == "U_B_CombatUniform_mcam"):
+	{
+		if(__GETC__(life_coplevel) > 3) then
+		{
+			player setObjectTextureGlobal  [0, "textures\cop_captain.paa"];
+			if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
+		};
+	};
+	case (playerSide == west && _uniform == "U_B_SpecopsUniform_sgg"):
+	{
+		if(__GETC__(life_coplevel) > 4) then
+		{
+			player setObjectTextureGlobal  [0, "textures\cop_officer_donator.paa"];
+			if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
+		};
+	};
 	
 	case (playerSide == independent && _uniform == "U_O_OfficerUniform_ocamo"):
 	{
