@@ -60,7 +60,16 @@ switch (_filter) do
 			["G_Sport_BlackWhite",nil,20],
 			["G_Squares",nil,10],
 			["G_Lowprofile",nil,30],
-			["G_Combat",nil,55]
+			["G_Combat",nil,55],
+			["G_Balaclava_lowprofile",nil,500],
+			["G_Balaclava_combat",nil,500],
+			["G_Balaclava_oli",nil,500],
+			["G_Bandanna_aviator",nil,400],
+			["G_Bandanna_beast",nil,400],
+			["G_Bandanna_tan",nil,400],
+			["G_Bandanna_sport",nil,400],
+			["G_Bandanna_oli",nil,400],
+			["G_Bandanna_shades",nil,400]
 		];
 	};
 	

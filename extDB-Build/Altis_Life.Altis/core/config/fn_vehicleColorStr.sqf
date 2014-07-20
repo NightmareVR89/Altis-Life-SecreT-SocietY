@@ -31,6 +31,14 @@ switch (_vehicle) do
 			case 12: {_color = "ADAC1"};
 		};
 	};
+		case "C_Offroad_01_repair_f" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "ADAC2";};
+			case 1: {_color = "ADAC3";};
+		};
+	};
 	case "C_Hatchback_01_F":
 	{
 		switch (_index) do

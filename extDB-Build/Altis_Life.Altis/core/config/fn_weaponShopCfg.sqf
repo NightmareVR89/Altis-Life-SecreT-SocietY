@@ -316,6 +316,7 @@ switch(_shop) do
 						["srifle_DMR_01_F",nil,12000],         //Mittlere Sniper
 						["10Rnd_762x51_Mag",nil,150],
 						["srifle_GM6_F",nil,12000],       //Mittelschwere Sniper
+						["srifle_GM6_camo_F",nil,12000],	// Neue Skin für Mittelschwere Sniper
 						["5Rnd_127x108_Mag",nil,200],
 						["5Rnd_127x108_APDS_Mag",nil,350],
 						["acc_pointer_IR",nil,800],
@@ -393,9 +394,11 @@ switch(_shop) do
 						["srifle_DMR_01_F",nil,12000],         //Mittlere Sniper
 						["10Rnd_762x51_Mag",nil,150],
 						["srifle_GM6_F",nil,12000],       //Mittelschwere Sniper
+						["srifle_GM6_camo_F",nil,12000],// Neue Skin für Mittelschwere Sniper
 						["5Rnd_127x108_Mag",nil,200],
 						["5Rnd_127x108_APDS_Mag",nil,350],
 						["srifle_LRR_F",nil,15000],       	 //Schwere Sniper
+						["srifle_LRR_camo_F",nil,15000],	// Neue Skin für Schwere Sniper
 						["7Rnd_408_Mag",nil,375],
 						["acc_pointer_IR",nil,800],
 						["acc_flashlight",nil,300],
@@ -434,7 +437,9 @@ switch(_shop) do
 						["SMG_02_F",nil,1500],
 						["srifle_EBR_F",nil,8000],
 						["srifle_GM6_F",nil,10000],
+						["srifle_GM6_camo_F",nil,12000],
 						["srifle_LRR_F",nil,15000],
+						["srifle_LRR_camo_F",nil,15000],
 						["srifle_DMR_01_F",nil,12000],
 						["arifle_MXC_F",nil,3200],
 						["arifle_MXC_Black_F",nil,3200],

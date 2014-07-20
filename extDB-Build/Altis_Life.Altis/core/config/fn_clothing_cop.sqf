@@ -93,6 +93,8 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) > 4) then        //Einsatzleiter
 		{
 			_ret set[count _ret,["G_Aviator",nil,75]];
+			_ret set[count _ret,["G_Bandanna_blk",nil,800]];  //Neue Gescihtsmaske
+			_ret set[count _ret,["G_Balaclava_blk",nil,1500]]; //Neue Gesichtsmaske
 		};
 		if(__GETC__(life_coplevel) > 5) then       //PolizeiChef
 		{
