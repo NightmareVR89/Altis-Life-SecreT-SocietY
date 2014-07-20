@@ -35,7 +35,8 @@ switch (_shop) do
 	
 	case "med_air_hs": 
 	{
-		_return = [
+		_return = 
+		[
 			["B_Heli_Light_01_F",1],
 			["O_Heli_Light_02_unarmed_F",1]
 		];
@@ -43,7 +44,8 @@ switch (_shop) do
 	
 	case "med_air_fix": 
 	{
-		_return = [
+		_return = 
+		[
 			["B_Heli_Light_01_F",1],
 			["O_Heli_Light_02_unarmed_F",1]
 		];
