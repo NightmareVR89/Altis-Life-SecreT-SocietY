@@ -65,9 +65,6 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) > 6) then      // SEK
 		{
 			_ret set[count _ret,["H_Watchcap_sgg",nil,120]];
-		};
-		if(__GETC__(life_coplevel) > 7) then     // Anti Terror
-		{
 			_ret set[count _ret,["H_Beret_02",nil,120]];
 			_ret set[count _ret,["H_Beret_Colonel",nil,120]];
 		};
