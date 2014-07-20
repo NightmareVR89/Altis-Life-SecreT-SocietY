@@ -20,6 +20,9 @@ switch (_filter) do
 	case 0:
 	{
 		_ret set[count _ret,["U_B_CombatUniform_mcam","Anwaerter",25]];
+		_ret set[count _ret,["U_B_Protagonist_VR","Trainingsanzug",25]];
+		_ret set[count _ret,["U_O_Protagonist_VR","Trainingsanzug",25]];
+		_ret set[count _ret,["U_I_Protagonist_VR","Trainingsanzug",25]];
 		if(__GETC__(life_coplevel) > 1) then
 		{
 		_ret set[count _ret,["U_Rangemaster","Kommissar",350]];
@@ -102,6 +105,7 @@ switch (_filter) do
 		{
 			_ret set[count _ret,["G_Lowprofile",nil,30]];
 			_ret set[count _ret,["G_Combat",nil,55]];
+			_ret set[count _ret,["G_Goggles_VR","VR Brille",550]];
 		};
 	};
 	
