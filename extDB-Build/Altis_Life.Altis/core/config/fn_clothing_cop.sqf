@@ -19,22 +19,22 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
-		_ret set[count _ret,["U_B_CombatUniform_mcam","Cop Uniform",25]];
+		_ret set[count _ret,["U_B_CombatUniform_mcam","Anwaerter",25]];
 		if(__GETC__(life_coplevel) > 1) then
 		{
-		_ret set[count _ret,["U_Rangemaster",nil,350]];
+		_ret set[count _ret,["U_Rangemaster","Kommissar",350]];
 		};
 		if(__GETC__(life_coplevel) > 2) then
 		{
-		_ret set[count _ret,["U_B_CombatUniform_mcam_vest",nil,550]];
+		_ret set[count _ret,["U_B_CombatUniform_mcam_vest","Hauptkommissar",550]];
 		};
 		if(__GETC__(life_coplevel) > 3) then
 		{
-		_ret set[count _ret,["U_B_CombatUniform_mcam_tshirt",nil,550]];
+		_ret set[count _ret,["U_B_CombatUniform_mcam_worn","Einsatzleiter",550]];
 		};
 		if(__GETC__(life_coplevel) > 4) then
 		{
-		_ret set[count _ret,["U_B_SpecopsUniform_sgg",nil,550]];
+		_ret set[count _ret,["U_B_SpecopsUniform_sgg","Polizei Chef",1550]];
 		};
 	};
 	

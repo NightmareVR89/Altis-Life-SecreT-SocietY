@@ -406,6 +406,8 @@ switch(_shop) do
 						["optic_Hamr",nil,1000],
 						["optic_ACO_grn",nil,500],
 						["optic_SOS",nil,2700],        //Einfaches Sniper visier
+						["optic_LRPS",nil,5000],
+						["optic_Nightstalker",nil,15000],
 						["SmokeShellGreen","Tränengas",300],
 						["HandGrenade_Stone","Flashbang",500],   // Flashbang
 						["HandGrenade",nil,200],

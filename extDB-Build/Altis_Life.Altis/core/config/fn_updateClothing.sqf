@@ -23,23 +23,23 @@ switch(true) do
 			if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
 		};
 	};
-		case (playerSide == west && _uniform == "U_Rangemaster"):
+		case (playerSide == west && _uniform == "U_B_CombatUniform_mcam_vest"):
 	{
 		if(__GETC__(life_coplevel) > 1) then
-		{
-			player setObjectTextureGlobal  [0, "textures\Polizei_beamter.paa"];
-			if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
-		};
-	};
-	case (playerSide == west && _uniform == "U_B_CombatUniform_mcam_vest"):
-	{
-		if(__GETC__(life_coplevel) > 2) then
 		{
 			player setObjectTextureGlobal  [0, "textures\cop_lieutenant.paa"];
 			if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
 		};
 	};
-	case (playerSide == west && _uniform == "U_B_CombatUniform_mcam_tshirt"):
+	case (playerSide == west && _uniform == "U_Rangemaster"):
+	{
+		if(__GETC__(life_coplevel) > 2) then
+		{
+			player setObjectTextureGlobal  [0, "textures\Polizei_beamter.paa"];
+			if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
+		};
+	};
+	case (playerSide == west && _uniform == "U_B_CombatUniform_mcam_worn"):
 	{
 		if(__GETC__(life_coplevel) > 3) then
 		{

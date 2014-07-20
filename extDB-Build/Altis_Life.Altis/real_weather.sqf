@@ -28,7 +28,7 @@
 	// Random time before new forecast
 	// true: forecast happens bewteen mintime and maxtime
 	// false: forecast happens at mintime
-	_random = false;
+	_random = true;
 
 	// Min time seconds (real time) before a new weather forecast
 	_mintime = 600;
@@ -60,7 +60,7 @@
 	_timeforecast = _mintime;
 
 	// we check the skiptime for 10 seconds
-	_skiptime = _timeratio * 0.000278 * 20;
+	_skiptime = _timeratio * 0.000278 * 10;
 
 	setdate _startingdate;
 	switch(toUpper(_startingweather)) do {
