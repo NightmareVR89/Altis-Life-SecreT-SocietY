@@ -62,10 +62,6 @@ if(playerSide == west) then {
 	_Btn3 ctrlSetText localize "STR_vInAct_SearchVehicle";
 	_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_vehInvSearch;";
 	
-	_Btn4 ctrlSetText localize "STR_vInAct_PullOut";
-	_Btn4 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction;";
-	if(count crew _curTarget == 0) then {_Btn4 ctrlEnable false;};
-	
 	_Btn5 ctrlSetText localize "STR_vInAct_Impound";
 	_Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction;";
 	
@@ -114,8 +110,14 @@ if(playerSide == west) then {
 	} else {
 		_Btn3 ctrlShow false;
 	};
-
-	_Btn4 ctrlShow false;
 	_Btn5 ctrlShow false;
 	_Btn6 ctrlShow false;
 };
+if(playerside == west OR license_civ_rebel) then {
+	_Btn4 ctrlSetText localize "STR_vInAct_PullOut";
+	_Btn4 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction;";
+	if(count crew _curTarget == 0) then {_Btn4 ctrlEnable false;};
+} else {
+	_Btn4 ctrlEnable false;
+};
+	

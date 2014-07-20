@@ -54,6 +54,9 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 	if(__GETC__(life_adaclevel) == 1 && player distance _curTarget < 5 && !dialog && playerSide == east) then {
 		[_curTarget] call life_fnc_adacInteractionMenu;
 	};
+	if((_curTarget getVariable["hostage",false]) && !dialog && playerSide == civilian && license_civ_rebel) then {
+		[_curTarget] call life_fnc_rebelInteractionMenu;
+	};
 } else {
 	//OK, it wasn't a player so what is it?
 	private["_isVehicle","_miscItems","_money"];

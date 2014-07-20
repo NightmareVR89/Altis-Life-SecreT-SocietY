@@ -128,6 +128,7 @@ class Life_Client_Core
 		class packupSandbag {};
 		class dragAction {};
 		class stopDragging {};
+		class freilassen {};
 	};
 	
 	class Housing
@@ -273,6 +274,8 @@ class Life_Client_Core
 		class zoneCreator {};
 		class demoChargeTimer {};
 		class geblitzt {};
+		class rebelInteractionMenu {};
+		class hostage {};
 	};
 	
 	class ADAC
