@@ -72,7 +72,7 @@ switch (_shop) do
 			["O_Truck_03_transport_F",42000], //285Plätze
 			["O_Truck_03_covered_F",47000], //300Plätze
 			["B_Truck_01_transport_F",62000], //325Plätze
-			["O_Truck_03_device_F",840000],//350Plätze
+			["O_Truck_03_device_F",84000],//350Plätze
 			["B_Truck_01_box_F",124000]  //450Plätze
 			
 		];	
