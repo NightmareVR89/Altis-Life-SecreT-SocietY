@@ -1,5 +1,5 @@
 enableSaving [false, false];
-[] execVM "real_weather.sqf";
+
 X_Server = false;
 X_Client = false;
 X_JIP = false;
@@ -19,7 +19,7 @@ StartProgress = true;
 	sleep 60;
 	[] call life_fnc_updateClothing;
 };
-
+[] execVM "real_weather.sqf";
 fnc_say3D =
 {
 _unit = _this select 0;
