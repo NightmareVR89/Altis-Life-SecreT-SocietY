@@ -23,18 +23,18 @@
 	// Real time vs fast time
 	// true: Real time is more realistic weather conditions change slowly (ideal for persistent game)
 	// false: fast time give more different weather conditions (ideal for non persistent game) 
-	_realtime = true;
+	_realtime = false;
 
 	// Random time before new forecast
 	// true: forecast happens bewteen mintime and maxtime
 	// false: forecast happens at mintime
-	_random = true;
+	_random = false;
 
 	// Min time seconds (real time) before a new weather forecast
-	_mintime = 1800;
+	_mintime = 600;
 
 	// Max time seconds (real time) before a new weather forecast
-	_maxtime = 2400;
+	_maxtime = 1200;
 
 	// If Fastime is on
 	// Ratio 1 real time second for x game time seconds
@@ -61,6 +61,7 @@
 
 	// we check the skiptime for 10 seconds
 	_skiptime = _timeratio * 0.000278 * 10;
+
 
 	setdate _startingdate;
 	switch(toUpper(_startingweather)) do {
@@ -125,7 +126,7 @@
 	// SERVER SIDE SCRIPT
 	if (!isServer) exitWith{};
 
-	// apply weather
+	//apply weather
 	skipTime -24;
 	86400 setRain (wcweather select 0);
 	86400 setfog (wcweather select 1);
@@ -175,9 +176,9 @@
 		_lastrain = _rain;
 
 		wcweather = [_rain, _fog, _overcast, _wind, date];
-		900 setRain (wcweather select 0);
-		900 setfog (wcweather select 1);
-		900 setOvercast (wcweather select 2);
+		60 setRain (wcweather select 0);
+		60 setfog (wcweather select 1);
+		60 setOvercast (wcweather select 2);
 		setwind (wcweather select 3);
 		if(_random) then {
 			_timeforecast = _mintime + (random (_maxtime - _mintime));

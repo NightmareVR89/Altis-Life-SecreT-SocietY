@@ -11,6 +11,7 @@ enableSaving[false,false];
 life_versionInfo = "Secret_Society v3.1.4";
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
+[] execVM "real_weather.sqf";
 _igiload = execVM "IgiLoad\IgiLoadInit.sqf";
 
 StartProgress = true;
@@ -19,7 +20,7 @@ StartProgress = true;
 	sleep 60;
 	[] call life_fnc_updateClothing;
 };
-[] execVM "real_weather.sqf";
+
 fnc_say3D =
 {
 _unit = _this select 0;
