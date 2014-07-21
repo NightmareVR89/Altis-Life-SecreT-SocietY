@@ -12,6 +12,7 @@ life_versionInfo = "Secret_Society v3.1.4";
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
 [] execVM "real_weather.sqf";
+[] execVM "core\actions\teargas.sqf";
 _igiload = execVM "IgiLoad\IgiLoadInit.sqf";
 
 StartProgress = true;
