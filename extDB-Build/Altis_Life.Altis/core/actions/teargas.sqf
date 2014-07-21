@@ -8,9 +8,9 @@ resetCamShake; // resets the shake
 
 
 waituntil{
-((nearestObject [getpos player, "SmokeShellBlue"]) distance player < 10)
+((nearestObject [getpos player, "SmokeShellGreen"]) distance player < 10)
 and
-(getpos (nearestObject [getpos player, "SmokeShellBlue"]) select 2 < 0.5)
+(getpos (nearestObject [getpos player, "SmokeShellGreen"]) select 2 < 0.5)
 };
 
 if (playerSide != west) then //<----- Schütz die Polizisten GENEREL
