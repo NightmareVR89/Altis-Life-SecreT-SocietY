@@ -23,7 +23,7 @@
 	// Real time vs fast time
 	// true: Real time is more realistic weather conditions change slowly (ideal for persistent game)
 	// false: fast time give more different weather conditions (ideal for non persistent game) 
-	_realtime = false;
+	_realtime = true;
 
 	// Random time before new forecast
 	// true: forecast happens bewteen mintime and maxtime
@@ -31,15 +31,15 @@
 	_random = false;
 
 	// Min time seconds (real time) before a new weather forecast
-	_mintime = 600;
+	_mintime = 1200;
 
 	// Max time seconds (real time) before a new weather forecast
-	_maxtime = 1200;
+	_maxtime = 1800;
 
 	// If Fastime is on
 	// Ratio 1 real time second for x game time seconds
 	// Default: 1 real second = 3.6 second in game
-	_timeratio = 12;
+	_timeratio = 3.6;
 
 	// send sync data across the network each xxx seconds
 	// 60 seconds by default is a good value
@@ -47,7 +47,7 @@
 	_timesync = 60;
 
 	// Mission starting date is 25/09/2013 at 12:00
-	_startingdate = [2014, 09, 25, 06, 00];
+	_startingdate = [2014, 09, 25, 06, 15];
 
 	// Mission starting weather "CLEAR|CLOUDY|RAIN";
 	_startingweather = "CLEAR";
@@ -101,9 +101,9 @@
 				setdate (wcweather select 4);
 			}else{
 				wcweather = _this select 1;
-				900 setRain (wcweather select 0);
-				900 setfog (wcweather select 1);
-				900 setOvercast (wcweather select 2);
+				60 setRain (wcweather select 0);
+				60 setfog (wcweather select 1);
+				60 setOvercast (wcweather select 2);
 				setwind (wcweather select 3);
 				setdate (wcweather select 4);
 			};
