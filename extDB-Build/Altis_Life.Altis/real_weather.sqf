@@ -118,7 +118,7 @@
 
 			while {true} do {
 				skiptime _skiptime;
-				sleep 10;
+				sleep 30;
 			};
 		};
 	};
