@@ -53,12 +53,12 @@ switch (_shop) do
 	{
 		_return = 
 		[
-			["B_Quadbike_01_F",500],
-			["C_Hatchback_01_F",1500],
-			["C_Offroad_01_F",4000],
-			["C_SUV_01_F",6200],
-			["C_Hatchback_01_sport_F",7800],
-			["C_Van_01_transport_F",9200]
+			["B_Quadbike_01_F",350],  //25plätze
+			["C_Hatchback_01_F",1500], //40plätze
+			["C_Hatchback_01_sport_F",3500], //45plätze
+			["C_SUV_01_F",3800],  //50plätze
+			["C_Offroad_01_F",4600],  //65plätze
+			["C_Van_01_transport_F",7600] //100plätze
 		];
 	};
 	
@@ -66,14 +66,15 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["C_Van_01_box_F",34000],
-			["I_Truck_02_transport_F",46500],
-			["I_Truck_02_covered_F",100000],
-			["B_Truck_01_transport_F",275000],
-			["O_Truck_03_transport_F",200000],
-			["O_Truck_03_covered_F",250000],
-			["B_Truck_01_box_F",550000],
-			["O_Truck_03_device_F",450000]
+			["C_Van_01_box_F",14500],  //150platz
+			["I_Truck_02_transport_F",24500], //200Plätze
+			["I_Truck_02_covered_F",36000],  //250Plätze
+			["O_Truck_03_transport_F",42000], //285Plätze
+			["O_Truck_03_covered_F",47000], //300Plätze
+			["B_Truck_01_transport_F",62000], //325Plätze
+			["O_Truck_03_device_F",840000],//350Plätze
+			["B_Truck_01_box_F",124000]  //450Plätze
+			
 		];	
 	};
 	
@@ -82,10 +83,9 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["B_Quadbike_01_F",1200],
-			["B_G_Offroad_01_F",7500],
-			["O_MRAP_02_F",150000],
-			["B_Heli_Light_01_F",85000]
+			["B_Quadbike_01_F",350], //25plätze
+			["B_G_Offroad_01_F",4500], //65plätze
+			["B_Heli_Light_01_F",8500]
 		];
 		
 		if(license_civ_rebel) then
@@ -97,9 +97,9 @@ switch (_shop) do
 			_return set[count _return,
 			["I_G_Offroad_01_armed_F",25000]];
 			_return set[count _return,
-			["O_MRAP_02_F",750000]];
+			["O_MRAP_02_F",92000]];
 			_return set[count _return,
-			["I_MRAP_03_F",11750000]];
+			["I_MRAP_03_F",140000]];
 		};
 	};
 	
@@ -131,7 +131,7 @@ switch (_shop) do
 		_return =
 		[
 			["B_Heli_Light_01_F",23000],
-			["O_Heli_Light_02_unarmed_F",27000]
+			["O_Heli_Light_02_unarmed_F",37000]
 		];
 	};
 	
@@ -187,8 +187,8 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["C_Rubberboat",2500],
-			["C_Boat_Civil_01_F",22000],
+			["C_Rubberboat",500],
+			["C_Boat_Civil_01_F",4200],
 			["B_SDV_01_F",8000],
 			["O_SDV_01_F",8000],
 			["I_SDV_01_F",8000]

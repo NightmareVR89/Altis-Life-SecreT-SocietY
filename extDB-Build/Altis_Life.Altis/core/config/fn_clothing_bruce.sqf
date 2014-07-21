@@ -41,8 +41,8 @@ switch (_filter) do
 		["U_BG_Guerilla3_1","Dunkel",1800],
 		["U_BG_Guerilla3_2","Dunkel",1800],
 		["U_C_HunterBody_grn","Hunter",1800],
-		["U_C_Journalist","Presse",1800],
-		["U_NikosAgedBody","Büromann",1800]
+		["U_C_Journalist","Presse",3000],
+		["U_NikosAgedBody","Büromann",2700]
 		];
 	};
 	
@@ -68,9 +68,9 @@ switch (_filter) do
 			["H_Booniehat_dirty",nil,425],
 			["H_Booniehat_dgtl",nil,425],
 			["H_Booniehat_khk_hs",nil,425],
-			["H_TurbanO_blk",nil,425],
-			["H_StrawHat",nil,425],
-			["H_StrawHat_dark",nil,425],
+			["H_TurbanO_blk",nil,625],
+			["H_StrawHat",nil,525],
+			["H_StrawHat_dark",nil,525],
 			["H_Hat_blue",nil,425],
 			["H_Hat_brown",nil,425],
 			["H_Hat_camo",nil,425],
