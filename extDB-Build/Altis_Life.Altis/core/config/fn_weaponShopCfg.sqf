@@ -599,8 +599,13 @@ switch(_shop) do
 						["acc_flashlight",nil,300],
 						["optic_Holosight",nil,200],
 						["optic_Hamr",nil,1000],
+						["optic_Arco",nil,1300],		//NEU
+						["optic_NVS",nil,1300],			//NEU
 						["optic_ACO_grn",nil,500],
-						["optic_SOS",nil,2700],        //Einfaches Sniper visier
+						["optic_SOS",nil,2700],			//Einfaches Sniper visier
+						["optic_LRPS",nil,4000],		//NEU Longe Range visier
+						["SmokeShellRed",nil,150],		//NEU
+						["SmokeShell",nil,150],			//NEU
 						["SmokeShellGreen","Tränengas",300],
 						["HandGrenade",nil,200],
 						["Binocular",nil,150],
@@ -608,10 +613,10 @@ switch(_shop) do
 						["ToolKit",nil,150],
 						["FirstAidKit",nil,150],
 						["NVGoggles",nil,2000],
-						["Chemlight_red",nil,300],
-						["Chemlight_yellow",nil,300],
-						["Chemlight_green",nil,300],
-						["Chemlight_blue",nil,300]
+						["Chemlight_red",nil,30],
+						["Chemlight_yellow",nil,30],
+						["Chemlight_green",nil,30],
+						["Chemlight_blue",nil,30]
 					]
 				];
 			};
