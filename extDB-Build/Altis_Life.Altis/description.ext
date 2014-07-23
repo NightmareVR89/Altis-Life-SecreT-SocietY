@@ -111,7 +111,7 @@ class CfgSounds
 	{
 		name="punch";
 		sound[] = {"\sounds\punch.ogg", 1.0, 1};
-		titles = {0, " "};
+		titles[] = {0, " "};
 	};
 };
 
