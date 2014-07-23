@@ -26,7 +26,7 @@ if(!isNull _source) then {
 		if(_projectile in ["B_9x21_Ball","30Rnd_45ACP_Mag_SMG_01"] && _curWep in ["hgun_P07_snds_F","SMG_01_F"]) then {
 			if(side _source == west && playerSide != west) then {
 				private["_distance","_isVehicle","_isQuad"];
-				_distance = if(_projectile == "30Rnd_45ACP_Mag_SMG_01") then {300} else {100};
+				_distance = if(_projectile == "30Rnd_45ACP_Mag_SMG_01") then {100} else {30};
 				_isVehicle = if(vehicle player != player) then {true} else {false};
 				_isQuad = if(_isVehicle) then {if(typeOf (vehicle player) == "B_Quadbike_01_F") then {true} else {false}} else {false};
 				
