@@ -180,6 +180,9 @@ if(count (handGunItems player) > 0) then
     ["life_inv_storagesmall", life_inv_storagesmall],
     ["life_inv_storagebig", life_inv_storagebig],
 	["life_inv_handschellen", life_inv_handschellen],
+	["life_inv_roadcone", life_inv_roadcone],
+	["life_inv_barrier", life_inv_barrier],
+	["life_inv_sandbag", life_inv_sandbag],
 	["life_inv_kabelb", life_inv_kabelb],
 	["life_inv_frosch", life_inv_frosch],
 	["life_inv_froschbein", life_inv_froschbein]
