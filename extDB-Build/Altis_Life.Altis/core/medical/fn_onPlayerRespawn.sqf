@@ -18,6 +18,7 @@ _containers = nearestObjects[getPosATL _corpse,["GroundWeaponHolder"],5];
 {deleteVehicle _x;} foreach _containers;
 
 //Set some vars on our new body.
+_unit setVariable["hostage",FALSE,TRUE];
 _unit setVariable["restrained",FALSE,TRUE];
 _unit setVariable["Escorting",FALSE,TRUE];
 _unit setVariable["transporting",FALSE,TRUE]; //Again why the fuck am I setting this? Can anyone tell me?

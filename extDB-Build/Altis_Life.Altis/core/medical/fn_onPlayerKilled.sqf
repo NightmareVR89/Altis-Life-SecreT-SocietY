@@ -14,6 +14,7 @@ _killer = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param;
 //Set some vars
 _unit setVariable["Revive",FALSE,TRUE]; //Set the corpse to a revivable state.
 _unit setVariable["name",profileName,TRUE]; //Set my name so they can say my name.
+_unit setVariable["hostage",FALSE,TRUE];
 _unit setVariable["restrained",FALSE,TRUE];
 _unit setVariable["Escorting",FALSE,TRUE];
 _unit setVariable["transporting",FALSE,TRUE]; //Why the fuck do I have this? Is it used?
