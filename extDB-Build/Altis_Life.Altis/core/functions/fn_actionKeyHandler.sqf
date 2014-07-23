@@ -47,7 +47,7 @@ if(_curTarget isKindOf "Man" && {!alive _curTarget} && {playerSide in [west,inde
 
 //If target is a player then check if we can use the cop menu.
 if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
-	if(((_curTarget getVariable["restrained",false]) || (_curTarget getVariable["hostage",false])) && !dialog && playerSide == west) then {
+	if((_curTarget getVariable["restrained",false]) && !dialog && playerSide == west) then {
 		[_curTarget] call life_fnc_copInteractionMenu;
 	};
 	//Gib dem ADAC sein Menü :)
