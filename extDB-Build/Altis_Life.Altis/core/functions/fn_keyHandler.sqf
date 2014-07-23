@@ -105,6 +105,7 @@ switch (_code) do
 			{
 				hint "Du hast keine Handschellen dabei!";
 			};
+			};
 		};
 	};
 	
