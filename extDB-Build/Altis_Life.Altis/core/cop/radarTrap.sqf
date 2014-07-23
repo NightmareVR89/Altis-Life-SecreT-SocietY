@@ -52,12 +52,6 @@ while {true} do {
 		_vehicle_speed = round(speed _x * _SPEED_MESSUREMENT_FACTOR);
 		_driver = driver _x;
 		if ((_vehicle_speed > _speed_limit) && !(side _driver in [west,independent])) then {
-			//Text anzeigen lassen, sobald ein Spieler geblitzt wurde
-		
-			//Radarfallensound abspielen
-			_driver say3D "PhotoSound";
-			//[[_driver],"life_fnc_radarPhotoSound",nil,true] spawn life_fnc_MP;
-
 			//bis 50 km/h über dem limit
 			if ((_vehicle_speed - _speed_limit) < 50) then {
 				//bis 20 km/h über dem limit
