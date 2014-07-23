@@ -20,7 +20,7 @@ if(isNull _cop) exitWith {};
 		waitUntil {(time - _time) > (5 * 60)};
 		
 		if(!(player getVariable["hostage",FALSE])) exitWith {};
-		if(!([west,getPos player,30] call life_fnc_nearUnits) && (player getVariable["hostage",FALSE]) && vehicle player == player) exitWith {
+		if((player getVariable["hostage",FALSE]) && vehicle player == player) exitWith {
 			player setVariable["hostage",FALSE,TRUE];
 			player setVariable["Escorting",FALSE,TRUE];
 			player setVariable["transporting",false,true];
