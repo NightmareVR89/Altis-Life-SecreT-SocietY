@@ -1,4 +1,4 @@
-/*
+﻿/*
 	File: fn_copInteractionMenu.sqf
 	Author: Bryan "Tonic" Boardwine
 	
@@ -35,10 +35,10 @@ if(_curTarget isKindOf "House_F") exitWith {
 		_Btn7 = _display displayCtrl Btn7;
 		life_pInact_curTarget = _curTarget;
 		
-		_Btn1 ctrlSetText "Repariere Tuer";
+		_Btn1 ctrlSetText "Repariere Tür";
 		_Btn1 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_repairDoor;";
 		
-		_Btn2 ctrlSetText "Oeffnen / Schließen";
+		_Btn2 ctrlSetText "Öffnen / Schließen";
 		_Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_doorAnimate;";
 		_Btn3 ctrlShow false;
 		_Btn4 ctrlShow false;

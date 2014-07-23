@@ -107,7 +107,7 @@ switch (_code) do
 					hint "Du hast keine Handschellen dabei!";
 				};
 			};
-			if(playerSide == civilian && license_civ_rebel && (animationState cursorTarget) == "Incapacitated") then {
+			if(playerSide == civilian && license_civ_rebel) then {
 				if([false,"kabelb",1] call life_fnc_handleInv) then
 				{
 					[] call life_fnc_hostageAction;
