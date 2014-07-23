@@ -39,7 +39,7 @@
 	// If Fastime is on
 	// Ratio 1 real time second for x game time seconds
 	// Default: 1 real second = 3.6 second in game
-	_timeratio = 0.1;
+	_timeratio = 0.05;
 
 	// send sync data across the network each xxx seconds
 	// 60 seconds by default is a good value
@@ -118,7 +118,7 @@
 
 			while {true} do {
 				skiptime _skiptime;
-				sleep 0.01;
+				sleep 0.02;
 			};
 		};
 	};
