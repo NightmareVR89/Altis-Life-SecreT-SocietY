@@ -35,22 +35,8 @@ life_vInact_curTarget = _curTarget;
 _Btn1 ctrlSetText localize "STR_vInAct_Repair";
 _Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairTruck;";
 
-if(((player distance (getMarkerPos "tank_1") < 30) OR  (player distance (getMarkerPos "tank_2") < 30) OR (player distance (getMarkerPos "tank_3") < 30) OR (player distance (getMarkerPos "tank_4") < 30) OR (player distance (getMarkerPos "tank_5") < 30) OR (player distance (getMarkerPos "tank_6") < 30) OR (player distance (getMarkerPos "tank_7") < 30) OR (player distance (getMarkerPos "tank_8") < 30))) then 
-{
-	if("ToolKit" in (items player)) then {
-		if(playerSide in [civilian,independent]) then {
-			if({side _x == east} count playableUnits < 1) then {
-				_Btn1 ctrlEnable true;
-			} else {
-				_Btn1 ctrlEnable false;
-			};
-		};
-		if(playerSide in [west,east]) then {
-			_Btn1 ctrlEnable true;
-		};
-	} else {
-	_Btn1 ctrlEnable false;
-	};
+if("ToolKit" in (items player)) then {
+	_Btn1 ctrlEnable true;
 } else {
 	_Btn1 ctrlEnable false;
 };
