@@ -24,7 +24,7 @@ _froschZones = ["frosch_1"];
 	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
 	_zone setTriggerArea[25,25,0,false];
 	_zone setTriggerActivation["CIV","PRESENT",true];
-	_zone setTriggerStatements["player in thislist","LIFE_Action_Apples = player addAction['Sammle Äpfel',life_fnc_gatherApples,'',0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Apples;"];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_Apples = player addAction['Sammle Äpfel',life_fnc_gatherApples,'',0,false,false,'','!life_sammel_sperre'];","player removeAction LIFE_Action_Apples;"];
 } foreach _appleZones;
 
 //Create peach zones
@@ -32,7 +32,7 @@ _froschZones = ["frosch_1"];
 	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
 	_zone setTriggerArea[25,25,0,false];
 	_zone setTriggerActivation["CIV","PRESENT",true];
-	_zone setTriggerStatements["player in thislist","LIFE_Action_Peaches = player addAction['Sammle Pfirsiche',life_fnc_gatherPeaches,'',0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Peaches;"];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_Peaches = player addAction['Sammle Pfirsiche',life_fnc_gatherPeaches,'',0,false,false,'','!life_sammel_sperre'];","player removeAction LIFE_Action_Peaches;"];
 } foreach _peachZones;
 
 //Create heroin zones
@@ -40,7 +40,7 @@ _froschZones = ["frosch_1"];
 	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
 	_zone setTriggerArea[50,50,0,false];
 	_zone setTriggerActivation["CIV","PRESENT",true];
-	_zone setTriggerStatements["player in thislist","LIFE_Action_heroin = player addAction['Sammle Heroin',life_fnc_gatherHeroin,'',0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Heroin;"];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_heroin = player addAction['Sammle Heroin',life_fnc_gatherHeroin,'',0,false,false,'','!life_sammel_sperre'];","player removeAction LIFE_Action_Heroin;"];
 } foreach _heroinZones;
 
 //Create Weed zones
@@ -48,7 +48,7 @@ _froschZones = ["frosch_1"];
 	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
 	_zone setTriggerArea[50,50,0,false];
 	_zone setTriggerActivation["CIV","PRESENT",true];
-	_zone setTriggerStatements["player in thislist","LIFE_Action_Cannabis = player addAction['Sammle Cannabis',life_fnc_gatherCannabis,'',0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Cannabis;"];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_Cannabis = player addAction['Sammle Cannabis',life_fnc_gatherCannabis,'',0,false,false,'','!life_sammel_sperre'];","player removeAction LIFE_Action_Cannabis;"];
 } foreach _weedZones;
 
 //Create cocaine zones
@@ -56,7 +56,7 @@ _froschZones = ["frosch_1"];
 	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
 	_zone setTriggerArea[50,50,0,false];
 	_zone setTriggerActivation["CIV","PRESENT",true];
-	_zone setTriggerStatements["player in thislist","LIFE_Action_Coke = player addAction['Sammle Kokain',life_fnc_gatherCocaine,'',0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Coke;"];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_Coke = player addAction['Sammle Kokain',life_fnc_gatherCocaine,'',0,false,false,'','!life_sammel_sperre'];","player removeAction LIFE_Action_Coke;"];
 } foreach _cocaineZones;
 
 //blah Frösche und so
@@ -64,5 +64,5 @@ _froschZones = ["frosch_1"];
 	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
 	_zone setTriggerArea[50,50,0,false];
 	_zone setTriggerActivation["CIV","PRESENT",true];
-	_zone setTriggerStatements["player in thislist","LIFE_Action_Frosch = player addAction['Fange Frösche',life_fnc_froschFang,'',0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Frosch;"];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_Frosch = player addAction['Fange Frösche',life_fnc_froschFang,'',0,false,false,'','!life_sammel_sperre'];","player removeAction LIFE_Action_Frosch;"];
 } foreach _froschZones;

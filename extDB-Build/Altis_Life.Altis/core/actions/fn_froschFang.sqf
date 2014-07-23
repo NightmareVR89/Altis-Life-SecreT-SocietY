@@ -4,9 +4,10 @@ _sum = ["frosch",_rand,life_carryWeight,life_maxWeight] call life_fnc_calWeightD
 
 if(_sum > 0) then
 {
-	life_action_inUse = true;
+	life_sammel_sperre = true;
 	player say3D "frosch";
 	titleText[format[(localize "STR_NOTF_Gathering"),localize "STR_Item_Froesche"],"PLAIN"];
+	player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
 	player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
 	sleep 5;
 	if(([true,"frosch",_sum] call life_fnc_handleInv)) then
@@ -19,4 +20,4 @@ if(_sum > 0) then
 	hint localize "STR_NOTF_InvFull";
 };
 
-life_action_inUse = false;
+life_sammel_sperre = false;
