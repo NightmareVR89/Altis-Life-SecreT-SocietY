@@ -107,6 +107,12 @@ class CfgSounds
 		sound[] = {"\sounds\camera_shot.ogg", 1.0, 1};
 		titles[] = {0, " "};
 	};
+	class punch
+	{
+		name="punch";
+		sound[] = {"\sounds\punch.ogg", 1.0, 1};
+		titles = {0, " "};
+	};
 };
 
 class CfgDebriefing

@@ -11,11 +11,11 @@ if(!(_building isKindOf "House_F")) exitWith {hint "Du schaust auf keine Haustü
 if(isNil "life_boltcutter_uses") then {life_boltcutter_uses = 0;};
 if((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _building) then {
 	[[[1,2],"!!!!! JEMAND BRICHT IN DIE STAATSBANK EIN !!!!!!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
-	[[_building,"bankalarm"],"fnc_say3D",nil,false] spawn life_fnc_MP;
+	[[_building,"bankalarm"],"life_fnc_say3D",nil,false] spawn life_fnc_MP;
 } else {
 	if((nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _building) then {
 		[[[1,2],"!!!!! JEMAND BRICHT IN DEN TRESORRAUM EIN !!!!!!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
-		[[_building,"bankalarm"],"fnc_say3D",nil,false] spawn life_fnc_MP;
+		[[_building,"bankalarm"],"life_fnc_say3D",nil,false] spawn life_fnc_MP;
 	} else {
 		[[0,format["%1 wurde beim Einbruch in ein Haus beobachtet.",profileName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 	};

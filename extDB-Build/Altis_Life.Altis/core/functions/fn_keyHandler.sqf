@@ -250,7 +250,7 @@ switch (_code) do
 							[[_veh,0],"life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
 						};
 						systemChat "Du hast dein Fahrzeug aufgeschlossen.";
-						[[_veh,"Car_Unlock"],"fnc_say3D",nil,false] spawn life_fnc_MP;
+						[[_veh,"Car_Unlock"],"life_fnc_say3D",nil,false] spawn life_fnc_MP;
 					} else {
 						if(local _veh) then {
 							_veh lock 2;
@@ -258,7 +258,7 @@ switch (_code) do
 							[[_veh,2],"life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
 						};	
 						systemChat "Du hast dein Fahrzeug zugeschlossen.";
-						[[_veh,"Car_Unlock"],"fnc_say3D",nil,false] spawn life_fnc_MP;
+						[[_veh,"Car_Unlock"],"life_fnc_say3D",nil,false] spawn life_fnc_MP;
 					};
 				};
 			};

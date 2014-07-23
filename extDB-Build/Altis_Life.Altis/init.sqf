@@ -21,10 +21,5 @@ StartProgress = true;
 	sleep 60;
 	[] call life_fnc_updateClothing;
 };
+
 [] spawn life_fnc_autoSave;
-fnc_say3D =
-{
-_unit = _this select 0;
-_sound = _this select 1;
-_unit say3D _sound;
-};
