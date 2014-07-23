@@ -14,7 +14,7 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) the
 	_damage = damage _veh;
 	
 	if(_damage > 0.5) then {
-		if((player distance (getMarkerPos "tank_1") > 30) OR  (player distance (getMarkerPos "tank_2") > 30) OR (player distance (getMarkerPos "tank_3") > 30) OR (player distance (getMarkerPos "tank_4") > 30) OR (player distance (getMarkerPos "tank_5") > 30) OR (player distance (getMarkerPos "tank_6") > 30) OR (player distance (getMarkerPos "tank_7") > 30) OR (player distance (getMarkerPos "tank_8") > 30))) then 
+		if((player distance (getMarkerPos "tank_1") > 30) OR (player distance (getMarkerPos "tank_2") > 30) OR (player distance (getMarkerPos "tank_3") > 30) OR (player distance (getMarkerPos "tank_4") > 30) OR (player distance (getMarkerPos "tank_5") > 30) OR (player distance (getMarkerPos "tank_6") > 30) OR (player distance (getMarkerPos "tank_7") > 30) OR (player distance (getMarkerPos "tank_8") > 30)) then 
 		{
 			if(playerSide in [civilian,independent,west]) exitWith {hint "Dein Fahrzeug ist zu sehr beschädigt und du bist zu weit von einer Werkstatt entfernt, um es selbst zu reparieren. Rufe am besten den ADAC";};
 			if(playerSide == east) exitWith {hint "Bring das Fahrzeug zu einer Werkstatt oder hole den Reparaturtruck um es reparieren zu können.";};

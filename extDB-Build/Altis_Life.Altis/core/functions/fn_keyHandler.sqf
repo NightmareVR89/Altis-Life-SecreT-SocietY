@@ -97,7 +97,7 @@ switch (_code) do
 		if(_shift) then {_handled = true;};
 		if(_shift && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && !(cursorTarget getVariable "hostage") && speed cursorTarget < 1) then
 		{
-			if(playerSide == west && (side cursorTarget in [civilian,independent,east]) then {
+			if(playerSide == west && (side cursorTarget in [civilian,independent,east])) then {
 				if([false,"handschellen",1] call life_fnc_handleInv) then
 				{
 					[] call life_fnc_restrainAction;
