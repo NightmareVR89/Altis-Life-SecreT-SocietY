@@ -129,6 +129,7 @@ class Life_Client_Core
 		class dragAction {};
 		class stopDragging {};
 		class freilassen {};
+		class hostageAction {};
 	};
 	
 	class Housing
