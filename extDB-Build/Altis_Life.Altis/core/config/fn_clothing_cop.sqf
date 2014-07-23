@@ -54,28 +54,29 @@ switch (_filter) do
 	//Hats
 	case 1:
 	{
-		if(__GETC__(life_coplevel) > 1) then          //Anwärter
+		if(__GETC__(life_coplevel) > 0) then          //Anwärter
 		{
 			_ret set[count _ret,["H_Beret_blk_POLICE",nil,520]];
+			_ret set[count _ret,["H_CrewHelmetHeli_B","Gasmaske",1520]];
 		};
-		if(__GETC__(life_coplevel) > 2) then         //Kommissar
+		if(__GETC__(life_coplevel) > 1) then         //Kommissar
 		{
 			_ret set[count _ret,["H_Booniehat_mcamo",nil,120]];
 			_ret set[count _ret,["H_MilCap_mcamo",nil,100]];
 		};
-		if(__GETC__(life_coplevel) > 3) then        //HauptKommissar
+		if(__GETC__(life_coplevel) > 2) then        //HauptKommissar
 		{
 			_ret set[count _ret,["H_HelmetB_camo",nil,120]];
 		};
-		if(__GETC__(life_coplevel) > 4) then        //Einsatzleiter
+		if(__GETC__(life_coplevel) > 3) then        //Einsatzleiter
 		{
 			_ret set[count _ret,["H_HelmetIA",nil,120]];
 		};
-		if(__GETC__(life_coplevel) > 5) then       //PolizeiChef
+		if(__GETC__(life_coplevel) > 4) then       //PolizeiChef
 		{
 			_ret set[count _ret,["H_MilCap_dgtl",nil,120]];
 		};
-		if(__GETC__(life_coplevel) > 6) then      // SEK
+		if(__GETC__(life_coplevel) > 5) then      // SEK
 		{
 			_ret set[count _ret,["H_Watchcap_sgg",nil,120]];
 			_ret set[count _ret,["H_Beret_02",nil,120]];
@@ -86,33 +87,33 @@ switch (_filter) do
 	//Glasses
 	case 2:
 	{
-		if(__GETC__(life_coplevel) > 1) then          //Anwärter
+		if(__GETC__(life_coplevel) > 0) then          //Anwärter
 		{
 			_ret set[count _ret,["G_Shades_Black",nil,25]];
 			_ret set[count _ret,["G_Shades_Blue",nil,20]];
 			_ret set[count _ret,["G_Diving",nil,70]];
 		};
-		if(__GETC__(life_coplevel) > 2) then         //Kommissar
+		if(__GETC__(life_coplevel) > 1) then         //Kommissar
 		{
 			_ret set[count _ret,["G_Sport_Blackred",nil,20]];
 			_ret set[count _ret,["G_Sport_Checkered",nil,20]];
 		};
-		if(__GETC__(life_coplevel) > 3) then        //HauptKommissar
+		if(__GETC__(life_coplevel) > 2) then        //HauptKommissar
 		{
 			_ret set[count _ret,["G_Sport_Blackyellow",nil,20]];
 			_ret set[count _ret,["G_Sport_BlackWhite",nil,20]];
 		};
-		if(__GETC__(life_coplevel) > 4) then        //Einsatzleiter
+		if(__GETC__(life_coplevel) > 3) then        //Einsatzleiter
 		{
 			_ret set[count _ret,["G_Aviator",nil,75]];
 			_ret set[count _ret,["G_Bandanna_blk",nil,800]];  //Neue Gescihtsmaske
 			_ret set[count _ret,["G_Balaclava_blk",nil,1500]]; //Neue Gesichtsmaske
 		};
-		if(__GETC__(life_coplevel) > 5) then       //PolizeiChef
+		if(__GETC__(life_coplevel) > 4) then       //PolizeiChef
 		{
 			_ret set[count _ret,["G_Squares",nil,10]];
 		};
-		if(__GETC__(life_coplevel) > 6) then      // SEK
+		if(__GETC__(life_coplevel) > 5) then      // SEK
 		{
 			_ret set[count _ret,["G_Lowprofile",nil,30]];
 			_ret set[count _ret,["G_Combat",nil,55]];

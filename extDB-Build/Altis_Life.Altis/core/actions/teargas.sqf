@@ -13,7 +13,7 @@ and
 (getpos (nearestObject [getpos player, "SmokeShellGreen"]) select 2 < 0.5)
 };
 
-if (playerSide != west) then //<----- Schütz die Polizisten GENEREL
+if (headgear player != "H_CrewHelmetHeli_B") then //<----- Schütz die Polizisten GENEREL
 {
 "dynamicBlur" ppEffectEnable true; // enables ppeffect
 "dynamicBlur" ppEffectAdjust [20]; // intensity of blur
