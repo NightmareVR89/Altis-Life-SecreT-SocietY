@@ -17,13 +17,23 @@ switch(_mode) do {
 	case 0: {
 		_value = [_this,2,0,[0]] call BIS_fnc_param;
 		_value = [_value] call DB_fnc_numberSafe;
-		_query = format["UPDATE players SET cash='%1' WHERE playerid='%2'",_value,_uid];
+		switch(_side) do {
+			case west: {_query = format["UPDATE players SET copcash='%1' WHERE playerid='%2'",_value,_uid];};
+			case civilian: {_query = format["UPDATE players SET cash='%1' WHERE playerid='%2'",_value,_uid];};
+			case independent: {_query = format["UPDATE players SET medcash='%1' WHERE playerid='%2'",_value,_uid];};
+			case east: {_query = format["UPDATE players SET adaccash='%1' WHERE playerid='%2'",_value,_uid];};
+		};
 	};
 
 	case 1: {
 		_value = [_this,2,0,[0]] call BIS_fnc_param;
 		_value = [_value] call DB_fnc_numberSafe;
-		_query = format["UPDATE players SET bankacc='%1' WHERE playerid='%2'",_value,_uid];
+		switch(_side) do {
+			case west: {_query = format["UPDATE players SET copbank='%1' WHERE playerid='%2'",_value,_uid];};
+			case civilian: {_query = format["UPDATE players SET bankacc='%1' WHERE playerid='%2'",_value,_uid];};
+			case independent: {_query = format["UPDATE players SET medbank='%1' WHERE playerid='%2'",_value,_uid];};
+			case east: {_query = format["UPDATE players SET adacbank='%1' WHERE playerid='%2'",_value,_uid];};
+		};
 	};
 
 	case 2: {
@@ -33,6 +43,7 @@ switch(_mode) do {
 			case west: {_query = format["UPDATE players SET cop_licenses='%1' WHERE playerid='%2'",_value,_uid];};
 			case civilian: {_query = format["UPDATE players SET civ_licenses='%1' WHERE playerid='%2'",_value,_uid];};
 			case independent: {_query = format["UPDATE players SET med_licenses='%1' WHERE playerid='%2'",_value,_uid];};
+			case east: {_query = format["UPDATE players SET adac_licenses='%1' WHERE playerid='%2'",_value,_uid];};
 		};
 	};
 
@@ -43,6 +54,7 @@ switch(_mode) do {
 			case west: {_query = format["UPDATE players SET cop_gear='%1' WHERE playerid='%2'",_value,_uid];};
 			case civilian: {_query = format["UPDATE players SET civ_gear='%1' WHERE playerid='%2'",_value,_uid];};
 			case independent: {_query = format["UPDATE players SET med_gear='%1' WHERE playerid='%2'",_value,_uid];};
+			case east: {_query = format["UPDATE players SET adac_gear='%1' WHERE playerid='%2'",_value,_uid];};
 		};
 	};
 
