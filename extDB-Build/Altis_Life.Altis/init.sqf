@@ -21,5 +21,3 @@ StartProgress = true;
 	sleep 60;
 	[] call life_fnc_updateClothing;
 };
-
-[] spawn life_fnc_autoSave;
