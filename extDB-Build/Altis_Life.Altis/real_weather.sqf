@@ -47,7 +47,7 @@
 	_timesync = 60;
 
 	// Mission starting date is 25/09/2013 at 12:00
-	_startingdate = [2014, 09, 25, 06, 15];
+	_startingdate = [2014, 07, 23, 16, 00];
 
 	// Mission starting weather "CLEAR|CLOUDY|RAIN";
 	_startingweather = "CLEAR";
