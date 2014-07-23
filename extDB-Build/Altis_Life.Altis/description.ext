@@ -120,7 +120,7 @@ class CfgSounds
     titles[] = {};
   };
 };
-};
+
 
 class CfgDebriefing
 {
