@@ -21,7 +21,7 @@ if((__GETC__(life_coplevel) == 0) && (__GETC__(life_adminlevel) == 0)) then {
 	sleep 35;
 };
 
-
+player setVariable["rank",(__GETC__(life_coplevel)),true];
 [] call life_fnc_spawnMenu;
 [] call life_fnc_updateClothing;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.

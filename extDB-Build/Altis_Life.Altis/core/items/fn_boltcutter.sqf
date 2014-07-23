@@ -12,10 +12,13 @@ if(isNil "life_boltcutter_uses") then {life_boltcutter_uses = 0;};
 if((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _building) then {
 	[[[1,2],"!!!!! JEMAND BRICHT IN DIE STAATSBANK EIN !!!!!!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 	[[_building,"bankalarm"],"fnc_say3D",nil,false] spawn life_fnc_MP;
-};
-if((nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _building) then {
-	[[[1,2],"!!!!! JEMAND BRICHT IN DEN TRESORRAUM EIN !!!!!!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
-	[[_building,"bankalarm"],"fnc_say3D",nil,false] spawn life_fnc_MP;
+} else {
+	if((nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _building) then {
+		[[[1,2],"!!!!! JEMAND BRICHT IN DEN TRESORRAUM EIN !!!!!!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		[[_building,"bankalarm"],"fnc_say3D",nil,false] spawn life_fnc_MP;
+	} else {
+		[[0,format["%1 wurde beim Einbruch in ein Haus beobachtet.",profileName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+	};
 };
 
 _doors = 1;
@@ -87,3 +90,7 @@ if(life_boltcutter_uses >= 5) then {
 };
 
 _building setVariable[format["bis_disabled_Door_%1",_door],0,true]; //Unlock the door.
+if((_building getVariable["locked",false])) then {
+	_building setVariable["locked",false,true];
+};
+[[getPlayerUID player,profileName,"459"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;

@@ -43,15 +43,15 @@ hint format["Du hast einen %1 für $%2 gekauft",getText(configFile >> "CfgVehicl
 if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle = createVehicle [_className,[0,0,999],[], 0, "NONE"];
 	waitUntil {!isNil "_vehicle"}; //Wait?
+	_vehicle allowDamage false;
 	_hs = nearestObjects[getMarkerPos _spawnPoint,["Land_Hospital_side2_F"],150] select 0;
-	_vehicle attachTo[_hs,[-0.4,-4,16]];
+	_vehicle setPosATL (_hs modelToWorld [-0.4,-4,14]);
 	_vehicle lock 2;
 	[[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
 	[_vehicle] call life_fnc_clearVehicleAmmo;
 	_vehicle setVariable["trunk_in_use",false,true];
 	_vehicle setVariable["vehicle_info_owners",[[getPlayerUID player,profileName]],true];
 	_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
-	detach _vehicle;
 } else {
 	_vehicle = createVehicle [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
 	waitUntil {!isNil "_vehicle"}; //Wait?
@@ -61,7 +61,6 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle setDir (markerDir _spawnPoint);
 	_vehicle setPos (getMarkerPos _spawnPoint);
 	[[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
-	_vehicle allowDamage true; //Re-enable damage handling.
 	[_vehicle] call life_fnc_clearVehicleAmmo;
 	_vehicle setVariable["trunk_in_use",false,true];
 	_vehicle setVariable["vehicle_info_owners",[[getPlayerUID player,profileName]],true];
@@ -85,6 +84,7 @@ switch(playerSide) do {
 	};
 };
 
+_vehicle allowDamage true;
 life_vehicles set[count life_vehicles,_vehicle]; //Add err to the chain.
 if(_mode) then {
 	if(!(_className in ["B_G_Offroad_01_armed_F","B_MRAP_01_hmg_F"])) then {
