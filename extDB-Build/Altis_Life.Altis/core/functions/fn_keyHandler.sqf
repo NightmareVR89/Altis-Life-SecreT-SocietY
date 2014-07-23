@@ -97,7 +97,7 @@ switch (_code) do
 		if(_shift) then {_handled = true;};
 		if(_shift && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && !(cursorTarget getVariable "hostage") && speed cursorTarget < 1) then
 		{
-			if(playerSide == west && (side cursorTarget in [civilian,independent,east])) then {
+			if(playerSide == west && (side cursorTarget != west)) then {
 				if([false,"handschellen",1] call life_fnc_handleInv) then
 				{
 					[] call life_fnc_restrainAction;
@@ -269,7 +269,7 @@ switch (_code) do
 	case 45: //Shift + X für Waffen beschlagnahmen
 	{
 		if(_shift) then {_handled = true;};
-			if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent,east]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && (cursorTarget getVariable "restrained")) then
+			if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget != west) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && (cursorTarget getVariable "restrained")) then
 			{
 				[] call life_fnc_removeWeaponAction;
 			};
@@ -278,7 +278,7 @@ switch (_code) do
 	case 46: //Shift + C für Maske abnehmen
 	{
 		if(_shift) then {_handled = true;};
-			if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent,east]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && (cursorTarget getVariable "restrained")) then
+			if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget != west) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && (cursorTarget getVariable "restrained")) then
 			{
 				[] call life_fnc_removeHeadgear;
 			};
