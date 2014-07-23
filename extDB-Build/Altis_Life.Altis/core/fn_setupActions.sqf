@@ -16,7 +16,6 @@ switch (playerSide) do
 		!isNull cursorTarget && player distance cursorTarget < 3.5 && isPlayer cursorTarget && animationState cursorTarget == "Incapacitated" && !(cursorTarget getVariable["robbed",FALSE]) ']];
 		//Selbstmordattentäter
 		life_actions = life_actions + [player addAction["<t color='#FF0000'>Bombengürtel aktivieren</t>",life_fnc_suicideBomb,"",0,false,false,"",' vest player == "V_HarnessOGL_brn" && alive player && playerSide == civilian && !life_istazed && !(player getVariable "restrained") && !(player getVariable "Escorting") && !(player getVariable "transporting")']];
-		life_actions = life_actions + [player addAction["Person fesseln",life_fnc_hostgeAction,"",0,false,false,"",'!isNull cursorTarget && player distance cursorTarget < 3.5 && isPlayer cursorTarget && license_civ_rebel && (animationState cursorTarget) == "Incapacitated"']];
 	};
 };
 

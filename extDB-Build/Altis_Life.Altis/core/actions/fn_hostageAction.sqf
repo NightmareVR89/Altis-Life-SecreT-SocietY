@@ -12,7 +12,6 @@ if((_unit getVariable "hostage")) exitWith {};
 if(player == _unit) exitWith {};
 if(!isPlayer _unit) exitWith {};
 //Broadcast!
-[false,"kabelb",1] call life_fnc_handleInv;
 
 _unit setVariable["hostage",true,true];
 [[player], "life_fnc_hostage", _unit, false] spawn life_fnc_MP;

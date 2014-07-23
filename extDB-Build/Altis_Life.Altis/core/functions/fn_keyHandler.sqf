@@ -95,16 +95,27 @@ switch (_code) do
 	case 19:
 	{
 		if(_shift) then {_handled = true;};
-		if(_shift && if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent,east]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
+		if(_shift && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && !(cursorTarget getVariable "hostage") && speed cursorTarget < 1) then
 		{
-			if([false,"handschellen",1] call life_fnc_handleInv) then
-			{
-				[] call life_fnc_restrainAction;
-			}
-			else
-			{
-				hint "Du hast keine Handschellen dabei!";
+			if(playerSide == west && (side cursorTarget in [civilian,independent,east])) then {
+				if([false,"handschellen",1] call life_fnc_handleInv) then
+				{
+					[] call life_fnc_restrainAction;
+				}
+				else
+				{
+					hint "Du hast keine Handschellen dabei!";
+				};
 			};
+			if(playerSide == civilian && license_civ_rebel && (animationState cursorTarget) == "Incapacitated") then {
+				if([false,"kabelb",1] call life_fnc_handleInv) then
+				{
+					[] call life_fnc_hostageAction;
+				}
+				else
+				{
+					hint "Du hast keine Kabelbinder dabei!";
+				};
 			};
 		};
 	};

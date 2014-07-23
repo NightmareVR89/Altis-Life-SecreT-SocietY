@@ -10,7 +10,7 @@ Saves the player's gear every 10 minutes.
 while {true} do {
 sleep 600;
 [] call life_fnc_saveGear;
-hint "Gear automatisch gespeichert."
+hint "Game Autosaved."
 };
 // < ---- OLD CODE BELOW ---- > 
 /* 
