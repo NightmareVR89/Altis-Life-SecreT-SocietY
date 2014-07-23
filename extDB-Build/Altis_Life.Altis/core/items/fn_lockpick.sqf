@@ -79,6 +79,7 @@ if(!_isVehicle) then {
 	} else {
 		[[getPlayerUID player,profileName,"215"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 		[[0,format["%1 hat versucht ein Auto zu klauen.",profileName]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+		_curTarget say3D "caralarm";
 		titleText["Der Dietrich ist abgebrochen.","PLAIN"];
 	};
 };
