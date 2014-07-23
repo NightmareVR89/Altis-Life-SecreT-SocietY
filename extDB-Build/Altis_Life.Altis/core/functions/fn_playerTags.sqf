@@ -33,7 +33,7 @@ _units = _units - [player];
 			case "Land_Sink_F": {[visiblePosition _x select 0, visiblePosition _x select 1, (getPosATL _x select 2) + 2]};
 			case "Land_Sink_F": {[visiblePosition _x select 0, visiblePosition _x select 1, (getPosATL _x select 2) + 2]};
 		};
-		_sPos = worldToScreen _pos;
+		_sPos = worldToScreen getpos _pos;
 		_distance = _pos distance player;
 		if(count _sPos > 1 && {_distance < 15}) then {
 			_text = switch (true) do {
