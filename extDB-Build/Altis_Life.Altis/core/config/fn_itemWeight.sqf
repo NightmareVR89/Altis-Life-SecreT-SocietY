@@ -69,6 +69,7 @@ switch (_item) do
 	case "roadcone": {1};
 	case "barrier": {2};
 	case "sandbag": {2};
-	case "palette": {8};
+	case "zelt": {8};
+	case "wand": {8};
 	default {1};
 };

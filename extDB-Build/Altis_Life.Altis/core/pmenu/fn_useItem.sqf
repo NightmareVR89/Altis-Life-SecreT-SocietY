@@ -145,11 +145,18 @@ switch (true) do
 			[] spawn life_fnc_stacheldraht;
 		};
 	};
-	case (_item == "palette"):
+	case (_item == "zelt"):
 	{	
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
-			[] spawn life_fnc_palette;
+			[] spawn life_fnc_zelt;
+		};
+	};
+	case (_item == "wand"):
+	{	
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_wand;
 		};
 	};
 	default

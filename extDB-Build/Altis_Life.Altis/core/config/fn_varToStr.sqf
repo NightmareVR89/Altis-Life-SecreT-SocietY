@@ -66,7 +66,8 @@ switch (_var) do
 	case "life_inv_froschlsd": {"Frosch-LSD"};
 	case "life_inv_froschbein": {"Froschschenkel"};
 	case "life_inv_frosch": {"Frösche"};
-	case "life_inv_palette": {"Alte Palette"};
+	case "life_inv_wand": {"wand"};
+	case "life_inv_zelt": {"Zelt"};
 	case "life_inv_stacheldraht": {"Stacheldraht"};
 	case "life_inv_lagerfeuer": {"Lagerfeuer"};
 	case "life_inv_schranke": {"Mobile Schranke"};
