@@ -61,6 +61,11 @@ switch (_item) do
 	case "froschbein": {2};
 	case "handschellen": {1};
 	case "kabelb": {1};
+	case "stacheldraht": {10};
+	case "lagerfeuer": {1};
+	case "schranke": {12};
+	case "camonetz": {8};
+	case "bunker": {20};
 	case "roadcone": {1};
 	case "barrier": {2};
 	case "sandbag": {2};

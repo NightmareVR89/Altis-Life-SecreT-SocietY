@@ -123,9 +123,14 @@ class Life_Client_Core
 		class removeHeadgear {};
 		class removeWeaponAction {};
 		class froschFang {};
+		class packupStacheldraht {};
+		class packupLagerfeuer {};
 		class packupRoadcone {};
 		class packupRoadbarrier {};
 		class packupSandbag {};
+		class packupBunker {};
+		class packupCamonetz {};
+		class packupSchranke {};
 		class dragAction {};
 		class stopDragging {};
 		class freilassen {};
@@ -394,6 +399,11 @@ class Life_Client_Core
 		class roadcone {};
 		class barrier {};
 		class sandbag {};
+		class bunker {};
+		class camonetz {};
+		class schranke {};
+		class lagerfeuer {};
+		class stacheldraht {};
 	};
 	
 	class Dialog_Controls

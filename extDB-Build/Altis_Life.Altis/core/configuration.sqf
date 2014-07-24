@@ -181,8 +181,13 @@ life_inv_items =
 	"life_inv_frosch",
 	"life_inv_froschlsd",
 	"life_inv_froschbein",
+	"life_inv_stacheldraht",
+	"life_inv_lagerfeuer",
+	"life_inv_schranke",
+	"life_inv_camonetz",
 	"life_inv_roadcone",
 	"life_inv_barrier",
+	"life_inv_bunker",
 	"life_inv_sandbag"
 ];
 
@@ -274,6 +279,11 @@ sell_array =
 	["kabelb",50],
 	["froschlsd",65],
 	["froschbein",40],
+	["stacheldraht",5],
+	["lagerfeuer",5],
+	["schranke",40],
+	["camonetz",40],
+	["bunker",40],
 	["roadcone",10],
 	["barrier",20],
 	["sandbag",30]
@@ -310,6 +320,11 @@ buy_array =
 	["handschellen",60],
 	["kabelb",60],
 	["froschbein",60],
+	["stacheldraht",10],
+	["lagerfeuer",5],
+	["schranke",60],
+	["camonetz",60],
+	["bunker",60],
 	["roadcone",20],
 	["barrier",30],
 	["sandbag",40]

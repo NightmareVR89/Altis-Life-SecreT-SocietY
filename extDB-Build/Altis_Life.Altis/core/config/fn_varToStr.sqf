@@ -66,6 +66,11 @@ switch (_var) do
 	case "life_inv_froschlsd": {"Frosch-LSD"};
 	case "life_inv_froschbein": {"Froschschenkel"};
 	case "life_inv_frosch": {"Frösche"};
+	case "life_inv_stacheldraht": {"Stacheldraht"};
+	case "life_inv_lagerfeuer": {"Lagerfeuer"};
+	case "life_inv_schranke": {"Mobile Schranke"};
+	case "life_inv_bunker": {"Bunker"};
+	case "life_inv_camonetz": {"Camonetz Offen"};
 	case "life_inv_roadcone": {"Verkehrshütchen"};
 	case "life_inv_barrier": {"Holzbarriere"};
 	case "life_inv_sandbag": {"Sandsackmauer"};

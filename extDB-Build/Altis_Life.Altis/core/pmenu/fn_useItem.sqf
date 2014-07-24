@@ -110,6 +110,41 @@ switch (true) do
 			[] spawn life_fnc_barrier;
 		};
 	};
+	case (_item == "bunker"):
+	{	
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_bunker;
+		};
+	};
+	case (_item == "camonetz"):
+	{	
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_camonetz;
+		};
+	};
+	case (_item == "schranke"):
+	{	
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_schranke;
+		};
+	};
+	case (_item == "lagerfeuer"):
+	{	
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_lagerfeuer;
+		};
+	};
+	case (_item == "stacheldraht"):
+	{	
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_stacheldraht;
+		};
+	};
 	default
 	{
 		hint "Das ist kein benutzbarer Gegenstand.";

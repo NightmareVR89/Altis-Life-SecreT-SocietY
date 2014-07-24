@@ -10,9 +10,9 @@ _shop = _this select 0;
 
 switch (_shop) do
 {
-	case "market": {["Altis Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","storagesmall","storagebig"]]};
-	case "rebel": {["Rebellen Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge","kabelb"]]};
-	case "gang": {["Gangmarkt", ["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter"]]};
+	case "market": {["Altis Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","lagerfeuer","boltcutter","storagesmall","storagebig"]]};
+	case "rebel": {["Rebellen Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","lagerfeuer","boltcutter","blastingcharge","kabelb","camonetz"]]};
+	case "gang": {["Gangmarkt", ["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","lagerfeuer","blastingcharge","boltcutter","camonetz"]]};
 	case "wongs": {["Wong's Spezialitäten",["turtlesoup","turtle","froschbein"]]};
 	case "coffee": {["Stratis Kaffeehaus",["coffee","donuts"]]};
 	case "heroin": {["Drogendealer",["cocainep","heroinp","marijuana","froschlsd"]]};
@@ -22,7 +22,7 @@ switch (_shop) do
 	case "iron": {["Altis Industriehändler",["iron_r","copper_r"]]};
 	case "diamond": {["Diamantenhändler",["diamond","diamondc"]]};
 	case "salt": {["Salzhändler",["salt_r"]]};
-	case "cop": {["Polizeibedarf",["handschellen","donuts","coffee","spikeStrip","roadcone","barrier","sandbag","water","tbacon","rabbit","apple","redgull","fuelF","defusekit"]]};
+	case "cop": {["Polizeibedarf",["handschellen","donuts","coffee","spikeStrip","stacheldraht","roadcone","barrier","sandbag","bunker","schranke","water","tbacon","rabbit","apple","redgull","fuelF","defusekit"]]};
 	case "cement": {["Zementhändler",["cement"]]};
 	case "adac": {["Mitarbeiterkiosk",["fuelF","water","roadcone","barrier","apple","rabbit","redgull","tbacon"]]};
 };
