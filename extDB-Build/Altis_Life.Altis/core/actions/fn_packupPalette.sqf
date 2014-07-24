@@ -6,7 +6,7 @@
 	Packs up a deployed Palette.
 */
 private["_bag"];
-_bag = nearestObjects[getPos player,["Land_Pallet_vertical_F"],8] select 0;
+_bag = nearestObjects[getPos player,["Land_Rack_F"],8] select 0;
 if(isNil "_bag") exitWith {};
 if(playerSide == civilian) then {
 	if(([true,"palette",1] call life_fnc_handleInv)) then
