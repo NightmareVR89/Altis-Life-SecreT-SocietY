@@ -114,11 +114,17 @@ class CfgSounds
 		titles[] = {0, " "};
 	};
 	class caralarm
-  {
+	{
     name = "caralarm";
     sound[] = {"\sounds\caralarm.ogg", 1, 1};
     titles[] = {};
-  };
+	};
+	class soundGranate
+	{
+    name = "soundGranate";
+    sound[] = {"\sounds\sound_granate.ogg", 1, 1};
+    titles[] = {};
+	};
 };
 
 

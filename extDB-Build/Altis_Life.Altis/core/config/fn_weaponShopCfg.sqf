@@ -499,6 +499,7 @@ switch(_shop) do
 						["RPG32_HE_F",nil,2000],
 						["HandGrenade_Stone","Flashbang",500],
 						["SmokeShellGreen","Tränengas",300],
+						["B_IR_Grenade","Sound Granate",300],
 						["6Rnd_GreenSignal_F",nil,200],
 						["6Rnd_RedSignal_F",nil,200],
 						["5Rnd_127x108_Mag",nil,200],
