@@ -186,6 +186,7 @@ if(count (handGunItems player) > 0) then
 	["life_inv_kabelb", life_inv_kabelb],
 	["life_inv_frosch", life_inv_frosch],
 	["life_inv_froschbein", life_inv_froschbein],
+	["life_inv_stacheldraht", life_inv_stacheldraht],
 	["life_inv_bunker", life_inv_bunker],
 	["life_inv_camonetz", life_inv_camonetz],
 	["life_inv_schranke", life_inv_schranke],
