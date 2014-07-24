@@ -191,10 +191,7 @@ if(count (handGunItems player) > 0) then
 	["life_inv_camonetz", life_inv_camonetz],
 	["life_inv_schranke", life_inv_schranke],
 	["life_inv_lagerfeuer", life_inv_lagerfeuer],
-	["life_inv_palette", life_inv_palette],
-	["life_inv_sandbag", life_inv_sandbag],
-	["life_inv_roadcone", life_inv_roadcone],
-	["life_inv_barrier", life_inv_barrier]
+	["life_inv_palette", life_inv_palette]
 ];
 
 _ret set[count _ret,_uItems];
