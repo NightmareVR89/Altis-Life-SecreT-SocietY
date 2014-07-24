@@ -123,6 +123,7 @@ class Life_Client_Core
 		class removeHeadgear {};
 		class removeWeaponAction {};
 		class froschFang {};
+		class packupPalette {};
 		class packupStacheldraht {};
 		class packupLagerfeuer {};
 		class packupRoadcone {};
@@ -404,6 +405,7 @@ class Life_Client_Core
 		class schranke {};
 		class lagerfeuer {};
 		class stacheldraht {};
+		class palette {};
 	};
 	
 	class Dialog_Controls

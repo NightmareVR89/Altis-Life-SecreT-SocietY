@@ -11,8 +11,8 @@ _shop = _this select 0;
 switch (_shop) do
 {
 	case "market": {["Altis Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","lagerfeuer","boltcutter","storagesmall","storagebig"]]};
-	case "rebel": {["Rebellen Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","lagerfeuer","boltcutter","blastingcharge","kabelb","camonetz"]]};
-	case "gang": {["Gangmarkt", ["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","lagerfeuer","blastingcharge","boltcutter","camonetz"]]};
+	case "rebel": {["Rebellen Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","lagerfeuer","boltcutter","blastingcharge","kabelb","camonetz","palette"]]};
+	case "gang": {["Gangmarkt", ["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","lagerfeuer","blastingcharge","boltcutter","camonetz","palette"]]};
 	case "wongs": {["Wong's Spezialitäten",["turtlesoup","turtle","froschbein"]]};
 	case "coffee": {["Stratis Kaffeehaus",["coffee","donuts"]]};
 	case "heroin": {["Drogendealer",["cocainep","heroinp","marijuana","froschlsd"]]};

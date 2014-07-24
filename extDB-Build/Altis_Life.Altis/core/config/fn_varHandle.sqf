@@ -70,6 +70,7 @@ switch (_mode) do
 			case "froschlsd": {"life_inv_froschlsd"};
 			case "froschbein": {"life_inv_froschbein"};
 			case "frosch": {"life_inv_frosch"};
+			case "palette": {"life_inv_palette"};
 			case "stacheldraht": {"life_inv_stacheldraht"};
 			case "lagerfeuer": {"life_inv_lagerfeuer"};
 			case "schranke": {"life_inv_schranke"};
@@ -139,6 +140,7 @@ switch (_mode) do
 			case "life_inv_froschlsd": {"froschlsd"};
 			case "life_inv_froschbein": {"froschbein"};
 			case "life_inv_frosch": {"frosch"};
+			case "life_inv_palette": {"palette"};
 			case "life_inv_stacheldraht": {"stacheldraht"};
 			case "life_inv_lagerfeuer": {"lagerfeuer"};
 			case "life_inv_schranke": {"schranke"};

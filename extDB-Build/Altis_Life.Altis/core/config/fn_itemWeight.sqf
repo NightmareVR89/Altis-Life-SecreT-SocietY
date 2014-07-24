@@ -64,10 +64,11 @@ switch (_item) do
 	case "stacheldraht": {12};
 	case "lagerfeuer": {1};
 	case "schranke": {12};
-	case "camonetz": {8};
+	case "camonetz": {10};
 	case "bunker": {20};
 	case "roadcone": {1};
 	case "barrier": {2};
 	case "sandbag": {2};
+	case "palette": {8};
 	default {1};
 };

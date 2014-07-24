@@ -145,6 +145,13 @@ switch (true) do
 			[] spawn life_fnc_stacheldraht;
 		};
 	};
+	case (_item == "palette"):
+	{	
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_palette;
+		};
+	};
 	default
 	{
 		hint "Das ist kein benutzbarer Gegenstand.";
