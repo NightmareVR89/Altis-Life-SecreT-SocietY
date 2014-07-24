@@ -1,8 +1,5 @@
 While{true} do
 {
-
-
-
 	waituntil{
 	((nearestObject [getpos player, "B_IR_Grenade"]) distance player < 10)
 	and
