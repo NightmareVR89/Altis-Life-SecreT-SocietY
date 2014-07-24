@@ -5,10 +5,10 @@
 	Description:
 	Retrains the client.
 */
-private["_cop","_player"];
-_cop = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
+private["_verbrecher","_player"];
+_verbrecher = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 _player = player;
-if(isNull _cop) exitWith {};
+if(isNull _verbrecher) exitWith {};
 
 //Monitor excessive restrainment
 [] spawn
@@ -20,17 +20,15 @@ if(isNull _cop) exitWith {};
 		waitUntil {(time - _time) > (5 * 60)};
 		
 		if(!(player getVariable["hostage",FALSE])) exitWith {};
-		if((player getVariable["hostage",FALSE]) && vehicle player == player) exitWith {
+		if(!([west,getPos player,30] call life_fnc_nearUnits) &&(player getVariable["hostage",FALSE]) && vehicle player == player) exitWith {
 			player setVariable["hostage",FALSE,TRUE];
-			player setVariable["Escorting",FALSE,TRUE];
-			player setVariable["transporting",false,true];
 			detach player;
-			titleText["Wegen exzessiven Geiselnehmens wurdest du automatisch wieder freigelassen","PLAIN"];
+			titleText["Du hast es geschafft dich selbst zu befreien!","PLAIN"];
 		};
 	};
 };
 
-titleText[format["Du wurdest von %1 als Geisel genommen",_cop getVariable["realname",name _cop]],"PLAIN"];
+titleText[format["Du wurdest von %1 als Geisel genommen",_verbrecher getVariable["realname",name _verbrecher]],"PLAIN"];
 				
 while {player getVariable "hostage"} do
 {
@@ -44,12 +42,10 @@ while {player getVariable "hostage"} do
 	if(!alive player) exitWith
 	{
 		player setVariable ["hostage",false,true];
-		player setVariable ["Escorting",false,true];
-		player setVariable ["transporting",false,true];
 		detach _player;
 	};
 	
-	if(!alive _cop) exitWith {
+	if(!alive _verbrecher) exitWith {
 		player setVariable ["Escorting",false,true];
 		detach player;
 	};
