@@ -20,7 +20,7 @@ _mapKey = actionKeys "ShowMap" select 0;
 _interruptionKeys = [17,30,31,32]; //A,S,W,D
 
 //Vault handling...
-if((_code in (actionKeys "GetOver") || _code in (actionKeys "salute")) && {(player getVariable ["restrained",false])}) exitWith {
+if((_code in (actionKeys "GetOver") || _code in (actionKeys "salute")) && {(player getVariable ["restrained",false]) || (player getVariable ["hostage",false])}) exitWith {
 	true;
 };
 
