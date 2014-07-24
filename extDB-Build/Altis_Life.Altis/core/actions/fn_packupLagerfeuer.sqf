@@ -8,7 +8,7 @@
 private["_bag"];
 _bag = nearestObjects[getPos player,["Campfire_burning_F"],8] select 0;
 if(isNil "_bag") exitWith {};
-if(playerSide == civ) then {
+if(playerSide == civilian) then {
 	if(([true,"lagerfeuer",1] call life_fnc_handleInv)) then
 	{
 		titleText["Du hast das Lagerfeuer eingepackt.","PLAIN"];
