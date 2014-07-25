@@ -12,7 +12,7 @@ _sum = ["weintrauben",3,life_carryWeight,life_maxWeight] call life_fnc_calWeight
 
 if(_sum > 0) then
 {
-life_sammel_sperre = true;
+life_action_inUse = true;
 titleText["Sammle Weintrauben...","PLAIN"];
 titleFadeOut 2;
 sleep 2;
@@ -23,4 +23,4 @@ titleText["Du hast einige Weintrauben eingesammelt.","PLAIN"];
 };
 };
 
-life_sammel_sperre = false;
+life_action_inUse = false;

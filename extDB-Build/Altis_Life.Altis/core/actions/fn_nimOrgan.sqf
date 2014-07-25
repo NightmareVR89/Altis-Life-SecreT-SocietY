@@ -16,6 +16,7 @@ if(life_inv_niere >= 4) exitWith {hint "Es ist unwahrscheinlich das Du so viele 
 if(!([true,"niere",1] call life_fnc_handleInv)) exitWith {hint "Du hast kein Platz um irgend welche Organe zu transportiren!"};//if no room for kidney, you cannot take their kidney, duh, waste not want not
 life_action_inUse = true;//sets action to true as to prevent kidney spammming!!!!!!!!
 player setVariable["hatOrgan",true,true];//sets variable on thief, so as not to consistently take organs, set to 5 minute cooldown
+[[_curTarget,"niere"],"life_fnc_say3D",nil,false] spawn life_fnc_MP;
 player playMove "AinvPknlMstpSnonWnonDnon_medic";//makes the thief do an animation as to seem like they are doing surgery
 sleep 3;//length of action, had weird results with any higher - obv not realistic, but whatever
 _unit setVariable["missingOrgan",true,true];//sets the missing organ variable so effects can take place

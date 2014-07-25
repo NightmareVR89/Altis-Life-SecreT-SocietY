@@ -19,6 +19,8 @@
 #include "clothing.hpp"
 #include "trunk.hpp"
 #include "spawnSelection.hpp"
+#include "common_EditorWrapper.hpp"
+#include "market.hpp"
 #include "chop_shop.h"
 #include "pInteraction.h"
 #include "pInteraction_adac.h"

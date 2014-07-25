@@ -157,7 +157,24 @@ class Life_Client_Core
 		class copHouseOwner {};
 		class lockHouse {};
 	};
-	
+	class Market //Marktanbindung
+	{
+		file = "core\market";
+		
+		class openMarketView;
+		class refreshMarketView;
+		class marketShortView;
+		class marketBuy;
+		class marketSell;
+		class marketGetBuyPrice;
+		class marketGetSellPrice;
+		class marketconfiguration;
+		class marketReset;
+		class marketChange;
+		class marketGetRow;
+		class marketGetPriceRow;
+		class marketSetPriceRow;
+	};	
 	class Config
 	{
 		file = "core\config";
@@ -214,6 +231,7 @@ class Life_Client_Core
 	class Functions
 	{
 		file = "core\functions";
+		class randomRound {};
 		class calWeightDiff {};
 		class fetchCfgDetails {};
 		class handleInv {};
