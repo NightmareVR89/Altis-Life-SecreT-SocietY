@@ -72,5 +72,5 @@ _grapeZones = ["grape_1"];
 	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
 	_zone setTriggerArea[100,100,0,false];
 	_zone setTriggerActivation["CIV","PRESENT",true];
-	_zone setTriggerStatements["player in thislist","LIFE_Action_Weintrauben = player addAction['Sammle Weintrauben',life_fnc_gatherWeintrauben,'',0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Weintrauben;"];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_Weintrauben = player addAction['Sammle Weintrauben',life_fnc_gatherWeintrauben,'',0,false,false,'','!life_action_sammel_sperre'];","player removeAction LIFE_Action_Weintrauben;"];
 } foreach _grapeZones;
