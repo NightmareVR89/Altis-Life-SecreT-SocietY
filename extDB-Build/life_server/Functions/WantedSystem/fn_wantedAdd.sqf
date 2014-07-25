@@ -37,6 +37,7 @@ switch(_type) do
 	case "1215": {_type = ["Über 51 Km/h über dem Geschwindigkeitslimit", 1000]}; // Preise bitte anpassen!
 	case "weapon": {_type = ["Besitz illegaler Waffen",4000]};
 	case "policeitems": {_type = ["Besitz von Polizeigegenständen",5000]};
+	case "919": {_type = ["Organ Handel",5000]};
 	default {_type = [];};
 };
 
