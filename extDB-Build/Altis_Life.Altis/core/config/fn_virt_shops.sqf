@@ -25,4 +25,5 @@ switch (_shop) do
 	case "cop": {["Polizeibedarf",["handschellen","donuts","coffee","spikeStrip","stacheldraht","roadcone","barrier","sandbag","bunker","schranke","water","tbacon","rabbit","apple","redgull","fuelF","defusekit"]]};
 	case "cement": {["Zementhändler",["cement"]]};
 	case "adac": {["Mitarbeiterkiosk",["fuelF","water","roadcone","barrier","apple","rabbit","redgull","tbacon"]]};
+	case "organ": {["Organ Handler",["niere"]]};
 };

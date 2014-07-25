@@ -76,6 +76,7 @@ class Life_Client_Core
 	class Actions
 	{
 		file = "core\actions";
+		class nimOrgan {};
 		class buyLicense {};
 		class chemlightUse {};
 		class heal {};
@@ -272,6 +273,7 @@ class Life_Client_Core
 	class Civilian
 	{
 		file = "core\civilian";
+		class hatOrgan {};
 		class jailMe {};
 		class jail {};
 		class tazed {};

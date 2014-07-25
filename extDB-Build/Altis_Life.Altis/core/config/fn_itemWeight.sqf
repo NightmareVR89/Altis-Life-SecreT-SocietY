@@ -71,5 +71,6 @@ switch (_item) do
 	case "sandbag": {2};
 	case "zelt": {8};
 	case "wand": {8};
+	case "niere": {15};//15 is the weight
 	default {1};
 };

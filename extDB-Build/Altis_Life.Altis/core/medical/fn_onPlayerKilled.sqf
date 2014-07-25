@@ -19,7 +19,8 @@ _unit setVariable["restrained",FALSE,TRUE];
 _unit setVariable["Escorting",FALSE,TRUE];
 _unit setVariable["transporting",FALSE,TRUE]; //Why the fuck do I have this? Is it used?
 _unit setVariable["steam64id",(getPlayerUID player),true]; //Set the UID.
-
+_unit setVariable["missingOrgan",FALSE,TRUE]; //I DONT KNOW WHY SOMETIMES THEY ARE CAPS or not
+_unit setVariable["hatOrgan",FALSE,TRUE]; 
 //Setup our camera view
 life_deathCamera  = "CAMERA" camCreate (getPosATL _unit);
 showCinemaBorder TRUE;

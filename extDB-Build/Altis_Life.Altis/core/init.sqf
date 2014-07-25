@@ -76,6 +76,8 @@ player setVariable["hostage",false,true];
 player setVariable["restrained",false,true];
 player setVariable["Escorting",false,true];
 player setVariable["transporting",false,true];
+player setVariable["missingOrgan",false,true];//sets variables to false on start
+player setVariable["hatOrgan",false,true];
 diag_log "Past Settings Init";
 [] execFSM "core\fsm\client.fsm";
 diag_log "Executing client.fsm";
