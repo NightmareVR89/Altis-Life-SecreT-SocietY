@@ -81,6 +81,9 @@ switch (_mode) do
 			case "roadcone": {"life_inv_roadcone"};
 			case "barrier": {"life_inv_barrier"};
 			case "sandbag": {"life_inv_sandbag"};
+			case "moonshine": {"life_inv_moonshine"};
+			case "wein": {"life_inv_wein"};
+			case "weintrauben": {"life_inv_weintrauben"};
 		};
 	};
 	
@@ -153,6 +156,9 @@ switch (_mode) do
 			case "life_inv_sandbag": {"sandbag"};
 			case "life_inv_barrier": {"barrier"};
 			case "life_inv_roadcone": {"roadcone"};
+			case "life_inv_moonshine": {"moonshine"};
+			case "life_inv_wein": {"wein"};
+			case "life_inv_weintrauben": {"weintrauben"};
 		};
 	};
 };

@@ -44,6 +44,8 @@ switch (_mode) do
 			case "froschlsd": {_var = "license_civ_froschlsd"};
 			case "froschbein": {_var = "license_civ_froschbein"};
 			case "adacdrive": {_var = "license_adac_driver"};
+			case "weintrauben": {_var = "license_civ_weintrauben"};
+			case "moonshine": {_var = "license_civ_moonshine"};
 			default {_var = ""};
 		};
 	};
@@ -80,6 +82,8 @@ switch (_mode) do
 			case "license_civ_froschlsd": {_var = "froschlsd"};
 			case "license_civ_froschbein": {_var = "froschbein"};
 			case "license_adac_driver": {_var = "adacdrive"};
+			case "license_civ_weintrauben": {_var = "weintrauben"};
+			case "license_civ_moonshine": {_var = "moonshine"};
 			default {_var = ""};
 		};
 	};

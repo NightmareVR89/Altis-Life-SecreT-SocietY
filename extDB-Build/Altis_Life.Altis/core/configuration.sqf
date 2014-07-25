@@ -191,7 +191,10 @@ life_inv_items =
 	"life_inv_roadcone",
 	"life_inv_barrier",
 	"life_inv_bunker",
-	"life_inv_sandbag"
+	"life_inv_sandbag",
+	"life_inv_moonshine",
+	"life_inv_wein",
+	"life_inv_weintrauben"
 ];
 
 //Setup variable inv vars.
@@ -225,7 +228,9 @@ life_licenses =
 	["license_civ_adac","civ"],
 	["license_civ_froschlsd","civ"],
 	["license_civ_froschbein","civ"],
-	["license_adac_driver","adac"]
+	["license_adac_driver","adac"],
+	["license_civ_weintrauben","civ"],
+	["license_civ_moonshine","civ"]
 ];
 
 //Setup License Variables
@@ -236,7 +241,7 @@ life_adaclicenses =
 
 life_dp_points = ["dp_1","dp_2","dp_3","dp_4","dp_5","dp_6","dp_7","dp_8","dp_9","dp_10","dp_11","dp_12","dp_13","dp_14","dp_15","dp_15","dp_16","dp_17","dp_18","dp_19","dp_20","dp_21","dp_22","dp_23","dp_24","dp_25"];
 //[shortVar,reward]
-life_illegal_items = [["heroinu",50],["goldbar",800],["kidney",2000],["heroinp",80],["cocaine",35],["cocainep",70],["marijuana",50],["turtle",100],["blastingcharge",500],["boltcutter",100],["froschlsd",60]];
+life_illegal_items = [["heroinu",50],["goldbar",800],["niere",2000],["moonshine",60],["heroinp",80],["cocaine",35],["cocainep",70],["marijuana",50],["turtle",100],["blastingcharge",500],["boltcutter",100],["froschlsd",60]];
 
 
 /*
@@ -292,7 +297,10 @@ sell_array =
 	["roadcone",10],
 	["barrier",20],
 	["niere",2500],
-	["sandbag",30]
+	["sandbag",30],
+	["moonshine",85],
+	["wein",60],
+	["weintrauben",40]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -336,7 +344,10 @@ buy_array =
 	["roadcone",20],
 	["barrier",30],
 	["niere",4500],
-	["sandbag",40]
+	["sandbag",40],
+	["moonshine",150],
+	["wein",100],
+	["weintrauben",70]
 ];
 __CONST__(buy_array,buy_array);
 

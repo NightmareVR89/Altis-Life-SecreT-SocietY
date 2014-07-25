@@ -31,5 +31,5 @@ _health ctrlSetText format["%1", round((1 - (damage player)) * 100)];
 _health ctrlCommit 0;
 //Update Money
 _money ctrlSetPosition [safeZoneX+safeZoneW-0.090,safeZoneY+safeZoneH-0.410];
-_money ctrlSetText format["%1", format["%1",_cash] call life_fnc_numberText]];
+_money ctrlSetText format["%1", format["%1",_cash]];
 _money ctrlCommit 0;

@@ -13,7 +13,7 @@ switch (_shop) do
 	case "market": {["Altis Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","lagerfeuer","zelt","boltcutter","storagesmall","storagebig"]]};
 	case "rebel": {["Rebellen Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","lagerfeuer","boltcutter","blastingcharge","kabelb","camonetz","zelt","wand"]]};
 	case "gang": {["Gangmarkt", ["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","lagerfeuer","blastingcharge","boltcutter","camonetz","zelt","wand"]]};
-	case "wongs": {["Wong's Spezialitäten",["turtlesoup","turtle","froschbein"]]};
+	case "wongs": {["Wong's Spezialitäten",["turtlesoup","turtle","froschbein","moonshine"]]};
 	case "coffee": {["Stratis Kaffeehaus",["coffee","donuts"]]};
 	case "heroin": {["Drogendealer",["cocainep","heroinp","marijuana","froschlsd"]]};
 	case "oil": {["Ölhaendler",["oilp","pickaxe","fuelF"]]};
@@ -26,4 +26,5 @@ switch (_shop) do
 	case "cement": {["Zementhändler",["cement"]]};
 	case "adac": {["Mitarbeiterkiosk",["fuelF","water","roadcone","barrier","apple","rabbit","redgull","tbacon"]]};
 	case "organ": {["Organ Handler",["niere"]]};
+	case "beer": {["Weingarten",["wein"]]};
 };

@@ -77,6 +77,9 @@ switch (_var) do
 	case "life_inv_roadcone": {"Verkehrshütchen"};
 	case "life_inv_barrier": {"Holzbarriere"};
 	case "life_inv_sandbag": {"Sandsackmauer"};
+	case "life_inv_moonshine": {"Moonshine"};
+	case "life_inv_wein": {"Wein"};
+	case "life_inv_weintrauben": {"Weintrauben"};
 	
 	//License Block
 	case "license_civ_driver": {"Führerschein"};
@@ -106,4 +109,6 @@ switch (_var) do
 	case "license_civ_froschlsd": {"Froschquetscher"};
 	case "license_civ_froschbein": {"Gourmet-Koch"};
 	case "license_adac_driver": {"ADAC-Mitarbeiterausweis"};
+	case "license_civ_weintrauben": {"Weintrauben Verarbeitung"};
+	case "license_civ_moonshine": {"Moonshine Verarbeitung"};
 };

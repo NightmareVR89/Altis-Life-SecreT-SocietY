@@ -72,5 +72,8 @@ switch (_item) do
 	case "zelt": {8};
 	case "wand": {8};
 	case "niere": {15};//15 is the weight
+	case "wein": {2};
+	case "moonshine": {2};
+	case "weintrauben": {3};
 	default {1};
 };

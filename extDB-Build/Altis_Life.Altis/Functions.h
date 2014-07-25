@@ -113,6 +113,7 @@ class Life_Client_Core
 		class ticketAction {};
 		class gatherPeaches {};
 		class gatherCocaine {};
+		class gatherWeintrauben {};
 		class pumpRepair {};
 		class packupSpikes {};
 		class storeVehicle {};

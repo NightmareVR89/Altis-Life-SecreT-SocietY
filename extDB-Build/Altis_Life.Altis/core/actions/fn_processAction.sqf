@@ -26,6 +26,8 @@ _itemInfo = switch (_type) do
 	case "cement": {["rock","cement",370,"Mixe Zement"]};
 	case "froschlsd": {["frosch","froschlsd",520,"Zerquetsche Frösche"]};
 	case "froschbein": {["frosch","froschbein",330,"Koche Froschschenkel"]};
+	case "weintrauben": {["weintrauben","wein",250,"Verarbeite Weintrauben zu Wein"]};
+	case "moonshine": {["weintrauben","moonshine",450,"Verarbeite Weintrauben zu Moonshine"]};
 	default {[]};
 };
 
