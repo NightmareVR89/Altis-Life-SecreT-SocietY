@@ -10,8 +10,8 @@ _unit = _this select 0;
 _container = _this select 1;
 
 _isPack = getNumber(configFile >> "CfgVehicles" >> (typeOf _container) >> "isBackpack");
-if(_isPack == 1) then {
-	hint "Du darfst nicht in den Rucksack von anderen Leuten schauen! Das macht man nicht!";
+if(_isPack == 1 && playerSide != west) then {
+	hint "Dieser Rucksack ist mit einem Schloss verschlossen, den kannst du nicht unbemerkt öffnen...";
 	[] spawn {
 		waitUntil {!isNull (findDisplay 602)};
 		closeDialog 0;
