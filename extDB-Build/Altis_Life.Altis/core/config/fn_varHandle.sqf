@@ -85,6 +85,12 @@ switch (_mode) do
 			case "wein": {"life_inv_wein"};
 			case "weintrauben": {"life_inv_weintrauben"};
 			case "skalpell": {"life_inv_skalpell"};
+			case "tabak": {"life_inv_tabak"};
+			case "muell": {"life_inv_muell"};
+			case "zigarren": {"life_inv_zigarren"};
+			case "wertstoffe": {"life_inv_wertstoffe"};
+			case "kunststoff": {"life_inv_kunststoff"};
+			case "edelmetall": {"life_inv_edelmetall"};
 		};
 	};
 	
@@ -161,6 +167,12 @@ switch (_mode) do
 			case "life_inv_wein": {"wein"};
 			case "life_inv_weintrauben": {"weintrauben"};
 			case "life_inv_skalpell": {"skalpell"};
+			case "life_inv_tabak": {"tabak"};
+			case "life_inv_zigarren": {"zigarren"};
+			case "life_inv_muell": {"muell"};
+			case "life_inv_wertstoffe": {"wertstoffe"};
+			case "life_inv_kunststoff": {"kunststoff"};
+			case "life_inv_edelmetall": {"edelmetall"};
 		};
 	};
 };

@@ -27,4 +27,8 @@ switch (_shop) do
 	case "adac": {["Mitarbeiterkiosk",["fuelF","water","roadcone","barrier","apple","rabbit","redgull","tbacon"]]};
 	case "organ": {["Organ Handler",["niere","skalpell"]]};
 	case "beer": {["Weingarten",["wein"]]};
+	case "tabak": {["Tabak Haus",["tabak","zigarren"]]};
+	case "wertstoffe": {["Mülldeponie",["wertstoffe"]]};
+	case "kunststoff": {["Kunststoff Händler",["kunststoff"]]};
+	case "edelmetall": {["Edelmetall Händler",["edelmetall"]]};
 };

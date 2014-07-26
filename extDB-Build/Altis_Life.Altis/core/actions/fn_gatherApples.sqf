@@ -5,9 +5,9 @@
 	Description:
 	Gathers apples?
 */
-private["_sum"];
-_sum = ["apple",3,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
-
+private["_sum","_rand"];
+_sum = ["apple",_rand,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
+_rand = round(random 5);
 if(_sum > 0) then
 {
 	life_sammel_sperre = true;

@@ -19,6 +19,8 @@ _cocaineZones = ["cocaine_1"];
 _weedZones = ["weed_1"];
 _froschZones = ["frosch_1"];
 _grapeZones = ["grape_1"];
+_tabakZones = ["tabak_1"];
+_wertstoffeZones = ["muell_1"];
 
 //Create apple zones
 {
@@ -74,3 +76,17 @@ _grapeZones = ["grape_1"];
 	_zone setTriggerActivation["CIV","PRESENT",true];
 	_zone setTriggerStatements["player in thislist","LIFE_Action_Weintrauben = player addAction['Sammle Weintrauben',life_fnc_gatherWeintrauben,'',0,false,false,'','!life_action_sammel_sperre'];","player removeAction LIFE_Action_Weintrauben;"];
 } foreach _grapeZones;
+//Create tabak
+{
+	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
+	_zone setTriggerArea[100,100,0,false];
+	_zone setTriggerActivation["CIV","PRESENT",true];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_Tabak = player addAction['Sammle Tabak',life_fnc_gatherTabak,'',0,false,false,'','!life_action_sammel_sperre'];","player removeAction LIFE_Action_Tabak;"];
+} foreach _tabakZones;
+//Create wertstoffe
+{
+	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
+	_zone setTriggerArea[100,100,0,false];
+	_zone setTriggerActivation["CIV","PRESENT",true];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_Wertstoffe = player addAction['Sammle Müll',life_fnc_gatherWertstoffe,'',0,false,false,'','!life_action_sammel_sperre'];","player removeAction LIFE_Action_Wertstoffe;"];
+} foreach _wertstoffeZones;

@@ -14,20 +14,25 @@ if(isNull _vendor OR _type == "" OR (player distance _vendor > 10)) exitWith {};
 //unprocessed item,processed item, cost if no license,Text to display (I.e Processing  (percent) ..."
 _itemInfo = switch (_type) do
 {
-	case "oil": {["oilu","oilp",200,"Verarbeite Öl"];};
-	case "diamond": {["diamond","diamondc",400,"Schleife Diamanten"]};
-	case "copper": {["copperore","copper_r",430,"Verarbeite Kupfer"]};
-	case "iron": {["ironore","iron_r",660,"Verarbeite Eisen"]};
-	case "sand": {["sand","glass",110,"Schmelze Sand"]};
-	case "salt": {["salt","salt_r",320,"Reinige Salz"]};
-	case "cocaine": {["cocaine","cocainep",550,"Pansche Kokain"]};
-	case "marijuana": {["cannabis","marijuana",290,"Verarbeite Marijuana"]};
-	case "heroin": {["heroinu","heroinp",470,"Pansche Heroin"]};
-	case "cement": {["rock","cement",370,"Mixe Zement"]};
-	case "froschlsd": {["frosch","froschlsd",520,"Zerquetsche Frösche"]};
-	case "froschbein": {["frosch","froschbein",330,"Koche Froschschenkel"]};
-	case "weintrauben": {["weintrauben","wein",250,"Verarbeite Weintrauben zu Wein"]};
-	case "moonshine": {["weintrauben","moonshine",450,"Verarbeite Weintrauben zu Moonshine"]};
+	case "oil": {["oilu","oilp",20,"Verarbeite Öl"];};
+	case "diamond": {["diamond","diamondc",40,"Schleife Diamanten"]};
+	case "copper": {["copperore","copper_r",40,"Verarbeite Kupfer"]};
+	case "iron": {["ironore","iron_r",60,"Verarbeite Eisen"]};
+	case "sand": {["sand","glass",10,"Schmelze Sand"]};
+	case "salt": {["salt","salt_r",30,"Reinige Salz"]};
+	case "cocaine": {["cocaine","cocainep",50,"Pansche Kokain"]};
+	case "marijuana": {["cannabis","marijuana",20,"Verarbeite Marijuana"]};
+	case "heroin": {["heroinu","heroinp",40,"Pansche Heroin"]};
+	case "cement": {["rock","cement",30,"Mixe Zement"]};
+	case "froschlsd": {["frosch","froschlsd",50,"Zerquetsche Frösche"]};
+	case "froschbein": {["frosch","froschbein",30,"Koche Froschschenkel"]};
+	case "weintrauben": {["weintrauben","wein",20,"Verarbeite Weintrauben zu Wein"]};
+	case "moonshine": {["weintrauben","moonshine",40,"Verarbeite Weintrauben zu Moonshine"]};
+	case "tabak": {["tabak","zigarren",50,"Verarbeite Tabak zu Zigarren"]};
+	case "wertstoffe": {["muell","wertstoffe",50,"Verarbeite Müll zu Wertstoffe"]};
+	case "edelmetall": {["wertstoffe","edelmetall",40,"Verarbeite Wertstoffe zu Edelmetalle"]};
+	case "kunststoff": {["wertstoffe","kunststoff",40,"Verarbeite Wertstoffe zu Kunststoffe"]};
+	
 	default {[]};
 };
 

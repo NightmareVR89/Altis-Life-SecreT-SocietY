@@ -75,6 +75,11 @@ switch (_item) do
 	case "wein": {2};
 	case "moonshine": {2};
 	case "weintrauben": {3};
-	case "skalpell": {1};
+	case "tabak": {2};
+	case "zigarren": {1};
+	case "muell": {6};
+	case "wertstoffe": {4};
+	case "kunststoff": {1};
+	case "edelmetall": {2};
 	default {1};
 };

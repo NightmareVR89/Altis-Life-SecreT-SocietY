@@ -197,6 +197,11 @@ life_inv_items =
 	"life_inv_wein",
 	"life_inv_weintrauben",
 	"life_inv_skalpell"
+	"life_inv_tabak"
+	"life_inv_zigarren"
+	"life_inv_wertstoffe"
+	"life_inv_kunststoff"
+	"life_inv_edelmetall"
 ];
 
 //Setup variable inv vars.
@@ -232,7 +237,12 @@ life_licenses =
 	["license_civ_froschbein","civ"],
 	["license_adac_driver","adac"],
 	["license_civ_weintrauben","civ"],
-	["license_civ_moonshine","civ"]
+	["license_civ_moonshine","civ"],
+	["license_civ_niere","civ"],
+	["license_civ_tabak","civ"],
+	["license_civ_wertstoffe","civ"],
+	["license_civ_kunststoff","civ"],
+	["license_civ_edelmetall","civ"]
 ];
 
 //Setup License Variables
@@ -303,7 +313,11 @@ sell_array =
 	["moonshine",85],
 	["wein",60],
 	["weintrauben",40],
-	["skalpell",500]
+	["tabak",40],
+	["zigarren",70],
+	["wertstoffe",20],
+	["kunststoff",50],
+	["edelmetall",110]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -351,7 +365,12 @@ buy_array =
 	["moonshine",150],
 	["wein",100],
 	["weintrauben",70],
-	["skalpell",1000]
+	["skalpell",1000],
+	["tabak",30],
+	["zigarren",60],
+	["wertstoffe",10],
+	["kunststoff",40],
+	["edelmetall",80]
 ];
 __CONST__(buy_array,buy_array);
 

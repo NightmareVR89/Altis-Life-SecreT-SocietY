@@ -40,5 +40,10 @@ switch (_type) do
 	case "froschlsd": {20000}; //ÄNDERN BITTE!
 	case "adacdrive": {1};
 	case "weintrauben": {1500};
-	case "moonshine": {7000};
+	case "tabak": {3000};
+	case "moonshine": {5000};
+	case "wertstoffe": {7000};
+	case "kunststoff": {20000};
+	case "edelmetall": {30000};
+	case "niere": {45000};
 };

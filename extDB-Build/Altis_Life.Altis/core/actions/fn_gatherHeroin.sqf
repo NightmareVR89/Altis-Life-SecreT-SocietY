@@ -5,9 +5,9 @@
 	Description:
 	Gathers heroin?
 */
-private["_sum"];
-_sum = ["heroinu",1,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
-
+private["_sum","_rand"];
+_sum = ["heroinu",_rand,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
+_rand = round(random 5);
 if(_sum > 0) then
 {
 	life_sammel_sperre = true;
