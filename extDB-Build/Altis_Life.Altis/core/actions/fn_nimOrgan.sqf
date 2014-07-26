@@ -2,9 +2,9 @@
 	file: fn_takeOrgans.sqf
 	author: [midgetgrimm] - www.grimmlife.com
 	
-	taken from the same idea of robbing script by tonic und angepasst von Baal
+	taken from the same idea of robbing script by tonic
 */
-private["_unit","_progress","_pgText","_cP","_dice"];
+private["_unit","_progress","_pgText","_cP"];
 _unit = cursorTarget;
 _upp = format["Entnehme %1",_displayName];
 		//Setup our progress bar.
@@ -20,7 +20,7 @@ if(isNull _unit) exitWith {}; //if unit is null, than NO
 if((_unit getVariable ["missingOrgan",FALSE])) exitWith {};//must not be missing organ already
 if((player getVariable ["hatOrgan",FALSE])) exitWith {};//thief must not have already robbed an organ within last 5 mintues
 if((animationState _unit != "Incapacitated")) exitWith {};//victim must be knocked out
-if(!([false,"skalpell",1] call life_fnc_handleInv)) exitWith {"Du hast kein Skalpell"};
+if(!([false,"skalpell",1] call life_fnc_handleInv)) exitWith {"Du hast kein Skalpell!"};
 if(player == _unit) exitWith {};//if the thief is the cursor target(dafuq) than NO
 if(!isPlayer _unit) exitWith {};//iff the cursor target is not a player than NO
 if(life_inv_niere >= 4) exitWith {hint "Es ist unwahrscheinlich das Du so viele Organe brauchst!"};//if you already have 2 kidneys, then go sell them already, no stockpiling
@@ -30,15 +30,10 @@ player setVariable["hatOrgan",true,true];//sets variable on thief, so as not to 
 _unit setVariable["missingOrgan",true,true];//sets the missing organ variable so effects can take place
 [[player], "life_fnc_hatOrgan", _unit, false] spawn life_fnc_MP;//this then calls the fn_hasOrgan.sqf on the thief
 
-_dice = random(100);	
-if(_dice < 15) then 
-{
-	
 		
 while{true} do
 		{
-			if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then 
-			{
+			if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
 				[[player,"AinvPknlMstpSnonWnonDnon_medic_1"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
 				player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
 				[[player,"niere"],"life_fnc_say3D",nil,false] spawn life_fnc_MP;
@@ -56,9 +51,3 @@ while{true} do
 		5 cutText ["","PLAIN"];
 		player playActionNow "stop";
 		if(life_interrupted) exitWith {life_interrupted = false; titleText["Aktion abgebrochen","PLAIN"]; life_action_inUse = false;};
-
-	} else 
-	{
-		if(!([false,"skalpell",1] call life_fnc_handleInv)) exitWith {life_action_inUse = false;};
-		titleText["Du hast die Niere beschädigt, so kanst Du sie nicht verkaufen.","PLAIN"];
-	};
