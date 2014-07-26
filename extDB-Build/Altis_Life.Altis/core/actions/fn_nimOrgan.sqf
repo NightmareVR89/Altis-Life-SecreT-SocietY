@@ -42,9 +42,8 @@ while{true} do
 			if(_cP >= 1) exitWith {};
 			if(!alive player) exitWith {};
 			if(player != vehicle player) exitWith {};
-			if(life_interrupted) exitWith {};
+			if(life_interrupted) exitWith {life_interrupted = false; titleText["Aktion abgebrochen","PLAIN"]; life_action_inUse = false;};
 		};
 		life_action_inUse = false;
 		5 cutText ["","PLAIN"];
 		player playActionNow "stop";
-		if(life_interrupted) exitWith {life_interrupted = false; titleText["Aktion abgebrochen","PLAIN"]; life_action_inUse = false;};
