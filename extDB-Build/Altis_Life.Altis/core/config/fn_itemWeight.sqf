@@ -75,5 +75,6 @@ switch (_item) do
 	case "wein": {2};
 	case "moonshine": {2};
 	case "weintrauben": {3};
+	case "skalpell": {1};
 	default {1};
 };

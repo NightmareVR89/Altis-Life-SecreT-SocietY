@@ -70,6 +70,7 @@ life_eat_Rabbit = 20;
 life_eat_Apple = 5;
 life_eat_turtlesoup = 62;
 life_eat_donuts = 5;
+life_eat_niere = 50;
 
 /*
 *****************************
@@ -194,7 +195,8 @@ life_inv_items =
 	"life_inv_sandbag",
 	"life_inv_moonshine",
 	"life_inv_wein",
-	"life_inv_weintrauben"
+	"life_inv_weintrauben",
+	"life_inv_skalpell"
 ];
 
 //Setup variable inv vars.
@@ -241,7 +243,7 @@ life_adaclicenses =
 
 life_dp_points = ["dp_1","dp_2","dp_3","dp_4","dp_5","dp_6","dp_7","dp_8","dp_9","dp_10","dp_11","dp_12","dp_13","dp_14","dp_15","dp_15","dp_16","dp_17","dp_18","dp_19","dp_20","dp_21","dp_22","dp_23","dp_24","dp_25"];
 //[shortVar,reward]
-life_illegal_items = [["heroinu",50],["goldbar",800],["niere",2000],["moonshine",60],["heroinp",80],["cocaine",35],["cocainep",70],["marijuana",50],["turtle",100],["blastingcharge",500],["boltcutter",100],["froschlsd",60]];
+life_illegal_items = [["heroinu",50],["goldbar",800],["skalpell",500],["niere",900],["moonshine",60],["heroinp",80],["cocaine",35],["cocainep",70],["marijuana",50],["turtle",100],["blastingcharge",500],["boltcutter",100],["froschlsd",60]];
 
 
 /*
@@ -300,7 +302,8 @@ sell_array =
 	["sandbag",30],
 	["moonshine",85],
 	["wein",60],
-	["weintrauben",40]
+	["weintrauben",40],
+	["skalpell",500]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -347,7 +350,8 @@ buy_array =
 	["sandbag",40],
 	["moonshine",150],
 	["wein",100],
-	["weintrauben",70]
+	["weintrauben",70],
+	["skalpell",1000]
 ];
 __CONST__(buy_array,buy_array);
 

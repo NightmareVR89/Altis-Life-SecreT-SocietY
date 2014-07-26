@@ -22,12 +22,12 @@ switch (_var) do
 	case "life_inv_marijuana": {"Marijuana"};
 	case "life_inv_apple": {"Apfel"};
 	case "life_inv_rabbit": {"Hasenfleisch"};
-	case "life_inv_salema": {"Salema Meat"};
-	case "life_inv_ornate": {"Ornate Meat"};
-	case "life_inv_mackerel": {"Mackerel Meat"};
-	case "life_inv_tuna": {"Tuna Meat"};
-	case "life_inv_mullet": {"Mullet Meat"};
-	case "life_inv_catshark": {"Cat Shark Meat"};
+	case "life_inv_salema": {"Goldstrieme"};
+	case "life_inv_ornate": {"Lyrakaiserfisch"};
+	case "life_inv_mackerel": {"Makrelle"};
+	case "life_inv_tuna": {"Tunfisch"};
+	case "life_inv_mullet": {"Meeräsche"};
+	case "life_inv_catshark": {"Katzenhei"};
 	case "life_inv_turtle": {"Schildkrötenfleisch"};
 	case "life_inv_fishingpoles": {"Angel"};
 	case "life_inv_water": {"Wasserflasche"};
@@ -67,7 +67,7 @@ switch (_var) do
 	case "life_inv_froschlsd": {"Frosch-LSD"};
 	case "life_inv_froschbein": {"Froschschenkel"};
 	case "life_inv_frosch": {"Frösche"};
-	case "life_inv_wand": {"wand"};
+	case "life_inv_wand": {"Holz Wand"};
 	case "life_inv_zelt": {"Zelt"};
 	case "life_inv_stacheldraht": {"Stacheldraht"};
 	case "life_inv_lagerfeuer": {"Lagerfeuer"};
@@ -80,6 +80,7 @@ switch (_var) do
 	case "life_inv_moonshine": {"Moonshine"};
 	case "life_inv_wein": {"Wein"};
 	case "life_inv_weintrauben": {"Weintrauben"};
+	case "life_inv_skalpell": {"Skalpell"};
 	
 	//License Block
 	case "license_civ_driver": {"Führerschein"};
