@@ -59,7 +59,7 @@ class CfgSounds
 		sound[] = {"\sounds\tazer.ogg", 0.25, 1};
 		titles[] = {};
 	};
-	class tazersound
+	class bag
 	{
 		name = "Bag";
 		sound[] = {"\sounds\bag.ogg", 0.25, 1};
