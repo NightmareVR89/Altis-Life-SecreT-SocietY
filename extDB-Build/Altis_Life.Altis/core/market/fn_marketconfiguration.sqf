@@ -17,7 +17,6 @@ life_market_resources = [
 			["diamondc",1], 
 			["iron_r",1],
 			["copper_r",1],
-			["salt_r",1],
 			["cement",1],
 			["glass",1] 
 		] 
@@ -55,15 +54,42 @@ life_market_resources = [
 			["glass",1] 
 		] 
 	],
+	["muell", 40, 10, 50, 2, 1, 
+		[ 
+			["oilp",1],
+			["iron_r",1],
+			["copper_r",1] 
+		] 
+	],
+	["wertstoffe", 40, 10, 50, 2, 1, 
+		[ 
+			["oilp",1],
+			["iron_r",1],
+			["muell",1],
+			["copper_r",1] 
+		] 
+	],
+	["kunststoff", 40, 10, 50, 2, 1, 
+		[ 
+			["oilp",1],
+			["iron_r",1],
+			["copper_r",1] 
+		] 
+	],
+	["edelmetall", 40, 10, 50, 2, 1, 
+		[ 
+			["oilp",1],
+			["iron_r",1],
+			["copper_r",1] 
+		] 
+	],
 	
 	["salt_r", 30, 10, 40, 2, 1, 
 		[ 
-			["diamondc",1], 
-			["oilp",1],
-			["iron_r",1],
-			["copper_r",1],
-			["cement",1],
-			["glass",1] 
+			["turtlesoup",1],
+			["froschbein",1],
+			["wein",1],
+			["weintrauben",1]
 		] 
 	],
 	
@@ -128,7 +154,47 @@ life_market_resources = [
 			["weintrauben",1]
 		] 
 	],
+	["mackerel", 40, 5, 50, 2, 1, 
+		[ 
+			["salema",1], 
+			["ornate",1],
+			["tuna",1],
+			["mullet",1]
+		] 
+	],
+	["mullet", 40, 5, 50, 2, 1, 
+		[ 
+			["salema",1], 
+			["ornate",1],
+			["tuna",1],
+			["mackrele",1]
+		] 
+	],
+	["ornate", 40, 5, 50, 2, 1, 
+		[ 
+			["salema",1], 
+			["mullet",1],
+			["tuna",1],
+			["mackrele",1]
+		] 
+	],
+	["salema", 40, 5, 50, 2, 1, 
+		[ 
+			["ornate",1], 
+			["mullet",1],
+			["tuna",1],
+			["mackrele",1]
+		] 
+	],
 	
+	["tuna", 40, 5, 50, 2, 1, 
+		[ 
+			["salema",1], 
+			["ornate",1],
+			["mackerel",1],
+			["mullet",1]
+		] 
+	],
 	["wein", 40, 5, 50, 2, 1, 
 		[ 
 			["apple",1], 
@@ -139,7 +205,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["weintrauben", 40, 5, 50, 2, 1, 
+	["weintraube", 40, 5, 50, 2, 1, 
 		[ 
 			["apple",1], 
 			["turtlesoup",1],
@@ -148,8 +214,32 @@ life_market_resources = [
 			["wein",1]
 		] 
 	],
+	["tabak", 40, 5, 50, 2, 1, 
+		[ 
+			["apple",1], 
+			["turtlesoup",1],
+			["peach",1],
+			["froschbein",1],
+			["wein",1]
+		] 
+	],
+	["zigarren", 40, 5, 50, 2, 1, 
+		[ 
+			["wein",1],
+			["tabak",1]
+		] 
+	],
 	
 	["turtle", 90, 40, 110, 20, 18,  
+		[ 
+			["cocainep",1],
+			["marijuana",1],
+			["moonshine",1],
+			["froschlsd",1],
+			["heroinp",1]
+		] 
+	],
+	["catshark", 90, 40, 110, 20, 18,  
 		[ 
 			["cocainep",1],
 			["marijuana",1],
