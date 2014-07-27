@@ -15,10 +15,10 @@ switch (_shop) do
 	case "kart_shop":
 	{
 		_return = [
-			["C_Kart_01_Blu_F",2300],
-			["C_Kart_01_Fuel_F",35000],
-			["C_Kart_01_Red_F",43000],
-			["C_Kart_01_Vrana_F",6500]
+			["C_Kart_01_Blu_F",5500],
+			["C_Kart_01_Fuel_F",5500],
+			["C_Kart_01_Red_F",5500],
+			["C_Kart_01_Vrana_F",5500]
 		];
 	};
 	case "med_shop":
@@ -55,10 +55,10 @@ switch (_shop) do
 		[
 			["B_Quadbike_01_F",350],  //25plätze
 			["C_Hatchback_01_F",1500], //40plätze
-			["C_Hatchback_01_sport_F",3500], //45plätze
 			["C_SUV_01_F",3800],  //50plätze
 			["C_Offroad_01_F",4600],  //65plätze
-			["C_Van_01_transport_F",7600] //100plätze
+			["C_Van_01_transport_F",8000], //100plätze
+			["C_Hatchback_01_sport_F",12000] //45plätze
 		];
 	};
 	
@@ -73,8 +73,7 @@ switch (_shop) do
 			["O_Truck_03_covered_F",47000], //300Plätze
 			["B_Truck_01_transport_F",62000], //325Plätze
 			["O_Truck_03_device_F",84000],//350Plätze
-			["B_Truck_01_box_F",124000]  //450Plätze
-			
+			["B_Truck_01_box_F",180000]  //450Plätze
 		];	
 	};
 	
@@ -84,22 +83,25 @@ switch (_shop) do
 		_return =
 		[
 			["B_Quadbike_01_F",350], //25plätze
-			["B_G_Offroad_01_F",4500], //65plätze
-			["B_Heli_Light_01_F",8500]
+			["B_G_Offroad_01_F",4600], //65plätze
+			["C_Hatchback_01_sport_F",12000], //45plätze
+			["B_Heli_Light_01_F",60000],
+			["O_Heli_Light_02_unarmed_F",120000],
+			["I_Heli_Transport_02_F",200000]
 		];
 		
 		if(license_civ_rebel) then
 		{
 			_return set[count _return,
-			["B_G_Offroad_01_armed_F",25000]];
+			["O_MRAP_02_F",35000]];
 			_return set[count _return,
-			["O_G_Offroad_01_armed_F",25000]];
+			["B_G_Offroad_01_armed_F",65000]];
 			_return set[count _return,
-			["I_G_Offroad_01_armed_F",25000]];
+			["O_G_Offroad_01_armed_F",65000]];
 			_return set[count _return,
-			["O_MRAP_02_F",92000]];
+			["I_G_Offroad_01_armed_F",65000]];
 			_return set[count _return,
-			["I_MRAP_03_F",140000]];
+			["I_MRAP_03_F",90000]];
 		};
 	};
 	
@@ -123,15 +125,16 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) > 2) then
 		{
 			_return set[count _return,
-			["B_MRAP_01_hmg_F",1750000]];
+			["B_MRAP_01_hmg_F",175000]];
 		};
 	};
 	case "civ_air":
 	{
 		_return =
 		[
-			["B_Heli_Light_01_F",23000],
-			["O_Heli_Light_02_unarmed_F",37000]
+			["B_Heli_Light_01_F",60000],
+			["O_Heli_Light_02_unarmed_F",120000],
+			["I_Heli_Transport_02_F",200000]         //Neu
 		];
 	};
 	
