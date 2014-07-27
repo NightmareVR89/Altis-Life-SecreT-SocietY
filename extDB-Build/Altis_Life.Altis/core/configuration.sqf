@@ -199,6 +199,7 @@ life_inv_items =
 	"life_inv_skalpell"
 	"life_inv_tabak"
 	"life_inv_zigarren"
+	"life_inv_muell"
 	"life_inv_wertstoffe"
 	"life_inv_kunststoff"
 	"life_inv_edelmetall"
@@ -240,7 +241,7 @@ life_licenses =
 	["license_civ_moonshine","civ"],
 	["license_civ_niere","civ"],
 	["license_civ_tabak","civ"],
-	["license_civ_wertstoffe","civ"],
+	["license_civ_muell","civ"],
 	["license_civ_kunststoff","civ"],
 	["license_civ_edelmetall","civ"]
 ];
@@ -315,6 +316,7 @@ sell_array =
 	["weintrauben",40],
 	["tabak",40],
 	["zigarren",70],
+	["muell",10],
 	["wertstoffe",20],
 	["kunststoff",50],
 	["edelmetall",110]
@@ -368,6 +370,7 @@ buy_array =
 	["skalpell",1000],
 	["tabak",30],
 	["zigarren",60],
+	["muell",30],
 	["wertstoffe",10],
 	["kunststoff",40],
 	["edelmetall",80]

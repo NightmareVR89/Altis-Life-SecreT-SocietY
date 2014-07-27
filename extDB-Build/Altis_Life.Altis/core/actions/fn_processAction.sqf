@@ -28,7 +28,7 @@ _itemInfo = switch (_type) do
 	case "froschbein": {["frosch","froschbein",30,"Koche Froschschenkel"]};
 	case "weintrauben": {["weintrauben","wein",20,"Verarbeite Weintrauben zu Wein"]};
 	case "moonshine": {["weintrauben","moonshine",40,"Verarbeite Weintrauben zu Moonshine"]};
-	case "tabak": {["tabak","zigarren",50,"Verarbeite Tabak zu Zigarren"]};
+	case "zigarren": {["tabak","zigarren",50,"Verarbeite Tabak zu Zigarren"]};
 	case "wertstoffe": {["muell","wertstoffe",50,"Verarbeite Müll zu Wertstoffe"]};
 	case "edelmetall": {["wertstoffe","edelmetall",40,"Verarbeite Wertstoffe zu Edelmetalle"]};
 	case "kunststoff": {["wertstoffe","kunststoff",40,"Verarbeite Wertstoffe zu Kunststoffe"]};

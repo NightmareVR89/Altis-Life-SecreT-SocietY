@@ -28,7 +28,7 @@ switch (_shop) do
 	case "organ": {["Organ Handler",["niere","skalpell"]]};
 	case "beer": {["Weingarten",["wein"]]};
 	case "tabak": {["Tabak Haus",["tabak","zigarren"]]};
-	case "wertstoffe": {["Mülldeponie",["wertstoffe"]]};
+	case "muell": {["Mülldeponie",["muell","wertstoffe"]]};
 	case "kunststoff": {["Kunststoff Händler",["kunststoff"]]};
 	case "edelmetall": {["Edelmetall Händler",["edelmetall"]]};
 };

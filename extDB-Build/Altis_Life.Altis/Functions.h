@@ -115,7 +115,7 @@ class Life_Client_Core
 		class gatherCocaine {};
 		class gatherWeintrauben {};
 		class gatherTabak {};
-		class gatherWertstoffe {};
+		class gatherMuell {};
 		class pumpRepair {};
 		class packupSpikes {};
 		class storeVehicle {};

@@ -11,7 +11,7 @@
 	Triggers are NOT my preferred method so this is considered temporary until a more suitable
 	option is presented.
 */
-private["_appleZones","_peachZones","_heroinZones","_cocaineZones","_weedZones","_grapeZones"];
+private["_appleZones","_peachZones","_heroinZones","_cocaineZones","_weedZones","_grapeZones","_tabakZones","_muellZones"];
 _appleZones = ["apple_1","apple_2","apple_3","apple_4"];
 _peachZones = ["peaches_1","peaches_2","peaches_3","peaches_4"];
 _heroinZones = ["heroin_1"];
@@ -20,7 +20,7 @@ _weedZones = ["weed_1"];
 _froschZones = ["frosch_1"];
 _grapeZones = ["grape_1"];
 _tabakZones = ["tabak_1"];
-_wertstoffeZones = ["muell_1"];
+_muellZones = ["muell_1"];
 
 //Create apple zones
 {
@@ -88,5 +88,5 @@ _wertstoffeZones = ["muell_1"];
 	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
 	_zone setTriggerArea[100,100,0,false];
 	_zone setTriggerActivation["CIV","PRESENT",true];
-	_zone setTriggerStatements["player in thislist","LIFE_Action_Wertstoffe = player addAction['Sammle Müll',life_fnc_gatherWertstoffe,'',0,false,false,'','!life_action_sammel_sperre'];","player removeAction LIFE_Action_Wertstoffe;"];
-} foreach _wertstoffeZones;
+	_zone setTriggerStatements["player in thislist","LIFE_Action_Muell = player addAction['Sammle Müll',life_fnc_gatherMuell,'',0,false,false,'','!life_action_sammel_sperre'];","player removeAction LIFE_Action_Muell;"];
+} foreach _muellZones;

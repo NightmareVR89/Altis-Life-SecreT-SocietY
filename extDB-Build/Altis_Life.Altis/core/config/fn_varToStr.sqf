@@ -83,7 +83,7 @@ switch (_var) do
 	case "life_inv_skalpell": {"Skalpell"};
 	case "life_inv_tabak": {"Tabak"};
 	case "life_inv_zigarren": {"Zigarren"};
-	case "life_inv_muell": {"Zigarren"};
+	case "life_inv_muell": {"Müll"};
 	case "life_inv_wertstoffe": {"Wertstoffe"};
 	case "life_inv_kunststoff": {"Kunststoff"};
 	case "life_inv_edelmetall": {"Edelmetall"};
@@ -119,8 +119,7 @@ switch (_var) do
 	case "license_civ_weintrauben": {"Weintrauben Verarbeitung"};
 	case "license_civ_moonshine": {"Moonshine Verarbeitung"};
 	case "license_civ_tabak": {"Zigarren Verarbeitung"};
-	case "license_civ_wertstoffe": {"Müll Verarbeitung"};
+	case "license_civ_muell": {"Müll Verarbeitung"};
 	case "license_civ_kunststoff": {"Kunststoff Verarbeitung"};
 	case "license_civ_edelmetall": {"Edelmetall Verarbeitung"};
-	case "license_civ_niere": {"Organ Händler"};
 };
