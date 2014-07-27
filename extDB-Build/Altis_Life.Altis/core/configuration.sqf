@@ -196,12 +196,12 @@ life_inv_items =
 	"life_inv_moonshine",
 	"life_inv_wein",
 	"life_inv_weintrauben",
-	"life_inv_skalpell"
-	"life_inv_tabak"
-	"life_inv_zigarren"
-	"life_inv_muell"
-	"life_inv_wertstoffe"
-	"life_inv_kunststoff"
+	"life_inv_skalpell",
+	"life_inv_tabak",
+	"life_inv_zigarren",
+	"life_inv_muell",
+	"life_inv_wertstoffe",
+	"life_inv_kunststoff",
 	"life_inv_edelmetall"
 ];
 
