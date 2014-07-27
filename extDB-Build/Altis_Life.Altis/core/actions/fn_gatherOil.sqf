@@ -5,9 +5,10 @@
 	Description:
 	Gathers oil, needs to be revised and changed.
 */
-private["_sum","_rand"];
-_sum = ["oilu",_rand,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
+private["_rand","_sum"];
 _rand = round(random 5);
+_sum = ["oilu",_rand,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
+
 if(_sum > 0) then
 {
 	life_sammel_sperre = true;
