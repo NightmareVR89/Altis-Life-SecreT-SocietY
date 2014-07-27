@@ -93,6 +93,9 @@ class Life_Client_Core
 		class gatherCannabis {};
 		class gatherHeroin {};
 		class gatherOil {};
+		class gatherWeintraube {};
+		class gatherTabak {};
+		class gatherMuell {};
 		class getDPMission {};
 		class postBail {};
 		class processAction {};
@@ -138,9 +141,6 @@ class Life_Client_Core
 		class stopDragging {};
 		class freilassen {};
 		class hostageAction {};
-		class gatherWeintraube {};
-		class gatherTabak {};
-		class gatherMuell {};
 	};
 	
 	class Housing

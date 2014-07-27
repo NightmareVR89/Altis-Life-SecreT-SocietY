@@ -59,7 +59,13 @@ class CfgSounds
 		sound[] = {"\sounds\tazer.ogg", 0.25, 1};
 		titles[] = {};
 	};
-	  class harvest
+	class tazersound
+	{
+		name = "Bag";
+		sound[] = {"\sounds\bag.ogg", 0.25, 1};
+		titles[] = {};
+	};
+	class harvest
   {
 	name="harvest";
 	sound[] = {"\sounds\harvest.ogg", 1.0, 1};
