@@ -6,13 +6,13 @@ if(_sum > 0) then
 {
 	life_sammel_sperre = true;
 	player say3D "harvest";
-	titleText[format[(localize "STR_NOTF_Gathering"),localize "STR_Item_Muell"],"PLAIN"];
+	titleText[format[(localize "STR_NOTF_Gathering"),localize "STR_Item_Muellh"],"PLAIN"];
 	player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
 	player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
 	sleep 5;
 	if(([true,"muell",_sum] call life_fnc_handleInv)) then
 	{
-		titleText[format[(localize "STR_NOTF_Picked"),_sum,localize "STR_Item_Muell"],"PLAIN"];
+		titleText[format[(localize "STR_NOTF_Picked"),_sum,localize "STR_Item_Muellh"],"PLAIN"];
 	};
 }
 	else

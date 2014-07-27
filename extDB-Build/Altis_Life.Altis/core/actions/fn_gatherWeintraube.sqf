@@ -1,27 +1,23 @@
-/*
-File: fn_gatherGrapes.sqf
-
-Author: Unknown
-
-Description:
-Grape Picking Function
-
-*/
 private["_rand","_sum"];
 _rand = round(random 5);
 _sum = ["weintraube",_rand,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 
 if(_sum > 0) then
 {
-life_sammel_sperre = true;
-titleText["Sammle Weintrauben...","PLAIN"];
-titleFadeOut 2;
-sleep 2;
-if(([true,"weintraube",_sum] call life_fnc_handleInv)) then
+	life_sammel_sperre = true;
+	player say3D "harvest";
+	titleText[format[(localize "STR_NOTF_Gathering"),localize "STR_Item_Weintrauben"],"PLAIN"];
+	player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
+	player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
+	sleep 5;
+	if(([true,"weintraube",_sum] call life_fnc_handleInv)) then
+	{
+		titleText[format[(localize "STR_NOTF_Picked"),_sum,localize "STR_Item_Weintrauben"],"PLAIN"];
+	};
+}
+	else
 {
-playSound "bag.ogg"; // this only if you want the sound for the bag when you gather it 
-titleText["Du hast ein paar Weintrauben gesammelt.","PLAIN"];
-};
+	hint localize "STR_NOTF_InvFull";
 };
 
 life_sammel_sperre = false;

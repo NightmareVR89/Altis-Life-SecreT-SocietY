@@ -496,13 +496,13 @@
 		<Key ID="STR_Item_Froesche">
 			<Original>Frösche</Original>
 		</Key>
-		<Key ID="STR_Item_Muell">
+		<Key ID="STR_Item_Muellh">
 			<Original>Müll</Original>
 		</Key>
-		<Key ID="STR_Item_Weintraube">
+		<Key ID="STR_Item_Weintrauben">
 			<Original>Weintrauben</Original>
 		</Key>
-		<Key ID="STR_Item_Tabak">
+		<Key ID="STR_Item_Tabaks">
 			<Original>Tabak</Original>
 		</Key>
 	</Package>
