@@ -42,7 +42,7 @@ switch (_type) do
 	case "weintraube": {1500};
 	case "tabak": {3000};
 	case "moonshine": {5000};
-	case "muell": {7000};
+	case "wertstoffe": {7000};
 	case "kunststoff": {20000};
 	case "edelmetall": {30000};
 };

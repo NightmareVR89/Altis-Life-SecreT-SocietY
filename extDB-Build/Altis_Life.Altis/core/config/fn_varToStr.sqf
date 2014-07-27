@@ -119,7 +119,7 @@ switch (_var) do
 	case "license_civ_weintraube": {"Weintrauben Verarbeitung"};
 	case "license_civ_moonshine": {"Moonshine Verarbeitung"};
 	case "license_civ_tabak": {"Zigarren Verarbeitung"};
-	case "license_civ_muell": {"Müll Verarbeitung"};
+	case "license_civ_wertstoffe": {"Müll Verarbeitung"};
 	case "license_civ_kunststoff": {"Kunststoff Verarbeitung"};
 	case "license_civ_edelmetall": {"Edelmetall Verarbeitung"};
 };

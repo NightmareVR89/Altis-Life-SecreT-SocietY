@@ -89,7 +89,7 @@ switch (_mode) do
 			case "license_civ_weintraube": {_var = "weintraube"};
 			case "license_civ_moonshine": {_var = "moonshine"};
 			case "license_civ_tabak": {_var = "tabak"};
-			case "license_civ_muell": {_var = "wertstoffe"};
+			case "license_civ_wertstoffe": {_var = "wertstoffe"};
 			case "license_civ_kunststoff": {_var = "kunststoff"};
 			case "license_civ_edelmetall": {_var = "edelmetall"};
 			default {_var = ""};
