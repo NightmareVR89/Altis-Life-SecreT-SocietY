@@ -83,7 +83,7 @@ switch (_mode) do
 			case "sandbag": {"life_inv_sandbag"};
 			case "moonshine": {"life_inv_moonshine"};
 			case "wein": {"life_inv_wein"};
-			case "weintrauben": {"life_inv_weintrauben"};
+			case "weintraube": {"life_inv_weintraube"};
 			case "skalpell": {"life_inv_skalpell"};
 			case "tabak": {"life_inv_tabak"};
 			case "muell": {"life_inv_muell"};
@@ -165,7 +165,7 @@ switch (_mode) do
 			case "life_inv_roadcone": {"roadcone"};
 			case "life_inv_moonshine": {"moonshine"};
 			case "life_inv_wein": {"wein"};
-			case "life_inv_weintrauben": {"weintrauben"};
+			case "life_inv_weintraube": {"weintraube"};
 			case "life_inv_skalpell": {"skalpell"};
 			case "life_inv_tabak": {"tabak"};
 			case "life_inv_zigarren": {"zigarren"};

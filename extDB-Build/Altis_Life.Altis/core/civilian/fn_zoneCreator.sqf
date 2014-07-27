@@ -11,16 +11,16 @@
 	Triggers are NOT my preferred method so this is considered temporary until a more suitable
 	option is presented.
 */
-private["_appleZones","_peachZones","_heroinZones","_cocaineZones","_weedZones","_grapeZones","_tabakZones","_muellZones"];
+private["_appleZones","_peachZones","_heroinZones","_cocaineZones","_weedZones","_weintraubeZones","_tabaZones","_muelZones"];
 _appleZones = ["apple_1","apple_2","apple_3","apple_4"];
 _peachZones = ["peaches_1","peaches_2","peaches_3","peaches_4"];
 _heroinZones = ["heroin_1"];
 _cocaineZones = ["cocaine_1"];
 _weedZones = ["weed_1"];
 _froschZones = ["frosch_1"];
-_grapeZones = ["grape_1"];
-_tabakZones = ["tabak_1"];
-_muellZones = ["muell_1"];
+_weintraubZones = ["weintraub_1"];
+_tabaZones = ["taba_1"];
+_muelZones = ["muel_1"];
 
 //Create apple zones
 {
@@ -74,19 +74,19 @@ _muellZones = ["muell_1"];
 	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
 	_zone setTriggerArea[100,100,0,false];
 	_zone setTriggerActivation["CIV","PRESENT",true];
-	_zone setTriggerStatements["player in thislist","LIFE_Action_Weintrauben = player addAction['Sammle Weintrauben',life_fnc_gatherWeintrauben,'',0,false,false,'','!life_action_sammel_sperre'];","player removeAction LIFE_Action_Weintrauben;"];
-} foreach _grapeZones;
+	_zone setTriggerStatements["player in thislist","LIFE_Action_Weintraube = player addAction['Sammle Weintrauben',life_fnc_gatherWeintraube,'',0,false,false,'','!life_action_sammel_sperre'];","player removeAction LIFE_Action_Weintraube;"];
+} foreach _weintraubZones;
 //Create tabak
 {
 	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
 	_zone setTriggerArea[100,100,0,false];
 	_zone setTriggerActivation["CIV","PRESENT",true];
 	_zone setTriggerStatements["player in thislist","LIFE_Action_Tabak = player addAction['Sammle Tabak',life_fnc_gatherTabak,'',0,false,false,'','!life_action_sammel_sperre'];","player removeAction LIFE_Action_Tabak;"];
-} foreach _tabakZones;
+} foreach _tabaZones;
 //Create wertstoffe
 {
 	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
 	_zone setTriggerArea[100,100,0,false];
 	_zone setTriggerActivation["CIV","PRESENT",true];
 	_zone setTriggerStatements["player in thislist","LIFE_Action_Muell = player addAction['Sammle Müll',life_fnc_gatherMuell,'',0,false,false,'','!life_action_sammel_sperre'];","player removeAction LIFE_Action_Muell;"];
-} foreach _muellZones;
+} foreach _muelZones;

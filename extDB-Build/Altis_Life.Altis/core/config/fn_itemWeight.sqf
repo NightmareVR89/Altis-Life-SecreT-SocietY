@@ -74,7 +74,7 @@ switch (_item) do
 	case "niere": {15};//15 is the weight
 	case "wein": {2};
 	case "moonshine": {2};
-	case "weintrauben": {3};
+	case "weintraube": {3};
 	case "tabak": {2};
 	case "zigarren": {1};
 	case "muell": {6};

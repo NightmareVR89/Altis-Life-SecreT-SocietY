@@ -39,7 +39,7 @@ switch (_type) do
 	case "froschbein": {8750}; //ÄNDERN BITTE!
 	case "froschlsd": {20000}; //ÄNDERN BITTE!
 	case "adacdrive": {1};
-	case "weintrauben": {1500};
+	case "weintraube": {1500};
 	case "tabak": {3000};
 	case "moonshine": {5000};
 	case "muell": {7000};

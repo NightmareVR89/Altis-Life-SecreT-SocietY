@@ -113,9 +113,6 @@ class Life_Client_Core
 		class ticketAction {};
 		class gatherPeaches {};
 		class gatherCocaine {};
-		class gatherWeintrauben {};
-		class gatherTabak {};
-		class gatherMuell {};
 		class pumpRepair {};
 		class packupSpikes {};
 		class storeVehicle {};
@@ -141,6 +138,9 @@ class Life_Client_Core
 		class stopDragging {};
 		class freilassen {};
 		class hostageAction {};
+		class gatherWeintraube {};
+		class gatherTabak {};
+		class gatherMuell {};
 	};
 	
 	class Housing

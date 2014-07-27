@@ -44,7 +44,7 @@ switch (_mode) do
 			case "froschlsd": {_var = "license_civ_froschlsd"};
 			case "froschbein": {_var = "license_civ_froschbein"};
 			case "adacdrive": {_var = "license_adac_driver"};
-			case "weintrauben": {_var = "license_civ_weintrauben"};
+			case "weintraube": {_var = "license_civ_weintraube"};
 			case "moonshine": {_var = "license_civ_moonshine"};
 			case "tabak": {_var = "license_civ_tabak"};
 			case "wertstoffe": {_var = "license_civ_wertstoffe"};
@@ -86,7 +86,7 @@ switch (_mode) do
 			case "license_civ_froschlsd": {_var = "froschlsd"};
 			case "license_civ_froschbein": {_var = "froschbein"};
 			case "license_adac_driver": {_var = "adacdrive"};
-			case "license_civ_weintrauben": {_var = "weintrauben"};
+			case "license_civ_weintraube": {_var = "weintraube"};
 			case "license_civ_moonshine": {_var = "moonshine"};
 			case "license_civ_tabak": {_var = "tabak"};
 			case "license_civ_muell": {_var = "wertstoffe"};

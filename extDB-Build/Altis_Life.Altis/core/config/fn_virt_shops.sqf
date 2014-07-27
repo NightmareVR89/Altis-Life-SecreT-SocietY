@@ -26,7 +26,7 @@ switch (_shop) do
 	case "cement": {["Zementhändler",["cement"]]};
 	case "adac": {["Mitarbeiterkiosk",["fuelF","water","roadcone","barrier","apple","rabbit","redgull","tbacon"]]};
 	case "organ": {["Organ Handler",["niere","skalpell"]]};
-	case "beer": {["Weingarten",["wein"]]};
+	case "beer": {["Weingarten",["wein","weintraube"]]};
 	case "tabak": {["Tabak Haus",["tabak","zigarren"]]};
 	case "muell": {["Mülldeponie",["muell","wertstoffe"]]};
 	case "kunststoff": {["Kunststoff Händler",["kunststoff"]]};
