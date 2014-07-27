@@ -9,7 +9,7 @@ Grape Picking Function
 */
 private["_rand","_sum"];
 _rand = round(random 5);
-_sum = ["weintrauben",3,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
+_sum = ["weintraube",_rand,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 
 if(_sum > 0) then
 {

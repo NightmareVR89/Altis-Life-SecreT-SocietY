@@ -496,6 +496,15 @@
 		<Key ID="STR_Item_Froesche">
 			<Original>Frösche</Original>
 		</Key>
+		<Key ID="STR_Item_Muell">
+			<Original>Müll</Original>
+		</Key>
+		<Key ID="STR_Item_Weintraube">
+			<Original>Weintrauben</Original>
+		</Key>
+		<Key ID="STR_Item_Tabak">
+			<Original>Tabak</Original>
+		</Key>
 	</Package>
 	<Package name="Federal_Reserve">
 		<Key ID="STR_NOTF_FRRobbery_fail">
