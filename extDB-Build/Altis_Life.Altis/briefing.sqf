@@ -34,11 +34,7 @@ player createDiarySubject ["change","Change Log"];
 				"
 		]
 	];
-*/<br/>
-<font color='#A9E2F3'>CHANGE LOG</font><br/><br/>
-- FIXES: map fixes <br/>
-- ADD: pyrgos markthändler+carspawn<br/>
-
+*/
 	player createDiaryRecord["serverinfo",
 		[
 			"Teamspeak",
