@@ -27,7 +27,7 @@ player setVariable["Reviving",nil,TRUE];
 switch(playerSide) do
 {
 	case west: {
-		_handle = [] spawn life_fnc_coploadout;
+		_handle = [] spawn life_fnc_copLoadout;
 		waitUntil {scriptDone _handle};
 	};
 	case civilian: {
