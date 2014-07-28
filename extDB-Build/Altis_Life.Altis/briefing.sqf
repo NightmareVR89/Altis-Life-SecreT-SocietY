@@ -14,6 +14,31 @@ player createDiarySubject ["dgrenze","Die Grenze"];
 player createDiarySubject ["policerules","Polizeiregeln"];
 player createDiarySubject ["bgeld","Bußgeldkatalog"];
 player createDiarySubject ["controls","Tastenbelegung"];
+
+player createDiarySubject ["spacer1","------------------------"];
+player createDiarySubject ["serverinfo","Serverinformationen"];
+player createDiarySubject ["serverregeln","Serverregeln"];
+player createDiarySubject ["spacer2","------------------------"];
+player createDiarySubject ["safezones","Safe Zones (No Killing)"];
+player createDiarySubject ["civrules","Einwohner Regeln"];
+player createDiarySubject ["medicrules","Sanitäter"];
+player createDiarySubject ["adacrules","ADAC"];
+player createDiarySubject ["policerules","Polizeiregeln"];
+player createDiarySubject ["spacer3","------------------------"];
+player createDiarySubject ["pricelist","Preise Fahrzeuge"];
+player createDiarySubject ["licenses","Preise Lizenzen"];
+player createDiarySubject ["traderinfo","Handels System"];
+player createDiarySubject ["ganginfo","Gang System"];
+player createDiarySubject ["spacer4","------------------------"];
+player createDiarySubject ["illegal","Illegale Activitäten"];
+player createDiarySubject ["rebgebiet","Rebellengebiet"];
+player createDiarySubject ["dgrenze","Die Grenze"];
+player createDiarySubject ["spacer5","------------------------"];
+player createDiarySubject ["bgeld","Bußgeld-Katalog"];
+player createDiarySubject ["spacer6","------------------------"];
+player createDiarySubject ["controls","Tasten-Kombis"];
+player createDiarySubject ["spacer7","------------------------"];
+player createDiarySubject ["change","Change Log"];
 //player createDiarySubject ["house","Eigenheim"];
 /*  Example
 	player createDiaryRecord ["", //Container
@@ -24,14 +49,17 @@ player createDiarySubject ["controls","Tastenbelegung"];
 				"
 		]
 	];
-*/
+*/<br/>
+<font color='#A9E2F3'>CHANGE LOG</font><br/><br/>
+- FIXES: map fixes <br/>
+- ADD: pyrgos markthändler+carspawn<br/>
 
 	player createDiaryRecord["serverinfo",
 		[
 			"Teamspeak",
-				"
-				Jeder ist auf unserem Teamspeak Server Herzlich
-				TS3 IP: 148.251.84.132<br/><br/>
+				"<br/>
+<font color='#A9E2F3'>Jeder ist auf unserem Teamspeak Server Willkommen</font><br/><br/>
+				TS3 IP: 148.251.84.132<br/>
 				"
 		]
 	];
@@ -520,8 +548,9 @@ player createDiarySubject ["controls","Tastenbelegung"];
 		[
 			"Tödliche Waffen",
 				"
-				In Städten darf generell nur mit Tazern geschossen werden, außer das eigene Leben ist unmittelbar bedroht. In diesem Fall darf auf tödliche Waffengewalt zurück gegriffen werden.Bevor der Taser benutzt wird muss die Zielperson angesprochen werden. <br/><br/>
-				In Städten müssen tödliche Waffen (MX, Sniper, etc.) geschultert getragen werden. Desweiteren dürfen Waffen nur dann im Anschlag getragen werden, wenn es die Situation erfordert. (Doppelt Strg drücken um die Waffen aus dem Anschlag runter zu nehmen.) <br/><br/>
+				<br/>
+				In Städten darf generell nur mit Tazern geschossen werden, außer das eigene Leben ist unmittelbar bedroht. In diesem Fall darf auf tödliche Waffengewalt zurück gegriffen werden.Bevor der Taser benutzt wird muss die Zielperson angesprochen werden. <br/>
+				In Städten müssen tödliche Waffen (MX, Sniper, etc.) geschultert getragen werden. Desweiteren dürfen Waffen nur dann im Anschlag getragen werden, wenn es die Situation erfordert. (Doppelt Strg drücken um die Waffen aus dem Anschlag runter zu nehmen.) <br/>
 				"
 		]
 	];
@@ -529,8 +558,8 @@ player createDiarySubject ["controls","Tastenbelegung"];
 		[
 			"Allgemein",
 				"
-				§1	Foltern										40.000$ <br/>
-				§2	Falschaussage								20.000$ <br/>
+				§1 <font color='#A9E2F3'>Foltern</font><br/>40.000$ <br/>
+				§2<font color='#A9E2F3'>Falschaussage</font><br/>20.000$ <br/>
 				§3	Bestechungsversuch							30.000$ <br/>
 				§4	Korruption									Entlassung <br/>
 				§5	Sachbeschädigung							15.000$ <br/>
@@ -558,54 +587,144 @@ player createDiarySubject ["controls","Tastenbelegung"];
 				"
 		]
 	];
-	player createDiaryRecord ["bgeld",
+		player createDiaryRecord ["bgeld",
 		[
-			"Zu Fuß",
-				"
-				§1	Hausfriedensbruch							10.000$ <br/>
-				§2	Verkehr behindern							20.000$ <br/>
-				§3	Laufen auf der Straßen						5.000$ <br/>
-				§4	Fahrzeuge behindern							10.000$ <br/>
-				§5	Absichtlich vor Autos werfen / rennen		20.000$ <br/><br/>
-				Versuchte Straftaten kosten die Hälfte ! <br/>
-				Es muss nicht immer das volle Bußgeld ausgestellt werden. <br/><br/>
-				"
+			"Bußgeldkatalog",
+"
+<br/>
+== Störung der öffentlichen Ordnung ================
+<br/><br/>
+
+<font color='#A9E2F3'>versuchter Diebstahl:</font><br/>
+1.000 $<br/>
+<font color='#A9E2F3'>Diebstahl:</font><br/>
+3.000 $ <br/>
+<font color='#A9E2F3'>Fahrzeugbeschädigung:</font><br/>
+10.000 $<br/>
+<font color='#A9E2F3'>In Rucksäcke schauen:</font><br/>
+min. 500 $<br/>
+<font color='#A9E2F3'>Freiheitsberaubung (Geiselnahme):</font><br/>
+5 Minuten Gefängnis <br/>
+<font color='#A9E2F3'>Raubüberfall:</font><br/>
+10 Minuten Gefängnis<br/>
+<font color='#A9E2F3'>Mord:</font><br/>
+15 Minuten Gefängnis<br/>
+<font color='#A9E2F3'>Serienmörder:</font><br/>
+15-30 Minuten Gefägnis<br/>
+<font color='#A9E2F3'>Banküberfall:</font><br/>
+20 Minuten Gefängnis <br/>
+<font color='#A9E2F3'>Missachten eines Checkpoints:</font><br/>
+5.000 $<br/>
+<font color='#A9E2F3'>Diebstahl aus Rucksack:</font><br/>
+1.000 $<br/>
+<font color='#A9E2F3'>Drogenschmuggel/-handel:</font><br/>
+Wahrenwert + 30.000 $<br/>
+<font color='#A9E2F3'>Schmuggel mit verbotenen Tieren:</font><br/>
+Wahrenwert + 30.000 $<br/>
+<font color='#A9E2F3'>Trolling:</font><br/>
+30-60 Minuten Gefängnis<br/>
+
+<br/>
+== Umgang mit Polizisten ===========================
+<br/><br/>
+
+
+<font color='#A9E2F3'>Behinderung der Polizei: </font><br/>
+[einmaliger Verstoß] 500 $<br/>
+<font color='#A9E2F3'>Behinderung der Polizei: </font><br/>
+[mehrfach] 500 $ - 15.000 $<br/>
+<font color='#A9E2F3'>Beleidigung gegenüber der Polizei:</font><br/>
+[einmaliger Verstoß] 1.500 $<br/>
+<font color='#A9E2F3'>Beleidigung gegenüber der Polizei:</font><br/>
+[mehrfach] 1.500 $ - 25.000 $<br/>
+<font color='#A9E2F3'>Befreien festgesetzter Personen:</font><br/>
+[einmaliger Verstoß] 3.000 $<br/>
+<font color='#A9E2F3'>Befreien festgesetzter Personen:</font><br/>
+[mehrfach] 3.000 $ - 10.000 $<br/>
+<font color='#A9E2F3'>Inspizierung von Einstatzfahrzeugen:</font><br/>
+5.000$<br/>
+<font color='#A9E2F3'>Beamtenbeschuss:</font><br/>
+50.000 $ - 100.000 $<br/>
+<font color='#A9E2F3'>Verletzen eines Beamten:</font><br/>
+25.000 $ - 50.000 $<br/>
+<font color='#A9E2F3'>Töten eines Beamten:</font><br/>
+20 Minuten Gefägnis<br/>
+ 
+<br/>
+== Umgang mit Waffen [legal] =======================
+<br/><br/>
+
+
+<font color='#A9E2F3'>Waffe sichtbar tragen [gezogen] Innerorts:</font><br/>
+1.500 $<br/>
+<font color='#A9E2F3'>Waffe abfeuern Innerorts:</font><br/>
+10.000 $<br/>
+<font color='#A9E2F3'>Verursachter Personenschaden mit einer Waffe:</font><br/>
+8 Minuten Gefängnis <br/>
+<font color='#A9E2F3'>Führen einer legalen Waffe ohne Lizenz:</font><br/>
+5.000 $ + (5 Minuten Gefängnis)<br/>
+
+<br/>
+== Umgang mit Waffen [illegal] =====================
+<br/><br/>
+ 
+<font color='#A9E2F3'>Besitz außerhalb der Rebellenzone / Outpost:</font><br/>
+15.000 $ + Waffe entfernen<br/>
+<font color='#A9E2F3'>Personenschaden / Tötung mit illegaler Waffe:</font><br/>
+20 Minuten Gefängnis<br/>
+ 
+<br/>
+== Flugverkehr =====================================
+<br/><br/>
+ 
+<font color='#A9E2F3'>Schweben über bewohntem Gebiet:</font><br/>
+1.500 $<br/>
+<font color='#A9E2F3'>Landen auf Straßen:</font><br/>
+2.000 $<br/>
+<font color='#A9E2F3'>Landen in gesperrten gebieten:</font><br/>
+[z.B.: Polizeistationen, Bank] 10.000 $ <br/>
+<font color='#A9E2F3'>Fliegen ohne Beleuchtung:</font><br/>
+[Kollisionsleuchten] 3.000 $<br/>
+<font color='#A9E2F3'>Fliegen ohne Lizenz:</font><br/>
+15.000 $<br/>
+ 
+<br/>
+== Straßenverkehr ==================================
+<br/><br/>
+
+<font color='#A9E2F3'>Überschreitung Innerorts über 50km/h:</font><br/>
+1.000 $<br/>
+<font color='#A9E2F3'>Überschreitung Innerorts über 60km/h:</font><br/>
+2.000 $<br/>
+<font color='#A9E2F3'>Überschreitung Innerorts über 85km/h:</font><br/>
+3.000 $ + Lizenzentzug<br/>
+<font color='#A9E2F3'>Überschreitung Innerorts über 110km/h:</font><br/>
+5.000 $ + Lizenzentzug<br/>
+
+<font color='#A9E2F3'>Nicht mitführen von Werkzeug,-Verbandskasten:</font><br/>
+500 $<br/>
+<font color='#A9E2F3'>Lärmbelästigung durch unnötiges Hupen:</font><br/>
+500 $<br/>
+<font color='#A9E2F3'>Fahren ohne Fahrerlaubnis:</font><br/>
+5.000 $<br/>
+<font color='#A9E2F3'>Fahren ohne Licht [Nachts]:</font><br/>
+1.500 $<br/>
+<font color='#A9E2F3'>Fahren auf der falschen Straßenseite:</font><br/>
+1.000 $ <br/>
+<font color='#A9E2F3'>Fahrerflucht nach Unfall: Unfallverursacher / Behinderung des Verkehrs:</font><br/>
+15.000 $ <br/>
+<font color='#A9E2F3'>Vorsätzliches Überfahren von Spielern:</font><br/>
+15 Minuten Gefägnis<br/>
+<font color='#A9E2F3'>Falschparken / Behinderung des Fahrzeugspawns:</font><br/>
+3.000 $<br/>
+<font color='#A9E2F3'>Verursachen eines Personenschadens [einmalig]:</font><br/>
+5.000 $<br/>
+<font color='#A9E2F3'>Verursachen eines Personenschadens [mehrfach]:</font><br/>
+10 Minuten Gefägnis<br/>
+"
 		]
 	];
-	player createDiaryRecord ["bgeld",
-		[
-			"Fahrzeuge",
-				"
-				§1	Überhöhte Geschwindigkeit bis 20 km/h		10.000$ <br/>
-				§2	Überhöhte Geschwindigkeit über 20 km/h		20.000$ <br/>
-				§3	Fahren auf falsche Straßenseite				5.000$ <br/>
-				§4	Verursachen eines Unfalls					20.000$ <br/>
-				§5	Fahren ohne Licht							5.000$ <br/>
-				§6	Fahren mit kaputtem Auto (reifen)			10.000$ <br/>
-				§7	Person in Auto sperren						10.000$ <br/>
-				§8	Fahren ohne Führerschein					15.000$ <br/>
-				§9	Fahrerflucht								20.000$ <br/>
-				§10	Führen illegaler Fahrzeuge					30.000$ <br/>
-				§11	Trollen mit Fahrzeugen (Hupen etc.)			15.000$ <br/><br/>
-				Versuchte Straftaten kosten die Hälfte ! <br/>
-				Es muss nicht immer das volle Bußgeld ausgestellt werden. <br/><br/>
-				"
-		]
-	];
-	player createDiaryRecord ["bgeld",
-		[
-			"Luftfahrzeuge",
-				"
-				§1	Tiefer als 150m in Städte fliegen			30.000$ <br/>
-				§2	Landen in Städte (ohne genehmigung)			50.000$ <br/>
-				§3	Führen von illegalen Flugobjekten			70.000$ <br/>
-				§4	Fliegen ohne Kollisionslichter				50.000$ <br/>
-				§5	Fliegen ohne Fluglizenz						35.000$ <br/><br/>
-				Versuchte Straftaten kosten die Hälfte ! <br/>
-				Es muss nicht immer das volle Bußgeld ausgestellt werden. <br/><br/>
-				"
-		]
-	];
+
 	player createDiaryRecord ["controls",
 		[
 			"",
@@ -636,9 +755,6 @@ zum aufnehmen von Items o. Geld | Fahrzeug reparieren | fesseln / entfesseln<br/
 [ <font color='#A9E2F3'>Mausrad scrollen</font> ] - Cop-Marke zeigen<br/>
 <br/>
 <br/>
-== Geschwindigkeitsmessung / Blitzer ==================<br/>
-<br/>
-[ <font color='#A9E2F3'>Taser auf Fahrzeug zoomen + L</font> ]
 
 "
 		]
