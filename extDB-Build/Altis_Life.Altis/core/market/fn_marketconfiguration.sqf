@@ -295,6 +295,15 @@ life_market_resources = [
 			["froschlsd",1],
 			["heroinp",1]
 		] 
+	],
+	["niere", 2500, 500, 3700, 8, 8,   
+		[ 
+			["cocainep",1],
+			["moonshine",1],
+			["wein",1],
+			["froschlsd",1],
+			["heroinp",1]
+		] 
 	]
 ];
 publicVariable "life_market_resources";
