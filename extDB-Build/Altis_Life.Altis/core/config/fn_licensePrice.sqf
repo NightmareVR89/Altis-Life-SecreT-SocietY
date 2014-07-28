@@ -39,23 +39,10 @@ switch (_type) do
 	case "froschbein": {8750}; //ÄNDERN BITTE!
 	case "froschlsd": {20000}; //ÄNDERN BITTE!
 	case "adacdrive": {1};
-<<<<<<< HEAD
-	case "weintraube": {1500};
-	case "tabak": {3000};
-<<<<<<< HEAD
 	case "moonshinel": {5000};
-=======
-	case "moonshine": {5000};
->>>>>>> parent of bf49a55... Lizenz Fix
-	case "wertstoffe": {7000};
-	case "kunststoff": {20000};
-	case "edelmetall": {30000};
-=======
 	case "weintraubel": {1500};
 	case "tabakl": {3000};
-	case "moonshinel": {5000};
 	case "wertstoffel": {7000};
 	case "kunststoffl": {20000};
 	case "edelmetalll": {30000};
->>>>>>> origin/master
 };
