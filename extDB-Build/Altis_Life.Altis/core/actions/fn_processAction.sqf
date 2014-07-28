@@ -26,12 +26,12 @@ _itemInfo = switch (_type) do
 	case "cement": {["rock","cement",30,"Mixe Zement"]};
 	case "froschlsd": {["frosch","froschlsd",50,"Zerquetsche Frösche"]};
 	case "froschbein": {["frosch","froschbein",30,"Koche Froschschenkel"]};
-	case "wein": {["weintraube","wein",20,"Verarbeite Weintrauben zu Wein"]};
-	case "moonshine": {["weintraube","moonshine",40,"Verarbeite Weintrauben zu Moonshine"]};
-	case "zigarren": {["tabak","zigarren",50,"Verarbeite Tabak zu Zigarren"]};
-	case "wertstoffe": {["muell","wertstoffe",50,"Verarbeite Müll zu Wertstoffe"]};
-	case "edelmetall": {["wertstoffe","edelmetall",40,"Verarbeite Wertstoffe zu Edelmetalle"]};
-	case "kunststoff": {["wertstoffe","kunststoff",40,"Verarbeite Wertstoffe zu Kunststoffe"]};
+	case "weintraubel": {["weintraube","wein",20,"Verarbeite Weintrauben zu Wein"]};
+	case "moonshinel": {["weintraube","moonshine",40,"Verarbeite Weintrauben zu Moonshine"]};
+	case "tabakl": {["tabak","zigarren",50,"Verarbeite Tabak zu Zigarren"]};
+	case "wertstoffel": {["muell","wertstoffe",50,"Verarbeite Müll zu Wertstoffe"]};
+	case "edelmetalll": {["wertstoffe","edelmetall",40,"Verarbeite Wertstoffe zu Edelmetalle"]};
+	case "kunststoffl": {["wertstoffe","kunststoff",40,"Verarbeite Wertstoffe zu Kunststoffe"]};
 	
 	default {[]};
 };
