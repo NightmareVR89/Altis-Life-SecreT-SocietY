@@ -163,17 +163,18 @@ switch(_shop) do
 						["30Rnd_556x45_Stanag_Tracer_Red","30Rnd 65x39 Rot",80],
 						["30Rnd_556x45_Stanag_Tracer_Green","30Rnd 65x39 Gruen",80],
 						["30Rnd_556x45_Stanag_Tracer_Yellow","30Rnd 65x39 Gelb",80],
-						["srifle_EBR_F",nil,8000],   //Einfache Sniper
+						["srifle_EBR_F",nil,15000],   //Einfache Sniper
 						["20Rnd_762x51_Mag",nil,50],
 						["acc_pointer_IR",nil,800],
 						["acc_flashlight",nil,300],
 						["optic_Holosight",nil,200],
 						["optic_Hamr",nil,1000],
 						["optic_ACO_grn",nil,500],
-						["optic_SOS",nil,2700],						//Einfaches Sniper visier
+						["optic_SOS",nil,1700],						//Einfaches Sniper visier
 						["SmokeShellGreen","Tränengas",300],
 						["HandGrenade",nil,200],
 						["Binocular",nil,150],
+						["Rangefinder",nil,150],
 						["ItemGPS",nil,1700],
 						["ToolKit",nil,100],
 						["FirstAidKit",nil,150],
@@ -236,18 +237,19 @@ switch(_shop) do
 						["200Rnd_65x39_cased_Box_Tracer",nil,500],
 						["srifle_EBR_F",nil,8000],   //Einfache Sniper
 						["20Rnd_762x51_Mag",nil,50],
-						["srifle_DMR_01_F",nil,12000],         //Mittlere Sniper
+						["srifle_DMR_01_F",nil,15000],         //Mittlere Sniper
 						["10Rnd_762x51_Mag",nil,150],
 						["acc_pointer_IR",nil,800],
 						["acc_flashlight",nil,300],
 						["optic_Holosight",nil,200],
 						["optic_Hamr",nil,1000],
 						["optic_ACO_grn",nil,500],
-						["optic_SOS",nil,2700],        //Einfaches Sniper visier
+						["optic_SOS",nil,1700],        //Einfaches Sniper visier
 						["SmokeShellGreen","Tränengas",300],
 						["HandGrenade_Stone","Flashbang",500],   // Flashbang
 						["HandGrenade",nil,200],
 						["Binocular",nil,150],
+						["Rangefinder",nil,150],
 						["ItemGPS",nil,1500],
 						["ToolKit",nil,100],
 						["FirstAidKit",nil,150],
@@ -313,10 +315,10 @@ switch(_shop) do
 						["150Rnd_762x51_Box_Tracer",nil,600],
 						["srifle_EBR_F",nil,8000],   //Einfache Sniper
 						["20Rnd_762x51_Mag",nil,50],
-						["srifle_DMR_01_F",nil,12000],         //Mittlere Sniper
+						["srifle_DMR_01_F",nil,15000],         //Mittlere Sniper
 						["10Rnd_762x51_Mag",nil,150],
-						["srifle_GM6_F",nil,12000],       //Mittelschwere Sniper
-						["srifle_GM6_camo_F",nil,12000],	// Neue Skin für Mittelschwere Sniper
+						["srifle_GM6_F",nil,20000],       //Mittelschwere Sniper
+						["srifle_GM6_camo_F",nil,20000],	// Neue Skin für Mittelschwere Sniper
 						["5Rnd_127x108_Mag",nil,200],
 						["5Rnd_127x108_APDS_Mag",nil,350],
 						["acc_pointer_IR",nil,800],
@@ -324,11 +326,12 @@ switch(_shop) do
 						["optic_Holosight",nil,200],
 						["optic_Hamr",nil,1000],
 						["optic_ACO_grn",nil,500],
-						["optic_SOS",nil,2700],        //Einfaches Sniper visier
+						["optic_SOS",nil,1700],        //Einfaches Sniper visier
 						["SmokeShellGreen","Tränengas",300],
 						["HandGrenade_Stone","Flashbang",500],   // Flashbang
 						["HandGrenade",nil,200],
 						["Binocular",nil,150],
+						["Rangefinder",nil,150],
 						["ItemGPS",nil,100],
 						["ToolKit",nil,100],
 						["FirstAidKit",nil,150],
@@ -391,13 +394,13 @@ switch(_shop) do
 						["200Rnd_65x39_cased_Box_Tracer",nil,500],
 						["srifle_EBR_F",nil,8000],   //Einfache Sniper
 						["20Rnd_762x51_Mag",nil,50],
-						["srifle_DMR_01_F",nil,12000],         //Mittlere Sniper
+						["srifle_DMR_01_F",nil,15000],         //Mittlere Sniper
 						["10Rnd_762x51_Mag",nil,150],
-						["srifle_GM6_F",nil,12000],       //Mittelschwere Sniper
+						["srifle_GM6_F",nil,20000],       //Mittelschwere Sniper
 						["srifle_GM6_camo_F",nil,12000],// Neue Skin für Mittelschwere Sniper
 						["5Rnd_127x108_Mag",nil,200],
 						["5Rnd_127x108_APDS_Mag",nil,350],
-						["srifle_LRR_F",nil,15000],       	 //Schwere Sniper
+						["srifle_LRR_F",nil,25000],       	 //Schwere Sniper
 						["srifle_LRR_camo_F",nil,15000],	// Neue Skin für Schwere Sniper
 						["7Rnd_408_Mag",nil,375],
 						["acc_pointer_IR",nil,800],
@@ -405,12 +408,13 @@ switch(_shop) do
 						["optic_Holosight",nil,200],
 						["optic_Hamr",nil,1000],
 						["optic_ACO_grn",nil,500],
-						["optic_SOS",nil,2700],        //Einfaches Sniper visier
-						["optic_LRPS",nil,5000],
+						["optic_SOS",nil,1700],        //Einfaches Sniper visier
+						["optic_LRPS",nil,2500],
 						["SmokeShellGreen","Tränengas",300],
 						["HandGrenade_Stone","Flashbang",500],   // Flashbang
 						["HandGrenade",nil,200],
 						["Binocular",nil,150],
+						["Rangefinder",nil,150],
 						["ItemGPS",nil,2000],
 						["ToolKit",nil,100],
 						["FirstAidKit",nil,150],
@@ -555,54 +559,29 @@ switch(_shop) do
 			{
 				["Mohammed's Jihadi Shop",
 					[
-						["SMG_02_F",nil,1500],
+						["SMG_02_F",nil,2500],
 						["30Rnd_9x21_Mag",nil,200],
-						["arifle_MXC_F",nil,3200],
-						["arifle_MXC_Black_F",nil,3200],
-						["arifle_MX_F",nil,2000],
-						["arifle_MX_Black_F",nil,2000],
+						["arifle_MXC_F",nil,4200],
+						["arifle_MXC_Black_F",nil,4200],
+						["arifle_MX_F",nil,5000],
+						["arifle_MX_Black_F",nil,5000],
 						["30Rnd_65x39_caseless_mag",nil,80],
 						["30Rnd_65x39_caseless_mag_Tracer","30Rnd 65x39 Leuchtspur",80],
-						["arifle_MX_SW_F",nil,3500],
-						["arifle_MX_SW_Black_F",nil,3500],
+						["arifle_MX_SW_F",nil,6500],
+						["arifle_MX_SW_Black_F",nil,6500],
 						["100Rnd_65x39_caseless_mag",nil,60],
 						["100Rnd_65x39_caseless_mag_Tracer","100Rnd 65x39 Leuchtspur",60],
-						["arifle_MX_GL_F",nil,5000], // Mit Granatenwerfer für Smoke und Licht
-						["30Rnd_65x39_caseless_mag",nil,80],
-						["30Rnd_65x39_caseless_mag_Tracer","30Rnd 65x39 Leuchtspur",80],
-						["UGL_FlareWhite_F",nil,200],
-						["UGL_FlareGreen_F",nil,200],
-						["UGL_FlareRed_F",nil,200],
-						["UGL_FlareYellow_F",nil,200],
-						["1Rnd_Smoke_Grenade_shell",nil,150],
-						["1Rnd_SmokeRed_Grenade_shell",nil,150],
-						["1Rnd_SmokeOrange_Grenade_shell",nil,150],
-						["arifle_MXM_F",nil,4300],
-						["arifle_MXM_Black_F",nil,4300],
+						["arifle_MXM_F",nil,8300],
+						["arifle_MXM_Black_F",nil,8300],
 						["30Rnd_65x39_caseless_mag",nil,80],
 						["30Rnd_65x39_caseless_mag_Tracer","30Rnd 65x39 Leuchtspur",80],
 						["arifle_Katiba_F",nil,5000],
 						["30Rnd_65x39_caseless_mag",nil,80],
 						["30Rnd_65x39_caseless_mag_Tracer","30Rnd 65x39 Leuchtspur",80],
-						["arifle_Mk20_F",nil,3500],
-						["arifle_TRG21_F",nil,3200],
-						["arifle_TRG20_F",nil,2900],
-						["30Rnd_556x45_Stanag",nil,80],
-						["30Rnd_556x45_Stanag_Tracer_Red","30Rnd 65x39 Rot",80],
-						["30Rnd_556x45_Stanag_Tracer_Green","30Rnd 65x39 Gruen",80],
-						["30Rnd_556x45_Stanag_Tracer_Yellow","30Rnd 65x39 Gelb",80],
-						["LMG_Mk200_F",nil,6500],
-						["200Rnd_65x39_cased_Box",nil,500],
-						["200Rnd_65x39_cased_Box_Tracer",nil,500],
-						["srifle_EBR_F",nil,8000],   //Einfache Sniper
+						["srifle_EBR_F",nil,20000],   //Einfache Sniper
 						["20Rnd_762x51_Mag",nil,50],
-						["srifle_DMR_01_F",nil,12000],         //Mittlere Sniper
+						["srifle_DMR_01_F",nil,25000],         //Mittlere Sniper
 						["10Rnd_762x51_Mag",nil,150],
-						["srifle_GM6_F",nil,12000],       //Mittelschwere Sniper
-						["5Rnd_127x108_Mag",nil,200],
-						["5Rnd_127x108_APDS_Mag",nil,350],
-						["srifle_LRR_F",nil,15000],       	 //Schwere Sniper
-						["7Rnd_408_Mag",nil,375],
 						["acc_pointer_IR",nil,800],
 						["acc_flashlight",nil,300],
 						["optic_Holosight",nil,200],
@@ -611,7 +590,6 @@ switch(_shop) do
 						["optic_NVS",nil,1300],			//NEU
 						["optic_ACO_grn",nil,500],
 						["optic_SOS",nil,2700],			//Einfaches Sniper visier
-						["optic_LRPS",nil,4000],		//NEU Longe Range visier
 						["SmokeShellRed",nil,150],		//NEU
 						["SmokeShell",nil,150],			//NEU
 						["SmokeShellGreen","Tränengas",300],
@@ -620,7 +598,7 @@ switch(_shop) do
 						["ItemGPS",nil,1500],
 						["ToolKit",nil,150],
 						["FirstAidKit",nil,150],
-						["NVGoggles",nil,2000],
+						["NVGoggles",nil,1500],
 						["Chemlight_red",nil,30],
 						["Chemlight_yellow",nil,30],
 						["Chemlight_green",nil,30],
@@ -642,8 +620,8 @@ switch(_shop) do
 				["Billy Joe's Firearms",
 					[
 						["hgun_Rook40_F",nil,1500],
-						["hgun_Pistol_heavy_02_F",nil,3250],
-						["hgun_ACPC2_F",nil,4000],
+						["hgun_Pistol_heavy_02_F",nil,2250],
+						["hgun_ACPC2_F",nil,3000],
 						["optic_ACO_grn_smg",nil,800],
 						["V_Rangemaster_belt",nil,1600],
 						["16Rnd_9x21_Mag",nil,25],
@@ -729,24 +707,78 @@ switch(_shop) do
 			{
 				["Gangversteck Waffenhändler",
 					[
-						["hgun_Rook40_F",nil,800],
-						["hgun_Pistol_heavy_02_F",nil,2500],
-						["hgun_ACPC2_F",nil,4500],
-						["hgun_PDW2000_F",nil,9500],
-						["optic_ACO_grn_smg",nil,950],
-						["V_Rangemaster_belt",nil,1900],
-						["16Rnd_9x21_Mag",nil,25],
-						["9Rnd_45ACP_Mag",nil,45],
-						["6Rnd_45ACP_Cylinder",nil,50],
-						["30Rnd_9x21_Mag",nil,75],
+						["SMG_02_F",nil,2500],
+						["30Rnd_9x21_Mag",nil,200],
+						["arifle_MXC_F",nil,4200],
+						["arifle_MXC_Black_F",nil,4200],
+						["arifle_MX_F",nil,5000],
+						["arifle_MX_Black_F",nil,5000],
+						["30Rnd_65x39_caseless_mag",nil,80],
+						["30Rnd_65x39_caseless_mag_Tracer","30Rnd 65x39 Leuchtspur",80],
+						["arifle_MX_SW_F",nil,6500],
+						["arifle_MX_SW_Black_F",nil,6500],
+						["100Rnd_65x39_caseless_mag",nil,60],
+						["100Rnd_65x39_caseless_mag_Tracer","100Rnd 65x39 Leuchtspur",60],
+						["arifle_MX_GL_F",nil,7000], // Mit Granatenwerfer für Smoke und Licht
+						["30Rnd_65x39_caseless_mag",nil,80],
+						["30Rnd_65x39_caseless_mag_Tracer","30Rnd 65x39 Leuchtspur",80],
+						["UGL_FlareWhite_F",nil,200],
+						["UGL_FlareGreen_F",nil,200],
+						["UGL_FlareRed_F",nil,200],
+						["UGL_FlareYellow_F",nil,200],
+						["1Rnd_Smoke_Grenade_shell",nil,150],
+						["1Rnd_SmokeRed_Grenade_shell",nil,150],
+						["1Rnd_SmokeOrange_Grenade_shell",nil,150],
+						["arifle_MXM_F",nil,8300],
+						["arifle_MXM_Black_F",nil,8300],
+						["30Rnd_65x39_caseless_mag",nil,80],
+						["30Rnd_65x39_caseless_mag_Tracer","30Rnd 65x39 Leuchtspur",80],
+						["arifle_Katiba_F",nil,5000],
+						["30Rnd_65x39_caseless_mag",nil,80],
+						["30Rnd_65x39_caseless_mag_Tracer","30Rnd 65x39 Leuchtspur",80],
+						["arifle_Mk20_F",nil,9500],
+						["arifle_TRG21_F",nil,3200],
+						["arifle_TRG20_F",nil,2900],
+						["30Rnd_556x45_Stanag",nil,80],
+						["30Rnd_556x45_Stanag_Tracer_Red","30Rnd 65x39 Rot",80],
+						["30Rnd_556x45_Stanag_Tracer_Green","30Rnd 65x39 Gruen",80],
+						["30Rnd_556x45_Stanag_Tracer_Yellow","30Rnd 65x39 Gelb",80],
+						["LMG_Mk200_F",nil,15500],
+						["200Rnd_65x39_cased_Box",nil,500],
+						["200Rnd_65x39_cased_Box_Tracer",nil,500],
+						["srifle_EBR_F",nil,20000],   //Einfache Sniper
+						["20Rnd_762x51_Mag",nil,50],
+						["srifle_DMR_01_F",nil,25000],         //Mittlere Sniper
+						["10Rnd_762x51_Mag",nil,150],
+						["srifle_GM6_F",nil,30000],       //Mittelschwere Sniper
+						["5Rnd_127x108_Mag",nil,200],
+						["5Rnd_127x108_APDS_Mag",nil,350],
+						["srifle_LRR_F",nil,40000],       	 //Schwere Sniper
+						["7Rnd_408_Mag",nil,375],
+						["acc_pointer_IR",nil,800],
+						["acc_flashlight",nil,300],
+						["optic_Holosight",nil,200],
+						["optic_Hamr",nil,1000],
+						["optic_Arco",nil,1300],		//NEU
+						["optic_NVS",nil,1300],			//NEU
+						["optic_ACO_grn",nil,500],
+						["optic_SOS",nil,2700],			//Einfaches Sniper visier
+						["optic_LRPS",nil,4000],		//NEU Longe Range visier
+						["SmokeShellRed",nil,150],		//NEU
+						["SmokeShell",nil,150],			//NEU
+						["SmokeShellGreen","Tränengas",300],
+						["HandGrenade",nil,200],
+						["SatchelCharge_Remote_Mag",nil,35000],
 						["Binocular",nil,150],
-						["ItemGPS",nil,100],
+						["Rangefinder",nil,850],
+						["ItemGPS",nil,1500],
+						["ToolKit",nil,150],
 						["FirstAidKit",nil,150],
-						["NVGoggles",nil,1000],
-						["Chemlight_red",nil,300],
-						["Chemlight_yellow",nil,300],
-						["Chemlight_green",nil,300],
-						["Chemlight_blue",nil,300]
+						["NVGoggles",nil,1500],
+						["Chemlight_red",nil,30],
+						["Chemlight_yellow",nil,30],
+						["Chemlight_green",nil,30],
+						["Chemlight_blue",nil,30]
 					]
 				];
 			};
