@@ -25,5 +25,5 @@ if(_action) then {
 	_grpMembers = grpPlayer getVariable "gang_members";
 	_grpMembers = _grpMembers - [steamid];
 	grpPlayer setVariable["gang_members",_grpMembers,true];
-	[[4,_grp],"TON_fnc_updateGang",false,false] spawn life_fnc_MP;
+	[[4,_group],"TON_fnc_updateGang",false,false] spawn life_fnc_MP;
 };
