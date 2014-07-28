@@ -308,15 +308,15 @@ sell_array =
 	["barrier",20],
 	["niere",2500],
 	["sandbag",30],
-	["moonshine",85],
+	["moonshine",70],
 	["wein",60],
 	["weintraube",40],
-	["tabak",40],
-	["zigarren",70],
+	["tabak",25],
+	["zigarren",40],
 	["muell",10],
 	["wertstoffe",20],
 	["kunststoff",50],
-	["edelmetall",110]
+	["edelmetall",90]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -329,7 +329,7 @@ buy_array =
 	["mackerel",20],
 	["tuna",20],
 	["mullet",15],
-	["catshark",130],
+	["catshark",150],
 	["water",10],
 	["turtle",130],
 	["turtlesoup",30],
