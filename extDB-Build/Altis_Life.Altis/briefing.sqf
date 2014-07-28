@@ -13,7 +13,7 @@ player createDiarySubject ["rebgebiet","Rebellengebiet"];
 player createDiarySubject ["dgrenze","Die Grenze"];
 player createDiarySubject ["policerules","Polizeiregeln"];
 player createDiarySubject ["bgeld","Bußgeldkatalog"];
-//player createDiarySubject ["controls","Tastenbelegung"];
+player createDiarySubject ["controls","Tastenbelegung"];
 //player createDiarySubject ["house","Eigenheim"];
 /*  Example
 	player createDiaryRecord ["", //Container
@@ -608,19 +608,39 @@ player createDiarySubject ["bgeld","Bußgeldkatalog"];
 	];
 	player createDiaryRecord ["controls",
 		[
-			"Tastenbelegungen",
-				"
-				Z: Playermenue aufmachen <br/>
-				U: Fahrzeug auf-/abschliessen <br/>
-				T: Kofferraum öffnen <br/>
-				Left Shift + G: Ausrauben / Bewusstlosschlagen (braucht eine Waffe, nur bei Einwohner) <br/>
-				Left Shift + H: Waffe holstern <br/>
-				Left Shift + Strg + H: Ergeben <br/>
-				L: Geschwindigkeitsmessung (nur fuer Polizisten mit Tazerpistole) <br/>
-				F: Polizeisirene (nur fuer Polizisten) <br/>
-				Left Shift + R: Festnehmen (nur bei Polizei) <br/>
-				Q: Hotkey Pickaxt <br/><br/>
-				"
+			"",
+"<br/>
+== Spieler Tasten ====================================<br/>
+<br/>
+[ <font color='#A9E2F3'>Z</font> ] - Player Menü öffnen<br/>
+[ <font color='#A9E2F3'>U</font> ] - Fahrzeuge auf/zu schliessen<br/>
+[ <font color='#A9E2F3'>T</font> ] - Fahrzeug Inventar öffen<br/>
+[ <font color='#A9E2F3'>TAB-TASTE</font> ] - Spitzhacke/Ölpumpe/Netz benutzen<br/>
+<br/>
+[ <font color='#A9E2F3'>Links Shift + F</font> ] - Surrender (aufgeben)<br/>
+[ <font color='#A9E2F3'>Links Shift + H</font> ] - Handwaffe holstern<br/>
+[ <font color='#A9E2F3'>Links Shift + G</font> ] - Spieler K.O. schlagen<br/>
+zum ausrauben / beim entführen ect. Mausrad scrollen für Menü<br/>
+[ <font color='#A9E2F3'>Windows-Taste</font> ] - Action-Menü <br/>
+zum aufnehmen von Items o. Geld | Fahrzeug reparieren | fesseln / entfesseln<br/>
+<br/>
+<br/>
+== Police / Medic / ADAC Tasten ====================================<br/>
+<br/>
+[ <font color='#A9E2F3'>Windows-Taste</font> ] - Action-Menü <br/>
+[ <font color='#A9E2F3'>O</font> ] - Schranke AUF/ZU<br/>
+[ <font color='#A9E2F3'>F</font> ] - Cop / Medic Sirene ON/OFF<br/>
+[ <font color='#A9E2F3'>Links Shift + L</font> ] - Blaulicht ON/OFF <br/>
+[ <font color='#A9E2F3'>Links Shift + R</font> ] - Handschellen anlegen<br/>
+[ <font color='#A9E2F3'>Links Shift + H</font> ] - Handwaffe holstern<br/>
+[ <font color='#A9E2F3'>Mausrad scrollen</font> ] - Cop-Marke zeigen<br/>
+<br/>
+<br/>
+== Geschwindigkeitsmessung / Blitzer ==================<br/>
+<br/>
+[ <font color='#A9E2F3'>Taser auf Fahrzeug zoomen + L</font> ]
+
+"
 		]
 	];
 	player createDiaryRecord ["house",
