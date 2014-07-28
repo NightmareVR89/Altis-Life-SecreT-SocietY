@@ -86,12 +86,12 @@ switch (_mode) do
 			case "license_civ_froschlsd": {_var = "froschlsd"};
 			case "license_civ_froschbein": {_var = "froschbein"};
 			case "license_adac_driver": {_var = "adacdrive"};
-			case "license_civ_weintraube": {_var = "weintraube"};
-			case "license_civ_moonshine": {_var = "moonshine"};
-			case "license_civ_tabak": {_var = "tabak"};
-			case "license_civ_wertstoffe": {_var = "wertstoffe"};
-			case "license_civ_kunststoff": {_var = "kunststoff"};
-			case "license_civ_edelmetall": {_var = "edelmetall"};
+			case "license_civ_weintraube": {_var = "weintraubel"};
+			case "license_civ_moonshine": {_var = "moonshinel"};
+			case "license_civ_tabak": {_var = "tabakl"};
+			case "license_civ_wertstoffe": {_var = "wertstoffel"};
+			case "license_civ_kunststoff": {_var = "kunststoffl"};
+			case "license_civ_edelmetall": {_var = "edelmetalll"};
 			default {_var = ""};
 		};
 	};
