@@ -52,7 +52,7 @@ life_clothing_purchase = [-1,-1,-1,-1,-1];
 *****************************
 */
 life_maxWeight = 24; //Identifies the max carrying weight (gets adjusted throughout game when wearing different types of clothing).
-life_maxWeightT = 64; //Static variable representing the players max carrying weight on start.
+life_maxWeightT = 24; //Static variable representing the players max carrying weight on start.
 life_carryWeight = 0; //Represents the players current inventory weight (MUST START AT 0).
 
 /*
@@ -70,7 +70,6 @@ life_eat_Rabbit = 20;
 life_eat_Apple = 5;
 life_eat_turtlesoup = 62;
 life_eat_donuts = 5;
-life_eat_niere = 50;
 
 /*
 *****************************
@@ -239,9 +238,8 @@ life_licenses =
 	["license_adac_driver","adac"],
 	["license_civ_weintraube","civ"],
 	["license_civ_moonshine","civ"],
-	["license_civ_niere","civ"],
 	["license_civ_tabak","civ"],
-	["license_civ_muell","civ"],
+	["license_civ_wertstoffe","civ"],
 	["license_civ_kunststoff","civ"],
 	["license_civ_edelmetall","civ"]
 ];
