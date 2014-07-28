@@ -1,28 +1,13 @@
 waitUntil {!isNull player && player == player};
 if(player diarySubjectExists "rules")exitwith{};
-
-player createDiarySubject ["changelog","Change Log"];
-player createDiarySubject ["serverinfo","Serverinformationen"];
-player createDiarySubject ["serverregeln","Serverregeln"];
-player createDiarySubject ["safezones","Safe Zones (No Killing)"];
-//player createDiarySubject ["civrules","Einwohner Regeln"];
-player createDiarySubject ["illegal","Illegale Activitäten"];
-//player createDiarySubject ["gangrules","Gangregeln"];
-//player createDiarySubject ["terrorrules","Rebellenregeln"];
-player createDiarySubject ["rebgebiet","Rebellengebiet"];
-player createDiarySubject ["dgrenze","Die Grenze"];
-player createDiarySubject ["policerules","Polizeiregeln"];
-player createDiarySubject ["bgeld","Bußgeldkatalog"];
-player createDiarySubject ["controls","Tastenbelegung"];
-
 player createDiarySubject ["spacer1","------------------------"];
 player createDiarySubject ["serverinfo","Serverinformationen"];
 player createDiarySubject ["serverregeln","Serverregeln"];
 player createDiarySubject ["spacer2","------------------------"];
 player createDiarySubject ["safezones","Safe Zones (No Killing)"];
 player createDiarySubject ["civrules","Einwohner Regeln"];
-player createDiarySubject ["medicrules","Sanitäter"];
-player createDiarySubject ["adacrules","ADAC"];
+//player createDiarySubject ["medicrules","Sanitäter"];
+//player createDiarySubject ["adacrules","ADAC"];
 player createDiarySubject ["policerules","Polizeiregeln"];
 player createDiarySubject ["spacer3","------------------------"];
 player createDiarySubject ["pricelist","Preise Fahrzeuge"];
@@ -775,5 +760,147 @@ zum aufnehmen von Items o. Geld | Fahrzeug reparieren | fesseln / entfesseln<br/
 					* Direkter Zugriff auf die Autogarage über das Hausmenü. <br/><br/><br/>
 					Aber Vorsicht! Die Polizei kann das Haus durchsuchen! <br/>
 				"
+		]
+	];
+	player createDiaryRecord ["pricelist",
+		[
+			"", 
+"
+<br/>
+<font color='#A9E2F3'>FAHRZEUGE: (Mietpreise) (Permanent 50% mehr)</font><br/><br/>
+- <font color='#A9E2F3'>Quadbike</font> $2500 <font color='#A9E2F3'>INVENTAR:</font> 25<br/>
+- <font color='#A9E2F3'>Go-Kart</font> $15000 <font color='#A9E2F3'>INVENTAR:</font> 10 <font color='#A9E2F3'>(nur VIP)</font><br/>
+- <font color='#A9E2F3'>Hatchback</font> $10000 <font color='#A9E2F3'>INVENTAR:</font> 40<br/>
+- <font color='#A9E2F3'>Hatchback (Sport)</font> $8000 <font color='#A9E2F3'>INVENTAR:</font> 45<br/>
+- <font color='#A9E2F3'>Offroad</font> $13000 <font color='#A9E2F3'>INVENTAR:</font> 65<br/>
+- <font color='#A9E2F3'>SUV</font> $35000 <font color='#A9E2F3'>INVENTAR:</font> 50<br/>
+- <font color='#A9E2F3'>Truck Boxer</font> $45000 <font color='#A9E2F3'>INVENTAR:</font> 100<br/>
+- <font color='#A9E2F3'>Fuel Truck</font> $7500 <font color='#A9E2F3'>INVENTAR:</font> 150 <font color='#A9E2F3'>(nur VIP)</font><br/>
+<br/>
+- <font color='#A9E2F3'>Zamak Transport</font> $75000 <font color='#A9E2F3'>INVENTAR:</font> 200<br/>
+- <font color='#A9E2F3'>Zamak Transport (Covered)</font> $125000 <font color='#A9E2F3'>INVENTAR:</font> 300<br/>
+- <font color='#A9E2F3'>Tempest Transport (Covered)</font> $300000 <font color='#A9E2F3'>INVENTAR:</font> 580<br/>
+- <font color='#A9E2F3'>HEMTT Transport (Covered)</font> $450000 <font color='#A9E2F3'>INVENTAR:</font> 650<br/>
+- <font color='#A9E2F3'>HEMTT Box</font> $250000 <font color='#A9E2F3'>INVENTAR:</font> 700 <font color='#A9E2F3'>(nur VIP)</font><br/>
+<br/>
+- <font color='#A9E2F3'>MH-9 Hummingbird</font> $300000 <font color='#A9E2F3'>INVENTAR:</font> 90<br/>
+- <font color='#A9E2F3'>PO-30 Orca</font> $600000 <font color='#A9E2F3'>INVENTAR:</font> 100<br/>
+- <font color='#A9E2F3'>UH-80 Ghost Hawk</font> $1200000 <font color='#A9E2F3'>INVENTAR:</font> 200 <font color='#A9E2F3'>(nur VIP)</font><br/>
+- <font color='#A9E2F3'>CH-49 Mohawk</font> $1200000 <font color='#A9E2F3'>INVENTAR:</font> 400 <font color='#A9E2F3'>(nur VIP)</font><br/>
+<br/>
+- <font color='#A9E2F3'>Ifrit</font> $2500000 <font color='#A9E2F3'>INVENTAR:</font> 60<br/>
+- <font color='#A9E2F3'>Offroad (MG)</font> $2500000 <font color='#A9E2F3'>INVENTAR:</font> 65<br/>
+<br/>
+
+"
+		]
+	];
+
+//---------------------------------------------------//
+
+player createDiaryRecord ["licenses",
+		[
+			"", 
+"
+<br/>
+<font color='#A9E2F3'>PREISE FÜR LIZENZEN:</font><br/><br/>
+- <font color='#A9E2F3'>Führerschein</font> $500 <br/>
+- <font color='#A9E2F3'>Pilotenschein</font> $30000 <br/>
+- <font color='#A9E2F3'>Heroin Lizenz</font> $30000 <br/>
+- <font color='#A9E2F3'>Gang Lizenz</font> $5000 <br/>
+- <font color='#A9E2F3'>Öl Lizenz</font> $10000 <br/>
+- <font color='#A9E2F3'>Tauchschein</font> $2000 <br/>
+- <font color='#A9E2F3'>Bootsführerschein</font> $1000 <br/>
+- <font color='#A9E2F3'>Waffen Lizenz</font> $20000 <br/>
+- <font color='#A9E2F3'>Rebelen Lizenz</font> $750000 <br/>
+- <font color='#A9E2F3'>LKW Führerschein</font> $20000 <br/>
+- <font color='#A9E2F3'>Diamanten Lizenz</font> $30000 <br/>
+- <font color='#A9E2F3'>Kupfer Lizenz</font> $8000 <br/>
+- <font color='#A9E2F3'>Eisen Lizenz</font> $9500 <br/>
+- <font color='#A9E2F3'>Sand Lizenz</font> $14500 <br/>
+- <font color='#A9E2F3'>Salz Lizenz</font> $12000 <br/>
+- <font color='#A9E2F3'>Kokain Lizenz</font> $40000 <br/>
+- <font color='#A9E2F3'>Marijuana Lizenz</font> $20000 <br/>
+- <font color='#A9E2F3'>Zement Lizenz</font> $6500 <br/>
+- <font color='#A9E2F3'>Hausbesitzer Lizenz</font> $100000 <br/>
+- <font color='#A9E2F3'>Brauerei Lizenz</font> $8000 <br/>
+
+- <font color='#A9E2F3'>Kaffee Lizenz</font> $10000 <br/>
+- <font color='#A9E2F3'>Perlen Lizenz</font> $50000 <br/>
+- <font color='#A9E2F3'>LSD Lizenz</font> $25000 <br/>
+- <font color='#A9E2F3'>Crystal Meth Lizenz</font> $30000 <br/>
+- <font color='#A9E2F3'>Ecstasy Lizenz</font> $25000 <br/>
+- <font color='#A9E2F3'>Gold Erz Lizenz</font> $45000 <br/>
+- <font color='#A9E2F3'>Silber Erz Lizenz</font> $40000 <br/>
+"
+		]
+	];	
+	
+//---------------------------------------------------//
+
+player createDiaryRecord ["traderinfo",
+		[
+			"", 
+"
+<br/>
+ FARM / TRADER SYSTEM: (Verkaufspreise Markt abhängig)<br/>
+<br/>
+<br/>
+  <font color='#A9E2F3'>Lebensmittel</font><br/>
+<br/>
+- Äpfel<font color='#A9E2F3'> --> Obsthändler</font><br/>
+- Pfirsiche<font color='#A9E2F3'> --> Obsthändler</font><br/>
+- Salema <font color='#888888'>(Tauchen o. Boot) </font><font color='#A9E2F3'> --> Fischmarkt</font><br/>
+- Ornate <font color='#888888'>(Tauchen o. Boot) </font><font color='#A9E2F3'> --> Fischmarkt</font><br/>
+- Mackerel <font color='#888888'>(Tauchen o. Boot) </font><font color='#A9E2F3'> --> Fischmarkt</font><br/>
+- Tuna <font color='#888888'>(Tauchen o. Boot) </font><font color='#A9E2F3'> --> Fischmarkt</font><br/>
+- Mullet <font color='#888888'>(Tauchen o. Boot) </font><font color='#A9E2F3'> --> Fischmarkt</font><br/>
+- Cat Shark <font color='#888888'>(Tauchen o. Boot) </font><font color='#A9E2F3'> --> Fischmarkt</font><br/>
+<br/>
+  <font color='#A9E2F3'>Rohstoffe </font><br/>
+<br/>
+- Kupfer Ore <font color='#888888'>(Spitzhacke) </font><font color='#A9E2F3'> -> </font> Kupfer Barren <font color='#A9E2F3'> --> Kupferhändler</font><br/>
+- Eisen Ore <font color='#888888'>(Spitzhacke) </font><font color='#A9E2F3'> -> </font> Eisen Barren <font color='#A9E2F3'> --> Eisenhändler</font><br/>
+- Sand <font color='#888888'>(Spitzhacke) </font><font color='#A9E2F3'> -> </font> Glass <font color='#A9E2F3'> --> Glasshändler</font>  <br/>
+- Roh-Öl <font color='#888888'>(Ölpumpe) </font><font color='#A9E2F3'> -> </font> Raffiniertes Öl <font color='#A9E2F3'> --> Ölhändler</font>  <br/>
+- Steine <font color='#888888'>(Spitzhacke) </font><font color='#A9E2F3'> -> </font> Zement <font color='#A9E2F3'> --> </font> Zementhändler <br/>
+- Salz <font color='#888888'>(Spitzhacke) </font><font color='#A9E2F3'> -> </font> Veredeltes Salz <font color='#A9E2F3'> --> Salzhändler</font>  <br/>
+- Diamanten <font color='#888888'>(Spitzhacke) </font><font color='#A9E2F3'> -> </font> Geschl. Diamanten <font color='#A9E2F3'> --> Händler</font>  <br/>
+- Tabak <font color='#A9E2F3'> -> </font> Zigarren <font color='#A9E2F3'> --> Tabak Händler</font>  <br/>
+- Müll <font color='#A9E2F3'> -> </font> Wertstoffe <font color='#A9E2F3'> --> Wertstoff Händler</font>  <br/>
+- Weintrauben <font color='#A9E2F3'> -> </font> Wein <font color='#888888'>(Brauerei) </font><font color='#A9E2F3'> --> Getränkehändler</font>  <br/>
+<br/>
+  <font color='#A9E2F3'>Illegale Rohstoffe</font><br/>
+<br/>
+- Frösche <font color='#888888'>(von Froschteich) </font><font color='#A9E2F3'> -> </font> LSD <font color='#A9E2F3'> --> Drogendealer </font><br/>
+- Kokainblätter <font color='#A9E2F3'> -> </font> Kokain <font color='#A9E2F3'> --> Drogendealer </font><br/>
+- Cannabis <font color='#A9E2F3'> -> </font> Marijuana <font color='#A9E2F3'> --> Drogendealer </font><br/>
+- Heroin <font color='#A9E2F3'> -> </font> verarb. Heroin <font color='#A9E2F3'> --> Drogendealer </font><br/>
+- Schildkröten <font color='#888888'>(nur mit Waffe SDAR) </font><font color='#A9E2F3'> --> Schildkrötenhändler</font><br/>
+- Weintraube <font color='#888888'>(von Brauerei) </font><font color='#A9E2F3'> -> </font> Moonshine <font color='#A9E2F3'> --> Moonshinehändler </font><br/>
+<br/><br/>
+
+"
+		]
+	];
+	player createDiaryRecord ["ganginfo",
+		[
+			"", 
+"
+<br/>
+<font color='#A9E2F3'>GANG BREICHE</font><br/><br/>
+Die auf der Map makierten Breiche kannst du wenn du in einer Gang bist eingenommen werden.
+Dazu gründest du unter (z) eine Gang. 
+An den Punkten findest du eine <font color='#A9E2F3'>Schwarze Fahne</font> an der ihr den Gang-Bereich für euch einnehmen und halten könnt.
+Für die Zeit in der ihr diesen Bereich haltet erhalten alle Gang-Mitglieder ein extra Gehalt in Höhe von $500 * Onlineplayer.
+<br/><br/>
+Ist ein Bereich in euer Hand so kann er euch aber auch von einer anderen Gang oder der Polizei streitig gemacht werden.
+Um ihn zurück zu erobern muss ein Gang-Mitglied ebenfalls an diese Fahne tretten und auf [Gebiet erobern] drücken.
+Das ist aber nur möglich wenn sich kein anderes Besitzer-Gang-Mitglied im Umkreis von 300m um die Fahne befindet. 
+Für eine erfolgreiche eroberung gibt es ebenfalls einen Geld-Bonus für alle Gang-Mitlgieder.
+<br/><br/>
+<font color='#A9E2F3'>WICHTIG:</font> um einen Bereich zu erobern darf ohne Vorwarnung <font color='#FF0000'>scharf geschossen</font> werden! 
+Es werden keine Items oder Waffen ect. ersetzt oder anderweitig erstattet. Überlegt euch also vorher ob ihr diese Bereiche betretet oder meidet den Bereich.
+"
 		]
 	];
