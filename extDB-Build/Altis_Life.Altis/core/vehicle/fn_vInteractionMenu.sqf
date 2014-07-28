@@ -35,7 +35,7 @@ life_vInact_curTarget = _curTarget;
 _Btn1 ctrlSetText localize "STR_vInAct_Repair";
 _Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairTruck;";
 
-if("ToolKit" in (items player)) then {
+if("ToolKit" in (items player) && (damage _curTarget < 1)) then {
 	_Btn1 ctrlEnable true;
 } else {
 	_Btn1 ctrlEnable false;
