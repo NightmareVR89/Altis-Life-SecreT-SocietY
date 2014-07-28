@@ -3057,7 +3057,7 @@ class Mission
 					vehicle="C_man_p_beggar_F_euro";
 					skill=0.60000002;
 					text="schwarzbrenner";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Schwarzgebrannte  Spirituosen"",life_fnc_processAction,""moonshine"",0,false,false,"""",' life_inv_weintraube > 0 && !life_is_processing']; this addAction[""MoonShining Lizenz($7000)"",life_fnc_buyLicense,""moonshine"",0,false,false,"""",' !license_civ_moonshine && playerSide == civilian '];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Schwarzgebrannte  Spirituosen"",life_fnc_processAction,""moonshine"",0,false,false,"""",' life_inv_weintraube > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_moonshine""] call life_fnc_varToStr,[([""moonshine""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""moonshine"",0,false,false,"""",' !license_civ_cement && playerSide == civilian '];";
 				};
 				class Item110
 				{
@@ -3069,7 +3069,7 @@ class Mission
 					vehicle="C_man_1";
 					skill=0.60000002;
 					text="weintrauben";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Wein Brennerei"",life_fnc_processAction,""wein"",0,false,false,"""",' life_inv_weintraube > 0 && !life_is_processing']; this addAction[""Weintrauben Lizenz ($1500)"",life_fnc_buyLicense,""weintraube"",0,false,false,"""",' !license_civ_weintraube && playerSide == civilian '];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Wein Brennerei"",life_fnc_processAction,""wein"",0,false,false,"""",' life_inv_weintraube > 0 && !life_is_processing'];  this addAction[format[""%1 ($%2)"",[""license_civ_weintraube""] call life_fnc_varToStr,[([""weintraube""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""weintraube"",0,false,false,"""",' !license_civ_cement && playerSide == civilian '];";
 					description="Weintrauben Verarbeiter";
 				};
 				class Item111
@@ -3107,7 +3107,7 @@ class Mission
 					lock="LOCKED";
 					skill=0.60000002;
 					text="muelltrennung";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Mülltrennung"",life_fnc_processAction,""wertstoffe"",0,false,false,"""",' life_inv_muell > 0 && !life_is_processing']; this addAction[""Müll Verarbeitung ($3000)"",life_fnc_buyLicense,""wertstoffe"",0,false,false,"""",' !license_civ_wertstoffe && playerSide == civilian '];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Mülltrennung"",life_fnc_processAction,""wertstoffe"",0,false,false,"""",' life_inv_muell > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_cement""] call life_fnc_varToStr,[([""wertstoffe""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""wertstoffe"",0,false,false,"""",' !license_civ_wertstoffe && playerSide == civilian '];";
 					description="Mülltrennung";
 				};
 				class Item114
@@ -3121,7 +3121,7 @@ class Mission
 					lock="LOCKED";
 					skill=0.60000002;
 					text="kunststoff_1";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Kunststoff Verarbeiten"",life_fnc_processAction,""kunststoff"",0,false,false,"""",' life_inv_wertstoffe > 0 && !life_is_processing']; this addAction[""Kunststoff Verarbeitung($7000)"",life_fnc_buyLicense,""kunststoff"",0,false,false,"""",' !license_civ_kunststoff && playerSide == civilian '];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Kunststoff Verarbeiten"",life_fnc_processAction,""kunststoff"",0,false,false,"""",' life_inv_wertstoffe > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_kunststoff""] call life_fnc_varToStr,[([""kunststoff""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""kunststoff"",0,false,false,"""",' !license_civ_cement && playerSide == civilian '];";
 					description="Kunststoff";
 				};
 				class Item115
@@ -3135,7 +3135,7 @@ class Mission
 					lock="LOCKED";
 					skill=0.60000002;
 					text="edelmetall";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Edelmetall Verarbeiter"",life_fnc_processAction,""edelmetall"",0,false,false,"""",' life_inv_wertstoffe > 0 && !life_is_processing']; this addAction[""Edelmetall Lizenz($40000)"",life_fnc_buyLicense,""edelmetall"",0,false,false,"""",' !license_civ_edelmetall && playerSide == civilian '];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Edelmetall Verarbeiter"",life_fnc_processAction,""edelmetall"",0,false,false,"""",' life_inv_wertstoffe > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_edelmetall""] call life_fnc_varToStr,[([""edelmetall""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""edelmetall"",0,false,false,"""",' !license_civ_edelmetall && playerSide == civilian '];";
 					description="Edelmetall Herstellung";
 				};
 				class Item116
@@ -3150,7 +3150,7 @@ class Mission
 					lock="LOCKED";
 					skill=0.60000002;
 					text="tabak_1";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Tabak Verarbeiter"",life_fnc_processAction,""zigarren"",0,false,false,"""",' life_inv_tabak > 0 && !life_is_processing']; this addAction[""Zigarren Lizenz($3000)"",life_fnc_buyLicense,""tabak"",0,false,false,"""",' !license_civ_tabak && playerSide == civilian '];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Tabak Verarbeiter"",life_fnc_processAction,""zigarren"",0,false,false,"""",' life_inv_tabak > 0 && !life_is_processing'];  this addAction[format[""%1 ($%2)"",[""license_civ_tabak""] call life_fnc_varToStr,[([""tabak""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""tabak"",0,false,false,"""",' !license_civ_tabak && playerSide == civilian '];";
 					description="Edelmetall Herstellung";
 				};
 				class Item117
