@@ -1789,7 +1789,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1";
-					init="removeallWeapons this;  this enableSimulation false; this addAction[""Rebellenmarkt"",life_fnc_virt_menu,""rebel""]; this allowDamage false;  this addAction[""Rebellenklamotten"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Rebellen Waffenhändler"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+					init="removeallWeapons this;  this enableSimulation false; this addAction[""Rebellenmarkt"",life_fnc_virt_menu,""rebel""]; this allowDamage false;  this addAction[""Rebellenklamotten"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Rebellen Waffenhändler"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 				};
 				class Item2
 				{
@@ -2429,7 +2429,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[""Fahrzeughändler"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_2"",""cop"",""APD - Athira District""]];  this addAction[""Fahrzeuggarage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Hole Fahrzeuge....""];   life_garage_sp = ""cop_car_2""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Stelle Fahrzeug in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];  ";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[""Fahrzeughändler"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_2"",""cop"",""APD - Athira District""]];  this addAction[""Fahrzeuggarage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Hole Fahrzeuge....""];   life_garage_sp = ""cop_car_2""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Stelle Fahrzeug in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item56
 				{
@@ -2440,7 +2440,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[""Fahrzeughändler"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_3"",""cop"",""APD - Pygros District""]];  this addAction[""Fahrzeuggarage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Hole Fahrzeuge....""];   life_garage_sp = ""cop_car_3""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Stelle Fahrzeug in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];  ";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[""Fahrzeughändler"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_3"",""cop"",""APD - Pygros District""]];  this addAction[""Fahrzeuggarage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Hole Fahrzeuge....""];   life_garage_sp = ""cop_car_3""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Stelle Fahrzeug in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item57
 				{
@@ -2628,7 +2628,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					text="h1_3_1";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Polizeikiosk"",life_fnc_virt_menu,""cop""]; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];  this allowDamage false;  this addAction[""Polizeidienstkleidung"",life_fnc_clothingMenu,""cop""];  this addAction[""Polizeidienstwaffen"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Patrol Officer Weapon Shop"",life_fnc_weaponShopMenu,""cop_patrol""];  this addAction[""Sergeant Weapon Shop"",life_fnc_weaponShopMenu,""cop_sergeant""]; this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west '];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Polizeikiosk"",life_fnc_virt_menu,""cop""]; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this allowDamage false;  this addAction[""Polizeidienstkleidung"",life_fnc_clothingMenu,""cop""];  this addAction[""Polizeidienstwaffen"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Patrol Officer Weapon Shop"",life_fnc_weaponShopMenu,""cop_patrol""];  this addAction[""Sergeant Weapon Shop"",life_fnc_weaponShopMenu,""cop_sergeant""]; this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west '];";
 				};
 				class Item73
 				{
@@ -2687,7 +2687,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1_1";
-					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[""Rebellenmarkt"",life_fnc_virt_menu,""rebel""]; this addAction[""Rebellenklamotten"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Rebellen Waffenhändler"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[""Rebellenmarkt"",life_fnc_virt_menu,""rebel""]; this addAction[""Rebellenklamotten"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Rebellen Waffenhändler"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 				};
 				class Item78
 				{
@@ -2699,7 +2699,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1_2";
-					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[""Rebellenmarkt"",life_fnc_virt_menu,""rebel""]; this addAction[""Rebellenklamotten"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Rebellen Waffenhändler"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[""Rebellenmarkt"",life_fnc_virt_menu,""rebel""]; this addAction[""Rebellenklamotten"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Rebellen Waffenhändler"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 				};
 				class Item79
 				{
@@ -2792,7 +2792,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[""Fahrzeughändler"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_5"",""cop"",""APD - Highway Patrol""]];  this addAction[""Fahrzeuggarage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Hole Fahrzeuge....""];   life_garage_sp = ""cop_car_5""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Stelle Fahrzeug in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];  ";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[""Fahrzeughändler"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_5"",""cop"",""APD - Highway Patrol""]];  this addAction[""Fahrzeuggarage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Hole Fahrzeuge....""];   life_garage_sp = ""cop_car_5""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Stelle Fahrzeug in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item87
 				{
@@ -2963,7 +2963,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[format[""%1 ($%2)"",[""license_med_air""] call life_fnc_varToStr,[([""mair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""mair"",0,false,false,"""",' !license_med_air && playerSide == independent '];  this addAction[""Sanitäterbedarf"",life_fnc_weaponShopMenu,""med_basic""];  this addAction[""Fahrzeughändler"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_3"",""med"",""Kavala Hosptial"",true]];  this addAction[""Helikopterhändler"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""medic_spawn_2"",""med"",""Kavala Hosptial"",true]]; this setObjectTexture [0,""textures\medic_uniform.jpg""];  ";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[format[""%1 ($%2)"",[""license_med_air""] call life_fnc_varToStr,[([""mair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""mair"",0,false,false,"""",' !license_med_air && playerSide == independent '];  this addAction[""Sanitäterbedarf"",life_fnc_weaponShopMenu,""med_basic""];  this addAction[""Fahrzeughändler"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_3"",""med"",""Kavala Hosptial"",true]];  this addAction[""Helikopterhändler"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""medic_spawn_2"",""med"",""Kavala Hosptial"",true]]; this setObjectTexture [0,""textures\medic_uniform.jpg""];";
 				};
 				class Item102
 				{
@@ -3262,7 +3262,7 @@ class Mission
 					vehicle="C_Nikos_aged";
 					leader=1;
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false;   this addAction[""CTC Weapon Shop"",life_fnc_weaponShopMenu,""security"",0,false,false,"""",' !isNil ""life_securitylevel"" && (call life_securitylevel) > 0 && playerSide == civilian'];   this addAction[""CTC Clothing Shop"",life_fnc_clothingMenu,""security"",0,false,false,"""",' !isNil ""life_securitylevel"" && (call life_securitylevel) > 0 && playerSide == civilian'];   this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu];   this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+					init="this allowDamage false; this enableSimulation false;   this addAction[""CTC Weapon Shop"",life_fnc_weaponShopMenu,""security"",0,false,false,"""",' !isNil ""life_securitylevel"" && (call life_securitylevel) > 0 && playerSide == civilian'];   this addAction[""CTC Clothing Shop"",life_fnc_clothingMenu,""security"",0,false,false,"""",' !isNil ""life_securitylevel"" && (call life_securitylevel) > 0 && playerSide == civilian'];   this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu];";
 				};
 			};
 		};
@@ -5461,7 +5461,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item71
 		{
@@ -5471,7 +5471,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item72
 		{
@@ -5481,7 +5481,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item73
 		{
@@ -5491,7 +5491,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item74
 		{
@@ -5501,7 +5501,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item75
 		{
@@ -5511,7 +5511,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item76
 		{
@@ -5523,7 +5523,7 @@ class Mission
 			vehicle="Land_Atm_01_F";
 			skill=0.60000002;
 			text="a1";
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item77
 		{
@@ -5533,7 +5533,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item78
 		{
@@ -5543,7 +5543,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item79
 		{
@@ -5553,7 +5553,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item80
 		{
@@ -5563,7 +5563,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item81
 		{
@@ -5573,7 +5573,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item82
 		{
@@ -5583,7 +5583,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item83
 		{
@@ -5593,7 +5593,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item84
 		{
@@ -5603,7 +5603,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item85
 		{
@@ -5656,7 +5656,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item90
 		{
@@ -5666,7 +5666,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item91
 		{
@@ -5676,7 +5676,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item92
 		{
@@ -5686,7 +5686,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item93
 		{
@@ -5776,7 +5776,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item102
 		{
@@ -30788,7 +30788,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_01_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu]; this addAction[""Kontenversicherung ($1000)"",{if(life_atmcash > 1000) then {life_has_insurance = true};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu];";
 		};
 		class Item2603
 		{
@@ -30808,7 +30808,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu]; this addAction[""Kontenversicherung ($1000)"",{if(life_atmcash > 1000) then {life_has_insurance = true};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Bankautomat</t>"",life_fnc_atmMenu];";
 		};
 		class Item2605
 		{
@@ -70998,7 +70998,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_01_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item6579
 		{
@@ -71329,7 +71329,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_01_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item6609
 		{
@@ -71633,7 +71633,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_01_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item6639
 		{
@@ -78268,7 +78268,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item7267
 		{
@@ -78290,7 +78290,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item7269
 		{
@@ -138555,7 +138555,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Laptop_unfolded_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item13101
 		{
@@ -143249,7 +143249,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Vermögensversicherung ($1,000)"",{if(life_atmcash > 1000) then {life_has_insurance = true; life_atmcash = life_atmcash - 1000};},"""",0,false,false,"""",'!life_has_insurance'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item13540
 		{
