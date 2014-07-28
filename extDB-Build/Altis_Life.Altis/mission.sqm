@@ -3069,7 +3069,7 @@ class Mission
 					vehicle="C_man_1";
 					skill=0.60000002;
 					text="weintrauben";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Wein Brennerei"",life_fnc_processAction,""wein"",0,false,false,"""",' life_inv_weintraube > 0 && !life_is_processing']; this addAction[""Weintrauben Lizenz ($1500)"",life_fnc_buyLicense,""weintraube"",0,false,false,"""",' !license_civ_weintraube && playerSide == civilian '];";
+					init="this addAction[""Wein Herstellen"",life_fnc_processAction,""wein"",0,false,false,"""",' life_inv_weintraube > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_weintraube""] call life_fnc_varToStr,[([""weintraube""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""weintraube"",0,false,false,"""",' !license_civ_weintraube && playerSide == civilian '];";
 					description="Weintrauben Verarbeiter";
 				};
 				class Item111
