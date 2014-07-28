@@ -2395,7 +2395,7 @@ class Mission
 					vehicle="C_man_p_beggar_F_afro";
 					skill=0.60000002;
 					text="carshop4";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Autohändler"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,""civ_car_4"",""civ"",""Bruce's Neu- und Gebrauchtwagen""]];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Autohändler"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,""civ_car_4"",""civ"",""Bruce's Neu- und Gebrauchtwagen""]]; this setVariable[""realname"", ""Autohändler""];";
 				};
 				class Item53
 				{
@@ -4509,7 +4509,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="license_shop_4";
-					init="this allowDamage false;  this enableSimulation false;  this addAction[format[""%1 ($%2)"",[""license_civ_driver""] call life_fnc_varToStr,[([""driver""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""driver"",0,false,false,"""",' !license_civ_driver && playerSide == civilian '];  this addAction[format[""%1 ($%2)"",[""license_civ_boat""] call life_fnc_varToStr,[([""boat""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""boat"",0,false,false,"""",' !license_civ_boat && playerSide == civilian '];  this addAction[format[""%1 ($%2)"",[""license_civ_air""] call life_fnc_varToStr,[([""pilot""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""pilot"",0,false,false,"""",' !license_civ_air && playerSide == civilian '];  this addAction[format[""%1 ($%2)"",[""license_civ_truck""] call life_fnc_varToStr,[([""truck""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""truck"",0,false,false,"""",' !license_civ_truck && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""license_civ_home""] call life_fnc_varToStr,[([""home""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""home"",0,false,false,"""",' !license_civ_home && playerSide == civilian '];";
+					init="this allowDamage false;  this enableSimulation false;  this addAction[format[""%1 ($%2)"",[""license_civ_driver""] call life_fnc_varToStr,[([""driver""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""driver"",0,false,false,"""",' !license_civ_driver && playerSide == civilian '];  this addAction[format[""%1 ($%2)"",[""license_civ_boat""] call life_fnc_varToStr,[([""boat""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""boat"",0,false,false,"""",' !license_civ_boat && playerSide == civilian '];  this addAction[format[""%1 ($%2)"",[""license_civ_air""] call life_fnc_varToStr,[([""pilot""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""pilot"",0,false,false,"""",' !license_civ_air && playerSide == civilian '];  this addAction[format[""%1 ($%2)"",[""license_civ_truck""] call life_fnc_varToStr,[([""truck""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""truck"",0,false,false,"""",' !license_civ_truck && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""license_civ_home""] call life_fnc_varToStr,[([""home""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""home"",0,false,false,"""",' !license_civ_home && playerSide == civilian ']; this setVariable[""realname"",""Lizenzhändler""];";
 				};
 			};
 		};
