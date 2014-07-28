@@ -808,7 +808,7 @@ player createDiaryRecord ["licenses",
 - <font color='#A9E2F3'>Tauchschein</font> $2000 <br/>
 - <font color='#A9E2F3'>Bootsführerschein</font> $1000 <br/>
 - <font color='#A9E2F3'>Waffen Lizenz</font> $20000 <br/>
-- <font color='#A9E2F3'>Rebelen Lizenz</font> $750000 <br/>
+- <font color='#A9E2F3'>Rebelen Lizenz</font> $75000 <br/>
 - <font color='#A9E2F3'>LKW Führerschein</font> $20000 <br/>
 - <font color='#A9E2F3'>Diamanten Lizenz</font> $30000 <br/>
 - <font color='#A9E2F3'>Kupfer Lizenz</font> $8000 <br/>
@@ -820,14 +820,7 @@ player createDiaryRecord ["licenses",
 - <font color='#A9E2F3'>Zement Lizenz</font> $6500 <br/>
 - <font color='#A9E2F3'>Hausbesitzer Lizenz</font> $100000 <br/>
 - <font color='#A9E2F3'>Brauerei Lizenz</font> $8000 <br/>
-
-- <font color='#A9E2F3'>Kaffee Lizenz</font> $10000 <br/>
-- <font color='#A9E2F3'>Perlen Lizenz</font> $50000 <br/>
 - <font color='#A9E2F3'>LSD Lizenz</font> $25000 <br/>
-- <font color='#A9E2F3'>Crystal Meth Lizenz</font> $30000 <br/>
-- <font color='#A9E2F3'>Ecstasy Lizenz</font> $25000 <br/>
-- <font color='#A9E2F3'>Gold Erz Lizenz</font> $45000 <br/>
-- <font color='#A9E2F3'>Silber Erz Lizenz</font> $40000 <br/>
 "
 		]
 	];	
