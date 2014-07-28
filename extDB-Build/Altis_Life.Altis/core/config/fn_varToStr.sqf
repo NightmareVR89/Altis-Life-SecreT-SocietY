@@ -116,7 +116,7 @@ switch (_var) do
 	case "license_civ_froschlsd": {"Froschquetscher"};
 	case "license_civ_froschbein": {"Gourmet-Koch"};
 	case "license_adac_driver": {"ADAC-Mitarbeiterausweis"};
-	case "license_civ_weintraube": {"Weintrauben Verarbeitung"};
+	case "license_civ_weintraube": {"Weintrauben-Verarbeitung"};
 	case "license_civ_moonshine": {"Moonshine Verarbeitung"};
 	case "license_civ_tabak": {"Zigarren Verarbeitung"};
 	case "license_civ_wertstoffe": {"Müll Verarbeitung"};
