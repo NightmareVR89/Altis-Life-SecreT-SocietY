@@ -137,6 +137,12 @@ class CfgSounds
     sound[] = {"\sounds\niere.ogg", 1, 1};
     titles[] = {};
 	};
+	class muell
+	{
+    name = "muell";
+    sound[] = {"\sounds\muell.ogg", 1, 1};
+    titles[] = {};
+	};
 };
 
 
