@@ -3106,7 +3106,7 @@ class Mission
 					lock="LOCKED";
 					skill=0.60000002;
 					text="muelltrennung";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Mülltrennung"",life_fnc_processAction,""wertstoffel"",0,false,false,"""",' life_inv_muell > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_wertstoffel""] call life_fnc_varToStr,[([""wertstoffel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""wertstoffel"",0,false,false,"""",' !license_civ_wertstoffel && playerSide == civilian '];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Mülltrennung"",life_fnc_processAction,""wertstoffel"",0,false,false,"""",' life_inv_muell > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_wertstoffe""] call life_fnc_varToStr,[([""wertstoffel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""wertstoffel"",0,false,false,"""",' !license_civ_wertstoffe && playerSide == civilian '];";
 					description="Mülltrennung";
 				};
 				class Item114
@@ -3120,7 +3120,7 @@ class Mission
 					lock="LOCKED";
 					skill=0.60000002;
 					text="kunststoff_1";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Kunststoff Verarbeiten"",life_fnc_processAction,""kunststoffl"",0,false,false,"""",' life_inv_wertstoffe > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_kunststoffl""] call life_fnc_varToStr,[([""kunststoffl""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""kunststoffl"",0,false,false,"""",' !license_civ_kunststoffl && playerSide == civilian '];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Kunststoff Verarbeiten"",life_fnc_processAction,""kunststoffl"",0,false,false,"""",' life_inv_wertstoffe > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_kunststoff""] call life_fnc_varToStr,[([""kunststoffl""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""kunststoffl"",0,false,false,"""",' !license_civ_kunststoff && playerSide == civilian '];";
 					description="Kunststoff";
 				};
 				class Item115
@@ -3134,7 +3134,7 @@ class Mission
 					lock="LOCKED";
 					skill=0.60000002;
 					text="edelmetall";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Edelmetall Verarbeiter"",life_fnc_processAction,""edelmetalll"",0,false,false,"""",' life_inv_wertstoffe > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_edelmetall""] call life_fnc_varToStr,[([""edelmetalll""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""edelmetalll"",0,false,false,"""",' !license_civ_edelmetalll && playerSide == civilian '];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Edelmetall Verarbeiter"",life_fnc_processAction,""edelmetalll"",0,false,false,"""",' life_inv_wertstoffe > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_edelmetall""] call life_fnc_varToStr,[([""edelmetalll""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""edelmetalll"",0,false,false,"""",' !license_civ_edelmetall && playerSide == civilian '];";
 					description="Edelmetall Herstellung";
 				};
 				class Item116
@@ -3149,7 +3149,7 @@ class Mission
 					lock="LOCKED";
 					skill=0.60000002;
 					text="tabak_1";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Tabak Verarbeiter"",life_fnc_processAction,""tabakl"",0,false,false,"""",' life_inv_tabak > 0 && !life_is_processing'];  this addAction[format[""%1 ($%2)"",[""license_civ_tabakl""] call life_fnc_varToStr,[([""tabakl""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""tabakl"",0,false,false,"""",' !license_civ_tabakl && playerSide == civilian '];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Tabak Verarbeiter"",life_fnc_processAction,""tabakl"",0,false,false,"""",' life_inv_tabak > 0 && !life_is_processing'];  this addAction[format[""%1 ($%2)"",[""license_civ_tabakl""] call life_fnc_varToStr,[([""tabakl""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""tabakl"",0,false,false,"""",' !license_civ_tabak && playerSide == civilian '];";
 					description="Edelmetall Herstellung";
 				};
 				class Item117
