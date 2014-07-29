@@ -284,7 +284,7 @@ if(_bool) then
 										if(_wepItems select 2 != "") then {_slotTaken = true;};
 
 										if(_slotTaken) then {
-											_action = ["Do you want to add this item to your weapon or inventory? If you add it to your weapon your current existing attachment will be lost!","Attachment slot taken!","Weapon","Inventory"] call BIS_fnc_guiMessage;
+											_action = ["Möchtest du das in dein Inventar legen oder an die Waffe montieren? Wenn du das an deine Waffe anbringst, verlierst du dein altes!","Bereits belegt!","Weapon","Inventory"] call BIS_fnc_guiMessage;
 											if(_action) then {
 												switch(_type) do {
 													case 1: {player addPrimaryWeaponItem _item;};
@@ -343,7 +343,7 @@ if(_bool) then
 										if(_wepItems select 1 != "") then {_slotTaken = true;};
 
 										if(_slotTaken) then {
-											_action = ["Do you want to add this item to your weapon or inventory? If you add it to your weapon your current existing attachment will be lost!","Attachment slot taken!","Weapon","Inventory"] call BIS_fnc_guiMessage;
+											_action = ["Möchtest du das in dein Inventar legen oder an die Waffe montieren? Wenn du das an deine Waffe anbringst, verlierst du dein altes!","Bereits belegt!","Weapon","Inventory"] call BIS_fnc_guiMessage;
 											if(_action) then {
 												switch(_type) do {
 													case 1: {player addPrimaryWeaponItem _item;};
@@ -402,7 +402,7 @@ if(_bool) then
 										if(_wepItems select 0 != "") then {_slotTaken = true;};
 
 										if(_slotTaken) then {
-											_action = ["Do you want to add this item to your weapon or inventory? If you add it to your weapon your current existing attachment will be lost!","Attachment slot taken!","Weapon","Inventory"] call BIS_fnc_guiMessage;
+											_action = ["Möchtest du das in dein Inventar legen oder an die Waffe montieren? Wenn du das an deine Waffe anbringst, verlierst du dein altes!","Bereits belegt!","Weapon","Inventory"] call BIS_fnc_guiMessage;
 											if(_action) then {
 												switch(_type) do {
 													case 1: {player addPrimaryWeaponItem _item;};
