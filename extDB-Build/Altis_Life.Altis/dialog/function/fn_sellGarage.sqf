@@ -18,7 +18,7 @@ _unit = player;
 if(isNil "_vehicle") exitWith {hint "Die Auswahl hat einen Fehler..."};
 
 _price = [_vehicle,__GETC__(life_garage_sell)] call fnc_index;
-if(_price == -1) then {_price = 1000;} else {_price = (__GETC__(life_garage_sell) select _price) select 1;};
+if(_price == -1) then {_price = 500;} else {_price = (__GETC__(life_garage_sell) select _price) select 1;};
 
 [[_vid,_pid,_price,player,life_garage_type],"TON_fnc_vehicleDelete",false,false] spawn life_fnc_MP;
 
