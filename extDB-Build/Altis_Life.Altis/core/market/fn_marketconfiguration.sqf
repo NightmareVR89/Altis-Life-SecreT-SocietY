@@ -120,6 +120,8 @@ life_market_resources = [
 			["turtlesoup",1], 
 			["froschbein",1],
 			["wein",1],
+			["mullet",1],
+			["tuna",1],
 			["weintrauben",1]
 		] 
 	],
@@ -139,6 +141,7 @@ life_market_resources = [
 			["turtlesoup",1],
 			["froschbein",1],
 			["wein",1],
+			["mackerel",20],
 			["weintrauben",1]
 		] 
 	],
@@ -156,6 +159,7 @@ life_market_resources = [
 		[ 
 			["salema",1], 
 			["ornate",1],
+			["apple",1],
 			["tuna",1],
 			["mullet",1]
 		] 
@@ -164,6 +168,7 @@ life_market_resources = [
 		[ 
 			["salema",1], 
 			["ornate",1],
+			["apple",1],
 			["tuna",1],
 			["mackrele",1]
 		] 
@@ -171,8 +176,8 @@ life_market_resources = [
 	["ornate", 10, 5, 20, 2, 1, 
 		[ 
 			["salema",1], 
-			["mullet",1],
-			["tuna",1],
+			["peach",1],
+			["apple",1],
 			["mackrele",1]
 		] 
 	],
@@ -180,6 +185,7 @@ life_market_resources = [
 		[ 
 			["ornate",1], 
 			["mullet",1],
+			["peach",1],
 			["tuna",1],
 			["mackrele",1]
 		] 
@@ -189,6 +195,7 @@ life_market_resources = [
 		[ 
 			["salema",1], 
 			["ornate",1],
+			["peach",1],
 			["mackerel",1],
 			["mullet",1]
 		] 
