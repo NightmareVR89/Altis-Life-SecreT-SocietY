@@ -118,7 +118,6 @@ life_market_resources = [
 	["apple", 10, 5, 20, 2, 1, 
 		[ 
 			["turtlesoup",1], 
-			["peach",1],
 			["froschbein",1],
 			["wein",1],
 			["weintrauben",1]
@@ -136,8 +135,7 @@ life_market_resources = [
 	],
 	
 	["peach", 10, 5, 20, 2, 1, 
-		[ 
-			["apple",1], 
+		[  
 			["turtlesoup",1],
 			["froschbein",1],
 			["wein",1],
@@ -199,7 +197,6 @@ life_market_resources = [
 		[ 
 			["apple",1], 
 			["turtlesoup",1],
-			["peach",1],
 			["froschbein",1],
 			["weintrauben",1]
 		] 
@@ -215,10 +212,9 @@ life_market_resources = [
 		] 
 	],
 	["tabak", 25, 5, 40, 2, 1, 
-		[ 
-			["apple",1], 
+		[  
 			["turtlesoup",1],
-			["peach",1],
+			["niere",1],
 			["froschbein",1],
 			["wein",1]
 		] 
@@ -226,6 +222,7 @@ life_market_resources = [
 	["zigarren", 40, 5, 70, 2, 1, 
 		[ 
 			["wein",1],
+			["niere",1],
 			["tabak",1]
 		] 
 	],
