@@ -48,7 +48,7 @@ switch(true) do
 	};
 	case (_rand <= 36): //6% Drogenpreis erhöhen
 	{
-		[[0,"News: Interpol hat eine internationale Drogenbande ausgehoben!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		[[0,"News: BND hat eine internationale Drogenbande ausgehoben!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 		
 		//Erhöhe Marktpreis mit marketSell
 		["marijuana", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
@@ -63,7 +63,7 @@ switch(true) do
 	};
 	case (_rand <= 44): //8% Ölpreis erhöhen
 	{
-		[[0,"News: Öltanker gesunken!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		[[0,"News: Neuer Krieg im Irak, das Oil wird knapp!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 		
 		["oilp", [20,40] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		
@@ -122,7 +122,8 @@ switch(true) do
 		[[0,"News: China entdeckt Schildkröten als neue Medizin! Tierschützer sind besorgt!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 		
 		//Erhöhe Marktpreis mit marketSell
-		["turtle", [4,10] call life_fnc_randomRound, true] call life_fnc_marketBuy; 	
+		["turtle", [4,10] call life_fnc_randomRound, true] call life_fnc_marketBuy;
+		["catshark", [4,10] call life_fnc_randomRound, true] call life_fnc_marketBuy;		
 		
 		diag_log "+Market+ Event turtlep";
 	};
