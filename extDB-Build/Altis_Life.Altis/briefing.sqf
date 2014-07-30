@@ -55,7 +55,9 @@ Ist ein Bereich in euer Hand so kann er euch aber auch von einer anderen Gang od
 Um ihn zurück zu erobern muss ein Gang-Mitglied ebenfalls an diese Fahne tretten und auf [Gebiet erobern] drücken.
 Das ist aber nur möglich wenn sich kein anderes Besitzer-Gang-Mitglied im Umkreis von 300m um die Fahne befindet. 
 <br/><br/>
-<font color='#A9E2F3'>WICHTIG:</font> um einen Bereich zu erobern darf ohne Vorwarnung <font color='#FF0000'>scharf geschossen</font> werden! 
+<font color='#A9E2F3'>WICHTIG:</font> um einen Bereich zu erobern darf ohne Vorwarnung <font color='#FF0000'>scharf geschossen</font> werden!
+<font color='#A9E2F3'>WICHTIG:</font> Medics dürfen nicht <font color='#FF0000'>beschossen</font> werden!
+<font color='#A9E2F3'>WICHTIG:</font> Medics sind unparteiisch <font color='#FF0000'>und dürfen</font> von allesn seiten angefordert werden!
 Es werden keine Items oder Waffen ect. ersetzt oder anderweitig erstattet. Überlegt euch also vorher ob ihr diese Bereiche betretet oder meidet den Bereich.
 "
 		]
@@ -140,7 +142,7 @@ player createDiaryRecord ["licenses",
 - <font color='#A9E2F3'>Heroin Lizenz</font> $15000 <br/>
 - <font color='#A9E2F3'>Gang Lizenz</font> $50000 <br/>
 - <font color='#A9E2F3'>Öl Lizenz</font> $5000 <br/>
-- <font color='#A9E2F3'>Tauchschein</font> $800 <br/>
+- <font color='#A9E2F3'>Tauchschein</font> $2000 <br/>
 - <font color='#A9E2F3'>Bootsführerschein</font> $1000 <br/>
 - <font color='#A9E2F3'>Waffen Lizenz</font> $4000 <br/>
 - <font color='#A9E2F3'>Rebelen Lizenz</font> $15000 <br/>
@@ -223,7 +225,7 @@ player createDiaryRecord ["serverrules",
 "
 <br/>
 <font color='#A9E2F3'>SPEICHERN VON FAHRZEUGEN:</font><br/><br/>
-Fahrzeuge despawnen wenn sie 30min. nicht benutzt werden und keine Player im Umkreis von 300m vorhanden sind.<br/>
+Fahrzeuge despawnen wenn sie 60min. nicht benutzt werden und keine Player im Umkreis von 300m vorhanden sind.<br/>
 Fahrzeuge die nicht permanent gekauft wurden, können nicht in Garagen gespeichert werden.<br/>
 Fahrzeuge die nicht in Garagen vor Server-Restart gebracht werden, sind danach nicht gespeichert und gehen verloren.<br/>
 
@@ -248,6 +250,8 @@ player createDiaryRecord ["serverrules",
 <br/>
 == Allgemein =======================================
 <br/><br/>
+<font color='#A9E2F3'>§1 Das Töten eines Medics</font><br/>
+- wird als Kriegshandlung gewertet und mit 20.000$ beschtraft<br/>
 <font color='#A9E2F3'>§1 Trollen, Hacks, Bugs, Exploits, RDM, VDM, SDM etc.</font><br/>
 - Wird mit sofortigem und dauerhaften Bann bestraft<br/>
 <br/>
