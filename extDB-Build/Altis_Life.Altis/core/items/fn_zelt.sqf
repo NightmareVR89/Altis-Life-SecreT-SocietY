@@ -20,4 +20,4 @@ if(isNull _zelt) exitWith {life_zelt = ObjNull;};
 _zelt setPos [(getPos _zelt select 0),(getPos _zelt select 1),0];
 _zelt setDamage 0;
 life_action_packupZelt = player addAction["Zelt einpacken",life_fnc_packupZelt,"",0,false,false,"",
-' _bag = nearestObjects[getPos player,["Land_TentA_F"],8] select 0; !isNil "_bag" && !isNil {(_bag getVariable "item")}'];
+' _zlt = nearestObjects[getPos player,["Land_TentA_F"],8] select 0; !isNil "_zlt" && !isNil {(_zlt getVariable "item")}'];

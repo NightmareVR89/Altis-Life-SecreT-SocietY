@@ -21,4 +21,4 @@ if(isNull _wand) exitWith {life_wand = ObjNull;};
 _wand setPos [(getPos _wand select 0),(getPos _wand select 1),0];
 _wand setDamage 0;
 life_action_packupWand = player addAction["Wand einpacken",life_fnc_packupWand,"",0,false,false,"",
-' _bag = nearestObjects[getPos player,["Land_Shoot_House_Wall_Stand_F"],8] select 0; !isNil "_bag" && !isNil {(_bag getVariable "item")}'];
+' _wnd = nearestObjects[getPos player,["Land_Shoot_House_Wall_Stand_F"],8] select 0; !isNil "_wnd" && !isNil {(_wnd getVariable "item")}'];

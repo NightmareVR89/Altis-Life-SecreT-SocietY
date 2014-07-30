@@ -21,4 +21,4 @@ if(isNull _bunker) exitWith {life_bunker = ObjNull;};
 _bunker setPos [(getPos _bunker select 0),(getPos _bunker select 1),0];
 _bunker setDamage 0;
 life_action_packupBunker = player addAction["Bunker einpacken",life_fnc_packupBunker,"",0,false,false,"",
-' _bag = nearestObjects[getPos player,["Land_BagBunker_Small_F"],8] select 0; !isNil "_bag" && !isNil {(_bag getVariable "item")}'];
+' _bunk = nearestObjects[getPos player,["Land_BagBunker_Small_F"],8] select 0; !isNil "_bunk" && !isNil {(_bunk getVariable "item")}'];

@@ -20,4 +20,4 @@ if(isNull _stacheldraht) exitWith {life_stacheldraht = ObjNull;};
 _stacheldraht setPos [(getPos _stacheldraht select 0),(getPos _stacheldraht select 1),0];
 _stacheldraht setDamage 0;
 life_action_packupStacheldraht = player addAction["Stacheldraht einpacken",life_fnc_packupStacheldraht,"",0,false,false,"",
-' _bag = nearestObjects[getPos player,["Land_Razorwire_F"],8] select 0; !isNil "_bag" && !isNil {(_bag getVariable "item")}'];
+' _stachel = nearestObjects[getPos player,["Land_Razorwire_F"],8] select 0; !isNil "_stachel" && !isNil {(_stachel getVariable "item")}'];

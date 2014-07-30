@@ -21,4 +21,4 @@ if(isNull _camonetz) exitWith {life_camonetz = ObjNull;};
 _camonetz setPos [(getPos _camonetz select 0),(getPos _camonetz select 1),0];
 _camonetz setDamage 0;
 life_action_packupCamonetz = player addAction["Camonetz einpacken",life_fnc_packupCamonetz,"",0,false,false,"",
-' _bag = nearestObjects[getPos player,["CamoNet_BLUFOR_big_F"],8] select 0; !isNil "_bag" && !isNil {(_bag getVariable "item")}'];
+' _net = nearestObjects[getPos player,["CamoNet_BLUFOR_big_F"],8] select 0; !isNil "_net" && !isNil {(_net getVariable "item")}'];

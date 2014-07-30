@@ -20,4 +20,4 @@ if(isNull _lagerfeuer) exitWith {life_lagerfeuer = ObjNull;};
 _lagerfeuer setPos [(getPos _lagerfeuer select 0),(getPos _lagerfeuer select 1),0];
 _lagerfeuer setDamage 0;
 life_action_packupLagerfeuer = player addAction["Lagerfeuer einpacken",life_fnc_packupLagerfeuer,"",0,false,false,"",
-' _bag = nearestObjects[getPos player,["Campfire_burning_F"],8] select 0; !isNil "_bag" && !isNil {(_bag getVariable "item")}'];
+' _feuer = nearestObjects[getPos player,["Campfire_burning_F"],8] select 0; !isNil "_feuer" && !isNil {(_feuer getVariable "item")}'];
