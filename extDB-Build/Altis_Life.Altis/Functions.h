@@ -332,6 +332,7 @@ class Life_Client_Core
 		class rechnungPrompt {};
 		class adacSirenLights {};
 		class adacLights {};
+		class adacEnter {};
 	};
 	
 	class Vehicle

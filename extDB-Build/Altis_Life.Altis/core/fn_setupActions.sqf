@@ -20,6 +20,11 @@ switch (playerSide) do
 		life_actions = life_actions + [player addAction["Niere entnehmen",life_fnc_nimOrgan,"",0,false,false,"",'(life_inv_skalpell > 0) && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable ["missingOrgan",FALSE]) && !(player getVariable "Escorting") && !(player getVariable "hatOrgan") && !(player getVariable "transporting") && animationState cursorTarget == "Incapacitated"']];
 
 	};
+	case east:
+	{
+		life_actions = life_actions + [player addAction["Einsteigen",life_fnc_adacEnter,"einsteigen",0,false,false,"",'!isNull cursorTarget && cursorTarget isKindOf "Car" && cursorTarget distance player < 3.5']]; 
+		life_actions = life_actions + [player addAction["Aussteigen",life_fnc_adacEnter,"aussteigen",100,false,false,"",'(vehicle player != player)']]; 
+	};
 };
 
 /*
