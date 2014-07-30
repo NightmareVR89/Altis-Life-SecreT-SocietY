@@ -2,12 +2,12 @@
 	private["_fnc_food","_fnc_water"];
 	_fnc_food = 
 	{
-		if(life_hunger < 2) then {player setDamage 1; hint "You have starved to death.";}
+		if(life_hunger < 2) then {player setDamage 1; hint "Du bist verhungert.";}
 		else
 		{
 		life_hunger = life_hunger - 10;
 		[] call life_fnc_hudUpdate;
-		if(life_hunger < 2) then {player setDamage 1; hint "You have starved to death.";};
+		if(life_hunger < 2) then {player setDamage 1; hint "Du bist verhungert.";};
 		switch(life_hunger) do {
 			case 30: {hint "Du hast eine weile nicht gegessen, du solltest dringend was Essen!";};
 			case 20: {hint "Du beginnst zu verhungern, finde etwas zum essen, oder du wirst sterben.";};
@@ -18,12 +18,12 @@
 	
 	_fnc_water = 
 	{
-		if(life_thirst < 2) then {player setDamage 1; hint "You have died from dehydration.";}
+		if(life_thirst < 2) then {player setDamage 1; hint "Du bist an Dehydration gestorben.";}
 		else
 		{
 			life_thirst = life_thirst - 10;
 			[] call life_fnc_hudUpdate;
-			if(life_thirst < 2) then {player setDamage 1; hint "You have died from dehydration.";};
+			if(life_thirst < 2) then {player setDamage 1; hint "Du bist an Dehydration gestorben.";};
 			switch(life_thirst) do 
 			{
 				case 30: {hint"Du hast eine weile nicht getrunken, du solltest dir was zu trinken finden.";};
