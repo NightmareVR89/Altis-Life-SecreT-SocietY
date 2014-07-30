@@ -2,7 +2,7 @@ if(playerSide != east) exitWith {};
 private ["_case","_veh"];
 _case = _this select 3;
 
-switch (_position) do
+switch (_case) do
 {
 	case "fahrer":
 	{
