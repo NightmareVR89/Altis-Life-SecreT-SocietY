@@ -118,7 +118,8 @@ switch (true) do
 		};
 	};
 	case (_item == "camonetz"):
-	{	
+	{
+		if(!isNull life_camonetz) exitWith {hint "Sie hast bereits ein Camonetz aufgebaut."};
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
 			[] spawn life_fnc_camonetz;
@@ -133,6 +134,7 @@ switch (true) do
 	};
 	case (_item == "lagerfeuer"):
 	{	
+		if(!isNull life_lagerfeuer) exitWith {hint "Sie hast bereits ein Lagerfeuer gemacht."};
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
 			[] spawn life_fnc_lagerfeuer;
@@ -147,6 +149,7 @@ switch (true) do
 	};
 	case (_item == "zelt"):
 	{	
+		if(!isNull life_zelt) exitWith {hint "Sie hast bereits ein Zelt aufgestellt."};
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
 			[] spawn life_fnc_zelt;
@@ -157,13 +160,6 @@ switch (true) do
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
 			[] spawn life_fnc_wand;
-		};
-	};
-	case (_item == "skalpell"):
-	{	
-		if(([false,_item,1] call life_fnc_handleInv)) then
-		{
-			[] spawn life_fnc_skalpell;
 		};
 	};
 	case (_item == "niere"):
