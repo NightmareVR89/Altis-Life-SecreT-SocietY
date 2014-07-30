@@ -81,14 +81,20 @@ _units = _units - [player];
 				case(_x getVariable["adminlevel", 0] > 0): {
 					_icon = "a3\UI_F\data\GUI\Cfg\Ranks\colonel_gs.paa";
 					_text = format["<t color='#FFFF00'><img image='%2' size='1'></img> %1</t>", _name, _icon];
-				};				
+				};
+
+				//ADAC
+				case(_x getVariable["adaclevel", 0] > 0): {
+					_icon = "a3\UI_F\data\GUI\Cfg\Ranks\colonel_gs.paa";
+					_text = format["<t color='#FF8000'><img image='%2' size='1'></img> %1</t>", _name, _icon];
+				};
 
 				//Others
 				default {
 					private["_headgear"];
 					_headgear = ["H_Shemag_olive","H_Shemag_khk","H_ShemagOpen_tan","H_ShemagOpen_khk"];
 					if((headgear _x) in _headgear) then {
-						_text = format["<t color='#FF0000'>Maskierter Spieler</t>"];
+						_text = format["<t color='#610B0B'>Maskierter Spieler</t>"];
 					} else {
 						//Others with gang
 						if(!isNil {(group _x) getVariable "gang_name"}) then {

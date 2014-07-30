@@ -16,6 +16,7 @@ if((__GETC__(life_adacLevel)) < 1) exitWith {
 };
 
 player setVariable["adminlevel", __GETC__(life_adminlevel), true];
+player setVariable["adaclevel",__GETC__(life_adaclevel), true];
 
 [] call life_fnc_spawnMenu;
 [] call life_fnc_updateClothing;
