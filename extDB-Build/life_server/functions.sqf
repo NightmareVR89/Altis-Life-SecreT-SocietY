@@ -234,6 +234,18 @@ compileFinal "
 	hint format[""Du hast folgenden Hilferuf an den %1 gesendet: %2"",_to,_msg];
 	ctrlShow[3018,true];
 ";
+fnc_cell_polizeinachricht =
+copileFinal "
+	if(isServer) exitWith {};
+	if(side player != west) exitWith {hint ""Du bist kein Polizist!"";};
+	private[""_msg"",""_to"",""_from""];
+	_msg = ctrlText 3003;
+	_to = ""Polizei"";
+	if(_msg == """") exitWith {hint ""Du must eine Nachricht eingeben zum Senden!"";};
+	[[_msg,name player,7],""clientMessage"",true,false] spawn life_fnc_MP;
+	[] call life_fnc_cellphone;
+	hint format[""Polizeinachricht an alle gesendet: %1"",_msg];
+";
 
 publicVariable "fnc_cell_textmsg";
 publicVariable "fnc_cell_textcop";
@@ -242,6 +254,7 @@ publicVariable "fnc_cell_adminmsg";
 publicVariable "fnc_cell_adminmsgall";
 publicVariable "fnc_cell_emsrequest";
 publicVariable "fnc_cell_adacrequest";
+publicVariable "fnc_cell_polizeinachricht";
 //Client Message
 /*
 	0 = private message
@@ -251,6 +264,7 @@ publicVariable "fnc_cell_adacrequest";
 	4 = admin message to all
 	5 = medic anfrage
 	6 = ADAC Notruf
+	7 = Polizei an alle
 */
 clientMessage =
 compileFinal "
@@ -309,7 +323,7 @@ compileFinal "
 		case 4 :
 		{
 			private[""_message"",""_admin""];
-			_message = format[""!!!ADMIN MESSAGE: %1"",_msg];
+			_message = format[""!!!ADMIN NACHRICHT: %1"",_msg];
 			_admin = format[""Vom Admin: %1"", _from];
 			hint parseText format [""<t color='#FF0000'><t size='2'><t align='center'>Admin Nachricht<br/><br/><t color='#33CC33'><t align='left'><t size='1'>An: <t color='#ffffff'>Alle Spieler<br/><t color='#33CC33'>Von <t color='#ffffff'>den Admins<br/><br/><t color='#33CC33'>Nachricht:<br/><t color='#ffffff'>%1"",_msg];
 			
@@ -337,6 +351,18 @@ compileFinal "
 			
 			[""TextMessage"",[format[""%1 braucht den ADAC!"",_from]]] call bis_fnc_showNotification;
 			systemChat _message;
+		};
+		
+		case 7 :
+		{
+			private[""_message"",""_admin""];
+			_message = format[""!!!POLIZEINACHRICHT: %1"",_msg];
+			_admin = format[""Vom Polizisten: %1"", _from];
+			hint parseText format [""<t color='#FF0000'><t size='2'><t align='center'>Polizeinachricht Nachricht<br/><br/><t color='#33CC33'><t align='left'><t size='1'>An: <t color='#ffffff'>Alle Spieler<br/><t color='#33CC33'>Von <t color='#ffffff'>der Polizei<br/><br/><t color='#33CC33'>Nachricht:<br/><t color='#ffffff'>%1"",_msg];
+			
+			[""AdminMessage"",[""Du hast eine Nachricht von der Polizei erhalten!""]] call bis_fnc_showNotification;
+			systemChat _message;
+			if(side player == west) then {systemChat _admin;};
 		};
 	};
 ";

@@ -88,7 +88,7 @@ _units = _units - [player];
 					private["_headgear"];
 					_headgear = ["H_Shemag_olive","H_Shemag_khk","H_ShemagOpen_tan","H_ShemagOpen_khk"];
 					if((headgear _x) in _headgear) then {
-						_text = format["<t color='#00FF00'>Maskierter Spieler</t>"];
+						_text = format["<t color='#FF0000'>Maskierter Spieler</t>"];
 					} else {
 						//Others with gang
 						if(!isNil {(group _x) getVariable "gang_name"}) then {
