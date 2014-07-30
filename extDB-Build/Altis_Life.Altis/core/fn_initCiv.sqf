@@ -33,6 +33,8 @@ if(life_is_arrested) then
 };
 player addRating 9999999;
 
+player setVariable["adminlevel", __GETC__(life_adminlevel), true];
+
 [] call life_fnc_zoneCreator;
 
 [] call life_fnc_updateClothing; //Skinmanager Laden

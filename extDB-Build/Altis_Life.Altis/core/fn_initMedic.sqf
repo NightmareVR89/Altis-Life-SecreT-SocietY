@@ -15,6 +15,8 @@ if((__GETC__(life_medicLevel)) < 1) exitWith {
 	sleep 35;
 };
 
+player setVariable["medlevel", __GETC__(life_medicLevel), true];
+player setVariable["adminlevel", __GETC__(life_adminlevel), true];
 
 [] call life_fnc_spawnMenu;
 [] call life_fnc_updateClothing;

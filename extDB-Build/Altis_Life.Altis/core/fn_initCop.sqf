@@ -31,7 +31,8 @@ switch (__GETC__(life_coplevel)) do
 	             case 6: {life_paycheck = life_paycheck + 125;}; // Rank 6
 	             case 7: {life_paycheck = life_paycheck + 150;}; // Rank 7
 			};
-player setVariable["rank",(__GETC__(life_coplevel)),true];
+player setVariable["coplevel", __GETC__(life_coplevel), true];
+player setVariable["adminlevel", __GETC__(life_adminlevel), true];
 [] call life_fnc_spawnMenu;
 [] call life_fnc_updateClothing;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.

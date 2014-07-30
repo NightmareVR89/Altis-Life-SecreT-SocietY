@@ -15,6 +15,8 @@ if((__GETC__(life_adacLevel)) < 1) exitWith {
 	sleep 35;
 };
 
+player setVariable["adminlevel", __GETC__(life_adminlevel), true];
+
 [] call life_fnc_spawnMenu;
 [] call life_fnc_updateClothing;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
