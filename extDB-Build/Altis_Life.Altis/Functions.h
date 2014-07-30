@@ -330,6 +330,8 @@ class Life_Client_Core
 		class rechnungGive {};
 		class rechnungPay {};
 		class rechnungPrompt {};
+		class adacSirenLights {};
+		class adacLights {};
 	};
 	
 	class Vehicle
