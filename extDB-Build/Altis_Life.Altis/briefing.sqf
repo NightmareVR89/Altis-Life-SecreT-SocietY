@@ -50,12 +50,10 @@ player createDiaryRecord ["ganginfo",
 Die auf der Map makierten Breiche kannst du wenn du in einer Gang bist eingenommen werden.
 Dazu gründest du unter (z) eine Gang. 
 An den Punkten findest du eine <font color='#A9E2F3'>Schwarze Fahne</font> an der ihr den Gang-Bereich für euch einnehmen und halten könnt.
-Für die Zeit in der ihr diesen Bereich haltet erhalten alle Gang-Mitglieder ein extra Gehalt in Höhe von $500 * Onlineplayer.
 <br/><br/>
 Ist ein Bereich in euer Hand so kann er euch aber auch von einer anderen Gang oder der Polizei streitig gemacht werden.
 Um ihn zurück zu erobern muss ein Gang-Mitglied ebenfalls an diese Fahne tretten und auf [Gebiet erobern] drücken.
 Das ist aber nur möglich wenn sich kein anderes Besitzer-Gang-Mitglied im Umkreis von 300m um die Fahne befindet. 
-Für eine erfolgreiche eroberung gibt es ebenfalls einen Geld-Bonus für alle Gang-Mitlgieder.
 <br/><br/>
 <font color='#A9E2F3'>WICHTIG:</font> um einen Bereich zu erobern darf ohne Vorwarnung <font color='#FF0000'>scharf geschossen</font> werden! 
 Es werden keine Items oder Waffen ect. ersetzt oder anderweitig erstattet. Überlegt euch also vorher ob ihr diese Bereiche betretet oder meidet den Bereich.
@@ -245,7 +243,7 @@ Du kannst aber zur deiner eigenen Sicherheit vor dem ausloggen auf den Button: S
 	
 player createDiaryRecord ["serverrules",
 		[
-			"JC Gesetzbuch", 
+			"Gesetzbuch", 
 "
 <br/>
 == Allgemein =======================================
