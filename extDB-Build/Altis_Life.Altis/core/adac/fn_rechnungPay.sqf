@@ -19,6 +19,7 @@ if(life_cash < life_rechnung_val) exitWith
 	life_atmcash = life_atmcash - life_rechnung_val;
 	life_ticket_paid = true;
 	[[0,format["%1 hat die Rechnung in Höhe von $%2 bezahlt",profileName,[life_rechnung_val] call life_fnc_numberText]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+	[[1,format["%1 hat die Rechnung bezahlt.",profileName]],"life_fnc_broadcast",life_rechnung_adac,false] spawn life_fnc_MP;
 	[[[life_rechnung_val],{life_atmcash = life_atmcash + (_this select 0);}],"BIS_fnc_call",life_rechnung_adac,false] spawn life_fnc_MP;
 	closeDialog 0;
 };
