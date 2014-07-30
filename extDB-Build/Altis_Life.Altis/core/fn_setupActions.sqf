@@ -24,7 +24,6 @@ switch (playerSide) do
 	{
 		life_actions = life_actions + [player addAction["Als Fahrer Einsteigen",life_fnc_adacEnter,"fahrer",0,false,false,"",'!isNull cursorTarget && cursorTarget isKindOf "Car" && cursorTarget distance player < 3.5']];
 		life_actions = life_actions + [player addAction["Einsteigen",life_fnc_adacEnter,"einsteigen",0,false,false,"",'!isNull cursorTarget && cursorTarget isKindOf "Car" && cursorTarget distance player < 3.5']]; 
-		life_actions = life_actions + [player addAction["Aussteigen",life_fnc_adacEnter,"aussteigen",100,false,false,"",'(vehicle player != player)']]; 
 	};
 };
 

@@ -12,9 +12,4 @@ switch (_case) do
 	{
 		player action ["getInCargo", cursorTarget];
 	};
-	case "aussteigen":
-	{
-		_veh = vehicle player;
-		player action ["getOut", _veh];
-	};
 };
