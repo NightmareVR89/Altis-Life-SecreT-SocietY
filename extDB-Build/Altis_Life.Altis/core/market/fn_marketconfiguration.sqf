@@ -229,8 +229,7 @@ life_market_resources = [
 	["zigarren", 40, 5, 70, 2, 1, 
 		[ 
 			["wein",1],
-			["niere",1],
-			["tabak",1]
+			["niere",1]
 		] 
 	],
 	
