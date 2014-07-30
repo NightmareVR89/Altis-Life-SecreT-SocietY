@@ -17,7 +17,7 @@ switch (playerSide) do
 		//Selbstmordattentäter
 		life_actions = life_actions + [player addAction["<t color='#FF0000'>Bombengürtel aktivieren</t>",life_fnc_suicideBomb,"",0,false,false,"",' vest player == "V_HarnessOGL_brn" && alive player && playerSide == civilian && !life_istazed && !(player getVariable "restrained") && !(player getVariable "Escorting") && !(player getVariable "transporting")']];
 		// take them organs
-		life_actions = life_actions + [player addAction["Niere entnehmen",life_fnc_nimOrgan,"",0,false,false,"",'!isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable ["missingOrgan",FALSE]) && !(player getVariable "Escorting") && !(player getVariable "hatOrgan") && !(player getVariable "transporting") && animationState cursorTarget == "Incapacitated"']];
+		life_actions = life_actions + [player addAction["Niere entnehmen",life_fnc_nimOrgan,"",0,false,false,"",'(life_inv_skalpell > 0) && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable ["missingOrgan",FALSE]) && !(player getVariable "Escorting") && !(player getVariable "hatOrgan") && !(player getVariable "transporting") && animationState cursorTarget == "Incapacitated"']];
 
 	};
 };
