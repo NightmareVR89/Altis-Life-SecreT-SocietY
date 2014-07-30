@@ -72,10 +72,14 @@ if(!isNull _killer && {_killer != _unit} && {side _killer != west} && {alive _ki
 			[[2],"life_fnc_removeLicenses",_killer,FALSE] spawn life_fnc_MP;
 		};
 	} else {
-		[[getPlayerUID _killer,_killer getVariable["realname",name _killer],"187"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+		if(side _unit == independent) then {
+			[[getPlayerUID _killer,_killer getVariable["realname",name _killer],"187M"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+		} else {
+			[[getPlayerUID _killer,_killer getVariable["realname",name _killer],"187"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 		
-		if(!local _killer) then {
-			[[3],"life_fnc_removeLicenses",_killer,FALSE] spawn life_fnc_MP;
+			if(!local _killer) then {
+				[[3],"life_fnc_removeLicenses",_killer,FALSE] spawn life_fnc_MP;
+			};
 		};
 	};
 };

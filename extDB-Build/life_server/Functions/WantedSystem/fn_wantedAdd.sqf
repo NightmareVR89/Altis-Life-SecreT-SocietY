@@ -17,6 +17,7 @@ switch(_type) do
 {
 	case "187V": {_type = ["Mord/Totschlag durch Fahrzeug",16500]};
 	case "187": {_type = ["Mord/Totschlag",8500]};
+	case "187M": {_type = ["Kriegsverbrechen",20000]};
 	case "901": {_type = ["Aus Gefängnis ausgebrochen",4500]};
 	case "261": {_type = ["Vergewaltigung",5000]}; //What type of sick bastard would add this?
 	case "261A": {_type = ["Versuchte Vergewaltigung",3000]};
