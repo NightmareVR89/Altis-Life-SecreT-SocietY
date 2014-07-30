@@ -456,7 +456,7 @@ player createDiaryRecord ["adacrules",
 			1. Du solltest mindestens 16 Jahre sein.<br/>
 			2. Keine Weiderbelebungen der selben Person innerhalb von 10min.<br/>
 			<br/>
-			Beim wiederbeleben von Personen erhälst du automatisch eine Gebühr von $5000.<br/>
+			Beim wiederbeleben von Personen erhälst du automatisch eine Gebühr von $150.<br/>
 			Das ist dein Einkommen und darf nicht ohne Wunsch danach durchgeführt werden!<br/>
 			<br/>
 
