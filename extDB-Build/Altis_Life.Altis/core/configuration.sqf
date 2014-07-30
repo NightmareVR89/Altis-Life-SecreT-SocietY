@@ -317,6 +317,7 @@ sell_array =
 	["tabak",25],
 	["zigarren",40],
 	["muell",10],
+	["skalpell",500],
 	["wertstoffe",20],
 	["kunststoff",50],
 	["edelmetall",90]
@@ -367,7 +368,7 @@ buy_array =
 	["moonshine",150],
 	["wein",100],
 	["weintraube",70],
-	["skalpell",1000],
+	["skalpell",2500],
 	["tabak",30],
 	["zigarren",60],
 	["muell",30],
