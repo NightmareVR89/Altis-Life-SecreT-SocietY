@@ -557,6 +557,12 @@
 		<Key ID="STR_NOTF_BeingImpounded">
 			<Original>%1 dein %2 wird von der Polizei beschlagnahmt.</Original>
 		</Key>
+		<Key ID="TR_NOTF_AdacBeingImpounded">
+			<Original>%1 dein %2 wird vom ADAC abgeschleppt und in deine Garage gestellt.</Original>
+		</Key>
+		<Key ID="STR_NOTF_BeingImpoundedNeu">
+			<Original>%1 dein %2 wird beschlagnahmt.</Original>
+		</Key>
 		<Key ID="STR_NOTF_Impounding">
 			<Original>Beschlagnahme Fahrzeug</Original>
 		</Key>
