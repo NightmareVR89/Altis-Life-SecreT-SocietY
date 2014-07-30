@@ -234,14 +234,13 @@ compileFinal "
 	hint format[""Du hast folgenden Hilferuf an den %1 gesendet: %2"",_to,_msg];
 	ctrlShow[3018,true];
 ";
+
 fnc_cell_polizeinachricht =
-copileFinal "
-	if(isServer) exitWith {};
-	if(side player != west) exitWith {hint ""Du bist kein Polizist!"";};
-	private[""_msg"",""_to"",""_from""];
+compileFinal "
+	private[""_msg"",""_from""];
 	_msg = ctrlText 3003;
-	_to = ""Polizei"";
 	if(_msg == """") exitWith {hint ""Du must eine Nachricht eingeben zum Senden!"";};
+	
 	[[_msg,name player,7],""clientMessage"",true,false] spawn life_fnc_MP;
 	[] call life_fnc_cellphone;
 	hint format[""Polizeinachricht an alle gesendet: %1"",_msg];
@@ -353,16 +352,16 @@ compileFinal "
 			systemChat _message;
 		};
 		
+		
 		case 7 :
 		{
 			private[""_message"",""_admin""];
 			_message = format[""!!!POLIZEINACHRICHT: %1"",_msg];
 			_admin = format[""Vom Polizisten: %1"", _from];
-			hint parseText format [""<t color='#FF0000'><t size='2'><t align='center'>Polizeinachricht Nachricht<br/><br/><t color='#33CC33'><t align='left'><t size='1'>An: <t color='#ffffff'>Alle Spieler<br/><t color='#33CC33'>Von <t color='#ffffff'>der Polizei<br/><br/><t color='#33CC33'>Nachricht:<br/><t color='#ffffff'>%1"",_msg];
+			hint parseText format [""<t color='#FF0000'><t size='2'><t align='center'>Polizeinachricht<br/><br/><t color='#33CC33'><t align='left'><t size='1'>An: <t color='#ffffff'>Alle Spieler<br/><t color='#33CC33'>Von <t color='#ffffff'>der Polizei<br/><br/><t color='#33CC33'>Nachricht:<br/><t color='#ffffff'>%1"",_msg];
 			
-			[""AdminMessage"",[""Du hast eine Nachricht von der Polizei erhalten!""]] call bis_fnc_showNotification;
+			[""TextMessage"",[format[""Du hast eine Polizeimeldung erhalten!""]]] call bis_fnc_showNotification;
 			systemChat _message;
-			if(side player == west) then {systemChat _admin;};
 		};
 	};
 ";
