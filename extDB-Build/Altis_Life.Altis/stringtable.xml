@@ -66,7 +66,7 @@
 		<Key ID="STR_Admin_Compensate">
 			<Original>Comp</Original>
 			<English>Comp</English>
-			<German>Comp</German>
+			<German>Geld</German>
 			<French>Comp</French>
 		</Key>
 		<Key ID="STR_Admin_God">
@@ -90,61 +90,61 @@
 		<Key ID="STR_ANOTF_CompWarn">
 			<Original>You are about to give yourself $%1 to compensate to another player &lt;br/&gt;&lt;br/&gt;You must give this cash to the person you are compensating manually.</Original>
 			<English>You are about to give yourself $%1 to compensate to another player &lt;br/&gt;&lt;br/&gt;You must give this cash to the person you are compensating manually.</English>
-			<German>To Be Changed</German>
+			<German>Du bist dabei dir $%1 zu geben, um den Betrag einem anderen Spieler zu geben &lt;br/&gt;&lt;br/&gt;Das Geld musst du der betreffenden Person manuell geben</German>
 			<French>Vous êtes sur le point de vous donner $%1 pour compenser à un autre joueur &lt;br/&gt;&lt;br/&gt; S'il vous plaît donner à cette à la personne vous compensez manuellement</French>
 		</Key>
 		<Key ID="STR_ANOTF_Success">
 			<Original>You have added $%1 to your account.</Original>
 			<English>You have added $%1 to your account.</English>
-			<German>To Be Changed</German>
+			<German>Du hast dir $%1 in Bar gegeben</German>
 			<French>Vous avez ajouté $%1 à votre compte</French>
 		</Key>
 		<Key ID="STR_ANOTF_Fail">
 			<Original>You can not go above 999999.</Original>
 			<English>You can not go above 999999.</English>
-			<German>To Be Changed</German>
+			<German>Du kannst nichts über 999999 eingeben.</German>
 			<French>Vous ne pouvez pas aller au-dessus $999999</French>
 		</Key>
 		<Key ID="STR_ANOTF_Amount">
 			<Original>Please type in the amount to compensate.</Original>
 			<English>Please type in the amount to compensate.</English>
-			<German>To Be Changed</German>
+			<German>Bitte gebe den Betrag ein, den du weitergeben möchtest.</German>
 			<French>S'il vous plaît entrer la quantité pour compenser</French>
 		</Key>
 		<Key ID="STR_ANOTF_Frozen">
 			<Original>You have disabled %1's input.</Original>
 			<English>You have disabled %1's input.</English>
-			<German>To Be Changed</German>
+			<German>Du hast %1's Tastenbelegung deaktiviert</German>
 			<French>Vous avez désactivé %1's contrôles</French>
 		</Key>
 		<Key ID="STR_ANOTF_Unfrozen">
 			<Original>You have enabled %1's input.</Original>
 			<English>You have enabled %1's input.</English>
-			<German>To Be Changed</German>
+			<German>Du hast %1's Tastenbelegung wieder reaktiviert</German>
 			<French>Vous avez permis %1's contrôles</French>
 		</Key>
 		<Key ID="STR_ANOTF_Error">
 			<Original>You can't do that dumbass.</Original>
 			<English>You can't do that dumbass.</English>
-			<German>To Be Changed</German>
+			<German>Das kannst du nicht tun, du Idiot.</German>
 			<French>Vous ne pouvez pas le faire sur vous-même</French>
 		</Key>
 		<Key ID="STR_ANOTF_ErrorLevel">
 			<Original>Your Admin Level is not high enough.</Original>
 			<English>Your Admin Level is not high enough.</English>
-			<German>To Be Changed</German>
+			<German>Dein Adminlevel ist nicht hoch genug</German>
 			<French>Votre Niveau admin n'est pas suffisamment élevée</French>
 		</Key>
 		<Key ID="STR_ANOTF_MDisabled">
 			<Original>Player Markers Disabled.</Original>
 			<English>Player Markers Disabled.</English>
-			<German>To Be Changed</German>
+			<German>Spielermarkierungen ausgestellt.</German>
 			<French>Votre Niveau admin n'est pas suffisamment élevée</French>
 		</Key>
 		<Key ID="STR_ANOTF_MEnabled">
 			<Original>Player Markers Enabled.</Original>
 			<English>Player Markers Enabled.</English>
-			<German>To Be Changed</German>
+			<German>Spielermarkierungen aktiviert.</German>
 			<French>Votre Niveau admin n'est pas suffisamment élevée</French>
 		</Key>
 		<Key ID="STR_NOTF_ActionCancel">
