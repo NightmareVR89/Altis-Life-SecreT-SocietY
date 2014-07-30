@@ -2,11 +2,11 @@
 /*
 	File: fn_playerTags.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Adds the tags above other players heads when close and have visible range.
 */
-private["_ui","_units","_headgear"];
+private["_ui","_units"];
 #define iconID 78000
 #define scale 0.8
 
@@ -20,56 +20,88 @@ if(isNull _ui) then {
 	_ui = uiNamespace getVariable ["Life_HUD_nameTags",displayNull];
 };
 
-_units = nearestObjects[(visiblePosition player),["Man","Land_Pallet_MilBoxes_F","Land_Sink_F"],50];
-
+_units = nearestObjects[(visiblePosition player),["Man","Land_Pallet_MilBoxes_F","Land_Sink_F"], 50];
 _units = _units - [player];
+
 {
-	private["_text"];
+	private["_name", "_text", "_icon", "_hasName"];
+	_name = _x getVariable ["realname", name _x];
+	_hasName = if(!isNil {(_x getVariable "realname")}) then {true} else {false};
+
 	_idc = _ui displayCtrl (iconID + _forEachIndex);
+
 	if(!(lineIntersects [eyePos player, eyePos _x, player, _x]) && {!isNil {_x getVariable "realname"}}) then {
 		_pos = switch(typeOf _x) do {
 			case "Land_Pallet_MilBoxes_F": {[visiblePosition _x select 0, visiblePosition _x select 1, (getPosATL _x select 2) + 1.5]};
 			case "Land_Sink_F": {[visiblePosition _x select 0, visiblePosition _x select 1, (getPosATL _x select 2) + 2]};
 			default {[visiblePosition _x select 0, visiblePosition _x select 1, ((_x modelToWorld (_x selectionPosition "head")) select 2)+.5]};
 		};
+
 		_sPos = worldToScreen _pos;
 		_distance = _pos distance player;
-		if(count _sPos > 1 && {_distance < 15}) then {
-			_text = switch (true) do {
+
+		if(count _sPos > 1 && {_distance < 25}) then {
+			_text = "";
+			_icon = "";
+
+			switch (true) do {
+				//My Group
 				case (_x in (units grpPlayer) && playerSide == civilian): {
-					format["<t color='#00FF00'>%1</t>",(_x getVariable ["realname",name _x])];
+					_text = format["<t color='#00FF00'>%1</t>", _name];
 				};
-				case (!isNil {(_x getVariable "rank")}): {format["<img image='%1' size='1'></img> %2",switch ((_x getVariable "rank")) do {
-					case 2: {"\a3\ui_f\data\gui\cfg\Ranks\corporal_gs.paa"}; 
-					case 3: {"\a3\ui_f\data\gui\cfg\Ranks\sergeant_gs.paa"};
-					case 4: {"\a3\ui_f\data\gui\cfg\Ranks\lieutenant_gs.paa"};
-					case 5: {"\a3\ui_f\data\gui\cfg\Ranks\captain_gs.paa"};
-					case 6: {"\a3\ui_f\data\gui\cfg\Ranks\major_gs.paa"};
-					case 7: {"\a3\ui_f\data\gui\cfg\Ranks\colonel_gs.paa"};
-					case 8: {"\a3\ui_f\data\gui\cfg\Ranks\general_gs.paa"};
-					default {"\a3\ui_f\data\gui\cfg\Ranks\private_gs.paa"};
-					},_x getVariable ["realname",name _x]]};
-				case ((!isNil {_x getVariable "name"} && playerSide == independent)): {format["<t color='#FF0000'><img image='\a3\ui_f\data\map\MapControl\hospital_ca.paa' size='1.5'></img></t> %1",_x getVariable ["name","Unknown Player"]]};
-				case ((!isNil {_x getVariable "name"} && playerSide == east)): {format["<t color='#FFA500'><img image='\a3\ui_f\data\map\MapControl\fuelstation_ca.paa' size='1.5'></img></t> %1",_x getVariable ["name","Unknown Player"]]};
+
+				//Dead Players
+				case (!alive _x): {
+					_text = format["<t color='#000000'>%1</t>", _name];
+				};
+
+				//Cops
+				case(_x getVariable["coplevel", 0] > 0) : {
+					switch (_x getVariable["coplevel", 0]) do {
+						case (1) : {_icon = "a3\UI_F\data\GUI\Cfg\Ranks\private_gs.paa";};
+						case (2) : {_icon = "a3\UI_F\data\GUI\Cfg\Ranks\corporal_gs.paa";};
+						case (3) : {_icon = "a3\UI_F\data\GUI\Cfg\Ranks\sergeant_gs.paa";};
+						case (4) : {_icon = "a3\UI_F\data\GUI\Cfg\Ranks\lieutenant_gs.paa";};
+						case (5) : {_icon = "a3\UI_F\data\GUI\Cfg\Ranks\captain_gs.paa";};
+						case (6) : {_icon = "a3\UI_F\data\GUI\Cfg\Ranks\colonel_gs.paa";};
+						case (7) : {_icon = "a3\UI_F\data\GUI\Cfg\Ranks\colonel_gs.paa";};
+						default {};
+					};
+
+					_text = format["<t color='#0000FF'><img image='%2' size='1'></img> %1</t>", _name, _icon];
+				};
+
+				//Medics
+				case(_x getVariable["medlevel", 0] > 0): {
+					_icon = "a3\UI_F\data\GUI\Cfg\Ranks\major_gs.paa";
+					_text = format["<t color='#FF0000'><img image='%2' size='1'></img> %1</t>", _name, _icon];
+				};
+
+				//Admins
+				case(_x getVariable["adminlevel", 0] > 0): {
+					_icon = "a3\UI_F\data\GUI\Cfg\Ranks\colonel_gs.paa";
+					_text = format["<t color='#FFFF00'><img image='%2' size='1'></img> %1</t>", _name, _icon];
+				};				
+
+				//Others
 				default {
+					private["_headgear"];
 					_headgear = ["H_Shemag_olive","H_Shemag_khk","H_ShemagOpen_tan","H_ShemagOpen_khk"];
-					if(!isNil {(group _x) getVariable "gang_name"}) then {
-						if((headgear _x) in _headgear) then {
-							format["<t color='#00FF00'>Maskierter Spieler</t><br/><t size='0.8' color='#B6B6B6'>%1</t>",(group _x) getVariable ["gang_name",""]];
-						} else {
-							format["%1<br/><t size='0.8' color='#B6B6B6'>%2</t>",_x getVariable ["realname",name _x],(group _x) getVariable ["gang_name",""]];
-						};
+					if((headgear _x) in _headgear) then {
+						_text = format["<t color='#00FF00'>Maskierter Spieler</t>"];
 					} else {
-						// Wir behalten die Masken mal bei. Aber nur bei Zivilisten!
-						if((headgear _x) in _headgear) then {
-						format["<t color='#00FF00'>Maskierter Spieler</t>"];
+						//Others with gang
+						if(!isNil {(group _x) getVariable "gang_name"}) then {
+							_groupname = (group _x) getVariable ["gang_name",""];
+							_text = format["<t color='#B6B6B6'>%1</t><br/><t size='0.8' color='#B6B6B6'>%2</t>", _name, _groupname];
+						//Normaly Civilians
 						} else {
-						_x getVariable ["realname",name _x];
+							_text = format["<t color='#FFFFFF'>%1</t>", _name];
 						};
 					};
 				};
 			};
-			
+
 			_idc ctrlSetStructuredText parseText _text;
 			_idc ctrlSetPosition [_sPos select 0, _sPos select 1, 0.4, 0.65];
 			_idc ctrlSetScale scale;
