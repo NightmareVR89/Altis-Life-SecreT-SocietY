@@ -480,7 +480,7 @@ __CONST__(life_weapon_shop_array,life_weapon_shop_array);
 
 life_garage_prices =
 [
-	["B_QuadBike_01_F",10],
+	["B_Quadbike_01_F",10],
 	["C_Hatchback_01_F",50],
 	["C_Offroad_01_F",75],
 	["B_G_Offroad_01_F",95],

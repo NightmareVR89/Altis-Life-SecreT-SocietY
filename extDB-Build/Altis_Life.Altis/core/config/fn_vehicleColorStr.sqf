@@ -12,7 +12,7 @@ _color = "";
 
 switch (_vehicle) do
 {
-	case "C_Offroad_01_F" :
+	case "C_Offroad_01_F":
 	{
 		switch (_index) do
 		{
@@ -112,7 +112,7 @@ switch (_vehicle) do
 		};
 	};
 	
-	case "B_Quadbike_01_F" :
+	case "B_Quadbike_01_F":
 	{
 		switch (_index) do
 		{
