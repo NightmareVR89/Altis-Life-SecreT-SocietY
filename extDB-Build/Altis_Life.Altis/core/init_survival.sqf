@@ -61,8 +61,10 @@ while{true} do
 		life_max_health = 1;
 	};
 };
-private["_bp","_load","_cfg"];
+
+[] spawn
 {
+private["_bp","_load","_cfg"];
 while{true} do
 	{
 		waitUntil {backpack player != ""};
