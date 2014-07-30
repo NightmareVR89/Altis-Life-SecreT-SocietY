@@ -12,7 +12,7 @@ life_market_resources = [
 	//Schema: SHORTNAME, DEFAULT-WERT, MIN-WERT, MAX-WERT, VERÄNDERUNG BEI AKTION [VERKAUF Multipliziert mit 1, Kauf multipliziert um -1
 	//["gold", 1500, 450, 2300, 8, 5],
 		
-	["oilp", 30, 5, 50, 3, 1, 
+	["oilp", 30, 5, 50, 2, 1, 
 		[ 
 			["diamondc",1], 
 			["iron_r",1],
@@ -73,7 +73,8 @@ life_market_resources = [
 		[ 
 			["oilp",1],
 			["iron_r",1],
-			["copper_r",1] 
+			["copper_r",1],
+			["muell",-1]
 		] 
 	],
 	["edelmetall", 90, 40, 110, 2, 1, 
@@ -299,13 +300,18 @@ life_market_resources = [
 			["heroinp",1]
 		] 
 	],
-	["niere", 2500, 500, 3700, 8, 8,   
+	["niere", 2500, 500, 4000, 4, 3,   
 		[ 
 			["cocainep",1],
 			["moonshine",1],
 			["wein",1],
 			["froschlsd",1],
-			["heroinp",1]
+			["heroinp",1],
+			["apple",-1], 
+			["turtlesoup",-1],
+			["peach",-1],
+			["froschbein",-1],
+			["wein",-1]
 		] 
 	]
 ];

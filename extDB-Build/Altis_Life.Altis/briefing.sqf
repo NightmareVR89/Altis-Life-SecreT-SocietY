@@ -250,8 +250,6 @@ player createDiaryRecord ["serverrules",
 <br/>
 == Allgemein =======================================
 <br/><br/>
-<font color='#A9E2F3'>§1 Das Töten eines Medics</font><br/>
-- wird als Kriegshandlung gewertet und mit 20.000$ beschtraft<br/>
 <font color='#A9E2F3'>§1 Trollen, Hacks, Bugs, Exploits, RDM, VDM, SDM etc.</font><br/>
 - Wird mit sofortigem und dauerhaften Bann bestraft<br/>
 <br/>
@@ -279,6 +277,10 @@ player createDiaryRecord ["serverrules",
 <br/>
 == Zivilisten ======================================
 <br/><br/>
+<font color='#A9E2F3'>§1 Das Töten eines Medics</font><br/>
+- wird als Kriegshandlung gewertet und mit 20.000$ beschtraft<br/>
+<font color='#A9E2F3'>WICHTIG:</font> Medics dürfen nicht <font color='#FF0000'>beschossen</font> werden!
+<font color='#A9E2F3'>WICHTIG:</font> Medics sind unparteiisch <font color='#FF0000'>und dürfen</font> von allesn seiten angefordert werden!
 
 <font color='#A9E2F3'>§1 Absichtliche Zerstörung von Fahrzeugen</font><br/>
 - Das vorsätzliche Zerstören von Fahrzeugen ohne Roleplayhintergrund ist verboten.<br/>
@@ -323,6 +325,10 @@ Gegenstände: -Schildkrötenfleisch -Marihuana -Kokain -Heroin<br/>
 <br/>
 == Rebellen ========================================
 <br/><br/>
+<font color='#A9E2F3'>§1 Das Töten eines Medics</font><br/>
+- wird als Kriegshandlung gewertet und mit 20.000$ beschtraft<br/>
+<font color='#A9E2F3'>WICHTIG:</font> Medics dürfen nicht <font color='#FF0000'>beschossen</font> werden!
+<font color='#A9E2F3'>WICHTIG:</font> Medics sind unparteiisch <font color='#FF0000'>und dürfen</font> von allesn seiten angefordert werden!
 
 <font color='#A9E2F3'>§1 Raub, Diebstahl etc. (Event)</font><br/>
 - Raub, Diebstahl etc. muss einen RP Hintergrund haben und sollte nicht zwangsweise mit dem Tot enden<br/>
@@ -433,9 +439,12 @@ player createDiaryRecord ["adacrules",
 			Melde dich im Teamspeak (IP: 148.251.84.132)<br/>
 			im ADAC-Channel.
 			<br/><br/>
-			1. Du solltest mindestens 16 Jahre sein.<br/>
+			1. Du solltest mindestens 18 Jahre sein.<br/>
+			2. RP und Spaß am ADAC Beruf.<br/>
+			3. Einhaltung der Regeln.<br/>
 			<br/>
 			Beim verhängen von Servicegebühren muss nach der <br/>
+			Preisliste des ADAC vorgegangen werden!<br/>
 			Preisliste des ADAC vorgegangen werden!<br/>
 			<br/>
 			Es dürfen keine Beschlagnahmungen vorgenommen werden <br/>
@@ -456,8 +465,9 @@ player createDiaryRecord ["adacrules",
 			WICHTIG! Redet mit den Spielern über DirectChat!<br/>
 			Melde dich im Teamspeak (IP: 148.251.84.132)<br/>
 			im MEDIC-Channel.
+			<font color='#A9E2F3'>WICHTIG:</font> Medics sind unparteiisch <font color='#FF0000'>und dürfen</font> von allesn seiten angefordert werden!
 			<br/><br/>
-			1. Du solltest mindestens 16 Jahre sein.<br/>
+			1. Du solltest mindestens 18 Jahre sein.<br/>
 			2. Keine Weiderbelebungen der selben Person innerhalb von 10min.<br/>
 			<br/>
 			Beim wiederbeleben von Personen erhälst du automatisch eine Gebühr von $150.<br/>
