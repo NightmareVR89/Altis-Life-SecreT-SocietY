@@ -96,7 +96,12 @@ if(playerSide == west) then {
 	} else {
 		_Btn3 ctrlShow false;
 	};
-	_Btn5 ctrlShow false;
+	if(playerside in [east,independent]) then {
+		_Btn5 ctrlSetText localize "STR_vInAct_Impound";
+		_Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction;";
+	} else {
+		_Btn5 ctrlShow false;
+	};
 	_Btn6 ctrlShow false;
 };
 if(playerside == west OR license_civ_rebel) then {
