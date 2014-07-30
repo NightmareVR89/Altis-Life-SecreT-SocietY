@@ -561,7 +561,7 @@
 			<Original>%1 dein %2 wird vom ADAC abgeschleppt und in deine Garage gestellt.</Original>
 		</Key>
 		<Key ID="STR_NOTF_BeingImpoundedNeu">
-			<Original>%1 dein %2 wird beschlagnahmt.</Original>
+			<Original>%1 dein %2 wird abgeschleppt.</Original>
 		</Key>
 		<Key ID="STR_NOTF_Impounding">
 			<Original>Beschlagnahme Fahrzeug</Original>
