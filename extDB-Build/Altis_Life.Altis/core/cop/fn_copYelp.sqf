@@ -10,7 +10,7 @@ while {true} do
     if(count (crew (_vehicle)) == 0) then {_vehicle setVariable["yelp",false,true]};
     if(!alive _vehicle) exitWith {};
     if(isNull _vehicle) exitWith {};
-	[[_driver,"yelp"],"life_fnc_say3D",nil,false] spawn life_fnc_MP;
+	[[_vehicle,"yelp"],"life_fnc_say3D",nil,false] spawn life_fnc_MP;
     sleep 4.7;
     if(!(_vehicle getVariable "yelp")) exitWith {};
 };
