@@ -242,7 +242,7 @@ switch (_code) do
 				titleText ["Yelp an","PLAIN"];
 				_veh setVariable["yelp",true,true];
 				[[_veh],"life_fnc_copYelp",nil,true] spawn life_fnc_MP;
-			;
+			};
 		};
 	};
 	//U Key
