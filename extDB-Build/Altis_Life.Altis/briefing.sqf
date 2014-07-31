@@ -605,14 +605,12 @@ zum aufnehmen von Items o. Geld | Fahrzeug reparieren | fesseln / entfesseln<br/
 == Police / Medic / ADAC Tasten ====================================<br/>
 <br/>
 [ <font color='#A9E2F3'>Windows-Taste</font> ] - Action-Menü <br/>
-[ <font color='#A9E2F3'>O</font> ] - Schranke AUF/ZU<br/>
-[ <font color='#A9E2F3'>F</font> ] - Cop / Medic Sirene ON/OFF<br/>
-[ <font color='#A9E2F3'>1</font> ] - Cop zweit Sirene ON/OFF<br/>
-[ <font color='#A9E2F3'>Links Shift + L</font> ] - Blaulicht ON/OFF <br/>
+[ <font color='#A9E2F3'>Links Shift + F</font> ] - Sirene AN/AUS<br/>
+[ <font color='#A9E2F3'>1</font> ] - YELP Signal AN/AUS<br/>
+[ <font color='#A9E2F3'>Links Shift + L</font> ] - Blaulicht AN/AUS <br/>
 [ <font color='#A9E2F3'>Links Shift + R</font> ] - Handschellen anlegen<br/>
 [ <font color='#A9E2F3'>Links Shift + H</font> ] - Handwaffe holstern<br/>
 [ <font color='#A9E2F3'>Links Strg + H</font> ] - Handwaffe entholstern<br/>
-[ <font color='#A9E2F3'>Mausrad scrollen</font> ] - Cop-Marke zeigen<br/>
 <br/>
 <br/>
 == Geschwindigkeitsmessung / Blitzer ==================<br/>
