@@ -50,8 +50,8 @@ class life_wanted_menu {
 			sizeEx = 0.035;
 			onLBSelChanged = "[] call life_fnc_wantedInfo";
 			
-			x = 0.42; y = 0.26;
-			w = 0.4; h = 0.4;
+			x = 0.12; y = 0.26;
+			w = 0.3; h = 0.4;
 		};
 		
 		class WantedDetails : Life_RscListBox
@@ -61,10 +61,10 @@ class life_wanted_menu {
 			sizeEx = 0.035;
 			colorBackground[] = {0, 0, 0, 0};
 			
-			x = 0.34;
-			y = 0.35;
-			w = 0.36;
-			h = 0.32;
+			x = 0.42;
+			y = 0.25;
+			w = 0.45;
+			h = 0.6;
 		};
 		
 		class BountyPrice : Life_RscText
