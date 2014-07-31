@@ -282,33 +282,33 @@ player createDiaryRecord ["serverrules",
 <font color='#A9E2F3'>WICHTIG:</font> Medics dürfen nicht <font color='#FF0000'>beschossen</font> werden!
 <font color='#A9E2F3'>WICHTIG:</font> Medics sind unparteiisch <font color='#FF0000'>und dürfen</font> von allesn seiten angefordert werden!
 
-<font color='#A9E2F3'>§1 Absichtliche Zerstörung von Fahrzeugen</font><br/>
+<font color='#A9E2F3'>§2 Absichtliche Zerstörung von Fahrzeugen</font><br/>
 - Das vorsätzliche Zerstören von Fahrzeugen ohne Roleplayhintergrund ist verboten.<br/>
 - Das absichtliche Rammen von Fahrzeugen um sie zu zerstören ist verboten.<br/>
 <br/>
-<font color='#A9E2F3'>§2 Kommunikation</font><br/>
+<font color='#A9E2F3'>§3 Kommunikation</font><br/>
 - Der Side-Chat ist für normale, kurzweilige Kommunikation gedacht. Für alles weitere gibt es den Gruppen- oder Direct-Chat.<br/>
 - Spammen ist verboten.<br/>
 - Das Posten von Links (Fremdwerbung etc.) ist verboten.<br/>
 - Beleidigungen, Rassismus, Antisemitismus und pornografische Sprache ist verboten.<br/>
 <br/>
-<font color='#A9E2F3'>§3 Illegale Gegenstände</font><br/>
+<font color='#A9E2F3'>§4 Illegale Gegenstände</font><br/>
 Fahrzeuge: -Ifrit -Rebellenoffroad -Jegliche Einsatzfahrzeuge<br/>
 Waffen: -Lynx -Katiba -Rahim -Jegliche Polizeiwaffen<br/>
 Gegenstände: -Schildkrötenfleisch -Marihuana -Kokain -Heroin<br/>
 (auch unverarbeitet)<br/>
 <br/>
-<font color='#A9E2F3'>§4 Einmischung in Polizeiaktionen</font><br/>
+<font color='#A9E2F3'>§5 Einmischung in Polizeiaktionen</font><br/>
 - In Rucksäcke von Polizisten gucken ist verboten.<br/>
 - Das dauerhafte spionieren und / oder stalken von Polizisten ist verboten.<br/>
 - Das dauerhafte Blocken von Polizisten um diese daran zu hindern ihre Pflicht zu tun ist verboten.<br/>
 <br/>
-<font color='#A9E2F3'>§5 Verhalten bei polizeilichen Maßnahmen</font><br/>
+<font color='#A9E2F3'>§6 Verhalten bei polizeilichen Maßnahmen</font><br/>
 - Den Anweisungen der Polizei ist Folge zu leisten.<br/>
 - Wer eine Waffe bei sich führt sollte dies dem Polizisten mitteilen, bevor er aus dem Fahrzeug steigt.<br/>
 - Widerstand gegen polizeiliche Maßnahmen wird im schlimmsten Fall mit dem Gebrauch der Schusswaffe beantwortet.<br/>
 <br/>
-<font color='#A9E2F3'>§6 Verkehrsregeln</font><br/>
+<font color='#A9E2F3'>§7 Verkehrsregeln</font><br/>
 - Es gilt rechts vor Links.<br/>
 - Es gilt Rechtsfahrgebot.<br/>
 - Bei Nacht ist mit Licht zu fahren.<br/>
@@ -318,7 +318,7 @@ Gegenstände: -Schildkrötenfleisch -Marihuana -Kokain -Heroin<br/>
 - Das Überfliegen von Städten unterhalb von 200m ist verboten.<br/>
 - Das Landen von Helikoptern in Städten und auf Straßen ist verboten. Ausnahmeregelungen können durch die Polizei erteilt werden.<br/>
 <br/>
-<font color='#A9E2F3'>§7 Zusatz</font><br/>
+<font color='#A9E2F3'>§8 Zusatz</font><br/>
 - Die Gesetze von Jah City (Altis) sind verpflichtend.<br/>
 - Bei Verstoß gegen die Gesetze wird nach Bußgeldkatalog bestraft. Im Wiederholungsfall droht eine Gefängnisstrafe.<br/>
 
@@ -330,10 +330,10 @@ Gegenstände: -Schildkrötenfleisch -Marihuana -Kokain -Heroin<br/>
 <font color='#A9E2F3'>WICHTIG:</font> Medics dürfen nicht <font color='#FF0000'>beschossen</font> werden!
 <font color='#A9E2F3'>WICHTIG:</font> Medics sind unparteiisch <font color='#FF0000'>und dürfen</font> von allesn seiten angefordert werden!
 
-<font color='#A9E2F3'>§1 Raub, Diebstahl etc. (Event)</font><br/>
+<font color='#A9E2F3'>§2 Raub, Diebstahl etc. (Event)</font><br/>
 - Raub, Diebstahl etc. muss einen RP Hintergrund haben und sollte nicht zwangsweise mit dem Tot enden<br/>
 <br/>
-<font color='#A9E2F3'>§2 Rebellenverhalten</font><br/>
+<font color='#A9E2F3'>§3 Rebellenverhalten</font><br/>
 - Rebellen richten sich gegen den Staat und nicht gegen Zivilisten.<br/>
 
 <br/>
@@ -511,66 +511,66 @@ player createDiaryRecord ["adacrules",
 		[
 			"Bußgeldkatalog",
 				"
-				    Art des Vergehens        Bußgeld
-				Allgemein        	
-				§1     Polizisten trollen         			100 $
-				§2     Beleidigungen Zivilisten				60 $
-				§3     Beleidigungen Polizisten 			90 $
-				§4     Flucht aus Polizeikontrolle			1.000 $
-				§5     Behinderung von Polizeiarbeit        40 $
-				§6     Geiselnahme  30 min KNAST 		   +8.000 $
-				§7     Bankraub  20 min KNAST 			   +6.000 $
-				§8     Autodiebstahl      				    600 $
-				§9     Diebstahl    Rucksäcke beklauen      50 $
+				   <br/> Art des Vergehens        									Bußgeld<br/>
+								Allgemein<br/>       	
+				§1     Polizisten trollen         									100 $<br/>
+				§2     Beleidigungen Zivilisten										60 $<br/>
+				§3     Beleidigungen Polizisten 									90 $<br/>
+				§4     Flucht aus Polizeikontrolle									1.000 $<br/>
+				§5     Behinderung von Polizeiarbeit       							40 $<br/>
+				§6     Geiselnahme  30 min KNAST 		   							+8.000 $<br/>
+				§7     Bankraub  20 min KNAST 			  							+6.000 $<br/>
+				§8     Autodiebstahl      				    						600 $<br/>
+				§9     Diebstahl    Rucksäcke beklauen      						50 $<br/>
 				
-				§11    Körperverletzung / Folter   	          300 $
-				§12    Mord mit Fahrzeug  5 min./ pro Mord   +5.000 $
-				§13    Mord        25 min. / pro Mord 	     +9.000 $
-				§14    Führen von Illegaler Waffen            1.500 $
-				§15    Waffenbesitz							  1.500 $							 
-				§16    Drogenbesitz       					  2.000 $
-				§17    Handel mit geschützten Arten Schildkrötenhandel     		  1.500 $
-				§18    Drogenhandel       										  3.000 $
-				§19    Drogenkonsum + Fahrt zur Entzugsklinik Krankenhaus 	 	  370 $
-				§20    Erpressung    Absprache mit Einsatzleiter    KNAST 		 +4500$
-				§21    Freiheitsberaubung    Zivis Fesseln    					  6.500 $
-				§22    Einbruch   Häuser usw.   								  150 $    
-				§23    Maske tragen   Einzug der Maske 					          50 $       
-				§24    Laufen auf der Straße           								10 $
-				§25    Verkehr behindern    Auf Straße stehen        				20 $
-				§26    Fahrzeug behindern    Vor Autos stehen bleiben             	25 $
-				§27	   Betreten von Sperrgebieten    Polizei, ADAC, Medic usw.    	30 $
-				§28    Beihilfe zur Flucht        1/2 des Bußgeldes vom Straftäter zu Fuß
-				§29    Raubüberfall  Die Geldmenge die geraubt wurde mal 0,5
+				§11    Körperverletzung / Folter   	          						300 $<br/>
+				§12    Mord mit Fahrzeug  5 min./ pro Mord   						+5.000 $<br/>
+				§13    Mord        25 min. / pro Mord 	     						+9.000 $<br/>
+				§14    Führen von Illegaler Waffen           						1.500 $<br/>
+				§15    Waffenbesitz							  						1.500 $<br/>							 
+				§16    Drogenbesitz       					  						2.000 $<br/>
+				§17    Handel mit geschützten Arten Schildkrötenhandel     		  	1.500 $<br/>
+				§18    Drogenhandel       										  	3.000 $<br/>
+				§19    Drogenkonsum + Fahrt zur Entzugsklinik Krankenhaus 	 	  	370 $<br/>
+				§20    Erpressung    Absprache mit Einsatzleiter    KNAST 		 	+4500$<br/>
+				§21    Freiheitsberaubung    Zivis Fesseln    					  	6.500 $<br/>
+				§22    Einbruch   Häuser usw.   								  	150 $<br/> 
+				§23    Maske tragen   Einzug der Maske 					          	50 $<br/>    
+				§24    Laufen auf der Straße           								10 $<br/>
+				§25    Verkehr behindern    Auf Straße stehen        				20 $<br/>
+				§26    Fahrzeug behindern    Vor Autos stehen bleiben             	25 $<br/>
+				§27	   Betreten von Sperrgebieten    Polizei, ADAC, Medic usw.    	30 $<br/>
+				§28    Beihilfe zur Flucht        1/2 des Bußgeldes vom Straftäter zu Fuß<br/>
+				§29    Raubüberfall  Die Geldmenge die geraubt wurde mal 0,5<br/>
 				
 				
-								Fahrzeug    
+								Fahrzeug<br/>
 
 								
-				§1    Überhöhte Geschwindigkeit bis 20 km/h       80 $
-				§2    Überhöhte Geschwindigkeit über 20 km/h      150 $
-				§3    Fahren auf falsche Straßenseite          	  15 $
-				§4    Verursachen eines Unfalls          		  120 $
-				§5    Fahren ohne Licht             			  30 $
-				§6    Fahren mit kaputten Autos  	              15 $
-				§7    Fahren ohne Führerschein         		      300 $
-				§8    Fahrerflucht          					  450 $
-				§9    Führen von Illegaler Fahrzeuge              6.000 $
-				§10   Trollen mit Fahrzeugen    Hupen             600 $
+				§1    Überhöhte Geschwindigkeit bis 20 km/h       80 $<br/>
+				§2    Überhöhte Geschwindigkeit über 20 km/h      150 $<br/>
+				§3    Fahren auf falsche Straßenseite          	  15 $<br/>
+				§4    Verursachen eines Unfalls          		  120 $<br/>
+				§5    Fahren ohne Licht             			  30 $<br/>
+				§6    Fahren mit kaputten Autos  	              15 $<br/>
+				§7    Fahren ohne Führerschein         		      300 $<br/>
+				§8    Fahrerflucht          					  450 $<br/>
+				§9    Führen von Illegaler Fahrzeuge              6.000 $<br/>
+				§10   Trollen mit Fahrzeugen    Hupen             600 $<br/>
 				
 				
-								Luftfahrzeuge    
+								Luftfahrzeuge<br/>   
 
 								
-				§1    Tiefer als 150 Meter über Städte           150 $
-				§2    Landen in Städte          				 200 $
-				§3    Führen von Illegaler Flugobjekte           6.000 $
-				§4    Fliegen ohne Kollisionslichter             30 $
-				§5    Fliegen ohne Fluglizenz       			 2.500 $
+				§1    Tiefer als 150 Meter über Städte           150 $<br/>
+				§2    Landen in Städte          				 200 $<br/>
+				§3    Führen von Illegaler Flugobjekte           6.000 $<br/>
+				§4    Fliegen ohne Kollisionslichter             30 $<br/>
+				§5    Fliegen ohne Fluglizenz       			 2.500 $<br/>
 				
 				
-				Falls es sich nur um einen Versuch handelt, so ist nur die 1/2 der Strafe zu verhängen!            
-				Bei Delikten die mit Knast bestraft werden ist eine angemessene Geldstrafe hinzuzufügen!            
+				Falls es sich nur um einen Versuch handelt, so ist nur die 1/2 der Strafe zu verhängen!<br/>          
+				Bei Delikten die mit Knast bestraft werden ist eine angemessene Geldstrafe hinzuzufügen!<br/>          
 				Bei Wiederholungstätern kann sich die Strafe pro Ticket jeweils um 50% steigern! <br/><br/>
 				"
 		]
@@ -595,6 +595,7 @@ player createDiaryRecord ["adacrules",
 <br/>
 [ <font color='#A9E2F3'>Links Shift + F</font> ] - Surrender (aufgeben)<br/>
 [ <font color='#A9E2F3'>Links Shift + H</font> ] - Handwaffe holstern<br/>
+[ <font color='#A9E2F3'>Links Strg + H</font> ] - Handwaffe entholstern<br/>
 [ <font color='#A9E2F3'>Links Shift + G</font> ] - Spieler K.O. schlagen<br/>
 zum ausrauben / beim entführen ect. Mausrad scrollen für Menü<br/>
 [ <font color='#A9E2F3'>Windows-Taste</font> ] - Action-Menü <br/>
@@ -606,9 +607,11 @@ zum aufnehmen von Items o. Geld | Fahrzeug reparieren | fesseln / entfesseln<br/
 [ <font color='#A9E2F3'>Windows-Taste</font> ] - Action-Menü <br/>
 [ <font color='#A9E2F3'>O</font> ] - Schranke AUF/ZU<br/>
 [ <font color='#A9E2F3'>F</font> ] - Cop / Medic Sirene ON/OFF<br/>
+[ <font color='#A9E2F3'>1</font> ] - Cop zweit Sirene ON/OFF<br/>
 [ <font color='#A9E2F3'>Links Shift + L</font> ] - Blaulicht ON/OFF <br/>
 [ <font color='#A9E2F3'>Links Shift + R</font> ] - Handschellen anlegen<br/>
 [ <font color='#A9E2F3'>Links Shift + H</font> ] - Handwaffe holstern<br/>
+[ <font color='#A9E2F3'>Links Strg + H</font> ] - Handwaffe entholstern<br/>
 [ <font color='#A9E2F3'>Mausrad scrollen</font> ] - Cop-Marke zeigen<br/>
 <br/>
 <br/>
