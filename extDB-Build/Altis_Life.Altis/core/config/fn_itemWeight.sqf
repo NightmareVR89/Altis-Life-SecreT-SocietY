@@ -78,6 +78,7 @@ switch (_item) do
 	case "tabak": {2};
 	case "zigarren": {1};
 	case "muell": {6};
+	case "skalpell": {2};
 	case "wertstoffe": {4};
 	case "kunststoff": {1};
 	case "edelmetall": {2};

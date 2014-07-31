@@ -199,6 +199,7 @@ if(count (handGunItems player) > 0) then
 	["life_inv_schranke", life_inv_schranke],
 	["life_inv_lagerfeuer", life_inv_lagerfeuer],
 	["life_inv_zelt", life_inv_zelt],
+	["life_inv_skalpell", life_inv_skalpell],
 	["life_inv_wand", life_inv_wand]
 ];
 
