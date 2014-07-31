@@ -108,7 +108,7 @@ if((_vInfo select 1) == "cop" && (_vInfo select 2) in ["C_Offroad_01_F","B_MRAP_
 	[[_vehicle,"cop_offroad",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
 };
 
-if((_vInfo select 1) == "med" && (_vInfo select 2) == ["C_Offroad_01_F","C_SUV_01_F"]) then
+if((_vInfo select 1) == "med" && (_vInfo select 2) in ["C_Offroad_01_F","C_SUV_01_F"]) then
 {
 	[[_vehicle,"med_offroad",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
 };
