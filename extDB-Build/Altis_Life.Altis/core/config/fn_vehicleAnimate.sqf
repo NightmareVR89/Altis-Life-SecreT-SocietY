@@ -65,7 +65,7 @@ if(!_preset) then
 			};
 			_vehicle animate ["HideServices", 0];
 			_vehicle animate ["HideDoor3", 0];
-			_vehicle setVariable["servicelights",false,true];
+			_vehicle setVariable["serviceLights",false,true];
 		};
 		
 		case "cop_offroad":
