@@ -71,8 +71,8 @@ class life_wanted_menu {
 		{
 			idc = 2403;
 			text = "";
-			x = 0.34;
-			y = 0.03;
+			x = 0.42;
+			y = 0.55;
 			w = 0.6;
 			h = 0.6;
 		};
