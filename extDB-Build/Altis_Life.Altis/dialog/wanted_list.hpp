@@ -10,7 +10,7 @@ class life_wanted_menu {
 			idc = -1;
 			x = 0.1;
 			y = 0.2;
-			w = 0.6;
+			w = 0.9;
 			h = (1 / 25);
 		};
 		
@@ -19,8 +19,8 @@ class life_wanted_menu {
 			idc = -1;
 			x = 0.1;
 			y = 0.2 + (11 / 250);
-			w = 0.6;
-			h = 0.6 - (22 / 250);
+			w = 0.9;
+			h = 0.6 - (2 / 250);
 		};
 	};
 	
@@ -50,8 +50,8 @@ class life_wanted_menu {
 			sizeEx = 0.035;
 			onLBSelChanged = "[] call life_fnc_wantedInfo";
 			
-			x = 0.12; y = 0.26;
-			w = 0.2; h = 0.4;
+			x = 0.42; y = 0.26;
+			w = 0.4; h = 0.4;
 		};
 		
 		class WantedDetails : Life_RscListBox
