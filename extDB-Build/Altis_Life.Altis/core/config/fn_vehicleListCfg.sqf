@@ -236,6 +236,7 @@ switch (_shop) do
 			["B_Heli_Light_01_F",1],
 			["O_Heli_Light_02_unarmed_F",1],
 			["I_Heli_Transport_02_F",1],
+			["B_G_Offroad_01_F",1],
 			["C_Offroad_01_F",1],
 			["C_SUV_01_F",1],
 			["B_Truck_01_fuel_F",1],

@@ -56,7 +56,15 @@ switch (_vehicle) do
 			["textures\fahrzeuge\med\offroad_notarzt.paa","med"],
 			["fahrzeuge\offroad_adac3.paa","adac"],
 			["fahrzeuge\adac_offroad.paa","adac"]
-
+		];
+	};
+	
+	case "B_G_Offroad_01_F":
+	{
+		_ret =
+		[
+			["fahrzeuge\offroad_adac3.paa","adac"],
+			["fahrzeuge\adac_offroad.paa","adac"]
 		];
 	};
 	

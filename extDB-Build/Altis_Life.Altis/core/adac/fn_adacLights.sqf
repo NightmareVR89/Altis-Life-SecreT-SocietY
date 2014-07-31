@@ -20,7 +20,7 @@ _lightleft setLightAmbient [255, 209, 1];
 
 switch (typeOf _vehicle) do
 {
-	case "C_Offroad_01_F":
+	case "B_G_Offroad_01_F":
 	{
 		_lightleft lightAttachObject [_vehicle, [-0.46, 0.0, 0.52]];
 	};
@@ -39,7 +39,7 @@ _lightright setLightAmbient [255, 209, 1];
 
 switch (typeOf _vehicle) do
 {
-	case "C_Offroad_01_F":
+	case "B_G_Offroad_01_F":
 	{
 		_lightright lightAttachObject [_vehicle, [0.37, 0.0, 0.52]];
 	};
