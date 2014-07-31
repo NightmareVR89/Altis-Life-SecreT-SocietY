@@ -9,7 +9,7 @@
 private["_vehicle","_lightYellow","_lightleft","_lightright","_leftRed","_brightness1","_brightness2"];
 _vehicle = _this select 0;
 
-if(isNil "_vehicle" OR isNull _vehicle OR !(_vehicle getVariable "serviceLights")) exitWith {};
+if(isNil "_vehicle" OR isNull _vehicle OR !(_vehicle getVariable "lights")) exitWith {};
 _lightYellow = [255, 209, 1];
 
 _lightleft = createVehicle ["#lightpoint", (getPos _vehicle), [], 0, "NONE"];
@@ -64,7 +64,7 @@ _brightness2 = 0.3;
 _leftRed = true;  
 while{ (alive _vehicle)} do  
 {  
-	if(!(_vehicle getVariable "serviceLights")) exitWith {};
+	if(!(_vehicle getVariable "lights")) exitWith {};
 	if(_leftRed) then  
 	{  
 		_leftRed = false;  

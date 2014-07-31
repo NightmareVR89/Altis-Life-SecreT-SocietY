@@ -167,13 +167,13 @@ switch (_code) do
 					if(playerSide == west) then {
 						[vehicle player] call life_fnc_sirenLights;
 					} else {
-						[vehicle player] call life_fnc_medicSirenLights;
+						if(playerSide == independent) then {
+							[vehicle player] call life_fnc_medicSirenLights;
+						} else {
+							[vehicle player] call life_fnc_adacSirenLights;
+						};
 					};
 					_handled = true;
-				} else {
-					if(!isNil {vehicle player getVariable "servicelights"}) then {
-						[vehicle player] call life_fnc_adacSirenLights;
-					};
 				};
 			};
 		};
