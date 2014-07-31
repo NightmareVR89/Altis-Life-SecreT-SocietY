@@ -67,8 +67,9 @@ while {true} do {
 					sleep 5.0;
 			};
 		};
+		sleep 5;
 		
 	} forEach _targets;
 
-	sleep 2.0;
+	sleep 5;
 }
