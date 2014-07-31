@@ -39,8 +39,8 @@ switch (_mode) do {
 	};
 
 	case 4: {
-		_members = _group getVariable "gang_members";
-		_maxMembers = _group getVariable ["gang_maxMembers",8];
+		_members = [(_group getVariable "gang_members")] call DB_fnc_mresArray;
+		/* Erstma raus
 		if(count _members > (_group getVariable ["gang_maxMembers",8])) then {
 			_membersFinal = [];
 			for "_i" from 0 to _maxMembers -1 do {
@@ -48,7 +48,8 @@ switch (_mode) do {
 			};
 		};
 		_membersFinal = [(_group getVariable "gang_members")] call DB_fnc_mresArray;
-		_query = format["UPDATE gangs SET members='%1' WHERE id='%2'",_membersFinal,_groupID];
+		*/
+		_query = format["UPDATE gangs SET members='%1' WHERE id='%2'",_members,_groupID];
 	};
 };
 
