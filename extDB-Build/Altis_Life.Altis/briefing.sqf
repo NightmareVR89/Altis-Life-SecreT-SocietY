@@ -493,6 +493,7 @@ player createDiaryRecord ["adacrules",
 			2. Kein Tazern ohne Grund<br/>
 			3. Keine Festnahmen ohne Grund<br/>
 			4. Keine Beschlagnahmungen ohne Grund<br/>
+			5. Das aufstellen der Barikaden usw. nur auf Anweisung.
 			<br/>
 			Beim verhängen von Strafen muss nach dem <br/>
 			Gesetzbuch und Bußgeldkatalog vorgegangen werden!<br/>
@@ -535,10 +536,10 @@ player createDiaryRecord ["adacrules",
 				§21    Freiheitsberaubung    Zivis Fesseln    					  6.500 $
 				§22    Einbruch   Häuser usw.   								  150 $    
 				§23    Maske tragen   Einzug der Maske 					          50 $       
-				§24     Laufen auf der Straße           						  10 $
-				§25     Verkehr behindern    Auf Straße stehen        			  20 $
-				§26     Fahrzeug behindern    Vor Autos stehen bleiben            25 $
-				§27	   Betreten von Sperrgebieten    Polizei, ADAC, Medic usw.    30 $
+				§24    Laufen auf der Straße           								10 $
+				§25    Verkehr behindern    Auf Straße stehen        				20 $
+				§26    Fahrzeug behindern    Vor Autos stehen bleiben             	25 $
+				§27	   Betreten von Sperrgebieten    Polizei, ADAC, Medic usw.    	30 $
 				§28    Beihilfe zur Flucht        1/2 des Bußgeldes vom Straftäter zu Fuß
 				§29    Raubüberfall  Die Geldmenge die geraubt wurde mal 0,5
 				
@@ -555,7 +556,7 @@ player createDiaryRecord ["adacrules",
 				§7    Fahren ohne Führerschein         		      300 $
 				§8    Fahrerflucht          					  450 $
 				§9    Führen von Illegaler Fahrzeuge              6.000 $
-				§10    Trollen mit Fahrzeugen    Hupen            600 $
+				§10   Trollen mit Fahrzeugen    Hupen             600 $
 				
 				
 								Luftfahrzeuge    
