@@ -80,13 +80,13 @@ _units = _units - [player];
 				//Admins
 				case(_x getVariable["adminlevel", 0] > 0): {
 					_icon = "a3\UI_F\data\GUI\Cfg\Ranks\colonel_gs.paa";
-					_text = format["<t color='#FFFF00'><img image='%2' size='1'></img> %1</t>", _name, _icon];
+					_text = format["<t color='#FF8000'><img image='%2' size='1'></img> %1</t>", _name, _icon];
 				};
 
 				//ADAC
 				case(_x getVariable["adaclevel", 0] > 0): {
-					_icon = "a3\UI_F\data\GUI\Cfg\Ranks\colonel_gs.paa";
-					_text = format["<t color='#FF8000'><img image='%2' size='1'></img> %1</t>", _name, _icon];
+					_icon = "a3\UI_F\data\GUI\Cfg\Ranks\major_gs.paa";
+					_text = format["<t color='#FFFF00'><img image='%2' size='1'></img> %1</t>", _name, _icon];
 				};
 
 				//Others
