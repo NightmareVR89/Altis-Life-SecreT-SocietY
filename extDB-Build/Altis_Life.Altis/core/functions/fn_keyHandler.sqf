@@ -220,6 +220,31 @@ switch (_code) do
 			};
 		};
 	};
+	case 2: // 1 für YELP
+	{
+		if(playerSide == west && vehicle player != player && !life_yelp_active && ((driver vehicle player) == player)) then
+		{
+			[] spawn
+			{
+				life_yelp_active = true;
+				sleep 4.7;
+				life_yelp_active = false;
+			};
+			_veh = vehicle player;
+			if(isNil {_veh getVariable "yelp"}) then {_veh setVariable["yelp",false,true];};
+			if((_veh getVariable "yelp")) then
+			{
+				titleText ["Yelp aus","PLAIN"];
+				_veh setVariable["yelp",false,true];
+			}
+			else
+			{
+				titleText ["Yelp an","PLAIN"];
+				_veh setVariable["yelp",true,true];
+				[[_veh],"life_fnc_copYelp",nil,true] spawn life_fnc_MP;
+			;
+		};
+	};
 	//U Key
 	case 22:
 	{

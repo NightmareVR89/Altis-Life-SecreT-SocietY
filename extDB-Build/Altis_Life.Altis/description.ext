@@ -47,96 +47,118 @@ class CfgSounds
 		titles[] = {};
 	};
 	
-   class MedicSiren
-  {
+	class yelp
+	{
+		name = "yelp";
+		sound[] = {"\sounds\German_yelp.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class MedicSiren
+	{
     name = "MedicSiren";
     sound[] = {"\sounds\MedicSiren.ogg", 1.0, 1};
     titles[] = {};
-  };
+	};
+	
 	class tazersound
 	{
 		name = "Tazersound";
 		sound[] = {"\sounds\tazer.ogg", 0.25, 1};
 		titles[] = {};
 	};
+	
 	class bag
 	{
 		name = "Bag";
 		sound[] = {"\sounds\bag.ogg", 0.25, 1};
 		titles[] = {};
 	};
+	
 	class harvest
-  {
-	name="harvest";
-	sound[] = {"\sounds\harvest.ogg", 1.0, 1};
-	titles[] = {0, " "};
-  };
+	{
+		name="harvest";
+		sound[] = {"\sounds\harvest.ogg", 1.0, 1};
+		titles[] = {0, " "};
+	};
+	
    class take
-  {
-    name = "take";
-    sound[] = {"\sounds\take.ogg", 1.0, 1};
-    titles[] = {};
-  };
+	{
+		name = "take";
+		sound[] = {"\sounds\take.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
 	class flashbang
 	{
 		name = "flashbang";
 		sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
 		titles[] = {};
 	};
-		class bankalarm
+	
+	class bankalarm
 	{
 		name = "bankalarm"; // beim knacken der Banktür
 		sound[] = {"\sounds\bankalarm.ogg", 1.0, 1};
 		titles[] = {};
 	};
-	  class car_lock
+	
+	class car_lock
 	{
 		name="Car_Lock";
 		sound[] = {"\sounds\car_lock.ogg", 1.0, 1};
 		titles[] = {0, " "};
 	};
-		class car_unlock
+	
+	class car_unlock
 	{
 		name="Car_Unlock";
 		sound[] = {"\sounds\car_unlock.ogg", 1.0, 1};
 		titles[] = {0, " "};
 	};
+	
 	class frosch
 	{
 		name="frosch";
 		sound[] = {"\sounds\catchfrog.ogg", 1.0, 1};
 		titles[] = {0, " "};
 	};
+	
 	class PhotoSound
 	{
 		name="PhotoSound";
 		sound[] = {"\sounds\camera_shot.ogg", 1.0, 1};
 		titles[] = {0, " "};
 	};
+	
 	class punch
 	{
 		name="punch";
 		sound[] = {"\sounds\punch.ogg", 1.0, 1};
 		titles[] = {0, " "};
 	};
+	
 	class caralarm
 	{
     name = "caralarm";
     sound[] = {"\sounds\caralarm.ogg", 1, 1};
     titles[] = {};
 	};
+	
 	class soundGranate
 	{
     name = "soundGranate";
     sound[] = {"\sounds\sound_granate.ogg", 1, 1};
     titles[] = {};
 	};
+	
 	class niere
 	{
     name = "niere";
     sound[] = {"\sounds\niere.ogg", 1, 1};
     titles[] = {};
 	};
+	
 	class muell
 	{
     name = "muell";

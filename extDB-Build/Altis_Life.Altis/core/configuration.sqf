@@ -33,6 +33,7 @@ life_sammel_sperre = false; // Halten wir die Buguser mal auf...
 life_god = false;
 life_frozen = false;
 life_markers = false;
+life_yelp_active = false;
 
 //Revive constant variables.
 __CONST__(life_revive_cops,TRUE); //Set to false if you don't want cops to be able to revive downed players.

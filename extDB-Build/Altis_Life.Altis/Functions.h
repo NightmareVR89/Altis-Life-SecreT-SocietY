@@ -377,6 +377,7 @@ class Life_Client_Core
 		class doorAnimate {};
 		class fedCamDisplay {};
 		class jailDoor {};
+		class copYelp {};
 	};
 	
 	class Gangs
