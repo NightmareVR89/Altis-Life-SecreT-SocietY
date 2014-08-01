@@ -21,7 +21,6 @@ _froschZones = ["frosch_1"];
 _weintraubZones = ["weintraub_1"];
 _tabaZones = ["taba_1"];
 _muelZones = ["muel_1"];
-_leicheZones = ["leiche_1","leiche_2","leiche_3","leiche_4","leiche_5","leiche_6","leiche_7","leiche_8","leiche_9","leiche_10","leiche_11","leiche_12","leiche_13","leiche_14","leiche_15"];
 
 //Create apple zones
 {
@@ -91,9 +90,3 @@ _leicheZones = ["leiche_1","leiche_2","leiche_3","leiche_4","leiche_5","leiche_6
 	_zone setTriggerActivation["CIV","PRESENT",true];
 	_zone setTriggerStatements["player in thislist","LIFE_Action_Muell = player addAction['Sammle Müll',life_fnc_gatherMuell,'',0,false,false,'','!life_sammel_sperre'];","player removeAction LIFE_Action_Muell;"];
 } foreach _muelZones;
-//Create Leichen
-{
-	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
-	_zone setTriggerArea[10,10,0,false];
-	_zone setTriggerActivation["CIV","PRESENT",true];
-} foreach _leicheZones;
