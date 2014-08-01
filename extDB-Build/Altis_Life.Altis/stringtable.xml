@@ -647,6 +647,9 @@
 		<Key ID="STR_Item_Tabaks">
 			<Original>Tabak</Original>
 		</Key>
+		<Key ID="STR_Item_Schmucks">
+			<Original>Schmuck</Original>
+		</Key>
 	</Package>
 	<Package name="Federal_Reserve">
 		<Key ID="STR_NOTF_FRRobbery_fail">
