@@ -6,6 +6,7 @@
 	Creates a Stacheldraht...
 */
 private["_position","_stacheldraht"];
+if(playerSide != west) then exitWith {hint "Du bist kein Cop!"};
 _stacheldraht = "Land_Razorwire_F" createVehicle [0,0,0];
 _stacheldraht attachTo[player,[0,5.5,0]];
 _stacheldraht setDir 90;
