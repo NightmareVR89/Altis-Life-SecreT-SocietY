@@ -96,5 +96,4 @@ _leicheZones = ["leiche_1","leiche_2","leiche_3","leiche_4","leiche_5","leiche_6
 	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
 	_zone setTriggerArea[10,10,0,false];
 	_zone setTriggerActivation["CIV","PRESENT",true];
-	_zone setTriggerStatements["player in thislist","LIFE_Action_Leichen = player addAction['Schmuck Ausgraben',life_fnc_gatherLeichen,'',0,false,false,'','!life_sammel_sperre'];","player removeAction LIFE_Action_Leichen;"];
 } foreach _leicheZones;
