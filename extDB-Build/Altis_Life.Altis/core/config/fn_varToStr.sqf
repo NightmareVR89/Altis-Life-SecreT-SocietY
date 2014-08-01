@@ -88,6 +88,7 @@ switch (_var) do
 	case "life_inv_kunststoff": {"Kunststoff"};
 	case "life_inv_edelmetall": {"Edelmetall"};
 	case "life_inv_schmuck": {"Schmuck"};
+	case "life_inv_schaufel": {"Schaufel"};
 	
 	//License Block
 	case "license_civ_driver": {"Führerschein"};

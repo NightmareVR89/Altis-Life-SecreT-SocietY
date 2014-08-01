@@ -83,5 +83,6 @@ switch (_item) do
 	case "kunststoff": {1};
 	case "edelmetall": {2};
 	case "schmuck": {6};
+	case "schaufel": {4};
 	default {1};
 };

@@ -86,6 +86,10 @@ switch (true) do
 	{
 		[] spawn life_fnc_pickAxeUse;
 	};
+	case (_item == "schuafel"):
+	{
+		[] spawn life_fnc_Schaufel;
+	};
 	
 	case (_item == "roadcone"):
 	{

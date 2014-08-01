@@ -205,7 +205,8 @@ life_inv_items =
 	"life_inv_wertstoffe",
 	"life_inv_kunststoff",
 	"life_inv_schmuck",
-	"life_inv_edelmetall"
+	"life_inv_edelmetall",
+	"life_inv_schaufel"
 ];
 
 //Setup variable inv vars.
@@ -322,9 +323,10 @@ sell_array =
 	["muell",10],
 	["skalpell",500],
 	["wertstoffe",20],
-	["kunststoff",50],
+	["kunststoff",30],
 	["schmuck",30],
-	["edelmetall",80]
+	["edelmetall",80],
+	["schaufel",1200]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -377,9 +379,10 @@ buy_array =
 	["zigarren",60],
 	["muell",30],
 	["wertstoffe",10],
-	["kunststoff",40],
+	["kunststoff",50],
 	["schmuck",90],
-	["edelmetall",120]
+	["edelmetall",120],
+	["schaufel",2000]
 ];
 __CONST__(buy_array,buy_array);
 
