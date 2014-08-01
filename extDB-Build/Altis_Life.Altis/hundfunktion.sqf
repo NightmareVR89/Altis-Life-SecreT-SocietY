@@ -340,7 +340,7 @@ _actions =
 	
 		if ((_unit getvariable "order") == "nil") then
 			{
-				_whistle = _unit addAction ["Whistle", _dogWhistle, [_unit, _dogGrowl,_playSound,_dogReturnIdle,_dogVehicle]];
+				_whistle = _unit addAction ["Pfeifen", _dogWhistle, [_unit, _dogGrowl,_playSound,_dogReturnIdle,_dogVehicle]];
 				_unit setvariable ["order","whistle"];
 				_unit setvariable ["step","wait"];
 				_unit setvariable ["actions",[_whistle]];
