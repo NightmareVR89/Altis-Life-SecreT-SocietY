@@ -7,6 +7,7 @@ made by:
 |TG-355th| Yink
 */
 
+if(call life_coplevel < 3) exitWith {hint "Deine Besoldungsstufe ist zu niedrig!"};
 _unit = _this select 0;
 _side = side _unit;
 sleep 2;
