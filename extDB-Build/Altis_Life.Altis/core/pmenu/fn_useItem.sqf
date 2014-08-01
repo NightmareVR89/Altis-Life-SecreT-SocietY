@@ -86,7 +86,7 @@ switch (true) do
 	{
 		[] spawn life_fnc_pickAxeUse;
 	};
-	case (_item == "schuafel"):
+	case (_item == "schaufel"):
 	{
 		[] spawn life_fnc_Schaufel;
 	};
