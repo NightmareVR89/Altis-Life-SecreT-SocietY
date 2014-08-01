@@ -3208,7 +3208,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction["Hole Hund","hundfunktion.sqf","",0,false,false,"",'playerSide == west'];
+					init="this enableSimulation false;  this allowDamage false; this addAction[""Hole Hund"",""hundfunktion.sqf"","""",0,false,false,"""",'playerSide == west'];";
 				};
 			};
 		};
