@@ -11,7 +11,7 @@
 	Triggers are NOT my preferred method so this is considered temporary until a more suitable
 	option is presented.
 */
-private["_appleZones","_peachZones","_heroinZones","_cocaineZones","_weedZones","_weintraubZones","_tabaZones","_muelZones","_leicheZones"];
+private["_appleZones","_peachZones","_heroinZones","_cocaineZones","_weedZones","_weintraubZones","_tabaZones","_muelZones"];
 _appleZones = ["apple_1","apple_2","apple_3","apple_4"];
 _peachZones = ["peaches_1","peaches_2","peaches_3","peaches_4"];
 _heroinZones = ["heroin_1"];
