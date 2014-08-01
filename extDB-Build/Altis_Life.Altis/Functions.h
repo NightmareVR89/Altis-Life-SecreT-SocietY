@@ -426,6 +426,7 @@ class Life_Client_Core
 	{
 		file = "core\items";
 		class pickaxeUse {};
+		class Schaufel {};
 		class lockpick {};
 		class spikeStrip {};
 		class jerryRefuel {};
