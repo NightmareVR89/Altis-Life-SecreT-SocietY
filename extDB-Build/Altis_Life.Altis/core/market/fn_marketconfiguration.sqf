@@ -313,6 +313,13 @@ life_market_resources = [
 			["froschbein",-1],
 			["wein",-1]
 		] 
+	],
+	["schmuck", 30, 5, 50, 8, 8,   
+		[ 
+			["schaufel",1],
+			["niere",1],
+			["heroinp",1]
+		] 
 	]
 ];
 publicVariable "life_market_resources";
