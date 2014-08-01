@@ -336,7 +336,7 @@ _actions =
 			_unit removeaction _x;
 			} foreach _actions;
 		
-		_actions = [ ];
+		_actions = [];
 	
 		if ((_unit getvariable "order") == "nil") then
 			{
