@@ -104,6 +104,7 @@ class Life_Client_Core
 		class gatherWeintraube {};
 		class gatherTabak {};
 		class gatherMuell {};
+		class gatherLeichen {};
 		class getDPMission {};
 		class postBail {};
 		class processAction {};

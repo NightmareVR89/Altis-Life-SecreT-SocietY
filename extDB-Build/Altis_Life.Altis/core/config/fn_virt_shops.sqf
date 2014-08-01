@@ -30,5 +30,5 @@ switch (_shop) do
 	case "tabak": {["Tabak Haus",["tabak","zigarren"]]};
 	case "muell": {["Mülldeponie",["muell","wertstoffe"]]};
 	case "kunststoff": {["Kunststoff Händler",["kunststoff"]]};
-	case "edelmetall": {["Edelmetall Händler",["edelmetall"]]};
+	case "edelmetall": {["Edelmetall Händler",["edelmetall","schmuck"]]};
 };

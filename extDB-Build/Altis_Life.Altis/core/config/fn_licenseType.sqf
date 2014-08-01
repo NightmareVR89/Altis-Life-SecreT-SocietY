@@ -50,6 +50,7 @@ switch (_mode) do
 			case "wertstoffel": {_var = "license_civ_wertstoffe"};
 			case "kunststoffl": {_var = "license_civ_kunststoff"};
 			case "edelmetalll": {_var = "license_civ_edelmetall"};
+			case "leichens": {_var = "license_civ_leichen"};
 			default {_var = ""};
 		};
 	};
@@ -92,6 +93,7 @@ switch (_mode) do
 			case "license_civ_wertstoffe": {_var = "wertstoffel"};
 			case "license_civ_kunststoff": {_var = "kunststoffl"};
 			case "license_civ_edelmetall": {_var = "edelmetalll"};
+			case "license_civ_leichen": {_var = "leichens"};
 			default {_var = ""};
 		};
 	};

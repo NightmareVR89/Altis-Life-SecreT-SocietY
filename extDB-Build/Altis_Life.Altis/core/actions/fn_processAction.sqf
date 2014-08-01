@@ -32,6 +32,7 @@ _itemInfo = switch (_type) do
 	case "wertstoffel": {["muell","wertstoffe",50,"Verarbeite Müll zu Wertstoffe"]};
 	case "edelmetalll": {["wertstoffe","edelmetall",40,"Verarbeite Wertstoffe zu Edelmetalle"]};
 	case "kunststoffl": {["wertstoffe","kunststoff",40,"Verarbeite Wertstoffe zu Kunststoffe"]};
+	case "leichens": {["schmuck","edelmetall",70,"Verarbeite Schmuck zu Edelmetall"]};
 	
 	default {[]};
 };

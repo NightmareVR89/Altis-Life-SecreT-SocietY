@@ -91,6 +91,7 @@ switch (_mode) do
 			case "wertstoffe": {"life_inv_wertstoffe"};
 			case "kunststoff": {"life_inv_kunststoff"};
 			case "edelmetall": {"life_inv_edelmetall"};
+			case "schmuck": {"life_inv_schmuck"};
 		};
 	};
 	
@@ -173,6 +174,7 @@ switch (_mode) do
 			case "life_inv_wertstoffe": {"wertstoffe"};
 			case "life_inv_kunststoff": {"kunststoff"};
 			case "life_inv_edelmetall": {"edelmetall"};
+			case "life_inv_schmuck": {"schmuck"};
 		};
 	};
 };

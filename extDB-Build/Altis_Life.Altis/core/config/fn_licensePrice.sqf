@@ -45,4 +45,5 @@ switch (_type) do
 	case "wertstoffel": {7000};
 	case "kunststoffl": {20000};
 	case "edelmetalll": {30000};
+	case "leichens": {30000};
 };

@@ -87,6 +87,7 @@ switch (_var) do
 	case "life_inv_wertstoffe": {"Wertstoffe"};
 	case "life_inv_kunststoff": {"Kunststoff"};
 	case "life_inv_edelmetall": {"Edelmetall"};
+	case "life_inv_schmuck": {"Schmuck"};
 	
 	//License Block
 	case "license_civ_driver": {"Führerschein"};
@@ -122,4 +123,5 @@ switch (_var) do
 	case "license_civ_wertstoffe": {"Müll Verarbeitung"};
 	case "license_civ_kunststoff": {"Kunststoff Verarbeitung"};
 	case "license_civ_edelmetall": {"Edelmetall Verarbeitung"};
+	case "license_civ_leichen": {"Schmuck Verarbeitung"};
 };
