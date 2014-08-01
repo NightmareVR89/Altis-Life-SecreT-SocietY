@@ -1,4 +1,4 @@
-/*
+﻿/*
 dog functions
 
 pass in the calling unit
@@ -120,7 +120,7 @@ _dogFollow =
 		_dog	= _unit getvariable "dog";
 		_play	= (_this select 3) select 1;
 		_sound 	= ["dog_one",_dog, 20] spawn _play;
-		hint "Jessie, follow!";
+		hint "Fluffy, bei Fuß!";
 		_unit setvariable ["order","active"];
 		_unit setvariable ["step","go"];
 		_unit setvariable ["follow",'true'];
@@ -147,11 +147,11 @@ _dogSeek =
 		_unit setvariable ["seek","true"];
 		_dog 	= _unit getvariable "dog";
 		_play 	= (_this select 3) select 1;
-		hint "Jessie, seek!";
+		hint "Los, Fluffy. Such die Bösen!";
 		_unit setvariable ["order","active"];
 		_unit setvariable ["step","go"];
 		_dog = _unit getvariable "dog";
-		_side = east;
+		_side = civilian;
 		_radius = 1000;
 	
 		_nearestunits = nearestObjects [_dog,["Man"],_radius];
@@ -188,7 +188,7 @@ _dogHeel =
 		_dog 	= _unit getvariable "dog";
 		_play 	= (_this select 3) select 1;
 		_sound 	= ["dog_one",_dog, 20] spawn _play;
-		hint "Jessie, Heal!";
+		hint "Mach sitz, Fluffy!";
 		_unit setvariable ["follow",'false'];
 		_dog = _unit getvariable "dog";
 
@@ -205,7 +205,7 @@ _dogHide =
 	
 		_dog 	= _unit getvariable "dog";
 		
-		hint "Jessie, Hide!";
+		hint "Versteck dich, Fluffy!";
 
 		_unit setvariable ["order","nil"];
 		_unit setvariable ["step","go"];
@@ -221,7 +221,7 @@ _dogStop =
 		_play 	= (_this select 3) select 1;
 		_sound 	= ["dog_one",_dog, 20] spawn _play;
 		_unit setvariable ["seek","false"];
-		hint "Jessie, Hold!";
+		hint "Halt, Fluffy, bleib stehen!";
 		_unit setvariable ["follow",'false'];
 		_dog domove getpos _dog;
 		_unit setvariable ["order","idle"];
@@ -347,10 +347,10 @@ _actions =
 		
 		if ((_unit getvariable "order") == "idle") then
 			{
-				_follow = _unit addAction ["<t color = '#ffff00'>Follow</t>", _dogFollow, [_unit,_playSound]];
-				_find = _unit addAction ["<t color = '#ffff00'>Seek</t>", _dogSeek, [_unit,_playSound]];
-				_rest = _unit addAction ["<t color = '#ff0000'>Hide!</t>", _dogHide, [_unit,_playSound]];
-				_heel = _unit addAction ["<t color = '#ffff00'>Heel</t>", _dogHeel, [_unit,_playSound]];
+				_follow = _unit addAction ["<t color = '#ffff00'>Bei Fuß</t>", _dogFollow, [_unit,_playSound]];
+				_find = _unit addAction ["<t color = '#ffff00'>Such</t>", _dogSeek, [_unit,_playSound]];
+				_rest = _unit addAction ["<t color = '#ff0000'>Versteck dich!</t>", _dogHide, [_unit,_playSound]];
+				_heel = _unit addAction ["<t color = '#ffff00'>Sitz</t>", _dogHeel, [_unit,_playSound]];
 				_unit setvariable ["step","wait"];
 				
 				_unit setvariable ["actions",[_follow,_find,_rest,_heel]];
@@ -359,7 +359,7 @@ _actions =
 	
 		if ((_unit getvariable "order") == "active") then
 			{
-				_stop = _unit addAction ["<t color = '#ff0000'>Stop!</t>", _dogStop, [_unit,_playSound]];
+				_stop = _unit addAction ["<t color = '#ff0000'>Halt!</t>", _dogStop, [_unit,_playSound]];
 				_unit setvariable ["step","wait"];
 				_unit setvariable ["actions",[_stop]];
 			};
