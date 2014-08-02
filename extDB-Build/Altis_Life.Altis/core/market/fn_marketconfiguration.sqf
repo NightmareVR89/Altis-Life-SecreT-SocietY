@@ -12,7 +12,7 @@ life_market_resources = [
 	//Schema: SHORTNAME, DEFAULT-WERT, MIN-WERT, MAX-WERT, VERÄNDERUNG BEI AKTION [VERKAUF Multipliziert mit 1, Kauf multipliziert um -1
 	//["gold", 1500, 450, 2300, 8, 5],
 		
-	["oilp", 60, 10, 90, 2, 1, 
+	["oilp", 60, 10, 900, 2, 1, 
 		[ 
 			["diamondc",1], 
 			["iron_r",1],
@@ -22,7 +22,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["iron_r", 60, 20, 80, 3, 1,  
+	["iron_r", 60, 20, 700, 3, 1,  
 		[ 
 			["diamondc",1], 
 			["oilp",1],
@@ -33,7 +33,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["diamondc", 240, 40, 390, 3, 2, 
+	["diamondc", 240, 40, 1150, 3, 2, 
 		[ 
 			["oilp",1],
 			["iron_r",1],
@@ -44,7 +44,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["copper_r", 50, 10, 70, 2, 1, 
+	["copper_r", 50, 10, 300, 2, 1, 
 		[ 
 			["diamondc",1], 
 			["oilp",1],
@@ -61,7 +61,7 @@ life_market_resources = [
 			["copper_r",1] 
 		] 
 	],
-	["wertstoffe", 60, 10, 110, 2, 1, 
+	["wertstoffe", 60, 10, 360, 2, 1, 
 		[ 
 			["oilp",1],
 			["iron_r",1],
@@ -70,7 +70,7 @@ life_market_resources = [
 			["copper_r",1] 
 		] 
 	],
-	["kunststoff", 80, 10, 140, 2, 1, 
+	["kunststoff", 80, 10, 420, 2, 1, 
 		[ 
 			["oilp",1],
 			["iron_r",1],
@@ -79,7 +79,7 @@ life_market_resources = [
 			["muell",-1]
 		] 
 	],
-	["edelmetall", 190, 40, 320, 2, 1, 
+	["edelmetall", 190, 40, 670, 2, 1, 
 		[ 
 			["oilp",1],
 			["iron_r",1],
@@ -87,7 +87,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["salt_r", 50, 10, 80, 2, 1, 
+	["salt_r", 50, 10, 420, 2, 1, 
 		[ 
 			["turtlesoup",1],
 			["froschbein",1],
@@ -96,7 +96,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["glass", 40, 5, 110, 2, 1, 
+	["glass", 40, 5, 340, 2, 1, 
 		[ 
 			["diamondc",1], 
 			["oilp",1],
@@ -107,7 +107,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["cement", 40, 5, 110, 2, 1, 
+	["cement", 40, 5, 400, 2, 1, 
 		[ 
 			["diamondc",1], 
 			["oilp",1],
@@ -129,7 +129,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["turtlesoup", 40, 5, 120, 2, 1, 
+	["turtlesoup", 40, 5, 600, 2, 1, 
 		[ 
 			["apple",1], 
 			["peach",1],
@@ -149,7 +149,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["froschbein", 120, 10, 240, 2, 1, 
+	["froschbein", 120, 10, 430, 2, 1, 
 		[ 
 			["apple",1], 
 			["turtlesoup",1],
@@ -203,7 +203,7 @@ life_market_resources = [
 			["mullet",1]
 		] 
 	],
-	["wein", 60, 5, 160, 2, 1, 
+	["wein", 60, 5, 530, 2, 1, 
 		[ 
 			["apple",1], 
 			["turtlesoup",1],
@@ -212,7 +212,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["weintraube", 40, 5, 60, 2, 1, 
+	["weintraube", 40, 5, 300, 2, 1, 
 		[ 
 			["apple",1], 
 			["turtlesoup",1],
@@ -221,7 +221,7 @@ life_market_resources = [
 			["wein",1]
 		] 
 	],
-	["tabak", 25, 5, 150, 2, 1, 
+	["tabak", 25, 5, 370, 2, 1, 
 		[  
 			["turtlesoup",1],
 			["niere",1],
@@ -229,14 +229,14 @@ life_market_resources = [
 			["wein",1]
 		] 
 	],
-	["zigarren", 40, 5, 260, 2, 1, 
+	["zigarren", 40, 5, 650, 2, 1, 
 		[ 
 			["wein",1],
 			["niere",1]
 		] 
 	],
 	
-	["turtle", 170, 40, 500, 2, 5,  
+	["turtle", 170, 40, 1700, 2, 5,  
 		[ 
 			["cocainep",1],
 			["marijuana",1],
@@ -245,7 +245,7 @@ life_market_resources = [
 			["heroinp",1]
 		] 
 	],
-	["catshark", 190, 40, 700, 10, 10,  
+	["catshark", 190, 40, 2400, 10, 10,  
 		[ 
 			["cocainep",1],
 			["marijuana",1],
@@ -255,7 +255,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["marijuana", 120, 30, 390, 7, 5,   
+	["marijuana", 120, 30, 630, 7, 5,   
 		[ 
 			["cocainep",1],
 			["turtle",1],
@@ -265,7 +265,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["cocainep", 240, 40, 560, 4, 6,   
+	["cocainep", 240, 40, 1400, 4, 6,   
 		[ 
 			["turtle",1],
 			["marijuana",1],
@@ -275,7 +275,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["heroinp", 120, 20, 380, 6, 8,   
+	["heroinp", 120, 20, 900, 6, 8,   
 		[ 
 			["cocainep",1],
 			["marijuana",1],
@@ -284,7 +284,7 @@ life_market_resources = [
 			["turtle",1]
 		] 
 	],
-	["froschlsd", 150, 30, 440, 2, 3,   
+	["froschlsd", 150, 30, 780, 2, 3,   
 		[ 
 			["cocainep",1],
 			["marijuana",1],
@@ -293,7 +293,7 @@ life_market_resources = [
 			["heroinp",1]
 		] 
 	],
-	["moonshine", 150, 30, 320, 8, 8,   
+	["moonshine", 150, 30, 540, 8, 8,   
 		[ 
 			["cocainep",1],
 			["marijuana",1],
