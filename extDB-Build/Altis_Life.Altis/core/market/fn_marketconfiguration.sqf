@@ -12,7 +12,7 @@ life_market_resources = [
 	//Schema: SHORTNAME, DEFAULT-WERT, MIN-WERT, MAX-WERT, VERÄNDERUNG BEI AKTION [VERKAUF Multipliziert mit 1, Kauf multipliziert um -1
 	//["gold", 1500, 450, 2300, 8, 5],
 		
-	["oilp", 30, 5, 50, 2, 1, 
+	["oilp", 60, 10, 90, 2, 1, 
 		[ 
 			["diamondc",1], 
 			["iron_r",1],
@@ -22,7 +22,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["iron_r", 60, 20, 70, 3, 1,  
+	["iron_r", 60, 20, 80, 3, 1,  
 		[ 
 			["diamondc",1], 
 			["oilp",1],
@@ -33,7 +33,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["diamondc", 140, 40, 210, 5, 2, 
+	["diamondc", 240, 40, 390, 3, 2, 
 		[ 
 			["oilp",1],
 			["iron_r",1],
@@ -44,7 +44,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["copper_r", 40, 10, 50, 2, 1, 
+	["copper_r", 50, 10, 70, 2, 1, 
 		[ 
 			["diamondc",1], 
 			["oilp",1],
@@ -54,30 +54,32 @@ life_market_resources = [
 			["glass",1] 
 		] 
 	],
-	["muell", 10, 5, 20, 2, 1, 
+	["muell", 40, 10, 80, 2, 1, 
 		[ 
 			["oilp",1],
 			["iron_r",1],
 			["copper_r",1] 
 		] 
 	],
-	["wertstoffe", 20, 5, 30, 2, 1, 
+	["wertstoffe", 60, 10, 110, 2, 1, 
 		[ 
 			["oilp",1],
 			["iron_r",1],
 			["muell",1],
+			["edelmetall",1],
 			["copper_r",1] 
 		] 
 	],
-	["kunststoff", 50, 10, 60, 2, 1, 
+	["kunststoff", 80, 10, 140, 2, 1, 
 		[ 
 			["oilp",1],
 			["iron_r",1],
 			["copper_r",1],
+			["edelmetall",1],
 			["muell",-1]
 		] 
 	],
-	["edelmetall", 140, 40, 280, 2, 1, 
+	["edelmetall", 190, 40, 320, 2, 1, 
 		[ 
 			["oilp",1],
 			["iron_r",1],
@@ -85,7 +87,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["salt_r", 30, 10, 40, 2, 1, 
+	["salt_r", 50, 10, 80, 2, 1, 
 		[ 
 			["turtlesoup",1],
 			["froschbein",1],
@@ -94,7 +96,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["glass", 25, 5, 40, 2, 1, 
+	["glass", 40, 5, 110, 2, 1, 
 		[ 
 			["diamondc",1], 
 			["oilp",1],
@@ -105,7 +107,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["cement", 40, 5, 50, 2, 1, 
+	["cement", 40, 5, 110, 2, 1, 
 		[ 
 			["diamondc",1], 
 			["oilp",1],
@@ -127,7 +129,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["turtlesoup", 20, 5, 30, 2, 1, 
+	["turtlesoup", 40, 5, 120, 2, 1, 
 		[ 
 			["apple",1], 
 			["peach",1],
@@ -147,7 +149,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["froschbein", 90, 10, 150, 2, 1, 
+	["froschbein", 120, 10, 240, 2, 1, 
 		[ 
 			["apple",1], 
 			["turtlesoup",1],
@@ -156,7 +158,7 @@ life_market_resources = [
 			["weintrauben",1]
 		] 
 	],
-	["mackerel", 15, 5, 25, 2, 1, 
+	["mackerel", 20, 5, 55, 2, 1, 
 		[ 
 			["salema",1], 
 			["ornate",1],
@@ -165,7 +167,7 @@ life_market_resources = [
 			["mullet",1]
 		] 
 	],
-	["mullet", 6, 1, 10, 2, 1, 
+	["mullet", 10, 1, 40, 2, 1, 
 		[ 
 			["salema",1], 
 			["ornate",1],
@@ -174,7 +176,7 @@ life_market_resources = [
 			["mackrele",1]
 		] 
 	],
-	["ornate", 10, 5, 20, 2, 1, 
+	["ornate", 10, 5, 35, 2, 1, 
 		[ 
 			["salema",1], 
 			["peach",1],
@@ -182,7 +184,7 @@ life_market_resources = [
 			["mackrele",1]
 		] 
 	],
-	["salema", 10, 5, 20, 2, 1, 
+	["salema", 10, 5, 40, 2, 1, 
 		[ 
 			["ornate",1], 
 			["mullet",1],
@@ -192,7 +194,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["tuna", 6, 1, 10, 2, 1, 
+	["tuna", 10, 1, 50, 2, 1, 
 		[ 
 			["salema",1], 
 			["ornate",1],
@@ -201,7 +203,7 @@ life_market_resources = [
 			["mullet",1]
 		] 
 	],
-	["wein", 40, 5, 60, 2, 1, 
+	["wein", 60, 5, 160, 2, 1, 
 		[ 
 			["apple",1], 
 			["turtlesoup",1],
@@ -210,7 +212,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["weintraube", 10, 5, 30, 2, 1, 
+	["weintraube", 40, 5, 60, 2, 1, 
 		[ 
 			["apple",1], 
 			["turtlesoup",1],
@@ -219,7 +221,7 @@ life_market_resources = [
 			["wein",1]
 		] 
 	],
-	["tabak", 25, 5, 40, 2, 1, 
+	["tabak", 25, 5, 150, 2, 1, 
 		[  
 			["turtlesoup",1],
 			["niere",1],
@@ -227,14 +229,14 @@ life_market_resources = [
 			["wein",1]
 		] 
 	],
-	["zigarren", 40, 5, 70, 2, 1, 
+	["zigarren", 40, 5, 260, 2, 1, 
 		[ 
 			["wein",1],
 			["niere",1]
 		] 
 	],
 	
-	["turtle", 170, 40, 250, 2, 5,  
+	["turtle", 170, 40, 500, 2, 5,  
 		[ 
 			["cocainep",1],
 			["marijuana",1],
@@ -243,7 +245,7 @@ life_market_resources = [
 			["heroinp",1]
 		] 
 	],
-	["catshark", 190, 40, 280, 10, 10,  
+	["catshark", 190, 40, 700, 10, 10,  
 		[ 
 			["cocainep",1],
 			["marijuana",1],
@@ -253,7 +255,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["marijuana", 90, 30, 160, 7, 5,   
+	["marijuana", 120, 30, 390, 7, 5,   
 		[ 
 			["cocainep",1],
 			["turtle",1],
@@ -263,7 +265,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["cocainep", 160, 40, 260, 4, 6,   
+	["cocainep", 240, 40, 560, 4, 6,   
 		[ 
 			["turtle",1],
 			["marijuana",1],
@@ -273,7 +275,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["heroinp", 120, 20, 210, 6, 8,   
+	["heroinp", 120, 20, 380, 6, 8,   
 		[ 
 			["cocainep",1],
 			["marijuana",1],
@@ -282,7 +284,7 @@ life_market_resources = [
 			["turtle",1]
 		] 
 	],
-	["froschlsd", 110, 30, 200, 2, 3,   
+	["froschlsd", 150, 30, 440, 2, 3,   
 		[ 
 			["cocainep",1],
 			["marijuana",1],
@@ -291,7 +293,7 @@ life_market_resources = [
 			["heroinp",1]
 		] 
 	],
-	["moonshine", 90, 30, 190, 8, 8,   
+	["moonshine", 150, 30, 320, 8, 8,   
 		[ 
 			["cocainep",1],
 			["marijuana",1],
@@ -314,11 +316,16 @@ life_market_resources = [
 			["wein",-1]
 		] 
 	],
-	["schmuck", 30, 5, 50, 8, 8,   
+	["schmuck", 60, 5, 420, 8, 8,   
 		[ 
 			["schaufel",1],
+			["oilp",1],
+			["iron_r",1],
+			["edelmetall",1],
+			["copper_r",1],
 			["niere",1],
-			["heroinp",1]
+			["heroinp",1],
+			["cocainep",1]
 		] 
 	]
 ];

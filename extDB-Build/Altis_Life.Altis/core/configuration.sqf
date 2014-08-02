@@ -109,17 +109,17 @@ switch (playerSide) do
 	case civilian: 
 	{
 		life_atmcash = 3500; //Starting Bank Money
-		life_paycheck = 100; //Paycheck Amount
+		life_paycheck = 200; //Paycheck Amount
 	};
 	
 	case independent: {
 		life_atmcash = 2000;
-		life_paycheck = 75;
+		life_paycheck = 125;
 	};
 	
 	case east: {
 		life_atmcash = 2000;
-		life_paycheck = 75;
+		life_paycheck = 125;
 	};
 };
 
@@ -276,34 +276,34 @@ sell_array =
 	["mullet",6],
 	["catshark",190],
 	["rabbit",20],
-	["oilp",30],
+	["oilp",60],
 	["turtle",170],
 	["water",4],
 	["coffee",1],
-	["turtlesoup",20],
+	["turtlesoup",40],
 	["donuts",1],
-	["marijuana",90],
+	["marijuana",120],
 	["tbacon",100],
 	["lockpick",75],
 	["pickaxe",130],
 	["redgull",500],
 	["peach",10],
 	["cocaine",30],
-	["cocainep",160],
+	["cocainep",240],
 	["diamond",30],
-	["diamondc",140],
+	["diamondc",240],
 	["iron_r",60],
-	["copper_r",40],
-	["salt_r",30],
-	["glass",25],
+	["copper_r",50],
+	["salt_r",50],
+	["glass",40],
 	["fuelF",10],
 	["spikeStrip",50],
 	["cement",40],
 	["goldbar",12000],
 	["handschellen",50],
 	["kabelb",50],
-	["froschlsd",110],
-	["froschbein",90],
+	["froschlsd",150],
+	["froschbein",120],
 	["stacheldraht",400],
 	["lagerfeuer",3000],
 	["zelt",900],
@@ -315,17 +315,17 @@ sell_array =
 	["barrier",100],
 	["niere",2500],
 	["sandbag",800],
-	["moonshine",110],
+	["moonshine",150],
 	["wein",60],
 	["weintraube",40],
 	["tabak",25],
 	["zigarren",40],
-	["muell",10],
+	["muell",40],
 	["skalpell",500],
-	["wertstoffe",20],
-	["kunststoff",30],
-	["schmuck",30],
-	["edelmetall",140],
+	["wertstoffe",80],
+	["kunststoff",80],
+	["schmuck",60],
+	["edelmetall",190],
 	["schaufel",1200]
 ];
 __CONST__(sell_array,sell_array);
@@ -334,15 +334,15 @@ buy_array =
 [
 	["apple",15],
 	["rabbit",40],
-	["salema",15],
-	["ornate",15],
-	["mackerel",20],
-	["tuna",20],
-	["mullet",15],
-	["catshark",300],
+	["salema",220],
+	["ornate",160],
+	["mackerel",170],
+	["tuna",150],
+	["mullet",120],
+	["catshark",2500],
 	["water",10],
-	["turtle",130],
-	["turtlesoup",30],
+	["turtle",1000],
+	["turtlesoup",400],
 	["donuts",5],
 	["coffee",10],
 	["tbacon",250],
@@ -350,7 +350,7 @@ buy_array =
 	["pickaxe",600],
 	["redgull",1500],
 	["fuelF",850],
-	["peach",15],
+	["peach",50],
 	["spikeStrip",100],
 	["blastingcharge",10000],
 	["boltcutter",7000],
@@ -359,7 +359,7 @@ buy_array =
 	["storagebig",1500000],
 	["handschellen",60],
 	["kabelb",60],
-	["froschbein",160],
+	["froschbein",500],
 	["stacheldraht",800],
 	["lagerfeuer",30000],
 	["zelt",2000],
@@ -371,16 +371,16 @@ buy_array =
 	["barrier",500],
 	["niere",4500],
 	["sandbag",1500],
-	["moonshine",200],
-	["wein",100],
-	["weintraube",70],
+	["moonshine",420],
+	["wein",360],
+	["weintraube",120],
 	["skalpell",2500],
-	["tabak",30],
-	["zigarren",60],
-	["muell",30],
-	["wertstoffe",10],
-	["kunststoff",50],
-	["schmuck",90],
+	["tabak",90],
+	["zigarren",320],
+	["muell",150],
+	["wertstoffe",210],
+	["kunststoff",280],
+	["schmuck",300],
 	["edelmetall",250],
 	["schaufel",2000]
 ];

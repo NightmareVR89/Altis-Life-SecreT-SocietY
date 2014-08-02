@@ -28,7 +28,7 @@ switch (_type) do
 	case "truck": {6000}; //Truck license cost
 	case "diamond": {19000};
 	case "salt": {7000};
-	case "cocaine": {25000};
+	case "cocaine": {19000};
 	case "sand": {4000};
 	case "iron": {9500};
 	case "copper": {6000};
@@ -37,13 +37,13 @@ switch (_type) do
 	case "home": {30000};
 	case "adac": {5000};
 	case "froschbein": {8750}; //ÄNDERN BITTE!
-	case "froschlsd": {18000}; //ÄNDERN BITTE!
+	case "froschlsd": {10000}; //ÄNDERN BITTE!
 	case "adacdrive": {1};
 	case "moonshinel": {5000};
 	case "weintraubel": {1500};
 	case "tabakl": {3000};
 	case "wertstoffel": {7000};
-	case "kunststoffl": {20000};
-	case "edelmetalll": {30000};
-	case "leichens": {25000};
+	case "kunststoffl": {9000};
+	case "edelmetalll": {15000};
+	case "leichens": {11000};
 };
