@@ -6,7 +6,7 @@
 	Gathers apples?
 */
 private["_rand","_sum"];
-_rand = round(random 5);
+_rand = round(random 2);
 _sum = ["apple",_rand,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 
 if(_sum > 0) then
