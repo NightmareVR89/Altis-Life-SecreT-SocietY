@@ -37,7 +37,7 @@ switch (_type) do
 	case "home": {30000};
 	case "adac": {5000};
 	case "froschbein": {8750}; //ÄNDERN BITTE!
-	case "froschlsd": {20000}; //ÄNDERN BITTE!
+	case "froschlsd": {18000}; //ÄNDERN BITTE!
 	case "adacdrive": {1};
 	case "moonshinel": {5000};
 	case "weintraubel": {1500};
@@ -45,5 +45,5 @@ switch (_type) do
 	case "wertstoffel": {7000};
 	case "kunststoffl": {20000};
 	case "edelmetalll": {30000};
-	case "leichens": {30000};
+	case "leichens": {25000};
 };

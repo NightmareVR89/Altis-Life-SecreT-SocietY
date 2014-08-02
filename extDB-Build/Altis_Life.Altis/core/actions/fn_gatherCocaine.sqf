@@ -5,7 +5,7 @@
 	Gathers cocaine?
 */
 private["_rand","_sum"];
-_rand = round(random 5);
+_rand = round(random 3);
 _sum = ["cocaine",_rand,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 
 if(_sum > 0) then

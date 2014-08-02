@@ -33,7 +33,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["diamondc", 75, 40, 90, 5, 2, 
+	["diamondc", 140, 40, 210, 5, 2, 
 		[ 
 			["oilp",1],
 			["iron_r",1],
@@ -77,7 +77,7 @@ life_market_resources = [
 			["muell",-1]
 		] 
 	],
-	["edelmetall", 90, 40, 110, 2, 1, 
+	["edelmetall", 140, 40, 280, 2, 1, 
 		[ 
 			["oilp",1],
 			["iron_r",1],
@@ -147,7 +147,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["froschbein", 40, 5, 50, 2, 1, 
+	["froschbein", 90, 10, 150, 2, 1, 
 		[ 
 			["apple",1], 
 			["turtlesoup",1],
@@ -234,7 +234,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["turtle", 90, 40, 110, 20, 18,  
+	["turtle", 170, 40, 250, 2, 5,  
 		[ 
 			["cocainep",1],
 			["marijuana",1],
@@ -243,7 +243,7 @@ life_market_resources = [
 			["heroinp",1]
 		] 
 	],
-	["catshark", 90, 40, 110, 20, 18,  
+	["catshark", 190, 40, 280, 10, 10,  
 		[ 
 			["cocainep",1],
 			["marijuana",1],
@@ -253,7 +253,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["marijuana", 45, 10, 50, 7, 5,   
+	["marijuana", 90, 30, 160, 7, 5,   
 		[ 
 			["cocainep",1],
 			["turtle",1],
@@ -263,7 +263,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["cocainep", 70, 20, 80, 9, 8,   
+	["cocainep", 160, 40, 260, 4, 6,   
 		[ 
 			["turtle",1],
 			["marijuana",1],
@@ -273,7 +273,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["heroinp", 55, 20, 60, 6, 8,   
+	["heroinp", 120, 20, 210, 6, 8,   
 		[ 
 			["cocainep",1],
 			["marijuana",1],
@@ -282,7 +282,7 @@ life_market_resources = [
 			["turtle",1]
 		] 
 	],
-	["froschlsd", 65, 30, 70, 7, 8,   
+	["froschlsd", 110, 30, 200, 2, 3,   
 		[ 
 			["cocainep",1],
 			["marijuana",1],
@@ -291,7 +291,7 @@ life_market_resources = [
 			["heroinp",1]
 		] 
 	],
-	["moonshine", 70, 15, 80, 8, 8,   
+	["moonshine", 90, 30, 190, 8, 8,   
 		[ 
 			["cocainep",1],
 			["marijuana",1],
