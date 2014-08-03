@@ -575,9 +575,6 @@ switch(_shop) do
 						["arifle_MXM_Black_F",nil,8300],
 						["30Rnd_65x39_caseless_mag",nil,80],
 						["30Rnd_65x39_caseless_mag_Tracer","30Rnd 65x39 Leuchtspur",80],
-						["arifle_Katiba_F",nil,5000],
-						["30Rnd_65x39_caseless_mag",nil,80],
-						["30Rnd_65x39_caseless_mag_Tracer","30Rnd 65x39 Leuchtspur",80],
 						["srifle_EBR_F",nil,20000],   //Einfache Sniper
 						["20Rnd_762x51_Mag",nil,50],
 						["srifle_DMR_01_F",nil,35000],         //Mittlere Sniper

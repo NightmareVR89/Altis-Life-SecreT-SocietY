@@ -5,7 +5,7 @@
 	Gathers cannabis?
 */
 private["_rand","_sum"];
-_rand = round(random 3);
+_rand = round(random 2);
 _sum = ["cannabis",_rand,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 
 if(_sum > 0) then

@@ -13,8 +13,8 @@ switch (_item) do
 {
 	case "oilu": {4};
 	case "oilp": {2};
-	case "heroinu": {4};
-	case "heroinp": {2};
+	case "heroinu": {3};
+	case "heroinp": {1};
 	case "cannabis": {2};
 	case "marijuana": {1};
 	case "apple": {2};
@@ -25,8 +25,8 @@ switch (_item) do
 	case "mackerel": {3};
 	case "tuna": {4};
 	case "mullet": {4};
-	case "catshark": {6};
-	case "turtle": {6};
+	case "catshark": {5};
+	case "turtle": {4};
 	case "fishing": {2};
 	case "turtlesoup": {2};
 	case "donuts": {1};
@@ -44,9 +44,9 @@ switch (_item) do
 	case "salt_r": {1};
 	case "glass": {2};
 	case "diamond": {4};
-	case "diamondc": {2};
-	case "cocaine": {4};
-	case "cocainep": {2};
+	case "diamondc": {1};
+	case "cocaine": {3};
+	case "cocainep": {1};
 	case "spikeStrip": {8};
 	case "rock": {6};
 	case "cement": {5};
@@ -56,7 +56,7 @@ switch (_item) do
 	case "defusekit": {5};
 	case "storagesmall": {10};
 	case "storagebig": {20};
-	case "frosch": {5};
+	case "frosch": {4};
 	case "froschlsd": {2};
 	case "froschbein": {1};
 	case "handschellen": {1};
@@ -77,12 +77,12 @@ switch (_item) do
 	case "weintraube": {1};
 	case "tabak": {2};
 	case "zigarren": {1};
-	case "muell": {4};
+	case "muell": {3};
 	case "skalpell": {2};
 	case "wertstoffe": {2};
 	case "kunststoff": {1};
 	case "edelmetall": {3};
-	case "schmuck": {4};
+	case "schmuck": {3};
 	case "schaufel": {4};
 	default {1};
 };
