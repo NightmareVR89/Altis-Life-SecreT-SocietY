@@ -9,21 +9,15 @@ publicVariable "life_fnc_sidechat";
 
 fnc_index =
 compileFinal "
-	private[""_find"",""_limit"",""_select"",""_array"",""_return""];
-	_find = _this select 0;
-	_array = _this select 1;
-
-	_limit = (count _array)-1;
-	for ""_i"" from 0 to _limit do
+	private[""_item"",""_stack""];
+	_item = _this select 0;
+	_stack = _this select 1;
+	_return = -1;
 	{
-		_select = _array select _i;
-		if((_find in _select) && (isNil {_return})) then
-		{
-			_return = _i;
+		if(_item in _x) exitWith {
+			_return = _forEachIndex;
 		};
-	};
-
-	if(isNil {_return}) then {_return = -1;};
+	} foreach _stack;
 	_return;
 ";
 
