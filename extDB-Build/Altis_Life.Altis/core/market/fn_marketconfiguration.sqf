@@ -11,7 +11,16 @@ life_market_resources = [
 
 	//Schema: SHORTNAME, DEFAULT-WERT, MIN-WERT, MAX-WERT, VERÄNDERUNG BEI AKTION [VERKAUF Multipliziert mit 1, Kauf multipliziert um -1
 	//["gold", 1500, 450, 2300, 8, 5],
-		
+	["goldbar", 32000, 23000, 60000, 1, 1, 
+		[ 
+			["diamondc",1], 
+			["iron_r",1],
+			["copper_r",1],
+			["cement",1],
+			["glass",1],
+			["edelmetall",1]			
+		] 
+	],
 	["oilp", 60, 10, 900, 2, 1, 
 		[ 
 			["diamondc",1], 

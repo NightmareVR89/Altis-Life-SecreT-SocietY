@@ -95,13 +95,9 @@ switch (_shop) do
 			_return set[count _return,
 			["O_MRAP_02_F",35000]];
 			_return set[count _return,
-			["B_G_Offroad_01_armed_F",65000]];
+			["B_G_Offroad_01_armed_F",95000]];
 			_return set[count _return,
-			["O_G_Offroad_01_armed_F",65000]];
-			_return set[count _return,
-			["I_G_Offroad_01_armed_F",65000]];
-			_return set[count _return,
-			["I_MRAP_03_F",90000]];
+			["I_MRAP_03_F",190000]];
 		};
 	};
 	
@@ -125,7 +121,7 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) > 2) then
 		{
 			_return set[count _return,
-			["B_MRAP_01_hmg_F",175000]];
+			["B_MRAP_01_hmg_F",375000]];
 		};
 	};
 	case "civ_air":
@@ -134,7 +130,8 @@ switch (_shop) do
 		[
 			["B_Heli_Light_01_F",60000],
 			["O_Heli_Light_02_unarmed_F",120000],
-			["I_Heli_Transport_02_F",200000]         //Neu
+			["I_Heli_Transport_02_F",200000],         //Neu
+			["B_Heli_Transport_01_F",1223000]
 		];
 	};
 	
@@ -182,7 +179,7 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) > 5) then
 		{
 			_return set[count _return,
-			["B_MRAP_01_hmg_F",1450000]];
+			["B_MRAP_01_hmg_F",350000]];
 		};
 	};
 	

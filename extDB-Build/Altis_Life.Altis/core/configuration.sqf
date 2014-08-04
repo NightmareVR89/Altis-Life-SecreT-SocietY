@@ -299,7 +299,7 @@ sell_array =
 	["fuelF",10],
 	["spikeStrip",50],
 	["cement",40],
-	["goldbar",12000],
+	["goldbar",32000],
 	["handschellen",50],
 	["kabelb",50],
 	["froschlsd",150],
