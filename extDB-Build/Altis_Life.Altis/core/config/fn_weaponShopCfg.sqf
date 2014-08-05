@@ -259,7 +259,7 @@ switch(_shop) do
 						["200Rnd_65x39_cased_Box_Tracer",nil,500],
 						["srifle_EBR_F",nil,8000],   //Einfache Sniper
 						["20Rnd_762x51_Mag",nil,50],
-						["srifle_DMR_01_F",nil,15000],         //Mittlere Sniper
+						["srifle_DMR_01_F",nil,4000],         //Mittlere Sniper
 						["10Rnd_762x51_Mag",nil,150],
 						["acc_pointer_IR",nil,800],
 						["acc_flashlight",nil,300],
@@ -648,13 +648,13 @@ switch(_shop) do
 						["arifle_MXM_Black_F",nil,8300],
 						["30Rnd_65x39_caseless_mag",nil,80],
 						["30Rnd_65x39_caseless_mag_Tracer","30Rnd 65x39 Leuchtspur",80],
-						["srifle_EBR_F",nil,20000],   //Einfache Sniper
+						["srifle_EBR_F",nil,45000],   //Einfache Sniper
 						["20Rnd_762x51_Mag",nil,50],
-						["srifle_DMR_01_F",nil,35000],         //Mittlere Sniper
+						["srifle_DMR_01_F",nil,70000],        //Mittlere Sniper
 						["10Rnd_762x51_Mag",nil,150],
-						["launch_RPG32_F",nil,20000],
-						["RPG32_F",nil,6000],
-						["RPG32_HE_F",nil,6000],
+						["launch_RPG32_F",nil,160000],
+						["RPG32_F",nil,25000],
+						["RPG32_HE_F",nil,37000],
 						["acc_pointer_IR",nil,800],
 						["acc_flashlight",nil,300],
 						["optic_Holosight",nil,200],
@@ -662,7 +662,7 @@ switch(_shop) do
 						["optic_Arco",nil,1300],		//NEU
 						["optic_NVS",nil,13000],			//NEU
 						["optic_ACO_grn",nil,500],
-						["optic_SOS",nil,8900],			//Einfaches Sniper visier
+						["optic_SOS",nil,27000],			//Einfaches Sniper visier
 						["SmokeShellRed",nil,150],		//NEU
 						["SmokeShell",nil,150],			//NEU
 						["SmokeShellGreen","Tränengas",300],
@@ -819,14 +819,14 @@ switch(_shop) do
 						["LMG_Mk200_F",nil,15500],
 						["200Rnd_65x39_cased_Box",nil,500],
 						["200Rnd_65x39_cased_Box_Tracer",nil,500],
-						["srifle_EBR_F",nil,20000],   //Einfache Sniper
+						["srifle_EBR_F",nil,45000],   //Einfache Sniper
 						["20Rnd_762x51_Mag",nil,50],
-						["srifle_DMR_01_F",nil,35000],         //Mittlere Sniper
+						["srifle_DMR_01_F",nil,70000],         //Mittlere Sniper
 						["10Rnd_762x51_Mag",nil,150],
-						["srifle_GM6_F",nil,42000],       //Mittelschwere Sniper
+						["srifle_GM6_F",nil,92000],       //Mittelschwere Sniper
 						["5Rnd_127x108_Mag",nil,200],
 						["5Rnd_127x108_APDS_Mag",nil,350],
-						["srifle_LRR_F",nil,63000],       	 //Schwere Sniper
+						["srifle_LRR_F",nil,165000],       	 //Schwere Sniper
 						["7Rnd_408_Mag",nil,375],
 						["acc_pointer_IR",nil,800],
 						["acc_flashlight",nil,300],
@@ -835,8 +835,8 @@ switch(_shop) do
 						["optic_Arco",nil,1300],		//NEU
 						["optic_NVS",nil,13000],			//NEU
 						["optic_ACO_grn",nil,500],
-						["optic_SOS",nil,8900],			//Einfaches Sniper visier
-						["optic_LRPS",nil,15000],		//NEU Longe Range visier
+						["optic_SOS",nil,23000],			//Einfaches Sniper visier
+						["optic_LRPS",nil,45000],		//NEU Longe Range visier
 						["SmokeShellRed",nil,150],		//NEU
 						["SmokeShell",nil,150],			//NEU
 						["SmokeShellGreen","Tränengas",300],

@@ -58,7 +58,7 @@ switch (_shop) do
 			["C_SUV_01_F",3800],  //50plätze
 			["C_Offroad_01_F",4600],  //65plätze
 			["C_Van_01_transport_F",8000], //100plätze
-			["C_Hatchback_01_sport_F",12000] //45plätze
+			["C_Hatchback_01_sport_F",24000] //45plätze
 		];
 	};
 	
@@ -72,8 +72,8 @@ switch (_shop) do
 			["O_Truck_03_transport_F",42000], //285Plätze
 			["O_Truck_03_covered_F",47000], //300Plätze
 			["B_Truck_01_transport_F",62000], //325Plätze
-			["O_Truck_03_device_F",84000],//350Plätze
-			["B_Truck_01_box_F",180000]  //450Plätze
+			["O_Truck_03_device_F",270000],//350Plätze
+			["B_Truck_01_box_F",360000]  //450Plätze
 		];	
 	};
 	
@@ -86,8 +86,8 @@ switch (_shop) do
 			["B_G_Offroad_01_F",4600], //65plätze
 			["C_Hatchback_01_sport_F",12000], //45plätze
 			["B_Heli_Light_01_F",60000],
-			["O_Heli_Light_02_unarmed_F",120000],
-			["I_Heli_Transport_02_F",200000]
+			["O_Heli_Light_02_unarmed_F",250000],
+			["I_Heli_Transport_02_F",450000]
 		];
 		
 		if(license_civ_rebel) then
@@ -95,9 +95,9 @@ switch (_shop) do
 			_return set[count _return,
 			["O_MRAP_02_F",35000]];
 			_return set[count _return,
-			["B_G_Offroad_01_armed_F",95000]];
+			["B_G_Offroad_01_armed_F",160000]];
 			_return set[count _return,
-			["I_MRAP_03_F",190000]];
+			["I_MRAP_03_F",270000]];
 		};
 	};
 	
@@ -129,9 +129,9 @@ switch (_shop) do
 		_return =
 		[
 			["B_Heli_Light_01_F",60000],
-			["O_Heli_Light_02_unarmed_F",120000],
-			["I_Heli_Transport_02_F",200000],         //Neu
-			["B_Heli_Transport_01_F",1223000]
+			["O_Heli_Light_02_unarmed_F",420000],
+			["I_Heli_Transport_02_F",670000],         //Neu
+			["B_Heli_Transport_01_F",1823000]
 		];
 	};
 	
