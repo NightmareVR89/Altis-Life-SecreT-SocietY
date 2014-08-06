@@ -23,8 +23,8 @@ switch (_type) do
 	case "heroin": {15000}; //Heroin processing license cost
 	case "marijuana": {9000}; //Marijuana processing license cost
 	case "medmarijuana": {7500}; //Medical Marijuana processing license cost
-	case "gang": {30000}; //Gang license cost
-	case "rebel": {15000}; //Rebel license cost
+	case "gang": {70000}; //Gang license cost
+	case "rebel": {45000}; //Rebel license cost
 	case "truck": {6000}; //Truck license cost
 	case "diamond": {19000};
 	case "salt": {7000};
@@ -34,7 +34,7 @@ switch (_type) do
 	case "copper": {6000};
 	case "cement": {6500};
 	case "mair": {1};
-	case "home": {30000};
+	case "home": {100000};
 	case "adac": {5000};
 	case "froschbein": {8750}; //ÄNDERN BITTE!
 	case "froschlsd": {10000}; //ÄNDERN BITTE!
