@@ -7,7 +7,7 @@
 	Creates a Schranke...
 */
 private["_position","_schranke"];
-if(playerSide != west) then exitWith {hint "Du bist kein Cop!"};
+if(playerSide != west) then exitWith {hint "Du bist kein Cop!";};
 _schranke = "Land_BarGate_F" createVehicle [0,0,0];
 _schranke attachTo[player,[0,5.5,0]];
 _schranke setDir 90;

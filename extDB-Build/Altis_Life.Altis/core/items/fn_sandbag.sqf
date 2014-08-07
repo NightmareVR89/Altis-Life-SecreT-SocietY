@@ -7,7 +7,7 @@
 	Creates a Sandbag wall...
 */
 private["_position","_sandbag"];
-if(playerSide != west) then exitWith {hint "Du bist kein Cop!"};
+if(playerSide != west) then exitWith {hint "Du bist kein Cop!";};
 _sandbag = "Land_BagFence_Long_F" createVehicle [0,0,0];
 _sandbag attachTo[player,[0,5.5,0]];
 _sandbag setDir 90;
