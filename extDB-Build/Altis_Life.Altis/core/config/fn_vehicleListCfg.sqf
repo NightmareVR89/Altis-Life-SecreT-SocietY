@@ -100,7 +100,7 @@ switch (_shop) do
 			_return set[count _return,
 			["I_MRAP_03_F",270000]];
 			_return set[count _return,
-			["B_APC_Tracked_01_CRV_F",250350000]];
+			["B_APC_Tracked_01_CRV_F",50350000]];
 		};
 	};
 	
@@ -186,7 +186,11 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) > 6) then
 		{
 			_return set[count _return,
-			["B_UAV_02_CAS_F",250350000]];
+			["B_MBT_01_cannon_F",25000000]];
+		};
+		{
+			_return set[count _return,
+			["B_Heli_Attack_01_F",50000000]];
 		};
 	};
 	
