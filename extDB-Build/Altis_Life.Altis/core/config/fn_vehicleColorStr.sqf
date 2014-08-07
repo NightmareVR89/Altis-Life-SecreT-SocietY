@@ -31,14 +31,6 @@ switch (_vehicle) do
 			case 12: {_color = "ADAC1"};
 		};
 	};
-	case "B_G_Offroad_01_F":
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "ADAC";};
-			case 1: {_color = "Alt. ADAC";};
-		};
-	};
 	case "C_Hatchback_01_F":
 	{
 		switch (_index) do

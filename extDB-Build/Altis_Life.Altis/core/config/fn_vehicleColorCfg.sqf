@@ -59,15 +59,6 @@ switch (_vehicle) do
 		];
 	};
 	
-	case "B_G_Offroad_01_F":
-	{
-		_ret =
-		[
-			["fahrzeuge\offroad_adac3.paa","adac"],
-			["fahrzeuge\adac_offroad.paa","adac"]
-		];
-	};
-	
 	case "C_Hatchback_01_F":
 	{
 		_ret =
