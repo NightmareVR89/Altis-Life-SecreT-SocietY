@@ -187,8 +187,6 @@ switch (_shop) do
 		{
 			_return set[count _return,
 			["B_MBT_01_cannon_F",25000000]];
-		};
-		{
 			_return set[count _return,
 			["B_Heli_Attack_01_F",50000000]];
 		};
