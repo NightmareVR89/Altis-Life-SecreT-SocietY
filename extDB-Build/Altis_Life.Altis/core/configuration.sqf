@@ -126,7 +126,7 @@ switch (playerSide) do
 /*
 	Master Array of items?
 */
-life_vShop_rentalOnly = ["B_MRAP_01_hmg_F","B_G_Offroad_01_armed_F"];
+life_vShop_rentalOnly = ["B_MRAP_01_hmg_F","B_G_Offroad_01_armed_F","B_UAV_02_CAS_F","B_APC_Tracked_01_CRV_F"];
 __CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly); //These vehicles can never be bought and only 'rented'. Used as a balancer & money sink. If you want your server to be chaotic then fine.. Remove it..
 
 life_inv_items = 
@@ -258,7 +258,7 @@ life_adaclicenses =
 
 life_dp_points = ["dp_1","dp_2","dp_3","dp_4","dp_5","dp_6","dp_7","dp_8","dp_9","dp_10","dp_11","dp_12","dp_13","dp_14","dp_15","dp_15","dp_16","dp_17","dp_18","dp_19","dp_20","dp_21","dp_22","dp_23","dp_24","dp_25"];
 //[shortVar,reward]
-life_illegal_items = [["heroinu",90],["goldbar",800],["schmuck",50],["skalpell",500],["niere",900],["moonshine",60],["heroinp",80],["cocaine",60],["cocainep",130],["marijuana",50],["turtle",100],["blastingcharge",500],["boltcutter",100],["froschlsd",60]];
+life_illegal_items = [["heroinu",80],["goldbar",12000],["schmuck",50],["skalpell",500],["niere",900],["moonshine",60],["heroinp",120],["cocaine",60],["cocainep",240],["marijuana",120],["cannabis",60],["catshark",190],["turtle",170],["blastingcharge",500],["boltcutter",100],["froschlsd",60]];
 
 
 /*
@@ -267,7 +267,7 @@ life_illegal_items = [["heroinu",90],["goldbar",800],["schmuck",50],["skalpell",
 sell_array = 
 [
 	["apple",10],
-	["heroinu",15],
+	["heroinu",80],
 	["heroinp",120],
 	["salema",10],
 	["ornate",10],
@@ -283,12 +283,13 @@ sell_array =
 	["turtlesoup",40],
 	["donuts",1],
 	["marijuana",120],
+	["cannabis",60],
 	["tbacon",100],
 	["lockpick",75],
 	["pickaxe",130],
 	["redgull",500],
 	["peach",10],
-	["cocaine",30],
+	["cocaine",60],
 	["cocainep",240],
 	["diamond",30],
 	["diamondc",240],

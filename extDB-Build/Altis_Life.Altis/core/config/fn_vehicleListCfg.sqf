@@ -72,8 +72,8 @@ switch (_shop) do
 			["O_Truck_03_transport_F",42000], //285Plätze
 			["O_Truck_03_covered_F",47000], //300Plätze
 			["B_Truck_01_transport_F",62000], //325Plätze
-			["O_Truck_03_device_F",270000],//350Plätze
-			["B_Truck_01_box_F",360000]  //450Plätze
+			["O_Truck_03_device_F",120000],//350Plätze
+			["B_Truck_01_box_F",180000]  //450Plätze
 		];	
 	};
 	
@@ -98,6 +98,8 @@ switch (_shop) do
 			["B_G_Offroad_01_armed_F",160000]];
 			_return set[count _return,
 			["I_MRAP_03_F",270000]];
+			_return set[count _return,
+			["B_APC_Tracked_01_CRV_F",250350000]];
 		};
 	};
 	
@@ -129,9 +131,9 @@ switch (_shop) do
 		_return =
 		[
 			["B_Heli_Light_01_F",60000],
-			["O_Heli_Light_02_unarmed_F",420000],
-			["I_Heli_Transport_02_F",670000],         //Neu
-			["B_Heli_Transport_01_F",1823000]
+			["O_Heli_Light_02_unarmed_F",140000],
+			["I_Heli_Transport_02_F",270000],         //Neu
+			["B_Heli_Transport_01_camo_F",703000]
 		];
 	};
 	
@@ -180,6 +182,11 @@ switch (_shop) do
 		{
 			_return set[count _return,
 			["B_MRAP_01_hmg_F",350000]];
+		};
+		if(__GETC__(life_coplevel) > 6) then
+		{
+			_return set[count _return,
+			["B_UAV_02_CAS_F",250350000]];
 		};
 	};
 	

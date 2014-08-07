@@ -51,7 +51,9 @@ switch(_shop) do
 			case (__GETC__(life_coplevel) == 1): 
 			{
 				["Anwaerter Shop",
-					[
+					[	
+						["arifle_SDAR_F","Unterwasser",2500],
+						["20Rnd_556x45_UW_mag",nil,50],
 						["hgun_P07_snds_F","Taser Pistole",500],
 						["16Rnd_9x21_Mag","Taser Magazin",30],
 						["Binocular",nil,150],
@@ -70,8 +72,11 @@ switch(_shop) do
 			case (__GETC__(life_coplevel) == 2): 
 			{
 				["Kommissar",
-					[
+					[	
+						["arifle_SDAR_F","Unterwasser",2500],
+						["20Rnd_556x45_UW_mag",nil,50],
 						["SMG_01_F","Taser SMG",800],
+						["muzzle_snds_acp",nil,300],
 						["30Rnd_45ACP_Mag_SMG_01","Taser SMG Magazine",25],
 						["muzzle_snds_acp",nil,1500],
 						["hgun_P07_snds_F","Taser Pistole",500],
@@ -126,7 +131,9 @@ switch(_shop) do
 			case (__GETC__(life_coplevel) == 3): 
 			{
 				["HauptKommissar",
-					[
+					[	
+						["arifle_SDAR_F","Unterwasser",2500],
+						["20Rnd_556x45_UW_mag",nil,50],
 						["SMG_01_F","Taser SMG",800],
 						["30Rnd_45ACP_Mag_SMG_01","Taser SMG Magazine",25],
 						["muzzle_snds_acp",nil,1500],
@@ -213,6 +220,8 @@ switch(_shop) do
 			{
 				["Einsatzleiter",
 					[
+						["arifle_SDAR_F","Unterwasser",2500],
+						["20Rnd_556x45_UW_mag",nil,50],
 						["SMG_01_F","Taser SMG",800],
 						["30Rnd_45ACP_Mag_SMG_01","Taser SMG Magazine",25],
 						["muzzle_snds_acp",nil,1500],
@@ -305,6 +314,8 @@ switch(_shop) do
 			{
 				["Polizei Chef",
 					[
+						["arifle_SDAR_F","Unterwasser",2500],
+						["20Rnd_556x45_UW_mag",nil,50],
 						["SMG_01_F","Taser SMG",800],
 						["30Rnd_45ACP_Mag_SMG_01","Taser SMG Magazine",25],
 						["muzzle_snds_acp",nil,1500],
@@ -404,6 +415,8 @@ switch(_shop) do
 			{
 				["SEK",
 					[
+						["arifle_SDAR_F","Unterwasser",2500],
+						["20Rnd_556x45_UW_mag",nil,50],
 						["SMG_01_F","Taser SMG",800],
 						["30Rnd_45ACP_Mag_SMG_01","Taser SMG Magazine",25],
 						["muzzle_snds_acp",nil,1500],
@@ -503,7 +516,9 @@ switch(_shop) do
 			case (__GETC__(life_coplevel) == 7): 
 			{
 				["Anti Terror",   //Hier sind alle Waffen Ohne aufsätze inkl Muni
-					[
+					[	
+						["arifle_SDAR_F","Unterwasser",2500],
+						["20Rnd_556x45_UW_mag",nil,50],
 						["SMG_01_F","Taser SMG",800],
 						["hgun_P07_snds_F","Taser Pistole",500],
 						["muzzle_snds_acp",nil,1500],
@@ -632,6 +647,8 @@ switch(_shop) do
 			{
 				["Mohammed's Jihadi Shop",
 					[
+						["arifle_SDAR_F","Unterwasser",2500],
+						["20Rnd_556x45_UW_mag",nil,50],
 						["SMG_02_F",nil,2500],
 						["30Rnd_9x21_Mag",nil,200],
 						["arifle_MXC_F",nil,4200],
@@ -667,6 +684,7 @@ switch(_shop) do
 						["SmokeShell",nil,150],			//NEU
 						["SmokeShellGreen","Tränengas",300],
 						["HandGrenade",nil,200],
+						["Rangefinder",nil,3500],
 						["Binocular",nil,150],
 						["ItemGPS",nil,1500],
 						["ToolKit",nil,150],
@@ -780,6 +798,8 @@ switch(_shop) do
 			{
 				["Gangversteck Waffenhändler",
 					[
+						["arifle_SDAR_F","Unterwasser",2500],
+						["20Rnd_556x45_UW_mag",nil,50],
 						["SMG_02_F",nil,2500],
 						["30Rnd_9x21_Mag",nil,200],
 						["arifle_MXC_F",nil,4200],
@@ -843,7 +863,7 @@ switch(_shop) do
 						["HandGrenade",nil,200],
 						["SatchelCharge_Remote_Mag",nil,75000],
 						["Binocular",nil,150],
-						["Rangefinder",nil,850],
+						["Rangefinder",nil,2000],
 						["ItemGPS",nil,1500],
 						["ToolKit",nil,150],
 						["FirstAidKit",nil,150],
@@ -862,7 +882,7 @@ switch(_shop) do
 	{
 		["Altis General Store",
 			[
-				["Rangefinder",nil,850],
+				["Rangefinder",nil,5000],
 				["Binocular",nil,150],
 				["ItemGPS",nil,100],
 				["FirstAidKit",nil,150],
