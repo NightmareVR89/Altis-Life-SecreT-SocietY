@@ -87,7 +87,8 @@ switch (_shop) do
 			["C_Hatchback_01_sport_F",12000], //45plätze
 			["B_Heli_Light_01_F",60000],
 			["O_Heli_Light_02_unarmed_F",250000],
-			["I_Heli_Transport_02_F",450000]
+			["I_Heli_Transport_02_F",450000],
+			["B_Heli_Transport_01_camo_F",703000]
 		];
 		
 		if(license_civ_rebel) then
@@ -132,8 +133,7 @@ switch (_shop) do
 		[
 			["B_Heli_Light_01_F",60000],
 			["O_Heli_Light_02_unarmed_F",140000],
-			["I_Heli_Transport_02_F",270000],         //Neu
-			["B_Heli_Transport_01_camo_F",703000]
+			["I_Heli_Transport_02_F",270000]         //Neu
 		];
 	};
 	
