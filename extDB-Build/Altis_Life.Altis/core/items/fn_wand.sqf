@@ -7,7 +7,7 @@
 	Creates a Schranke...
 */
 private["_position","_wand"];
-if(playerSide != west) then exitWith {hint "Du bist kein Cop!"};
+if(playerSide != west) exitWith {hint "Du bist kein Cop!"};
 _wand = "Land_Shoot_House_Wall_Stand_F" createVehicle [0,0,0];
 _wand attachTo[player,[0,5.5,0]];
 _wand setDir 90;

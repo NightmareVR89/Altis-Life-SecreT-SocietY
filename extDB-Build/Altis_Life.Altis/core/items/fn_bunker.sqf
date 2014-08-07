@@ -7,7 +7,7 @@
 	Creates a Bunker...
 */
 private["_position","_bunker"];
-if(playerSide != west) then exitWith {hint "Du bist kein Cop!"};
+if(playerSide != west) exitWith {hint "Du bist kein Cop!"};
 _bunker = "Land_BagBunker_Small_F" createVehicle [0,0,0];
 _bunker attachTo[player,[0,5.5,0]];
 _bunker setDir 90;
