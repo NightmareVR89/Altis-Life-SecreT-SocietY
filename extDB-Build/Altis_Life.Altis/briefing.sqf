@@ -31,9 +31,9 @@ player createDiaryRecord ["change",
 <br/>
 <font color='#A9E2F3'>CHANGE LOG</font><br/><br/>
 - FIXES: map fixes <br/>
-- ADD: pyrgos markthändler+carspawn<br/>
 <br/>
-- FIXES: diverse performance fixes <br/>
+- FIXES: marktpreise überarbeitet<br/>
+<br/>
 "
 		]
 	];
@@ -46,24 +46,20 @@ player createDiaryRecord ["ganginfo",
 			"", 
 "
 <br/>
-<font color='#A9E2F3'>GANG BREICHE</font><br/><br/>
-Die auf der Map makierten Breiche kannst du wenn du in einer Gang bist eingenommen werden.
+<font color='#A9E2F3'>GANG BEREICHE</font><br/><br/>
+Die auf der Map markierten Bereiche kannst du, wenn du in einer Gang bist, einnehmen.
 Dazu gründest du unter (z) eine Gang. 
 An den Punkten findest du eine <font color='#A9E2F3'>Schwarze Fahne</font> an der ihr den Gang-Bereich für euch einnehmen und halten könnt.
-<br/><br/>
 Ist ein Bereich in euer Hand so kann er euch aber auch von einer anderen Gang oder der Polizei streitig gemacht werden.
-Um ihn zurück zu erobern muss ein Gang-Mitglied ebenfalls an diese Fahne tretten und auf [Gebiet erobern] drücken.
+Um ihn zurück zu erobern muss ein Gang-Mitglied ebenfalls an diese Fahne treten und auf [Gebiet erobern] drücken.
 Das ist aber nur möglich wenn sich kein anderes Besitzer-Gang-Mitglied im Umkreis von 300m um die Fahne befindet. 
-<br/><br/>
-<font color='#A9E2F3'>WICHTIG:</font> um einen Bereich zu erobern darf ohne Vorwarnung <font color='#FF0000'>scharf geschossen</font> werden!
-<font color='#A9E2F3'>WICHTIG:</font> Medics dürfen nicht <font color='#FF0000'>beschossen</font> werden!
-<font color='#A9E2F3'>WICHTIG:</font> Medics sind unparteiisch <font color='#FF0000'>und dürfen</font> von allesn seiten angefordert werden!
-Es werden keine Items oder Waffen ect. ersetzt oder anderweitig erstattet. Überlegt euch also vorher ob ihr diese Bereiche betretet oder meidet den Bereich.
+<font color='#A9E2F3'>WICHTIG:</font> Um einen Bereich zu erobern darf ohne Vorwarnung <font color='#FF0000'>scharf geschossen</font> werden! 
+Es werden keine Items oder Waffen etc. ersetzt oder anderweitig erstattet. Überlegt euch also vorher ob ihr diese Bereiche betretet.
+In den Gangbereichen, 3 an der Zahl, könnt ihr je nach Gebiet eine illegale Droge ohne Lizenz verarbeiten.
 "
 		]
 	];
 
-	
 //---------------------------------------------------//
 
 player createDiaryRecord ["safezones",
@@ -71,22 +67,20 @@ player createDiaryRecord ["safezones",
 			"", 
 "
 <br/>
-In den <font color='#FF0000'>ROTEN BEREICHEN</font> braucht ihr euch nicht wundern wenn auf euch geschossen wird! 
+In dem <font color='#FF0000'>Rebellengebiet</font> braucht ihr euch nicht wundern wenn auf euch geschossen wird! 
 Es wird dort natürlich auch ein gewisses RP vorrausgesetzt!
 <br/>
 <br/>
 <font color='#A9E2F3'>ES GIBT SAFEZONES IN FOLGENEN BEREICHEN :</font><br/><br/>
 - Kavala 250m um den Marktplatz<br/>
-- Athira 200m um den Marktplatz<br/>
-- Sofia 150m um den Marktplatz<br/>
-- Secret City 150m um den Marktplatz<br/>
-- Pyrgos 150m um den Marktplatz<br/>
+- Athira 200m um den Bankautomat<br/>
+- Sofia 150m um den Bankautomat<br/>
+- Pyrgos 150m um den Bankautomat<br/>
 <br/>
-<font color='#A9E2F3'>In diesen Bereichen sind alle Waffen deaktiviert.</font><br/><br/>
 <font color='#A9E2F3'>WICHTIG:</font> In den Gang-Bereichen wird meistens ohne Vorwarnung <font color='#FF0000'>scharf geschossen</font>! 
-Es werden keine Items oder Waffen ect. ersetzt oder anderweitig erstattet. Überlegt euch also vorher ob ihr diese Bereiche betretet oder meidet den Bereich.
+Es werden keine Items oder Waffen ect. ersetzt oder anderweitig erstattet. Überlegt euch also vorher ob ihr diese Bereiche betretet.
 
-<br/><br/>Für Fragen - TEAMSPEAK-IP: 46.20.46.239 : 10137
+<br/><br/>Für Fragen - TEAMSPEAK-IP: 148.251.84.132
 "
 		]
 	];
@@ -101,28 +95,28 @@ player createDiaryRecord ["pricelist",
 "
 <br/>
 <font color='#A9E2F3'>FAHRZEUGE: (Mietpreise) (Permanent 50% mehr)</font><br/><br/>
-- <font color='#A9E2F3'>Quadbike</font> $525 <font color='#A9E2F3'>INVENTAR:</font> 25<br/>
-- <font color='#A9E2F3'>Go-Kart</font> $5500 <font color='#A9E2F3'>INVENTAR:</font> 10 <font color='#A9E2F3'>(nur VIP)</font><br/>
-- <font color='#A9E2F3'>Hatchback</font> $2250 <font color='#A9E2F3'>INVENTAR:</font> 40<br/>
-- <font color='#A9E2F3'>Hatchback (Sport)</font> $18000 <font color='#A9E2F3'>INVENTAR:</font> 45<br/>
-- <font color='#A9E2F3'>Offroad</font> $6900 <font color='#A9E2F3'>INVENTAR:</font> 65<br/>
-- <font color='#A9E2F3'>SUV</font> $5700 <font color='#A9E2F3'>INVENTAR:</font> 50<br/>
-- <font color='#A9E2F3'>Truck Boxer</font> $12000 <font color='#A9E2F3'>INVENTAR:</font> 100<br/>
-- <font color='#A9E2F3'>Fuel Truck</font> $2100 <font color='#A9E2F3'>INVENTAR:</font> 150 <font color='#A9E2F3'>(nur VIP)</font><br/>
+- <font color='#A9E2F3'>Quadbike</font> $2500 <font color='#A9E2F3'>INVENTAR:</font> 25<br/>
+- <font color='#A9E2F3'>Go-Kart</font> $15000 <font color='#A9E2F3'>INVENTAR:</font> 10 <font color='#A9E2F3'>(nur VIP)</font><br/>
+- <font color='#A9E2F3'>Hatchback</font> $10000 <font color='#A9E2F3'>INVENTAR:</font> 40<br/>
+- <font color='#A9E2F3'>Hatchback (Sport)</font> $8000 <font color='#A9E2F3'>INVENTAR:</font> 45<br/>
+- <font color='#A9E2F3'>Offroad</font> $13000 <font color='#A9E2F3'>INVENTAR:</font> 65<br/>
+- <font color='#A9E2F3'>SUV</font> $35000 <font color='#A9E2F3'>INVENTAR:</font> 50<br/>
+- <font color='#A9E2F3'>Truck Boxer</font> $45000 <font color='#A9E2F3'>INVENTAR:</font> 100<br/>
+- <font color='#A9E2F3'>Fuel Truck</font> $7500 <font color='#A9E2F3'>INVENTAR:</font> 150 <font color='#A9E2F3'>(nur VIP)</font><br/>
 <br/>
-- <font color='#A9E2F3'>Zamak Transport</font> $36750 <font color='#A9E2F3'>INVENTAR:</font> 200<br/>
-- <font color='#A9E2F3'>Zamak Transport (Covered)</font> $54000 <font color='#A9E2F3'>INVENTAR:</font> 250<br/>
-- <font color='#A9E2F3'>Tempest Transport (Covered)</font> $70000 <font color='#A9E2F3'>INVENTAR:</font> 300<br/>
-- <font color='#A9E2F3'>Tempest-Gerät Transport (Covered)</font> $126000 <font color='#A9E2F3'>INVENTAR:</font> 300<br/>
-- <font color='#A9E2F3'>HEMTT Transport</font> $93000 <font color='#A9E2F3'>INVENTAR:</font> 325<br/>
-- <font color='#A9E2F3'>HEMTT Transport (Covered)</font> $270000 <font color='#A9E2F3'>INVENTAR:</font> 450<br/>
+- <font color='#A9E2F3'>Zamak Transport</font> $75000 <font color='#A9E2F3'>INVENTAR:</font> 200<br/>
+- <font color='#A9E2F3'>Zamak Transport (Covered)</font> $125000 <font color='#A9E2F3'>INVENTAR:</font> 300<br/>
+- <font color='#A9E2F3'>Tempest Transport (Covered)</font> $300000 <font color='#A9E2F3'>INVENTAR:</font> 580<br/>
+- <font color='#A9E2F3'>HEMTT Transport (Covered)</font> $450000 <font color='#A9E2F3'>INVENTAR:</font> 650<br/>
+- <font color='#A9E2F3'>HEMTT Box</font> $250000 <font color='#A9E2F3'>INVENTAR:</font> 700 <font color='#A9E2F3'>(nur VIP)</font><br/>
 <br/>
-- <font color='#A9E2F3'>MH-9 Hummingbird</font> $90000 <font color='#A9E2F3'>INVENTAR:</font> 90<br/>
-- <font color='#A9E2F3'>PO-30 Orca</font> $300000 <font color='#A9E2F3'>INVENTAR:</font> 210<br/>
-- <font color='#A9E2F3'>CH-49 Mohawk</font> $600000 <font color='#A9E2F3'>INVENTAR:</font> 375 <font color='#A9E2F3'>(nur VIP)</font><br/>
+- <font color='#A9E2F3'>MH-9 Hummingbird</font> $300000 <font color='#A9E2F3'>INVENTAR:</font> 90<br/>
+- <font color='#A9E2F3'>PO-30 Orca</font> $600000 <font color='#A9E2F3'>INVENTAR:</font> 100<br/>
+- <font color='#A9E2F3'>UH-80 Ghost Hawk</font> $1200000 <font color='#A9E2F3'>INVENTAR:</font> 200 <font color='#A9E2F3'>(nur VIP)</font><br/>
+- <font color='#A9E2F3'>CH-49 Mohawk</font> $1200000 <font color='#A9E2F3'>INVENTAR:</font> 400 <font color='#A9E2F3'>(nur VIP)</font><br/>
 <br/>
-- <font color='#A9E2F3'>Ifrit</font> $35000 <font color='#A9E2F3'>INVENTAR:</font> 60<br/>
-- <font color='#A9E2F3'>Offroad (MG)</font> $65000 <font color='#A9E2F3'>INVENTAR:</font> 65<br/>
+- <font color='#A9E2F3'>Ifrit</font> $2500000 <font color='#A9E2F3'>INVENTAR:</font> 60<br/>
+- <font color='#A9E2F3'>Offroad (MG)</font> $2500000 <font color='#A9E2F3'>INVENTAR:</font> 65<br/>
 <br/>
 
 "
@@ -139,31 +133,34 @@ player createDiaryRecord ["licenses",
 <font color='#A9E2F3'>PREISE FÜR LIZENZEN:</font><br/><br/>
 - <font color='#A9E2F3'>Führerschein</font> $350 <br/>
 - <font color='#A9E2F3'>Pilotenschein</font> $10000 <br/>
+- <font color='#A9E2F3'>ADAC Mitgliedschaft</font> $5000 <br/>
 - <font color='#A9E2F3'>Heroin Lizenz</font> $15000 <br/>
-- <font color='#A9E2F3'>Gang Lizenz</font> $50000 <br/>
+- <font color='#A9E2F3'>Gang Lizenz</font> $70000 <br/>
 - <font color='#A9E2F3'>Öl Lizenz</font> $5000 <br/>
 - <font color='#A9E2F3'>Tauchschein</font> $2000 <br/>
 - <font color='#A9E2F3'>Bootsführerschein</font> $1000 <br/>
 - <font color='#A9E2F3'>Waffen Lizenz</font> $4000 <br/>
-- <font color='#A9E2F3'>Rebelen Lizenz</font> $15000 <br/>
+- <font color='#A9E2F3'>Rebellen Lizenz</font> $45000 <br/>
 - <font color='#A9E2F3'>LKW Führerschein</font> $6000 <br/>
 - <font color='#A9E2F3'>Diamanten Lizenz</font> $19000 <br/>
 - <font color='#A9E2F3'>Kupfer Lizenz</font> $6000 <br/>
-- <font color='#A9E2F3'>Eisen Lizenz</font> $7500 <br/>
+- <font color='#A9E2F3'>Eisen Lizenz</font> $9500 <br/>
 - <font color='#A9E2F3'>Sand Lizenz</font> $4000 <br/>
 - <font color='#A9E2F3'>Salz Lizenz</font> $7000 <br/>
-- <font color='#A9E2F3'>Kokain Lizenz</font> $25000 <br/>
+- <font color='#A9E2F3'>Kokain Lizenz</font> $19000 <br/>
 - <font color='#A9E2F3'>Marijuana Lizenz</font> $9000 <br/>
 - <font color='#A9E2F3'>Zement Lizenz</font> $6500 <br/>
-- <font color='#A9E2F3'>Hausbesitzer Lizenz</font> $30000 <br/>
-- <font color='#A9E2F3'>Brauerei Lizenz</font> $5000 <br/>
-- <font color='#A9E2F3'>LSD Lizenz</font> $20000 <br/>
+- <font color='#A9E2F3'>Hausbesitzer Lizenz</font> $100000 <br/>
+- <font color='#A9E2F3'>Wein Lizenz</font> $1500 <br/>
+
 - <font color='#A9E2F3'>Moonshine Lizenz</font> $5000 <br/>
-- <font color='#A9E2F3'>Weintraube Lizenz</font> $1500 <br/>
-- <font color='#A9E2F3'>Tabak Lizenz</font> $3000 <br/>
-- <font color='#A9E2F3'>Wertstoffe Lizenz</font> $7000 <br/>
-- <font color='#A9E2F3'>Kunstoff Lizenz</font> $20000 <br/>
-- <font color='#A9E2F3'>Edelmetall Lizenz</font> $30000 <br/>
+- <font color='#A9E2F3'>Tabak Lizenz</font> $2000 <br/>
+- <font color='#A9E2F3'>LSD Lizenz</font> $10000 <br/>
+- <font color='#A9E2F3'>Froschbein Lizenz</font> $8750 <br/>
+- <font color='#A9E2F3'>Wertstoff Lizenz</font> $7000 <br/>
+- <font color='#A9E2F3'>Kunststoff Lizenz</font> $9000 <br/>
+- <font color='#A9E2F3'>Edelmetall Lizenz</font> $15000 <br/>
+- <font color='#A9E2F3'>Grabschänder Lizenz</font> $11000 <br/>
 "
 		]
 	];	
@@ -180,8 +177,9 @@ player createDiaryRecord ["traderinfo",
 <br/>
   <font color='#A9E2F3'>Lebensmittel</font><br/>
 <br/>
-- Äpfel<font color='#A9E2F3'> --> Obsthändler</font><br/>
-- Pfirsiche<font color='#A9E2F3'> --> Obsthändler</font><br/>
+- Äpfel<font color='#A9E2F3'> --> Markt</font><br/>
+- Pfirsiche<font color='#A9E2F3'> --> Markt</font><br/>
+- Weintrauben<font color='#A9E2F3'> --> Markt</font><br/>
 
 - Salema <font color='#888888'>(Tauchen o. Boot) </font><font color='#A9E2F3'> --> Fischmarkt</font><br/>
 - Ornate <font color='#888888'>(Tauchen o. Boot) </font><font color='#A9E2F3'> --> Fischmarkt</font><br/>
@@ -192,24 +190,30 @@ player createDiaryRecord ["traderinfo",
 <br/>
   <font color='#A9E2F3'>Rohstoffe </font><br/>
 <br/>
-- Kupfer Ore <font color='#888888'>(Spitzhacke) </font><font color='#A9E2F3'> -> </font> Kupfer Barren <font color='#A9E2F3'> --> Kupferhändler</font><br/>
-- Eisen Ore <font color='#888888'>(Spitzhacke) </font><font color='#A9E2F3'> -> </font> Eisen Barren <font color='#A9E2F3'> --> Eisenhändler</font><br/>
-- Silber Ore <font color='#888888'>(Spitzhacke) </font><font color='#A9E2F3'> -> </font> Silber Barren <font color='#A9E2F3'> --> Schmuckhändler</font><br/>
-- Sand <font color='#888888'>(Spitzhacke) </font><font color='#A9E2F3'> -> </font> Glass <font color='#A9E2F3'> --> Glasshändler</font>  <br/>
-- Roh-Öl <font color='#888888'>(Ölpumpe) </font><font color='#A9E2F3'> -> </font> Raffiniertes Öl <font color='#A9E2F3'> --> Ölhändler</font>  <br/>
+- Kupferkabel <font color='#888888'>(Spitzhacke) </font><font color='#A9E2F3'> -> </font> Kupfer Barren <font color='#A9E2F3'> --> Kupferhändler</font><br/>
+- Roheisen <font color='#888888'>(Spitzhacke) </font><font color='#A9E2F3'> -> </font> Eisen Barren <font color='#A9E2F3'> --> Eisenhändler</font><br/>
+- Sand <font color='#888888'>(Spitzhacke) </font><font color='#A9E2F3'> -> </font> Glas <font color='#A9E2F3'> --> Glashändler</font>  <br/>
+- Roh-Öl <font color='#888888'>(Spitzhacke) </font><font color='#A9E2F3'> -> </font> Raffiniertes Öl <font color='#A9E2F3'> --> Ölhändler</font>  <br/>
 - Steine <font color='#888888'>(Spitzhacke) </font><font color='#A9E2F3'> -> </font> Zement <font color='#A9E2F3'> --> </font> Zementhändler <br/>
 - Salz <font color='#888888'>(Spitzhacke) </font><font color='#A9E2F3'> -> </font> Veredeltes Salz <font color='#A9E2F3'> --> Salzhändler</font>  <br/>
-- Diamanten <font color='#888888'>(Spitzhacke) </font><font color='#A9E2F3'> -> </font> Geschl. Diamanten <font color='#A9E2F3'> --> Händler</font>  <br/>
+- Diamanten <font color='#888888'>(Spitzhacke) </font><font color='#A9E2F3'> -> </font> Geschl. Diamanten <font color='#A9E2F3'> --> Diamantenhändler</font>  <br/>
+- Tabak <font color='#A9E2F3'> -> </font> Zigarren <font color='#A9E2F3'> --> Tabakhändler</font>  <br/>
+- Weintrauben <font color='#A9E2F3'> -> </font> Wein <font color='#888888'>(Weinverarbeiter) </font><font color='#A9E2F3'> --> Wongs Spezialitäten</font>  <br/>
+- Müll <font color='#A9E2F3'> -> </font> Wertstoffe<font color='#888888'>(Müllverarbeiter) </font><font color='#A9E2F3'> --> Wertstoffhändler</font>  <br/>
+- Wertstoff <font color='#A9E2F3'> -> </font> Kunststoff <font color='#888888'>(Kunststoffverarbeiter) </font><font color='#A9E2F3'> --> Kunststoffhändler</font>  <br/>
+- Wertstoff <font color='#A9E2F3'> -> </font> Edelmetall <font color='#888888'>(Edelmetallverarbeiter) </font><font color='#A9E2F3'> --> Edelmetallhändler</font>  <br/>
 <br/>
   <font color='#A9E2F3'>Illegale Rohstoffe</font><br/>
 <br/>
-- Frösche <font color='#888888'>(von Froschteich) </font><font color='#A9E2F3'> -> </font> LSD <font color='#A9E2F3'> --> Drogendealer </font><br/>
-- Schlafmohn <font color='#A9E2F3'> -> </font> Heroin <font color='#A9E2F3'> --> Drogendealer </font><br/>
-- Kokainblätter <font color='#A9E2F3'> -> </font> Kokain <font color='#A9E2F3'> --> Drogendealer </font><br/>
-- Cannabis <font color='#A9E2F3'> -> </font> Marijuana <font color='#A9E2F3'> --> Drogendealer </font><br/>
-- Heroin <font color='#A9E2F3'> -> </font> verarb. Heroin <font color='#A9E2F3'> --> Drogendealer </font><br/>
-- Schildkröten <font color='#888888'>(nur mit Waffe SDAR) </font><font color='#A9E2F3'> --> Schildkrötenhändler</font><br/>
-- Maische <font color='#888888'>(von Brauerei) </font><font color='#A9E2F3'> -> </font> Moonshine <font color='#A9E2F3'> --> Moonshinehändler </font><br/>
+- Frösche<font color='#A9E2F3'> -> </font> LSD <font color='#888888'>(Pierres Küche) </font><font color='#A9E2F3'> --> Drogendealer</font>  <br/>
+- Cannabis<font color='#A9E2F3'> -> </font> Marihuana <font color='#888888'>(Marihuanaverarbeiter) </font><font color='#A9E2F3'> --> Drogendealer</font>  <br/>
+- Unreines Heroin<font color='#A9E2F3'> -> </font> Heroin <font color='#888888'>(Heroinverarbeiter) </font><font color='#A9E2F3'> --> Drogendealer</font>  <br/>
+- Koka<font color='#A9E2F3'> -> </font> Kokain <font color='#888888'>(Kokainverarbeiter) </font><font color='#A9E2F3'> --> Drogendealer</font>  <br/>
+- Schildkröten <font color='#888888'>(nur mit Waffe SDAR) </font><font color='#A9E2F3'> --> Schildkrötendealer</font><br/>
+- Grabschänder<font color='#A9E2F3'> -> </font> Schmuck <font color='#888888'>(Grabschmuckverarbeiter) </font><font color='#A9E2F3'> --> Edelmetallhändler</font>  <br/>
+- Goldbarren<font color='#A9E2F3'> -> </font> Goldbarren <font color='#888888'>(Staatsbank) </font><font color='#A9E2F3'> --> Goldbarrenankauf</font>  <br/>
+- Niere <font color='#888888'>(nur mit Skalpell) </font><font color='#A9E2F3'> --> Organhändler</font><br/>
+- Weintrauben <font color='#888888'>(Moonshinebrauerei) </font><font color='#A9E2F3'> -> </font> Moonshine <font color='#A9E2F3'> --> Wongs Spezialitäten </font><br/>
 <br/><br/>
 
 "
@@ -225,14 +229,14 @@ player createDiaryRecord ["serverrules",
 "
 <br/>
 <font color='#A9E2F3'>SPEICHERN VON FAHRZEUGEN:</font><br/><br/>
-Fahrzeuge despawnen wenn sie 60min. nicht benutzt werden und keine Player im Umkreis von 300m vorhanden sind.<br/>
+Fahrzeuge despawnen wenn sie 30min. nicht benutzt werden und keine Player im Umkreis von 300m vorhanden sind.<br/>
 Fahrzeuge die nicht permanent gekauft wurden, können nicht in Garagen gespeichert werden.<br/>
 Fahrzeuge die nicht in Garagen vor Server-Restart gebracht werden, sind danach nicht gespeichert und gehen verloren.<br/>
 
 <br/>
 <font color='#A9E2F3'>SPEICHERN VOM INVENTAR:</font><br/><br/>
 Dein Inventar speichert sich automatisch alle 10min.<br/>
-Du kannst aber zur deiner eigenen Sicherheit vor dem ausloggen auf den Button: SPEICHERN im Z-Menü drücken.<br/>
+Du kannst aber zu deiner eigenen Sicherheit vor dem ausloggen auf den Button: SPEICHERN im Z-Menü drücken.<br/>
 
 <br/><br/>Für Fragen - TEAMSPEAK-IP: 148.251.84.132
 "
@@ -245,7 +249,7 @@ Du kannst aber zur deiner eigenen Sicherheit vor dem ausloggen auf den Button: S
 	
 player createDiaryRecord ["serverrules",
 		[
-			"Gesetzbuch", 
+			"SecretSocietY Gesetzbuch", 
 "
 <br/>
 == Allgemein =======================================
@@ -262,7 +266,7 @@ player createDiaryRecord ["serverrules",
 - Das Verteidigen von Freunden und / oder Gangmitgliedern ist erlaubt.<br/>
 <br/>
 <font color='#A9E2F3'>§4 Donatorregeln</font><br/>
-- Die Weitergabe von im Donatorshop erworbenen Gegenständen ist verboten.<br/>
+- Die Weitergabe von Gegenständen die im Donatorshop erworben wurden ist verboten.<br/>
 - Das Aufheben von Donatorwaffen ist nicht verboten, die Gegenstände werden dann aber als illegal gehandhabt.<br/>
 <br/>
 <font color='#A9E2F3'>§5 One-Life-Regeln</font><br/>
@@ -270,71 +274,67 @@ player createDiaryRecord ["serverrules",
 - Ein Event beginnt mit Eröffnung des RP und endet mit dem Ausgang dessen.<br/>
 - Suizid ist kein Tod.<br/>
 - Das wiederbeleben von Toten fällt nicht unter die One-Life-Regel<br/>
+- Sanitäter sind neutral und dürfen definitiv nicht an- bzw erschossen, entführt und ausgeraubt werden.<br/>
 <br/>
 <font color='#A9E2F3'>§6 Support</font><br/>
 - Support gibt es NUR im TS. Je nach Gebiet sind entweder die Admins oder der Polizeichef dafür zuständig<br/>
+- Rückerstattungen müssen im Forum niedergeschrieben werden mit möglichst genauen Angaben<br/>
 
 <br/>
 == Zivilisten ======================================
 <br/><br/>
-<font color='#A9E2F3'>§1 Das Töten eines Medics</font><br/>
-- wird als Kriegshandlung gewertet und mit 20.000$ beschtraft<br/>
-<font color='#A9E2F3'>WICHTIG:</font> Medics dürfen nicht <font color='#FF0000'>beschossen</font> werden!
-<font color='#A9E2F3'>WICHTIG:</font> Medics sind unparteiisch <font color='#FF0000'>und dürfen</font> von allesn seiten angefordert werden!
 
-<font color='#A9E2F3'>§2 Absichtliche Zerstörung von Fahrzeugen</font><br/>
+<font color='#A9E2F3'>§1 Absichtliche Zerstörung von Fahrzeugen</font><br/>
 - Das vorsätzliche Zerstören von Fahrzeugen ohne Roleplayhintergrund ist verboten.<br/>
 - Das absichtliche Rammen von Fahrzeugen um sie zu zerstören ist verboten.<br/>
 <br/>
-<font color='#A9E2F3'>§3 Kommunikation</font><br/>
+<font color='#A9E2F3'>§2 Kommunikation</font><br/>
 - Der Side-Chat ist für normale, kurzweilige Kommunikation gedacht. Für alles weitere gibt es den Gruppen- oder Direct-Chat.<br/>
 - Spammen ist verboten.<br/>
 - Das Posten von Links (Fremdwerbung etc.) ist verboten.<br/>
 - Beleidigungen, Rassismus, Antisemitismus und pornografische Sprache ist verboten.<br/>
 <br/>
-<font color='#A9E2F3'>§4 Illegale Gegenstände</font><br/>
-Fahrzeuge: -Ifrit -Rebellenoffroad -Jegliche Einsatzfahrzeuge<br/>
-Waffen: -Lynx -Katiba -Rahim -Jegliche Polizeiwaffen<br/>
-Gegenstände: -Schildkrötenfleisch -Marihuana -Kokain -Heroin<br/>
+<font color='#A9E2F3'>§3 Illegale Gegenstände</font><br/>
+Fahrzeuge: -Ifrit -bewaffneter Rebellenoffroad - Strider -Jegliche Einsatzfahrzeuge<br/>
+Waffen: Alle Waffen die keine Faustwaffen sind plus PDW sowie jegliche Polizeiwaffen<br/>
+Gegenstände: -Schildkrötenfleisch -Marihuana -Kokain -Heroin -Moonshine - Schmuck - Goldbarren - Nieren<br/>
 (auch unverarbeitet)<br/>
 <br/>
-<font color='#A9E2F3'>§5 Einmischung in Polizeiaktionen</font><br/>
+<font color='#A9E2F3'>§4 Einmischung in Polizeiaktionen</font><br/>
 - In Rucksäcke von Polizisten gucken ist verboten.<br/>
 - Das dauerhafte spionieren und / oder stalken von Polizisten ist verboten.<br/>
 - Das dauerhafte Blocken von Polizisten um diese daran zu hindern ihre Pflicht zu tun ist verboten.<br/>
 <br/>
-<font color='#A9E2F3'>§6 Verhalten bei polizeilichen Maßnahmen</font><br/>
+<font color='#A9E2F3'>§5 Verhalten bei polizeilichen Maßnahmen</font><br/>
 - Den Anweisungen der Polizei ist Folge zu leisten.<br/>
 - Wer eine Waffe bei sich führt sollte dies dem Polizisten mitteilen, bevor er aus dem Fahrzeug steigt.<br/>
 - Widerstand gegen polizeiliche Maßnahmen wird im schlimmsten Fall mit dem Gebrauch der Schusswaffe beantwortet.<br/>
 <br/>
-<font color='#A9E2F3'>§7 Verkehrsregeln</font><br/>
+<font color='#A9E2F3'>§6 Verkehrsregeln</font><br/>
 - Es gilt rechts vor Links.<br/>
 - Es gilt Rechtsfahrgebot.<br/>
 - Bei Nacht ist mit Licht zu fahren.<br/>
 - Das Parken auf der Straße ist verboten.<br/>
 - Jeder Fahrzeugführer hat Werkzeugkästen und Erste-Hilfe-Kästen mitzuführen.<br/>
 - Das absichtliche Behindern von Fahrzeugen ist verboten.<br/>
-- Das Überfliegen von Städten unterhalb von 200m ist verboten.<br/>
+- Das Überfliegen von Städten unterhalb von 150m ist verboten.<br/>
 - Das Landen von Helikoptern in Städten und auf Straßen ist verboten. Ausnahmeregelungen können durch die Polizei erteilt werden.<br/>
 <br/>
-<font color='#A9E2F3'>§8 Zusatz</font><br/>
-- Die Gesetze von Jah City (Altis) sind verpflichtend.<br/>
+<font color='#A9E2F3'>§7 Zusatz</font><br/>
+- Die Gesetze von Altis sind verpflichtend.<br/>
 - Bei Verstoß gegen die Gesetze wird nach Bußgeldkatalog bestraft. Im Wiederholungsfall droht eine Gefängnisstrafe.<br/>
+- Sanitäter sind neutral und dürfen definitiv nicht an- bzw erschossen, entführt und ausgeraubt werden.<br/>
 
 <br/>
 == Rebellen ========================================
 <br/><br/>
-<font color='#A9E2F3'>§1 Das Töten eines Medics</font><br/>
-- wird als Kriegshandlung gewertet und mit 20.000$ beschtraft<br/>
-<font color='#A9E2F3'>WICHTIG:</font> Medics dürfen nicht <font color='#FF0000'>beschossen</font> werden!
-<font color='#A9E2F3'>WICHTIG:</font> Medics sind unparteiisch <font color='#FF0000'>und dürfen</font> von allesn seiten angefordert werden!
 
-<font color='#A9E2F3'>§2 Raub, Diebstahl etc. (Event)</font><br/>
+<font color='#A9E2F3'>§1 Raub, Diebstahl etc. (Event)</font><br/>
 - Raub, Diebstahl etc. muss einen RP Hintergrund haben und sollte nicht zwangsweise mit dem Tot enden<br/>
 <br/>
-<font color='#A9E2F3'>§3 Rebellenverhalten</font><br/>
+<font color='#A9E2F3'>§2 Rebellenverhalten</font><br/>
 - Rebellen richten sich gegen den Staat und nicht gegen Zivilisten.<br/>
+- Sanitäter sind neutral und dürfen definitiv nicht an- bzw erschossen, entführt und ausgeraubt werden.<br/>
 
 <br/>
 == Polizisten ======================================
@@ -343,14 +343,14 @@ Gegenstände: -Schildkrötenfleisch -Marihuana -Kokain -Heroin<br/>
 
 <font color='#A9E2F3'>§1 Allgemeines Verhalten</font><br/>
 - Polizisten haben sich dauerhaft im TS aufzuhalten.<br/>
-- Jeder Polizist hat sich an die geltenden Gesetze in Jah City (Altis) zu halten.<br/>
+- Jeder Polizist hat sich an die geltenden Gesetze in Altis zu halten.<br/>
 - Die Polizei ist Freund und Helfer und sollte sich auch entsprechend verhalten.<br/>
 <br/>
-<font color='#A9E2F3'>§2 Patroullien</font><br/>
-- Jeder Polizist sollte im ihm zugeteilten Gebiet patroullieren.<br/>
-- Patroullien dürfen in Fahrzeugen mit maximal 50 km/h durchgeführt werden.<br/>
+<font color='#A9E2F3'>§2 Patrouillen</font><br/>
+- Jeder Polizist sollte im ihm zugeteilten Gebiet patrouilleren.<br/>
+- Patrouillen dürfen in Fahrzeugen mit maximal 50 km/h durchgeführt werden.<br/>
 - Bei Patrouillen dürfen Bürger ohne jeglichen Grund kontrolliert und durchsucht werden.<br/>
-- Auf Patroulliengängen ist die Waffe stets gesenkt zu halten.<br/>
+- Auf Patrouillengängen ist die Waffe stets gesenkt zu halten.<br/>
 <br/>
 <font color='#A9E2F3'>§3 Fahrzeugkontrollen und Checkpoints</font><br/>
 - Die Polizei darf sowohl feste als auch mobile Straßensperren errichten um Fahrzeugkontrollen durchzuführen.<br/>
@@ -367,8 +367,8 @@ Gegenstände: -Schildkrötenfleisch -Marihuana -Kokain -Heroin<br/>
 
 <br/>
 <font color='#A9E2F3'>§5 Verhalten bei Banküberfällen</font><br/>
-- Sind mindestens vier Polizisten im Dienst muss eingeschritten werden.<br/>
-- Patroullierende Polizisten begeben sich ebenfalls umgehend zum Bankraub.<br/>
+- Sind mindestens fünf Polizisten im Dienst muss eingeschritten werden.<br/>
+- Jeder Polizist begibt sich umgehend zum Bankraub.<br/>
 - Jede Möglichkeit die Bankräuber zu verhaften sollte genutzt werden.<br/>
 - Der Einsatz tödlicher Munition ist in §4 geregelt.<br/>
 <br/>
@@ -379,20 +379,21 @@ Gegenstände: -Schildkrötenfleisch -Marihuana -Kokain -Heroin<br/>
 - Nach einer Razzia / einem Raid darf das entsprechende Gebiet für mindestens 45 Minuten nicht erneut betreten werden.<br/>
 - Polizisten dürfen sich zur Observierung für maximal 15 Minuten im entsprechende Gebiet aufhalten.<br/>
 - Das becampen von illegalen Gebieten ist untersagt.<br/>
+- Sind keine 5 Polizisten online darf auch ein Raid mit weniger Polizisten durchgeführt werden<br/>
 - Die Observierung durch Drohnen ist kein Campen.<br/>
 <br/>
 <font color='#A9E2F3'>§7 Beschlagnahmung</font><br/>
 - Fahrzeuge dürfen nach mehr als 5 Minuten stillstand abgeschleppt werden.<br/>
 - Fahrzeuge welche Ordnungsgemäß auf Parkplätzen abgestellt und unbeschädigt sind dürfen nicht abgeschleppt werden.<br/>
 - Fahrzeuge welche für schwere Straftaten eingesetzt werden dürfen von der Polizei dauerhaft beschlagnahmt und zerstört werden.<br/>
-- Illegale Fahrzeuge dürfen sofort dauerhaft beschlagnahmt werden.<br/>
+- Illegale Fahrzeuge dürfen sofort zerstört werden.<br/>
 <br/>
 <font color='#A9E2F3'>§8 Festnahmen und Bußgelder</font><br/>
 - Jeder Polizist ist angehalten, Bußgelder statt Gefängnisstrafen zu verhängen.<br/>
 - Der Bußgeldkatalog ist hierbei bindend.<br/>
 - Wiederholungstäter sind zu inhaftieren.<br/>
 - Jeder Bürger hat das Recht zu erfahren, wieso er festgenommen wird.<br/>
-- Festgenommene Personen sind schnellstmöglich zu bearbeiten und dürfen nicht länger als 3 Minuten ohne RP Hintergrund stehen gelassen werden.<br/>
+- Festgenommene Personen sind schnellstmöglich zu bearbeiten und dürfen nicht länger als 5 Minuten ohne RP Hintergrund stehen gelassen werden.<br/>
 <br/>
 <font color='#A9E2F3'>§9 Verträge</font><br/>
 1. Hochrangige Beamte dürfen Informanten, Spionagegruppierungen oder andere Leute kontaktieren und einstellen und für die Hilfe bei polizeilichen Einsätzen/Operationen oder für das Dienen als Wachmann bezahlen. <br/>
@@ -439,16 +440,17 @@ player createDiaryRecord ["adacrules",
 			Melde dich im Teamspeak (IP: 148.251.84.132)<br/>
 			im ADAC-Channel.
 			<br/><br/>
-			1. Du solltest mindestens 18 Jahre sein.<br/>
-			2. RP und Spaß am ADAC Beruf.<br/>
-			3. Einhaltung der Regeln.<br/>
+			1. Du solltest mindestens 16 Jahre sein.<br/>
+			2. Keine Beschlagnahmungen ohne Grund<br/>
 			<br/>
 			Beim verhängen von Servicegebühren muss nach der <br/>
-			Preisliste des ADAC vorgegangen werden!<br/>
 			Preisliste des ADAC vorgegangen werden!<br/>
 			<br/>
 			Es dürfen keine Beschlagnahmungen vorgenommen werden <br/>
 			um eigene Fahrzeuge in die eigene Garage zu porten!<br/>
+			<br/>
+			Wenn der ADAC in einem momentanen Kampfgebiet mit der Polizei Fz  <br/>
+			reparieren soll, muss auf eine Freigabe der Polizei gewartet werden!<br/>
 "
 		]
 	];	
@@ -459,20 +461,21 @@ player createDiaryRecord ["adacrules",
 
 	player createDiaryRecord ["medicrules",
 		[
-			"Regeln wenn du MEDIC spielst",
+			"Regeln wenn du SANITÄTER spielst",
 "
 		<br/>
 			WICHTIG! Redet mit den Spielern über DirectChat!<br/>
 			Melde dich im Teamspeak (IP: 148.251.84.132)<br/>
-			im MEDIC-Channel.
-			<font color='#A9E2F3'>WICHTIG:</font> Medics sind unparteiisch <font color='#FF0000'>und dürfen</font> von allesn seiten angefordert werden!
+			im SANITÄTER-Channel.
 			<br/><br/>
-			1. Du solltest mindestens 18 Jahre sein.<br/>
-			2. Keine Weiderbelebungen der selben Person innerhalb von 10min.<br/>
+			1. Du solltest mindestens 16 Jahre sein.<br/>
+			2. Keine Wiederbelebungen der selben Person innerhalb von 10min.<br/>
 			<br/>
-			Beim wiederbeleben von Personen erhälst du automatisch eine Gebühr von $150.<br/>
+			Beim wiederbeleben von Personen erhälst du automatisch eine Gebühr von $200.<br/>
 			Das ist dein Einkommen und darf nicht ohne Wunsch danach durchgeführt werden!<br/>
 			<br/>
+			Wenn der Sanitäter in einem momentanen Kampfgebiet mit der Polizei Personen  <br/>
+			wiederbeleben soll, muss auf eine Freigabe der Polizei gewartet werden!<br/>
 
 "
 		]
@@ -482,7 +485,7 @@ player createDiaryRecord ["adacrules",
 
 	player createDiaryRecord ["policerules",
 		[
-			"Regeln wenn du COP spielst",
+			"Regeln wenn du POLIZIST spielst",
 "
 		<br/>
 			WICHTIG! Redet mit den Spielern über DirectChat!<br/>
@@ -493,7 +496,6 @@ player createDiaryRecord ["adacrules",
 			2. Kein Tazern ohne Grund<br/>
 			3. Keine Festnahmen ohne Grund<br/>
 			4. Keine Beschlagnahmungen ohne Grund<br/>
-			5. Das aufstellen der Barikaden usw. nur auf Anweisung.
 			<br/>
 			Beim verhängen von Strafen muss nach dem <br/>
 			Gesetzbuch und Bußgeldkatalog vorgegangen werden!<br/>
@@ -510,69 +512,138 @@ player createDiaryRecord ["adacrules",
 	player createDiaryRecord ["catalog",
 		[
 			"Bußgeldkatalog",
-				"
-				   <br/> Art des Vergehens        									Bußgeld<br/>
-								Allgemein<br/>       	
-				§1     Polizisten trollen         									100 $<br/>
-				§2     Beleidigungen Zivilisten										60 $<br/>
-				§3     Beleidigungen Polizisten 									90 $<br/>
-				§4     Flucht aus Polizeikontrolle									1.000 $<br/>
-				§5     Behinderung von Polizeiarbeit       							40 $<br/>
-				§6     Geiselnahme  30 min KNAST 		   							+8.000 $<br/>
-				§7     Bankraub  20 min KNAST 			  							+6.000 $<br/>
-				§8     Autodiebstahl      				    						600 $<br/>
-				§9     Diebstahl    Rucksäcke beklauen      						50 $<br/>
-				
-				§11    Körperverletzung / Folter   	          						300 $<br/>
-				§12    Mord mit Fahrzeug  5 min./ pro Mord   						+5.000 $<br/>
-				§13    Mord        25 min. / pro Mord 	     						+9.000 $<br/>
-				§14    Führen von Illegaler Waffen           						1.500 $<br/>
-				§15    Waffenbesitz							  						1.500 $<br/>							 
-				§16    Drogenbesitz       					  						2.000 $<br/>
-				§17    Handel mit geschützten Arten Schildkrötenhandel     		  	1.500 $<br/>
-				§18    Drogenhandel       										  	3.000 $<br/>
-				§19    Drogenkonsum + Fahrt zur Entzugsklinik Krankenhaus 	 	  	370 $<br/>
-				§20    Erpressung    Absprache mit Einsatzleiter    KNAST 		 	+4500$<br/>
-				§21    Freiheitsberaubung    Zivis Fesseln    					  	6.500 $<br/>
-				§22    Einbruch   Häuser usw.   								  	150 $<br/> 
-				§23    Maske tragen   Einzug der Maske 					          	50 $<br/>    
-				§24    Laufen auf der Straße           								10 $<br/>
-				§25    Verkehr behindern    Auf Straße stehen        				20 $<br/>
-				§26    Fahrzeug behindern    Vor Autos stehen bleiben             	25 $<br/>
-				§27	   Betreten von Sperrgebieten    Polizei, ADAC, Medic usw.    	30 $<br/>
-				§28    Beihilfe zur Flucht        1/2 des Bußgeldes vom Straftäter zu Fuß<br/>
-				§29    Raubüberfall  Die Geldmenge die geraubt wurde mal 0,5<br/>
-				
-				
-								Fahrzeug<br/>
+"
+<br/>
+== Störung der öffentlichen Ordnung ================
+<br/><br/>
 
-								
-				§1    Überhöhte Geschwindigkeit bis 20 km/h       80 $<br/>
-				§2    Überhöhte Geschwindigkeit über 20 km/h      150 $<br/>
-				§3    Fahren auf falsche Straßenseite          	  15 $<br/>
-				§4    Verursachen eines Unfalls          		  120 $<br/>
-				§5    Fahren ohne Licht             			  30 $<br/>
-				§6    Fahren mit kaputten Autos  	              15 $<br/>
-				§7    Fahren ohne Führerschein         		      300 $<br/>
-				§8    Fahrerflucht          					  450 $<br/>
-				§9    Führen von Illegaler Fahrzeuge              6.000 $<br/>
-				§10   Trollen mit Fahrzeugen    Hupen             600 $<br/>
-				
-				
-								Luftfahrzeuge<br/>   
+<font color='#A9E2F3'>versuchter Diebstahl:</font><br/>
+1.000 $<br/>
+<font color='#A9E2F3'>Diebstahl:</font><br/>
+3.000 $ <br/>
+<font color='#A9E2F3'>Fahrzeugbeschädigung:</font><br/>
+10.000 $<br/>
+<font color='#A9E2F3'>In Rucksäcke schauen:</font><br/>
+min. 500 $<br/>
+<font color='#A9E2F3'>Freiheitsberaubung (Geiselnahme):</font><br/>
+5 Minuten Gefängnis <br/>
+<font color='#A9E2F3'>Raubüberfall:</font><br/>
+10 Minuten Gefängnis<br/>
+<font color='#A9E2F3'>Mord:</font><br/>
+15 Minuten Gefängnis<br/>
+<font color='#A9E2F3'>Serienmörder:</font><br/>
+15-30 Minuten Gefägnis<br/>
+<font color='#A9E2F3'>Banküberfall:</font><br/>
+20 Minuten Gefängnis <br/>
+<font color='#A9E2F3'>Missachten eines Checkpoints:</font><br/>
+5.000 $<br/>
+<font color='#A9E2F3'>Diebstahl aus Rucksack:</font><br/>
+1.000 $<br/>
+<font color='#A9E2F3'>Drogenschmuggel/-handel:</font><br/>
+Wahrenwert + 30.000 $<br/>
+<font color='#A9E2F3'>Schmuggel mit verbotenen Tieren:</font><br/>
+Wahrenwert + 30.000 $<br/>
+<font color='#A9E2F3'>Trolling:</font><br/>
+30-60 Minuten Gefängnis<br/>
 
-								
-				§1    Tiefer als 150 Meter über Städte           150 $<br/>
-				§2    Landen in Städte          				 200 $<br/>
-				§3    Führen von Illegaler Flugobjekte           6.000 $<br/>
-				§4    Fliegen ohne Kollisionslichter             30 $<br/>
-				§5    Fliegen ohne Fluglizenz       			 2.500 $<br/>
-				
-				
-				Falls es sich nur um einen Versuch handelt, so ist nur die 1/2 der Strafe zu verhängen!<br/>          
-				Bei Delikten die mit Knast bestraft werden ist eine angemessene Geldstrafe hinzuzufügen!<br/>          
-				Bei Wiederholungstätern kann sich die Strafe pro Ticket jeweils um 50% steigern! <br/><br/>
-				"
+<br/>
+== Umgang mit Polizisten ===========================
+<br/><br/>
+
+
+<font color='#A9E2F3'>Behinderung der Polizei: </font><br/>
+[einmaliger Verstoß] 500 $<br/>
+<font color='#A9E2F3'>Behinderung der Polizei: </font><br/>
+[mehrfach] 500 $ - 15.000 $<br/>
+<font color='#A9E2F3'>Beleidigung gegenüber der Polizei:</font><br/>
+[einmaliger Verstoß] 1.500 $<br/>
+<font color='#A9E2F3'>Beleidigung gegenüber der Polizei:</font><br/>
+[mehrfach] 1.500 $ - 25.000 $<br/>
+<font color='#A9E2F3'>Befreien festgesetzter Personen:</font><br/>
+[einmaliger Verstoß] 3.000 $<br/>
+<font color='#A9E2F3'>Befreien festgesetzter Personen:</font><br/>
+[mehrfach] 3.000 $ - 10.000 $<br/>
+<font color='#A9E2F3'>Inspizierung von Einstatzfahrzeugen:</font><br/>
+5.000$<br/>
+<font color='#A9E2F3'>Beamtenbeschuss:</font><br/>
+50.000 $ - 100.000 $<br/>
+<font color='#A9E2F3'>Verletzen eines Beamten:</font><br/>
+25.000 $ - 50.000 $<br/>
+<font color='#A9E2F3'>Töten eines Beamten:</font><br/>
+20 Minuten Gefägnis<br/>
+ 
+<br/>
+== Umgang mit Waffen [legal] =======================
+<br/><br/>
+
+
+<font color='#A9E2F3'>Waffe sichtbar tragen [gezogen] Innerorts:</font><br/>
+1.500 $<br/>
+<font color='#A9E2F3'>Waffe abfeuern Innerorts:</font><br/>
+10.000 $<br/>
+<font color='#A9E2F3'>Verursachter Personenschaden mit einer Waffe:</font><br/>
+8 Minuten Gefängnis <br/>
+<font color='#A9E2F3'>Führen einer legalen Waffe ohne Lizenz:</font><br/>
+5.000 $ + (5 Minuten Gefängnis)<br/>
+
+<br/>
+== Umgang mit Waffen [illegal] =====================
+<br/><br/>
+ 
+<font color='#A9E2F3'>Besitz außerhalb der Rebellenzone / Outpost:</font><br/>
+15.000 $ + Waffe entfernen<br/>
+<font color='#A9E2F3'>Personenschaden / Tötung mit illegaler Waffe:</font><br/>
+20 Minuten Gefängnis<br/>
+ 
+<br/>
+== Flugverkehr =====================================
+<br/><br/>
+ 
+<font color='#A9E2F3'>Schweben über bewohntem Gebiet:</font><br/>
+1.500 $<br/>
+<font color='#A9E2F3'>Landen auf Straßen:</font><br/>
+2.000 $<br/>
+<font color='#A9E2F3'>Landen in gesperrten gebieten:</font><br/>
+[z.B.: Polizeistationen, Bank] 10.000 $ <br/>
+<font color='#A9E2F3'>Fliegen ohne Beleuchtung:</font><br/>
+[Kollisionsleuchten] 3.000 $<br/>
+<font color='#A9E2F3'>Fliegen ohne Lizenz:</font><br/>
+15.000 $<br/>
+ 
+<br/>
+== Straßenverkehr ==================================
+<br/><br/>
+
+<font color='#A9E2F3'>Überschreitung Innerorts über 50km/h:</font><br/>
+1.000 $<br/>
+<font color='#A9E2F3'>Überschreitung Innerorts über 60km/h:</font><br/>
+2.000 $<br/>
+<font color='#A9E2F3'>Überschreitung Innerorts über 85km/h:</font><br/>
+3.000 $ + Lizenzentzug<br/>
+<font color='#A9E2F3'>Überschreitung Innerorts über 110km/h:</font><br/>
+5.000 $ + Lizenzentzug<br/>
+
+<font color='#A9E2F3'>Nicht mitführen von Werkzeug,-Verbandskasten:</font><br/>
+500 $<br/>
+<font color='#A9E2F3'>Lärmbelästigung durch unnötiges Hupen:</font><br/>
+500 $<br/>
+<font color='#A9E2F3'>Fahren ohne Fahrerlaubnis:</font><br/>
+5.000 $<br/>
+<font color='#A9E2F3'>Fahren ohne Licht [Nachts]:</font><br/>
+1.500 $<br/>
+<font color='#A9E2F3'>Fahren auf der falschen Straßenseite:</font><br/>
+1.000 $ <br/>
+<font color='#A9E2F3'>Fahrerflucht nach Unfall: Unfallverursacher / Behinderung des Verkehrs:</font><br/>
+15.000 $ <br/>
+<font color='#A9E2F3'>Vorsätzliches Überfahren von Spielern:</font><br/>
+15 Minuten Gefägnis<br/>
+<font color='#A9E2F3'>Falschparken / Behinderung des Fahrzeugspawns:</font><br/>
+3.000 $<br/>
+<font color='#A9E2F3'>Verursachen eines Personenschadens [einmalig]:</font><br/>
+5.000 $<br/>
+<font color='#A9E2F3'>Verursachen eines Personenschadens [mehrfach]:</font><br/>
+10 Minuten Gefägnis<br/>
+"
 		]
 	];
 	
@@ -590,12 +661,11 @@ player createDiaryRecord ["adacrules",
 <br/>
 [ <font color='#A9E2F3'>Z</font> ] - Player Menü öffnen<br/>
 [ <font color='#A9E2F3'>U</font> ] - Fahrzeuge auf/zu schliessen<br/>
-[ <font color='#A9E2F3'>T</font> ] - Fahrzeug Inventar öffen<br/>
-[ <font color='#A9E2F3'>TAB-TASTE</font> ] - Spitzhacke/Ölpumpe/Netz benutzen<br/>
+[ <font color='#A9E2F3'>T</font> ] - Fahrzeug Inventar öffnen<br/>
 <br/>
 [ <font color='#A9E2F3'>Links Shift + F</font> ] - Surrender (aufgeben)<br/>
 [ <font color='#A9E2F3'>Links Shift + H</font> ] - Handwaffe holstern<br/>
-[ <font color='#A9E2F3'>Links Strg + H</font> ] - Handwaffe entholstern<br/>
+[ <font color='#A9E2F3'>STRG + H</font> ] - Handwaffe entholstern<br/>
 [ <font color='#A9E2F3'>Links Shift + G</font> ] - Spieler K.O. schlagen<br/>
 zum ausrauben / beim entführen ect. Mausrad scrollen für Menü<br/>
 [ <font color='#A9E2F3'>Windows-Taste</font> ] - Action-Menü <br/>
@@ -605,12 +675,12 @@ zum aufnehmen von Items o. Geld | Fahrzeug reparieren | fesseln / entfesseln<br/
 == Police / Medic / ADAC Tasten ====================================<br/>
 <br/>
 [ <font color='#A9E2F3'>Windows-Taste</font> ] - Action-Menü <br/>
-[ <font color='#A9E2F3'>Links Shift + F</font> ] - Sirene AN/AUS<br/>
-[ <font color='#A9E2F3'>1</font> ] - YELP Signal AN/AUS<br/>
-[ <font color='#A9E2F3'>Links Shift + L</font> ] - Blaulicht AN/AUS <br/>
+[ <font color='#A9E2F3'>O</font> ] - Schranke AUF/ZU<br/>
+[ <font color='#A9E2F3'>F</font> ] - Cop / Medic Sirene ON/OFF<br/>
+[ <font color='#A9E2F3'>Links Shift + L</font> ] - Blaulicht ON/OFF <br/>
 [ <font color='#A9E2F3'>Links Shift + R</font> ] - Handschellen anlegen<br/>
 [ <font color='#A9E2F3'>Links Shift + H</font> ] - Handwaffe holstern<br/>
-[ <font color='#A9E2F3'>Links Strg + H</font> ] - Handwaffe entholstern<br/>
+[ <font color='#A9E2F3'>STRG + H</font> ] - Handwaffe entholstern<br/>
 <br/>
 <br/>
 == Geschwindigkeitsmessung / Blitzer ==================<br/>
