@@ -42,6 +42,10 @@ if(_veh == "B_Heli_Attack_01_F") then
 	_vehicle removeMagazinesTurret ["1000Rnd_20mm_shells",[0]];
 	_vehicle removeMagazinesTurret ["24Rnd_PG_missiles",[0]];
 };
+if(_veh == "B_APC_Tracked_01_CRV_F") then 
+{
+	_vehicle removeMagazinesTurret ["2000Rnd_65x39_belt",[0]];
+};
 
 clearWeaponCargoGlobal _vehicle;
 clearMagazineCargoGlobal _vehicle;

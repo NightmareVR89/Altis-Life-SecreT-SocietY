@@ -103,6 +103,9 @@ switch(_shop) do
 						["1Rnd_Smoke_Grenade_shell",nil,150],
 						["1Rnd_SmokeRed_Grenade_shell",nil,150],
 						["1Rnd_SmokeOrange_Grenade_shell",nil,150],
+						["launch_RPG32_F",nil,20000],
+						["RPG32_F",nil,6000],
+						["RPG32_HE_F",nil,6000],
 						["acc_pointer_IR",nil,800],
 						["acc_flashlight",nil,300],
 						["optic_Holosight",nil,200],
@@ -669,7 +672,7 @@ switch(_shop) do
 						["20Rnd_762x51_Mag",nil,50],
 						["srifle_DMR_01_F",nil,70000],        //Mittlere Sniper
 						["10Rnd_762x51_Mag",nil,150],
-						["launch_RPG32_F",nil,160000],
+						["launch_RPG32_F",nil,90000],
 						["RPG32_F",nil,25000],
 						["RPG32_HE_F",nil,37000],
 						["acc_pointer_IR",nil,800],
@@ -798,6 +801,14 @@ switch(_shop) do
 			{
 				["Gangversteck Waffenhändler",
 					[
+						["hgun_Rook40_F",nil,1500],
+						["hgun_Pistol_heavy_02_F",nil,2250],
+						["hgun_ACPC2_F",nil,3000],
+						["optic_ACO_grn_smg",nil,800],
+						["16Rnd_9x21_Mag",nil,25],
+						["9Rnd_45ACP_Mag",nil,45],
+						["6Rnd_45ACP_Cylinder",nil,50],
+						["30Rnd_9x21_Mag",nil,75],
 						["arifle_SDAR_F","Unterwasser",2500],
 						["20Rnd_556x45_UW_mag",nil,50],
 						["SMG_02_F",nil,2500],
