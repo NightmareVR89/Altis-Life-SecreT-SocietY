@@ -61,22 +61,10 @@ switch (_shop) do
 	{
 		ctrlSetText[2505,"Spender Shop"];
 	};
-	
-	case "sergeant":
-	{
-		ctrlSetText[2505,"Sergeants Shop"];
-		ctrlShow[2503,false];
-	};
-	
+		
 	case "gen":
 	{
 		ctrlSetText[2505,"Altis General Store"];
-		ctrlShow[2503,false];
-	};
-	
-	case "officer":
-	{
-		ctrlSetText[2505,"Kommissar Shop"];
 		ctrlShow[2503,false];
 	};
 	
