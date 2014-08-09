@@ -83249,7 +83249,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this setVectorUp [0,0,1]; this allowDamage false; this setObjectTexture [0, ""Intro.jpg""]";
+			init="this setVectorUp [0,0,1]; this allowDamage false;";
 		};
 		class Item7871
 		{
