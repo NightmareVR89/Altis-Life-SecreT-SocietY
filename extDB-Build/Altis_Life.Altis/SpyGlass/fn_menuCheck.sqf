@@ -31,7 +31,7 @@
 	sleep 0.5;
 	["SpyGlass",false,false] call BIS_fnc_endMission;
 };
-
+/*
 //JME Tardmenu
 [] spawn {
 	waitUntil {!isNull (findDisplay 999)};
@@ -40,7 +40,7 @@
 	sleep 0.5;
 	["SpyGlass",false,false] call BIS_fnc_endMission;
 };
-
+*/
 //Another menu-based cheat by Wookie but it can cause false positives so we just close it.
 [] spawn {
 	while {true} do {
