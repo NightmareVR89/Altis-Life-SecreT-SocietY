@@ -29,7 +29,7 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) == 1) then
 {
 	life_cash = life_cash + _price;
 	[_item,false] call life_fnc_handleItem;
-	hint parseText format["You sold a %1 for <t color='#8cff9b'>$%2</t>",_itemInfo select 1,[_price] call life_fnc_numberText];
+	hint parseText format["Du hast eine %1 für <t color='#8cff9b'>$%2</t> verkauft",_itemInfo select 1,[_price] call life_fnc_numberText];
 	[nil,(uiNamespace getVariable["Weapon_Shop_Filter",0])] call life_fnc_weaponShopFilter; //Update the menu.
 }
 	else
@@ -53,17 +53,20 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) == 1) then
 			grpPlayer setVariable["gang_bank",_funds,true];
 			[_item,true] spawn life_fnc_handleItem;
 			[[1,grpPlayer],"TON_fnc_updateGang",false,false] spawn life_fnc_MP;
+			closeDialog 0;
 		} else {
 			if(_price > life_cash) exitWith {hint "Du hast nicht so viel Geld!"};
 			hint parseText format["Du hast eine %1 für <t color='#8cff9b'>$%2</t> gekauft",_itemInfo select 1,[_price] call life_fnc_numberText];
 			__SUB__(life_cash,_price);
 			[_item,true] spawn life_fnc_handleItem;
+			closeDialog 0;
 		};
 	} else {
 		if(_price > life_cash) exitWith {hint "Du hast nicht so viel Geld!"};
 		hint parseText format["Du hast eine %1 für <t color='#8cff9b'>$%2</t> gekauft",_itemInfo select 1,[_price] call life_fnc_numberText];
 		life_cash = life_cash - _price;
 		[_item,true] spawn life_fnc_handleItem;
+		closeDialog 0;
 	};
 };
 
