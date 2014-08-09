@@ -91,9 +91,9 @@ life_thirst = 100;
 life_hunger = 100;
 __CONST__(life_paycheck_period,5); //Five minutes
 life_cash = 0;
-__CONST__(life_impound_car,100);
-__CONST__(life_impound_boat,160);
-__CONST__(life_impound_air,250);
+__CONST__(life_impound_car,1000);
+__CONST__(life_impound_boat,1600);
+__CONST__(life_impound_air,2500);
 life_istazed = false;
 life_my_gang = ObjNull;
 
@@ -258,7 +258,7 @@ life_adaclicenses =
 
 life_dp_points = ["dp_1","dp_2","dp_3","dp_4","dp_5","dp_6","dp_7","dp_8","dp_9","dp_10","dp_11","dp_12","dp_13","dp_14","dp_15","dp_15","dp_16","dp_17","dp_18","dp_19","dp_20","dp_21","dp_22","dp_23","dp_24","dp_25"];
 //[shortVar,reward]
-life_illegal_items = [["heroinu",80],["goldbar",12000],["schmuck",50],["skalpell",500],["niere",900],["moonshine",60],["heroinp",120],["cocaine",60],["cocainep",240],["marijuana",120],["cannabis",60],["catshark",190],["turtle",170],["blastingcharge",500],["boltcutter",100],["froschlsd",60]];
+life_illegal_items = [["heroinu",5000],["goldbar",12000],["schmuck",1600],["skalpell",2000],["niere",10000],["moonshine",4600],["heroinp",7800],["cocaine",60],["cocainep",9200],["marijuana",2700],["cannabis",1900],["catshark",9000],["turtle",7000],["blastingcharge",500],["boltcutter",100],["froschlsd",8300]];
 
 
 /*
@@ -268,21 +268,21 @@ sell_array =
 [
 	["apple",10],
 	["heroinu",80],
-	["heroinp",120],
-	["salema",10],
-	["ornate",10],
-	["mackerel",15],
-	["tuna",6],
-	["mullet",6],
-	["catshark",190],
+	["heroinp",350],
+	["salema",30],
+	["ornate",45],
+	["mackerel",40],
+	["tuna",40],
+	["mullet",30],
+	["catshark",500],
 	["rabbit",20],
-	["oilp",60],
-	["turtle",170],
+	["oilp",170],
+	["turtle",350],
 	["water",4],
 	["coffee",1],
-	["turtlesoup",40],
+	["turtlesoup",210],
 	["donuts",1],
-	["marijuana",120],
+	["marijuana",170],
 	["cannabis",60],
 	["tbacon",100],
 	["lockpick",75],
@@ -290,20 +290,20 @@ sell_array =
 	["redgull",500],
 	["peach",10],
 	["cocaine",60],
-	["cocainep",240],
+	["cocainep",500],
 	["diamond",30],
 	["diamondc",240],
-	["iron_r",60],
-	["copper_r",50],
-	["salt_r",50],
-	["glass",40],
+	["iron_r",150],
+	["copper_r",130],
+	["salt_r",90],
+	["glass",80],
 	["fuelF",10],
 	["spikeStrip",50],
-	["cement",40],
+	["cement",70],
 	["goldbar",32000],
 	["handschellen",50],
 	["kabelb",50],
-	["froschlsd",150],
+	["froschlsd",270],
 	["froschbein",120],
 	["stacheldraht",400],
 	["lagerfeuer",3000],
@@ -316,17 +316,17 @@ sell_array =
 	["barrier",100],
 	["niere",2500],
 	["sandbag",800],
-	["moonshine",150],
-	["wein",60],
-	["weintraube",40],
-	["tabak",25],
-	["zigarren",40],
-	["muell",40],
+	["moonshine",200],
+	["wein",120],
+	["weintraube",60],
+	["tabak",90],
+	["zigarren",110],
+	["muell",110],
 	["skalpell",500],
-	["wertstoffe",80],
-	["kunststoff",80],
-	["schmuck",60],
-	["edelmetall",190],
+	["wertstoffe",140],
+	["kunststoff",160],
+	["schmuck",120],
+	["edelmetall",230],
 	["schaufel",1200]
 ];
 __CONST__(sell_array,sell_array);
