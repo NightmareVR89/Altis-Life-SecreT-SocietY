@@ -19,7 +19,7 @@ closeDialog 0;
 
 _houseCfg = [(typeOf _house)] call life_fnc_houseConfig;
 if(count _houseCfg == 0) exitWith {};
-if(life_atmcash < (_houseCfg select 0)) exitWith {hint format["Dieses Haus steht für <t color='#8cff9b'>$%1</t> zum Verkauf<br/>Es können dort bis zu %2 Lagercontainer aufgestellt werden. Du hast allerdings zu wenig Geld auf deinem Konto!",[(_houseCfg select 0)] call life_fnc_numberText,(_houseCfg select 1)]};
+if(life_atmcash < (_houseCfg select 0)) exitWith {hint format["Dieses Haus steht für $%1 zum Verkauf. Es können dort bis zu %2 Lagercontainer aufgestellt werden. Du hast allerdings zu wenig Geld auf deinem Konto!",[(_houseCfg select 0)] call life_fnc_numberText,(_houseCfg select 1)]};
 
 _action = [
 	format["Dieses Haus steht für <t color='#8cff9b'>$%1</t> zum Verkauf<br/>Es können dort bis zu %2 Lagercontainer aufgestellt werden",

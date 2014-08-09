@@ -113,3 +113,5 @@ __CONST__(life_paycheck,life_paycheck); //Make the paycheck static.
 	sleep 60;
 	[] call life_fnc_updateClothing;
 };
+
+[] spawn life_fnc_autoSave;
