@@ -12,6 +12,7 @@ if((lbCurSel 2632) == -1) exitWith {hint "Du musst jemanden auswählen, um ihn e
 _unit = call compile format["%1",getSelData(2632)];
 if(isNull _unit) exitWith {}; //Bad unit?
 if(_unit == player) exitWith {hint "Du kannst dich nicht selbst rauswerfen!"};
+if(!isNil {(group _unit) getVariable "gang_name"}) exitWith {hint "Dieser Spieler ist schon in einer Gang!"};
 
 if(count(grpPlayer getVariable ["gang_members",8]) == (grpPlayer getVariable ["gang_maxMembers",8])) exitWith {hint "Deine Gang hat die maximale Größe erreicht. Update bitte deine maximale Mitgliederzahl."};
 

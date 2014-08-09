@@ -9,6 +9,7 @@ private["_name","_group"];
 _name = [_this,0,"",[""]] call BIS_fnc_param;
 _group = [_this,1,grpNull,[grpNull]] call BIS_fnc_param;
 if(_name == "" OR isNull _group) exitWith {}; //Fail horn anyone?
+if(!isNil {(group _unit) getVariable "gang_name"}) exitWith {hint "Dieser Spieler ist schon in einer Gang!"}; 
 
 _gangName = _group getVariable "gang_name";
 _action = [
