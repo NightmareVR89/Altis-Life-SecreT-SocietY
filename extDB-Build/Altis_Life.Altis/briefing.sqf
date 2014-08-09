@@ -95,25 +95,24 @@ player createDiaryRecord ["pricelist",
 "
 <br/>
 <font color='#A9E2F3'>FAHRZEUGE: (Mietpreise) (Permanent 50% mehr)</font><br/><br/>
-- <font color='#A9E2F3'>Quadbike</font> $2500 <font color='#A9E2F3'>INVENTAR:</font> 25<br/>
-- <font color='#A9E2F3'>Go-Kart</font> $15000 <font color='#A9E2F3'>INVENTAR:</font> 10 <font color='#A9E2F3'>(nur VIP)</font><br/>
-- <font color='#A9E2F3'>Hatchback</font> $10000 <font color='#A9E2F3'>INVENTAR:</font> 40<br/>
+- <font color='#A9E2F3'>Quadbike</font> $350 <font color='#A9E2F3'>INVENTAR:</font> 25<br/>
+- <font color='#A9E2F3'>Go-Kart</font> $5500<font color='#A9E2F3'>INVENTAR:</font> 10 <font color='#A9E2F3'>(nur VIP)</font><br/>
+- <font color='#A9E2F3'>Hatchback</font> $24000<font color='#A9E2F3'>INVENTAR:</font> 40<br/>
 - <font color='#A9E2F3'>Hatchback (Sport)</font> $8000 <font color='#A9E2F3'>INVENTAR:</font> 45<br/>
-- <font color='#A9E2F3'>Offroad</font> $13000 <font color='#A9E2F3'>INVENTAR:</font> 65<br/>
-- <font color='#A9E2F3'>SUV</font> $35000 <font color='#A9E2F3'>INVENTAR:</font> 50<br/>
-- <font color='#A9E2F3'>Truck Boxer</font> $45000 <font color='#A9E2F3'>INVENTAR:</font> 100<br/>
-- <font color='#A9E2F3'>Fuel Truck</font> $7500 <font color='#A9E2F3'>INVENTAR:</font> 150 <font color='#A9E2F3'>(nur VIP)</font><br/>
+- <font color='#A9E2F3'>Offroad</font> $4600 <font color='#A9E2F3'>INVENTAR:</font> 65<br/>
+- <font color='#A9E2F3'>SUV</font> $3800 <font color='#A9E2F3'>INVENTAR:</font> 50<br/>
+- <font color='#A9E2F3'>Truck Boxer</font> $8000 <font color='#A9E2F3'>INVENTAR:</font> 100<br/>
 <br/>
 - <font color='#A9E2F3'>Zamak Transport</font> $75000 <font color='#A9E2F3'>INVENTAR:</font> 200<br/>
 - <font color='#A9E2F3'>Zamak Transport (Covered)</font> $125000 <font color='#A9E2F3'>INVENTAR:</font> 300<br/>
 - <font color='#A9E2F3'>Tempest Transport (Covered)</font> $300000 <font color='#A9E2F3'>INVENTAR:</font> 580<br/>
-- <font color='#A9E2F3'>HEMTT Transport (Covered)</font> $450000 <font color='#A9E2F3'>INVENTAR:</font> 650<br/>
-- <font color='#A9E2F3'>HEMTT Box</font> $250000 <font color='#A9E2F3'>INVENTAR:</font> 700 <font color='#A9E2F3'>(nur VIP)</font><br/>
+- <font color='#A9E2F3'>HEMTT Transport (Covered)</font> $450000 <font color='#A9E2F3'>INVENTAR:</font> 600<br/>
+- <font color='#A9E2F3'>HEMTT Box</font> $250000 <font color='#A9E2F3'>INVENTAR:</font> 850 <br/>
 <br/>
-- <font color='#A9E2F3'>MH-9 Hummingbird</font> $300000 <font color='#A9E2F3'>INVENTAR:</font> 90<br/>
+- <font color='#A9E2F3'>MH-9 Hummingbird</font> $60000 <font color='#A9E2F3'>INVENTAR:</font> 90<br/>
 - <font color='#A9E2F3'>PO-30 Orca</font> $600000 <font color='#A9E2F3'>INVENTAR:</font> 100<br/>
-- <font color='#A9E2F3'>UH-80 Ghost Hawk</font> $1200000 <font color='#A9E2F3'>INVENTAR:</font> 200 <font color='#A9E2F3'>(nur VIP)</font><br/>
-- <font color='#A9E2F3'>CH-49 Mohawk</font> $1200000 <font color='#A9E2F3'>INVENTAR:</font> 400 <font color='#A9E2F3'>(nur VIP)</font><br/>
+- <font color='#A9E2F3'>UH-80 Ghost Hawk</font> $1200000 <font color='#A9E2F3'>INVENTAR:</font> 300 <br/>
+- <font color='#A9E2F3'>CH-49 Mohawk</font> $1200000 <font color='#A9E2F3'>INVENTAR:</font> 350 <br/>
 <br/>
 - <font color='#A9E2F3'>Ifrit</font> $2500000 <font color='#A9E2F3'>INVENTAR:</font> 60<br/>
 - <font color='#A9E2F3'>Offroad (MG)</font> $2500000 <font color='#A9E2F3'>INVENTAR:</font> 65<br/>
