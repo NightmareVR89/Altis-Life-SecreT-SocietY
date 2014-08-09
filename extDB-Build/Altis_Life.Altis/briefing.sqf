@@ -110,12 +110,12 @@ player createDiaryRecord ["pricelist",
 - <font color='#A9E2F3'>HEMTT Box</font> $250000 <font color='#A9E2F3'>INVENTAR:</font> 850 <br/>
 <br/>
 - <font color='#A9E2F3'>MH-9 Hummingbird</font> $60000 <font color='#A9E2F3'>INVENTAR:</font> 90<br/>
-- <font color='#A9E2F3'>PO-30 Orca</font> $600000 <font color='#A9E2F3'>INVENTAR:</font> 100<br/>
+- <font color='#A9E2F3'>PO-30 Orca</font> $140000 <font color='#A9E2F3'>INVENTAR:</font> 100<br/>
 - <font color='#A9E2F3'>UH-80 Ghost Hawk</font> $1200000 <font color='#A9E2F3'>INVENTAR:</font> 300 <br/>
 - <font color='#A9E2F3'>CH-49 Mohawk</font> $1200000 <font color='#A9E2F3'>INVENTAR:</font> 350 <br/>
 <br/>
-- <font color='#A9E2F3'>Ifrit</font> $2500000 <font color='#A9E2F3'>INVENTAR:</font> 60<br/>
-- <font color='#A9E2F3'>Offroad (MG)</font> $2500000 <font color='#A9E2F3'>INVENTAR:</font> 65<br/>
+- <font color='#A9E2F3'>Ifrit</font> $35000 <font color='#A9E2F3'>INVENTAR:</font> 60<br/>
+- <font color='#A9E2F3'>Offroad (MG)</font> $160000 <font color='#A9E2F3'>INVENTAR:</font> 65<br/>
 <br/>
 
 "
