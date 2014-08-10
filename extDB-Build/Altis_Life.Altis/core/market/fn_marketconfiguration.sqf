@@ -42,7 +42,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["diamondc", 240, 40, 3600, 3, 2, 
+	["diamondc", 240, 40, 3600, 3, 1, 
 		[ 
 			["oilp",1],
 			["iron_r",1],
@@ -63,6 +63,7 @@ life_market_resources = [
 			["glass",1] 
 		] 
 	],
+	
 	["muell", 110, 10, 1800, 2, 1, 
 		[ 
 			["oilp",1],
@@ -70,6 +71,7 @@ life_market_resources = [
 			["copper_r",1] 
 		] 
 	],
+	
 	["wertstoffe", 140, 10, 2200, 2, 1, 
 		[ 
 			["oilp",1],
@@ -79,15 +81,17 @@ life_market_resources = [
 			["copper_r",1] 
 		] 
 	],
+	
 	["kunststoff", 160, 10, 3100, 2, 1, 
 		[ 
 			["oilp",1],
 			["iron_r",1],
 			["copper_r",1],
 			["edelmetall",1],
-			["muell",-1]
-		] 
+			["muell",1]
+		]
 	],
+	
 	["edelmetall", 230, 40, 5000, 2, 1, 
 		[ 
 			["oilp",1],
@@ -167,6 +171,7 @@ life_market_resources = [
 			["weintrauben",1]
 		] 
 	],
+	
 	["mackerel", 40, 5, 800, 2, 1, 
 		[ 
 			["salema",1], 
@@ -176,7 +181,8 @@ life_market_resources = [
 			["mullet",1]
 		] 
 	],
-	["mullet", 30, 1, 900, 2, 1, 
+	
+	["mullet", 30, 5, 900, 2, 1, 
 		[ 
 			["salema",1], 
 			["ornate",1],
@@ -185,6 +191,7 @@ life_market_resources = [
 			["mackrele",1]
 		] 
 	],
+	
 	["ornate", 45, 5, 1100, 2, 1, 
 		[ 
 			["salema",1], 
@@ -193,6 +200,7 @@ life_market_resources = [
 			["mackrele",1]
 		] 
 	],
+	
 	["salema", 30, 5, 1400, 2, 1, 
 		[ 
 			["ornate",1], 
@@ -212,6 +220,7 @@ life_market_resources = [
 			["mullet",1]
 		] 
 	],
+	
 	["wein", 120, 5, 2700, 2, 1, 
 		[ 
 			["apple",1], 
@@ -230,6 +239,7 @@ life_market_resources = [
 			["wein",1]
 		] 
 	],
+	
 	["tabak", 90, 5, 1600, 2, 1, 
 		[  
 			["turtlesoup",1],
@@ -238,6 +248,7 @@ life_market_resources = [
 			["wein",1]
 		] 
 	],
+	
 	["zigarren", 110, 5, 2300, 2, 1, 
 		[ 
 			["wein",1],
@@ -254,6 +265,7 @@ life_market_resources = [
 			["heroinp",1]
 		] 
 	],
+	
 	["catshark", 500, 40, 9000, 10, 10,  
 		[ 
 			["cocainep",1],
@@ -293,6 +305,7 @@ life_market_resources = [
 			["turtle",1]
 		] 
 	],
+	
 	["froschlsd", 270, 30, 8300, 2, 3,   
 		[ 
 			["cocainep",1],
@@ -302,6 +315,7 @@ life_market_resources = [
 			["heroinp",1]
 		] 
 	],
+	
 	["moonshine", 200, 30, 4600, 8, 8,   
 		[ 
 			["cocainep",1],
@@ -311,6 +325,7 @@ life_market_resources = [
 			["heroinp",1]
 		] 
 	],
+	
 	["niere", 2500, 500, 17500, 4, 3,   
 		[ 
 			["cocainep",1],
@@ -325,6 +340,7 @@ life_market_resources = [
 			["wein",-1]
 		] 
 	],
+	
 	["schmuck", 120, 5, 1600, 8, 8,   
 		[ 
 			["schaufel",1],
