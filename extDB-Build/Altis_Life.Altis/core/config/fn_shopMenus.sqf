@@ -47,6 +47,13 @@ switch (_shop) do
 		ctrlShow[2513,false];
 		ctrlShow[2514,false];
 	};
+	case "gangs":
+	{
+		ctrlSetText[2505,"AliG Klamotten"];
+		ctrlShow[2503,false];
+		ctrlShow[2513,false];
+		ctrlShow[2514,false];
+	};
 	
 	case "dive":
 	{

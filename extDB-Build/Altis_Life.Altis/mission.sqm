@@ -3217,7 +3217,7 @@ class Mission
 					vehicle="B_G_Soldier_exp_F";
 					lock="LOCKED";
 					skill=0.60000002;
-					init="removeallWeapons this; this allowDamage false; this enableSimulation false; this addAction[""Ausstatung"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' _b = nearestBuilding (getPosATL player); !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide == civilian '];";
+					init="removeallWeapons this; this allowDamage false; this enableSimulation false; this addAction[""Ausstatung"",life_fnc_clothingMenu,""gangs"",0,false,false,"""",' _b = nearestBuilding (getPosATL player); !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide == civilian '];";
 				};
 				class Item127
 				{
@@ -3230,7 +3230,7 @@ class Mission
 					vehicle="B_G_Soldier_exp_F";
 					lock="LOCKED";
 					skill=0.60000002;
-					init="removeallWeapons this; this allowDamage false; this enableSimulation false; this addAction[""Ausstatung"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' _b = nearestBuilding (getPosATL player); !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide == civilian '];";
+					init="removeallWeapons this; this allowDamage false; this enableSimulation false; this addAction[""Ausstatung"",life_fnc_clothingMenu,""gangs"",0,false,false,"""",' _b = nearestBuilding (getPosATL player); !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide == civilian '];";
 				};
 				class Item128
 				{
@@ -3243,7 +3243,7 @@ class Mission
 					vehicle="B_G_Soldier_exp_F";
 					lock="LOCKED";
 					skill=0.60000002;
-					init="removeallWeapons this; this allowDamage false; this enableSimulation false; this addAction[""Ausstatung"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' _b = nearestBuilding (getPosATL player); !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide == civilian '];";
+					init="removeallWeapons this; this allowDamage false; this enableSimulation false; this addAction[""Ausstatung"",life_fnc_clothingMenu,""gangs"",0,false,false,"""",' _b = nearestBuilding (getPosATL player); !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide == civilian '];";
 				};
 			};
 		};

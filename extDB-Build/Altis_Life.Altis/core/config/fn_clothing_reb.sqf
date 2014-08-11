@@ -18,9 +18,6 @@ switch (_filter) do
 	case 0:
 	{
 		[
-			["U_IG_Guerilla1_1",nil,500],
-			["U_I_G_Story_Protagonist_F",nil,700],
-			["U_I_G_resistanceLeader_F",nil,3500],
 			["U_IG_leader","Guerilla Leader",1340],
 			["U_O_SpecopsUniform_ocamo",nil,1500],
 			["U_O_PilotCoveralls",nil,610],
@@ -61,16 +58,7 @@ switch (_filter) do
 			["G_Sport_BlackWhite",nil,20],
 			["G_Squares",nil,10],
 			["G_Lowprofile",nil,30],
-			["G_Combat",nil,55],
-			["G_Balaclava_lowprofile",nil,500],
-			["G_Balaclava_combat",nil,500],
-			["G_Balaclava_oli",nil,500],
-			["G_Bandanna_aviator",nil,400],
-			["G_Bandanna_beast",nil,400],
-			["G_Bandanna_tan",nil,400],
-			["G_Bandanna_sport",nil,400],
-			["G_Bandanna_oli",nil,400],
-			["G_Bandanna_shades",nil,400]
+			["G_Combat",nil,55]
 		];
 	};
 	
