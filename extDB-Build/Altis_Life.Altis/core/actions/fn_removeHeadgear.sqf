@@ -6,7 +6,7 @@
 	Removes headgear of unit from police command.
 */
 private["_unit","_headgear"];
-_headgear = ["H_Shemag_olive","H_Shemag_khk","H_ShemagOpen_tan","H_ShemagOpen_khk"];
+_headgear = ["H_CrewHelmetHeli_B","H_Shemag_olive","H_Shemag_khk","H_ShemagOpen_tan","H_ShemagOpen_khk","G_Balaclava_lowprofile","G_Balaclava_combat","G_Balaclava_oli","G_Bandanna_aviator","G_Bandanna_beast","G_Bandanna_tan","G_Bandanna_sport","G_Bandanna_oli","G_Bandanna_shades"];
 _unit = cursorTarget;
 _mask = headgear _unit;
 if(isNull _unit) exitWith {};

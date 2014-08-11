@@ -92,7 +92,7 @@ _units = _units - [player];
 				//Others
 				default {
 					private["_headgear"];
-					_headgear = ["H_Shemag_olive","H_Shemag_khk","H_ShemagOpen_tan","H_ShemagOpen_khk"];
+					_headgear = ["H_CrewHelmetHeli_B","H_Shemag_olive","H_Shemag_khk","H_ShemagOpen_tan","H_ShemagOpen_khk","G_Balaclava_lowprofile","G_Balaclava_combat","G_Balaclava_oli","G_Bandanna_aviator","G_Bandanna_beast","G_Bandanna_tan","G_Bandanna_sport","G_Bandanna_oli","G_Bandanna_shades"];
 					if((headgear _x) in _headgear) then {
 						_text = format["<t color='#610B0B'>Maskierter Spieler</t>"];
 					} else {
