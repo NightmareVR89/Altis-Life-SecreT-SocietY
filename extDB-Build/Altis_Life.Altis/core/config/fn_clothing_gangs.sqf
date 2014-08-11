@@ -27,7 +27,7 @@ switch (_filter) do
 			["U_IG_Guerilla2_1","Schwarzhemd",800],
 			["U_IG_Guerilla3_2","Hellbraun",800],
 			["U_BG_Guerilla2_2","Dunkelgrün",800],
-			["U_BG_Guerilla2_3","Dunkelgrün",800],
+			["U_BG_Guerilla2_3","Dunkelgrün",800]
 		];
 	};
 	
