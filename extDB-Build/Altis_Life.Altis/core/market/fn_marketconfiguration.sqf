@@ -11,27 +11,38 @@ life_market_resources = [
 
 	//Schema: SHORTNAME, DEFAULT-WERT, MIN-WERT, MAX-WERT, VERÄNDERUNG BEI AKTION [VERKAUF Multipliziert mit 1, Kauf multipliziert um -1
 	//["gold", 1500, 450, 2300, 8, 5],
-	["goldbar", 32000, 23000, 60000, 1, 1, 
+	["goldbar", 32000, 23000, 160000, 1, 1, 
 		[ 
 			["diamondc",1], 
 			["iron_r",1],
 			["copper_r",1],
 			["cement",1],
 			["glass",1],
-			["edelmetall",1]			
+			["oilp",1],
+			["edelmetall",1],
+			["cocainep",1],
+			["marijuana",1],
+			["moonshine",1],
+			["froschlsd",1],
+			["heroinp",1]			
 		] 
 	],
-	["oilp", 170, 20, 1800, 2, 1, 
+	["oilp", 170, 20, 5200, 2, 1, 
 		[ 
 			["diamondc",1], 
 			["iron_r",1],
 			["copper_r",1],
 			["cement",1],
-			["glass",1] 
+			["glass",1],
+			["cocainep",1],
+			["marijuana",1],
+			["moonshine",1],
+			["froschlsd",1],
+			["heroinp",1]
 		] 
 	],
 	
-	["iron_r", 150, 20, 2600, 3, 1,  
+	["iron_r", 150, 20, 4700, 3, 1,  
 		[ 
 			["diamondc",1], 
 			["oilp",1],
@@ -42,7 +53,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["diamondc", 240, 40, 3600, 3, 1, 
+	["diamondc", 240, 40, 12600, 3, 1, 
 		[ 
 			["oilp",1],
 			["iron_r",1],
@@ -53,26 +64,36 @@ life_market_resources = [
 		] 
 	],
 	
-	["copper_r", 130, 10, 2400, 2, 1, 
+	["copper_r", 130, 10, 3700, 2, 1, 
 		[ 
 			["diamondc",1], 
 			["oilp",1],
 			["iron_r",1],
 			["salt_r",1],
 			["cement",1],
-			["glass",1] 
+			["glass",1],
+			["cocainep",1],
+			["marijuana",1],
+			["moonshine",1],
+			["froschlsd",1],
+			["heroinp",1]
 		] 
 	],
 	
-	["muell", 110, 10, 1800, 2, 1, 
+	["muell", 110, 10, 3400, 2, 1, 
 		[ 
 			["oilp",1],
 			["iron_r",1],
-			["copper_r",1] 
+			["copper_r",1],
+			["cocainep",1],
+			["marijuana",1],
+			["moonshine",1],
+			["froschlsd",1],
+			["heroinp",1]
 		] 
 	],
 	
-	["wertstoffe", 140, 10, 2200, 2, 1, 
+	["wertstoffe", 140, 10, 4200, 2, 1, 
 		[ 
 			["oilp",1],
 			["iron_r",1],
@@ -82,7 +103,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["kunststoff", 160, 10, 3100, 2, 1, 
+	["kunststoff", 160, 10, 6000, 2, 1, 
 		[ 
 			["oilp",1],
 			["iron_r",1],
@@ -92,11 +113,16 @@ life_market_resources = [
 		]
 	],
 	
-	["edelmetall", 230, 40, 5000, 2, 1, 
+	["edelmetall", 230, 40, 9000, 2, 1, 
 		[ 
 			["oilp",1],
 			["iron_r",1],
-			["copper_r",1] 
+			["copper_r",1],
+			["cocainep",1],
+			["marijuana",1],
+			["moonshine",1],
+			["froschlsd",1],
+			["heroinp",1]
 		] 
 	],
 	
@@ -142,7 +168,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["turtlesoup", 210, 5, 2500, 2, 1, 
+	["turtlesoup", 210, 5, 5000, 2, 1, 
 		[ 
 			["apple",1], 
 			["peach",1],
@@ -162,7 +188,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["froschbein", 120, 10, 910, 2, 1, 
+	["froschbein", 120, 10, 1800, 2, 1, 
 		[ 
 			["apple",1], 
 			["turtlesoup",1],
@@ -249,14 +275,15 @@ life_market_resources = [
 		] 
 	],
 	
-	["zigarren", 110, 5, 2300, 2, 1, 
+	["zigarren", 110, 5, 3300, 2, 1, 
 		[ 
 			["wein",1],
-			["niere",1]
+			["niere",1],
+			["weintrauben",1]
 		] 
 	],
 	
-	["turtle", 350, 40, 7000, 2, 5,  
+	["turtle", 350, 40, 7000, 8, 9,  
 		[ 
 			["cocainep",1],
 			["marijuana",1],
@@ -266,7 +293,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["catshark", 500, 40, 9000, 10, 10,  
+	["catshark", 500, 40, 20000, 10, 10,  
 		[ 
 			["cocainep",1],
 			["marijuana",1],
@@ -276,7 +303,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["marijuana", 170, 30, 2700, 7, 5,   
+	["marijuana", 170, 30, 3700, 1, 1,   
 		[ 
 			["cocainep",1],
 			["turtle",1],
@@ -286,7 +313,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["cocainep", 500, 40, 9200, 4, 6,   
+	["cocainep", 500, 40, 11000, 1, 1,   
 		[ 
 			["turtle",1],
 			["marijuana",1],
@@ -296,7 +323,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["heroinp", 350, 20, 7800, 6, 8,   
+	["heroinp", 350, 20, 7800, 1, 1,   
 		[ 
 			["cocainep",1],
 			["marijuana",1],
@@ -306,7 +333,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["froschlsd", 270, 30, 8300, 2, 3,   
+	["froschlsd", 270, 30, 8300, 1, 1,   
 		[ 
 			["cocainep",1],
 			["marijuana",1],
@@ -316,7 +343,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["moonshine", 200, 30, 4600, 8, 8,   
+	["moonshine", 200, 30, 4600, 1, 1,   
 		[ 
 			["cocainep",1],
 			["marijuana",1],
@@ -341,7 +368,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["schmuck", 120, 5, 1600, 8, 8,   
+	["schmuck", 120, 5, 1600, 5, 3,   
 		[ 
 			["schaufel",1],
 			["oilp",1],
