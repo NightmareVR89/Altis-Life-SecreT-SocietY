@@ -84599,6 +84599,7 @@ class Mission
 			position[]={4901.6143,16.963175,14419.437};
 			azimut=-200.536;
 			offsetY=3.7370801;
+			special="NONE";
 			id=8270;
 			side="EMPTY";
 			vehicle="Land_Sink_F";
@@ -84631,8 +84632,9 @@ class Mission
 		class Item7996
 		{
 			position[]={4886.8555,17.20418,14412.089};
-			azimut=159.42352;
+			azimut=159.424;
 			offsetY=1.22691;
+			special="NONE";
 			id=8273;
 			side="EMPTY";
 			vehicle="Land_Pallet_vertical_F";
@@ -84697,13 +84699,13 @@ class Mission
 		class Item8002
 		{
 			position[]={4887.416,17.194962,14412.305};
-			azimut=-200.52998;
+			azimut=-200.53;
 			offsetY=1.22815;
 			id=8279;
 			side="EMPTY";
 			vehicle="Land_Pallet_vertical_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false;";
+			init="this allowDamage false;";
 		};
 		class Item8003
 		{
@@ -84719,8 +84721,9 @@ class Mission
 		class Item8004
 		{
 			position[]={4884.0762,17.279394,14410.945};
-			azimut=-200.51015;
+			azimut=-200.50999;
 			offsetY=1.2189;
+			special="NONE";
 			id=8281;
 			side="EMPTY";
 			vehicle="Land_Pallet_vertical_F";
@@ -87730,7 +87733,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Shoot_House_Wall_Long_Crouch_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false;";
+			init="this allowDamage false;";
 		};
 		class Item8279
 		{
@@ -87776,7 +87779,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Shoot_House_Wall_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false;";
+			init="this allowDamage false;";
 		};
 		class Item8283
 		{
@@ -87792,13 +87795,13 @@ class Mission
 		class Item8284
 		{
 			position[]={4881.5566,17.399506,14409.999};
-			azimut=-201.2961;
+			azimut=-201.29601;
 			special="NONE";
 			id=8561;
 			side="EMPTY";
 			vehicle="Land_Shoot_House_Wall_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false;";
+			init="this allowDamage false;";
 		};
 		class Item8285
 		{
@@ -87837,12 +87840,12 @@ class Mission
 			vehicle="Land_PaperBox_open_full_F";
 			skill=0.60000002;
 			text="oben11_1_1_1";
-			init="this allowDamage false; this enableSimulation false;";
+			init="this allowDamage false;";
 		};
 		class Item8288
 		{
 			position[]={4889.1978,17.030569,14422.414};
-			azimut=-292.52679;
+			azimut=-292.52701;
 			offsetY=3.8996999;
 			special="NONE";
 			id=8565;
@@ -87850,7 +87853,7 @@ class Mission
 			vehicle="Land_PaperBox_open_full_F";
 			skill=0.60000002;
 			text="oben11_1_1_1_1";
-			init="this allowDamage false; this enableSimulation false;";
+			init="this allowDamage false;";
 		};
 		class Item8289
 		{
