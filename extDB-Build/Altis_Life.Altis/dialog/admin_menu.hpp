@@ -7,7 +7,7 @@ class life_admin_menu {
 	
 	class controlsBackground {
 		class Life_RscTitleBackground:Life_RscText {
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+			colorBackground[] = {0.533,0.533,0.533,0.7}; //hell
 			idc = -1;
 			x = 0.1;
 			y = 0.2;
@@ -16,7 +16,7 @@ class life_admin_menu {
 		};
 		
 		class MainBackground:Life_RscText {
-			colorBackground[] = {0, 0, 0, 0.7};
+			colorBackground[] = {0.149,0.145,0.145,0.7}; //dunkel
 			idc = -1;
 			x = 0.1;
 			y = 0.2 + (11 / 250);
@@ -29,7 +29,7 @@ class life_admin_menu {
 
 		
 		class Title : Life_RscTitle {
-			colorBackground[] = {0, 0, 0, 0};
+			colorBackground[] = {0.514,0.51,0.51,0.8}; //Hellgrau
 			idc = 2901;
 			text = "$STR_Admin_Title";
 			x = 0.1;
@@ -40,10 +40,10 @@ class life_admin_menu {
 		
 		class PlayerList_Admin : Life_RscListBox 
 		{
+			colorBackground[] = {0.035,0.035,0.035,0.6}; //Schwarz
 			idc = 2902;
 			text = "";
 			sizeEx = 0.035;
-			//colorBackground[] = {0,0,0,0};
 			onLBSelChanged = "[_this] spawn life_fnc_adminQuery";
 			
 			x = 0.12; y = 0.26;
