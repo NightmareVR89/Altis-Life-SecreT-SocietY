@@ -7,7 +7,7 @@
 
 	class controlsBackground {
 		class Life_RscTitleBackground:Life_RscText {
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+			colorBackground[] = {0.533,0.533,0.533,0.7};
 			idc = -1;
 			x = 0.1;
 			y = 0.2;
@@ -16,7 +16,7 @@
 		};
 
 		class MainBackground:Life_RscText {
-			colorBackground[] = {0, 0, 0, 0.7};
+			colorBackground[] = {0.149,0.145,0.145,0.7};
 			idc = -1;
 			x = 0.1;
 			y = 0.2 + (11 / 250);
@@ -29,7 +29,7 @@
 
 
 		class Title : Life_RscTitle {
-			colorBackground[] = {0, 0, 0, 0};
+			colorBackground[] = {0.514,0.51,0.51,0.8};
 			idc = 2629;
 			text = "";
 			x = 0.1;
@@ -43,7 +43,7 @@
 			idc = 2621;
 			text = "";
 			sizeEx = 0.035;
-
+			colorBackground[] = {0.035,0.035,0.035,0.6};
 			x = 0.11; y = 0.26;
 			w = 0.350; h = 0.370;
 		};
@@ -145,7 +145,7 @@ class Life_Create_Gang_Diag {
 
 	class controlsBackground {
 		class Life_RscTitleBackground:Life_RscText {
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+			colorBackground[] = {0.533,0.533,0.533,0.7};
 			idc = -1;
 			x = 0.1;
 			y = 0.2;
@@ -154,7 +154,7 @@ class Life_Create_Gang_Diag {
 		};
 
 		class MainBackground:Life_RscText {
-			colorBackground[] = {0, 0, 0, 0.7};
+			colorBackground[] = {0.149,0.145,0.145,0.7};
 			idc = -1;
 			x = 0.1;
 			y = 0.2 + (11 / 250);
@@ -176,7 +176,7 @@ class Life_Create_Gang_Diag {
 		};
 
 		class Title : Life_RscTitle {
-			colorBackground[] = {0, 0, 0, 0};
+			colorBackground[] = {0.514,0.51,0.51,0.8};
 			idc = -1;
 			text = "$STR_Gang_Title";
 			x = 0.1;
