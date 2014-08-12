@@ -16,7 +16,7 @@ for "_i" from 0 to 89 do
 		//"wetDistortion" ppEffectAdjust [random 5];
 		"chromAberration" ppEffectAdjust [random 0.07,random 0.07,true];
 		"chromAberration" ppEffectCommit 1;   
-		"radialBlur" ppEffectAdjust[0.04, 0.09, 0.25, 0.29];
+		"radialBlur" ppEffectAdjust[0.04, 0.09, 0.26, 0.29];
 		"radialBlur" ppEffectCommit 1;
 		addcamShake[random 4, 2, random 4];
 		sleep 1;
