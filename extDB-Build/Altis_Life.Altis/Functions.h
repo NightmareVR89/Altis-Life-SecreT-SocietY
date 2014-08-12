@@ -283,6 +283,7 @@ class Life_Client_Core
 		class saveGear {};
 		class stripDownPlayer {};
 		class autoSave {};
+		class emptyFuel {};
 	};
 	
 	class Network
@@ -379,6 +380,7 @@ class Life_Client_Core
 		class fedCamDisplay {};
 		class jailDoor {};
 		class copYelp {};
+		class atempruefer {};
 	};
 	
 	class Gangs
@@ -445,6 +447,8 @@ class Life_Client_Core
 		class stacheldraht {};
 		class zelt {};
 		class wand {};
+		class drinkWein {};
+		class drinkMoonshine {};
 	};
 	
 	class Dialog_Controls

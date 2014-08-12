@@ -39,6 +39,7 @@ switch(_type) do
 	case "weapon": {_type = ["Besitz illegaler Waffen",4000]};
 	case "policeitems": {_type = ["Besitz von Polizeigegenständen",5000]};
 	case "919": {_type = ["Organ Handel",5000]};
+	case "390": {_type = ["Alkoholeinfluss",3000]};
 	default {_type = [];};
 };
 

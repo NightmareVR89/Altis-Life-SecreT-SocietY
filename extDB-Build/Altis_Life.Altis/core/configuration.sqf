@@ -34,6 +34,7 @@ life_god = false;
 life_frozen = false;
 life_markers = false;
 life_yelp_active = false;
+life_drink = 0;
 
 //Revive constant variables.
 __CONST__(life_revive_cops,FALSE); //Set to false if you don't want cops to be able to revive downed players.

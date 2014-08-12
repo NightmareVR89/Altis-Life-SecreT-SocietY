@@ -609,6 +609,30 @@
 			<English>You have been unfrozen by an administrator</English>
 			<German>To Be Changed</German>
 		</Key>
+		<Key ID="STR_MISC_StPubIntox">
+			<Original>%1 has passed out drunk in public!</Original>
+			<English>%1 has passed out drunk in public!</English>
+			<German>%1 hat sich betrunken im öffentlichen bestanden!</German>
+		</Key>
+		<Key ID="STR_MISC_AlreadyDrinking">
+			<Original>You are already drinking some booze</Original>
+			<English>You are already drinking some booze</English>
+			<German>Du bist schon etwas trinken Alkohol</German>
+		</Key>
+		<Key ID="STR_MISC_WestIndNoNo">
+			<Original>Kein Alkohol im Dienst</Original>
+			<English>Kein Akohol im Dienst!</English>
+			<German>Kein Akohol im Dienst!</German>
+			<French>Pas boire pendant le travail</French>
+		</Key>
+		<Key ID="STR_MISC_DrunkBlackOut">
+			<Original>Du hast ein Blackout</Original>
+			<English>Du hast ein Blackout</English>
+		</Key>
+		<Key ID="STR_MISC_DrunkBlackOut1">
+			<Original>Was ist mit mir Passiert? Wo bin ich..Hicks?</Original>
+			<English>Was ist mit mir Passiert? Wo bin ich..Hicks?</English>
+		</Key>
 	</Package>
 	<Package name="Life_Items">
 		<Key ID="STR_Item_Cannabis">

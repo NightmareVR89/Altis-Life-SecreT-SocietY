@@ -125,3 +125,32 @@ while{true} do
 		};
 	};
 };
+[] spawn
+{
+	while {true} do
+	{
+		waitUntil {(life_drink > 0)};
+		while{(life_drink > 0)} do {
+		
+			if(life_drink > 0.08) then {
+			"radialBlur" ppEffectEnable true;
+			"radialBlur" ppEffectAdjust[0.08, 0,0.35,0.37];
+			"radialBlur" ppEffectCommit 3;
+			sleep 240;
+			life_drink = life_drink - 0.02;
+			} else {
+			"radialBlur" ppEffectEnable true;
+			"radialBlur" ppEffectAdjust[0.05, 0,0.36,0.38];
+			"radialBlur" ppEffectCommit 1;
+			sleep 180;
+			life_drink = life_drink - 0.02;
+			};
+		};
+		
+		"radialBlur" ppEffectAdjust  [0,0,0,0];
+		"radialBlur" ppEffectCommit 5;
+		"radialBlur" ppEffectEnable false;
+		life_drink = 0;
+		
+	};
+};
