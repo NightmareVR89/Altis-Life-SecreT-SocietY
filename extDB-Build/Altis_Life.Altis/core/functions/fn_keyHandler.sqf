@@ -246,18 +246,7 @@ switch (_code) do
 				life_yelp_active = false;
 			};
 			_veh = vehicle player;
-			if(isNil {_veh getVariable "yelp"}) then {_veh setVariable["yelp",false,true];};
-			if((_veh getVariable "yelp")) then
-			{
-				titleText ["Yelp aus","PLAIN"];
-				_veh setVariable["yelp",false,true];
-			}
-			else
-			{
-				titleText ["Yelp an","PLAIN"];
-				_veh setVariable["yelp",true,true];
-				[[_veh],"life_fnc_copYelp",nil,true] spawn life_fnc_MP;
-			};
+			[[_veh,"yelp"],"life_fnc_say3D",nil,false] spawn life_fnc_MP;
 		};
 	};
 	//U Key
