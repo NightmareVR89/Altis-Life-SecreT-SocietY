@@ -30,7 +30,7 @@ if(playerside == east) then
 		};
 	} forEach (vehicles);
 
-	cutText ["IgiLoad geladen. Viel Spaß :)","PLAIN",2];
+	//cutText ["IgiLoad geladen. Viel Spaß :)","PLAIN",2];
 
 	while {true} do 
 	{

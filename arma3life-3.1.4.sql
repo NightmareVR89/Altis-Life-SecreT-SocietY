@@ -20,7 +20,7 @@ DELIMITER $$
 -- Edit arma3 and root to match a user in MySQL
 --
 
-CREATE DEFINER=`arma3`@`localhost` PROCEDURE `resetLifeVehicles`()
+CREATE DEFINER=`root`@`localhost` PROCEDURE `resetLifeVehicles`()
 BEGIN
 	UPDATE vehicles SET `active`= 0;
 END$$
@@ -30,7 +30,7 @@ BEGIN
 	DELETE FROM `vehicles` WHERE `alive` = 0;
 END$$
 
-CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteOldHouses` ()
+CREATE DEFINER=`root`@`localhost` PROCEDURE `deleteOldHouses` ()
 BEGIN
 	DELETE FROM `houses` WHERE `owned` = 0;
 END$$
