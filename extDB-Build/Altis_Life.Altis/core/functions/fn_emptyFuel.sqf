@@ -13,7 +13,7 @@ while{true} do
 	{
 		_velocityOfVehicle = sqrt(((velocity _vehicleToFuel select 0)^2)+((velocity _vehicleToFuel select 1)^2))*3.6;
 		
-		_fuelConsumption = _velocityOfVehicle/25000 + 0.0001;
+		_fuelConsumption = _velocityOfVehicle/35000 + 0.0001;
 		if(_fuelConsumption > 0.002) then
 		{
 			_fuelConsumption = 0.002;
