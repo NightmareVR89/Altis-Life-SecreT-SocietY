@@ -8,7 +8,7 @@ class life_spawn_selection
 	{
 		class life_RscTitleBackground : Life_RscText
 		{
-			colorBackground[] = {0.773,0,0,1};
+			colorBackground[] = {0.773,0,0,1}; // Rot hintergrund Oben
 			idc = -1;
 			x = 0.1; y = 0.2;
 			w = 0.8; h = (1 / 25);
