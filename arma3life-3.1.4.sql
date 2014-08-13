@@ -19,6 +19,7 @@ DELIMITER $$
 -- Procedures
 -- Edit arma3 and root to match a user in MySQL
 --
+
 CREATE DEFINER=`arma3`@`localhost` PROCEDURE `resetLifeVehicles`()
 BEGIN
 	UPDATE vehicles SET `active`= 0;
@@ -29,6 +30,10 @@ BEGIN
 	DELETE FROM `vehicles` WHERE `alive` = 0;
 END$$
 
+CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteOldHouses` ()
+BEGIN
+	DELETE FROM `houses` WHERE `owned` = 0;
+END$$
 
 DELIMITER ;
 
@@ -44,17 +49,27 @@ CREATE TABLE IF NOT EXISTS `players` (
   `playerid` varchar(50) NOT NULL,
   `cash` int(100) NOT NULL DEFAULT '0',
   `bankacc` int(100) NOT NULL DEFAULT '0',
+  `copcash` int(100) NOT NULL DEFAULT '0',
+  `copbank` int(100) NOT NULL DEFAULT '0',
+  `adaccash` int(100) NOT NULL DEFAULT '0',
+  `adacbank` int(100) NOT NULL DEFAULT '0',
+  `medcash` int(100) NOT NULL DEFAULT '0',
+  `medbank` int(100) NOT NULL DEFAULT '0',
   `coplevel` enum('0','1','2','3','4','5','6','7') NOT NULL DEFAULT '0',
-  `cop_licenses` text,
-  `civ_licenses` text,
-  `med_licenses` text,
-  `cop_gear` text NOT NULL,
+  `cop_licenses` text DEFAULT '"[]"',
+  `civ_licenses` text DEFAULT '"[]"',
+  `med_licenses` text DEFAULT '"[]"',
+  `adac_licenses` text DEFAULT '"[]"',
+  `cop_gear` text NOT NULL DEFAULT '"[]"',
   `mediclevel` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0',
   `arrested` tinyint(1) NOT NULL DEFAULT '0',
   `aliases` text NOT NULL,
-  `adminlevel` enum('0','1','2','3') NOT NULL DEFAULT '0',
+  `adminlevel` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0',
   `donatorlvl` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0',
-  `civ_gear` text NOT NULL,
+  `civ_gear` text NOT NULL DEFAULT '"[]"',
+  `med_gear` text NOT NULL DEFAULT '"[]"',
+  `adac_gear` text NOT NULL DEFAULT '"[]"',
+  `adaclevel` enum('0','1') NOT NULL DEFAULT '0',
   `blacklist` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`uid`),
   UNIQUE KEY `playerid` (`playerid`),
