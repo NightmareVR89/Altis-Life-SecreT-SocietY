@@ -173,7 +173,7 @@ Error in expression <{};
 	[[life_atmcash,life_cash,owner player,play>
   Error position: <life_atmcash,life_cash,owner player,play>
   Error Undefined variable in expression: life_atmcash
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Unknown entity: 'section=ecouter&item=1"
                                                 
                                                  onclick="window.open(this.href, 'Popup', 'height=530, width=940, scrollbars=no')'
