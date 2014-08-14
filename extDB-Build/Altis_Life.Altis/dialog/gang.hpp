@@ -7,7 +7,7 @@
 
 	class controlsBackground {
 		class Life_RscTitleBackground:Life_RscText {
-			colorBackground[] = {0.773,0,0,1}; // Rot hintergrund Oben
+			colorBackground[] = {0.455,0.004,0.004,0.9}; // Rot hintergrund Oben
 			idc = -1;
 			x = 0.1;
 			y = 0.2;
@@ -29,7 +29,7 @@
 
 
 		class Title : Life_RscTitle {
-			colorBackground[] = {0.514,0.51,0.51,0.8};
+			colorBackground[] = {0.455,0.004,0.004,0.9}; // Rot hintergrund Oben
 			idc = 2629;
 			text = "";
 			x = 0.1;
@@ -61,7 +61,7 @@
 		class GangLeave : Life_RscButtonMenu {
 			idc = -1;
 			text = "$STR_Gang_Leave";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.145,0.145,0.145,0.8}; // Knopfhintergrund dunkel
 			onButtonClick = "[] call life_fnc_gangLeave";
 			x = 0.47;
 			y = 0.26;
@@ -73,7 +73,7 @@
 		{
 			idc = 2622;
 			text = "$STR_Gang_UpgradeSlots";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.145,0.145,0.145,0.8}; // Knopfhintergrund dunkel
 			onButtonClick = "[] spawn life_fnc_gangUpgrade";
 			x = 0.47;
 			y = 0.31;
@@ -85,7 +85,7 @@
 		{
 			idc = 2624;
 			text = "$STR_Gang_Kick";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.145,0.145,0.145,0.8}; // Knopfhintergrund dunkel
 			onButtonClick = "[] call life_fnc_gangKick";
 			x = 0.47;
 			y = 0.36;
@@ -97,7 +97,7 @@
 		{
 			idc = 2625;
 			text = "$STR_Gang_SetLeader";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.145,0.145,0.145,0.8}; // Knopfhintergrund dunkel
 			onButtonClick = "[] spawn life_fnc_gangNewLeader";
 			x = 0.47;
 			y = 0.41;
@@ -198,7 +198,7 @@ class Life_Create_Gang_Diag {
 		class GangCreateField : Life_RscButtonMenu {
 			idc = -1;
 			text = "$STR_Gang_Create";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.145,0.145,0.145,0.8}; // Knopfhintergrund dunkel
 			onButtonClick = "[] call life_fnc_createGang";
 			x = 0.27;
 			y = 0.40;

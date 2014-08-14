@@ -8,7 +8,7 @@ class life_spawn_selection
 	{
 		class life_RscTitleBackground : Life_RscText
 		{
-			colorBackground[] = {0.773,0,0,1}; // Rot hintergrund Oben
+			colorBackground[] = {0.455,0.004,0.004,0.9}; // Rot hintergrund Oben
 			idc = -1;
 			x = 0.1; y = 0.2;
 			w = 0.8; h = (1 / 25);
@@ -71,7 +71,7 @@ class life_spawn_selection
 		class spawnButton : Life_RscButtonMenu
 		{
 			idc = -1;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.455,0.004,0.004,0.7}; // Roter Knopf
 			text = "$STR_Spawn_Spawn";
 			onButtonClick = "[] call life_fnc_spawnConfirm";
 			x = 0.11; y = 0.69;

@@ -7,7 +7,7 @@ class Life_ticket_give
 	
 	class controlsBackground {
 		class Life_RscTitleBackground:Life_RscText {
-			colorBackground[] = {0.773,0,0,1}; // Rot hintergrund Oben
+			colorBackground[] = {0.455,0.004,0.004,0.9}; // Rot hintergrund Oben
 			idc = -1;
 			x = 0.3;
 			y = 0.2;
@@ -50,7 +50,7 @@ class Life_ticket_give
 		class payTicket: Life_RscButtonMenu {
 			idc = -1;
 			text = "$STR_Ticket_GiveTicket";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.145,0.145,0.145,0.7}; // Knopfhintergrund dunkel
 			onButtonClick = "[] call life_fnc_ticketGive";
 			x = 0.45;
 			y = 0.35;
@@ -69,7 +69,7 @@ class Life_ticket_pay
 	
 	class controlsBackground {
 		class Life_RscTitleBackground:Life_RscText {
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+			colorBackground[] = {0.455,0.004,0.004,0.9}; // Rot hintergrund Oben
 			idc = -1;
 			x = 0.3;
 			y = 0.2;
@@ -102,7 +102,7 @@ class Life_ticket_pay
 		class payTicket: Life_RscButtonMenu {
 			idc = -1;
 			text = "$STR_Ticket_PayTicket";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.145,0.145,0.145,0.7}; // Knopfhintergrund dunkel
 			onButtonClick = "[] call life_fnc_ticketPay;";
 			x = 0.2 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.42 - (1 / 25);
@@ -113,7 +113,7 @@ class Life_ticket_pay
 		class refuseTicket : Life_RscButtonMenu {
 			idc = -1;
 			text = "$STR_Ticket_RefuseTicket";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.145,0.145,0.145,0.7}; // Knopfhintergrund dunkel
 			onButtonClick = "closeDialog 0;";
 			x = 0.4 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.42 - (1 / 25);

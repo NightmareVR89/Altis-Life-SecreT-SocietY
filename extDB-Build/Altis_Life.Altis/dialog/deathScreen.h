@@ -42,7 +42,7 @@ class DeathScreen
 			h = (1 / 25);
 			text = "Respawn";
 			onButtonClick = "closeDialog 0; life_respawned = true; [] call life_fnc_spawnMenu;";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.7};
+			colorBackground[] = {0.145,0.145,0.145,0.7}; // Knopfhintergrund dunkel
 			class Attributes 
 			{
 				align = "center";
@@ -58,7 +58,7 @@ class DeathScreen
 			h = (1 / 25);
 			onButtonClick = "[] call life_fnc_requestMedic;";
 			text = "Sanitaeter rufen";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.7};
+			colorBackground[] = {0.455,0.004,0.004,0.7};  // Roter Knopf
 			class Attributes 
 			{
 				align = "center";

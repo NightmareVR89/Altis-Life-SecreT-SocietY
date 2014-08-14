@@ -12,7 +12,7 @@ class pInteraction_Menu
 	{
 		class RscTitleBackground:life_RscText 
 		{
-			colorBackground[] = {0.773,0,0,1}; // Rot hintergrund Oben
+			colorBackground[] = {0.012,0.02,0.357,0.9}; //Blauer Hintergrund Oben
 			idc = -1;
 			x = BGX;
 			y = BGY;
@@ -59,7 +59,7 @@ class pInteraction_Menu
 		class ButtonOne : life_RscButtonMenu
 		{
 			idc = 37450;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.012,0.02,0.357,0.8}; //Blauer Knopf
 			text = "";
 			sizeEx = 0.025;
 			x = BGX + 0.03;
@@ -71,7 +71,7 @@ class pInteraction_Menu
 		class ButtonTwo : life_RscButtonMenu
 		{
 			idc = 37451;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.012,0.02,0.357,0.8}; //Blauer Knopf
 			text = "";
 			sizeEx = 0.025;
 			x = BGX + 0.03;
@@ -83,7 +83,7 @@ class pInteraction_Menu
 		class ButtonThree : life_RscButtonMenu
 		{
 			idc = 37452;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.012,0.02,0.357,0.8}; //Blauer Knopf
 			text = "";
 			sizeEx = 0.025;
 			x = BGX + 0.03;
@@ -95,7 +95,7 @@ class pInteraction_Menu
 		class ButtonFour : life_RscButtonMenu
 		{
 			idc = 37453;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.012,0.02,0.357,0.8}; //Blauer Knopf
 			text = "";
 			sizeEx = 0.025;
 			x = BGX + 0.03;
@@ -107,7 +107,7 @@ class pInteraction_Menu
 		class ButtonFive : life_RscButtonMenu
 		{
 			idc = 37454;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.012,0.02,0.357,0.8}; //Blauer Knopf
 			text = "";
 			sizeEx = 0.025;
 			x = BGX + 0.03;
@@ -119,7 +119,7 @@ class pInteraction_Menu
 		class ButtonSix : life_RscButtonMenu
 		{
 			idc = 37455;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.012,0.02,0.357,0.8}; //Blauer Knopf
 			text = "";
 			sizeEx = 0.025;
 			x = BGX + 0.03;
@@ -131,7 +131,7 @@ class pInteraction_Menu
 		class ButtonSeven : life_RscButtonMenu
 		{
 			idc = 37456;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.012,0.02,0.357,0.8}; //Blauer Knopf
 			text = "";
 			sizeEx = 0.025;
 			x = BGX + 0.03;
@@ -142,7 +142,7 @@ class pInteraction_Menu
 		class ButtonEight : life_RscButtonMenu //Alkoholmesser
 		{
 			idc = 37457;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+			colorBackground[] = {0.012,0.02,0.357,0.8}; //Blauer Knopf
 			text = "";
 			sizeEx = 0.025;
 			x = BGX + 0.03;
@@ -163,7 +163,7 @@ class vInteraction_Menu
 	{
 		class RscTitleBackground:life_RscText 
 		{
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+			colorBackground[] = {0.012,0.02,0.357,0.9}; //Blauer Hintergrund Oben
 			idc = -1;
 			x = BGX;
 			y = BGY;
@@ -210,7 +210,7 @@ class vInteraction_Menu
 		class ButtonOne : life_RscButtonMenu
 		{
 			idc = 37450;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.012,0.02,0.357,0.8}; //Blauer Knopf
 			text = "";
 			sizeEx = 0.025;
 			x = BGX + 0.03;
@@ -222,7 +222,7 @@ class vInteraction_Menu
 		class ButtonTwo : life_RscButtonMenu
 		{
 			idc = 37451;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.012,0.02,0.357,0.8}; //Blauer Knopf
 			text = "";
 			sizeEx = 0.025;
 			x = BGX + 0.03;
@@ -234,7 +234,7 @@ class vInteraction_Menu
 		class ButtonThree : life_RscButtonMenu
 		{
 			idc = 37452;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.012,0.02,0.357,0.8}; //Blauer Knopf
 			text = "";
 			sizeEx = 0.025;
 			x = BGX + 0.03;
@@ -246,7 +246,7 @@ class vInteraction_Menu
 		class ButtonFour : life_RscButtonMenu
 		{
 			idc = 37453;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.012,0.02,0.357,0.8}; //Blauer Knopf
 			text = "";
 			sizeEx = 0.025;
 			x = BGX + 0.03;
@@ -258,7 +258,7 @@ class vInteraction_Menu
 		class ButtonFive : life_RscButtonMenu
 		{
 			idc = 37454;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.012,0.02,0.357,0.8}; //Blauer Knopf
 			text = "";
 			sizeEx = 0.025;
 			x = BGX + 0.03;
@@ -270,8 +270,8 @@ class vInteraction_Menu
 		class ButtonSix : life_RscButtonMenu
 		{
 			idc = 37455;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
-			text = "";
+			colorBackground[] = {0.012,0.02,0.357,0.8}; //Blauer Knopf
+			text = "Alkoholtester";
 			sizeEx = 0.025;
 			x = BGX + 0.03;
 			y = BGY + 0.32;

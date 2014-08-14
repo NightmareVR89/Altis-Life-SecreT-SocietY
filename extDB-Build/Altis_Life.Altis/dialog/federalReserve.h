@@ -9,7 +9,7 @@ class Federal_Safe
 	{
 		class RscTitleBackground : Life_RscText
 		{
-			colorBackground[] = {0.773,0,0,1}; // Rot hintergrund Oben
+			colorBackground[] = {0.455,0.004,0.004,0.9}; // Rot hintergrund Oben
 			idc = -1;
 			x = 0.1;
 			y = 0.2;
@@ -48,7 +48,7 @@ class Federal_Safe
 		class RscTrunkText : Life_RscText
 		{
 			idc = -1;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.145,0.145,0.145,0.7}; // Knopfhintergrund dunkel
 			text = "$STR_Trunk_TInventory";
 			sizeEx = 0.04;
 			
@@ -82,7 +82,7 @@ class Federal_Safe
 		{
 			idc = -1;
 			text = "$STR_Trunk_Take";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.145,0.145,0.145,0.7}; // Knopfhintergrund dunkel
 			onButtonClick = "[] call life_fnc_safeTake;";
 			x = 0.19; y = 0.78;
 			w = (6.25 / 40);

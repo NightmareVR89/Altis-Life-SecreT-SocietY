@@ -6,7 +6,7 @@ class life_wanted_menu {
 	
 	class controlsBackground {
 		class Life_RscTitleBackground:Life_RscText {
-			colorBackground[] = {0.773,0,0,1}; // Rot hintergrund Oben
+			colorBackground[] = {0.012,0.02,0.357,0.9}; //Blauer Hintergrund Oben
 			idc = -1;
 			x = 0.1;
 			y = 0.2;
@@ -90,6 +90,7 @@ class life_wanted_menu {
 		class PardonButtonKey : Life_RscButtonMenu {
 			idc = 2405;
 			text = "$STR_Wanted_Pardon";
+			colorBackground[] = {0.145,0.145,0.145,0.7}; // Knopfhintergrund dunkel
 			onButtonClick = "[] call life_fnc_pardon; closeDialog 0;";
 			x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.8 - (1 / 25);

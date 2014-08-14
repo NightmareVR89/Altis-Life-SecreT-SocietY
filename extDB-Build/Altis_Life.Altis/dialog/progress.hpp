@@ -14,7 +14,7 @@ class life_progress
 		class background : Life_RscText
 		{
 			idc = -1;
-			colorBackground[] = {0,0,0,0.7};
+			colorBackground[] = {0.145,0.145,0.145,0.7}; // Knopfhintergrund dunkel
 			x = 0.38140 * safezoneW + safezoneX;
 			y = 0.06 * safezoneH + safezoneY;
 			w = 0.65; h = 0.05;

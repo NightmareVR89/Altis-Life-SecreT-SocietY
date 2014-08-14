@@ -7,7 +7,7 @@ class Life_key_management {
 	
 	class controlsBackground {
 		class Life_RscTitleBackground:Life_RscText {
-			colorBackground[] = {0.773,0,0,1}; // Rot hintergrund Oben
+			colorBackground[] = {0.455,0.004,0.004,0.9}; // Rot hintergrund Oben
 			idc = -1;
 			x = 0.1;
 			y = 0.2;
@@ -80,7 +80,7 @@ class Life_key_management {
 		class GiveKey : Life_RscButtonMenu {
 			idc = 2703;
 			text = "$STR_Keys_GiveKey";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.145,0.145,0.145,0.7}; // Knopfhintergrund dunkel
 			onButtonClick = "[] call life_fnc_keyGive";
 			x = 0.32;
 			y = 0.69;

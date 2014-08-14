@@ -12,7 +12,7 @@ class pInteraction_Menu_adac
 	{
 		class RscTitleBackground:life_RscText 
 		{
-			colorBackground[] = {0.773,0,0,1}; // Rot hintergrund Oben
+			colorBackground[] = {0.831,0.824,0.024,0.9}; // Gelb hintergrund Oben
 			idc = -1;
 			x = BGX;
 			y = BGY;
@@ -59,7 +59,7 @@ class pInteraction_Menu_adac
 		class ButtonOne : life_RscButtonMenu
 		{
 			idc = 37450;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.831,0.824,0.024,0.8}; // Gelb Knopf
 			text = "";
 			sizeEx = 0.025;
 			x = BGX + 0.03;
@@ -71,7 +71,7 @@ class pInteraction_Menu_adac
 		class ButtonTwo : life_RscButtonMenu
 		{
 			idc = 37451;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.831,0.824,0.024,0.8}; // Gelb Knopf
 			text = "";
 			sizeEx = 0.025;
 			x = BGX + 0.03;
@@ -83,7 +83,7 @@ class pInteraction_Menu_adac
 		class ButtonThree : life_RscButtonMenu
 		{
 			idc = 37452;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.831,0.824,0.024,0.8}; // Gelb Knopf
 			text = "";
 			sizeEx = 0.025;
 			x = BGX + 0.03;
@@ -95,7 +95,7 @@ class pInteraction_Menu_adac
 		class ButtonFour : life_RscButtonMenu
 		{
 			idc = 37453;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.831,0.824,0.024,0.8}; // Gelb Knopf
 			text = "";
 			sizeEx = 0.025;
 			x = BGX + 0.03;
@@ -116,7 +116,7 @@ class vInteraction_Menu_adac
 	{
 		class RscTitleBackground:life_RscText 
 		{
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+			colorBackground[] = {0.831,0.824,0.024,0.9}; // Gelb hintergrund Oben
 			idc = -1;
 			x = BGX;
 			y = BGY;
@@ -163,7 +163,7 @@ class vInteraction_Menu_adac
 		class ButtonOne : life_RscButtonMenu
 		{
 			idc = 37450;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.831,0.824,0.024,0.8}; // Gelb Knopf
 			text = "";
 			sizeEx = 0.025;
 			x = BGX + 0.03;
@@ -175,7 +175,7 @@ class vInteraction_Menu_adac
 		class ButtonTwo : life_RscButtonMenu
 		{
 			idc = 37451;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.831,0.824,0.024,0.8}; // Gelb Knopf
 			text = "";
 			sizeEx = 0.025;
 			x = BGX + 0.03;
@@ -187,7 +187,7 @@ class vInteraction_Menu_adac
 		class ButtonThree : life_RscButtonMenu
 		{
 			idc = 37452;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.831,0.824,0.024,0.8}; // Gelb Knopf
 			text = "";
 			sizeEx = 0.025;
 			x = BGX + 0.03;
@@ -199,7 +199,7 @@ class vInteraction_Menu_adac
 		class ButtonFour : life_RscButtonMenu
 		{
 			idc = 37453;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.831,0.824,0.024,0.8}; // Gelb Knopf
 			text = "";
 			sizeEx = 0.025;
 			x = BGX + 0.03;

@@ -7,7 +7,7 @@ class life_admin_menu {
 	
 	class controlsBackground {
 		class Life_RscTitleBackground:Life_RscText {
-			colorBackground[] = {0.773,0,0,1}; // Rot hintergrund Oben
+			colorBackground[] = {0.035,0.035,0.035,0.6}; //Schwarz
 			idc = -1;
 			x = 0.1;
 			y = 0.2;
