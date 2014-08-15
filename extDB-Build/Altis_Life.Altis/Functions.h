@@ -284,6 +284,7 @@ class Life_Client_Core
 		class stripDownPlayer {};
 		class autoSave {};
 		class emptyFuel {};
+		class AAN {};
 	};
 	
 	class Network
