@@ -11,6 +11,6 @@ _message = _this select 1;
 _title = parseText format["<t size='2'>Aktuelle Sondermeldung</t><br />%1",_headline];
 _scroll = parseText format["<t size='1.4'>%1</t>",_message];
 [_title,_scroll] spawn BIS_fnc_AAN;
-sleep 40;
+sleep 50;
 _display = uinamespace getvariable "BIS_AAN";
 _display closeDisplay 0;
