@@ -1,4 +1,4 @@
-enableSaving [false, false];
+﻿enableSaving [false, false];
 
 X_Server = false;
 X_Client = false;
@@ -21,7 +21,11 @@ if(isDedicated && isNil("life_market_prices")) then
 	
 	"life_market_prices" addPublicVariableEventHandler
 	{
-		diag_log format["Markt preise updated! %1", _this select 1];
+		diag_log format["Marktpreise geupdated! %1", _this select 1];
 	};
+
+//Marktänderungen...
+[] execFSM "core\fsm\server.fsm";
+diag_log "Marktänderungen wurden geladen";
 };
 StartProgress = true;
