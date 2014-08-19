@@ -188,11 +188,6 @@ switch(_shop) do
 						["optic_SOS",nil,1700],						//Einfaches Sniper visier
 						["SmokeShellGreen","Tränengas",300],
 						["HandGrenade",nil,200],
-						["APERSMine_Range_Mag",nil,150],
-						["APERSBoundingMine_Range_Mag",nil,150],
-						["SLAMDirectionalMine_Wire_Mag",nil,150],
-						["APERSTripMine_Wire_Mag",nil,150],
-						["ClaymoreDirectionalMine_Remote_Mag",nil,150],
 						["SatchelCharge_Remote_Mag",nil,150],
 						["DemoCharge_Remote_Mag",nil,150],
 						["launch_RPG32_F",nil,20000],
@@ -282,11 +277,6 @@ switch(_shop) do
 						["SmokeShellGreen","Tränengas",300],
 						["HandGrenade_Stone","Flashbang",500],   // Flashbang
 						["HandGrenade",nil,200],
-						["APERSMine_Range_Mag",nil,150],
-						["APERSBoundingMine_Range_Mag",nil,150],
-						["SLAMDirectionalMine_Wire_Mag",nil,150],
-						["APERSTripMine_Wire_Mag",nil,150],
-						["ClaymoreDirectionalMine_Remote_Mag",nil,150],
 						["SatchelCharge_Remote_Mag",nil,150],
 						["DemoCharge_Remote_Mag",nil,150],
 						["launch_RPG32_F",nil,20000],
@@ -383,11 +373,6 @@ switch(_shop) do
 						["SmokeShellGreen","Tränengas",300],
 						["HandGrenade_Stone","Flashbang",500],   // Flashbang
 						["HandGrenade",nil,200],
-						["APERSMine_Range_Mag",nil,150],
-						["APERSBoundingMine_Range_Mag",nil,150],
-						["SLAMDirectionalMine_Wire_Mag",nil,150],
-						["APERSTripMine_Wire_Mag",nil,150],
-						["ClaymoreDirectionalMine_Remote_Mag",nil,150],
 						["SatchelCharge_Remote_Mag",nil,150],
 						["DemoCharge_Remote_Mag",nil,150],
 						["launch_RPG32_F",nil,20000],
@@ -485,11 +470,6 @@ switch(_shop) do
 						["SmokeShellGreen","Tränengas",300],
 						["HandGrenade_Stone","Flashbang",500],   // Flashbang
 						["HandGrenade",nil,200],
-						["APERSMine_Range_Mag",nil,150],
-						["APERSBoundingMine_Range_Mag",nil,150],
-						["SLAMDirectionalMine_Wire_Mag",nil,150],
-						["APERSTripMine_Wire_Mag",nil,150],
-						["ClaymoreDirectionalMine_Remote_Mag",nil,150],
 						["SatchelCharge_Remote_Mag",nil,150],
 						["DemoCharge_Remote_Mag",nil,150],
 						["launch_RPG32_F",nil,20000],
@@ -571,12 +551,6 @@ switch(_shop) do
 						["optic_MRCO",nil,5000],
 						["Binocular",nil,150],
 						["Rangefinder",nil,150],
-						["ATMine_Range_Mag","Anti Fahrzeug",150],
-						["APERSMine_Range_Mag","Anti Person",150],
-						["APERSBoundingMine_Range_Mag",nil,150],
-						["SLAMDirectionalMine_Wire_Mag","Anti Armor",150],
-						["APERSTripMine_Wire_Mag",nil,150],
-						["ClaymoreDirectionalMine_Remote_Mag",nil,150],
 						["SatchelCharge_Remote_Mag",nil,150],
 						["DemoCharge_Remote_Mag",nil,150],
 						["HandGrenade_Stone","Flashbang",500],
@@ -690,6 +664,7 @@ switch(_shop) do
 						["optic_SOS",nil,27000],			//Einfaches Sniper visier
 						["SmokeShellRed",nil,150],		//NEU
 						["SmokeShell",nil,150],			//NEU
+						["DemoCharge_Remote_Mag",nil,150],
 						["SatchelCharge_Remote_Mag",nil,75000],
 						["SmokeShellGreen","Tränengas",600],
 						["HandGrenade","Handgranate",800],
