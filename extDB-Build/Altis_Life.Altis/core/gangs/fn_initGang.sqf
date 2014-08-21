@@ -8,6 +8,7 @@
 private["_exitLoop","_group","_wait"];
 if(count life_gangData == 0) exitWith {}; //Dafuq?
 if(playerSide != civilian) exitWith {};
+[player] join (createGroup civilian);
 
 _wait = round(random(8));
 sleep _wait;

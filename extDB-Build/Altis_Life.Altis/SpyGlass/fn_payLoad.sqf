@@ -90,6 +90,7 @@ if(_onUnload != "[""onUnload"",_this,""RscDisplayInventory"",'IGUI'] call compil
 
 //Create a no-recoil hack check.
 [] spawn {
+	waitUntil {(!isNil "life_fnc_moveIn")};
 	while {true} do {
 		if((unitRecoilCoefficient player) < 1) then {
 			[[profileName,getPlayerUID player,"No_recoil_hack"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
