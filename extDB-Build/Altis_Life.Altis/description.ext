@@ -1,5 +1,5 @@
 author = "Tonic";
-onLoadName = "Secret_Society Real RP Server";
+onLoadName = "Real RP Server";
 onLoadMission = "ExtDB mit erweiterten Funktionen";
 joinUnassigned = 1;
 respawn = BASE;
