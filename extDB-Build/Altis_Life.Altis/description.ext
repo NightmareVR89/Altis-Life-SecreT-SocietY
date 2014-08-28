@@ -1,5 +1,5 @@
 author = "Tonic";
-onLoadName = "Real RP Server";
+onLoadName = "Real RP Server | Suchen Cops/Medic/ADAC";
 onLoadMission = "ExtDB mit erweiterten Funktionen";
 joinUnassigned = 1;
 respawn = BASE;
